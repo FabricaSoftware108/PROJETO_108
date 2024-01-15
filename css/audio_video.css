@@ -13,12 +13,17 @@
     --color-grad:#198907;
     --color-grad-title:#249A10;
 
+    --font-size-grad: 8.5px;
 }
-
 
 .container-title {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title-outside {
+    display: flex;
 
     font-family: var(--font-grad-title);
     font-weight: bold;
@@ -28,18 +33,34 @@
     background-color: var(--color-grad-title);
     color: white;
 
-    padding: 20px;
+    padding: 40px 25px;
     border: 1px solid white;
+    border-radius: 10px;
+    
+}
 
+.container-grad-table {
+    font-size: var(--font-size-grad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-grad-table table {
+    border-radius: 10px; 
+    border-collapse: collapse;
 }
 
 th, td {
     padding: 20px;
     border: 1px solid black;
 }
-table {
-    border-collapse: collapse;
-}
+
 tr:nth-child(2n) {
     background-color: #D9D9D9;
+}
+
+.container-title-outside {
+    text-align: center;
 }
