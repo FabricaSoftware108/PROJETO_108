@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&family=Montserrat:wght@100;200;400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 100px;
+    background-color: rgba(105, 103, 103, 0.562)
+}
+
+main{
+    font-size: 20px;
+    text-align: justify;
+    margin:auto ;
+    min-width: 2px;
+    max-width: 1200px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+}
+
+.title_cgi{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 120px;
+    
+}
+
+.txt_cgi{
+    padding-top: 150px;
+    text-align: justify;
+    margin-left:230px ;
+    width: 800px;
+}
+
+.btn_editais{
+    color: white;
+    background-color: rgba(226, 153, 26, 1) ;
+    height: 50px;
+    width: 180px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;   
+    
+    margin-left:550px ;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn_editais a {
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
