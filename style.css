@@ -51,5 +51,30 @@
 .sobre {
     position: absolute;
     color: white;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%);
+    text-align: left; 
+    padding: 20px; 
+    max-width: 40%;
+}
 
+.sobre h1 {
+    font-size: 72px; 
+}
+
+.texto-sobre {
+    margin-top: 100px; 
+}
+
+.texto-sobre h3 {
+    font-size: 62px; 
+    margin-bottom: 20px;
+}
+
+.imagem-sobre {
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    transform: translateY(-50%);
 }
