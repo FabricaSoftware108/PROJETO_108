@@ -9,8 +9,8 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 20px;
     left: 0;
     right: 0;
     border-bottom: 1px solid black;
@@ -21,8 +21,9 @@ nav {
 }
 
 nav img {
-    margin-right: 150px;
     height: 50px;
+    margin-right: 200px;
+    margin-left: 92px;
 }
 
 nav a {
@@ -32,7 +33,7 @@ nav a {
     color: black;
 }
 nav #admButton {
-    margin-left: 150px;
+    margin-left: 200px;
     background-color: rgb(254, 185, 105, 75);
     border-radius: 40px;
     height: 40px;
@@ -47,28 +48,14 @@ main {
     align-items: center;
     width: 1200px;
     border: 1px solid black;
-    top: 0;
+    margin-top: 92px;
 }
 
-main .home-inicio {
+footer {
+    background-color: rgb(225, 225, 225, .10);
+    height: 100px;
+    position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
-    top: 0;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background: url("/img/homeBackImg.jpg");
-    border-radius: 700px 0px;
-    border: 0px none rgb(128, 128, 128);
-    background-color: rgb(255, 255, 255);
-}
-main .home-inicio .container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 1200px;
-}
-
-main .home-texto-fabrica {
-    margin-top: 800px;
 }
