@@ -10,30 +10,33 @@ nav {
     justify-content: center;
     display: flex;
     position: fixed;
-    top: 20px;
+    top: 0;
     left: 0;
     right: 0;
     border-bottom: 1px solid black;
     height: 80px;
     font-family: 'Inter', sans-serif;
-    background-color: transparent;
+    background-color: white;
     z-index: 1;
 }
 
 nav img {
     height: 50px;
-    margin-right: 200px;
+    margin-right: 500px;
     margin-left: 92px;
 }
 
 nav a {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     text-decoration: none;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav #admButton {
-    margin-left: 200px;
+    margin-left: 400px;
     background-color: rgb(254, 185, 105, 75);
     border-radius: 40px;
     height: 40px;
@@ -48,14 +51,21 @@ main {
     align-items: center;
     width: 1200px;
     border: 1px solid black;
-    margin-top: 92px;
+    margin-top: 70px;
+}
+
+main section {
+    margin-top: 1000px;
 }
 
 footer {
     background-color: rgb(225, 225, 225, .10);
+    background-color: aqua;
     height: 100px;
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
