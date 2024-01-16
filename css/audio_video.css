@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-grad-title);
 }
 
 :root {
@@ -16,49 +17,52 @@
     --font-size-grad: 8.5px;
 }
 
-.container-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Gleison */
+
+.container-title-grad {
+    margin: 0 160px;
+    padding: 10px 0;
 }
 
 .container-title-outside {
     display: flex;
-
-    font-family: var(--font-grad-title);
     font-weight: bold;
 
-    text-align: center;
-
     background-color: var(--color-grad-title);
+    font-size: 13px;
     color: white;
 
     padding: 40px 25px;
     border: 1px solid white;
     border-radius: 10px;
+    text-align: center;
+    align-items: center;
     
 }
 
-.container-grad-table {
-    font-size: var(--font-size-grad);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .container-grad-table table {
+    width: 100%;
     border-radius: 10px; 
     border-collapse: collapse;
+    border-radius: 20px;
 }
 
 th, td {
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 tr:nth-child(2n) {
     background-color: #D9D9D9;
+}
+tr:nth-child(1) {
+    background-color: #ffffff;
+}
+tr:nth-child(3) {
+    background-color: #ffffff;
+}
+tr:nth-child(5) {
+    background-color: #ffffff;
 }
 
 .container-title-outside {
@@ -107,10 +111,6 @@ tr:nth-child(2n) {
 .container-design-2 {
     background-color: #42B030;
     padding: 20px;
-}
-
-.container-design h2 {
-    color: #42B030;
 }
 
 .container-requisitos h3 + ul {
@@ -198,3 +198,12 @@ tr:nth-child(2n) {
     margin-bottom: 5px;
 }
 
+.container-rodape {    
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #198907;
+}
