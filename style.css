@@ -11,6 +11,10 @@
 
 :root {
     --font-destaque:"MontSerrat", sans-serif;
+    --font-size-titulo: 27px;
+    --font-size-subTitulo: 18px;
+    --font-size-corpo: 12px;
+    --font-size-legenda: 8px;
 
 }
 
@@ -51,30 +55,27 @@
 .sobre {
     position: absolute;
     color: white;
+
     top: 50%;
-    left: 10%; 
-    transform: translateY(-50%);
-    text-align: left; 
-    padding: 20px; 
-    max-width: 40%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center; 
 }
 
-.sobre h1 {
-    font-size: 72px; 
+/* CONTENT */
+.content-sobre {
+    position: relative;
+    padding: 20px;
+
 }
 
-.texto-sobre {
-    margin-top: 100px; 
+.content-wrapper {
+    display: flex;
+    padding-top: 30px;
+    text-align: justify;
+
 }
 
-.texto-sobre h3 {
-    font-size: 62px; 
-    margin-bottom: 20px;
-}
-
-.imagem-sobre {
-    position: absolute;
-    top: 70%;
-    right: 40%;
-    transform: translateY(-50%);
+.content-wrapper p{
+    padding-right: 30px;
 }
