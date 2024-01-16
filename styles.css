@@ -1,0 +1,198 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(27, 27, 27); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    background-color: rgba(0, 0, 0, 0.945); 
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 2px rgb(0, 0, 0);
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  article {
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 0.959);
+    padding: 15px;
+    box-shadow: 6px 5px 4px black;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .titulos {
+    color: black;
+    text-align: center;
+    background-position: center; 
+    background-position-x: 20px;
+    background-color: rgba(250, 250, 250, 0.89);
+    border-radius: 5px;
+    border-style:double;
+    border-color: #000;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.726);
+    margin-left: 405px;
+    margin-right: 405px;
+    height: 40px;
+  }
+  
+  .bemvindo {
+    background-color: rgba(250, 250, 250, 0.89);
+    border-radius: 5px;
+    border-style:ridge;
+    border-color: #464646;
+    margin-left: 405px;
+    margin-right: 405px;
+    height: 80px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url(./Img/NASA-Logo.png);
+    background-position: center; 
+    background-position-x: 20px;
+    border-radius: 5px;
+    border-style:double;
+    border-color: #000;
+    color: black;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.726);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .latest-news {
+    margin-top: 40px;
+  }
+  
+  
+  
+  .latest-news img {
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .container_left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .container_left p {
+    margin: 20px;
+    text-align: justify;
+    font-size: 32px;
+    margin-right: 80px;
+  }
+  
+  .container_left a {
+    margin-left: 80px;
+  }
+
+  .container_left img {
+    box-shadow: 0pt 0pt 90pt -10pt rgba(43, 20, 99, 1);
+    border-radius: 16px;
+  }
+
+  .container_right {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .container_right p {
+    margin: 20px;
+    text-align: justify;
+    font-size: 32px;
+    margin-left: 80px;
+  }
+  
+  .container_right a {
+    margin-left: 20px;
+  }
+
+  .container_right img {
+    box-shadow: 0pt 0pt 90pt -10pt rgba(43, 20, 99, 1);
+    border-radius: 16px;
+  }
+  
+  #link a {
+    border-radius: 500px;
+    box-shadow: #000;
+  }
+
+  .mission {
+    background-color: rgba(250, 250, 250, 0.959);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .date {
+    color: #666;
+    font-size: 0.8em;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+  }
+
+  .links_fabricas h1{
+    font-size: 27pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  .links_fabricas article{
+    text-align: center;
+  }
+
+.links_fabricas #descricao {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+}
+  
