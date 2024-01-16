@@ -74,6 +74,16 @@ tr:nth-child(2n) {
     padding: 20px; 
 }
 
+.container-projetos h2 {
+    font-size: 32px;
+    font-family: 'Montserrat Light'; 
+}
+
+.container-projetos p {
+    font-size: 32px; 
+    font-family: 'Montserrat Light'; 
+}
+
 .container-requisitos {
     text-align: center;    
 }
@@ -83,6 +93,24 @@ tr:nth-child(2n) {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container-design {
+    background-color: #42B030;
+    padding: 20px;
+}
+
+.container-design h2 {
+    color: #42B030;
+}
+
+.container-design-2 {
+    background-color: #42B030;
+    padding: 20px;
+}
+
+.container-design h2 {
+    color: #42B030;
 }
 
 .container-requisitos h3 + ul {
@@ -118,7 +146,8 @@ tr:nth-child(2n) {
 
 .container-carrosel p {
     margin: 0 20px;
-    font-size: 24px; 
+    font-size: 32px;
+    font-family: 'Inter Light'; 
     line-height: 1.5;
 }
 
