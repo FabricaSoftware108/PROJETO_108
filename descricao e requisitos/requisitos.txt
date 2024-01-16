@@ -1,0 +1,11 @@
+*Todas as fábricas 
+
+Requisitos:
+    - Cursando, no mínimo, o 2° ano do Ensino Médio
+    - Idade mínima de 16 anos
+
+Documento Necessário para Matrícula:
+    - Certidão de nascimento ou casamento
+    - Comprovante de escolaridade para matrícula
+    - CPF
+    - RG.

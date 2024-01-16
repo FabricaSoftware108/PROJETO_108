@@ -1,0 +1,70 @@
+Grade Curricular Fábrica de Software
+    Planejar o desenvolvimento de software (72 horas)
+    Desenvolver algoritmos (108 horas)
+    Auxiliar na modelagem e manipulação de banco de dados (96 horas)
+    Auxiliar na administração de banco de dados (84 horas)
+    Projeto integrador I (34 horas)
+    Desenvolver código orientado a objetos (108 horas)
+    Auxiliar na elaboração de projeto de sistema orientado a objeto (72 horas)
+    Desenvolver interface para melhor experiência do usuário. (60 horas)
+    Desenvolver e organizar interface gráfica para aplicações desktop (96 horas)
+    Programar aplicativos computacionais com integração de banco de dados para desktop (108 horas)
+    Projeto integrador II (25 horas)
+    Gerenciar a configuração e versionamento de Software (60 horas)
+    Executar testes e realizar melhorias em aplicativos computacionais (60 horas)
+    Desenvolver e organizar interface de usuário e elementos visuais para aplicações web. (front-end) (96 horas)
+    Programar aplicativos computacionais com integração de banco de dados para web. (back-end) (96 horas)
+    Projeto integrador III (25 horas)
+
+Grade Curricular Fábrica de Jogos
+    Planejar o desenvolvimento de software (72 horas)
+    Desenvolver algoritmos (108 horas)
+    Auxiliar na modelagem e manipulação de banco de dados (96 horas)
+    Auxiliar na administração de banco de dados (84 horas)
+    Projeto integrador I (34 horas)
+    Desenvolver código orientado a objetos (108 horas)
+    Auxiliar na elaboração de projeto de sistema orientado a objeto (72 horas)
+    Desenvolver interface para melhor experiência do usuário. (60 horas)
+    Desenvolver e organizar interface gráfica para aplicações desktop (96 horas)
+    Programar aplicativos computacionais com integração de banco de dados para desktop (108 horas)
+    Projeto integrador II (25 horas)
+    Gerenciar a configuração e versionamento de Software (60 horas)
+    Executar testes e realizar melhorias em aplicativos computacionais (60 horas)
+    Desenvolver e organizar interface de usuário e elementos visuais para aplicações web. (front-end) (96 horas)
+    Programar aplicativos computacionais com integração de banco de dados para web. (back-end) (96 horas)
+    Projeto integrador III (25 horas)
+
+Grade Curricular Fábrica de AudioVisual
+    Planejar projeto visual (36 horas)
+    Manipular imagem bitmap (60 horas)
+    Desenvolver ilustração vetorial (60 horas)
+    Produzir projeto visual (36 horas)
+    Projeto Integrador Assistente de Produção Gráfica (20 horas)
+    Planejar projeto de vídeo digital (48 horas)
+    Produzir material para áudio e vídeo digital (36 horas)
+    Editar vídeo e áudio digital(60 horas)
+    Animar elemento gráfico
+    48 horas
+    Produzir efeitos visuais
+    60 horas
+    Projeto Integrador Editor de Vídeo Digital
+    20 horas
+    Planejar animação
+    60 horas
+    Desenvolver modelagem tridimensional
+    108 horas
+    Animar elemento tridimensional
+    108 horas
+    Tratar renderização de animação
+    36 horas
+    Projeto Integrador Assistente de Produção 3 D
+    20 horas
+    Desenhar projeto técnico bidimensional.
+    48 horas
+    Desenvolver projeto tridimensional
+    84 horas
+    Tratar imagem na maquete eletrônica
+    36 horas
+    Projeto Integrador Desenhista de maquete eletrônica
+
+
