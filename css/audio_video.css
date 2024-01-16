@@ -67,6 +67,33 @@ tr:nth-child(2n) {
 
 /*PARTE DO IGOR*/
 
+.container-projetos {
+    text-align: center;
+    background-color: #42B030; 
+    color: white; 
+    padding: 20px; 
+}
+
+.container-requisitos {
+    text-align: center;    
+}
+
+.container-requisitos h3 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-requisitos h3 + ul {
+    margin-left: 20px;
+}
+
+.container-requisitos h3,
+.container-requisitos ul {
+    display: inline;
+}
+
 .container-carrosel {
     display: flex;
     align-items: center;
@@ -74,30 +101,25 @@ tr:nth-child(2n) {
     text-align: center;
     width: 100%;
     background-color: #9C9C8D;
+    color: white; 
+    padding: 20px;
 }
 
 .carrossel {
     display: flex;
     align-items: center;
-    max-width: 80%; /* ou o valor desejado */
+    max-width: 80%; 
 }
 
 .container-carrosel img {
-    max-width: 30%; /* Ajuste para o valor desejado */
+    max-width: 30%; 
     height: auto;
 }
 
 .container-carrosel p {
     margin: 0 20px;
-    font-size: 24px; /* Ajuste para o valor desejado */
+    font-size: 24px; 
     line-height: 1.5;
-    color: white; /* Define a cor do texto como branca */
-}
-
-.container-projetos,
-.container-requisitos,
-.container-carrosel {
-    margin: 40px 0;
 }
 
 .container-requisitos hr,
@@ -126,5 +148,29 @@ tr:nth-child(2n) {
 .container-requisitos h3,
 .container-carrosel h3 {
     margin-top: 20px;
+}
+
+.container-requisitos .requisitos-listas {
+    display: flex;
+    justify-content: center;
+}
+
+.container-requisitos .requisito-item {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.container-requisitos h3,
+.container-requisitos ul {
+    display: inline;
+}
+
+.container-requisitos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container-requisitos ul li {
+    margin-bottom: 5px;
 }
 
