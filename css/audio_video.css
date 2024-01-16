@@ -115,14 +115,11 @@ tr:nth-child(5) {
 
 .container-requisitos h3 + ul {
     margin-left: 20px;
-
 }
-
 
 .container-requisitos h3,
 .container-requisitos ul {
     display: inline;
-    font-size:32px;
 }
 
 .container-carrosel {
@@ -167,6 +164,10 @@ tr:nth-child(5) {
     margin-top: 15px;
 }
 
+.container-requisitos ul,
+.container-carrosel ul {
+    list-style-type: none;
+}
 
 .container-requisitos ul li,
 .container-carrosel ul li {
@@ -193,6 +194,10 @@ tr:nth-child(5) {
     display: inline;
 }
 
+.container-requisitos ul {
+    list-style-type: none;
+    padding: 0;
+}
 
 .container-requisitos ul li {
     margin-bottom: 5px;
