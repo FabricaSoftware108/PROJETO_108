@@ -64,3 +64,67 @@ tr:nth-child(2n) {
 .container-title-outside {
     text-align: center;
 }
+
+/*PARTE DO IGOR*/
+
+.container-carrosel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #9C9C8D;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    max-width: 80%; /* ou o valor desejado */
+}
+
+.container-carrosel img {
+    max-width: 30%; /* Ajuste para o valor desejado */
+    height: auto;
+}
+
+.container-carrosel p {
+    margin: 0 20px;
+    font-size: 24px; /* Ajuste para o valor desejado */
+    line-height: 1.5;
+    color: white; /* Define a cor do texto como branca */
+}
+
+.container-projetos,
+.container-requisitos,
+.container-carrosel {
+    margin: 40px 0;
+}
+
+.container-requisitos hr,
+.container-carrosel hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.container-requisitos h3,
+.container-requisitos ul,
+.container-carrosel p {
+    margin-top: 15px;
+}
+
+.container-requisitos ul,
+.container-carrosel ul {
+    list-style-type: none;
+}
+
+.container-requisitos ul li,
+.container-carrosel ul li {
+    margin-bottom: 5px;
+}
+
+.container-requisitos h3,
+.container-carrosel h3 {
+    margin-top: 20px;
+}
+
