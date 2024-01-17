@@ -1,0 +1,11 @@
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #E1E1E1;
+}
+
+img {
+    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
