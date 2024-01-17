@@ -92,3 +92,25 @@ body {
     max-width: 960px;
     padding-right: 20px;
 }
+
+
+.wave-contin {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 50rem solid transparent; 
+    border-top: 20rem solid white;
+    
+}
+
+.wave {
+    position: absolute;
+    margin-left: -139px;
+    width: 90rem;
+    height: 90rem;
+}
+
+.wave svg {
+	transform: rotate(-25deg);
+}
