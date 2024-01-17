@@ -5,7 +5,7 @@ body, h1, h2, h3, p, ul {
 
 body {
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
   background-color: rgb(27, 27, 27); 
   background-size: cover;
@@ -29,7 +29,7 @@ main {
 
 .links-fabricas h1{
   font-size: 27pt;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .links-fabricas article{
@@ -42,6 +42,7 @@ main {
   margin-top: 20pt;
   text-align: justify;
   font-size: 18pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container-left {
@@ -58,6 +59,7 @@ main {
   font-size: 18pt;
   margin-right: 80px;
   margin-left: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container-left img {
@@ -78,6 +80,7 @@ main {
   font-size: 18pt;
   margin-left: 80px;
   margin-right: 80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container-right img {
@@ -96,6 +99,7 @@ main {
   color: black;
   transition: 1s;
   margin-left: 110pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn-jogos {
@@ -109,6 +113,7 @@ main {
   color: black;
   transition: 1s;
   margin-left: 110pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn-cgi {
@@ -122,6 +127,7 @@ main {
   color: black;
   transition: 1s;
   margin-left: 110pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn-audioVisual {
@@ -135,6 +141,7 @@ main {
   color: black;
   transition: 1s;
   margin-left: 110pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn-soft:hover {
