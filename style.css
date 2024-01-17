@@ -10,12 +10,17 @@
 }
 
 :root {
-    --font-destaque:"MontSerrat", sans-serif;
+    --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
     --font-size-titulo: 27px;
     --font-size-subTitulo: 18px;
     --font-size-corpo: 12px;
     --font-size-legenda: 8px;
 
+}
+
+body {
+    width: 100%;
+    height: 100vh;
 }
 
 .contanier-sobre {
@@ -63,19 +68,27 @@
 }
 
 /* CONTENT */
+
 .content-sobre {
     position: relative;
-    padding: 20px;
+    margin: 20px;
+
+}
+.content-sobre h1{
+    padding-bottom: 50px;
+    font-size: var(--font-size-titulo);
 
 }
 
-.content-wrapper {
+.content-wrapper{
     display: flex;
     padding-top: 30px;
     text-align: justify;
+    overflow: hidden;
 
 }
 
 .content-wrapper p{
-    padding-right: 30px;
+    max-width: 960px;
+    padding-right: 20px;
 }
