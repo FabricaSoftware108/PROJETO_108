@@ -1,12 +1,37 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(43,20,99,1);
+}
+
+
+
 footer.home-fabricas {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 1000px;
+}
+
+footer {
 }
 
 .home-fabricas img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 500px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
 }
 
+.home-fabricas #textDevs{
+    background: linear-gradient(90deg, rgba(43,20,99,1) 0%, rgba(139,26,26,1) 35%, rgba(226,153,26,1) 65%, rgba(66,176,18,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
