@@ -24,7 +24,8 @@ body {
 }
 
 .contanier-sobre {
-    background-image: url(img/fundo-sobre.png);
+    position: relative;
+    background-image: url(../img/fundo-sobre.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,12 +116,17 @@ body {
 
 .wave-down {
     position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+}
+
+.complet-svg {
+    height: 100%;
+    background-color: white;
 }
 
 .wave-down svg {
-    position: absolute;
-    width: 70rem;
-    height: 70rem;
-    left: 46.5rem;
-    top: 8.5rem;
+    width: 100%;
+    height: 110%;
 }
