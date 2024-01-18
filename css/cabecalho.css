@@ -4,6 +4,7 @@ body, html {
     justify-content: center;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
@@ -16,15 +17,13 @@ nav {
     right: 0;
     border-bottom: 1px solid black;
     height: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
     z-index: 1;
-    font-size: 16px;
 }
 
 nav img {
     height: 50px;
-    margin-right: 300px;
+    margin-right: 200px;
     margin-left: 60px;
 }
 
@@ -47,14 +46,19 @@ nav a {
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, .7);
     justify-content: center;
     align-items: center;
     display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
 }
 
+
 nav li:nth-child(5) a, li:nth-child(6) a{
-    width: 150px;
+    width: 183px;
 }
 
 nav a#logo {
@@ -69,19 +73,18 @@ nav li #admButton {
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-left: 200px;
+    margin-left: 100px;
 }
-
 
 nav ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
-    left: 620px;
+    left: 568px;
     background-color: white;
     padding: 0;
     margin: 0;
-    width: 320px;
+    width: 340px;
     border-radius: 0px 0px 10px 10px;
     padding-bottom: 15px;
     justify-content: center;
@@ -100,17 +103,15 @@ nav ul #menuFabricas li {
     text-align: left;
 }
 
-
 nav ul#menuFabricas a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
     color: black; 
     height: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.8);
 }
 
-/*nav ul#menuFabricas a:hover {
-    color: orangered;
-}*/
 
 nav ul#menuFabricas a#Fs:hover {
     color: rgba(43, 20, 99, 1);
@@ -131,16 +132,8 @@ nav ul#menuFabricas a#Fav:hover {
 nav li:hover a#menuFabricasBtn {
     height: 80px;
 }
+
 nav li:hover ul#menuFabricas {
     visibility: visible;
 }
 
-main {
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    border: 1px solid black;
-    margin-top: 70px;
-    height: 900px;
-    background-color: blanchedalmond;
-}
