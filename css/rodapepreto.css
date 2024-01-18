@@ -1,11 +1,21 @@
-footer.home-rodape {
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+footer.rodape-preto {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: #E1E1E1;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.home-rodape img {
+.rodape-preto img  {
     width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
 }
+
