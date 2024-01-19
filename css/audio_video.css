@@ -63,6 +63,8 @@
     border-radius: 10px; 
     border-collapse: collapse;
     border-radius: 20px;
+    overflow: hidden;
+    
 }
 
 th, td {
