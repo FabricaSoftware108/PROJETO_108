@@ -5,6 +5,7 @@ function toggleTable_audio_visual_oferta1(){
     }
     else {
         table.style.display = "none";
+        console.log("a")
     }
 }
 function toggleTable_audio_visual_oferta2(){
