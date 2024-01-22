@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-grad-title);
+}
+
+:root {
+    --font-grad-title:"MontSerrat", sans-serif;
+
+    --color-grad:#198907;
+    --color-grad-title:#249A10;
+
+    --font-size-grad: 8.5px;
+}
+
+/* Gleison */
+
+.container-title-grad {
+    margin: 0 160px;
+    padding: 10px 0;
+}
+
+.container-title-outside {
+    display: flex;
+    font-weight: bold;
+
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+
+    padding: 20px 21px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.container-title-outside-btn {
+    display: flex;
+    font-weight: bold;
+
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+
+    padding: 20px 21px;
+    border: 1px solid transparent;
+    
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+
+.container-grad-table table {
+    width: 100%;
+    border-radius: 10px; 
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+tr:nth-child(2n) {
+    background-color: #D9D9D9;
+}
+tr:nth-child(1) {
+    background-color: #ffffff;
+}
+tr:nth-child(3) {
+    background-color: #ffffff;
+}
+tr:nth-child(5) {
+    background-color: #ffffff;
+}
+
+.container-title-outside {
+    text-align: center;
+}
+
+/*PARTE DO IGOR*/
+
+.container-projetos {
+    text-align: center;
+    background-color: #42B030; 
+    color: white; 
+    padding: 20px; 
+}
+
+.container-projetos h2 {
+    font-size: 32px;
+    font-family: 'Montserrat Light'; 
+}
+
+.container-projetos p {
+    font-size: 32px; 
+    font-family: 'Montserrat Light'; 
+}
+
+.container-requisitos {
+    text-align: center;    
+}
+
+.container-requisitos h3 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-design {
+    background-color: #42B030;
+    padding: 20px;
+}
+
+.container-design h2 {
+    color: #42B030;
+}
+
+.container-design-2 {
+    background-color: #42B030;
+    padding: 20px;
+}
+
+.container-requisitos h3 + ul {
+    margin-left: 20px;
+}
+
+.container-requisitos h3,
+.container-requisitos ul {
+    display: inline;
+}
+
+.container-carrosel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #9C9C8D;
+    color: white; 
+    padding: 20px;
+}
+
+.carrossel {
+    display: flex;
+    align-items: center;
+    max-width: 80%; 
+}
+
+.container-carrosel img {
+    max-width: 30%; 
+    height: auto;
+}
+
+.container-carrosel p {
+    margin: 0 20px;
+    font-size: 32px;
+    font-family: 'Inter Light'; 
+    line-height: 1.5;
+}
+
+.container-requisitos hr,
+.container-carrosel hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.container-requisitos h3,
+.container-requisitos ul,
+.container-carrosel p {
+    margin-top: 15px;
+}
+
+.container-requisitos ul,
+.container-carrosel ul {
+    list-style-type: none;
+}
+
+.container-requisitos ul li,
+.container-carrosel ul li {
+    margin-bottom: 5px;
+}
+
+.container-requisitos h3,
+.container-carrosel h3 {
+    margin-top: 20px;
+}
+
+.container-requisitos .requisitos-listas {
+    display: flex;
+    justify-content: center;
+}
+
+.container-requisitos .requisito-item {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.container-requisitos h3,
+.container-requisitos ul {
+    display: inline;
+}
+
+.container-requisitos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container-requisitos ul li {
+    margin-bottom: 5px;
+}
+
+.container-rodape {    
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #198907;
+}
