@@ -16,7 +16,7 @@ nav {
     left: 0;
     right: 0;
     border-bottom: 1px solid black;
-    height: 80px;
+    height: 50px;
     background-color: white;
     z-index: 1;
 }
@@ -28,6 +28,7 @@ nav img {
 }
 
 nav #menuPages {
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +59,7 @@ nav a {
 
 
 nav li:nth-child(5) a, li:nth-child(6) a{
-    width: 183px;
+    width: 100%;
 }
 
 nav a#logo {
@@ -84,7 +85,7 @@ nav ul#menuFabricas {
     background-color: white;
     padding: 0;
     margin: 0;
-    width: 340px;
+    width: 100%;
     border-radius: 0px 0px 10px 10px;
     padding-bottom: 15px;
     justify-content: center;

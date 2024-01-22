@@ -13,6 +13,7 @@ body {
 }
 
 article {
+  margin-top: 2cm;
   color: black;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -186,4 +187,15 @@ main {
 .img-audioVisual {
   box-shadow: 0pt 0pt 90pt -10pt rgba(66, 176, 48, 1);
   border-radius: 16px;
+}
+
+.rodape-preto {
+  margin-top: 10px;
+
+}
+
+.container-rodape {
+  text-align: center;
+  background-color: transparent;
+  color: black;
 }
