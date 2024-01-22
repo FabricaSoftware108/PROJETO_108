@@ -1,0 +1,47 @@
+h1{
+    font-size: 27pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.requisitos1 h2{
+    font-size: 27pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.requisitos1 p{
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.requisitos{
+    display:flex ;
+    width: 940px;
+    margin: 0 auto;
+}
+.requisitos h5{
+    font-size: 18pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.requisitos li{
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ p{
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+ .projetos h2{
+    font-size: 27pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .projetos p{
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .Grade h1{
+    font-size: 27pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .Grade li {
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
