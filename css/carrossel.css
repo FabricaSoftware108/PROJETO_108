@@ -65,31 +65,31 @@ img {
 }
   
 .swiper-slide {
-    text-align:left; /*arruma o texto */
+    text-align:justify; /*arruma o texto */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .description{
-    font-size: 19px;
+    font-size: 25px;
     color:aliceblue;
-    max-width: 70%;
+    /* max-width: 50%; */
     overflow: hidden;
-
-    /*so serve para limitar as linhas */
+    margin: 4rem;
     
-    /* text-overflow: ellipsis;  */  /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
-    /* display: -webkit-box;  */  /*delimita o texto que vc coloca*/
-    /* -webkit-line-clamp: 5;  */ /*Definir a quantidade de linhas*/
-    /* -webkit-box-orient: vertical; */
+    text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+    display: -webkit-box;   /*delimita o texto que vc coloca*/
+    -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
+    -webkit-box-orient: vertical;
+    line-height: 40px;
 }
 
 .card-image{
-    max-width: 25%;
+    max-width: 40%;
     height: auto;
-    width: 140rem;
-    margin: 4rem;
+    width: 300rem;
+    margin: 1rem;
 }
 
 .card-img{
