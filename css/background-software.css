@@ -1,6 +1,20 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100&display=swap');
+
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-grad-title);
+}
+
+:root {
+    --font-grad-title:"MontSerrat", sans-serif;
+
+    --color-grad:rgba(43, 20, 99, 1);
+    --color-grad-title:rgba(43, 20, 99, 1);
+
+    --font-size-grad: 8.5px;
 }
 
 body{
@@ -50,11 +64,183 @@ main{
     
 }
 .ft51-roxo-gradec{
-    height: 2000px;
+    height: 1900px;
     background-color: rgba(43, 20, 99, 1);
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
 }
 
+/* grade curricular */
+
+.container-title-grad {
+    margin: 0 160px;
+    padding: 10px 0;
+}
+
+.container-title-outside {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+    padding: 20px 21px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.container-title-outside-btn {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+    padding: 20px 21px;
+    border: 1px solid transparent;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+}
 
 
+.container-grad-table table {
+    width: 100%;
+    border-radius: 10px; 
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+tr:nth-child(2n) {
+    background-color: #D9D9D9;
+}
+tr:nth-child(1) {
+    background-color: #ffffff;
+}
+tr:nth-child(3) {
+    background-color: #ffffff;
+}
+tr:nth-child(5) {
+    background-color: #ffffff;
+}
+
+.container-title-outside {
+    text-align: center;
+}
+
+/* carrosel */
+
+span {
+    font-size: x-large;
+}
+  
+img {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+}
+  
+@media (max-width: 450px) { /*para melhoras a qualidade da imagem deixa limitada */
+    .swiper {
+      height: 270px;
+    }
+}
+  
+.swiper-button-prev, .swiper-button-next {
+    color: black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+    border-radius: 50%;
+    background-color: #fff;
+    width: 60px; /* Largura desejada */
+    height: 60px; /* Altura desejada */
+    font-size: 12px;
+    position: absolute;
+    z-index: -1;
+}
+
+.swiper-button-prev {
+    left: 10px; /* Ajusta a posição do botão esquerdo */
+}
+
+.swiper-button-next {
+    right: 10px; /* Ajusta a posição do botão direito */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 10px;
+}
+  
+.swiper-slide{
+    background-color: rgba(102, 30, 159, 1);
+}
+
+@media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+    img {
+      width: 100%;
+    }
+}
+
+.swiper {
+    height: 500px;
+}
+  
+.swiper-slide {
+    text-align:justify; /*arruma o texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    font-size: 25px;
+    color:aliceblue;
+    overflow: hidden;
+    margin: 4rem;
+    
+    text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+    display: -webkit-box;   /*delimita o texto que vc coloca*/
+    -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
+    -webkit-box-orient: vertical;
+    line-height: 40px;
+}
+
+.card-image{
+    max-width: 40%;
+    height: auto;
+    width: 300rem;
+    margin: 1rem;
+}
+
+.card-img{
+    border-radius: 5px;
+}
+
+.swiper-slide{
+    padding: 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto-carrossel {
+    height: 12.1rem;
+}
+
+.grade-curricular {
+    margin: 100px;
+}
