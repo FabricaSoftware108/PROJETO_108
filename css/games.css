@@ -1,3 +1,10 @@
+h1{
+    font-size: 27pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ p{
+    font-size: 12pt;
+ }
 .requisitos{
     display:flex ;
     width: 940px;
