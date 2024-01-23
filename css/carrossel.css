@@ -20,9 +20,9 @@ main {
     justify-content: center;
 }
   
-span {
+/* span {
     font-size: x-large;
-}
+} */
   
 img {
     box-shadow: 0 1px 2px #0003;
@@ -84,18 +84,18 @@ img {
     line-height: 40px;
 }
 
-.card-image{
+.card-image{/* IMAGEM DO CARROSSEL*/
     max-width: 40%;
     height: auto;
     width: 300rem;
     margin: 1rem;
 }
 
-.card-img{
+.card-img{/* DEIXA A BORDA DA IMAGEM REDONDA*/
     border-radius: 5px;
 }
 
-.swiper-slide{
+.swiper-slide{/* SAO OS SLIDES DO CARROSSEL*/
     padding: 90px;
     width: 100%;
     height: 100%;
