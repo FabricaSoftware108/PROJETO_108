@@ -72,7 +72,7 @@ img {
 }
 
 .description{
-    font-size: 25px;
+    font-size: 30px;
     color:aliceblue;
     overflow: hidden;
     margin: 4rem;
@@ -81,7 +81,7 @@ img {
     display: -webkit-box;   /*delimita o texto que vc coloca*/
     -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
     -webkit-box-orient: vertical;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .card-image{/* IMAGEM DO CARROSSEL*/
