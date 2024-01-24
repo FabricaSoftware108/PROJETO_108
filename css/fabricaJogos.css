@@ -164,12 +164,12 @@ main{
 }
 
 .ft51-branco-introdu h1 {
-    font-size: 27px;
-    font-family: Verdana;
+    font-size: 30px;
+    font-family: 'Verdana', 'Geneva', sans-serif;
 }
 
 .ft51-branco-introdu p {
-    font-size: 18px; 
+    font-size: 22px; 
     font-family: sans-serif;
     margin-top: 40px;
     text-align: center;
@@ -177,6 +177,8 @@ main{
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+    line-height: 30px;
+    word-spacing: 5px;
 }
 
 .edital-button {
@@ -242,13 +244,74 @@ main{
 .ft51-vermelho-requisitos{
     height: 980px;
     background-color: rgba(139, 26, 26, 1);
-    
 }
+
+.ft51-branco-requisitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos-requisitos {
+    position: relative;
+    width: 1200px;
+    text-align: center;
+}
+
+.jogos-requisitos h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.jogos-requisitos p {
+    text-align: justify;
+    font-size: 20px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+
+#jogosIdadeConhecimento {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#jogosIdadeConhecimento h2{
+    font-size: 22px;
+}
+
+#jogosIdadeConhecimento #idade {
+    position: relative;
+    margin-right: 15%;
+}
+
+#jogosIdadeConhecimento #idade ul {
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+#jogosIdadeConhecimento #idade ul li {
+    margin-top: 10px;
+}
+
+#jogosIdadeConhecimento #conhecimentos {
+    margin-left: 15%;
+    position: relative;
+}
+
+#jogosIdadeConhecimento #conhecimentos ul {
+    margin-left: 40px;
+    font-size: 18px
+}
+
+#jogosIdadeConhecimento #conhecimentos ul li {
+    margin-top: 10px;
+}
+
 .ft51-branco-gradec{
     height: 980px;
-    background-color:rgba(255, 255, 255,1);
-    
-    
+    background-color:rgba(255, 255, 255,1);  
 }
 .ft51-vermelho-gradec{
     height: 2000px;
