@@ -137,6 +137,8 @@ tr:nth-child(5) {
     text-align: center;
 }
 
+
+
 /* carrosel */
 
 span {
@@ -154,28 +156,36 @@ img {
     }
 }
   
+
 .swiper-button-prev, .swiper-button-next {
-    color: black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+    color:black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
     border-radius: 50%;
-    background-color: #fff;
+    background-color: white;
     width: 60px; /* Largura desejada */
     height: 60px; /* Altura desejada */
     font-size: 12px;
-    position: absolute;
+    /* position: absolute; */
     z-index: -1;
 }
 
+
 .swiper-button-prev {
     left: 10px; /* Ajusta a posição do botão esquerdo */
+    color:black;
+    padding: 34px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-next {
     right: 10px; /* Ajusta a posição do botão direito */
+    color:black;
+    padding: 34px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 10px;
+    font-size: 40px;
+    color: black;
+  
 }
   
 .swiper-slide{
@@ -243,4 +253,16 @@ img {
 
 .grade-curricular {
     margin: 100px;
+    color: white;
+}
+
+
+
+.ft51-branco-introdu{
+
+}
+
+#img-js, #img-html{
+    padding: 23px;
+    opacity: 0.5;
 }
