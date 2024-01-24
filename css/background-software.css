@@ -155,6 +155,20 @@ nav li:hover ul#menuFabricas {
     visibility: visible;
 }
 
+/* texto sobre fabrica software */
+
+.texto-sobre-fabrica-software {
+    font-family: var(--font-grad-title);
+    line-height: 30px;
+    position: absolute;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 13%;
+    height: auto;
+    text-align: justify;
+    font-size: 25px;
+}   
+
 /* fundo */
 
 .ft51-roxo-introdu {
@@ -347,6 +361,7 @@ img {
     color:aliceblue;
     overflow: hidden;
     margin: 4rem;
+    font-family: var(--font-grad-title);
     
     text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
     display: -webkit-box;   /*delimita o texto que vc coloca*/
