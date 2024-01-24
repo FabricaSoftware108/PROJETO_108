@@ -406,10 +406,6 @@ img {
 
 
 
-.ft51-branco-introdu{
-
-}
-
 /* Rodapé */
 
 #img-js, #img-html{
@@ -431,3 +427,62 @@ img {
     width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
 }
+
+
+
+
+
+
+/*icones introducao*/
+#img-icone, #img-icone, #img-icone, #img-icone, #img-icone,#img-icone{
+    opacity: 0.5;
+}
+
+
+.icone-js{
+    width: 20%;
+    height: 8%; /* define o tamanho do icone*/
+    margin:33px;
+    position:absolute; /* serve para ficar mais facil de mudar a posicao dos icones*/
+    top: 9rem; /* altura do icone*/
+    /* left: 400px; deixa o icone indo para a  direita e esquerda */
+}
+
+
+.icone-html{
+    width: 100%;
+    height: 8%;
+    margin:33px; /* define o tamanho do icone*/
+    position:absolute; /* serve para ficar mais facil de mudar a posicao dos icones*/
+    top: 9rem; /* altura do icone*/
+    left: 400px; /* deixa o icone indo para a  direita e esquerda*/
+}
+
+
+
+
+.icone-angular{
+    width: 100%;
+    height: 8%;/* define o tamanho do icone*/
+    margin:3px; 
+    position:absolute; /* serve para ficar mais facil de mudar a posicao dos icones*/
+    top: 35rem; /* altura do icone*/
+    left: 2rem; /* deixa o icone indo para a  direita e esquerda*/
+}
+
+
+.icone-sql{
+    width: 100%;
+    height: 8%;/* define o tamanho do icone*/
+    margin:3px; 
+    position:absolute; /* serve para ficar mais facil de mudar a posicao dos icones*/
+    top: 39rem; /* altura do icone*/
+    left: 45rem; /* deixa o icone indo para a  direita e esquerda*/
+}
+
+
+
+
+
+
+
