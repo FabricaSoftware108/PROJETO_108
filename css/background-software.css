@@ -22,7 +22,7 @@ body, html {
     background-color:  rgba(43, 20, 99, 1);
 }
 
-/*CABEÇA  */
+/* cabecalho  */
 
 
 nav {
@@ -395,9 +395,24 @@ img {
 
 }
 
+/* Rodapé */
+
 #img-js, #img-html{
     padding: 23px;
     opacity: 0.5;
 }
 
- 
+.rodape-branco {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 290rem;
+}
+
+.rodape-branco img  {
+    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
