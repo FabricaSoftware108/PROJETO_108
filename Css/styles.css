@@ -79,7 +79,7 @@ nav a {
   align-items: center;
   display: flex;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12pt;
   letter-spacing: 1px;
   font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
 }
@@ -133,7 +133,7 @@ nav ul #menuFabricas li {
 nav ul#menuFabricas a {
   text-decoration: none;
   height: 0px;
-  font-size: 14px;
+  font-size: 12pt;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
@@ -166,10 +166,10 @@ nav li:hover ul#menuFabricas {
 
 :root {
   --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
-  --font-size-titulo: 27px;
-  --font-size-subTitulo: 18px;
-  --font-size-corpo: 12px;
-  --font-size-legenda: 8px;
+  --font-size-titulo: 27pt;
+  --font-size-subTitulo: 18pt;
+  --font-size-corpo: 12pt;
+  --font-size-legenda: 8pt;
 
 }
 
@@ -218,9 +218,9 @@ nav li:hover ul#menuFabricas {
 
 .content-sobre {
     position: relative;
-    margin-left: 500px ;
+    margin-left: 500px;
+    margin-right: 500px;
     margin-top: 20px;
-
 }
 .content-sobre h1{
     font-size: var(--font-size-titulo);
@@ -228,7 +228,7 @@ nav li:hover ul#menuFabricas {
 
 .content-wrapper{
     display: flex;
-    padding-top: 30px;
+    padding-top: 400px;
     text-align: justify;
     overflow: hidden;
     
