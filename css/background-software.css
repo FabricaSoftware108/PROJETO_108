@@ -17,10 +17,10 @@
     --font-size-grad: 8.5px;
 }
 
-body, html {
+/* body {
     text-align: center;
     background-color:  rgba(43, 20, 99, 1);
-}
+} */
 
 /* cabecalho  */
 
@@ -174,6 +174,7 @@ nav li:hover ul#menuFabricas {
 .ft51-roxo-introdu {
     height: 899px;
     margin-top: 79px;
+    background-color: rgba(43, 20, 99, 1);
 }
 
 .ft51-branco-introdu {
@@ -458,12 +459,6 @@ img {
 
 }
 
-
-
-
-
-
-
 /* deixar por enquanto para fazer testes.*/
 .icone-html{
     width: 100%;
@@ -479,7 +474,6 @@ img {
     top: 35rem; /* altura do icone*/
     
 }
-
 
 .icone-sql{
     width: 100%;
