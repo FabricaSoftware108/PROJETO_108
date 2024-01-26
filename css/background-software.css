@@ -9,7 +9,7 @@
 }
 
 :root {
-    --font-grad-title:"MontSerrat", sans-serif;
+    --font-grad-title: Verdana, Geneva, Tahoma, sans-serif;
 
     --color-grad:rgba(43, 20, 99, 1);
     --color-grad-title:rgba(43, 20, 99, 1);
@@ -17,10 +17,7 @@
     --font-size-grad: 8.5px;
 }
 
-
-
 /* cabecalho  */
-
 
 nav {
     align-items: center;
@@ -68,7 +65,7 @@ nav a {
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 1px;
-    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    font-family: var(--font-grad-title);
 }
 
 
@@ -163,12 +160,13 @@ nav li:hover ul#menuFabricas {
     padding-top: 2%;
     height: auto;
     text-align: justify;
-    font-size: 25px;
+    font-size: 22px;
 }   
 
 .texto-sobre-fabrica-software h1 {
     text-align: center;
     line-height: 15rem;
+    font-size:30px;
 }
 
 .texto-sobre-fabrica-software button {
@@ -234,8 +232,9 @@ nav li:hover ul#menuFabricas {
 /* grade curricular */
 
 .grade-curricular {
-    margin: 100px;
+    margin: 90px 0px 90px 700px;
     color: white;
+    width: 300px;
 }
 
 .container-title-grad {
@@ -330,7 +329,6 @@ img {
     width: 60px; /* Largura desejada */
     height: 60px; /* Altura desejada */
     font-size: 12px;
-    /* position: absolute; */
     z-index: -1;
 }
 
@@ -338,13 +336,13 @@ img {
 .swiper-button-prev {
     left: 10px; /* Ajusta a posição do botão esquerdo */
     color:black;
-    padding: 34px;/* aqui deixa o botao no formato de circulo*/
+    padding: 20px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-next {
     right: 10px; /* Ajusta a posição do botão direito */
     color:black;
-    padding: 34px;/* aqui deixa o botao no formato de circulo*/
+    padding: 20px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-prev::after,
@@ -376,7 +374,7 @@ img {
 }
 
 .description{
-    font-size: 25px;
+    font-size: 20px;
     color:aliceblue;
     overflow: hidden;
     margin: 4rem;
@@ -386,7 +384,7 @@ img {
     display: -webkit-box;   /*delimita o texto que vc coloca*/
     -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
     -webkit-box-orient: vertical;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .card-image{
@@ -407,7 +405,7 @@ img {
 }
 
 .position {
-    width: 100%;
+    width: 1200px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -415,11 +413,22 @@ img {
 }
 
 .projeto-carrossel {
-    height: 12.1rem;
+    height: 12rem;
 }
 
+.projeto-carrossel h1 {    
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
 
-
+.projeto-carrossel p {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+ }
 
 /* Rodapé */
 
@@ -444,7 +453,7 @@ img {
 }
 
 /*icones introducao*/
-#img-icone{
+#imgIcone{
     opacity: 0.5;
     width: 9rem;
     height: 9rem;
