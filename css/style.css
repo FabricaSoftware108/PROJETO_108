@@ -26,7 +26,7 @@ body {
 .contanier-sobre {
     position: relative;
     background-image: url(../img/fundo-sobre.png);
-    background-position: center center;
+    background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
