@@ -236,6 +236,11 @@ nav li:hover ul#menuFabricas {
 
 /* grade curricular */
 
+.grade-curricular {
+    margin: 100px;
+    color: white;
+}
+
 .container-title-grad {
     margin: 0 160px;
     padding: 10px 0;
@@ -416,10 +421,6 @@ img {
     height: 12.1rem;
 }
 
-.grade-curricular {
-    margin: 100px;
-    color: white;
-}
 
 
 
@@ -445,58 +446,41 @@ img {
     height: auto;
 }
 
-
-
-
-
-
 /*icones introducao*/
-#img-icone, #img-icone, #img-icone, #img-icone, #img-icone,#img-icone{
+#img-icone{
     opacity: 0.5;
+    width: 9rem;
+    height: 9rem;
+    padding: 10px;
+    position: absolute;
 }
-
 
 .icone-js{
-    width: 20%;
-    height: 8%; /* define o tamanho do icone*/
-    top: 26%; /* altura do icone*/
-    left: 78%;
-
-   
+    left: 53rem;
+    top: 4rem;
 }
 
-/* ESSE TREM NÃO SAIII DO LUGARRRRRR*/
 .icone-html{
-    width: 10%;
-    height: 8%; /* define o tamanho do icone*/
-    top:34%;  /* altura do icone*/
-    left: 37%;
-   
-
-}
-
-/* deixar por enquanto para fazer testes.*/
-.icone-html{
-    width: 100%;
-    height: 8%;
-    top:10rem;
-  
-    /* o position:absolute, e a margin, e o left é que estavam deixando a página com o trequinho de rolar embaixo*/
+    left: 100rem;
+    top: 8rem;
 }
 
 .icone-angular{
-    width: 100%;
-    height: 8%;/* define o tamanho do icone*/
-    top: 35rem; /* altura do icone*/
-    
+    left: 76rem;
+    top: 43rem;
 }
 
 .icone-sql{
-    width: 100%;
-    height: 8%;/* define o tamanho do icone*/
-    top: 39rem; /* altura do icone*/
+    left: 110rem;
+    top: 45rem;
 }
 
+.icone-csharp {
+    left: 10rem;
+    top: 13rem;
+}
 
-
-
+.icone-css {
+    left: 30rem;
+    top: 45rem;
+}
