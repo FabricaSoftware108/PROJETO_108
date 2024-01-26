@@ -21,7 +21,7 @@ nav {
     border-bottom: 1px solid black;
     height: 80px;
     background-color: white;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav img {
@@ -219,7 +219,7 @@ img {
     height: 60px; /* Altura desejada */
     font-size: 12px;
     /* position: absolute; */
-    z-index: -1;
+    z-index: 0;
 }
 
 
@@ -254,6 +254,7 @@ img {
 
 .swiper {
     height: 500px;
+    z-index: -2;
 }
   
 .swiper-slide {
@@ -276,6 +277,7 @@ img {
     -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
     -webkit-box-orient: vertical;
     line-height: 30px;
+    
 }
 
 .card-image{
