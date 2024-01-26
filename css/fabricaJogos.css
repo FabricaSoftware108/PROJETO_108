@@ -243,7 +243,7 @@ img {
 }
   
 .swiper-slide{
-    background-color: rgba(102, 30, 159, 1);
+    background-color: rgb(141, 3, 3);
 }
 
 @media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
@@ -326,6 +326,7 @@ img {
     background-color: rgba(255, 255, 255,1);
     border-radius: 260px 0 260px 0;
 }
+
 
 #effectRequests1 {
     height: auto;
@@ -434,6 +435,82 @@ img {
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(212, 27, 27, 1);
 }
+
+/*Grade Curricular*/
+
+.grade-curricular {
+    margin: 100px;
+    color: white;
+    margin-left: 40%;
+}
+
+.container-title-grad {
+    margin: 0 160px;
+    padding: 10px 0;
+}
+
+.container-title-outside {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+    padding: 20px 21px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.container-title-outside-btn {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+    padding: 20px 21px;
+    border: 1px solid transparent;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.container-grad-table table {
+    width: 100%;
+    border-radius: 10px; 
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+tr:nth-child(2n) {
+    background-color: #D9D9D9;
+}
+tr:nth-child(1) {
+    background-color: #ffffff;
+}
+tr:nth-child(3) {
+    background-color: #ffffff;
+}
+tr:nth-child(5) {
+    background-color: #ffffff;
+}
+
+.container-title-outside {
+    text-align: center;
+}
+
+
+
 
 #effectIntro1{
     height: auto;
