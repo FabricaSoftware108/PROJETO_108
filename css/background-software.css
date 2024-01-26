@@ -517,20 +517,22 @@ img {
 
 
 
-.container {
+.container-requisitos {
     display: flex;
+    flex-direction: line;
+    margin-top: 100px;
     justify-content: space-around;
 }
 
-.section {
-    flex: 1;
-    text-align: center;
+.titulo {
+    font-size: 30px;
 }
 
 .subtext {
     list-style-type: disc;
-    margin: 0;
     padding: 0;
+    margin-top: 50px;
+    font-size: 22px;
 }
 
 
