@@ -17,10 +17,7 @@
     --font-size-grad: 8.5px;
 }
 
-/* body {
-    text-align: center;
-    background-color:  rgba(43, 20, 99, 1);
-} */
+
 
 /* cabecalho  */
 
@@ -471,7 +468,7 @@ img {
 }
 
 .icone-sql{
-    left: 110rem;
+    left: 105rem;
     top: 45rem;
 }
 
@@ -480,7 +477,52 @@ img {
     top: 13rem;
 }
 
+
 .icone-css {
     left: 30rem;
     top: 45rem;
 }
+
+
+
+/*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
+
+.requisitos_software{
+    font-family: var(--font-grad-title);
+    line-height: 30px;
+    position: absolute;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+    height: auto;
+    text-align: justify;
+    font-size: 25px;
+}
+
+
+
+.requisitos_software h1 {
+    text-align: center;
+    line-height: 10rem;
+} 
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+    flex: 1;
+    text-align: center;
+}
+
+.subtext {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+
+
+
