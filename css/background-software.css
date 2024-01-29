@@ -336,13 +336,13 @@ img {
 .swiper-button-prev {
     left: 10px; /* Ajusta a posição do botão esquerdo */
     color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
+    padding: 30px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-next {
     right: 10px; /* Ajusta a posição do botão direito */
     color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
+    padding: 30px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-prev::after,
@@ -388,7 +388,7 @@ img {
 }
 
 .card-image{
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     width: 300rem;
     margin: 1rem;
@@ -405,11 +405,12 @@ img {
 }
 
 .position {
-    width: 1200px;
+    width: 1500px;/* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/ 
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .projeto-carrossel {
