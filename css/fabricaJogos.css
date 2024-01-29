@@ -362,6 +362,29 @@ img {
     background-color: rgba(139, 26, 26, 1);
 }
 
+
+
+.ft51-vermelho-projetos h1{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px ;
+}
+
+
+.ft51-vermelho-projetos p:nth-child(2){
+    color: white;
+    font-size: 20px;
+    word-spacing: 5px;
+    line-height: 30px;
+    width: 1200px;
+    margin-left: 18%;
+    text-align: justify;
+}
+
+
 .ft51-branco-requisitos{
     display: flex;
     justify-content: center;
