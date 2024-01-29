@@ -166,6 +166,7 @@ footer.rodape-branco {
 .rodape-branco img {
     width: 400px;
     height: auto;
+    box-shadow: inset 0 0 0 3px  rgba(226, 153, 26, 1);
 }
 
 /* CABEÇALHO */
@@ -182,7 +183,7 @@ nav {
     border-bottom: 1px solid black;
     height: 80px;
     background-color: white;
-    z-index: 1;
+    z-index: 999;
 }
 
 nav img {
