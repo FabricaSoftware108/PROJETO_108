@@ -8,6 +8,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -558,13 +570,11 @@ footer.rodape-branco {
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 522%;
     background-color: #8B1A1A;
     height: fit-content;
+    border-collapse: collapse;
+    flex-shrink: 0;
+    margin-top: 2800px;
 }
 
 
