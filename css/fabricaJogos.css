@@ -563,6 +563,8 @@ footer.rodape-branco {
     right: 0;
     bottom: 0;
     top: 524%;
+    background-color: #8B1A1A;
+    height: fit-content;
 }
 
 
