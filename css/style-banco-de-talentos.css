@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-banco-de-talentos{
+    width: 1200px;
+    margin: auto;
+}
+
+.main-banco-de-talentos__titulo{
+    text-align: center;
+}
+
+.bola-fundo-banco-talentos-esquerda {
+    height: 200px;
+    width: 200px;
+    background-color: #AA15C2;
+    border-radius: 50%;
+    filter: blur(90px);
+    text-align: ;
+}
+
+.bola-fundo-banco-talentos-direita {
+    height: 200px;
+    width: 200px;
+    background-color: #AA15C2;
+    border-radius: 50%;
+    filter: blur(90px);
+    text-align: right;
+}
