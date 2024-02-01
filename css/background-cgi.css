@@ -19,6 +19,33 @@ main{
 .ft51-amarelo-introdu{
     height: 899px;
 }
+.texto_introducao{
+    font-family: var(--font-grad-title);
+    line-height: 40px;
+    position: absolute;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+    height: auto;
+    text-align: justify;
+    font-size: 27px;
+}
+.texto_introducao h1{
+    text-align: center;
+    line-height: 15rem;
+    font-size: 56px;
+}
+.texto_introducao button{
+    width: 190px;
+    height: 50px;
+    font-family: var(--font-grad-title);
+    border-radius: 20rem;
+    border: 0px solid ;
+    margin: 6% 0% 0% 43%;
+    background-color: rgba(226, 153, 26, 1);
+    color: white;
+    font-size: 22px;
+}
 
 .ft51-branco-introdu{
     background-color: rgba(255,255,255, 1);
@@ -41,6 +68,37 @@ main{
     background-color: rgba(255, 255, 255,1);
     border-radius: 260px 0 260px 0;
 }
+.requisitos_amarelo{
+    font-family: var(--font-grad-title);
+    line-height: 40px;
+    position: absolute;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+    height: auto;
+    text-align: justify;
+    font-size: 27px;
+}
+.requisitos_amarelo h1{
+    text-align: center;
+    line-height: 10rem;
+}
+.container_requisitos_amarelo{
+    display: flex;
+    flex-direction: line;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+.requisitos_texto_cgi{
+    font-size: 27px;
+}
+.requisitos_titulo_cgi{
+    list-style-type: disc;
+    padding: 0;
+    margin-top: 50px;
+    font-size: 27px;
+}
+
 
 .ft51-amarelo-requisitos{
     height: 980px;
@@ -53,7 +111,7 @@ main{
      
 }
 .ft51-amarelo-gradec{
-    height: 2000px;
+    height: 1050px;
     background-color:rgba(226, 153, 26, 1);
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(226, 153, 26, 1);
@@ -104,7 +162,7 @@ img {
 .swiper {
     height: 500px;
     position: relative;
-    top: 25%;
+    top: 5%;
 }
 
 .swiper-slide {
@@ -119,12 +177,26 @@ img {
     color:aliceblue;
     overflow: hidden;
     margin: 4rem;
-    
     text-overflow: ellipsis;   
     display: -webkit-box;  
     -webkit-line-clamp: 8;  
     -webkit-box-orient: vertical;
     line-height: 40px;
+}
+.projetos_carrosel_amarelo{
+    height: 12rem;
+}
+.projetos_carrosel_amarelo h1{
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 56px;
+}
+.projetos_carrosel_amarelo p{
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: 27px;
 }
 
 .card-image{
@@ -160,7 +232,7 @@ footer.rodape-branco {
     right: 0;
     bottom: 0;
     position: absolute;
-    top: 487%;
+    top: 387%;
 }
 
 .rodape-branco img {
