@@ -5,7 +5,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} 
 
 nav {
     align-items: center;
@@ -19,7 +19,7 @@ nav {
     height: 80px;
     background-color: white;
     z-index: 1;
-}
+} 
 
 nav img {
     height: 50px;

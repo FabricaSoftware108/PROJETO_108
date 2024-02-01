@@ -1,31 +1,14 @@
 @charset "UTF-8";
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-}
-body{
-    text-align: center;
+body, html {
+    align-items: center;
+    display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-}
-main{
-    background-color:  rgba(255, 255, 255, 1);
-}
-
-
-descricao_edital {
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} 
 
-
-
-/* CABEÇALHO */
 nav {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -36,8 +19,8 @@ nav {
     border-bottom: 1px solid black;
     height: 80px;
     background-color: white;
-    z-index: 999;
-}
+    z-index: 1;
+} 
 
 nav img {
     height: 50px;
@@ -157,35 +140,238 @@ nav li:hover ul#menuFabricas {
 
 
 
+.descricao_edital{
 
+    font-family: var(--font-grad-title);
+    line-height: 56px;
+    position: absolute;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+    height:auto;
+    text-align: justify;
+    font-size: 27px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer.rodape-branco {
+}
+.descricao_edital h1{
     text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: relative; 
-    top: 487%;
-}
+    line-height: 15rem;
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 10px;
 
-.rodape-branco img {
-    width: 400px;
-    height: 400px;
 }
+.descricao_edital p{
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.edital_do_aluno {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.borda_roxa{
+    border-radius: rgba(43, 20, 99, 1);
+    margin-top: 40px;
+
+} 
+
+
+
+  
+  .edital-fdV {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+  }
+  
+  .frame-18-zUj {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-guH {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .component-7-Jfm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .auto-group-dq1z-BzT {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .auto-group-zutb-RNK {
+    font-weight: 700;
+  }
+  
+  .rectangle-424-PCf {
+    height: 1px;
+    background-color: #000;
+    margin: 20px 0;
+  }
+  
+  .editais-gBm {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .este-campo-destinado-aos-editais-das-empresas-e-das-fabricas-f-software-fjogos-fcomputao-grfica-e-faudio-visual-xf5 {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .ellipse-7-H55,
+  .ellipse-7-qF1 {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+  .edital-do-aluno-Ymh {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .group-74-9Fh {
+    margin-top: 40px;
+  }
+  
+  .group-75-dwZ {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .op1-zGK {
+    flex: 1;
+    border: 1px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .botoop1-whM,
+  .botoop2-bco,
+  .botoop3-MGX,
+  .botoop4-awu,
+  .botoop5-Ax3,
+  .botoop6-jvb,
+  .botoop6-5uu,
+  .botoop8-b31,
+  .botoop10-Gio {
+    border: 1px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .botoop1-whM,
+  .botoop2-bco,
+  .botoop3-MGX,
+  .botoop4-awu,
+  .botoop5-Ax3,
+  .botoop6-jvb,
+  .botoop6-5uu,
+  .botoop8-b31,
+  .botoop10-Gio {
+    margin-bottom: 20px;
+  }
+  
+  .botoinscrio-D95,
+  .botoinscrio-7r3,
+  .botoinscrio3-gJo,
+  .botoinscrio4-vF5,
+  .botoemandamento1-6ao,
+  .botoemandamento2-f3Z,
+  .botoemandamento3-o5D,
+  .botoencerrado1-Vu5,
+  .botoencerrado2-nh9 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .txtprocessosele1-49h,
+  .txtprocessosele2-wq5,
+  .txtprocessosele3-wEj,
+  .txtprocessosele4-kju,
+  .txtprocessosele5-kQT,
+  .txtprocessosele6-VYP,
+  .txtprocessosele7-1wy,
+  .txtprocessosele8-vUb,
+  .txtprocessosele10-37H {
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  
+  .txtv-ZeB,
+  .txtv-Rdm,
+  .txtv-U8B,
+  .txtv-rRZ,
+  .txtv5-Rf1,
+  .txtv6-nR1,
+  .txtv7-sco,
+  .txtv8-BJ3,
+  .txtv10-v4b {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .auto-group-edw3-gD1,
+  .auto-group-xhuu-JNo {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .txtinfo1-zzP,
+  .txtinfo2-jh5 {
+    margin-bottom: 20px;
+  }
+  
+  .txtinfo1-zzP {
+    font-weight: 700;
+  }
+  
+  .imgrodap-JL3 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .ellipse-6-b4F {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 50%;
+  } 
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
