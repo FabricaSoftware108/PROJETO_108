@@ -170,6 +170,9 @@ nav li:hover ul#menuFabricas {
   --font-size-subTitulo: 18px;
   --font-size-corpo: 27px;
   --font-size-legenda: 8px;
+  --cor-titulo-banco-de-talentos:#000000;
+  --cor-subtitulo-banco-de-talentos:#FFFFFF;
+  --cor-fundo-banco-de-talentos:#281358;
 
 }
 
@@ -502,4 +505,42 @@ nav li:hover ul#menuFabricas {
 .rodape-branco img  {
   width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto;
+}
+
+/* PÁGINA  DO BANCO DE TALENTOS*/
+
+.main-banco-de-talentos{
+  width: 1200px;
+  margin: auto;
+}
+
+.main-banco-de-talentos__titulo{
+  color: var(--cor-titulo-banco-de-talentos);
+  text-align: center;
+}
+
+
+
+.bola-fundo-banco-talentos-esquerda {
+  height: 200px;
+  width: 200px;
+  background-color: #AA15C2;
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+.bola-fundo-banco-talentos-direita {
+  height: 200px;
+  width: 200px;
+  background-color: #AA15C2;
+  border-radius: 50%;
+  filter: blur(90px);
+  text-align: right;
+}
+
+
+.section-formulario-banco-de-talentos {
+height: 1094px;
+background-color: var(--cor-fundo-banco-de-talentos);
+border-radius: 25px;
 }
