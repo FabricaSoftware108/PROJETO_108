@@ -141,6 +141,7 @@ nav li:hover ul#menuFabricas {
 
 
 
+/* aqui faz parte do corpo do site de cadastro de vagas*/
 
 *{
     padding: 0;
@@ -163,7 +164,7 @@ nav li:hover ul#menuFabricas {
 .titulo_vagas p{
     font-size:22px ;
     position: relative;
-    top: 100px;
+    top: 78px;
     text-align: center;
 }
 
@@ -183,7 +184,7 @@ nav li:hover ul#menuFabricas {
     width: 1700px;/* largura do quadrado roxo*/
     height: 1300px;
     position: relative;
-    top:400px;
+    top:250px; /*altura do quadrado roxo*/
     border-radius: 20px;
 }
 
@@ -197,6 +198,19 @@ nav li:hover ul#menuFabricas {
     justify-content: center;
     text-align: center;
 }
+
+
+.titulo_dados_empresa input{
+    border-radius: 9px;
+    height: 40px;
+    width: 345px;
+    padding: 20px;
+    margin: 130px;
+    position: relative;
+    left:9px;
+    
+}
+
 
 
 
