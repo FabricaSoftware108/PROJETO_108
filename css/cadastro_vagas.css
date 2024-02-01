@@ -151,8 +151,8 @@ nav li:hover ul#menuFabricas {
 }
 
 
-.titulo_vagas h1{
-    font-size: 30px;
+.titulo-vagas h1{
+    font-size: 56px;
     position: relative;
     top :100px;
     text-align: center;
@@ -161,8 +161,8 @@ nav li:hover ul#menuFabricas {
     margin: 78px;
 }
 
-.titulo_vagas p{
-    font-size:22px ;
+.titulo-vagas p{
+    font-size:27px ;
     position: relative;
     top: 78px;
     text-align: center;
@@ -179,38 +179,142 @@ nav li:hover ul#menuFabricas {
 } */
 
 
-.quadrado_roxo{
+.quadrado-roxo{
     background-color: rgb(40,19,88,1);
     width: 1700px;/* largura do quadrado roxo*/
-    height: 1300px;
+    height: 2500px;
     position: relative;
-    top:250px; /*altura do quadrado roxo*/
+    top:5px; /*altura do quadrado roxo*/
     border-radius: 20px;
 }
 
 
-.titulo_dados_empresa{
-    font-size: 22px;
+.titulo-dados-empresa h1{
+    font-size: 40px;
     position: relative;
     top: 100px;
     color: white;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 280px;
 }
 
 
-.titulo_dados_empresa input{
-    border-radius: 9px;
-    height: 40px;
-    width: 345px;
-    padding: 20px;
-    margin: 130px;
+.nome-empresa input{
+    height: 60px; /* altura dos inputs*/
+    width: 545px; 
+    padding: 40px;
     position: relative;
-    left:9px;
+    border-radius: 9px;
+    left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+    top:-24px; /* ELE MEXE NA ALTURA DO INPUT*/
+
+    
+}
+
+
+.input-cnpj input{
+   height: 60px; /* altura dos inputs*/
+   width: 545px;
+   padding: 40px;
+   position: relative;
+   /* margin: 130px; */
+   border-radius: 9px;
+   left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+   top:2rem; /* ELE MEXE NA ALTURA DO INPUT*/
+
+}
+
+.input-telefone input{
+    height: 60px; /* altura dos inputs*/
+    width: 545px;
+    padding: 40px;
+    position: relative;
+    /* margin: 130px; */
+    border-radius: 9px;
+    left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+    top:6rem; /* ELE MEXE NA ALTURA DO INPUT*/
+}
+
+
+.input-email input{
+    height: 60px; /* altura dos inputs*/
+    width: 545px;
+    padding: 40px;
+    position: relative;
+    border-radius: 9px;
+    left:67rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+    top:-284px; /* ELE MEXE NA ALTURA DO INPUT*/
+}
+
+.input-cidade input{
+    height: 60px; /* altura dos inputs*/
+    width: 545px;
+    padding: 40px;
+    position: relative;
+    border-radius: 9px;
+    left:67rem;; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+    top:-224px; /* ELE MEXE NA ALTURA DO INPUT*/
+}
+
+
+.input-estado input{
+    height: 60px; /* altura dos inputs*/
+    width: 545px;
+    padding: 40px;
+    position: relative;
+    /* margin: 130px; */
+    border-radius: 9px;
+    left:67rem;; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+    top:-155px; /* ELE MEXE NA ALTURA DO INPUT*/
     
 }
 
 
 
+.titulo-sobre-vaga h2{
+    font-size: 40px;
+    position: relative;
+    color: white;
+    left: 44rem;
+}
 
+.titulo-sobre-vaga p{
+    font-size:27px ;
+    position: relative;
+    color: white;
+    top: 60px;
+    margin-left: 100px;/*esquerda do texto*/
+    margin-right: 120px;/* direita texto*/
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.campo-texto-descricao input{
+    height: 760px; /* altura dos inputs*/
+    width: 1540px;
+    padding: 40px;
+    position: relative;
+    /* margin: 130px; */
+    border-radius: 9px;
+    left:78px; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
+    top:200px; /* ELE MEXE NA ALTURA DO INPUT*/
+    padding-bottom: 679px;
+    font-size: 27px;
+}
+
+.button-enviar button{
+    padding: 20px;
+    width: 344px;
+    height: 78px;
+    border-radius: 5px;
+    position: relative;
+    top: 400px;
+    left: 650px;
+    background-color: rgb(40,19,88,1);
+    border: #3B96EB;
+}
