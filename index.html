@@ -8,13 +8,24 @@
 <body>
     <h1>Cadastro da Fábrica de Software</h1>
     <h2>Aluno PSG</h2>
-    <p>"O programa de gratuidade SENAC é uma politica de incentivo única que busca
-        oferecer uma educação profissional inclusiva com instrutores especializados e gratuita"</p>
-    <main>
-        <form class="inf_pessoal">
-            nome completo
-            
-        </form>
-    </main> 
+    
+    <form action="send.php">
+
+
+        <fieldset class="inf_pessoal">
+            <div class="form_pessoal">
+                
+                <legend>informaçoes pessoais</legend>
+                <p>Nome Completo    <input type="text" name="texto" id="a" size="20" maxlength="10" placeholder="nome"></p>
+                <p>CPF <input type="text" name="texto" id="b" size="20" maxlength="10" placeholder="sobrenome"></p>
+                <p>RG        <input type="number" name="number" id="c" size="20" maxlength="10" placeholder="rg"></p>
+                <p>TELEFONE       <input type="number" name="number" id="d" size="20" maxlength="10" placeholder="cpf"></p>
+                <p>E-mail     <input type="date" name="date" id="e" size="20" maxlength="10" placeholder="idade"></p>
+                <p>Nome da Mãe     <input type="date" name="date" id="e" size="20" maxlength="10" placeholder="idade"></p>
+                <p>Nome do Pai    <input type="date" name="date" id="e" size="20" maxlength="10" placeholder="idade"></p>
+            </div>
+        </fieldset>
+
+    </form>
 </body>
 </html>
