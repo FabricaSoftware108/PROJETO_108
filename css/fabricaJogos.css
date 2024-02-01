@@ -8,6 +8,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav {
@@ -66,6 +78,9 @@ nav li:nth-child(5) a, li:nth-child(6) a{
 
 nav a#logo {
     margin: 0;
+}
+nav a#logo img{
+    box-shadow: none;
 }
 
 nav li #admButton {
@@ -164,15 +179,15 @@ main{
 }
 
 .ft51-branco-introdu h1 {
-    font-size: 30px;
+    font-size: 56px;
     font-family: 'Verdana', 'Geneva', sans-serif;
 }
 
 .ft51-branco-introdu p {
-    font-size: 22px; 
+    font-size: 27px; 
     font-family: sans-serif;
     margin-top: 40px;
-    text-align: center;
+    text-align: justify;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +199,7 @@ main{
 .edital-button {
     background-color: #8B1A1A;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 27px;
     font-family: sans-serif;
     padding: 10px 60px;
     border: none;
@@ -310,8 +325,6 @@ img {
 
 
 
-
-
 .ft51-vermelho-projetos{
     background-color: rgba(139, 26, 26, 1);
     border-radius: 0 240px 220px 0;
@@ -367,7 +380,7 @@ img {
 .ft51-vermelho-projetos h1{
     margin-bottom: 30px;
     color: white;
-    font-size: 30px;
+    font-size: 56px;
     text-align: center;
     position: relative;
     margin-top: 60px ;
@@ -376,12 +389,17 @@ img {
 
 .ft51-vermelho-projetos p:nth-child(2){
     color: white;
-    font-size: 20px;
+    font-size: 27px;
     word-spacing: 5px;
     line-height: 30px;
     width: 1200px;
     margin-left: 18%;
     text-align: justify;
+    margin-bottom: -120px;
+}
+
+.ft51-vermelho-projetos p{
+    font-size: 27px;
 }
 
 
@@ -399,12 +417,12 @@ img {
 
 .jogos-requisitos h1{
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 56px;
 }
 
 .jogos-requisitos p {
     text-align: justify;
-    font-size: 20px;
+    font-size: 27px;
     word-spacing: 5px;
     line-height: 30px;
 }
@@ -453,7 +471,7 @@ img {
     background-color:rgba(255, 255, 255,1);  
 }
 .ft51-vermelho-gradec{
-    height: 2000px;
+    height: 1200px;
     background-color:rgba(139, 26, 26, 1);
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(212, 27, 27, 1);
@@ -476,7 +494,7 @@ img {
     display: flex;
     font-weight: bold;
     background-color: var(--color-grad-title);
-    font-size: 13px;
+    font-size: 27px;
     color: white;
     padding: 20px 21px;
     border: 1px solid white;
@@ -506,8 +524,7 @@ img {
     border-radius: 10px; 
     border-collapse: collapse;
     border-radius: 20px;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
 th, td {
@@ -558,15 +575,16 @@ footer.rodape-branco {
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 524%;
+    background-color: #8B1A1A;
+    height: fit-content;
+    border-collapse: collapse;
+    flex-shrink: 0;
+    margin-top: 3000px;
 }
 
 
 .rodape-branco img  {
     width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
+    box-shadow: none;
 }
