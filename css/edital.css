@@ -233,7 +233,7 @@ nav {
     border-bottom: 1px solid black;
     height: 80px;
     background-color: white;
-    z-index: 1;
+    z-index: 999;
 } 
 
 nav img {
@@ -381,7 +381,7 @@ button {
   background: #ffffff;
   overflow: hidden;
 }
-.wrapper {
+.borda_roxa {
   position: relative;
   width: 1268px;
   height: 958px;
@@ -392,7 +392,7 @@ button {
   border-radius: 20px;
   box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.section {
+.sombra {
   position: relative;
   width: 1209px;
   height: 65px;
@@ -401,18 +401,33 @@ button {
   z-index: 99;
   border-radius: 15px;
 }
-.img {
-  position: absolute;
-  width: 37px;
-  height: 37px;
-  top: 14px;
-  left: 1144px;
-  background: url(./assets/images/3e973074-c58d-4db4-8252-ecf5a74f2fc1.png)
-    no-repeat center;
-  background-size: cover;
+.titulo_edital{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 56px;
+  position: relative;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+  height:auto;
+  text-align: justify;
+  font-size: 27px;
+}
+.titulo_edital h1 {
+  text-align: center;
+  line-height: 15rem;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 10px;
   z-index: 104;
 }
-.section-2 {
+.titulo_edital p{
+  text-align: center;
+  margin: 50px;
+  font-size: 27px;
+  margin-bottom: 10%;
+}
+
+.inscricoes {
   position: absolute;
   width: 207px;
   height: 33px;
@@ -421,7 +436,7 @@ button {
   background: #68da55;
   z-index: 102;
   border-radius: 10px;
-}
+} 
 .text {
   display: flex;
   align-items: flex-start;
@@ -439,7 +454,7 @@ button {
   white-space: nowrap;
   z-index: 103;
 }
-.wrapper-2 {
+.text1_1 {
   position: absolute;
   width: 666px;
   height: 18px;
@@ -453,6 +468,15 @@ button {
   text-overflow: initial;
   white-space: nowrap;
   z-index: 100;
+}
+.text-1 {
+  position: relative;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
 }
 .text-2 {
   position: relative;
@@ -472,16 +496,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.text-4 {
-  position: relative;
-  color: #000000;
-  font-family: Inter, var(--default-font-family);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.784px;
-  text-align: left;
-}
-.wrapper-3 {
+.sobre_candidatar {
   position: relative;
   width: 1215.185px;
   height: 192.179px;
@@ -492,7 +507,7 @@ button {
   overflow: visible auto;
   border-radius: 31px;
 }
-.wrapper-4 {
+.candidata-se {
   position: relative;
   width: 587px;
   height: 52px;
@@ -501,7 +516,7 @@ button {
   z-index: 96;
   border-radius: 10px;
 }
-.text-5 {
+.candidata-se text-1 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -519,7 +534,7 @@ button {
   white-space: nowrap;
   z-index: 97;
 }
-.text-6 {
+.text--2 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -536,7 +551,7 @@ button {
   text-align: left;
   z-index: 94;
 }
-.text-7 {
+.text--3 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1503,7 +1518,7 @@ button {
   line-height: 58px;
   text-align: left;
   white-space: nowrap;
-  z-index: 7;
+  z-index: 0;
 }
 .text-30 {
   display: flex;
@@ -1520,7 +1535,7 @@ button {
   line-height: 26.625px;
   text-align: center;
   text-overflow: initial;
-  z-index: 8;
+  z-index: 0;
   overflow: hidden;
 }
 .pic-5 {
@@ -1529,8 +1544,8 @@ button {
   height: 423px;
   top: -4px;
   left: 2px;
-  background: url(./assets/images/b5791753-e15b-4e12-ae45-72da6ffba4f9.png)
-    no-repeat center;
+  /* background: url(./assets/images/b5791753-e15b-4e12-ae45-72da6ffba4f9.png)
+    no-repeat center; */
   background-size: cover;
   z-index: 4;
 }
@@ -1575,5 +1590,5 @@ button {
   line-height: 58.512px;
   text-align: left;
   white-space: nowrap;
-  z-index: 22;
+  z-index: 1;
 }
