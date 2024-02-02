@@ -520,6 +520,11 @@ nav li:hover ul#menuFabricas {
 }
 
 
+.banco-talentos-decoracao-bolas  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .bola-fundo-banco-talentos-esquerda {
   height: 200px;
@@ -527,6 +532,7 @@ nav li:hover ul#menuFabricas {
   background-color: #AA15C2;
   border-radius: 50%;
   filter: blur(90px);
+
 }
 
 .bola-fundo-banco-talentos-direita {
@@ -543,30 +549,33 @@ nav li:hover ul#menuFabricas {
 height: 69em;
 background-color: var(--cor-fundo-banco-de-talentos);
 border-radius: 25px;
-display: flex;
-flex-direction: column;
 }
 
 .formulario-banco-talentos-titulo {
     font-size: 40px;
     text-align: center;
+    padding: 2em;
 }
 
 .formulario-banco-talentos{
-  display: flex;
-  flex-direction: column;
+  display: flexbox;
+  justify-content: space-between;
 }
 
-.input-dados-pessoais-maior {
-  width: 38em;
-  height: 3em;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-.input-dados-pessoais-menor {
+.input-dados-pessoais {
   width: 26em;
   height: 3em;
   border-radius: 10px;
   font-size: 16px;
+}
+
+.botao-enviar-dados-pessoais {
+  text-align: center;
+  width: 20%;
+  height: 4.5em;
+  cursor: pointer;
+  color: #3B96EB;
+  background-color: transparent;
+  border: 2px solid #3B96EB;
+  border-radius: 15px;
 }
