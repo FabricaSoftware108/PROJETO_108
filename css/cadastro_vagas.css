@@ -310,11 +310,14 @@ nav li:hover ul#menuFabricas {
 .button-enviar button{
     padding: 20px;
     width: 344px;
-    height: 78px;
-    border-radius: 5px;
+    height: 80px;
+    border-radius: 7px;
     position: relative;
     top: 400px;
     left: 650px;
     background-color: rgb(40,19,88,1);
-    border: #3B96EB;
+    border: 3px double  #3B96EB;
+    font-size: 27px;
+    color : #3B96EB;
+
 }
