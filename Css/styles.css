@@ -33,6 +33,7 @@ main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
+  margin-top: 20px;
 }
 
 nav {
@@ -470,9 +471,6 @@ nav li:hover ul#menuFabricas {
   color: black;
 }
 
-
-
-
 .rodape-branco {
   text-align: center;
   padding-top: 20px;
@@ -502,4 +500,46 @@ nav li:hover ul#menuFabricas {
 .rodape-branco img  {
   width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto;
+}
+
+.campo-preenchimento{
+  color: black;
+  margin-top: 110px;
+  font-size: var(--font-size-corpo);
+}
+
+.campo-preenchimento #titulo{
+  margin-left: 240px;
+}
+
+.info-pessoais {
+  background-color: rgba(40, 19, 88, 1);
+  border-radius: 10px;
+}
+
+.container-form {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  margin-top: 50px;
+  margin-left: 60px;
+  font-size: 27px;
+}
+
+.forms input {
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sub-titulo-pessoais {
+  color: white;
+  margin-left: 310px;
+}
+
+.sub-titulo-endereco {
+  color: white;
+  margin-left: 420px;
 }
