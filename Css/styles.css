@@ -32,6 +32,7 @@ body, html{
   background-color: white; 
   background-size: cover;
   background-position: center;
+  overflow: hidden auto;
 }
 
 article {
@@ -528,6 +529,7 @@ body::before {
   transform: translate(-85%, -25%); 
   opacity: 25%;
   filter: blur(3rem);
+  z-index: 0;
 }
 
 body::after {
@@ -535,6 +537,7 @@ body::after {
   transform: translate(85%, 35%); 
   opacity: 25%;
   filter: blur(3rem);
+  z-index: 0;
 }
 
 
