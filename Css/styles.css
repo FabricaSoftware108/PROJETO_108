@@ -510,7 +510,7 @@ nav li:hover ul#menuFabricas {
 /* PÁGINA  DO BANCO DE TALENTOS*/
 
 .main-banco-de-talentos{
-  width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
@@ -540,7 +540,33 @@ nav li:hover ul#menuFabricas {
 
 
 .section-formulario-banco-de-talentos {
-height: 1094px;
+height: 69em;
 background-color: var(--cor-fundo-banco-de-talentos);
 border-radius: 25px;
+display: flex;
+flex-direction: column;
+}
+
+.formulario-banco-talentos-titulo {
+    font-size: 40px;
+    text-align: center;
+}
+
+.formulario-banco-talentos{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-dados-pessoais-maior {
+  width: 38em;
+  height: 3em;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.input-dados-pessoais-menor {
+  width: 26em;
+  height: 3em;
+  border-radius: 10px;
+  font-size: 16px;
 }
