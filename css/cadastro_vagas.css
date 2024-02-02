@@ -319,5 +319,19 @@ nav li:hover ul#menuFabricas {
     border: 3px double  #3B96EB;
     font-size: 27px;
     color : #3B96EB;
+}
 
+.rodape-preto {
+    text-align: center;
+    padding-top: 320px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 390rem;
+}
+
+.rodape-preto img  {
+    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
 }
