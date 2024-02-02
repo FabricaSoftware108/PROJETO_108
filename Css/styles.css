@@ -8,6 +8,20 @@
   font-family: var(--font-destaque);
 }
 
+:root {
+  --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
+  --font-size-titulo: 56px;
+  --font-size-subTitulo: 18px;
+  --font-size-corpo: 27px;
+  --font-size-legenda: 8px;
+  --line-height: 40px;
+
+  --font-color-pagdemanda-title-subtitle: #000;
+
+  --background-color-demanda-cadastro: #281358;
+
+}
+
 body, html{
   margin: 0;
   padding: 0;
@@ -164,15 +178,6 @@ nav li:hover ul#menuFabricas {
   visibility: visible;
 }
 
-:root {
-  --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
-  --font-size-titulo: 56px;
-  --font-size-subTitulo: 18px;
-  --font-size-corpo: 27px;
-  --font-size-legenda: 8px;
-
-}
-
 .contanier-sobre {
     position: relative;
     background-image: url(../Imagens/fundo-sobre.png);
@@ -239,7 +244,7 @@ nav li:hover ul#menuFabricas {
     max-width: 700px;
     padding-right: 50px;
     margin-right: 20px;
-    line-height: 40px;
+    line-height: var(--line-height);
     font-size: 18pt;
 }
 .content-sobre-wrapper-home {
@@ -542,4 +547,33 @@ body::after {
   left: 50%; 
   top: 50%; 
   transform: translate(-50%, -25%); 
+}
+/* DEMANDA */
+
+.content-title-subtitle-demanda {
+  padding: 20px 0 0 0;
+  color: var(--font-color-pagdemanda-title-subtitle);
+  text-align: center;
+
+}
+
+.container-campo-dados-demanda {
+  background-color: var(--background-color-demanda-cadastro);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.content-title-subtitle-demanda h1{
+  font-size: var(--font-size-titulo)
+
+}
+
+.content-title-subtitle-demanda p {
+  font-size: var(--font-size-subTitulo);
+
+}
+
+.content-wrapper-all-demanda {
+  margin-top: 100px;
+  
 }
