@@ -169,21 +169,33 @@ nav li:hover ul#menuFabricas {
 }
 
 
-/* aqui é da sombra roxa.*/
-/* .roxo_projetos{
-    background-color: rgba(43, 20, 99, 1);
-    border-radius: 0 240px 220px 0;
-    padding-top: 50px;
-    height: 980px;
-    box-shadow: 100px 0px 81px -50px rgba(45, 0, 148, 1);
-} */
 
+.sombra-roxa{
+    box-shadow: 92px 76px 129px 21px rgba(45, 0, 148, 1);
+    left: -229px;
+    height: 350px;/* comprimento da sombra(largura-altura)*/
+    width: 156px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+} 
+
+
+.sombra-rosa{
+    box-shadow: -53px 21px 92px 100px #ab15c26b;
+    left: 1894px;
+    height: 350px;/* comprimento da sombra(largura-altura)*/
+    width: 156px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
 
 .quadrado-roxo{
     background-color: rgb(40,19,88,1);
     width: 1700px;/* largura do quadrado roxo*/
     height: 2500px;
-    position: relative;
+    position: relative;/**/
     top:5px; /*altura do quadrado roxo*/
     border-radius: 20px;
 }
@@ -275,9 +287,15 @@ nav li:hover ul#menuFabricas {
 
 .titulo-sobre-vaga h2{
     font-size: 40px;
-    position: relative;
+    /* position: relative; /* ele estava deixando a pagina com o negócio de arrastar pro lado.*/
     color: white;
-    left: 44rem;
+    left: 89px;
+    margin-left: 700px;/*esquerda do texto*/
+    margin-right: 120px;/* direita texto*/
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .titulo-sobre-vaga p{
@@ -323,15 +341,20 @@ nav li:hover ul#menuFabricas {
 
 .rodape-preto {
     text-align: center;
-    padding-top: 320px;
     padding-bottom: 10px;
     position: absolute;
     left: 0;
     right: 0;
-    top: 390rem;
+    top: 200rem;/* aqui mexe na distancia(altura) do rodapé*/
 }
 
 .rodape-preto img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 700px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
+}
+
+
+
+main{
+max-height: 1200px ;
 }
