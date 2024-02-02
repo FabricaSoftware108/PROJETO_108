@@ -35,6 +35,7 @@ main {
   padding: 0 20px;
 }
 
+
 nav {
   align-items: center;
   justify-content: center;
@@ -46,7 +47,7 @@ nav {
   border-bottom: 1px solid black;
   height: 70px;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav img {
@@ -502,4 +503,397 @@ nav li:hover ul#menuFabricas {
 .rodape-branco img  {
   width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto;
+}
+
+
+/*FABRICA SOFT*/
+
+.software{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.texto-sobre-fabrica-software {
+  font-family: var(--font-grad-title);
+  line-height: 30px;
+  position: absolute;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+  height: auto;
+  text-align: justify;
+  font-size: 22px;
+  color: black;
+}   
+
+.texto-sobre-fabrica-software h1 {
+  text-align: center;
+  line-height: 15rem;
+  font-size:30px;
+}
+
+.texto-sobre-fabrica-software button {
+  width: 190px;
+  height: 50px;
+  font-family: var(--font-grad-title);
+  border-radius: 20rem;
+  margin: 6% 0% 0% 43%;
+  background-color: rgba(43, 20, 99, 1);
+  color: white;
+  font-size: 22px;
+}
+
+.ft51-roxo-introdu {
+  height: 899px;
+  margin-top: 70px;
+  background-color: rgba(43, 20, 99, 1);
+}
+
+.ft51-branco-introdu {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 260px 0 0 260px;
+}
+
+.ft51-roxo-projetos {
+  background-color: rgba(43, 20, 99, 1);
+  border-radius: 0 240px 220px 0;
+  padding-top: 50px;
+  height: 980px;
+  box-shadow: 100px 0px 81px -50px rgba(45, 0, 148, 1);
+}
+
+.ft51-branco-requisitos{
+  height: 980px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 260px 0 260px 0;
+}
+
+.ft51-roxo-requisitos {
+  height: 980px;
+  background-color: rgba(43, 20, 99, 1);
+  
+}
+.ft51-branco-gradec{
+  height: 980px;
+  background-color:rgba(255, 255, 255, 1);
+  
+  
+}
+.ft51-roxo-gradec{
+  height: 1900px;
+  background-color: rgba(43, 20, 99, 1);
+  border-radius: 260px 0 0 0;
+  box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
+}
+
+/* grade curricular */
+
+.grade-curricular {
+  margin: 90px 0px 90px 700px;
+  color: white;
+  width: 300px;
+}
+
+.container-soft-title-grad {
+  margin: 0 160px;
+  padding: 10px 0;
+}
+
+.container-soft-title-outside {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--color-grad-title);
+  font-size: 13px;
+  color: white;
+  padding: 20px 21px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.container-soft-title-outside-btn {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--color-grad-title);
+  font-size: 13px;
+  color: white;
+  padding: 20px 21px;
+  border: 1px solid transparent;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+.container-soft-grad-table table {
+  width: 100%;
+  border-radius: 10px; 
+  border-collapse: collapse;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+th, td {
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+}
+
+tr:nth-child(2n) {
+  background-color: #D9D9D9;
+}
+tr:nth-child(1) {
+  background-color: #ffffff;
+}
+tr:nth-child(3) {
+  background-color: #ffffff;
+}
+tr:nth-child(5) {
+  background-color: #ffffff;
+}
+
+.container-soft-title-outside {
+  text-align: center;
+}
+
+/* carrosel */
+
+span {
+  font-size: x-large;
+}
+
+.card-img { /*mudei de img para card-img pq tava dando comflito com o home */
+  box-shadow: 0 1px 2px #0003;  
+  width: 100%;
+}
+
+@media (max-width: 450px) { /*para melhoras a qualidade da imagem deixa limitada */
+  .swiper {
+    height: 270px;
+  }
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  color:black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+  border-radius: 50%;
+  background-color: white;
+  width: 60px; /* Largura desejada */
+  height: 60px; /* Altura desejada */
+  font-size: 12px;
+  z-index: -1;
+}
+
+
+.swiper-button-prev {
+  left: 10px; /* Ajusta a posição do botão esquerdo */
+  color:black;
+  padding: 30px;/* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-next {
+  right: 10px; /* Ajusta a posição do botão direito */
+  color:black;
+  padding: 30px;/* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 40px;
+  color: black;
+
+}
+
+.swiper-slide{
+  background-color: rgba(102, 30, 159, 1);
+}
+
+@media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+  img {
+    width: 100%;
+  }
+}
+
+.swiper {
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align:justify; /*arruma o texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description{
+  font-size: 20px;
+  color:aliceblue;
+  overflow: hidden;
+  margin: 4rem;
+  font-family: var(--font-grad-title);
+  
+  text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+  display: -webkit-box;   /*delimita o texto que vc coloca*/
+  -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
+  -webkit-box-orient: vertical;
+  line-height: 30px;
+}
+
+.card-image{
+  max-width: 100%;
+  height: auto;
+  width: 300rem;
+  margin: 1rem;
+}
+
+.card-img{
+  border-radius: 5px;
+}
+
+.swiper-slide{
+  padding: 90px;
+  width: 100%;
+  height: 100%;
+}
+
+.position {
+  width: 1500px;/* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/ 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.projeto-carrossel {
+  height: 12rem;
+}
+
+.projeto-carrossel h1 {    
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.projeto-carrossel p {
+  color: white;
+  text-align: center;
+  margin: 50px;
+  font-size: 20px;
+}
+
+/* Rodapé */
+
+#img-js, #img-html{
+  padding: 23px;
+  opacity: 0.5;
+}
+
+.rodape-branco {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 290rem;
+}
+
+.rodape-branco img  {
+  width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+
+/*icones introducao*/
+#imgIcone{
+  opacity: 0.5;
+  width: 9rem;
+  height: 9rem;
+  padding: 10px;
+  position: absolute;
+}
+
+.icone-js{
+  left: 53rem;
+  top: 4rem;
+}
+
+.icone-html{
+  left: 100rem;
+  top: 8rem;
+}
+
+.icone-angular{
+  left: 76rem;
+  top: 43rem;
+}
+
+.icone-sql{
+  left: 105rem;
+  top: 45rem;
+}
+
+.icone-csharp {
+  left: 10rem;
+  top: 13rem;
+}
+
+
+.icone-css {
+  left: 30rem;
+  top: 45rem;
+}
+
+
+
+/*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
+
+.requisitos_software{
+  font-family: var(--font-grad-title);
+  line-height: 30px;
+  position: absolute;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+  height: auto;
+  text-align: justify;
+  font-size: 22px;
+  color: black;
+}
+
+
+
+.requisitos_software h1 {
+  text-align: center;
+  line-height: 10rem;
+} 
+
+
+
+.container-soft-requisitos {
+  display: flex;
+  flex-direction: line;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.titulo {
+  font-size: 22px;
+}
+
+.subtext {
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 22px;
 }
