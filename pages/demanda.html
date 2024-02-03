@@ -40,30 +40,36 @@
                 <h1>Demanda</h1>
                 <p>Este campo é destinado a Demanda de projetos para as Fábricas de Tecnologia <br>
                     (F. Software, F.Jogos, F.Computação Gráfica e F.Audio Visual)</p>
-                </div>
-            <div class="effect-blur-demanda"></div>
-            <div class="effect-blur-demanda" id="effect-2"></div>
+            </div>
             <div class="container-campo-dados-demanda">
                 <div class="campo-dados-demanda">
-                    <div class="Dados-Empresa-demanda">
-                        <h2>Dados da Empresa</h2>
-                        <input type="text" id="nomeEmpresaDemanda">
-                        <input type="text" id="cnpjDemanda">
-                        <input type="text" id="telefoneDemanda">
-                        <input type="text" id="emailDemanda">
-                        <input type="text" id="cidadeDemanda">
-                        <input type="text" id="estadoDemanda">
+                    <h1>Dados da Empresa</h1>
+                    <div class="dados-Empresa-demanda">
+                        <div class="inputs-empresa-Demanda">
+                            <input type="text" id="nomeEmpresaDemanda" placeholder="Nome da Empresa">
+                            <input type="text" id="cnpjDemanda" placeholder="CNPJ">
+                            <input type="text" id="telefoneDemanda" placeholder="Telefone">
+                            <input type="text" id="emailDemanda" placeholder="E-Mail">
+                            <input type="text" id="cidadeDemanda" placeholder="Cidade">
+                            <input type="text" id="estadoDemanda" placeholder="Estado">
+                        </div>
                     </div>
-                    <div class="Dados-Titular-demanda">
-                        <h2>Dados do Titular da Empresa</h2>
-                        <input type="text" id="nomeTitularDemanda">
-                        <input type="text" id="cpfTitularDemanda">
-                        <input type="text" id="emailTitularDemanda">
-                        <input type="text" id="telefoneTitularDemanda">
+                    <h2>Dados do Titular da Empresa</h2>
+                    <div class="dados-Titular-demanda">
+                        <div class="inputs-titular-Demanda">
+                            <input type="text" id="nomeTitularDemanda" placeholder="Nome do Titular">
+                            <input type="text" id="cpfTitularDemanda" placeholder="CPF">
+                            <input type="text" id="emailTitularDemanda" placeholder="E-mail">
+                            <input type="text" id="telefoneTitularDemanda" placeholder="Telefone">
+                        </div>
                     </div>
-                    <div class="Sobre-Projeto-Demanda">
+                    <div class="sobre-Projeto-Demanda">
                         <h2>Sobre seu Projeto</h2>
-                        <input type="file" id="AnexarArquivoDemanda" accept=".pdf, .docx">
+                        <label for="file-input" class="file-label">
+                            Arquivo pdf ou docx
+                            <input type="file" id="file-input" class="file-input" title="Arquivo pdf ou docx">
+                        </label>
+                        <!-- <input type="file" id="anexarArquivoDemanda" accept=".pdf, .docx" title="Arquivo pdf ou docx"> -->
                         <button class="enviar-Demanda">Enviar</button>
                     </div>
                 </div>
