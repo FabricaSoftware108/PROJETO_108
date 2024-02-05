@@ -577,18 +577,16 @@ button {
   z-index: 85;
   border-radius: 15px;
 }
-.img-2 {
+.inscricoes-2 {
   position: absolute;
   width: 37px;
   height: 37px;
   top: 14px;
   left: 1144px;
-  background: url(./assets/images/d0da3f36-bd92-4597-97e4-f5e77e9e48db.png)
-    no-repeat center;
   background-size: cover;
   z-index: 90;
 }
-.section-3 {
+.inscricoes2{
   position: absolute;
   width: 207px;
   height: 33px;
@@ -598,7 +596,7 @@ button {
   z-index: 88;
   border-radius: 10px;
 }
-.text-8 {
+.inscricoes text-1 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -615,7 +613,7 @@ button {
   white-space: nowrap;
   z-index: 89;
 }
-.wrapper-5 {
+.sobre_curso {
   position: absolute;
   width: 686px;
   height: 18px;
@@ -630,7 +628,7 @@ button {
   white-space: nowrap;
   z-index: 86;
 }
-.text-9 {
+.sobre_curso text-1 {
   position: relative;
   color: #000000;
   font-family: Inter, var(--default-font-family);
@@ -639,7 +637,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.text-a {
+.sobre_curso text-2 {
   position: relative;
   color: #000000;
   font-family: Inter, var(--default-font-family);
@@ -648,7 +646,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.text-b {
+.sobre_curso text-3 {
   position: relative;
   color: #000000;
   font-family: Inter, var(--default-font-family);
@@ -657,7 +655,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.wrapper-6 {
+.inscricoes3 {
   position: relative;
   width: 1209px;
   height: 65px;
@@ -687,7 +685,7 @@ button {
   z-index: 80;
   border-radius: 10px;
 }
-.text-c {
+.inscricoes3 text-1 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -704,7 +702,7 @@ button {
   white-space: nowrap;
   z-index: 81;
 }
-.section-4 {
+.sobre_curso2 {
   position: absolute;
   width: 686px;
   height: 18px;
@@ -719,7 +717,7 @@ button {
   white-space: nowrap;
   z-index: 78;
 }
-.text-d {
+.sobre_curso2 text-1{
   position: relative;
   color: #000000;
   font-family: Inter, var(--default-font-family);
@@ -728,7 +726,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.text-e {
+.sobre_curso2 text-2 {
   position: relative;
   color: #000000;
   font-family: Inter, var(--default-font-family);
@@ -737,7 +735,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.text-f {
+.sobre_curso2 text-3 {
   position: relative;
   color: #000000;
   font-family: Inter, var(--default-font-family);
