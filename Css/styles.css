@@ -230,19 +230,24 @@ nav li:hover ul#menuFabricas {
 
 .content-wrapper{
     display: flex;
-    text-align: justify;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .content-wrapper p{
-    width: 600px;
-    height: 350px;
-    max-width: 700px;
-    padding-right: 50px;
-    margin-right: 20px;
-    line-height: 40px;
-    font-size: 18pt;
+  width: 580px;
+  height: 350px;
+  max-width: 700px;
+  padding-right: 50px;
+  line-height: 40px;
+  font-size: 18pt;
+  text-align: justify;
 }
+
+.content-wrapper img{
+  width: 500px;
+  height: auto;
+}
+
 .content-sobre-wrapper-home {
   display: flex;
   justify-content: center;
@@ -305,10 +310,8 @@ nav li:hover ul#menuFabricas {
 }
 
 .container-left p {
-  margin: 20px;
   text-align: justify;
   font-size: 18pt;
-  margin-right: 80px;
   margin-left: 80px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
