@@ -511,7 +511,7 @@ nav li:hover ul#menuFabricas {
 
 .main-banco-de-talentos{
   width: 100%;
-  margin: auto;
+
 }
 
 .main-banco-de-talentos__titulo{
@@ -531,7 +531,7 @@ nav li:hover ul#menuFabricas {
   width: 200px;
   background-color: #AA15C2;
   border-radius: 50%;
-  filter: blur(90px);
+  filter: blur(90px); 
 
 }
 
@@ -541,13 +541,15 @@ nav li:hover ul#menuFabricas {
   background-color: #AA15C2;
   border-radius: 50%;
   filter: blur(90px);
-  text-align: right;
+  text-align: center;
 }
 
 
 .section-formulario-banco-de-talentos {
+width: 50em;
 height: 69em;
 background-color: var(--cor-fundo-banco-de-talentos);
+
 border-radius: 25px;
 }
 
