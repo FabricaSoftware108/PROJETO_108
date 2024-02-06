@@ -182,13 +182,14 @@ nav li:hover ul#menuFabricas {
 
 
 .sombra-rosa{
-    box-shadow: -53px 21px 92px 100px #ab15c26b;
-    left: 1894px;
-    height: 350px;/* comprimento da sombra(largura-altura)*/
-    width: 156px;
+    /* box-shadow: -53px 21px 92px 100px #ab15c26b; */
+    box-shadow: -100px 4px 100px 100px #ab15c26b;
+    left: 1860px;
+    height: 100px;/* comprimento da sombra(largura-altura)*/
+    top:400px;
     position: absolute;
     z-index: -1;
-    border-radius: 50%;
+    border-radius: 90%;
 }
 
 .quadrado-roxo{
@@ -221,7 +222,6 @@ nav li:hover ul#menuFabricas {
     border-radius: 9px;
     left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:-24px; /* ELE MEXE NA ALTURA DO INPUT*/
-
     
 }
 
@@ -312,17 +312,20 @@ nav li:hover ul#menuFabricas {
 
 
 
-.campo-texto-descricao input{
+.campo-texto-descricao textarea{
     height: 760px; /* altura dos inputs*/
-    width: 1540px;
+    width: 1540px;/*1540px*/
     padding: 40px;
     position: relative;
-    /* margin: 130px; */
     border-radius: 9px;
     left:78px; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:200px; /* ELE MEXE NA ALTURA DO INPUT*/
     padding-bottom: 679px;
     font-size: 27px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .button-enviar button{
