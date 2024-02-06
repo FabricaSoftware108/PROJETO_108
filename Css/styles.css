@@ -246,6 +246,7 @@ nav li:hover ul#menuFabricas {
 .content-wrapper img{
   width: 500px;
   height: auto;
+  margin-top: 15px;
 }
 
 .content-sobre-wrapper-home {
@@ -314,6 +315,14 @@ nav li:hover ul#menuFabricas {
   font-size: 18pt;
   margin-left: 80px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tituloFabricas {
+  margin: 20px 80px;
+}
+
+#textoLeftFabricas {
+  margin-left: 0;
 }
 
 .container-right {
