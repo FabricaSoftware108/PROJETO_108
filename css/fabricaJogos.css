@@ -477,6 +477,22 @@ img {
     box-shadow: -100px -60px 60px -92px rgba(212, 27, 27, 1);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Grade Curricular*/
 
 .grade-curricular {
@@ -488,6 +504,7 @@ img {
 .container-title-grad {
     margin: 0 160px;
     padding: 10px 0;
+    
 }
 
 .container-title-outside {
@@ -503,6 +520,7 @@ img {
     align-items: center;
     cursor: pointer;
     
+    
 }
 .container-title-outside-btn {
     display: flex;
@@ -515,6 +533,7 @@ img {
     text-align: center;
     align-items: center;
     cursor: pointer;
+    
 
 }
 
@@ -525,11 +544,13 @@ img {
     border-collapse: collapse;
     border-radius: 20px;
     overflow: hidden; 
+    
 }
 
 th, td {
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
+    
 }
 
 tr:nth-child(2n) {
