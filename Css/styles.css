@@ -546,7 +546,7 @@ nav li:hover ul#menuFabricas {
 
 
 .section-formulario-banco-de-talentos {
-width: 50em;
+width: 100%;
 height: 69em;
 background-color: var(--cor-fundo-banco-de-talentos);
 
@@ -560,8 +560,14 @@ border-radius: 25px;
 }
 
 .formulario-banco-talentos{
-  display: flexbox;
   justify-content: space-between;
+  margin: 10em;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+
+
+  
 }
 
 .input-dados-pessoais {
