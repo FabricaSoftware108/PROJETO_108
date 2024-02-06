@@ -182,14 +182,17 @@ nav li:hover ul#menuFabricas {
 
 
 .sombra-rosa{
-    /* box-shadow: -53px 21px 92px 100px #ab15c26b; */
-    box-shadow: -100px 4px 100px 100px #ab15c26b;
-    left: 1860px;
-    height: 100px;/* comprimento da sombra(largura-altura)*/
-    top:400px;
+   
+    box-shadow: -89px -78px 100px 220px #ab15c26b;
+    left: 1980px; 
+    height: 20px;/* comprimento da sombra(largura-altura)*/
+    top:500px;
     position: absolute;
     z-index: -1;
-    border-radius: 90%;
+    border-radius: 100%;
+    margin-left: 369px;/* ele mexe na horizontal da sombra*/
+  
+    
 }
 
 .quadrado-roxo{
@@ -222,6 +225,7 @@ nav li:hover ul#menuFabricas {
     border-radius: 9px;
     left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:-24px; /* ELE MEXE NA ALTURA DO INPUT*/
+    font-size: 18px;
     
 }
 
@@ -235,6 +239,7 @@ nav li:hover ul#menuFabricas {
    border-radius: 9px;
    left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
    top:2rem; /* ELE MEXE NA ALTURA DO INPUT*/
+   font-size: 18px;
 
 }
 
@@ -247,6 +252,7 @@ nav li:hover ul#menuFabricas {
     border-radius: 9px;
     left:4.8rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:6rem; /* ELE MEXE NA ALTURA DO INPUT*/
+    font-size: 18px;
 }
 
 
@@ -258,6 +264,7 @@ nav li:hover ul#menuFabricas {
     border-radius: 9px;
     left:67rem; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:-284px; /* ELE MEXE NA ALTURA DO INPUT*/
+    font-size: 18px;
 }
 
 .input-cidade input{
@@ -268,6 +275,7 @@ nav li:hover ul#menuFabricas {
     border-radius: 9px;
     left:67rem;; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:-224px; /* ELE MEXE NA ALTURA DO INPUT*/
+    font-size: 18px;
 }
 
 
@@ -280,6 +288,7 @@ nav li:hover ul#menuFabricas {
     border-radius: 9px;
     left:67rem;; /*ELE DEIXA MEXE NA DIREÇÃO DO INPUT*/
     top:-155px; /* ELE MEXE NA ALTURA DO INPUT*/
+    font-size: 18px;
     
 }
 
