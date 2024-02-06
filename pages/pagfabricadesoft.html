@@ -4,24 +4,313 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica_de_Software</title>
-    <link rel="stylesheet" href="../css/background-software.css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    
+    <header class="cabecalho">
+        <nav>
+            <a href="/index.html" id="logo"><img src="../imagens/logoHubFabricas.png" alt="Logo Hub Fábricas"></a></li>
+            <ul id="menuPages">
+                <li><a href="../index.html">Home</a>
+                <li><a href="" id="menuFabricasBtn">Fábricas</a>
+                    <ul id="menuFabricas">
+                        <li><a href="pagfabricadesoft.html" id="Fs">Fábrica de software</a></li>
+                        <li><a href="" id="Fj">Fábrica de jogos</a></li>
+                        <li><a href="" id="Fcg">Fábrica de computação grafica</a></li>
+                        <li><a href="" id="Fav">Fábrica de audio e video</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Edital</a></li>
+                <li><a href="">Demanda</a></li>
+                <li><a href="">Cadastro de vagas</a></li>
+                <li><a href="">Banco de talentos</a></li>
+                <li><a href="" id="admButton">Login ADM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="software">
         <div class="ft51-roxo-introdu">
             <div class="ft51-branco-introdu">
+
+                <div class="texto-sobre-fabrica-software">
+                    <h1>Fabrica de Software</h1>
+                    <p>A Fábrica de Software é um projeto que simula o ambiente de uma empresa de desenvolvimento de software, focando 
+                        na criação de soluções tecnológicas personalizadas para instituições parceiras. O objetivo principal deste 
+                        projeto vai além da simples produção de software, abraçando a missão crucial de capacitar uma mão de obra altamente
+                        especializada, pronta para enfrentar os desafios dinâmicos do mercado de trabalho.
+                        O cerne da proposta da Fábrica de Software é preparar profissionais competentes, alinhados com as crescentes 
+                        demandas e oportunidades do mercado. Nesse contexto, os times de alunos são convocados a se envolver ativamente
+                        no desenvolvimento de soluções tecnológicas inovadoras, dedicando-se às demandas específicas das empresas parceiras.
+                        Em sintonia com as necessidades apresentadas pelos demandantes, cada turma é designada para atender a uma solução
+                        específica, assumindo a responsabilidade por todo o processo, desde o minucioso levantamento do escopo até a 
+                        entrega final para o cliente. Desse modo, o projeto não apenas proporciona uma experiência prática e valiosa 
+                        para os alunos, mas também contribui de maneira tangível para o fortalecimento da capacidade tecnológica das empresas 
+                        envolvidas, promovendo o avanço e a prosperidade do setor como um todo.</p>
+
+                    <button>Editais</button>
+                </div>
+
+                <svg id="imgIcone" class="icone-js" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.86474 55.462C3.07345 51.4461 3.25558 45.117 7.27154 41.3257L43.7747 6.86473C47.7906 3.07344 54.1197 3.25557 57.9109 7.27153L97.7265 49.4465C101.518 53.4624 101.336 59.7914 97.3197 63.5827L60.8165 98.0437C56.8006 101.835 50.4716 101.653 46.6803 97.637L6.86474 55.462Z" fill="#F7DF1E"/>
+                    <path d="M58.168 82.9171L59.5944 76.6026C61.7497 77.3757 63.6212 77.9847 65.2656 76.4323C66.8419 74.9442 67.1892 73.3207 64.6734 70.6559L47.5645 52.5331L52.3615 48.0046L69.5415 66.2026C74.7531 71.7231 74.213 76.9855 69.9638 80.9969C66.1263 84.6197 61.8141 84.5143 58.1674 82.9168M74.5915 66.3321L76.1252 60.1322C78.9148 61.0271 81.5451 61.136 83.9092 58.9042C85.897 57.0276 86.1219 54.7269 84.6841 53.2039C82.959 51.3765 81.0457 51.9584 77.8467 52.963L76.1081 53.5233C71.102 55.154 66.8653 55.2653 62.7679 50.925C58.9938 46.9273 58.8594 41.2936 63.1427 37.2499C66.1923 34.3709 69.4997 33.481 73.9871 35.077L72.7681 41.2684C70.4001 40.4079 68.8986 40.6014 67.528 41.8954C66.123 43.2218 66.1666 45.0528 67.3885 46.3471C68.898 47.946 70.4003 47.7526 73.3907 46.8017L75.1288 46.2405C81.0399 44.3329 85.2044 44.1452 89.4093 48.5993C93.9385 53.3969 93.0261 59.226 88.4688 63.5284C84.0145 67.7336 78.9077 68.0904 74.5915 66.3325" fill="black"/>
+                </svg>
+
+                <svg id = "imgIcone" class="icone-html" width="100" height="103" viewBox="0 0 100 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="41.5583" y="12.6612" width="51.3355" height="57.3163" transform="rotate(28.9064 41.5583 12.6612)" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M75.6754 47.6974L75.651 47.6839L46.2352 31.4412L43.1683 38.6579L71.2051 54.1391C67.4913 59.8937 59.2506 71.8798 55.6104 77.3943L37.4154 73.1316L37.408 73.145L37.364 73.1424L24.6677 58.8968L30.8196 45.2044L38.5436 49.4694L35.2012 56.8145L42.0154 64.7516L42.0363 64.7631L52.2994 66.421L59.0247 56.3235L32.36 41.5999C32.9871 40.1597 41.1456 21.4672 41.5956 19.9693L80.1353 41.2499C78.6751 43.384 77.1776 45.5776 75.6754 47.6974ZM37.7036 0L9.08418 65.0471L30.6904 85.2285L59.4156 92.6735L99.1575 33.9332L37.7036 0Z" fill="#F16529"/>
+                </svg>
+
+                <svg id = "imgIcone"  class="icone-angular" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M42.8639 9.72655L77.4381 22.8134L95.8331 55.7956L59.8776 88.122L26.0581 81.4999L15.2231 49.3325L42.8639 9.72655Z" fill="#E23237"/>
+                    <path d="M95.833 55.7955L77.438 22.8134L26.0581 81.4998L59.8586 88.1436L95.833 55.7955Z" fill="#B52E31"/>
+                    <path d="M71.4803 29.7016L22.1062 53.3348L28.2666 58.5374L39.0016 52.8532L45.934 58.9224L45.9546 58.9405L53.5678 65.6058L49.5673 77.377L55.2703 82.5609L71.4803 29.7016ZM60.9049 41.8641L55.871 58.6873L50.6099 54.0811L50.3416 53.8463L45.555 49.6556L60.9049 41.8641Z" fill="white"/>
+                </svg>
+                    
+                <!--sql-->
+                <svg id = "imgIcone" class="icone-sql" width="101" height="98" viewBox="0 0 101 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38.3057 3.6512C38.2063 3.57344 38.1006 3.50686 37.9886 3.45177C34.1102 1.54548 24.0341 14.1034 15.4831 31.5007C6.93201 48.8979 3.14404 64.5466 7.02242 66.4529C7.13451 66.508 7.25178 66.551 7.37404 66.5821L7.3568 66.6172L62.31 93.6277L62.4215 93.6825L62.423 93.6792C66.7394 95.4977 77.0081 83.1524 85.4843 65.9075C93.9604 48.6626 97.4624 32.9913 93.386 30.6846L93.3876 30.6814L93.2761 30.6266L38.3229 3.61612L38.3057 3.6512Z" fill="#E0234E"/>
+                    <path d="M63.8512 76.4232C63.4148 77.3111 62.9299 78.1283 62.3965 78.875C61.8757 79.6173 61.3811 80.2426 60.9129 80.7509C60.4363 81.255 60.0629 81.5915 59.7928 81.7603L56.4332 79.3914C56.7614 79.168 57.1474 78.8377 57.591 78.4005C58.0347 77.9634 58.48 77.4595 58.9269 76.8888C59.3695 76.3056 59.7514 75.6873 60.0726 75.0339C60.5048 74.1544 60.6921 73.4561 60.6343 72.9389C60.5806 72.4133 60.2774 72.0147 59.7246 71.7429C59.3225 71.5453 58.9236 71.5 58.5278 71.6071C58.1236 71.71 57.637 71.97 57.068 72.3871C56.5031 72.7959 55.7702 73.356 54.8692 74.0676C54.1053 74.6697 53.3052 75.176 52.469 75.5866C51.6245 75.9931 50.7432 76.2203 49.8252 76.2683C48.8989 76.3122 47.9373 76.0891 46.9405 75.5992C46.0862 75.1793 45.4189 74.6537 44.9388 74.0225C44.4544 73.3788 44.1427 72.6588 44.0037 71.8625C43.8688 71.0578 43.8963 70.1978 44.0863 69.2824C44.2678 68.3628 44.6015 67.4089 45.0874 66.4205C45.779 65.0133 46.4729 63.9295 47.169 63.1693C47.865 62.409 48.3959 61.9108 48.7616 61.6745L51.8963 64.1201C51.4179 64.3529 50.8637 64.8033 50.2338 65.4713C49.5996 66.1268 49.0808 66.8649 48.6773 67.6858C48.3891 68.2721 48.2194 68.7867 48.1682 69.2295C48.1086 69.6682 48.1507 70.0373 48.2947 70.3369C48.4386 70.6364 48.6656 70.8624 48.9755 71.0147C49.3524 71.2 49.741 71.2558 50.1412 71.1821C50.5372 71.0959 50.9928 70.8883 51.5082 70.5592C52.0192 70.2176 52.6318 69.7543 53.3457 69.1692C54.1011 68.5421 54.8217 68.0071 55.5074 67.5642C56.1972 67.1128 56.8732 66.7743 57.5354 66.5486C58.1975 66.3228 58.869 66.2369 59.5497 66.2907C60.2262 66.332 60.933 66.5338 61.6701 66.8961C62.7841 67.4437 63.6261 68.1851 64.1959 69.1204C64.7699 70.0473 65.0382 71.1307 65.0007 72.3707C64.9549 73.6065 64.5717 74.9574 63.8512 76.4232ZM79.1707 55.729C78.4914 57.111 77.8014 58.1551 77.1008 58.8611C76.4002 59.5671 75.6038 60.0025 74.7117 60.1672C73.8279 60.336 72.7613 60.3057 71.5116 60.0763L72.0329 57.5557L72.6628 56.2742C73.227 56.3747 73.6902 56.3527 74.0524 56.2084C74.4229 56.0681 74.7611 55.7819 75.0671 55.3499C75.373 54.9179 75.7133 54.3208 76.088 53.5586C76.2609 53.2068 76.3941 52.8406 76.4875 52.4601C76.5809 52.0797 76.6475 51.7432 76.6872 51.4507L79.8283 52.9946C79.826 53.2743 79.7868 53.6502 79.7108 54.1224C79.643 54.5987 79.463 55.1343 79.1707 55.729ZM72.4307 58.968C71.5585 60.8273 70.4117 62.2188 68.9905 63.1426C67.565 64.0539 65.961 64.4927 64.1784 64.4589C62.3916 64.4126 60.518 63.8869 58.5577 62.8818C56.3669 61.753 54.7783 60.4678 53.7917 59.0261C52.8009 57.5719 52.3124 56.0162 52.3262 54.359C52.3315 52.6977 52.7332 50.9919 53.531 49.2417C54.3495 47.4496 55.4548 46.1106 56.8471 45.2245C58.231 44.3344 59.806 43.9125 61.5719 43.9589C63.342 43.9969 65.203 44.5165 67.1549 45.5175C69.3457 46.6463 70.9572 47.9272 71.9897 49.3602C73.0221 50.7932 73.5542 52.3236 73.5862 53.9513C73.6182 55.5789 73.233 57.2512 72.4307 58.968ZM69.1006 57.2376C69.6934 56.0314 69.6749 54.8419 69.045 53.6691C68.4067 52.4922 66.9525 51.3459 64.6826 50.2302C63.5099 49.6538 62.4138 49.2814 61.3941 49.113C60.3745 48.9447 59.4838 49.0112 58.722 49.3128C57.9602 49.6143 57.3734 50.1839 56.9617 51.0215C56.5871 51.7838 56.4338 52.5716 56.502 53.3851C56.5701 54.1986 56.9555 55.012 57.6581 55.8254C58.3648 56.6303 59.4888 57.4116 61.03 58.1691C62.2195 58.7537 63.3469 59.1259 64.4124 59.2856C65.4779 59.4453 66.4165 59.3659 67.2283 59.0473C68.0442 58.7203 68.6683 58.1171 69.1006 57.2376ZM78.1237 46.8778L59.4531 37.7008L61.7258 33.0772L76.627 40.4014L79.7272 34.0941L83.4965 35.9468L78.1237 46.8778Z" fill="white"/>
+                </svg>
+
+                <svg id = "imgIcone" class="icone-css" width="104" height="102" viewBox="0 0 104 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.5792 0.000306302L94.0252 45.1377L84.2101 72.9669L61.8675 92.2448L0 57.979L39.5792 0.000306302ZM43.9264 19.0274L31.6002 37.0838L19.0557 55.4601L26.6786 59.3755L38.6232 41.8781L39.2942 40.8952L39.0273 42.1539L34.4537 63.7457L41.7002 67.8729L52.8788 51.6096L58.8696 42.8926L67.6412 49.7004L64.3331 59.4291L64.3259 59.4242L64.2985 59.5038L56.9391 66.0563L50.9301 62.6567L50.9123 62.6829L45.9122 70.0074L45.8946 70.0331L57.5179 76.5623L72.003 64.6646L71.9952 64.6593L72.0213 64.6378L77.8502 46.9477L57.3793 30.1624L45.9619 46.8876L45.9338 46.9289L45.9442 46.8756L50.459 24.5401L43.9264 19.0274Z" fill="#33AADD"/>
+                </svg>
+
+                <svg  id = "imgIcone"  class="icone-csharp" width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M65.8164 16.2009C64.8876 15.2749 63.8669 14.6571 62.7577 14.3609C61.6671 14.0688 60.4906 14.0872 59.2321 14.4308C48.8598 17.283 38.4926 20.1532 28.1187 22.9995C25.322 23.767 23.6343 25.5328 22.9005 28.3324C21.808 32.4973 16.1196 53.1312 14.449 59.3042C13.7606 61.8461 14.392 64.0473 16.2332 65.8854C23.8143 73.4555 31.4004 81.0206 38.9815 88.5908C39.8895 89.4968 40.8863 90.1071 41.9671 90.4106C43.0787 90.7233 44.2794 90.7124 45.5668 90.3607C51.7364 88.6769 72.3595 82.9427 76.522 81.8425C79.3214 81.1026 81.0833 79.4108 81.8452 76.6118C84.6697 66.2314 87.5184 55.8579 90.3497 45.4786C90.6989 44.1908 90.7068 42.9896 90.3924 41.8792C90.0858 40.7995 89.4741 39.8037 88.5659 38.8975C88.5659 38.8975 73.4027 23.7662 65.8164 16.2009Z" fill="#A179DC"/>
+                    <path d="M52.4015 52.244L41.9672 90.4107C43.0788 90.7233 44.2796 90.7125 45.567 90.3608C51.7366 88.677 72.3597 82.9427 76.5222 81.8426C79.3216 81.1027 81.0835 79.4109 81.8454 76.6119C84.6699 66.2315 87.5186 55.858 90.3499 45.4787C90.6991 44.1908 90.707 42.9896 90.3926 41.8793L52.4015 52.244Z" fill="#A179DC"/>
+                    <path d="M65.8164 16.201C64.8876 15.275 63.8669 14.6572 62.7577 14.361L52.4015 52.2442L90.3924 41.8793C90.0858 40.7995 89.4737 39.8042 88.5659 38.8975C88.5659 38.8975 73.4027 23.7663 65.8164 16.201Z" fill="#A179DC"/>
+                    <path d="M61.5228 32.7448L64.1127 35.3292L66.7268 32.7095L64.137 30.1252L65.4441 28.8153L68.0339 31.3997L70.648 28.78L71.9429 30.0722L69.3288 32.6919L71.9184 35.2761L74.5326 32.6564L75.8275 33.9486L73.2133 36.5682L75.8031 39.1526L74.4961 40.4624L71.9062 37.8781L69.2921 40.4977L71.8819 43.0821L70.5749 44.3919L67.985 41.8076L65.3711 44.427L64.0762 43.1349L66.6901 40.5154L64.1005 37.9312L61.4865 40.5507L60.1916 39.2585L62.8056 36.639L60.2158 34.0547L61.5228 32.7448ZM68.0215 34.0015L65.4074 36.6212L67.9972 39.2056L70.6113 36.5859L68.0215 34.0015Z" fill="white"/>
+                    <path d="M34.2689 34.0434C41.0873 27.2106 50.7088 24.9059 59.3503 27.152L59.2668 27.1307L55.8205 39.7366C51.5889 38.6748 46.9022 39.7929 43.5412 43.0871L43.4359 43.1915C38.3673 48.2708 38.329 56.4511 43.3505 61.462C44.9315 63.0431 46.9044 64.177 49.0721 64.7506C53.3902 65.8956 58.2096 64.7568 61.6212 61.3381C65.0539 57.8981 66.1759 53.036 64.9845 48.6994L65.0126 48.8038L77.6201 45.3642C79.8732 53.92 77.6589 63.4533 70.9927 70.2793L70.7886 70.4862C63.9486 77.3406 54.2876 79.6396 45.6251 77.3567C41.3963 76.2422 37.4055 74.0366 34.097 70.735C24.0126 60.6719 24.089 44.2444 34.2685 34.0434L34.2689 34.0434Z" fill="white"/>
+                </svg>
+
             </div>
             <div class="ft51-roxo-projetos">
+                <div class="projeto-carrossel">
+                    <h1>Projetos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, atque ipsa? Quasi iure illo laboriosam non, rem minus sequi</p>
+                </div>
+
+                <div class="swiper"> <!--Não TROCAR OS NOMES DAS CLASS PQ JA ESTAO DEFINIDAS NA BIBLIOTECA SWIPER-->
+                    <div class="swiper-wrapper">  <!-- quadrado atras da imagem  -->
+                        <div class="swiper-slide"> <!-- slide 1 -->
+                            <div class="position">
+                                <div class="card-image"> <!-- img slide 1 -->
+                                    <img src="../imagens/img_foto.png" alt="Foto 01" class="card-img">
+                                </div>
+                                <div class="description"> <!-- txt slide 1 -->
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet quasi cumque ab eum, reiciendis tempora fugit sit consequuntur laborum excepturi quos suscipit necessitatibus inventore, laudantium sunt, atque quo ex?
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quia enim, alias illum, error reiciendis neque dolorem dolor architecto rerum non harum dolore. Iste quam ullam culpa autem sapiente consectetur?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position">
+                                <div class="card-image">
+                                    <img src="../imagens/img_foto2.png" alt="Foto 02" class="card-img">
+                                </div>
+                                <div class="description">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet quasi cumque ab eum, reiciendis tempora fugit sit consequuntur laborum excepturi quos suscipit necessitatibus inventore, laudantium sunt, atque quo ex?
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quia enim, alias illum, error reiciendis neque dolorem dolor architecto rerum non harum dolore. Iste quam ullam culpa autem sapiente consectetur?
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position">
+                                <div class="card-image">
+                                    <img src="../imagens/img_foto3.png" alt="Foto 03" class="card-img">
+                                </div>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet quasi cumque ab eum, reiciendis tempora fugit sit consequuntur laborum excepturi quos suscipit necessitatibus inventore, laudantium sunt, atque quo ex?
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quia enim, alias illum, error reiciendis neque dolorem dolor architecto rerum non harum dolore. Iste quam ullam culpa autem sapiente consectetur?
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div> 
             <div class="ft51-roxo-requisitos">
                 <div class="ft51-branco-requisitos">
+                    <div class="requisitos_software">
+                        <h1> Requisitos</h1>
+                        <p>A Fábrica de Software é um projeto inovador que simula o
+                            ambiente de uma empresa de desenvolvimento de softwares.
+                            Neste contexto, os alunos têm a oportunidade de criar uma
+                            ferramenta de gestão direcionada para micro e pequenas
+                            empresas, enfrentando desafios práticos e promovendo a
+                            aplicação direta dos conhecimentos adquiridos. Este ambiente
+                            de aprendizado prático adiciona uma dimensão única ao curso,
+                            preparando mão de obra especializada para o mercado de
+                            desenvolvimento de sistemas de forma abrangente e eficaz.
+                        </p>
+                        <div class="container-soft-requisitos">
+                            <div class="titulo">
+                                <h2>Idade Mínima</h2>
+                                <ul class="subtext">
+                                    <li>Idade maior ou igual a 16 anos</li>
+                                </ul>
+                            </div>
+                            <div class="titulo">
+                                <h2>Conhecimentos Necessários</h2>
+                                <ul class="subtext">
+                                    <li>Escolaridade: 2 ano do Ensino Médio.</li>
+                                    <li>Certidão de nascimento ou casamento</li>
+                                    <li> Comprovante de Escolaridade</li>
+                                    <li>CPF</li>
+                                    <li>RG.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ft51-branco-gradec">
                 <div class="ft51-roxo-gradec">
+                    <div class="container-soft-title-grad">
+                        <div class="grade-curricular">
+                            <h1>Grade Curricular</h1>
+                        </div>
+                       
+                        <div class="container-soft-title-outside">
+                            <button class="container-soft-title-outside-btn" onclick="toggleTable_oferta1()">
+                                <h1>Oferta 1 - Técnico em Audio Visual</h1>
+                                <div class="wrapper-content-icon" style="margin-left: 875px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
+                                    <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                </div>
+                            </button>
+                        </div>
+                        <div id="oferta1" class="container-soft-grad-table">
+                            <table>
+                                <tr>
+                                    <th scope="col">Unidade Curricular</th>
+                                    <th scope="col">Carga Horaria</th>
+                                </tr>
+                                <tr>
+                                    <td>UC 1 - Introdução a Programacao</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                  
+                    <div class="container-soft-title-grad">
+                        <div class="container-title">
+                            <div class="container-soft-title-outside">
+                                <button class="container-soft-title-outside-btn" onclick="toggleTable_oferta2()">
+                                    <h1>Oferta 2 - Técnico em Audio Visual</h1>
+                                    <div class="wrapper-content-icon" style="margin-left: 875px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
+                                        <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="oferta2" class="container-soft-grad-table">
+                            <table>
+                                <tr>
+                                    <th scope="col">Unidade Curricular</th>
+                                    <th scope="col">Carga Horaria</th>
+                                </tr>
+                                <tr>
+                                    <td>UC 1 - Introdução a Programacao</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="container-soft-title-grad">
+                        <div class="container-title">
+                            <div class="container-soft-title-outside">
+                                <button class="container-soft-title-outside-btn" onclick="toggleTable_oferta3()">
+                                    <h1>Oferta 3 - Técnico em Audio Visual</h1>
+                                    <div class="wrapper-content-icon" style="margin-left: 875px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
+                                        <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                    </div>
+                                </button>
+                                
+                            </div>
+                        </div>
+                        <div id="oferta3" class="container-soft-grad-table">
+                            <table>
+                                <tr>
+                                    <th scope="col">Unidade Curricular</th>
+                                    <th scope="col">Carga Horaria</th>
+                                </tr>
+                                <tr>
+                                    <td>UC 1 - Introdução a Programacao</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                                <tr>
+                                    <td>UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
+                                    <td>100 Horas</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <footer class="rodape-branco">
+        <img src="../imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png" alt="Rodapé fabricas">
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/carrossel.js"></script>
+    <script src="../js/grade.js"></script>
 </body>
 </html>
