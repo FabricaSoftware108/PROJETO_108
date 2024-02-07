@@ -15,8 +15,3 @@ var swiper = new Swiper(".swiper", {
       delay: 10000, // passar a pagina a cada segundo ex:50000 (50 segundos)
   },
 });
-
-swiper.on("slideChange", function () { // se a pessoa interagir com o botão vai resetar o delay
-  swiper.autoplay.stop(); 
-  swiper.autoplay.start(); // Inicia o autoplay com o novo delay
-});
