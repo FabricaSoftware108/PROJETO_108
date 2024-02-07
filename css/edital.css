@@ -228,6 +228,19 @@ button {
   line-height: 15rem;
   font-size: 56;
 }
+/* display: flex;
+font-weight: bold;
+
+background-color: var(--color-grad-title);
+font-size: 13px;
+color: white;
+
+padding: 20px 21px;
+border: 1px solid transparent;
+
+text-align: center;
+align-items: center;
+cursor: pointer; */
 .inscricoes {
   position: absolute;
   width: 207px;
