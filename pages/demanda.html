@@ -45,47 +45,47 @@
             </div>
             <div class="container-campo-dados-demanda">
                 <div class="campo-dados-demanda">
-                    <h2 id="dados-empresa-demanda-h2">Dados da Empresa</h2>
-                    <div class="dados-Empresa-demanda">
-                        <div class="inputs-empresa-Demanda">
-                            <input type="text" id="nomeEmpresaDemanda" placeholder="Nome da Empresa">
-                            <input type="text" id="cnpjDemanda" placeholder="CNPJ">
-                            <input type="text" id="telefoneDemanda" placeholder="Telefone">
-                            <input type="text" id="emailDemanda" placeholder="E-Mail">
-                            <input type="text" id="cidadeDemanda" placeholder="Cidade">
-                            <input type="text" id="estadoDemanda" placeholder="Estado">
+                    <form action="cadastro.php">
+                        <h2 id="dados-empresa-demanda-h2">Dados da Empresa</h2>
+                        <div class="dados-Empresa-demanda">
+                            <div class="inputs-empresa-Demanda">
+                                <input type="text" id="nomeEmpresaDemanda" placeholder="Nome da Empresa" required>
+                                <input type="number" id="cnpjDemanda" placeholder="CNPJ" minlength="14" maxlength="14" required>
+                                <input type="text" id="telefoneDemanda" placeholder="Telefone" pattern="\(\d{2}\) \d{5} \d{4}" maxlength="15" required>
+                                <input type="email" id="emailDemanda" placeholder="E-Mail" required>
+                                <input type="text" id="cidadeDemanda" placeholder="Cidade" required>
+                                <input type="text" id="estadoDemanda" placeholder="Estado" required>
+                            </div>
                         </div>
-                    </div>
-                    <h2 id="dados-empresa-demanda-h2">Dados do Titular da Empresa</h2>
-                    <div class="dados-Titular-demanda">
-                        <div class="inputs-titular-Demanda">
-                            <input type="text" id="nomeTitularDemanda" placeholder="Nome do Titular">
-                            <input type="text" id="cpfTitularDemanda" placeholder="CPF">
-                            <input type="text" id="emailTitularDemanda" placeholder="E-mail">
-                            <input type="text" id="telefoneTitularDemanda" placeholder="Telefone">
+                        <h2 id="dados-empresa-demanda-h2">Dados do Titular da Empresa</h2>
+                        <div class="dados-Titular-demanda">
+                            <div class="inputs-titular-Demanda">
+                                <input type="text" id="nomeTitularDemanda" placeholder="Nome do Titular" required>
+                                <input type="text" id="cpfTitularDemanda" placeholder="CPF" pattern="[0-9]{11}" minlength="11" maxlength="11" required>
+                                <input type="email" id="emailTitularDemanda" placeholder="E-mail" required>
+                                <input type="text" id="telefoneDemanda" placeholder="Telefone" pattern="\(\d{2}\) \d{5} \d{4}" maxlength="15" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="sobre-Projeto-Demanda">
-                        <h2 id="dados-empresa-demanda-h2">Sobre seu Projeto</h2>
-                        <label for="file-input" class="file-label">
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000" preserveAspectRatio="xMidYMid meet">
-                                <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)" fill="grey" stroke="none">
-                                    <path d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z"/>
-                                </g>
-                            </svg>
-                            <p>Arquivo pdf ou docx</p>
-                            <input type="file" id="file-input" class="file-input" title="Arquivo pdf ou docx">
-                        </label>
+                        <div class="sobre-Projeto-Demanda">
+                            <h2 id="dados-empresa-demanda-h2">Sobre seu Projeto</h2>
+                            <label for="file-input" class="file-label">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000" preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)" fill="grey" stroke="none">
+                                        <path d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z"/>
+                                    </g>
+                                </svg>
+                                <p>Arquivo pdf ou docx</p>
+                                <input type="file" id="file-input" class="file-input" title="Arquivo pdf ou docx">
+                            </label>
                         <button class="enviar-Demanda">Enviar</button>
+                    </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
     <footer class="rodape-preto">
         <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé home">
     </footer>
-
 </body>
 </html>
