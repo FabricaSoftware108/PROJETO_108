@@ -17,18 +17,18 @@ body, html {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  filter: blur(100px) contrast(150%);
+  filter: blur(150px) contrast(150%);
 } 
 
 .sombra-roxa{
   box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
   left: 1860px;
   height: 100px;/* comprimento da sombra(largura-altura)*/
-  top:400px;
+  top:500px;
   position: absolute;
   z-index: -1;
   border-radius: 90%;
-  filter: blur(100px) contrast(150%);
+  filter: blur(150px) contrast(150%);
 }
 
 nav {
