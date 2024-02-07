@@ -69,6 +69,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 nav a {
@@ -80,8 +81,9 @@ nav a {
   align-items: center;
   display: flex;
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   letter-spacing: 1px;
+
   font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
 }
 
@@ -134,10 +136,12 @@ nav ul #menuFabricas li {
 nav ul#menuFabricas a {
   text-decoration: none;
   height: 0px;
-  font-size: 12pt;
-  font-weight: normal;
+  font-size: 14px;
+
   color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 
@@ -803,6 +807,9 @@ span {
   margin: 50px;
   font-size: 20px;
 }
+
+
+
 
 /* Rodapé */
 
