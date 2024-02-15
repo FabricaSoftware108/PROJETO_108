@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica_de_CGI</title>
+    <link rel="stylesheet" href="../Css/background-cgi.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/background-cgi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 
     <header class="cabecalho">
         <nav>
-            <a href="/index.html" id="logo"><img src="../img/logoHubFabricas.png" alt="Logo Hub Fábricas"></a></li>
+            <a href="/index.html" id="logo"><img src="../Imagens/logoHubFabricas.png" alt="Logo Hub Fábricas"></a></li>
             <ul id="menuPages">
                 <li><a href="">Home</a>
                 <li><a href="" id="menuFabricasBtn">Fábricas</a>
@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="software">
         <div class="ft51-amarelo-introdu">
             <div class="texto_introducao">
                 <h1>Fabrica de Computação Gráfica</h1>
@@ -63,7 +63,7 @@
                         <div class="swiper-slide">
                             <div class="position">
                                 <div class="card-image">
-                                    <img src="../img/img_foto.png" alt="Foto 01" class="card-img">
+                                    <img src="../Imagens/img_foto.png" alt="Foto 01" class="card-img">
                                 </div>
                                 <div class="description">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
@@ -77,7 +77,7 @@
                         <div class="swiper-slide">
                             <div class="position">
                                 <div class="card-image">
-                                    <img src="../img/img_foto2.png" alt="Foto 02" class="card-img">
+                                    <img src="../Imagens/img_foto2.png" alt="Foto 02" class="card-img">
                                 </div>
                                 <div class="description">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
@@ -91,7 +91,7 @@
                         <div class="swiper-slide">
                             <div class="position">
                                 <div class="card-image">
-                                    <img src="../img/img_foto3.png" alt="Foto 03" class="card-img">
+                                    <img src="../Imagens/img_foto3.png" alt="Foto 03" class="card-img">
                                 </div>
                                 <div class="description">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
@@ -140,6 +140,10 @@
 
             <div class="ft51-branco-gradec">
                 <div class="ft51-amarelo-gradec">
+                    <!-- <div class="container-title-grad">
+                        <div class="grade-curricular">
+                            <h1>Grade Curricular</h1>
+                        </div> -->
                         <h1 style="text-align: center; color: white; padding: 50px;">Grade Curricular</h1>
                         <div class="wrapper-content-grad">
                             <div class="container-grad">
@@ -147,7 +151,7 @@
                                     <div class="container-title">
                                         
                                         <div class="container-title-outside">
-                                            <button class="container-title-outside-btn" onclick="toggleTable_audio_visual_oferta1()"><h1>Oferta 1 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
+                                            <button class="container-title-outside-btn" onclick="toggleTable_oferta1()"><h1>Oferta 1 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
                                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                                                 </svg>
@@ -157,7 +161,7 @@
                                             
                                         </div>
                                     </div>
-                                    <div id="audio_visual_oferta1" class="container-grad-table">
+                                    <div id="oferta1" class="container-grad-table">
                                         <table>
                                             <tr>
                                                 <th scope="col">Unidade Curricular</th>
@@ -186,7 +190,7 @@
                                 <div class="container-title-grad">
                                     <div class="container-title">
                                         <div class="container-title-outside">
-                                            <button class="container-title-outside-btn" onclick="toggleTable_audio_visual_oferta2()"><h1>Oferta 2 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
+                                            <button class="container-title-outside-btn" onclick="toggleTable_oferta2()"><h1>Oferta 2 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
                                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                                                 </svg>
@@ -194,7 +198,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div id="audio_visual_oferta2" class="container-grad-table">
+                                    <div id="oferta2" class="container-grad-table">
                                         <table>
                                             <tr>
                                                 <th scope="col">Unidade Curricular</th>
@@ -222,7 +226,7 @@
                                 <div class="container-title-grad">
                                     <div class="container-title">
                                         <div class="container-title-outside">
-                                            <button class="container-title-outside-btn" onclick="toggleTable_audio_visual_oferta3()"><h1>Oferta 3 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
+                                            <button class="container-title-outside-btn" onclick="toggleTable_oferta3()"><h1>Oferta 3 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
                                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                                                 </svg>
@@ -231,7 +235,7 @@
                                             
                                         </div>
                                     </div>
-                                    <div id="audio_visual_oferta3" class="container-grad-table">
+                                    <div id="oferta3" class="container-grad-table">
                                         <table>
                                             <tr>
                                                 <th scope="col">Unidade Curricular</th>
@@ -266,13 +270,14 @@
         </div>
     </main>
 
+    
+    <footer class="rodape-branco">
+        <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png">
+    </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/carrossel.js"></script>
     <script src="../js/audio_video_script.js" defer></script>
-
-    <footer class="rodape-branco">
-        <img src="../img/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png">
-    </footer>
-
+    <script src="../js/grade.js"></script>
+    
 </body>
 </html>
