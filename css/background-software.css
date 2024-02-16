@@ -19,7 +19,7 @@
 
 /* cabecalho  */
 
-nav {
+nav.nav-software {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -33,19 +33,19 @@ nav {
     z-index: 2;
 }
 
-nav img {
+nav.nav-software img {
     height: 50px;
     margin-right: 200px;
     margin-left: 60px;
 }
 
-nav #menuPages {
+nav.nav-software #menuPages {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li {
+nav.nav-software ul li {
     list-style-type: none;
     padding: none;
     margin: none;
@@ -54,7 +54,7 @@ nav ul li {
     align-items: center;
 }
 
-nav a {
+nav.nav-software a {
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
@@ -69,15 +69,15 @@ nav a {
 }
 
 
-nav li:nth-child(5) a, li:nth-child(6) a{
+nav.nav-software li:nth-child(5) a, li:nth-child(6) a{
     width: 183px;
 }
 
-nav a#logo {
+nav.nav-software a#logo {
     margin: 0;
 }
 
-nav li #admButton {
+nav.nav-software li #admButton {
     background-color: rgb(254, 185, 105, 75);
     border-radius: 40px;
     height: 40px;
@@ -88,7 +88,7 @@ nav li #admButton {
     margin-left: 100px;
 }
 
-nav ul#menuFabricas {
+nav.nav-software ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
@@ -106,7 +106,7 @@ nav ul#menuFabricas {
     transition: all 2ms ease-out;
 }
 
-nav ul #menuFabricas li {
+nav.nav-software ul #menuFabricas li {
     list-style-type: none;
     margin-top: 15px;
     display: inline-block;
@@ -115,7 +115,7 @@ nav ul #menuFabricas li {
     text-align: left;
 }
 
-nav ul#menuFabricas a {
+nav.nav-software ul#menuFabricas a {
     text-decoration: none;
     color: black; 
     height: 0px;
@@ -125,27 +125,27 @@ nav ul#menuFabricas a {
 }
 
 
-nav ul#menuFabricas a#Fs:hover {
+nav.nav-software ul#menuFabricas a#Fs:hover {
     color: rgba(43, 20, 99, 1);
 }
 
-nav ul#menuFabricas a#Fj:hover {
+nav.nav-software ul#menuFabricas a#Fj:hover {
     color: rgba(139, 26, 26, 1);
 }
 
-nav ul#menuFabricas a#Fcg:hover {
+nav.nav-software ul#menuFabricas a#Fcg:hover {
     color: rgba(226, 153, 26, 1);
 }
 
-nav ul#menuFabricas a#Fav:hover {
+nav.nav-software ul#menuFabricas a#Fav:hover {
     color: rgba(66, 176, 48, 1);
 }
 
-nav li:hover a#menuFabricasBtn {
+nav.nav-software li:hover a#menuFabricasBtn {
     height: 80px;
 }
 
-nav li:hover ul#menuFabricas {
+nav.nav-software li:hover ul#menuFabricas {
     visibility: visible;
 }
 
@@ -310,7 +310,7 @@ span {
     font-size: x-large;
 }
   
-img {
+.card-img {
     box-shadow: 0 1px 2px #0003;
     width: 100%;
 }
@@ -497,7 +497,7 @@ img {
 
 /*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
 
-.requisitos_software{
+.requisitos-software{
     font-family: var(--font-grad-title);
     line-height: 30px;
     position: absolute;
@@ -507,34 +507,33 @@ img {
     height: auto;
     text-align: justify;
     font-size: 22px;
-}
-
-
-
-.requisitos_software h1 {
+    color: black;
+  }
+  
+  
+  
+  .requisitos-software h1 {
     text-align: center;
     line-height: 10rem;
-} 
-
-
-
-.container-requisitos {
+  } 
+  
+  
+  
+  .container-soft-requisitos {
     display: flex;
     flex-direction: line;
     margin-top: 100px;
     justify-content: space-around;
-}
-
-.titulo {
+  }
+  
+  .titulo-software {
     font-size: 22px;
-}
-
-.subtext {
+  }
+  
+  .subtext-software {
     list-style-type: disc;
     padding: 0;
     margin-top: 50px;
     font-size: 22px;
-}
-
-
+  }
 
