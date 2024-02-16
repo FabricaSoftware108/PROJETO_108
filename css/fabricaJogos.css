@@ -4,7 +4,7 @@
 }
 
 
-body {
+body.bodyFabricaJogos {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -14,7 +14,7 @@ body {
 
 }
 
-html {
+html.htmlFabricaJogos {
     display: flex;
     flex-direction: column;
     display: flex;
@@ -22,7 +22,7 @@ html {
     min-height: 100vh;
 }
 
-nav {
+header.cabecalhoFabricaJogos nav.navFabricaJogos {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -36,19 +36,19 @@ nav {
     z-index: 2;
 }
 
-nav img {
+header.cabecalhoFabricaJogos nav.navFabricaJogos img {
     height: 50px;
     margin-right: 200px;
     margin-left: 60px;
 }
 
-nav #menuPages {
+header.cabecalhoFabricaJogos nav.navFabricaJogos #menuPages {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul li {
     list-style-type: none;
     padding: none;
     margin: none;
@@ -57,7 +57,7 @@ nav ul li {
     align-items: center;
 }
 
-nav a {
+header.cabecalhoFabricaJogos nav.navFabricaJogos a {
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
@@ -72,18 +72,18 @@ nav a {
 }
 
 
-nav li:nth-child(5) a, li:nth-child(6) a{
+header.cabecalhoFabricaJogos nav.navFabricaJogos li:nth-child(5) a, li:nth-child(6) a{
     width: 183px;
 }
 
-nav a#logo {
+header.cabecalhoFabricaJogos nav.navFabricaJogos a#logo {
     margin: 0;
 }
-nav a#logo img{
+header.cabecalhoFabricaJogos nav.navFabricaJogos a#logo img{
     box-shadow: none;
 }
 
-nav li #admButton {
+header.cabecalhoFabricaJogos nav.navFabricaJogos li #admButton {
     background-color: rgb(254, 185, 105, 75);
     border-radius: 40px;
     height: 40px;
@@ -94,7 +94,7 @@ nav li #admButton {
     margin-left: 100px;
 }
 
-nav ul#menuFabricas {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
@@ -112,7 +112,7 @@ nav ul#menuFabricas {
     transition: all 2ms ease-out;
 }
 
-nav ul #menuFabricas li {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul #menuFabricas li {
     list-style-type: none;
     margin-top: 15px;
     display: inline-block;
@@ -121,7 +121,7 @@ nav ul #menuFabricas li {
     text-align: left;
 }
 
-nav ul#menuFabricas a {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a {
     text-decoration: none;
     color: black; 
     height: 0px;
@@ -130,41 +130,41 @@ nav ul#menuFabricas a {
     color: rgba(0, 0, 0, 0.8);
 }
 
-nav ul#menuFabricas a#Fs:hover {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a#Fs:hover {
     color: rgba(43, 20, 99, 1);
 }
 
-nav ul#menuFabricas a#Fj:hover {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a#Fj:hover {
     color: rgba(139, 26, 26, 1);
 }
 
-nav ul#menuFabricas a#Fcg:hover {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a#Fcg:hover {
     color: rgba(226, 153, 26, 1);
 }
 
-nav ul#menuFabricas a#Fav:hover {
+header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a#Fav:hover {
     color: rgba(66, 176, 48, 1);
 }
 
-nav li:hover a#menuFabricasBtn {
+header.cabecalhoFabricaJogos nav.navFabricaJogos li:hover a#menuFabricasBtn {
     height: 80px;
 }
 
-nav li:hover ul#menuFabricas {
+header.cabecalhoFabricaJogos nav.navFabricaJogos li:hover ul#menuFabricas {
     visibility: visible;
 }
 
 
-.mainFabricaJogos{
+main.mainFabricaJogos{
     background-color:  rgba(139, 26, 26, 1);
     margin-top: 80px;
 }
 
-.ft51-vermelho-introdu{
+main.mainFabricaJogos .ft51-vermelho-introdu{
     height: 899px;
 }
 
-.ft51-branco-introdu{
+main.mainFabricaJogos .ft51-branco-introdu{
     background-color: rgba(255,255,255, 1);
     width: 100%;
     height: 100%;
@@ -178,12 +178,12 @@ nav li:hover ul#menuFabricas {
     text-align: center;
 }
 
-.ft51-branco-introdu h1 {
+main.mainFabricaJogos .ft51-branco-introdu h1 {
     font-size: 56px;
     font-family: 'Verdana', 'Geneva', sans-serif;
 }
 
-.ft51-branco-introdu p {
+main.mainFabricaJogos .ft51-branco-introdu p {
     font-size: 27px; 
     font-family: sans-serif;
     margin-top: 40px;
@@ -196,7 +196,7 @@ nav li:hover ul#menuFabricas {
     word-spacing: 5px;
 }
 
-.edital-button {
+main.mainFabricaJogos .edital-button {
     background-color: #8B1A1A;
     color: #FFFFFF;
     font-size: 27px;
@@ -235,6 +235,7 @@ img {
     font-size: 12px;
     /* position: absolute; */
     z-index: 0;
+    
 }
 
 
@@ -258,7 +259,8 @@ img {
 }
   
 .swiper-slide{
-    background-color: rgb(141, 3, 3);
+    background-color: rgba(177, 8, 8, 1);
+    z-index: 2;
 }
 
 @media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
@@ -320,12 +322,14 @@ img {
 }
 
 .projeto-carrossel {
-    height: 12.1rem;
+    height: 180px;
+    margin-top: -50px;
+    margin-bottom: 80px;
 }
 
 
 
-.ft51-vermelho-projetos{
+main.mainFabricaJogos .ft51-vermelho-projetos{
     background-color: rgba(139, 26, 26, 1);
     border-radius: 0 240px 220px 0;
     padding-top: 50px;
@@ -334,14 +338,14 @@ img {
 }
 
 
-.ft51-branco-requisitos{
+main.mainFabricaJogos .ft51-branco-requisitos{
     height: 980px;
     background-color: rgba(255, 255, 255,1);
     border-radius: 260px 0 260px 0;
 }
 
 
-#effectRequests1 {
+main.mainFabricaJogos #effectRequests1 {
     height: auto;
     width: 160px;
     margin: 0;
@@ -349,7 +353,7 @@ img {
     position: absolute;
 }
 
-#effectRequests2 {
+main.mainFabricaJogos #effectRequests2 {
     height: auto;
     fill: aqua;
     width: 160px;
@@ -362,7 +366,7 @@ img {
 
 }
 
-#swordDecoration {
+main.mainFabricaJogos #swordDecoration {
     height: auto;
     width: 200px;
     position: absolute;
@@ -370,14 +374,14 @@ img {
     bottom: 0px;
 }
 
-.ft51-vermelho-requisitos{
+main.mainFabricaJogos .ft51-vermelho-requisitos{
     height: 980px;
     background-color: rgba(139, 26, 26, 1);
 }
 
 
 
-.ft51-vermelho-projetos h1{
+main.mainFabricaJogos .ft51-vermelho-projetos h1{
     margin-bottom: 30px;
     color: white;
     font-size: 56px;
@@ -387,7 +391,7 @@ img {
 }
 
 
-.ft51-vermelho-projetos p:nth-child(2){
+main.mainFabricaJogos .ft51-vermelho-projetos p:nth-child(2){
     color: white;
     font-size: 27px;
     word-spacing: 5px;
@@ -398,79 +402,79 @@ img {
     margin-bottom: -120px;
 }
 
-.ft51-vermelho-projetos p{
+main.mainFabricaJogos .ft51-vermelho-projetos p{
     font-size: 27px;
 }
 
 
-.ft51-branco-requisitos{
+main.mainFabricaJogos .ft51-branco-requisitos{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.jogos-requisitos {
+main.mainFabricaJogos .jogos-requisitos {
     position: relative;
     width: 1200px;
     text-align: center;
 }
 
-.jogos-requisitos h1{
+main.mainFabricaJogos .jogos-requisitos h1{
     margin-bottom: 30px;
     font-size: 56px;
 }
 
-.jogos-requisitos p {
+main.mainFabricaJogos .jogos-requisitos p {
     text-align: justify;
     font-size: 27px;
     word-spacing: 5px;
     line-height: 30px;
 }
 
-#jogosIdadeConhecimento {
+main.mainFabricaJogos #jogosIdadeConhecimento {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     text-align: left;
 }
 
-#jogosIdadeConhecimento h2{
+main.mainFabricaJogos #jogosIdadeConhecimento h2{
     font-size: 22px;
 }
 
-#jogosIdadeConhecimento #idade {
+main.mainFabricaJogos #jogosIdadeConhecimento #idade {
     position: relative;
     margin-right: 15%;
 }
 
-#jogosIdadeConhecimento #idade ul {
+main.mainFabricaJogos #jogosIdadeConhecimento #idade ul {
     margin-left: 40px;
     font-size: 18px;
 }
 
-#jogosIdadeConhecimento #idade ul li {
+main.mainFabricaJogos #jogosIdadeConhecimento #idade ul li {
     margin-top: 10px;
 }
 
-#jogosIdadeConhecimento #conhecimentos {
+main.mainFabricaJogos #jogosIdadeConhecimento #conhecimentos {
     margin-left: 15%;
     position: relative;
 }
 
-#jogosIdadeConhecimento #conhecimentos ul {
+main.mainFabricaJogos #jogosIdadeConhecimento #conhecimentos ul {
     margin-left: 40px;
     font-size: 18px
 }
 
-#jogosIdadeConhecimento #conhecimentos ul li {
+main.mainFabricaJogos #jogosIdadeConhecimento #conhecimentos ul li {
     margin-top: 10px;
 }
 
-.ft51-branco-gradec{
+main.mainFabricaJogos .ft51-branco-gradec{
     height: 980px;
     background-color:rgba(255, 255, 255,1);  
 }
-.ft51-vermelho-gradec{
+main.mainFabricaJogos .ft51-vermelho-gradec{
     height: 1200px;
     background-color:rgba(139, 26, 26, 1);
     border-radius: 260px 0 0 0;
@@ -479,18 +483,18 @@ img {
 
 /*Grade Curricular*/
 
-.grade-curricular {
+main.mainFabricaJogos .grade-curricular {
     margin: 100px;
     color: white;
     margin-left: 40%;
 }
 
-.container-title-grad {
+main.mainFabricaJogos .container-title-grad {
     margin: 0 160px;
     padding: 10px 0;
 }
 
-.container-title-outside {
+main.mainFabricaJogos .container-title-outside {
     display: flex;
     font-weight: bold;
     background-color: var(--color-grad-title);
@@ -504,7 +508,7 @@ img {
     cursor: pointer;
     
 }
-.container-title-outside-btn {
+main.mainFabricaJogos .container-title-outside-btn {
     display: flex;
     font-weight: bold;
     background-color: var(--color-grad-title);
@@ -519,7 +523,7 @@ img {
 }
 
 
-.container-grad-table table {
+main.mainFabricaJogos .container-grad-table table {
     width: 100%;
     border-radius: 10px; 
     border-collapse: collapse;
@@ -527,32 +531,32 @@ img {
     overflow: hidden; 
 }
 
-th, td {
+main.mainFabricaJogos th, td {
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
 }
 
-tr:nth-child(2n) {
+main.mainFabricaJogos tr:nth-child(2n) {
     background-color: #D9D9D9;
 }
-tr:nth-child(1) {
+main.mainFabricaJogos tr:nth-child(1) {
     background-color: #ffffff;
 }
-tr:nth-child(3) {
+main.mainFabricaJogos tr:nth-child(3) {
     background-color: #ffffff;
 }
-tr:nth-child(5) {
+main.mainFabricaJogos tr:nth-child(5) {
     background-color: #ffffff;
 }
 
-.container-title-outside {
+main.mainFabricaJogos .container-title-outside {
     text-align: center;
 }
 
 
 
 
-#effectIntro1{
+main.mainFabricaJogos #effectIntro1{
     height: auto;
     width: 160px;
     margin: 0;
@@ -560,7 +564,7 @@ tr:nth-child(5) {
     position: absolute;
 }
 
-#effectIntro2{
+main.mainFabricaJogos #effectIntro2{
     height: auto;
     fill: aqua;
     width: 160px;
@@ -570,7 +574,7 @@ tr:nth-child(5) {
     position: absolute;
 }
 
-footer.rodape-branco {
+footer.rodape-brancoFabricadejogos {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -583,7 +587,7 @@ footer.rodape-branco {
 }
 
 
-.rodape-branco img  {
+.rodape-brancoFabricadejogos img  {
     width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
     box-shadow: none;
