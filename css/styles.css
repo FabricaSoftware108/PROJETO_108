@@ -13,7 +13,14 @@
     --font-color-pagdemanda-title-subtitle: #000;
     
     --background-color-demanda-cadastro: #281358;
-    
+
+    /*Fábrica de software*/
+    --font-grad-title: Verdana, Geneva, Tahoma, sans-serif;
+
+    --color-grad:rgba(43, 20, 99, 1);
+    --color-grad-title:rgba(43, 20, 99, 1);
+
+    --font-size-grad: 8.5px;
 }
 
 body.home, html.home{
@@ -53,15 +60,16 @@ nav.home {
     left: 0;
     right: 0;
     border-bottom: 1px solid black;
-    height: 70px;
+    height: 80px;
     background-color: white;
     z-index: 2;
 }
 
 nav.home img {
     height: 50px;
-    margin-right: 169px;
-    margin-left: 60px;
+    margin-right: 150px;
+    margin-left: 150px;
+    box-shadow: none;
 }
 
 nav.home #menuPages {
@@ -115,7 +123,7 @@ nav.home li #admButton {
 
 nav.home ul#menuFabricas {
     position: absolute;
-    top: 70px;
+    top: 75px;
     left: 529px;
     background-color: white;
     padding: 0;
@@ -364,6 +372,7 @@ nav.home li:hover ul#menuFabricas {
     background-color: #43079C;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #43079C;
+    width: 1100px;
 }
 
 .container-img-home#jogos {
@@ -372,6 +381,7 @@ nav.home li:hover ul#menuFabricas {
     background-color: #CF023D;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #CF023D;
+    width: 1100px;
 }
 
 .container-img-home#cgi {
@@ -380,6 +390,7 @@ nav.home li:hover ul#menuFabricas {
     background-color: #E1A300;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #E1A300;
+    width: 1100px;
 }
 
 .container-img-home#audiovisual {
@@ -388,6 +399,7 @@ nav.home li:hover ul#menuFabricas {
     background-color: #04BA1A;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #04BA1A;
+    width: 1100px;
 }
 
 
@@ -479,6 +491,7 @@ nav.home li:hover ul#menuFabricas {
 .rodape-preto-home img  {
     width: 400px; 
     height: auto;
+    box-shadow: none;
 }
 
 
@@ -487,23 +500,14 @@ nav.home li:hover ul#menuFabricas {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100&display=swap');
 
-* {
-    padding: 0;
+.Body-Fabrica-Software {
     margin: 0;
-    box-sizing: border-box;
-    font-family: var(--font-grad-title);
-}
-
-:root {
-    --font-grad-title: Verdana, Geneva, Tahoma, sans-serif;
-
-    --color-grad:rgba(43, 20, 99, 1);
-    --color-grad-title:rgba(43, 20, 99, 1);
-
-    --font-size-grad: 8.5px;
+    padding: 0;
 }
 
 /* cabecalho  */
+
+
 
 nav.nav-software {
     align-items: center;
@@ -523,6 +527,7 @@ nav.nav-software img {
     height: 50px;
     margin-right: 200px;
     margin-left: 60px;
+    box-shadow: none;
 }
 
 nav.nav-software #menuPages {
@@ -551,7 +556,7 @@ nav.nav-software a {
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 1px;
-    font-family: var(--font-grad-title);
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
 }
 
 
@@ -606,7 +611,7 @@ nav.nav-software ul#menuFabricas a {
     color: black; 
     height: 0px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -792,11 +797,11 @@ tr:nth-child(5) {
 
 /* carrosel */
 
-span {
+.Body-Fabrica-Software span {
     font-size: x-large;
 }
   
-.card-img {
+.Body-Fabrica-Software .card-img {
     box-shadow: 0 1px 2px #0003;
     width: 100%;
 }
@@ -822,13 +827,13 @@ span {
 .swiper-button-prev {
     left: 10px; /* Ajusta a posição do botão esquerdo */
     color:black;
-    padding: 30px;/* aqui deixa o botao no formato de circulo*/
+    padding: 20px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-next {
     right: 10px; /* Ajusta a posição do botão direito */
     color:black;
-    padding: 30px;/* aqui deixa o botao no formato de circulo*/
+    padding: 20px;/* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-prev::after,
@@ -838,8 +843,9 @@ span {
   
 }
   
-.swiper-slide{
+.Body-Fabrica-Software .swiper-slide{
     background-color: rgba(102, 30, 159, 1);
+    z-index: 2;
 }
 
 @media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
@@ -850,6 +856,7 @@ span {
 
 .swiper {
     height: 500px;
+    z-index: -2;
 }
   
 .swiper-slide {
@@ -860,7 +867,7 @@ span {
 }
 
 .description{
-    font-size: 20px;
+    font-size: 22px;
     color:aliceblue;
     overflow: hidden;
     margin: 4rem;
@@ -874,9 +881,9 @@ span {
 }
 
 .card-image{
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
-    width: 300rem;
+    width: 400rem;
     margin: 1rem;
 }
 
@@ -885,7 +892,7 @@ span {
 }
 
 .swiper-slide{
-    padding: 90px;
+
     width: 100%;
     height: 100%;
 }
@@ -901,20 +908,23 @@ span {
 
 .projeto-carrossel {
     height: 12rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 .projeto-carrossel h1 {    
     color: white;
     text-align: center;
     margin: 10px;
-    font-size: 30px;
+    font-size: 56px;
+    margin-top: 100px;
 }
 
 .projeto-carrossel p {
     color: white;
     text-align: center;
     margin: 50px;
-    font-size: 20px;
+    font-size: 27px;
  }
 
 /* Rodapé */
@@ -937,6 +947,7 @@ span {
 .rodape-branco img  {
     width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
+    box-shadow: none;
 }
 
 /*icones introducao*/
@@ -1027,12 +1038,6 @@ span {
 
 
 /*Fábrica de jogos*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 
 body.bodyFabricaJogos {
     margin: 0;
@@ -1156,7 +1161,7 @@ header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a {
     color: black; 
     height: 0px;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1288,7 +1293,7 @@ img {
   
 }
   
-.swiper-slide{
+.bodyFabricaJogos .swiper-slide{
     background-color: rgba(177, 8, 8, 1);
     z-index: 2;
 }
@@ -1517,17 +1522,19 @@ main.mainFabricaJogos .grade-curricular {
     margin: 100px;
     color: white;
     margin-left: 40%;
+    
 }
 
 main.mainFabricaJogos .container-title-grad {
     margin: 0 160px;
     padding: 10px 0;
+    
 }
 
 main.mainFabricaJogos .container-title-outside {
     display: flex;
     font-weight: bold;
-    background-color: var(--color-grad-title);
+    background-color: transparent;
     font-size: 27px;
     color: white;
     padding: 20px 21px;
@@ -1536,12 +1543,13 @@ main.mainFabricaJogos .container-title-outside {
     text-align: center;
     align-items: center;
     cursor: pointer;
-    
 }
+
+
 main.mainFabricaJogos .container-title-outside-btn {
     display: flex;
     font-weight: bold;
-    background-color: var(--color-grad-title);
+    background-color: transparent;
     font-size: 13px;
     color: white;
     padding: 20px 21px;
@@ -1549,7 +1557,6 @@ main.mainFabricaJogos .container-title-outside-btn {
     text-align: center;
     align-items: center;
     cursor: pointer;
-
 }
 
 
@@ -1613,7 +1620,7 @@ footer.rodape-brancoFabricadejogos {
     height: fit-content;
     border-collapse: collapse;
     flex-shrink: 0;
-    margin-top: 3000px;
+    margin-top: 3100px;
 }
 
 
@@ -1622,3 +1629,313 @@ footer.rodape-brancoFabricadejogos {
     height: auto;
     box-shadow: none;
 }
+
+
+
+
+/*Demanda*/
+
+
+header.cabecalho-Demanda nav{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+    height: 80px;
+    background-color: white;
+    z-index: 2;
+}
+
+header.cabecalho-Demanda nav img {
+    height: 50px;
+    margin-right: 200px;
+    margin-left: 60px;
+}
+
+header.cabecalho-Demanda nav #menuPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.cabecalho-Demanda nav ul li {
+    list-style-type: none;
+    padding: none;
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.cabecalho-Demanda nav a {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+}
+
+
+header.cabecalho-Demanda nav li:nth-child(5) a, li:nth-child(6) a{
+    width: 183px;
+}
+
+header.cabecalho-Demanda nav a#logo {
+    margin: 0;
+}
+header.cabecalho-Demanda nav a#logo img{
+    box-shadow: none;
+}
+
+header.cabecalho-Demanda nav li #admButton {
+    background-color: rgb(254, 185, 105, 75);
+    border-radius: 40px;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 100px;
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas {
+    height: fit-content;
+    position: absolute;
+    top: 81px;
+    left: 568px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 340px;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 15px;
+    justify-content: center;
+    visibility: hidden;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: all 2ms ease-out;
+}
+
+header.cabecalho-Demanda nav ul #menuFabricas li {
+    list-style-type: none;
+    margin-top: 15px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a {
+    text-decoration: none;
+    color: black; 
+    height: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fs:hover {
+    color: rgba(43, 20, 99, 1);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fj:hover {
+    color: rgba(139, 26, 26, 1);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fcg:hover {
+    color: rgba(226, 153, 26, 1);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fav:hover {
+    color: rgba(66, 176, 48, 1);
+}
+
+header.cabecalho-Demanda nav li:hover a#menuFabricasBtn {
+    height: 80px;
+}
+
+header.cabecalho-Demanda nav li:hover ul#menuFabricas {
+    visibility: visible;
+}
+
+.body-demanda, .html-demanda {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: white; 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden auto;
+}
+
+.body-demanda .content-title-subtitle-demanda {
+    padding: 20px 0 0 0;
+    color: var(--font-color-pagdemanda-title-subtitle);
+    text-align: center;
+  
+  }
+  
+.body-demanda .container-campo-dados-demanda {
+    background-color: var(--background-color-demanda-cadastro);
+    text-align: center;
+    border-radius: 20px;
+    height: 800px;
+    width: 1200px;
+
+  }
+  
+.body-demanda .content-title-subtitle-demanda h1{
+    font-size: var(--font-size-titulo)
+  
+  }
+  
+.body-demanda .content-title-subtitle-demanda p {
+    font-size: var(--font-size-subTitulo);
+  
+  }
+  
+.body-demanda .content-wrapper-all-demanda {
+    margin-top: 100px; 
+  }
+  
+.body-demanda .inputs-empresa-Demanda {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    align-items: center;
+  }
+  
+.body-demanda .inputs-titular-Demanda {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    align-items: center;
+  }
+  
+.body-demanda .inputs-empresa-Demanda input{
+    margin: 10px;
+    border-radius: 15px;
+    width: 350px;
+    height: 50px;
+    
+  }
+  
+.body-demanda .inputs-empresa-Demanda input,
+.body-demanda .inputs-titular-Demanda input {
+    padding: 0 30px;
+  }
+  
+.body-demanda .inputs-titular-Demanda input{
+    margin: 10px;
+    border-radius: 15px;
+    width: 350px;
+    height: 50px;
+  }
+  
+.body-demanda .campo-dados-demanda h2{
+    font-size: var(--font-size-subTitulo);
+    line-height: 40px;
+    
+  }
+  
+.body-demanda #dados-empresa-demanda-h2 {
+    font-size: 25px;
+  }
+  
+.body-demanda #dados-empresa-demanda-h2:nth-child(1) {
+    padding-top: 20px;
+  }
+
+.body-demanda .campo-dados-demanda {
+    margin-top: 90px;
+  }
+  
+.body-demanda .dados-Empresa-demanda {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.body-demanda .dados-Titular-demanda {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+.body-demanda .sobre-Projeto-Demanda {
+    font-size: var(--font-size-subTitulo);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -50px;
+  }
+  
+.body-demanda .sobre-Projeto-Demanda h2{
+    margin: 18px;
+  }
+  
+.body-demanda .enviar-Demanda{
+    padding: 15px 40px;
+    border-radius: 12px;
+    background-color: transparent;
+    color: white;
+    border-color: #3B96EB;
+    margin: 20px;
+  }
+
+.body-demanda .rodape-preto-demanda {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+.body-demanda .rodape-preto-demanda img{
+    width: 400px;
+    height: auto;
+    box-shadow: none;
+}
+
+.body-demanda .file-label {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 715px;
+    height: 50px;
+    text-align: start;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+.body-demanda .file-input {
+    display: none;
+  }
