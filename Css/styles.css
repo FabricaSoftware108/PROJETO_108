@@ -504,7 +504,7 @@ nav li:hover ul#menuFabricas {
   bottom: 0;
 }
 
-.rodape-preto {
+.rodape-preto-home {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -514,7 +514,7 @@ nav li:hover ul#menuFabricas {
   right: 0;
 }
 
-.rodape-preto img  {
+.rodape-preto-home img  {
   width: 400px; 
   height: auto;
 }
@@ -524,24 +524,24 @@ nav li:hover ul#menuFabricas {
   height: auto;
 }
 
-.campo-preenchimento{
+.campo-preenchimento-cadastroFabrica-Software {
   color: black;
   margin-top: 150px;
   font-size: var(--font-size-corpo);
   text-align: center;
 }
 
-.campo-preenchimento #text {
+.campo-preenchimento-cadastroFabrica-Software #text-cadastroFabrica-Software {
   text-align: justify;
   font-size: 18px;
 }
 
-.info-pessoais-endereco {
+.info-pessoais-endereco-cadastroFabrica-Software {
   background-color: rgba(40, 19, 88, 1);
   border-radius: 10px;
 }
 
-.container-form {
+.container-form-cadastroFabrica-Software {
   display: flex;
   background-color: transparent;
   font-size: 27px;
@@ -549,7 +549,7 @@ nav li:hover ul#menuFabricas {
   margin-top: 30px;
 }
 
-.inputs input{
+.inputs-cadastroFabrica-Software input{
   width: 500px;
   padding: 20px;
   border-radius: 10px;
@@ -557,7 +557,7 @@ nav li:hover ul#menuFabricas {
   margin-top: 10px;
 }
 
-.input-completo {
+.input-completo-cadastroFabrica-Software {
   width: 1010px;
   padding: 20px;
   border-radius: 10px;
@@ -565,15 +565,15 @@ nav li:hover ul#menuFabricas {
   margin-top: 10px;
 }
 
-.sub-titulo-white{
+.sub-titulo-white-cadastroFabrica-Software {
   color: white;
 }
 
 
-.sombra-roxa{
+.sombra-roxa-cadastroFabrica-Software {
   box-shadow: 92px 76px 129px 21px rgba(45, 0, 148, 1);
   left: -229px;
-  height: 350px;/* comprimento da sombra(largura-altura)*/
+  height: 350px;
   width: 156px;
   position: absolute;
   z-index: -1;
@@ -582,18 +582,17 @@ nav li:hover ul#menuFabricas {
 } 
 
 
-.sombra-rosa{
-  /* box-shadow: -53px 21px 92px 100px #ab15c26b; */
+.sombra-rosa-cadastroFabrica-Software {
   box-shadow: -100px 4px 100px 100px #ab15c26b;
   left: 1860px;
-  height: 100px;/* comprimento da sombra(largura-altura)*/
+  height: 100px;
   top: 250px;
   position: absolute;
   z-index: -1;
   border-radius: 90%;
 }
 
-.btn-enviar {
+.btn-enviar-cadastroFabrica-Software {
   margin-top: 50px;
   width: 344px;
   height: 80px;
@@ -604,7 +603,7 @@ nav li:hover ul#menuFabricas {
   font-size: 27px;
 }
 
-.btn-enviar:hover {
+.btn-enviar-cadastroFabrica-Software:hover {
   background-color: #3B96EB;
   color: white;
   cursor: pointer;

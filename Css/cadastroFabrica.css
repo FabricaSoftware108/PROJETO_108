@@ -1,0 +1,99 @@
+.campo-preenchimento-cadastroFabrica {
+    color: black;
+    margin-top: 150px;
+    font-size: var(--font-size-corpo);
+    text-align: center;
+}
+
+.campo-preenchimento-cadastroFabrica #text {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.info-pessoais-endereco-cadastroFabrica {
+    background-color: rgba(40, 19, 88, 1);
+    border-radius: 10px;
+}
+
+.container-form-cadastroFabrica {
+    display: flex;
+    background-color: transparent;
+    font-size: 27px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.inputs-cadastroFabrica input{
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.input-completo-cadastroFabrica {
+    width: 1010px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.sub-titulo-white-cadastroFabrica {
+    color: white;
+}
+
+
+.sombra-roxa-cadastroFabrica {
+    box-shadow: 92px 76px 129px 21px rgba(45, 0, 148, 1);
+    left: -229px;
+    height: 350px;/* comprimento da sombra(largura-altura)*/
+    width: 156px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    top: 500px;
+} 
+
+
+.sombra-rosa-cadastroFabrica {
+    box-shadow: -100px 4px 100px 100px #ab15c26b;
+    left: 1860px;
+    height: 100px;/* comprimento da sombra(largura-altura)*/
+    top: 250px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 90%;
+}
+
+.btn-enviar-cadastroFabrica {
+    margin-top: 50px;
+    width: 344px;
+    height: 80px;
+    border: 3px solid  #3B96EB;
+    border-radius: 7px;
+    background-color: rgb(40,19,88,1);
+    color : #3B96EB;
+    font-size: 27px;
+}
+
+.btn-enviar-cadastroFabrica:hover {
+    background-color: #3B96EB;
+    color: white;
+    cursor: pointer;
+}
+
+.rodape-preto {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.rodape-preto img  {
+    width: 400px; 
+    height: auto;
+}
