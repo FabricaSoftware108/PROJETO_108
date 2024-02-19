@@ -8,6 +8,20 @@
   font-family: var(--font-destaque);
 }
 
+:root {
+  --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
+  --font-size-titulo: 56px;
+  --font-size-subTitulo: 20px;
+  --font-size-corpo: 27px;
+  --font-size-legenda: 8px;
+  --line-height: 40px;
+
+  --font-color-pagdemanda-title-subtitle: #000;
+
+  --background-color-demanda-cadastro: #281358;
+
+}
+
 body, html{
   margin: 0;
   padding: 0;
@@ -18,6 +32,7 @@ body, html{
   background-color: white; 
   background-size: cover;
   background-position: center;
+  overflow: hidden auto;
 }
 
 article {
@@ -35,6 +50,7 @@ main {
   padding: 0 20px;
 }
 
+
 nav {
   align-items: center;
   justify-content: center;
@@ -46,12 +62,12 @@ nav {
   border-bottom: 1px solid black;
   height: 70px;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav img {
   height: 50px;
-  margin-right: 200px;
+  margin-right: 169px;
   margin-left: 60px;
 }
 
@@ -68,19 +84,21 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 nav a {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 47px;
+  margin-right: 47px;
   text-decoration: none;
   color: rgba(0, 0, 0, .7);
   justify-content: center;
   align-items: center;
   display: flex;
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   letter-spacing: 1px;
+
   font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
 }
 
@@ -133,10 +151,12 @@ nav ul #menuFabricas li {
 nav ul#menuFabricas a {
   text-decoration: none;
   height: 0px;
-  font-size: 12pt;
-  font-weight: normal;
+  font-size: 14px;
+
   color: rgba(0, 0, 0, 0.8);
   font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 
@@ -232,19 +252,25 @@ nav li:hover ul#menuFabricas {
 
 .content-wrapper{
     display: flex;
-    text-align: justify;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .content-wrapper p{
-    width: 600px;
-    height: 350px;
-    max-width: 700px;
-    padding-right: 50px;
-    margin-right: 20px;
-    line-height: 40px;
-    font-size: 18pt;
+  width: 580px;
+  height: 350px;
+  max-width: 700px;
+  padding-right: 50px;
+  line-height: 40px;
+  font-size: 18pt;
+  text-align: justify;
 }
+
+.content-wrapper img{
+  width: 500px;
+  height: auto;
+  margin-top: 15px;
+}
+
 .content-sobre-wrapper-home {
   display: flex;
   justify-content: center;
@@ -307,12 +333,18 @@ nav li:hover ul#menuFabricas {
 }
 
 .container-left p {
-  margin: 20px;
   text-align: justify;
   font-size: 18pt;
-  margin-right: 80px;
   margin-left: 80px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tituloFabricas {
+  margin: 20px 80px;
+}
+
+#textoLeftFabricas {
+  margin-left: 0;
 }
 
 .container-right {
@@ -498,13 +530,585 @@ nav li:hover ul#menuFabricas {
 }
 
 .rodape-preto img  {
-  width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+  width: 400px; 
   height: auto;
+}
+
+.rodape-branco img  {
+  width: 400px;
+  height: auto;
+}
+
+
+.effects {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  height: 200px;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  filter: blur(135px);
+  background-color: #AA15C2;
+  opacity: 70%;
+  z-index: 1;
+}
+
+.effects#effect2 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  height: 320px;
+  width: 320px;
+  transform: translate(-50%, -50%);
+  filter: blur(125px);
+  opacity: 40%;
+  background-color: #4815c2;
+  z-index: 1;
+}
+
+.quadrado {
+  width: 1200px;
+  height: 900px; 
+  background-color: #281358; 
+  border-radius: 20px; 
+  position: absolute;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -25%); 
+}
+/* DEMANDA */
+
+.content-title-subtitle-demanda {
+  padding: 20px 0 0 0;
+  color: var(--font-color-pagdemanda-title-subtitle);
+  text-align: center;
+
+}
+
+.container-campo-dados-demanda {
+  background-color: var(--background-color-demanda-cadastro);
+  text-align: center;
+  border-radius: 20px;
+  height: 800px;
+}
+
+.content-title-subtitle-demanda h1{
+  font-size: var(--font-size-titulo)
+
+}
+
+.content-title-subtitle-demanda p {
+  font-size: var(--font-size-subTitulo);
+
+}
+
+.content-wrapper-all-demanda {
+  margin-top: 100px; 
+}
+
+.inputs-empresa-Demanda {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+}
+
+.inputs-titular-Demanda {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+}
+
+.inputs-empresa-Demanda input{
+  margin: 10px;
+  border-radius: 15px;
+  width: 350px;
+  height: 50px;
+  
+}
+
+.inputs-empresa-Demanda input,
+.inputs-titular-Demanda input {
+  padding: 0 30px;
+}
+
+.inputs-titular-Demanda input{
+  margin: 10px;
+  border-radius: 15px;
+  width: 350px;
+  height: 50px;
+}
+
+.campo-dados-demanda h2{
+  font-size: var(--font-size-subTitulo);
+  line-height: 40px;
+  
+}
+
+#dados-empresa-demanda-h2 {
+  font-size: 25px;
+}
+
+#dados-empresa-demanda-h2:nth-child(1) {
+  padding-top: 20px;
+}
+.campo-dados-demanda {
+  margin-top: 90px;
+}
+
+.dados-Empresa-demanda {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dados-Titular-demanda {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.sobre-Projeto-Demanda {
+  font-size: var(--font-size-subTitulo);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -50px;
+}
+
+.sobre-Projeto-Demanda h2{
+  margin: 18px;
+}
+
+.enviar-Demanda{
+  padding: 15px 40px;
+  border-radius: 12px;
+  background-color: transparent;
+  color: white;
+  border-color: #3B96EB;
+  margin: 20px;
+}
+
+.file-label {
+  display: inline-flex;
+  background-color: white;
+  color: grey;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 715px;
+  height: 50px;
+  text-align: start;
+  align-items: center;
+  font-size: 14px;
+}
+
+.file-input {
+  display: none;
+}
+/*FABRICA SOFT*/
+
+.software{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.texto-sobre-fabrica-software {
+  font-family: var(--font-grad-title);
+  line-height: 30px;
+  position: absolute;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+  height: auto;
+  text-align: justify;
+  font-size: 22px;
+  color: black;
+}   
+
+.texto-sobre-fabrica-software h1 {
+  text-align: center;
+  line-height: 15rem;
+  font-size:30px;
+}
+
+.texto-sobre-fabrica-software button {
+  width: 190px;
+  height: 50px;
+  font-family: var(--font-grad-title);
+  border-radius: 20rem;
+  margin: 6% 0% 0% 43%;
+  background-color: rgba(43, 20, 99, 1);
+  color: white;
+  font-size: 22px;
+}
+
+.ft51-roxo-introdu {
+  height: 899px;
+  margin-top: 70px;
+  background-color: rgba(43, 20, 99, 1);
+}
+
+.ft51-branco-introdu {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 260px 0 0 260px;
+}
+
+.ft51-roxo-projetos {
+  background-color: rgba(43, 20, 99, 1);
+  border-radius: 0 240px 220px 0;
+  padding-top: 50px;
+  height: 980px;
+  box-shadow: 100px 0px 81px -50px rgba(45, 0, 148, 1);
+}
+
+.ft51-branco-requisitos{
+  height: 980px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 260px 0 260px 0;
+}
+
+.ft51-roxo-requisitos {
+  height: 980px;
+  background-color: rgba(43, 20, 99, 1);
+  
+}
+.ft51-branco-gradec{
+  height: 980px;
+  background-color:rgba(255, 255, 255, 1);
+  
+  
+}
+.ft51-roxo-gradec{
+  height: 1200px;
+  background-color: rgba(43, 20, 99, 1);
+  border-radius: 260px 0 0 0;
+  box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
+}
+
+/* grade curricular */
+
+.grade-curricular {
+  margin: 90px 0px 90px 700px;
+  color: white;
+  width: 300px;
+}
+
+.container-soft-title-grad {
+  margin: 0 160px;
+  padding: 10px 0;
+}
+
+.container-soft-title-outside {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--color-grad-title);
+  font-size: 13px;
+  color: white;
+  padding: 20px 21px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.container-soft-title-outside-btn {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--color-grad-title);
+  font-size: 13px;
+  color: white;
+  padding: 20px 21px;
+  border: 1px solid transparent;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+.container-soft-grad-table table {
+  width: 100%;
+  border-radius: 10px; 
+  border-collapse: collapse;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+th, td {
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+}
+
+tr:nth-child(2n) {
+  background-color: #D9D9D9;
+}
+tr:nth-child(1) {
+  background-color: #ffffff;
+}
+tr:nth-child(3) {
+  background-color: #ffffff;
+}
+tr:nth-child(5) {
+  background-color: #ffffff;
+}
+
+.container-soft-title-outside {
+  text-align: center;
+}
+
+/* carrosel */
+
+span {
+  font-size: x-large;
+}
+
+.card-img { /*mudei de img para card-img pq tava dando comflito com o home */
+  box-shadow: 0 1px 2px #0003;  
+  width: 100%;
+}
+
+@media (max-width: 450px) { /*para melhoras a qualidade da imagem deixa limitada */
+  .swiper {
+    height: 270px;
+  }
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+  color:black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+  border-radius: 50%;
+  background-color: white;
+  width: 60px; /* Largura desejada */
+  height: 60px; /* Altura desejada */
+  font-size: 12px;
+  z-index: -1;
+}
+
+
+.swiper-button-prev {
+  left: 10px; /* Ajusta a posição do botão esquerdo */
+  color:black;
+  padding: 30px;/* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-next {
+  right: 10px; /* Ajusta a posição do botão direito */
+  color:black;
+  padding: 30px;/* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 40px;
+  color: black;
+
+}
+
+.swiper-slide{
+  background-color: rgba(102, 30, 159, 1);
+}
+
+@media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+  img {
+    width: 100%;
+  }
+}
+
+.swiper {
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align:justify; /*arruma o texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description{
+  font-size: 20px;
+  color:aliceblue;
+  overflow: hidden;
+  margin: 4rem;
+  font-family: var(--font-grad-title);
+  
+  text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+  display: -webkit-box;   /*delimita o texto que vc coloca*/
+  -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
+  -webkit-box-orient: vertical;
+  line-height: 30px;
+}
+
+.card-image{
+  max-width: 100%;
+  height: auto;
+  width: 300rem;
+  margin: 1rem;
+}
+
+.card-img{
+  border-radius: 5px;
+}
+
+.swiper-slide{
+  padding: 90px;
+  width: 100%;
+  height: 100%;
+}
+
+.position {
+  width: 1500px;/* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/ 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.projeto-carrossel {
+  height: 12rem;
+}
+
+.projeto-carrossel h1 {    
+  color: white;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.projeto-carrossel p {
+  color: white;
+  text-align: center;
+  margin: 50px;
+  font-size: 20px;
+}
+
+
+
+
+/* Rodapé */
+
+#img-js, #img-html{
+  padding: 23px;
+  opacity: 0.5;
+}
+
+.rodape-branco {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 247rem;
 }
 
 .rodape-branco img  {
   width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
   height: auto;
+}
+
+/*icones introducao*/
+#imgIcone{
+  opacity: 0.5;
+  width: 9rem;
+  height: 9rem;
+  padding: 10px;
+  position: absolute;
+}
+
+.icone-js{
+  left: 53rem;
+  top: 4rem;
+}
+
+.icone-html{
+  left: 100rem;
+  top: 8rem;
+}
+
+.icone-angular{
+  left: 76rem;
+  top: 43rem;
+}
+
+.icone-sql{
+  left: 105rem;
+  top: 45rem;
+}
+
+.icone-csharp {
+  left: 10rem;
+  top: 13rem;
+}
+
+
+.icone-css {
+  left: 30rem;
+  top: 45rem;
+}
+
+
+
+/*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
+
+.requisitos_software{
+  font-family: var(--font-grad-title);
+  line-height: 30px;
+  position: absolute;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+  height: auto;
+  text-align: justify;
+  font-size: 22px;
+  color: black;
+}
+
+
+
+.requisitos_software h1 {
+  text-align: center;
+  line-height: 10rem;
+} 
+
+
+
+.container-soft-requisitos {
+  display: flex;
+  flex-direction: line;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.titulo {
+  font-size: 22px;
+}
+
+.subtext {
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 22px;
 }
 
 /* PÁGINA  DO BANCO DE TALENTOS*/
