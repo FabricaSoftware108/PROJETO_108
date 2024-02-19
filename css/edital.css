@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body, html {
+body, html .body-edital{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -81,7 +81,7 @@ nav a {
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 1px;
-    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav li:nth-child(5) a, li:nth-child(6) a{
@@ -232,7 +232,30 @@ button {
   line-height: 15rem;
   font-size: 56;
 }
-
+.sombra_orientacoes {
+  position: relative;
+  width: 1209px;
+  height: 220%;
+  /* margin: 10px 0 0 27.092px; */
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px;
+  top:110%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sombra_orientacoes2 {
+  position: relative;
+  width: 1209px;
+  height: 220%;
+  /* margin: 10px 0 0 27.092px; */
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px;
+  top:110%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .inscricoes {
   position: absolute;
   width: 207px;
@@ -252,7 +275,7 @@ button {
   top: 6px;
   left: 2px;
   color: #ffffff;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -266,7 +289,7 @@ button {
   height: 18px;
   top: 23px;
   left: 253px;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -278,7 +301,7 @@ button {
 .sobre_curso-1 .text1 {
   position: relative;
   color: #000000;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.784px;
@@ -287,7 +310,7 @@ button {
 .sobre_curso-1 .text2 {
   position: relative;
   color: #000000;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.784px;
@@ -296,7 +319,7 @@ button {
 .sobre_curso-1 .text3 {
   position: relative;
   color: #000000;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.784px;
@@ -306,10 +329,11 @@ button {
   position: relative;
   width: 1209px;
   height: 65px;
-  margin: 10px 0 0 27.092px;
+  /* margin: 10px 0 0 27.092px; */
   background: #ffffff;
   z-index: 99;
   border-radius: 15px;
+  top: 110%;
 }
 .inscricoes2 {
   position: absolute;
@@ -330,7 +354,7 @@ button {
   top: 6px;
   left: 2px;
   color: #ffffff;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -344,7 +368,7 @@ button {
   height: 18px;
   top: 23px;
   left: 253px;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -356,7 +380,7 @@ button {
 .sobre_curso-2 .text-1 {
   position: relative;
   color: #000000;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.784px;
@@ -365,7 +389,7 @@ button {
 .sobre_curso-2 .text-2 {
   position: relative;
   color: #000000;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.784px;
@@ -374,7 +398,7 @@ button {
 .sobre_curso-2 .text-3{
   position: relative;
   color: #000000;
-  font-family: Inter, var(--default-font-family);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.784px;
