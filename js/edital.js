@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function toggleTable_inscricoes() {
+function toggleTable_inscricoes1() {
     var seta = document.getElementById("inscricoes");
 
     if (seta.style.display === "" || seta.style.display === "none") {

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-edital">
     <main>
     <header class="cabecalho">
         <nav>
@@ -50,15 +50,37 @@
      
     <div class="borda_roxa">
     <div class="sombra">
-        <div class="inscricoes">
-            <span class="text_inscricoes">INSCRIÇÕES ABERTAS</span>
+        <div class="container-soft-title-grad">           
+            <div class="container-soft-title-outside">
+                <button class="inscricoes" onclick="toggleTable_inscricoes1()">
+                    <div class="wrapper-content-icon" style="margin-left: 875px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);transform: msFilter;">
+                        <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                    </div>
+                </button>
+            </div>
+            <div id="inscricoes" class="inscricoes">
+                <span class="text_inscricoes">INSCRIÇÕES ABERTAS</span>
+            </div>
+            <div id="inscricoes" class="sobre_curso-1">
+                <span class="text1">Processo Seletivo 32/2023 - </span> 
+                <span class="text2">Fabrica de Software Matutino </span>
+                <span class="text3">| Campo Grande</span>
+            </div>
+                <div class="sombra_orientacoes">
+                    <div class="orientacoes_projeto">
+                    </div>
+                </div>
+            <div id="inscricoes" class="container-soft-grad-table">
+                <table>
+                    <tr>
+                        <th scope="col">Orientações Projeto Seletivo Senac/MS</th>
+                        <th scope="col">Descritivo da Vaga Processo Seletivo 32/2023 -Fabrica de Software Matutino | Campo Grande</th>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="sobre_curso-1">
-            <span class="text1">Processo Seletivo 32/2023 - </span> 
-            <span class="text2">Fabrica de Software Matutino </span>
-            <span class="text3">| Campo Grande</span>
-            <svg  onclick="toggleTable_inscricoes()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
-        </div>
+
     </div>
 
     <div class="sombra2">

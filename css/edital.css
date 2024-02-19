@@ -9,6 +9,10 @@ body, html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.wrapper-content-icon {
+  padding-left: 130%;
+}
+
 .sombra-rosa{
   box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
   left: -229px;
@@ -228,19 +232,7 @@ button {
   line-height: 15rem;
   font-size: 56;
 }
-/* display: flex;
-font-weight: bold;
 
-background-color: var(--color-grad-title);
-font-size: 13px;
-color: white;
-
-padding: 20px 21px;
-border: 1px solid transparent;
-
-text-align: center;
-align-items: center;
-cursor: pointer; */
 .inscricoes {
   position: absolute;
   width: 207px;
@@ -401,4 +393,19 @@ footer.rodape-preto-edital {
   width: 400px;
   height: auto;
   box-shadow: inset 0 0 0 3px  rgba(255, 255, 255, 1);
+}
+.container-soft-title-outside {
+  text-align: center;
+}
+.container-soft-title-grad {
+  margin: 0 160px;
+  padding: 10px 0;
+}
+.container-soft-grad-table table {
+  width: 100%;
+  border-radius: 10px; 
+  border-collapse: collapse;
+  border-radius: 20px;
+  overflow: hidden;
+  
 }
