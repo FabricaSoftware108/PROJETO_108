@@ -155,7 +155,7 @@ nav li:hover ul#menuFabricas {
 }
 
 
-main{
+.mainFabricaJogos{
     background-color:  rgba(139, 26, 26, 1);
     margin-top: 80px;
 }
