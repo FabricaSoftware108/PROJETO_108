@@ -1098,3 +1098,322 @@ span {
   margin-top: 50px;
   font-size: 22px;
 }
+
+
+/* Cadastro vagas */
+
+
+
+body.pagina-cadastro-vagas{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden auto;
+}
+
+nav.cadastro-vagas {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid black;
+  height: 80px;
+  background-color: white;
+  z-index: 1;
+}
+
+nav.cadastro-vagas img {
+  height: 50px;
+  margin-right: 200px;
+  margin-left: 60px;
+}
+
+nav.cadastro-vagas #menuPages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.cadastro-vagas ul li {
+  list-style-type: none;
+  padding: none;
+  margin: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.cadastro-vagas a {
+  margin-left: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .7);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+}
+
+
+nav.cadastro-vagas li:nth-child(5) a, li:nth-child(6) a{
+  width: 183px;
+}
+
+nav.cadastro-vagas a#logo {
+  margin: 0;
+}
+
+nav.cadastro-vagas li #admButton {
+  background-color: rgb(254, 185, 105, 75);
+  border-radius: 40px;
+  height: 40px;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 100px;
+}
+
+nav.cadastro-vagas ul#menuFabricas {
+  height: fit-content;
+  position: absolute;
+  top: 81px;
+  left: 568px;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  width: 340px;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 15px;
+  justify-content: center;
+  visibility: hidden;
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  transition: all 2ms ease-out;
+}
+
+nav.cadastro-vagas ul #menuFabricas li {
+  list-style-type: none;
+  margin-top: 15px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+nav.cadastro-vagas ul#menuFabricas a {
+  text-decoration: none;
+  color: black; 
+  height: 0px;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+nav.cadastro-vagas ul#menuFabricas a#Fs:hover {
+  color: rgba(43, 20, 99, 1);
+}
+
+nav.cadastro-vagas ul#menuFabricas a#Fj:hover {
+  color: rgba(139, 26, 26, 1);
+}
+
+nav.cadastro-vagas ul#menuFabricas a#Fcg:hover {
+  color: rgba(226, 153, 26, 1);
+}
+
+nav.cadastro-vagas ul#menuFabricas a#Fav:hover {
+  color: rgba(66, 176, 48, 1);
+}
+
+nav.cadastro-vagas li:hover a#menuFabricasBtn {
+  height: 80px;
+}
+
+nav.cadastro-vagas li:hover ul#menuFabricas {
+  visibility: visible;
+}
+
+
+
+/* aqui faz parte do corpo do site de cadastro de vagas*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-grad-title);
+}
+
+.titulo-vagas {
+  color: #000;
+  line-height: 30px;
+}
+
+.titulo-vagas h1{
+  font-size: 56px;
+  position: relative;
+  top :100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 78px;
+  font-family: var(--font-destaque);
+}
+
+.titulo-vagas p{
+  font-size:27px ;
+  position: relative;
+  top: 78px;
+  text-align: center;
+  font-family: var(--font-destaque);
+}
+
+
+
+.sombra-roxa-vagas{
+  box-shadow: 92px 76px 129px 21px rgba(45, 0, 148, 1);
+  left: -223px;
+  height: 350px;/* comprimento da sombra(largura-altura)*/
+  width: 156px;
+  position: absolute;
+  border-radius: 50%;
+} 
+
+
+.sombra-rosa-vagas{
+ 
+  position:absolute;
+  top: 50%;
+  left: 91%;
+  height: 320px;
+  width: 320px;
+  transform: translate(-50%, -50%);
+  filter: blur(125px);
+  opacity: 40%;
+  background-color: #AA15C2;
+}
+
+.quadrado-roxo-vagas{
+  background-color: rgb(40,19,88,1);
+  top:5px; /*altura do quadrado roxo*/
+  border-radius: 20px;
+}
+
+
+.titulo-dados-empresa-vagas h1{
+  font-size: 40px;
+  position: relative;
+  color: white;
+  top: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 160px;
+
+}
+
+
+.titulo-sobre-vagas h2{
+  font-size: 40px;
+  /* position: relative; /* ele estava deixando a pagina com o negócio de arrastar pro lado.*/
+  color: white;
+  left: 89px;
+  text-align: justify;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.titulo-sobre-vagas p{
+  font-size:27px ;
+  position: relative;
+  color: white;
+  top: 60px;
+  margin-left: 100px;/*esquerda do texto*/
+  margin-right: 120px;/* direita texto*/
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+.campo-texto-descricao-vagas {
+  width: 1000px;
+  height: 1000px;
+}
+
+
+.campo-texto-descricao-vagas textarea{
+  position: relative;
+  width: 1000px;
+  height: 760px;
+  margin-left: 78px;
+  margin-top: 190px;
+  padding: 40px;
+  border-radius: 19px;
+  font-size: 25px;
+
+}
+
+.button-enviar-vagas {
+  margin-left: 25rem;
+}
+
+.button-enviar-vagas button{
+  margin-bottom: 10rem;
+  width: 344px;
+  height: 80px;
+  border-radius: 17px;
+  position: relative;
+  background-color: rgb(40,19,88,1);
+  border: 3px double  #3B96EB;
+  font-size: 27px;
+  color : #3B96EB;
+}
+
+.rodape-preto-vagas {
+  text-align: center;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 156rem;/* aqui mexe na distancia(altura) do rodapé*/
+}
+
+.rodape-preto-vagas img  {
+  width: 700px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+}
+
+
+.inputs-dados-empresa {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.inputs-dados-empresa input {
+  margin: 10px;
+  border-radius: 15px;
+  width: 380px;
+  height: 60px;
+  padding: 0 30px;
+}
+

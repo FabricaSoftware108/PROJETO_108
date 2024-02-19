@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/cadastro_vagas.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="pagina-cadastro-vagas">
@@ -38,61 +38,44 @@
         </header>
 
         <main class="main-vagas">
-        
-            <div class="titulo-vagas">
-                <h1>Cadastre sua vaga de Emprego</h1>
-                <p>Este campo é destinado as Empresas Interessadas </p>
-            </div>
-            <div class="sombra-roxa-vagas"></div>
-            <div class="sombra-rosa-vagas"></div>
-            <div class="quadrado-roxo-vagas">
-                <div class="titulo-dados-empresa-vagas">
-                    <h1> Dados da Empresa</h1>
-                    <div class="nome-empresa-vagas">
-                        <input type="text"  id ="inputNomeEmpresa" size="30" placeholder="Nome da Empresa">
-                    </div>
-        
-                    <div class="input-cnpj-vagas">
-                        <input type="text"  id ="inputCnpj2" size="30" placeholder="CNPJ">
-                    </div>
-        
-                    <div class="input-telefone-vagas">
-                        <input type="text"  id ="inputTelefone" size="30" placeholder="Telefone">
-                    </div>
-        
-                    <div class="input-email-vagas">
-                        <input type="text"  id ="inputEmail" size="30" placeholder="Email">
-                    </div>
-                    <div class="input-cidade-vagas">
-                        <input type="text"  id ="inputCidade" size="30" placeholder="Cidade">
-                    </div>
-                    <div class="input-estado-vagas">
-                        <input type="text"  id ="inputEstado" size="30" placeholder="Estado">
-                    </div>
-        
-                    <div class="titulo-sobre-vagas">
-                        <h2>Sobre a Vaga</h2>
-                        <p> Informe os requisitos e informações da vaga de emprego no campo abaixo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae incidunt obcaecati exercitationem blanditiis magni deleniti ad quam magnam, perspiciatis, optio explicabo nam tempora neque vel aut, aliquam dicta dignissimos?</p>
-                    </div>
-                    <div class="campo-texto-descricao-vagas">
-                        <textarea type="text" id="campoTextoDescricaoVaga" size="400" cols="30" rows="5" placeholder="Descrição da Vaga"></textarea>
-                    </div>
-                    
-                    
-
-                <div class="button-enviar-vagas">
-                    <a href="URL"></a>
-                    <button id="buttonEnviar">Enviar</button> 
+            <form action="">
+                <div class="titulo-vagas">
+                    <h1>Cadastre sua vaga de Emprego</h1>
+                    <p>Este campo é destinado as Empresas Interessadas </p>
                 </div>
-            
-                <footer class="rodape-preto-vagas">
-                    <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé fabricas">
-                </footer>
+                <div class="sombra-roxa-vagas"></div>
+                <div class="sombra-rosa-vagas"></div>
+                <div class="quadrado-roxo-vagas">
+                    <div class="titulo-dados-empresa-vagas">
+                        <h1> Dados da Empresa</h1>                       
+                        <div class="inputs-dados-empresa">
+                            <input type="text"  id ="inputNomeEmpresa" size="30" placeholder="Nome da Empresa">
+                            <input type="text"  id ="inputCnpj2" size="30" placeholder="CNPJ">
+                            <input type="text"  id ="inputTelefone" size="30" placeholder="Telefone">
+                            <input type="text"  id ="inputEmail" size="30" placeholder="Email">
+                            <input type="text"  id ="inputCidade" size="30" placeholder="Cidade">
+                            <input type="text"  id ="inputEstado" size="30" placeholder="Estado">
+                        </div>
 
-            </div>
+                        <div class="titulo-sobre-vagas">
+                            <h2>Sobre a Vaga</h2>
+                            <p> Informe os requisitos e informações da vaga de emprego no campo abaixo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repudiandae incidunt obcaecati exercitationem blanditiis magni deleniti ad quam magnam, perspiciatis, optio explicabo nam tempora neque vel aut, aliquam dicta dignissimos?</p>
+                        </div>
+                        <div class="campo-texto-descricao-vagas">
+                            <textarea type="text" id="campoTextoDescricaoVaga" size="400" cols="30" rows="5" placeholder="Descrição da Vaga"></textarea>
+                        </div>
+                        <div class="button-enviar-vagas">
+                            <button id="buttonEnviar">Enviar</button> 
+                        </div>
+            </form>
+            
+        
             
         </main>
         
+        <footer class="rodape-preto-vagas">
+            <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé fabricas">
+        </footer>
     </div>
     
 </body>
