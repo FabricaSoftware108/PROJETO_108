@@ -1098,3 +1098,27 @@ span {
   margin-top: 50px;
   font-size: 22px;
 }
+
+
+
+/*ADM*/
+
+.fundo-ADM #fundo-ondulado-ADM {
+  margin-top: 43px;
+  position: fixed;
+  width: 1100px;
+  height: 950px;
+}
+
+.fundo-ADM #fundo-desenho-ADM {
+  margin-top: 323px;
+  position: fixed;
+  width: 690px;
+  height: 670px;
+}
+
+.fundo-circulo-ADM {
+  border-radius: 20rem;
+  color: #62BEF1;
+}
+
