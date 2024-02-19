@@ -1,6 +1,6 @@
 
 
-body{
+body.pagina-cadastro-vagas{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ body{
     overflow: hidden auto;
 }
 
-nav {
+nav.cadastro-vagas {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -24,19 +24,19 @@ nav {
     z-index: 1;
 }
 
-nav img {
+nav.cadastro-vagas img {
     height: 50px;
     margin-right: 200px;
     margin-left: 60px;
 }
 
-nav #menuPages {
+nav.cadastro-vagas #menuPages {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li {
+nav.cadastro-vagas ul li {
     list-style-type: none;
     padding: none;
     margin: none;
@@ -45,7 +45,7 @@ nav ul li {
     align-items: center;
 }
 
-nav a {
+nav.cadastro-vagas a {
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: none;
@@ -60,15 +60,15 @@ nav a {
 }
 
 
-nav li:nth-child(5) a, li:nth-child(6) a{
+nav.cadastro-vagas li:nth-child(5) a, li:nth-child(6) a{
     width: 183px;
 }
 
-nav a#logo {
+nav.cadastro-vagas a#logo {
     margin: 0;
 }
 
-nav li #admButton {
+nav.cadastro-vagas li #admButton {
     background-color: rgb(254, 185, 105, 75);
     border-radius: 40px;
     height: 40px;
@@ -79,7 +79,7 @@ nav li #admButton {
     margin-left: 100px;
 }
 
-nav ul#menuFabricas {
+nav.cadastro-vagas ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
@@ -97,7 +97,7 @@ nav ul#menuFabricas {
     transition: all 2ms ease-out;
 }
 
-nav ul #menuFabricas li {
+nav.cadastro-vagas ul #menuFabricas li {
     list-style-type: none;
     margin-top: 15px;
     display: inline-block;
@@ -106,7 +106,7 @@ nav ul #menuFabricas li {
     text-align: left;
 }
 
-nav ul#menuFabricas a {
+nav.cadastro-vagas ul#menuFabricas a {
     text-decoration: none;
     color: black; 
     height: 0px;
@@ -116,27 +116,27 @@ nav ul#menuFabricas a {
 }
 
 
-nav ul#menuFabricas a#Fs:hover {
+nav.cadastro-vagas ul#menuFabricas a#Fs:hover {
     color: rgba(43, 20, 99, 1);
 }
 
-nav ul#menuFabricas a#Fj:hover {
+nav.cadastro-vagas ul#menuFabricas a#Fj:hover {
     color: rgba(139, 26, 26, 1);
 }
 
-nav ul#menuFabricas a#Fcg:hover {
+nav.cadastro-vagas ul#menuFabricas a#Fcg:hover {
     color: rgba(226, 153, 26, 1);
 }
 
-nav ul#menuFabricas a#Fav:hover {
+nav.cadastro-vagas ul#menuFabricas a#Fav:hover {
     color: rgba(66, 176, 48, 1);
 }
 
-nav li:hover a#menuFabricasBtn {
+nav.cadastro-vagas li:hover a#menuFabricasBtn {
     height: 80px;
 }
 
-nav li:hover ul#menuFabricas {
+nav.cadastro-vagas li:hover ul#menuFabricas {
     visibility: visible;
 }
 
@@ -171,7 +171,7 @@ nav li:hover ul#menuFabricas {
 
 
 
-.sombra-roxa{
+.sombra-roxa-vagas{
     box-shadow: 92px 76px 129px 21px rgba(45, 0, 148, 1);
     left: -229px;
     height: 350px;/* comprimento da sombra(largura-altura)*/
@@ -182,11 +182,11 @@ nav li:hover ul#menuFabricas {
 } 
 
 
-.sombra-rosa{
+.sombra-rosa-vagas{
    
     position:absolute;
     top: 50%;
-    left: 100%;
+    left: 91%;
     height: 320px;
     width: 320px;
     transform: translate(-50%, -50%);
@@ -196,17 +196,18 @@ nav li:hover ul#menuFabricas {
     z-index: -1;
 }
 
-.quadrado-roxo{
+.quadrado-roxo-vagas{
     background-color: rgb(40,19,88,1);
     width: 1700px;/* largura do quadrado roxo*/
     height: 2500px;
-    position: relative;/**/
+    position:relative;/**/
     top:5px; /*altura do quadrado roxo*/
     border-radius: 20px;
+    margin: 85px;
 }
 
 
-.titulo-dados-empresa h1{
+.titulo-dados-empresa-vagas h1{
     font-size: 40px;
     position: relative;
     top: 100px;
@@ -220,7 +221,7 @@ nav li:hover ul#menuFabricas {
 
 
 /*INPUTS*/
-.nome-empresa input{
+.nome-empresa-vagas input{
     height: 60px; /* altura dos inputs*/
     width: 545px; 
     padding: 40px;
@@ -233,7 +234,7 @@ nav li:hover ul#menuFabricas {
 }
 
 
-.input-cnpj input{
+.input-cnpj-vagas input{
    height: 60px; /* altura dos inputs*/
    width: 545px;
    padding: 40px;
@@ -246,7 +247,7 @@ nav li:hover ul#menuFabricas {
 
 }
 
-.input-telefone input{
+.input-telefone-vagas input{
     height: 60px; /* altura dos inputs*/
     width: 545px;
     padding: 40px;
@@ -259,7 +260,7 @@ nav li:hover ul#menuFabricas {
 }
 
 
-.input-email input{
+.input-email-vagas input{
     height: 60px; /* altura dos inputs*/
     width: 545px;
     padding: 40px;
@@ -270,7 +271,7 @@ nav li:hover ul#menuFabricas {
     font-size: 18px;
 }
 
-.input-cidade input{
+.input-cidade-vagas input{
     height: 60px; /* altura dos inputs*/
     width: 545px;
     padding: 40px;
@@ -282,7 +283,7 @@ nav li:hover ul#menuFabricas {
 }
 
 
-.input-estado input{
+.input-estado-vagas input{
     height: 60px; /* altura dos inputs*/
     width: 545px;
     padding: 40px;
@@ -299,7 +300,7 @@ nav li:hover ul#menuFabricas {
 
 
 
-.titulo-sobre-vaga h2{
+.titulo-sobre-vagas h2{
     font-size: 40px;
     /* position: relative; /* ele estava deixando a pagina com o negócio de arrastar pro lado.*/
     color: white;
@@ -312,7 +313,7 @@ nav li:hover ul#menuFabricas {
    
 }
 
-.titulo-sobre-vaga p{
+.titulo-sobre-vagas p{
     font-size:27px ;
     position: relative;
     color: white;
@@ -326,7 +327,7 @@ nav li:hover ul#menuFabricas {
 
 
 
-.campo-texto-descricao textarea{
+.campo-texto-descricao-vagas textarea{
     height: 760px; /* altura dos inputs*/
     width: 1540px;/*1540px*/
     padding: 40px;
@@ -342,7 +343,7 @@ nav li:hover ul#menuFabricas {
     word-break: break-word;
 }
 
-.button-enviar button{
+.button-enviar-vagas button{
     padding: 20px;
     width: 344px;
     height: 80px;
@@ -356,7 +357,7 @@ nav li:hover ul#menuFabricas {
     color : #3B96EB;
 }
 
-.rodape-preto {
+.rodape-preto-vagas {
     text-align: center;
     padding-bottom: 10px;
     position: absolute;
@@ -365,13 +366,13 @@ nav li:hover ul#menuFabricas {
     top: 200rem;/* aqui mexe na distancia(altura) do rodapé*/
 }
 
-.rodape-preto img  {
+.rodape-preto-vagas img  {
     width: 700px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
 }
 
 
 
-main{
+main.main-vagas{
 max-height: 1200px ;
 }
