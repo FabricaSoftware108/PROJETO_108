@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica_de_CGI</title>
-    <link rel="stylesheet" href="../Css/background-cgi.css">
+    <link rel="stylesheet" href="../Css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +15,15 @@
 <body class="body-cgi">
 
     <header class="cabecalho">
-        <nav>
+        <nav class="cgi">
             <a href="/index.html" id="logo"><img src="../Imagens/logoHubFabricas.png" alt="Logo Hub Fábricas"></a></li>
             <ul id="menuPages">
-                <li><a href="">Home</a>
+                <li><a href="../index.html">Home</a>
                 <li><a href="" id="menuFabricasBtn">Fábricas</a>
                     <ul id="menuFabricas">
-                        <li><a href="" id="Fs">Fábrica de software</a></li>
-                        <li><a href="" id="Fj">Fábrica de jogos</a></li>
-                        <li><a href="" id="Fcg">Fábrica de computação grafica</a></li>
+                        <li><a href="pagfabricadesoft.html" id="Fs">Fábrica de software</a></li>
+                        <li><a href="pagfabricajogos.html" id="Fj">Fábrica de jogos</a></li>
+                        <li><a href="pagfabricadecgi.html" id="Fcg">Fábrica de computação grafica</a></li>
                         <li><a href="" id="Fav">Fábrica de audio e video</a></li>
                     </ul>
                 </li>
@@ -65,7 +65,7 @@
                                 <div class="card-image">
                                     <img src="../Imagens/img_foto.png" alt="Foto 01" class="card-img">
                                 </div>
-                                <div class="textdescription-cgi">
+                                <div class="description">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellat expedita harum labore assumenda libero a. Vel amet harum obcaecati maxime labore sequi non accusantium possimus, nemo accusamus iusto odio.
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet quasi cumque ab eum, reiciendis tempora fugit sit consequuntur laborum excepturi quos suscipit necessitatibus inventore, laudantium sunt, atque quo ex?
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quia enim, alias illum, error reiciendis neque dolorem dolor architecto rerum non harum dolore. Iste quam ullam culpa autem sapiente consectetur?
@@ -140,18 +140,14 @@
 
             <div class="ft51-branco-gradec-cgi">
                 <div class="ft51-amarelo-gradec">
-                    <!-- <div class="container-title-grad">
-                        <div class="grade-curricular">
-                            <h1>Grade Curricular</h1>
-                        </div> -->
                         <h1 style="text-align: center; color: white; padding: 50px;">Grade Curricular</h1>
                         <div class="wrapper-content-grad">
                             <div class="container-grad">
-                                <div class="container-title-grad-cgi">
+                                <div class="container-title-grad">
                                     <div class="container-title">
                                         
-                                        <div class="container-title-outside-cgi">
-                                            <button class="container-title-outside-btn-cgi" onclick="toggleTable_oferta1()"><h1>Oferta 1 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
+                                        <div class="container-title-outside">
+                                            <button class="container-title-outside-btn" onclick="toggleTable_oferta1()"><h1>Oferta 1 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
                                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                                                 </svg>
@@ -161,7 +157,7 @@
                                             
                                         </div>
                                     </div>
-                                    <div id="oferta1" class="container-grad-table-cgi">
+                                    <div id="oferta1" class="container-grad-table">
                                         <table>
                                             <tr>
                                                 <th scope="col">Unidade Curricular</th>
@@ -187,10 +183,10 @@
                                     </div>
                                     
                                 </div>
-                                <div class="container-title-grad-cgi">
+                                <div class="container-title-grad">
                                     <div class="container-title">
-                                        <div class="container-title-outside-cgi">
-                                            <button class="container-title-outside-btn-cgi" onclick="toggleTable_oferta2()"><h1>Oferta 2 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
+                                        <div class="container-title-outside">
+                                            <button class="container-title-outside-btn" onclick="toggleTable_oferta2()"><h1>Oferta 2 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
                                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                                                 </svg>
@@ -198,7 +194,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div id="oferta2" class="container-grad-table-cgi">
+                                    <div id="oferta2" class="container-grad-table">
                                         <table>
                                             <tr>
                                                 <th scope="col">Unidade Curricular</th>
@@ -223,10 +219,10 @@
                                         </table>
                                     </div>
                                 </div>
-                                <div class="container-title-grad-cgi">
+                                <div class="container-title-grad">
                                     <div class="container-title">
-                                        <div class="container-title-outside-cgi">
-                                            <button class="container-title-outside-btn-cgi" onclick="toggleTable_oferta3()"><h1>Oferta 3 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
+                                        <div class="container-title-outside">
+                                            <button class="container-title-outside-btn" onclick="toggleTable_oferta3()"><h1>Oferta 3 - Técnico em Audio Visual</h1><div class="wrapper-content-icon" style="margin-left: 875px;">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: msFilter;">
                                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                                                 </svg>
@@ -235,7 +231,7 @@
                                             
                                         </div>
                                     </div>
-                                    <div id="oferta3" class="container-grad-table-cgi">
+                                    <div id="oferta3" class="container-grad-table">
                                         <table>
                                             <tr>
                                                 <th scope="col">Unidade Curricular</th>
@@ -271,7 +267,7 @@
     </main>
 
     
-    <footer class="rodape-branco">
+    <footer class="rodape-brancoCgi">
         <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png">
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
