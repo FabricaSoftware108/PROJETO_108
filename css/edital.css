@@ -217,12 +217,15 @@ button {
 }
 .sombra-edital {
   position: relative;
+  margin: 10px 0 0 27.092px;
+}
+.sombra-edital-btn{
+  position: relative;
   width: 1209px;
   height: 65px;
-  margin: 10px 0 0 27.092px;
   background: #ffffff;
   z-index: 99;
-  border-radius: 15px;
+  border-radius: 15px; 
 }
 .edital_do_aluno {
   margin-bottom: 0;
@@ -359,6 +362,23 @@ button {
   z-index: 102;
   border-radius: 10px;
 } 
+.text_inscricoes-1_edital{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 6px;
+  left: 2px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
 .inscricoes2-edital .text-1-edital {
   display: flex;
   align-items: flex-start;
