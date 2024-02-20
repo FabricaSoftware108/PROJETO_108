@@ -13,7 +13,7 @@ body, html .body-edital{
   padding-left: 130%;
 }
 
-.sombra-rosa{
+.sombra-rosa-edital{
   box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
   left: -229px;
   height: 350px;/* comprimento da sombra(largura-altura)*/
@@ -24,7 +24,7 @@ body, html .body-edital{
   filter: blur(150px) contrast(150%);
 } 
 
-.sombra-roxa{
+.sombra-roxa-edital{
   box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
   left: 1860px;
   height: 100px;/* comprimento da sombra(largura-altura)*/
@@ -167,7 +167,7 @@ nav li:hover ul#menuFabricas {
 overflow: hidden;
 }
 
-.borda_roxa,
+.borda_roxa-edital,
 .borda_roxar * {
   box-sizing: border-box;
 }
@@ -204,7 +204,7 @@ button {
   font-size: 27px;
   margin-bottom: 5%;
 }
-.borda_roxa {
+.borda_roxa-edital {
   position: relative;
   width: 1268px;
   height: 958px;
@@ -215,7 +215,7 @@ button {
   border-radius: 20px;
   box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.sombra {
+.sombra-edital {
   position: relative;
   width: 1209px;
   height: 65px;
@@ -232,7 +232,7 @@ button {
   line-height: 15rem;
   font-size: 56;
 }
-.sombra_orientacoes {
+.sombra_orientacoes-edital {
   position: relative;
   width: 1209px;
   height: 220%;
@@ -244,14 +244,14 @@ button {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.sombra_orientacoes button{
+.sombra_orientacoes-edital button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
     background-color: rgba(0,85,148,1);
     padding: 10px 120px;
     border-radius: 10px;
 }
-.sombra_orientacoes2 {
+.sombra_orientacoes2-edital{
   position: relative;
   width: 1209px;
   height: 220%;
@@ -263,14 +263,14 @@ button {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.sombra_orientacoes2 button{
+.sombra_orientacoes2-edital button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
     background-color: rgba(0,85,148,1);
     padding: 10px 120px;
     border-radius: 10px;
 }
-.inscricoes {
+.inscricoes-edital {
   position: absolute;
   width: 207px;
   height: 33px;
@@ -280,7 +280,7 @@ button {
   z-index: 102;
   border-radius: 10px;
 } 
-.text_inscricoes {
+.text_inscricoes_edital {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -297,7 +297,7 @@ button {
   white-space: nowrap;
   z-index: 103;
 }
-.sobre_curso-1{
+.sobre_curso-1_edital{
   position: absolute;
   width: 666px;
   height: 18px;
@@ -312,7 +312,7 @@ button {
   white-space: nowrap;
   z-index: 100;
 }
-.sobre_curso-1 .text1 {
+.sobre_curso-1_edital .text1-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -321,7 +321,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.sobre_curso-1 .text2 {
+.sobre_curso-1_edital .text2-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -330,7 +330,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.sobre_curso-1 .text3 {
+.sobre_curso-1_edital .text3-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -339,7 +339,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.sombra2 {
+.sombra2-edital {
   position: relative;
   width: 1209px;
   height: 65px;
@@ -349,7 +349,7 @@ button {
   border-radius: 15px;
   top: 110%;
 }
-.inscricoes2 {
+.inscricoes2-edital {
   position: absolute;
   width: 207px;
   height: 33px;
@@ -359,7 +359,7 @@ button {
   z-index: 102;
   border-radius: 10px;
 } 
-.inscricoes2 .text-1 {
+.inscricoes2-edital .text-1-edital {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -376,7 +376,7 @@ button {
   white-space: nowrap;
   z-index: 103;
 }
-.sobre_curso-2{
+.sobre_curso-2-edital{
   position: absolute;
   width: 666px;
   height: 18px;
@@ -391,7 +391,7 @@ button {
   white-space: nowrap;
   z-index: 100;
 }
-.sobre_curso-2 .text-1 {
+.sobre_curso-2-edital .text-1-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -400,7 +400,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.sobre_curso-2 .text-2 {
+.sobre_curso-2-edital.text-2-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -409,7 +409,7 @@ button {
   line-height: 21.784px;
   text-align: left;
 }
-.sobre_curso-2 .text-3{
+.sobre_curso-2-edital .text-3-edital{
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
