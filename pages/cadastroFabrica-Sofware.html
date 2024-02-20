@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cadastro Fábrica de Software</title>
-        <link rel="stylesheet" href="../Css/styles.css">
+        <link rel="stylesheet" href="../css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
 
     <body class="home">
@@ -35,67 +37,67 @@
             </nav>
         </header>
 
-        <main>
-            <div class="sombra-roxa-cadastroFabrica-Software"></div>
-            <div class="sombra-rosa-cadastroFabrica-Software"></div>
-            <section class="campo-preenchimento-cadastroFabrica-Software">
-                <h1>Cadastro Fábrica de Software</h1><br><br>
-                <h3>Aluno PSG</h3><br>
-                <p id="text-cadastroFabrica-Software"><b>“O programa de gratuidade do SENAC é uma politica de incentivo única que busca 
-                    oferecer uma educação profissional inclusiva cm instrutores especializados e gratuita”</b></p>
-
-                <article class="info-pessoais-endereco-cadastroFabrica-Software">
-                    <div class="container-form-cadastroFabrica-Software">
-                        <form class="forms-cadastroFabrica-Software">
-                            <h1 class="sub-titulo-white-cadastroFabrica-Software">Informações Pessoais</h1><br>
-                            <input class="input-completo-cadastroFabrica-Software" type="text" name="nome" id="nome"
-                                size="27" maxlength="100" placeholder="Nome Completo">
-                            <p class="inputs-cadastroFabrica-Software">
-                                <input type="text" name="cpf" id="cpf" 
-                                    size="27" maxlength="11" placeholder="CPF">
-                                <input type="text" name="rg" id="rg"
-                                    size="27" maxlength="7" placeholder="RG"><br>
-                                <input type="text" name="telefone" id="telefone" 
-                                    size="27" maxlength="11" placeholder="Telefone">
-                                <input type="email" name="email" id="email" 
-                                    size="27" maxlength="70" placeholder="E-mail"><br>
-                                <input type="text" name="nomeMae" id="nomeMae"
-                                    size="27" maxlength="50" placeholder="Nome da Mãe">
-                                <input type="text" name="nomePai" id="nomePai" 
-                                    size="27" maxlength="50" placeholder="Nome do Pai"><br>
-                            </p>
-                        </form>
+        <main class="cadastroFabrica-Software">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" id="text-sobre-cadastroFabrica-Software">
+                        <h1>Cadastro Fábrica de Software</h1><br><br>
+                        <h2>Aluno PSG</h2><br>
+                        <p><b>“O programa de gratuidade do SENAC é uma politica de incentivo única que busca 
+                            oferecer uma educação profissional inclusiva cm instrutores especializados e gratuita”</b></p>
                     </div>
+                </div>
 
-                    <br>
+                <div class="row" id="container-campos-preenchimento-cadastroFabrica-Software">
+                    <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12" id="campos-preenchimento-cadastroFabrica-Software">
+                        <h1>Informações Pessoais</h1><br>
+                        <input class="input-completo-cadastroFabrica-Software col-xs-6 col-lg-9" type="text" name="nome" id="nome"
+                            size="27" maxlength="100" placeholder="Nome Completo">
 
-                    <div class="container-form-cadastroFabrica-Software">
-                        <form class="forms-cadastroFabrica-Software">
-                            <h1 class="sub-titulo-white-cadastroFabrica-Software">Endereço</h1><br>
-                            <input class="input-completo-cadastroFabrica-Software" type="text" name="rua" id="rua" 
+                        <div class="col-12">
+                            <input class="cadastroFabrica-Software" type="text" name="cpf" id="cpf" 
+                                size="27" maxlength="11" placeholder="CPF">
+                            <input class="cadastroFabrica-Software" type="text" name="rg" id="rg"
+                                size="27" maxlength="7" placeholder="RG"><br>
+                            <input class="cadastroFabrica-Software" type="text" name="telefone" id="telefone" 
+                                size="27" maxlength="11" placeholder="Telefone">
+                            <input class="cadastroFabrica-Software" type="email" name="email" id="email" 
+                                size="27" maxlength="70" placeholder="E-mail"><br>
+                            <input class="cadastroFabrica-Software" type="text" name="nomeMae" id="nomeMae"
+                                size="27" maxlength="50" placeholder="Nome da Mãe">
+                            <input class="cadastroFabrica-Software" type="text" name="nomePai" id="nomePai" 
+                                size="27" maxlength="50" placeholder="Nome do Pai"><br>
+                        </div>
+
+                            <h1 id="campos-preenchimento-cadastroFabrica-Software">Endereço</h1><br>
+                            <input class="input-completo-cadastroFabrica-Software col-xs-6 col-lg-9" type="text" name="rua" id="rua" 
                                 size="27" maxlength="100" placeholder="Rua">
-                            <p class="inputs-cadastroFabrica-Software">
-                                <input type="text" name="bairro" id="bairro" 
+                            
+                            <div class="col-12">
+                                <input class="cadastroFabrica-Software" type="text" name="bairro" id="bairro" 
                                     size="27" maxlength="50" placeholder="Bairro">
-                                <input type="text" name="numero" id="numero"
+                                <input class="cadastroFabrica-Software" type="text" name="numero" id="numero"
                                     size="27" maxlength="4" placeholder="Número"><br>
-                                <input type="text" name="cep" id="cep" 
+                                <input class="cadastroFabrica-Software" type="text" name="cep" id="cep" 
                                     size="27" maxlength="8" placeholder="CEP">
-                                <input type="text" name="complemento" id="complemento" 
+                                <input class="cadastroFabrica-Software" type="text" name="complemento" id="complemento" 
                                     size="27" maxlength="100" placeholder="Complemento"><br>
-                            </p>
-                        </form>
-                    </div>
+                            </div>
 
-                    <button class="btn-enviar-cadastroFabrica-Software" type="button">Enviar</button>
-                </article>
-            </section>
+                            <button class="btn-enviar-cadastroFabrica-Software col-xs-6 col-lg-3" type="button">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="rodape-preto-home">
+                    <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé home">
+                </footer>
+
+            </div>
         </main>
 
         <br>
 
-        <footer class="rodape-preto-home">
-            <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé home">
-        </footer>
+        
     </body>
 </html>
