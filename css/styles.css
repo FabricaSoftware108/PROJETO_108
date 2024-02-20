@@ -2078,5 +2078,12 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 .change-sand{
     display: block;
 }
-
+.cabeca-txt-sand {
+    margin-left: 75px;
+    color: white;
+}
+.cabecalho-sand{
+    background-color: #1E55D1;
+    height: 8vh;
+}
 /* FIM DO CSS DO MENU SANDUÍCHE */
