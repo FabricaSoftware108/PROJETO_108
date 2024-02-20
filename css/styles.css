@@ -76,6 +76,7 @@ nav.home #menuPages {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 nav.home ul li {
@@ -135,6 +136,7 @@ nav.home ul#menuFabricas {
     z-index: -1;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     transition: all 2ms ease-out;
+    margin-top: 5px;
 }
 
 nav.home ul #menuFabricas li {
@@ -534,6 +536,7 @@ nav.nav-software #menuPages {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 nav.nav-software ul li {
@@ -583,7 +586,7 @@ nav.nav-software ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
-    left: 568px;
+    left: 540px;
     background-color: white;
     padding: 0;
     margin: 0;
@@ -1081,6 +1084,7 @@ header.cabecalhoFabricaJogos nav.navFabricaJogos #menuPages {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 header.cabecalhoFabricaJogos nav.navFabricaJogos ul li {
@@ -1133,7 +1137,7 @@ header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
-    left: 568px;
+    left: 540px;
     background-color: white;
     padding: 0;
     margin: 0;
@@ -1635,7 +1639,6 @@ footer.rodape-brancoFabricadejogos {
 
 /*Demanda*/
 
-
 header.cabecalho-Demanda nav{
     align-items: center;
     justify-content: center;
@@ -1683,6 +1686,7 @@ header.cabecalho-Demanda nav a {
     font-size: 16px;
     letter-spacing: 1px;
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    margin-top: 15px;
 }
 
 
@@ -1712,7 +1716,7 @@ header.cabecalho-Demanda nav ul#menuFabricas {
     height: fit-content;
     position: absolute;
     top: 81px;
-    left: 568px;
+    left: 540px;
     background-color: white;
     padding: 0;
     margin: 0;
@@ -1724,6 +1728,7 @@ header.cabecalho-Demanda nav ul#menuFabricas {
     z-index: -1;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     transition: all 2ms ease-out;
+    
 }
 
 header.cabecalho-Demanda nav ul #menuFabricas li {
@@ -1742,6 +1747,7 @@ header.cabecalho-Demanda nav ul#menuFabricas a {
     font-size: 14px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
 }
 
 header.cabecalho-Demanda nav ul#menuFabricas a#Fs:hover {
@@ -1780,6 +1786,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     background-size: cover;
     background-position: center;
     overflow: hidden auto;
+    z-index: 2;
 }
 
 .body-demanda div.effects {
@@ -1813,7 +1820,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     padding: 20px 0 0 0;
     color: var(--font-color-pagdemanda-title-subtitle);
     text-align: center;
-  
+    z-index: -1;
   }
   
 .body-demanda .container-campo-dados-demanda {
@@ -1822,7 +1829,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     border-radius: 20px;
     height: 830px;
     width: 1200px;
-
+    z-index: -2;
   }
   
 .body-demanda .content-title-subtitle-demanda h1{
@@ -1837,6 +1844,8 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
   
 .body-demanda .content-wrapper-all-demanda {
     margin-top: 100px; 
+
+    
   }
   
 .body-demanda .inputs-empresa-Demanda {
@@ -1847,6 +1856,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     margin-left: 10rem;
     margin-right: 10rem;
     align-items: center;
+    z-index: 1;
   }
   
 .body-demanda .inputs-titular-Demanda {
@@ -1857,6 +1867,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     margin-left: 10rem;
     margin-right: 10rem;
     align-items: center;
+    z-index: 1;
   }
   
 .body-demanda .inputs-empresa-Demanda input{
@@ -1864,12 +1875,13 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     border-radius: 15px;
     width: 350px;
     height: 50px;
-    
+    z-index: 1;
   }
   
 .body-demanda .inputs-empresa-Demanda input,
 .body-demanda .inputs-titular-Demanda input {
     padding: 0 30px;
+    z-index: 1;
   }
   
 .body-demanda .inputs-titular-Demanda input{
@@ -1877,6 +1889,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     border-radius: 15px;
     width: 350px;
     height: 50px;
+    z-index: 1;
   }
   
 .body-demanda .campo-dados-demanda h2{
@@ -1932,8 +1945,9 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     color: white;
     border-color: #3B96EB;
     margin: 20px;
-    z-index: 2;
+    z-index: 1;
     cursor: pointer;
+    
   }
 
 .body-demanda .rodape-preto-demanda {
@@ -1944,7 +1958,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     position: absolute;
     left: 0;
     right: 0;
-
+    
 }
 
 .body-demanda .rodape-preto-demanda img{
@@ -1964,8 +1978,16 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     text-align: start;
     align-items: center;
     font-size: 14px;
+    z-index: 2;
   }
   
 .body-demanda .file-input {
     display: none;
+    
   }
+
+.body-demanda .file-label p{
+    color: #04BA1A;
+    margin-top: 2.5%;
+    margin-left: 10px;
+}
