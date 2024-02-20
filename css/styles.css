@@ -2002,11 +2002,11 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 #menu-sand {
     width: 35px;
     height: 30px;
-    margin: 30px 0 20px 20px;
+    margin: 45px 0 20px 20px;
     cursor: pointer;
 }
 .bar-sand {
-    height: 5px;
+    height: 6px;
     width: 100%;
     background-color: #D9D9D9;
     display: block;
@@ -2081,6 +2081,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 .cabeca-txt-sand {
     margin-left: 75px;
     color: white;
+    font-size: 40px;
 }
 .cabecalho-sand{
     background-color: #1E55D1;
