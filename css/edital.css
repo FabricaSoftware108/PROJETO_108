@@ -244,6 +244,13 @@ button {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.sombra_orientacoes button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    background-color: rgba(0,85,148,1);
+    padding: 10px 120px;
+    border-radius: 10px;
+}
 .sombra_orientacoes2 {
   position: relative;
   width: 1209px;
@@ -255,6 +262,13 @@ button {
   top:110%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sombra_orientacoes2 button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    background-color: rgba(0,85,148,1);
+    padding: 10px 120px;
+    border-radius: 10px;
 }
 .inscricoes {
   position: absolute;
