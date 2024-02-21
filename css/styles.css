@@ -2007,37 +2007,45 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.main-cgi{
+.main-cgi {
     background-color:  rgba(226, 153, 26, 1);
 }
-
-.ft51-amarelo-introdu{
-    height: 1000px;
+.main-cgi .row .col{
+    padding: 0 200px;
+    width: 100%;
 }
+
+
 .texto_introducao-cgi{
+
     font-family: var(--font-grad-title);
-    line-height: 40px;
-    position: absolute;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 2%;
-    height: auto;
-    text-align: justify;
     font-size: 27px;
 }
 .texto_introducao-cgi h1{
-    text-align: center;
-    line-height: 15rem;
     font-size: 56px;
+    margin-top: 300px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+    
 }
-.texto_introducao-cgi button{
-    width: 190px;
-    height: 50px;
+.texto_introducao-cgi p{
+    text-align: justify;
+    line-height: 40px;
+    font-size: 27px;
+    
+}
+.button-editais-cgi{
+    width: 100%;
+    padding: 0;
+}
+.button-editais-cgi button{
+    padding: 10px 100px;
+    margin: 180px 0 100px 0;
+
     font-family: var(--font-grad-title);
     border-radius: 20rem;
-    border: 0px solid ;
-    margin: 6% 0% 0% 43%;
-    background-color: rgba(226, 153, 26, 1);
+    border: none ;
+    background-color: #E2991A;
     color: white;
     font-size: 22px;
 }
@@ -2166,6 +2174,28 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     align-items: center;
     justify-content: center;
 }
+.main-cgi  #carrosel-projetos-cgi .row{
+    background-color: white;
+}
+
+.main-cgi  #carrosel-projetos-cgi .col{
+    background-color: #E2991A;
+    border-radius: 0 300px 0 0;
+    position: relative;
+}
+
+.main-cgi  #carrosel-projetos-cgi .col::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 80%;
+    filter: blur(120px);
+    width: 300px;
+    height: 300px;
+    background-color: #E2991A;
+    z-index:1;
+
+}
 
 .main-cgi .description{
     font-size: 25px;
@@ -2180,17 +2210,20 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 }
 .main-cgi .projetos_carrosel_amarelo{
     height: 12rem;
+    
 }
 .main-cgi .projetos_carrosel_amarelo h1{
     color: white;
     text-align: center;
-    margin: 10px;
+    margin-top: 200px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 56px;
 }
 .main-cgi .projetos_carrosel_amarelo p{
     color: white;
-    text-align: center;
-    margin: 50px;
+    text-align: justify;
+    padding-bottom: 50px;
     font-size: 27px;
 }
 
@@ -2218,6 +2251,17 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     align-items: center;
     justify-content: center;
 }
+
+
+.main-cgi #init-main-cgi .row .col{
+    width: 100%;
+}
+
+.main-cgi #init-main-cgi  #branco-inicial-cgi{
+    background-color: #fff;
+}
+
+
 
 /* RODAPÉ */
 
@@ -2439,3 +2483,4 @@ nav.cgi li:hover ul#menuFabricas {
 .main-cgi .container-title-outside {
     text-align: center;
 }
+
