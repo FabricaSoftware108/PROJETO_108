@@ -1991,3 +1991,54 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     margin-top: 2.5%;
     margin-left: 10px;
 }
+
+
+
+/*Cabeçalho com bootstrap*/
+
+.cabecalhoGeral {
+    background-color: white;
+}
+
+.cabecalhoGeral a{
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    font-weight: bold;
+}
+
+.cabecalhoGeral .navbar #hubFabricasLogo{
+    box-shadow: none;
+    height: 50px;
+}
+
+.cabecalhoGeral .navbar .loginADM {
+    background-color: #feb969;
+    border-radius: 5px;
+}
+.dropdown-menu li:nth-child(1) a:hover{
+    color: rgba(43, 20, 99, 1);
+}
+.dropdown-menu li:nth-child(2) a:hover{
+    color: rgba(139, 26, 26, 1);
+}
+.dropdown-menu li:nth-child(3) a:hover{
+    color: rgba(226, 153, 26, 1);
+}
+.dropdown-menu li:nth-child(4) a:hover{
+    color: rgba(66, 176, 48, 1);
+}
+
+.cabecalhoGeral .mt-3 {
+    margin-top: 20px !important;
+}
+
+
+@media (max-width: 990px) {
+    .cabecalhoGeral .navbar .loginADM {
+        background-color: transparent;
+        margin-left: 11px;
+    }
+    .cabecalhoGeral .mt-3 {
+        margin-top: 0 !important;
+    }
+}
+
