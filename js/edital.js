@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function toggletabble_inscricoes1() {
     var ins1 = document.getElementById("inscricoes1");
     var ins2 = document.getElementById("inscricoes2");
-    console.log("oi")
+    
 
 
     if (ins1.style.display === "" || ins1.style.display === "none") {
         ins1.style.display = "block";
-        
+        ins2.style.display = "none";
         
     } else {
         ins1.style.display = "none";

@@ -344,13 +344,7 @@ button {
 }
 .sombra2-edital {
   position: relative;
-  width: 1209px;
-  height: 65px;
-  /* margin: 10px 0 0 27.092px; */
-  background: #ffffff;
-  z-index: 99;
-  border-radius: 15px;
-  top: 110%;
+  margin: 10px 0 0 0px;
 }
 .inscricoes2-edital {
   position: absolute;
