@@ -1991,3 +1991,34 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     margin-top: 2.5%;
     margin-left: 10px;
 }
+
+
+/* PÁGINA BANCO DE TALENTOS */
+
+.banco-talentos-blur-decoracoes-esquerda {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #AA15C2;
+    filter: blur(90px);
+
+}
+
+
+.banco-talentos-blur-decoracoes-direita {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #4815C2;
+    filter: blur(90px);
+
+}
+
+.banco-de-talentos {
+    background-color: #FFFFFF;
+}
+
+.banco-de-talentos-secao-formulario {
+    background-color: #281358;
+    color: #FFFFFF;
+}
