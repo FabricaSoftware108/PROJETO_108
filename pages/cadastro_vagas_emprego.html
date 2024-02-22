@@ -50,105 +50,69 @@
         <div class="sombra-roxa-cadastro-vagas col-1"></div>
         <div class="sombra-rosa-cadastro-vagas col-1"></div>
 
-        <div class="cadastro-vagas">
-            <div class="form-row">
-                <div class="row ">
+        <main class="cadastro-de-vagas">
+            <div class="container">
+                <div class="row">
                     <div class="col-12" id="text-titulo-cadastroVagas">
-                        <div class="titulo-vagas">
-                            <h1>Cadastre Sua Vaga De Emprego</h1>
-                        </div>
-                        <div class="subtitulo-vagas">
-                            <p>Este campo é destinado as empresas interessadas.</p>
-                        </div>
+                        <h1>Cadastre Sua Vaga De Emprego</h1><br><br>
+                        <p>Este campo é destinado as empresas interessadas.</p><br>
                     </div>
                 </div>
-            </div>
-        </div>
 
-
-        <div class="row" id="container-campos-preenchimento-cadastroVagas">
-            <div class="col-12" id="campos-preenchimento-cadastroVagas">
-                <div class="col justify-content-center">
-                    <div class="titulo-dados-empresa-vagas">
-                        <div class="quadrado-roxo-vagas">
-                            <div class="quadrado">
-                                <h1>Dados Da Empresa</h1>
-                                    <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa" id="nome_empresa" 
-                                            size="27" maxlength="11" placeholder="Nome da Empresa">
-                        
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email" id="email"
-                                            size="27" maxlength="7" placeholder="Email"><br>
-                        
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj" 
-                                            size="27" maxlength="11" placeholder="CNPJ">
-                        
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="email" name="cidade" id="cidade" 
-                                            size="27" maxlength="70" placeholder="Cidade"><br>
-                        
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
-                                            size="27" maxlength="50" placeholder="Telefone">
-                        
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado" id="estado" 
-                                            size="27" maxlength="50" placeholder="Estado"><br>
-                                    </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-                <!--INPUTS-->
+                <div class="row" id="quadradoRoxo-cadastro-vagas">
+                    <form class="col-12" id="campos-preenchemento-cadastroVagas">
+                        <h1>Dados Da Empresa</h1><br>
+                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa" id="nome_empresa" 
+                                size="27" maxlength="11" placeholder="Nome da Empresa">
             
-        
-
-
-        
-           
-        <div class="form-row">
-            <div class="row">
-                <div class="col-12" id="text-titulo-cadastroVagas">
-                    <div class="titulo-sobre-vagas">
-                        <h1>Sobre a Vaga</h1>
-                    </div>
-                    <div class="subtitulo-sobre-vagas">
-                        <p>Informe os requisitos e informações da vaga de empreogo no campo abaixo.</p>
-                    </div>
-                    <div class="campo-texto-descricao-vagas">
-                        <textarea type="text" id="campoTextoDescricaoVaga" size="400" cols="30" rows="5" placeholder="Descrição da Vaga"></textarea>
-                    </div>
-                    <div class="button-enviar-vagas">
-                        <button id="buttonEnviar">Enviar</button> 
-                    </div>
-
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email" id="email"
+                                size="27" maxlength="7" placeholder="Email"><br>
+            
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj" 
+                                size="27" maxlength="11" placeholder="CNPJ">
+            
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="email" name="cidade" id="cidade" 
+                                size="27" maxlength="70" placeholder="Cidade"><br>
+            
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
+                                size="27" maxlength="50" placeholder="Telefone">
+            
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado" id="estado" 
+                                size="27" maxlength="50" placeholder="Estado"><br>
+                        </div>
+                        
+                            <button class="btn btn-primary" type="buttonEnviar">Enviar</button>
+                    </form>
                 </div>
-            </div>
-        </div>    
-        
-        
-
+                    
                 
-           
-        
+                <div class="form-row">
+                    <div class="row">
+                        <div class="col-12" id="text-titulo-cadastroVagas">
+                            <div class="titulo-sobre-vagas">
+                                <h1>Sobre a Vaga</h1>
+                            </div>
+                            <div class="subtitulo-sobre-vagas">
+                                <p>Informe os requisitos e informações da vaga de empreogo no campo abaixo.</p>
+                            </div>
+                            <!-- <div class="campo-texto-descricao-vagas">
+                                <textarea type="text" id="campoTextoDescricaoVaga" size="400" cols="30" rows="5" placeholder="Descrição da Vaga"></textarea>
+                            </div> -->
+                            <!-- <div class="button-enviar-vagas">
+                                <button id="buttonEnviar">Enviar</button> 
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>    
                 
+                <footer class="rodape-preto-vagas">
+                    <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé fabricas">
+                </footer>
 
-
-
-
-
-
+        </main>
         
-        
-        
-        
-
-
-
-        <footer class="rodape-preto-vagas">
-            <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé fabricas">
-        </footer>
-  
-    
+            
 </body>
 </html>

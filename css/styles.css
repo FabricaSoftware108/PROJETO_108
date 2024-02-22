@@ -563,6 +563,7 @@ nav li:hover ul#menuFabricas {
   left: 50%; 
   top: 50%; 
   transform: translate(-50%, -25%); 
+  margin-top: 300px;
   
   
 }
@@ -1257,6 +1258,14 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   font-family: var(--font-grad-title);
 }
 
+main.cadastro-de-vagas{
+  max-width: 1220px;
+  margin: 20px auto;
+  margin-top: 160px;
+  text-align: center;
+  font-family: var(--font-grad-title);
+}
+
 .titulo-vagas {
   color: #000;
   line-height: 30px;
@@ -1271,7 +1280,6 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   justify-content: center;
   margin: 78px;
   font-family: var(--font-destaque);
-  z-index:1;
   color: black;
   
 }
@@ -1282,7 +1290,6 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   top: 78px;
   text-align: center;
   font-family: var(--font-destaque);
-  z-index:1;
   color: black;
  
 }
@@ -1309,27 +1316,57 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
     right: -200px;
 }
 
-.quadrado-roxo-vagas{
-  z-index: 1;
+#quadrado-roxo-vagas{
+  
   background-color: #281358;
   border-radius: 10px;
   text-align:center;
-  top:5px; /*altura do quadrado roxo*/
+  /* top:8px; altura do quadrado roxo */
+  margin-top: 9rem;
+
+
+  width: 1200px;
+  height: 900px; 
+  background-color: #281358; 
+  border-radius: 20px; 
+  position: absolute;
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -25%); 
+  margin-top: 300px;
+  
 }
+
+
 
 #input_nomeEmpresa_vagas{
 
   display: flex;
+  width: 456px;
   height: 40px;
   margin-left: 10rem;
   margin-right: 10rem;
-  margin-top: 98px;
+  /* margin-top: 98px; */
   margin-bottom: 7px;
+  border-radius: 8px;
+  
   
 }
 
 #input_email_vagas{
   
+  display:inline-block;
+  width: 456px;
+  height: 40px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+  margin-bottom: 7rem;
+  border-radius: 8px;
+}
+
+
+#input_cnpj_vagas{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1338,7 +1375,51 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   margin-right: 10rem;
   align-items: center;
   margin-bottom: 2rem;
+  border-radius: 8px;
 }
+
+
+#input_cidade_vagas{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 40px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+#input_telefone_vagas{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 40px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+
+#input_estado_vagas{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 40px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+
+
+
+
 
 
 .titulo-dados-empresa-vagas h1{
@@ -1349,7 +1430,7 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 20px;
   margin-bottom: 160px;
   z-index: -1;
   
@@ -1360,7 +1441,7 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
 .titulo-sobre-vagas h1{
   font-size: 40px;
   /* position: relative; /* ele estava deixando a pagina com o negócio de arrastar pro lado.*/
-  color: black;
+  color: white;
   left: 89px;
   text-align: justify;
   text-align: center;
@@ -1374,7 +1455,7 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
 .subtitulo-sobre-vagas p{
   font-size:27px ;
   /* position: absolute; */ /* dixar comentado por enquanto.*/
-  color: black;
+  color: white;
   margin-left: 100px;/*esquerda do texto*/
   margin-right: 120px;/* direita texto*/
   text-align: justify;
@@ -1385,10 +1466,11 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   
 }
 
-.campo-texto-descricao-vagas {
+/* .campo-texto-descricao-vagas {
   width: 1000px;
   height: 1000px;
-}
+  top: 2px;
+} */
 
 
 .campo-texto-descricao-vagas textarea{
@@ -1434,7 +1516,7 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
 }
 
 
-.inputs-dados-empresa {
+/* .inputs-dados-empresa {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1443,13 +1525,13 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
   margin-right: 10rem;
   align-items: center;
   margin-bottom: 5rem;
-}
+} */
 
-.inputs-dados-empresa input {
+/* .inputs-dados-empresa input {
   margin: 10px;
   border-radius: 15px;
   width: 380px;
   height: 60px;
   padding: 0 30px;
-}
+} */
 
