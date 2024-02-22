@@ -1991,3 +1991,114 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     margin-top: 2.5%;
     margin-left: 10px;
 }
+
+/* PÁGINA BANCO DE TALENTOS */
+
+.main-banco-de-talento {
+    width: 1200px;
+    margin-top: 100px;
+}
+
+.main-banco-de-talentos__titulo {
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+    margin: 120px;
+}
+
+.banco-talentos-decoracao-blur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.banco-talentos-blur-decoracoes-esquerda {
+    height: 200px;
+    width: 200px;
+    background-color: #AA15C2;
+    border-radius: 50%;
+    filter: blur(90px);
+}
+
+.banco-talentos-blur-decoracoes-direita {
+    height: 200px;
+    width: 200px;
+    background-color: #4815C2;
+    border-radius: 50%;
+    filter: blur(90px);
+}
+
+.banco-de-talentos-section-formulario {
+    background-color: #281358;
+}
+
+.banco-de-talentos-formulario {
+    width:900px; 
+    margin: 20px auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.banco-de-talentos-formulario__titulo {
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 80px;
+  }
+
+.banco-de-talentos-formulario__colunas{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.input-dados-pessoais {
+    width: 420px;
+    height: 46px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin:10px 12px ; 
+}
+
+.banco-de-talentos-lbl-nascimento {
+    color: #FFFFFF;
+    margin-left: 16px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.input-nascimento {
+    margin-inline-end: 10px;
+    width: 225px;
+    height: 46px;
+    border-radius: 10px;
+}
+
+.banco-de-talentos-formulario-enviar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banco-de-talentos-formulario-enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-enviar-dados-pessoais {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+    width: 20%;
+    height: 4.5em;
+    width: 250px;
+    height: 65px;
+    cursor: pointer;
+    color: #3B96EB;
+    background-color: transparent;
+    border: 2px solid #3B96EB;
+    border-radius: 15px;
+  }
