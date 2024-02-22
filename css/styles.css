@@ -1284,13 +1284,14 @@ main.cadastro-de-vagas{
   
 }
 
-.subtitulo-vagas p{
+#text-titulo-cadastroVagas p{
   font-size:27px ;
   position: relative;
   top: 78px;
   text-align: center;
   font-family: var(--font-destaque);
   color: black;
+  top: 7px;
  
 }
 
@@ -1316,110 +1317,15 @@ main.cadastro-de-vagas{
     right: -200px;
 }
 
-#quadrado-roxo-vagas{
+#quadradoRoxo-cadastro-vagas{
   
   background-color: #281358;
   border-radius: 10px;
   text-align:center;
-  /* top:8px; altura do quadrado roxo */
-  margin-top: 9rem;
-
-
-  width: 1200px;
-  height: 900px; 
-  background-color: #281358; 
-  border-radius: 20px; 
-  position: absolute;
-  left: 50%; 
-  top: 50%; 
-  transform: translate(-50%, -25%); 
-  margin-top: 300px;
+  
+ 
   
 }
-
-
-
-#input_nomeEmpresa_vagas{
-
-  display: flex;
-  width: 456px;
-  height: 40px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  /* margin-top: 98px; */
-  margin-bottom: 7px;
-  border-radius: 8px;
-  
-  
-}
-
-#input_email_vagas{
-  
-  display:inline-block;
-  width: 456px;
-  height: 40px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  align-items: center;
-  margin-bottom: 7rem;
-  border-radius: 8px;
-}
-
-
-#input_cnpj_vagas{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 40px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-
-#input_cidade_vagas{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 40px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-#input_telefone_vagas{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 40px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-
-#input_estado_vagas{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 40px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-
-
-
-
 
 
 .titulo-dados-empresa-vagas h1{
@@ -1464,6 +1370,11 @@ main.cadastro-de-vagas{
   margin-top: 99px;
   z-index: 5;
   
+}
+
+#campo-cadastroVagas{
+color: white;
+margin-top: 50px;
 }
 
 /* .campo-texto-descricao-vagas {
@@ -1516,30 +1427,27 @@ main.cadastro-de-vagas{
 }
 
 
-/* .inputs-dados-empresa {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 250px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  align-items: center;
-  margin-bottom: 5rem;
-} */
-
-/* .inputs-dados-empresa input {
-  margin: 10px;
-  border-radius: 15px;
-  width: 380px;
-  height: 60px;
-  padding: 0 30px;
-} */
-
-.body-demanda .file-label p{
-    color: #04BA1A;
-    margin-top: 2.5%;
-    margin-left: 10px;
+input.cadastrovagas {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 7px;
+ 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Cadastro Fabrica Software*/

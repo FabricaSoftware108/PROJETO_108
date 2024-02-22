@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="row" id="quadradoRoxo-cadastro-vagas">
-                    <form class="col-12" id="campos-preenchemento-cadastroVagas">
+                    <form class="col-12" id="campo-cadastroVagas">
                         <h1>Dados Da Empresa</h1><br>
                         <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa" id="nome_empresa" 
@@ -82,30 +82,25 @@
                                 size="27" maxlength="50" placeholder="Estado"><br>
                         </div>
                         
-                            <button class="btn btn-primary" type="buttonEnviar">Enviar</button>
+                            <div class="col-12" id="text-titulo-cadastroVagas">
+                                <div class="titulo-sobre-vagas">
+                                    <h1>Sobre a Vaga</h1>
+                                </div>
+                                <div class="subtitulo-sobre-vagas">
+                                    <p>Informe os requisitos e informações da vaga de empreogo no campo abaixo.</p>
+                                </div>
+                                <div class="campo-texto-descricao-vagas">
+                                    <textarea type="text" id="campoTextoDescricaoVaga" size="400" cols="30" rows="5" placeholder="Descrição da Vaga"></textarea>
+                                </div> 
+                                 <div class="button-enviar-vagas">
+                                    <button id="buttonEnviar">Enviar</button> 
+                                </div> 
+                            </div>
                     </form>
                 </div>
                     
                 
-                <div class="form-row">
-                    <div class="row">
-                        <div class="col-12" id="text-titulo-cadastroVagas">
-                            <div class="titulo-sobre-vagas">
-                                <h1>Sobre a Vaga</h1>
-                            </div>
-                            <div class="subtitulo-sobre-vagas">
-                                <p>Informe os requisitos e informações da vaga de empreogo no campo abaixo.</p>
-                            </div>
-                            <!-- <div class="campo-texto-descricao-vagas">
-                                <textarea type="text" id="campoTextoDescricaoVaga" size="400" cols="30" rows="5" placeholder="Descrição da Vaga"></textarea>
-                            </div> -->
-                            <!-- <div class="button-enviar-vagas">
-                                <button id="buttonEnviar">Enviar</button> 
-                            </div> -->
-
-                        </div>
-                    </div>
-                </div>    
+                
                 
                 <footer class="rodape-preto-vagas">
                     <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="Rodapé fabricas">
