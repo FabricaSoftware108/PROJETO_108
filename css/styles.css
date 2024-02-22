@@ -1778,7 +1778,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     margin: 0;
     padding: 0;
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -1823,12 +1823,25 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: -1;
   }
   
+.body-demanda .col, .col-lg-6 {
+    padding: 0;
+    border: 1px dashed red;
+}
+.body-demanda .row {
+    padding: 0;
+    border: 2px dashed blue;
+}
+
+.bodt-demanda .container-fluid {
+    width: 1200px;
+}
+
 .body-demanda .container-campo-dados-demanda {
     background-color: var(--background-color-demanda-cadastro);
     text-align: center;
+    width: auto;
     border-radius: 20px;
     height: 830px;
-    width: 1200px;
     z-index: -2;
   }
   
@@ -1848,15 +1861,14 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     
   }
   
-.body-demanda .inputs-empresa-Demanda {
+.body-demanda .form-control {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 250px;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    align-items: center;
-    z-index: 1;
+    flex-wrap:wrap;
+    height: 45px;
+    align-items:center;
+    justify-content: center;
+    
   }
   
 .body-demanda .inputs-titular-Demanda {
@@ -1887,7 +1899,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 .body-demanda .inputs-titular-Demanda input{
     margin: 10px;
     border-radius: 15px;
-    width: 350px;
+    width: 300px;
     height: 50px;
     z-index: 1;
   }
@@ -1906,11 +1918,10 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     padding-top: 20px;
   }
 
-.body-demanda .campo-dados-demanda {
-    margin-top: 90px;
-  }
+
   
 .body-demanda .dados-Empresa-demanda {
+    width: 100%;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -1952,12 +1963,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .body-demanda .rodape-preto-demanda {
     text-align: center;
-    padding-top: 1500px;
-    padding-bottom: 10px;
     background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
     
 }
 
