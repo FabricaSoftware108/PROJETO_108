@@ -1284,7 +1284,7 @@ main.cadastro-de-vagas{
   
 }
 
-#text-titulo-cadastroVagas p{
+#titulo-subtitulo-cadastroVagas p{
   font-size:27px ;
   position: relative;
   top: 78px;
@@ -1367,7 +1367,7 @@ main.cadastro-de-vagas{
   text-align: justify;
   align-items: center;
   justify-content:center;
-  margin-top: 99px;
+  margin-top: 40px;
   z-index: 5;
   
 }
@@ -1377,11 +1377,11 @@ color: white;
 margin-top: 50px;
 }
 
-/* .campo-texto-descricao-vagas {
+
+.campo-texto-descricao-vagas {
   width: 1000px;
   height: 1000px;
-  top: 2px;
-} */
+}
 
 
 .campo-texto-descricao-vagas textarea{
@@ -1389,15 +1389,11 @@ margin-top: 50px;
   width: 1000px;
   height: 760px;
   margin-left: 78px;
-  margin-top: 190px;
+  margin-top: 30px;
   padding: 40px;
   border-radius: 19px;
   font-size: 25px;
 
-}
-
-.button-enviar-vagas {
-  margin-left: 25rem;
 }
 
 .button-enviar-vagas button{
@@ -1410,6 +1406,12 @@ margin-top: 50px;
   border: 3px double  #3B96EB;
   font-size: 27px;
   color : #3B96EB;
+}
+
+@media (max-width: 600px) {
+  .button {
+    width: 100%;
+  }
 }
 
 .rodape-preto-vagas {
