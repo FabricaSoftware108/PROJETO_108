@@ -2180,13 +2180,11 @@ input.cadastroFabrica-Software {
     border: 2px solid #D9D9D9;
     width: 559px; /* Definindo largura fixa */
     height: 718px; /* Definindo altura fixa */
-    margin-right: 20px; 
+    margin-right: 40px; 
     display: flex;
     flex-direction: column;
     text-align: center; 
 }
-
-
 
 .cadastro-adm-container-title {
     background-color: #1E55D1;
@@ -2199,8 +2197,25 @@ input.cadastroFabrica-Software {
     justify-content: center; 
 }
 
-.cadastro-adm-container p {
-    margin-top: 20px;
+.cadastro-adm {
+    padding: 65px;
 }
 
+.cadastro-adm-input {
+    background-color: #D9D9D9; 
+}
 
+.cadastro-adm-input-container {
+    margin-bottom: 30px; 
+    text-align: left; 
+}
+
+.cadastro-adm-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.cadastro-adm-button {
+    width: 100%;
+}
