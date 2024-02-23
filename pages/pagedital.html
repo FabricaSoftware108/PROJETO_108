@@ -38,10 +38,10 @@
     
     <div class="sombra_rosa-edital"></div>
     <div class="sombra_roxa-edital"></div>
-<div class="container-fluid" style="padding: 0;">
-    <div class="container" style="padding: 0;">
-        <div class="row">
-            <div class="col-12" style="padding:0;">
+<div class="container-fluid" id="container-todo-edital" style="padding: 0;">
+    <div class="container" id="container-centralizacão-edital" style="padding: 0;">
+        <div class="row" id="container-linha-entre-os-campos-escritos">
+            <div class="col-lg-12 col-sm-auto" id="container-titulo-edital" style="padding:0;">
                 <div class="titulo_edital">
                     <h1>Editais</h1>
                     <p>Este campo é destinado aos editais, das Empresas e das Fabricas
@@ -50,69 +50,72 @@
                 </div>
             </div>
         </div>
-    <div class="container-fluid" style="padding:0;">
-        <div class="container"style="padding:0;">
-            <div class="row">
-                <div class="col-12" style="padding:0;">
-                    <div class="edital_do_aluno_titulo-2">
-                        <h1>Edital do Aluno</h1>
-                    </div>
+    <div class="container" id="container-centralização-do-edital-do-aluno" style="padding:0;">
+        <div class="row">
+            <div class="col-lg-12 col-sm-auto" id="container-subtitulo-edital" style="padding:0;">
+                <div class="edital_do_aluno_titulo-2">
+                    <h1>Edital do Aluno</h1>
                 </div>
             </div>
-        <div class="container-fluid" style="padding: 0;">
-            <div class="container" style="padding: 0;">
-                <div class="row">
-                    <div class="col-12" style="padding: 0;">
-                        <div class="borda_roxa-edital">
-                            
-                            <div class="sombra-edital">
-                        <div class="row">
-                                <button class="sombra-edital-btn" onclick= "toggletabble_inscricoes1()">
-                            <div class="col-4">
-                                <div class="inscricoes-edital">
-                                    <span class="text_inscricoes_edital">INSCRIÇÕES ABERTAS</span>
+        </div>
+        <div class="container" id="container-centralização-da-borda-roxa" style="padding: 0;">
+            <div class="row">
+                <div class="col-lg-12 col-sm-auto" id="container-borda-roxa-edital" style="padding: 0;">
+                    <div class="borda_roxa-edital">
+                        
+                        <div class="sombra-edital">
+                    <div class="row text-center" style="padding:15px; overflow-x:hidden; margin:0;" >
+                            <button class="sombra-edital-btn" onclick= "toggletabble_inscricoes1()">
+                        <div class="col-lg-3 col-sm-auto" id="inscricao1-hide">
+                            <div class="inscricoes-edital">
+                                <span class="text_inscricoes_edital">INSCRIÇÕES ABERTAS</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-auto" id="container-sobre-curso1">
+                                <div class="sobre_curso-1_edital">
+                                    <span class="text1-edital">Processo Seletivo 32/2023 - </span> 
+                                    <span class="text2-edital">Fabrica de Software Matutino </span>
+                                    <span class="text3-edital">| Campo Grande</span>
+                                </div>
+                            </button>
+                            <div id="inscricoes1" class="sombra_orientacoes-edital">
+                                <p>Orientações Projeto Seletivo Senac/MS</p>
+                                <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fabrica de Software Matutino | Campo Grande</p>
+                                <button>Candidatar-se</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sombra2-edital">
+                        <div class="row text-center" style="padding:15px; overflow-x:hidden; margin:0;">
+                            <button class="sombra-edital-btn" onclick= "toggletabble_inscricoes2()">
+                                <div class="col-lg-3 col-sm-auto" id="inscricao1-hide">
+                                    <div class="inscricoes2-edital">
+                                        <span class="text_inscricoes-1_edital">INSCRIÇÕES ABERTAS</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-auto" id="container-sobre-curso1">
+                                    <div class="sobre_curso-2-edital">
+                                        <span class="text-1-edital">Processo Seletivo 31/2023 - </span>
+                                        <span class="text-2-edital">Fabrica de Jogos Vespertino </span>
+                                        <span class="text-3-edital">| Campo Grande</span>
+                                    </div>
+                                </button>
+                                <div id="inscricoes2" class="sombra_orientacoes2-edital">
+                                    <p>Orientações Projeto Seletivo Senac/MS</p>
+                                    <p>Descritivo da Vaga Processo Seletivo 31/2023 -Fabrica de Jogos Vespertino | Campo Grande</p>
+                                    <button>Candidatar-se</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-7">
-                            <div class="sobre_curso-1_edital">
-                                <span class="text1-edital">Processo Seletivo 32/2023 - </span> 
-                                <span class="text2-edital">Fabrica de Software Matutino </span>
-                                <span class="text3-edital">| Campo Grande</span>
-                            </div>
-                        </div>
-                        </button>
-                        <div id="inscricoes1" class="sombra_orientacoes-edital">
-                            <p>Orientações Projeto Seletivo Senac/MS</p>
-                            <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fabrica de Software Matutino | Campo Grande</p>
-                            <button>Candidatar-se</button>
-                        </div>
                     </div>
-                    </div>    
                 </div>
-                
-                
-                <div class="sombra2-edital">
-            <button class="sombra-edital-btn" onclick= "toggletabble_inscricoes2()">
-            <div class="inscricoes2-edital">
-                <span class="text_inscricoes-1_edital">INSCRIÇÕES ABERTAS</span>
-            </div>
-            <div class="sobre_curso-2-edital">
-                <span class="text-1-edital">Processo Seletivo 31/2023 - </span>
-                <span class="text-2-edital">Fabrica de Jogos Vespertino </span>
-                <span class="text-3-edital">| Campo Grande</span>
-            </div>
-        </button>
-        <div id="inscricoes2" class="sombra_orientacoes2-edital">
-            <p>Orientações Projeto Seletivo Senac/MS</p>
-            <p>Descritivo da Vaga Processo Seletivo 31/2023 -Fabrica de Jogos Vespertino | Campo Grande</p>
-            <button>Candidatar-se</button>
-        </div>
-        </div>
+            </div>    
         </div>
     </div>
-    </div>
-    </div>
+</div>
+
+</div>
 </div>   
 </div>
 </div>
