@@ -2161,3 +2161,29 @@ input.cadastroFabrica-Software {
 #sub-titulo-white-cadastroFabrica-Software {
     color: #FFFFFF;
 }
+
+
+/*Inicio do rodapé preto*/
+.rodape-preto img{
+    box-shadow: none;
+}
+
+.rodape-preto svg {
+    height: 25px;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+.rodape-preto li:nth-child(2) svg:hover {
+    color: #04BA1A;
+    height: 25.5px;
+    width: auto;
+}
+
+.rodape-preto li:nth-child(1) svg:hover {
+    color: #DD2A7B;
+    height: 25.5px;
+    width: auto;
+}
+
+/*Fim do rodapé*/
