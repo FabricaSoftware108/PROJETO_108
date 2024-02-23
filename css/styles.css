@@ -130,7 +130,7 @@ body.home, html.home{
     overflow: hidden auto;
 }
 
-article {
+article.home {
   margin-top: 2cm;
   color: black;
   margin-bottom: 20px;
@@ -139,14 +139,14 @@ article {
   padding: 15px;
 }
 
-main {
+main.home {
   max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
 }
 
 
-nav {
+nav.home {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -160,19 +160,19 @@ nav {
   z-index: 2;
 }
 
-nav img {
+nav.home img {
   height: 50px;
   margin-right: 169px;
   margin-left: 60px;
 }
 
-nav #menuPages {
+nav.home #menuPages {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-nav ul li {
+nav.home ul li {
   list-style-type: none;
   padding: none;
   margin: none;
@@ -182,7 +182,7 @@ nav ul li {
 
 }
 
-nav a {
+nav.home a {
   margin-left: 47px;
   margin-right: 47px;
   text-decoration: none;
@@ -198,15 +198,15 @@ nav a {
 }
 
 
-nav li:nth-child(5) a, li:nth-child(6) a{
+nav.home li:nth-child(5) a, li:nth-child(6) a{
   width: 100%;
 }
 
-nav a#logo {
+nav.home  a#logo {
   margin: 0;
 }
 
-nav li #admButton {
+nav.home li #admButton {
   background-color: rgb(254, 185, 105, 75);
   border-radius: 40px;
   height: 40px;
@@ -217,7 +217,7 @@ nav li #admButton {
   margin-left: 100px;
 }
 
-nav ul#menuFabricas {
+nav.home ul#menuFabricas {
   position: absolute;
   top: 70px;
   left: 529px;
@@ -233,7 +233,7 @@ nav ul#menuFabricas {
   transition: all 2ms ease-out;
 }
 
-nav ul #menuFabricas li {
+nav.home ul #menuFabricas li {
   list-style-type: none;
   padding: 0;
   margin-top: 15px;
@@ -243,7 +243,7 @@ nav ul #menuFabricas li {
   text-align: left;
 }
 
-nav ul#menuFabricas a {
+nav.home ul#menuFabricas a {
   text-decoration: none;
   height: 0px;
   font-size: 14px;
@@ -255,27 +255,27 @@ nav ul#menuFabricas a {
 }
 
 
-nav ul#menuFabricas a#Fs:hover {
+nav.home ul#menuFabricas a#Fs:hover {
   color: rgba(43, 20, 99, 1);
 }
 
-nav ul#menuFabricas a#Fj:hover {
+nav.home ul#menuFabricas a#Fj:hover {
   color: rgba(139, 26, 26, 1);
 }
 
-nav ul#menuFabricas a#Fcg:hover {
+nav.home ul#menuFabricas a#Fcg:hover {
   color: rgba(226, 153, 26, 1);
 }
 
-nav ul#menuFabricas a#Fav:hover {
+nav.home ul#menuFabricas a#Fav:hover {
   color: rgba(66, 176, 48, 1);
 }
 
-nav li:hover a#menuFabricasBtn {
+nav.home li:hover a#menuFabricasBtn {
   height: 80px;
 }
 
-nav li:hover ul#menuFabricas {
+nav.home li:hover ul#menuFabricas {
   visibility: visible;
 }
 
@@ -1344,7 +1344,8 @@ nav.cadastro-vagas li:hover ul#menuFabricas {
 
 
 
-/* aqui faz parte do corpo do site de cadastro de vagas*/
+
+/* PÁGINA CADASTRO DE VAGAS*/
 
 *{
   padding: 0;
@@ -1390,8 +1391,6 @@ main.cadastro-de-vagas{
  
 }
 
-
-
 .sombra-roxa-cadastro-vagas{
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
@@ -1401,15 +1400,13 @@ main.cadastro-de-vagas{
 
 } 
 
-
 .sombra-rosa-cadastro-vagas{
- 
-    box-shadow: -100px 4px 100px 100px #ab15c26b;
-    top: 200px;
-    border-radius: 90%;
-    position: absolute;
-    right: 0;
-    right: -200px;
+  box-shadow: -100px 4px 100px 100px #ab15c26b;
+  top: 200px;
+  border-radius: 90%;
+  position: absolute;
+  right: 0;
+  right: -200px;
 }
 
 #quadradoRoxo-cadastro-vagas{
@@ -1417,11 +1414,7 @@ main.cadastro-de-vagas{
   background-color: #281358;
   border-radius: 10px;
   text-align:center;
-  
- 
-  
 }
-
 
 .titulo-dados-empresa-vagas h1{
   font-size: 40px;
@@ -1434,14 +1427,10 @@ main.cadastro-de-vagas{
   margin-top: 20px;
   margin-bottom: 160px;
   z-index: -1;
-  
-
 }
-
 
 .titulo-sobre-vagas h1{
   font-size: 40px;
-  /* position: relative; /* ele estava deixando a pagina com o negócio de arrastar pro lado.*/
   color: white;
   left: 89px;
   text-align: justify;
@@ -1449,8 +1438,6 @@ main.cadastro-de-vagas{
   align-items: center;
   justify-content: center;
   margin-top: 94px;
-
- 
 }
 
 .subtitulo-sobre-vagas p{
@@ -1464,7 +1451,6 @@ main.cadastro-de-vagas{
   justify-content:center;
   margin-top: 40px;
   z-index: 5;
-  
 }
 
 #campo-cadastroVagas{
@@ -1472,22 +1458,18 @@ color: white;
 margin-top: 50px;
 }
 
+.text-area-vagas{
+  margin: 40px 80px;
 
-.campo-texto-descricao-vagas {
-  width: 1000px;
-  height: 1000px;
 }
-
 
 .campo-texto-descricao-vagas textarea{
   position: relative;
-  width: 1000px;
-  height: 760px;
   margin-left: 78px;
   margin-top: 30px;
   padding: 40px;
   border-radius: 19px;
-  font-size: 25px;
+  font-size: 40px;
 
 }
 
@@ -1501,6 +1483,7 @@ margin-top: 50px;
   border: 3px double  #3B96EB;
   font-size: 27px;
   color : #3B96EB;
+  max-width: 200px;
 }
 
 @media (max-width: 600px) {
@@ -1509,28 +1492,27 @@ margin-top: 50px;
   }
 }
 
-.rodape-preto-vagas {
+.rodape-preto-vagas{
+  margin-top: 40px;
   text-align: center;
-  padding-bottom: 10px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 156rem;/* aqui mexe na distancia(altura) do rodapé*/
 }
 
-.rodape-preto-vagas img  {
-  width: 700px; /* Ajuste o tamanho da imagem conforme necessário */
+.rodape-preto-vagas img{
+  width: 400px;
   height: auto;
+  box-shadow: none;
 }
-
 
 input.cadastrovagas {
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 30px;
   margin-top: 7px;
- 
 }
+
+
+
+/*  FINAL PÁGINA CADASTRO DE VAGAS*/
 
 
 
