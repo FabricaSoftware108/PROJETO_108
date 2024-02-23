@@ -25,7 +25,7 @@
 
 /*Cabeçalho com bootstrap*/
 
-header {
+header.cabecalhoGeral{
     z-index: 10;
     position: fixed;
     left: 0;
@@ -51,7 +51,7 @@ header {
     height: 50px;
 }
 
-.bg-dropDown-header{
+.cabecalhoGeral .bg-dropDown-header{
     background-color: rgb(248, 249, 250);
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
     font-weight: bold;
@@ -61,28 +61,28 @@ header {
     background-color: #feb969;
     border-radius: 5px;
 }
-.dropdown-menu li:nth-child(1) a:hover{
+.cabecalhoGeral .dropdown-menu li:nth-child(1) a:hover{
     color: rgba(43, 20, 99, 1);
 }
-.dropdown-menu li:nth-child(2) a:hover{
+.cabecalhoGeral .dropdown-menu li:nth-child(2) a:hover{
     color: rgba(139, 26, 26, 1);
 }
-.dropdown-menu li:nth-child(3) a:hover{
+.cabecalhoGeral .dropdown-menu li:nth-child(3) a:hover{
     color: rgba(226, 153, 26, 1);
 }
-.dropdown-menu li:nth-child(4) a:hover{
-    color: rgba(66, 176, 48, 1);
+.cabecalhoGeral .dropdown-menu li:nth-child(4) a:hover{
+       color: rgba(66, 176, 48, 1);
 }
 
 .cabecalhoGeral .mt-3 {
     margin-top: 20px !important;
 }
 
-.dropdown:hover>.dropdown-menu {
+.cabecalhoGeral .dropdown:hover>.dropdown-menu {
     display: block;
   }
   
-.dropdown>.dropdown-toggle:active {
+  .cabecalhoGeral .dropdown>.dropdown-toggle:active {
       pointer-events: none;
 }
 
