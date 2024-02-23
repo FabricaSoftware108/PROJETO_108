@@ -13,15 +13,103 @@
     --font-color-pagdemanda-title-subtitle: #000;
     
     --background-color-demanda-cadastro: #281358;
-
+    
     /*Fábrica de software*/
     --font-grad-title: Verdana, Geneva, Tahoma, sans-serif;
-
+    
     --color-grad:rgba(43, 20, 99, 1);
     --color-grad-title:rgba(43, 20, 99, 1);
-
+    
     --font-size-grad: 8.5px;
 }
+
+/*Cabeçalho com bootstrap*/
+
+header {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.cabecalhoGeral {
+    background-color: white;
+}
+
+.cabecalhoGeral a{
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    font-weight: bold;
+}
+
+.drop-fabricas a{
+    color: #000;
+}
+
+.cabecalhoGeral .navbar #hubFabricasLogo{
+    box-shadow: none;
+    height: 50px;
+}
+
+.bg-dropDown-header{
+    background-color: rgb(248, 249, 250);
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    font-weight: bold;
+}
+
+.cabecalhoGeral .navbar .loginADM {
+    background-color: #feb969;
+    border-radius: 5px;
+}
+.dropdown-menu li:nth-child(1) a:hover{
+    color: rgba(43, 20, 99, 1);
+}
+.dropdown-menu li:nth-child(2) a:hover{
+    color: rgba(139, 26, 26, 1);
+}
+.dropdown-menu li:nth-child(3) a:hover{
+    color: rgba(226, 153, 26, 1);
+}
+.dropdown-menu li:nth-child(4) a:hover{
+    color: rgba(66, 176, 48, 1);
+}
+
+.cabecalhoGeral .mt-3 {
+    margin-top: 20px !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+}
+
+
+@media (max-width: 990px) {
+    .cabecalhoGeral .navbar .loginADM {
+        background-color: transparent;
+        margin-left: 11px;
+    }
+    .cabecalhoGeral .mt-3 {
+        margin-top: 0 !important;
+    }
+
+    .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .dropdown-toggle {
+        margin-left: 6px;
+    }
+}
+
+
+/*Fim do cabeçalho com bootstarp*/
+
+
+
 
 body.home, html.home{
     margin: 0;
@@ -1996,4 +2084,86 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     color: #04BA1A;
     margin-top: 2.5%;
     margin-left: 10px;
+}
+
+
+
+/*Cadastro Fabrica Software*/
+
+main.cadastroFabrica-Software {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input.cadastroFabrica-Software {
+    padding: 15px;
+    border-radius: 5px ;
+    margin-bottom: 10px;
+}
+
+.btn-enviar-cadastroFabrica-Software {
+    margin-top: 50px;
+    padding: 15px 60px;
+    border: 3px solid  #3B96EB;
+    border-radius: 7px;
+    background-color: rgb(40,19,88,1);
+    color : #3B96EB;
+    font-size: 27px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.btn-enviar-cadastroFabrica-Software:hover {
+    background-color: #3B96EB;
+    color: white;
+    cursor: pointer;
+}
+
+.input-completo-cadastroFabrica-Software {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sombra-roxa-cadastroFabrica-Software {
+    box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
+    border-radius: 50%;
+    top: 300px;
+    position: absolute;
+    left: -52px;
+} 
+
+.sombra-rosa-cadastroFabrica-Software {
+    box-shadow: -100px 4px 100px 100px #ab15c26b;
+    top: 200px;
+    border-radius: 90%;
+    position: absolute;
+    right: 0;
+    right: -200px;
+}
+
+#container-campos-preenchimento-cadastroFabrica-Software{
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#campos-preenchimento-cadastroFabrica-Software {
+    margin-top: 50px;
+}
+
+#text-sobre-cadastroFabrica-Software{
+    color: #000;
+    margin-bottom: 40px;
+}
+
+#text-sobre-cadastroFabrica-Software p {
+    text-align: justify;
+}
+
+#sub-titulo-white-cadastroFabrica-Software {
+    color: #FFFFFF;
 }
