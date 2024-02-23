@@ -2104,11 +2104,16 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .banco-de-talentos {
     background-color: #FFFFFF;
+    max-width: 1200px;
+    margin: 20px auto;
+
 }
+
 
 .banco-de-talentos-secao-formulario {
     background-color: #281358;
     color: #FFFFFF;
+    border-radius: 25px;
 }
 
 /*Cadastro Fabrica Software*/
