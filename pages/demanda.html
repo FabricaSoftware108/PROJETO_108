@@ -43,49 +43,106 @@
             <div class="content-title-subtitle-demanda">
                 <h1>Demanda</h1>
                 <p>Este campo é destinado a Demanda de projetos para as Fábricas de Tecnologia <br>
-                    (F. Software, F.Jogos, F.Computação Gráfica e F.Audiovisual)</p>
+                    (F. Software, F.Jogos, F.Computação Gráfica e F.Audiovisual)</p> <br>
             </div>
             <div class="row row-cols-1 justify-content-center align-items-center">
                 <div class="col-8">
                     <div class="container-fluid">
                         <div class="container-campo-dados-demanda">
                             <div class="campo-dados-demanda">
-                                <form>
-                                    <div class="form-row">
-                                      <div class="form-group col-md-6">
-                                        <label for="inputNomeDaEmpresa">Nome da Empresa</label>
-                                        <input type="email" class="form-control" id="inputNomeDaEmpresa" placeholder="Nome da Empresa">
+                              <div class="row" id="container-campos-preenchimento-inputs-empresa-Demanda">
+                                <form method="post" action="cadastro.php" class="forms-demanda">
+                                  <div class="row align-items-center justify-content-center" id="title-demanda-first">
+                                      <h1>Dados da Empresa</h1>
+                                  </div>
+                                  <div class="row align-items-center justify-content-center">
+                                      <div class="form-group col-md-4 col-sm-auto">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="nome-empresa" id="nome-empresa" 
+                                          size="27" maxlength="11" placeholder="Nome da Empresa">
+                                        </div>
                                       </div>
-                                      <div class="form-group col-md-6">
-                                        <label for="inputEmail">Email</label>
-                                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                      <div class="form-group col-md-4 col-sm-auto col-sm-auto offset-md-1">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="email" id="email" 
+                                          size="27" maxlength="11" placeholder="E-mail">
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="inputAddress">CNPJ</label>
-                                      <input type="text" class="form-control" id="inputAddress" placeholder="CNPJ">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="inputTelefone">Telefone</label>
-                                      <input type="number" class="form-control" id="inputTelefone" placeholder="Número de Telefone">
-                                    </div>
-                                    <div class="form-row">
-                                      <div class="form-group col-md-6">
-                                        <label for="inputCity">Cidade</label>
-                                        <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+                                      <div class="form-group col-md-4 col-sm-auto" >
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="CNPJ" id="CNPJ" 
+                                          size="27" maxlength="11" placeholder="CNPJ">
+                                        </div>
                                       </div>
-                                      <div class="form-group col-md-4">
-                                        <label for="inputState">Estado</label>
-                                        <select id="inputState" class="form-control">
-                                          <option selected>Escolha</option>
-                                          <option>Mato Grosso do Sul</option>
-                                        </select>
+                                      <div class="form-group col-md-4 col-sm-auto offset-md-1">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="Cidade" id="Cidade" 
+                                          size="27" maxlength="11" placeholder="Cidade">
+                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="form-group">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                                  </form>
+                                      <div class="form-group col-md-4 col-sm-auto" >
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="Telefone" id="Telefone" 
+                                          size="27" maxlength="11" placeholder="Telefone">
+                                        </div>
+                                      </div>
+                                      <div class="form-group col-md-4 col-sm-auto offset-md-1">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="Estado" id="Estado" 
+                                          size="27" maxlength="11" placeholder="Estado">
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="row align-items-center justify-content-center" id="title-demanda-first">
+                                      <h1>Dados do Titular da Empresa</h1>
+                                  </div>
+                                  <div class="row align-items-center justify-content-center">
+                                      <div class="form-group col-md-4 col-sm-auto">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="nome" id="nome" 
+                                          size="27" maxlength="11" placeholder="Nome">
+                                        </div>
+                                      </div>
+                                      <div class="form-group col-md-4 col-sm-auto col-sm-auto offset-md-1">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="email" id="email" 
+                                          size="27" maxlength="11" placeholder="E-mail">
+                                        </div>
+                                      </div>
+                                      <div class="form-group col-md-4 col-sm-auto" >
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="cpf" id="cpf" 
+                                          size="27" maxlength="11" placeholder="CPF">
+                                        </div>
+                                      </div>
+                                      <div class="form-group col-md-4 col-sm-auto offset-md-1">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <input type="text" name="telefone" id="telefone" 
+                                          size="27" maxlength="11" placeholder="Telefone">
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="row align-items-center justify-content-center" id="title-demanda-first">
+                                      <h1>Sobre seu Projeto</h1>
+                                  </div>
+                                  <div class="row align-items-center justify-content-center">
+                                      <div class="form-group col-md-9 col-sm-auto">
+                                        <div class="container-fluid" id="inputs-demanda-lists">
+                                          <label for="file-input">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000" preserveAspectRatio="xMidYMid meet">
+                                              <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)" fill="grey" stroke="none">
+                                                  <path d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z"/>
+                                              </g>
+                                          </svg>
+                                          <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
+                                          <input type="file" id="file-input" class="file-input" title="Arquivo pdf ou docx">
+                                          </label>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <button>Enviar</button>
+                                </form>
+                            </div>
                             </div>
                         </div>
                     </div>
