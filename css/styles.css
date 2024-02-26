@@ -2164,12 +2164,7 @@ input.cadastroFabrica-Software {
 
 /*cadastro de vagas emprego*/
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: var(--font-grad-title);
-}
+
 
 main.cadastro-de-vagas{
   max-width: 1220px;
