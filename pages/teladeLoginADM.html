@@ -14,7 +14,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
 
-    <body class="login-ADM">
+    <body class="pag-login-ADM">
         <div class="fundo-login-ADM">
             <div class="fundo-circulo-ADM" id="esquerda"></div>
             <div class="fundo-circulo-ADM" id="centro"></div>
@@ -22,7 +22,7 @@
             <div class="fundo-circulo-ADM" id="cima"></div>
         </div>
 
-        <main>
+        <main class="login-ADM">
             <div class="container">
                 <div class="row">
                     <form class="container-campo-login-ADM col-12">
@@ -30,13 +30,21 @@
 
                         <div class="inputs-campos-login-ADM">
                             <input class="col-10" type="email" name="email" id="email"
-                                    size="27" maxlength="100" placeholder="Email:"><br>
+                                    size="27" maxlength="100" placeholder="Email:">
+                            <label for="inputs-campos-login-ADM"></label>
+                        </div>
+
+                        <div class="inputs-campos-login-ADM">
                             <input class="col-10" type="password" name="senha" id="senha"
                                     size="27" maxlength="30" placeholder="Senha:"><br>
+                            <label for="inputs-campos-login-ADM"></label>
                         </div>
-                        <a href="#">esqueceu sua senha?</a><br>
-                        <button class="btn-login-ADM col-10"><b>LOGIN</b></button>
 
+                        <div class="esqueceuSenha-login-ADM col-11">
+                            <a href="./esqueceuSenhaADM.html">esqueceu sua senha?</a><br>
+                        </div>
+                        
+                        <button class="btn btn-primary mt-3 mb-3 col-10" id="btn-login-ADM"><b>LOGIN</b></button>
                     </form>
                 </div>
             </div>

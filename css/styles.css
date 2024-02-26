@@ -1606,14 +1606,26 @@ input.cadastroFabrica-Software {
 
 /*LOGIN ADM*/
 
-body.login-ADM {
+body.pag-login-ADM {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../Imagens/img_fundo_ADM.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: fixed;
-  }
+}
   
-  .inputs-campos-login-ADM input {
+main.login-ADM {
+    max-width: 1200px;
+    margin: 250px auto;
+    padding: 0 20px;
+    align-items: center;
+
+}
+
+.inputs-campos-login-ADM input {
     border: 0;
     outline: 0;
     background: transparent;
@@ -1622,12 +1634,21 @@ body.login-ADM {
     padding: 5px;
     transition: all 0.3s;
     border-bottom: 2px solid black;
-  }
-  
-  .container-campo-login-ADM {
+}
+
+.container-campo-login-ADM {
     background-color: #E3E0E0;
     border-radius: 10px;
     text-align: center;
-  }
+    max-width: 400px;
+    min-width: 400px;
+    padding: 1rem;
+}
+
+.esqueceuSenha-login-ADM {
+    text-align: right;
+}
 
 /* FIM LOGIN ADM*/
+
+
