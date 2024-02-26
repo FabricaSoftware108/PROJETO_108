@@ -2196,7 +2196,7 @@ input.cadastroFabrica-Software {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    font-size: 40px; 
+    font-size: 40px;
 }
 
 .cadastro-adm {
@@ -2225,3 +2225,69 @@ input.cadastroFabrica-Software {
 
 /* Toggle Switches do container de Administradores do Cadastro Admin */
 
+
+.cadastro-adm-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+  }
+  
+.cadastro-adm-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+.cadastro-adm-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #C30000;
+    border-radius: 34px;
+    transition: background-color 0.3s ease;
+  }
+  
+.cadastro-adm-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+.cadastro-adm-switch input:checked + .cadastro-adm-slider {
+    background-color: #1BC300;
+  }
+  
+.cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
+    transform: translateX(26px);
+  }
+  
+.cadastro-adm-slider:before {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+.cadastro-adm-knob {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+.cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
+    transform: translateX(27px) translateY(-50%);
+  }
+  
