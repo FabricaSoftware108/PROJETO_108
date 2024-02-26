@@ -35,132 +35,84 @@ body, html .body-edital{
   filter: blur(150px) contrast(150%);
 }
 
-nav {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid black;
-    height: 80px;
-    background-color: white;
-    z-index: 999;
-} 
-
-nav img {
-    height: 50px;
-    margin-right: 200px;
-    margin-left: 60px;
+header.cabecalhoGeral{
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
-nav #menuPages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cabecalhoGeral {
+  background-color: white;
 }
 
-nav ul li {
-    list-style-type: none;
-    padding: none;
-    margin: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cabecalhoGeral a{
+  font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+  font-weight: bold;
 }
 
-nav a {
-    margin-left: 40px;
-    margin-right: 40px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .7);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.drop-fabricas a{
+  color: #000;
 }
 
-nav li:nth-child(5) a, li:nth-child(6) a{
-    width: 183px;
+.cabecalhoGeral .navbar #hubFabricasLogo{
+  box-shadow: none;
+  height: 50px;
 }
 
-nav a#logo {
-    margin: 0;
+.cabecalhoGeral .bg-dropDown-header{
+  background-color: rgb(248, 249, 250);
+  font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+  font-weight: bold;
 }
 
-nav li #admButton {
-    background-color: rgb(254, 185, 105, 75);
-    border-radius: 40px;
-    height: 40px;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 100px;
+.cabecalhoGeral .navbar .loginADM {
+  background-color: #feb969;
+  border-radius: 5px;
+}
+.cabecalhoGeral .dropdown-menu li:nth-child(1) a:hover{
+  color: rgba(43, 20, 99, 1);
+}
+.cabecalhoGeral .dropdown-menu li:nth-child(2) a:hover{
+  color: rgba(139, 26, 26, 1);
+}
+.cabecalhoGeral .dropdown-menu li:nth-child(3) a:hover{
+  color: rgba(226, 153, 26, 1);
+}
+.cabecalhoGeral .dropdown-menu li:nth-child(4) a:hover{
+     color: rgba(66, 176, 48, 1);
 }
 
-nav ul#menuFabricas {
-    height: fit-content;
-    position: absolute;
-    top: 81px;
-    left: 568px;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    width: 340px;
-    border-radius: 0px 0px 10px 10px;
-    padding-bottom: 15px;
-    justify-content: center;
-    visibility: hidden;
-    z-index: -1;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    transition: all 2ms ease-out;
+.cabecalhoGeral .mt-3 {
+  margin-top: 20px !important;
 }
 
-nav ul #menuFabricas li {
-    list-style-type: none;
-    margin-top: 15px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+.cabecalhoGeral .dropdown:hover>.dropdown-menu {
+  display: block;
 }
 
-nav ul#menuFabricas a {
-    text-decoration: none;
-    color: black; 
-    height: 0px;
-    font-size: 14px;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.8);
+.cabecalhoGeral .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
 }
 
-nav ul#menuFabricas a#Fs:hover {
-    color: rgba(43, 20, 99, 1);
-}
 
-nav ul#menuFabricas a#Fj:hover {
-    color: rgba(139, 26, 26, 1);
-}
+@media (max-width: 990px) {
+  .cabecalhoGeral .navbar .loginADM {
+      background-color: transparent;
+      margin-left: 11px;
+  }
+  .cabecalhoGeral .mt-3 {
+      margin-top: 0 !important;
+  }
 
-nav ul#menuFabricas a#Fcg:hover {
-    color: rgba(226, 153, 26, 1);
-}
+  .dropdown-menu {
+      margin-top: 0;
+  }
 
-nav ul#menuFabricas a#Fav:hover {
-    color: rgba(66, 176, 48, 1);
-}
-
-nav li:hover a#menuFabricasBtn {
-    height: 80px;
-}
-
-nav li:hover ul#menuFabricas {
-    visibility: visible;
+  .dropdown-toggle {
+      margin-left: 6px;
+  }
 }
 
 .borda_roxa{
@@ -200,17 +152,22 @@ button {
   border-radius: 90%;
   filter: blur(150px) contrast(150%);
 }
-
-/* .row{
+.col {
+  border: 2px dashed red;
+}
+.row{
   border: 2px dashed  blue;
-} */
+}
 
-
+#container-borda-roxa-edital .row{
+  display: flex;
+  flex-wrap: wrap;
+}
 .container-fluid,
 .container,
 .col-12 #container-sobre-curso1{
   padding: 0;
-}
+}   
 .titulo_edital{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 56px;
@@ -227,6 +184,7 @@ button {
   z-index: 104;
 }
 .titulo_edital p{
+  width: 100%;
   text-align: center;
   font-size: 27px;
   
@@ -247,7 +205,6 @@ button {
   margin: 10px 0 0 1.092px;
 }
 .col-3 #inscricao1-hide{
- 
   height: 100%;
 }
 
@@ -279,13 +236,7 @@ button {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.sombra_orientacoes-edital button{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
-    background-color: rgba(0,85,148,1);
-    padding: 10px 120px;
-    border-radius: 10px;
-}
+
 .sombra_orientacoes2-edital{
   position: relative;
   width: 1209px;
@@ -297,13 +248,11 @@ button {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.sombra_orientacoes2-edital button{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff;
-    background-color: rgba(0,85,148,1);
-    padding: 10px 120px;
-    border-radius: 10px;
+.col-lg-12 {
+  border: 2px dashed red;
+  height: 100%;
 }
+
 .inscricoes-edital {
   position: absolute;
   width: 207px;
@@ -374,7 +323,7 @@ button {
   text-align: left;
 }
 .sombra2-edital {
-  position: relative;
+  position:relative;
   margin: 10px 0 0 0px;
 }
 .inscricoes2-edital {
@@ -452,7 +401,7 @@ button {
   font-size: 13px;
   font-weight: 700;
   line-height: 21.784px;
-  text-align: left;
+  text-align: center;
 }
 .sobre_curso-2-edital .text-3-edital{
   position: relative;
@@ -462,6 +411,9 @@ button {
   font-weight: 700;
   line-height: 21.784px;
   text-align: left;
+}
+.sobre_curso-2-edital span{
+  font-size: 13px;
 }
 footer.rodape-preto-edital {
   text-align: center;
