@@ -2190,11 +2190,13 @@ input.cadastroFabrica-Software {
     background-color: #1E55D1;
     color: white;
     padding: 10px 20px; 
-    border-radius: 10px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
     height: 60px; 
     display: flex;
     align-items: center; 
     justify-content: center; 
+    font-size: 40px; 
 }
 
 .cadastro-adm {
@@ -2218,4 +2220,7 @@ input.cadastroFabrica-Software {
 
 .cadastro-adm-button {
     width: 100%;
+    margin-top: 100px; 
 }
+
+/* Toggle Switches do container de Administradores do Cadastro Admin */
