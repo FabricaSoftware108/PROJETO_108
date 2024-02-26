@@ -2189,7 +2189,7 @@ main.login-ADM {
     margin: 250px auto;
     padding: 0 20px;
     align-items: center;
-
+    text-align: center;
 }
 
 .inputs-campos-login-ADM input {
@@ -2206,10 +2206,9 @@ main.login-ADM {
 .container-campo-login-ADM {
     background-color: #E3E0E0;
     border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    min-width: 400px;
     padding: 1rem;
+    text-align: center;
+
 }
 
 .esqueceuSenha-login-ADM {
@@ -2217,5 +2216,3 @@ main.login-ADM {
 }
 
 /* FIM LOGIN ADM*/
-
-
