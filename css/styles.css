@@ -25,6 +25,7 @@
     --button-color-demanda: #3B96EB;
 }
 
+
 /*Cabeçalho com bootstrap*/
 
 header.cabecalhoGeral{
@@ -1873,7 +1874,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: white; 
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     overflow: hidden auto;
     z-index: 2;
@@ -1892,19 +1893,33 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: 1;
   }
   
-.body-demanda .effects-2 {
+.body-demanda .effects:nth-child(2) {
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 95%;
     height: 200px;
     width: 200px;
     transform: translate(-50%, -50%);
-    filter: blur(100px);
-    opacity: 40%;
+    filter: blur(135px);
+    opacity: 70%;
     background-color: #4815c2;
     z-index: 1;
   }
-  
+
+
+
+/* Diminuir o tamanho da fonte em telas pequenas */
+ @media screen and (max-width: 576px) {
+    .conteudo {
+      font-size: 14px;
+    }
+ }
+/* Diminuir ainda mais o tamanho da fonte em telas extra pequenas */
+@media screen and (max-width: 320px){
+    .conteudo {
+      font-size: 12px;
+    }
+}
 
 .body-demanda .content-title-subtitle-demanda {
     padding: 20px 0 0 0;
@@ -1920,10 +1935,6 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 .body-demanda .row {
     padding: 0;
     
-}
-
-.bodt-demanda .container-fluid {
-    width: 1200px;
 }
 
 .body-demanda .container-campo-dados-demanda {
