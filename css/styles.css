@@ -2192,7 +2192,8 @@ input.cadastroFabrica-Software {
 
 /*Inicio do rodapé branco*/
 .rodape-branco {
-   top: 0px;
+   margin-bottom: 0px;
+   
     
 }
 .rodape-branco img{
