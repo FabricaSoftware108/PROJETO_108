@@ -1440,6 +1440,7 @@ main.cadastro-de-vagas{
   margin-top: 94px;
 }
 
+
 .subtitulo-sobre-vagas p{
   font-size:27px ;
   /* position: absolute; */ /* dixar comentado por enquanto.*/
@@ -1452,6 +1453,18 @@ main.cadastro-de-vagas{
   margin-top: 40px;
   z-index: 5;
 }
+
+
+@media(max-width: 500px){
+  .subtitulo-sobre-vagas p{
+      font-size: 18px;
+      color: white;
+      margin: 23px;
+      
+  }
+ }
+
+
 
 #campo-cadastroVagas{
 color: white;
