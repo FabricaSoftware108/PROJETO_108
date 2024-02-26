@@ -1636,7 +1636,7 @@ input.cadastroFabrica-Software {
     padding: 0; 
     border-radius: 10px;
     border: 2px solid #D9D9D9;
-    width: 559px; /* Definindo largura fixa */
+    width: 560px; /* Definindo largura fixa */
     height: 718px; /* Definindo altura fixa */
     margin-right: 40px; 
     display: flex;
@@ -1682,3 +1682,4 @@ input.cadastroFabrica-Software {
 }
 
 /* Toggle Switches do container de Administradores do Cadastro Admin */
+
