@@ -573,17 +573,6 @@ nav.home li:hover ul#menuFabricas {
     cursor: pointer;
 }
 
-.rodape-preto-home {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.rodape-preto-home img  {
-    width: 400px; 
-    height: auto;
-    box-shadow: none;
-}
-
 
 /*Fábrica de Software*/
 
@@ -1025,21 +1014,6 @@ tr:nth-child(5) {
     opacity: 0.5;
 }
 
-.rodape-branco {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 250rem;
-}
-
-.rodape-branco img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    box-shadow: none;
-}
 
 /*icones introducao*/
 #imgIcone{
@@ -1703,24 +1677,6 @@ main.mainFabricaJogos #effectIntro2{
     position: absolute;
 }
 
-footer.rodape-brancoFabricadejogos {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: transparent;
-    background-color: #8B1A1A;
-    height: fit-content;
-    border-collapse: collapse;
-    flex-shrink: 0;
-    margin-top: 3100px;
-}
-
-
-.rodape-brancoFabricadejogos img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    box-shadow: none;
-}
 
 
 
@@ -2038,22 +1994,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     
   }
 
-.body-demanda .rodape-preto-demanda {
-    text-align: center;
-    padding-top: 1500px;
-    padding-bottom: 10px;
-    background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    
-}
 
-.body-demanda .rodape-preto-demanda img{
-    width: 400px;
-    height: auto;
-    box-shadow: none;
-}
 
 .body-demanda .file-label {
     display: inline-flex;
@@ -2191,11 +2132,10 @@ input.cadastroFabrica-Software {
 
 
 /*Inicio do rodapé branco*/
-.rodape-branco {
-   margin-bottom: 0px;
-   
-    
+footer.mt-5 {
+    margin-top: 500cm;
 }
+
 .rodape-branco img{
     box-shadow: none;
 }
