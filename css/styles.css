@@ -2331,3 +2331,30 @@ input.cadastrovagas {
   margin-bottom: 30px;
   margin-top: 7px;
 }
+/* editar carrossel de imagem adm*/
+
+html, body .body-editarCarrossel {
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-editarCarrossel .caixa_fabricas_adm {
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    width: 550px;
+    height: 700px;
+    position: relative;
+    margin-top: 155%;
+    border-radius: 10px;
+}
+.text_editar_carrossel {
+    text-align: center;
+    background-color: rgba(30, 85, 209, 1);
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+}
+.text_editar_carrossel h1{
+    font-size: 40px;
+}
