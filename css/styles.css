@@ -1887,8 +1887,8 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     position: absolute;
     top: 35%;
     left: 5%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     transform: translate(-50%, -50%);
     filter: blur(135px);
     background-color: #AA15C2;
@@ -1896,18 +1896,43 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: 0;
   }
 
-.body-demanda div.effects:nth-child(2) {
+.body-demanda div.effects-2 {
     content: '';
     position: absolute;
     top: 50%;
     left: 100%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     transform: translate(-50%, -50%);
     filter: blur(135px);
     background-color: #4815c2;
     opacity: 70%;
     z-index: 0; 
+}
+
+.body-demanda #container-cadastro-demanda { width: 1200px; background-color: #281358; border-radius: 30px; }
+
+.subtitle-demanda {
+    font-family: var(--font-destaque);
+    font-size: var(--font-size-titulo);
+    font-weight: bolder;
+    padding: 30px 0;
+}
+
+.row {
+    border: 2px dashed red;
+}
+.col-md-6 {
+    border: 2px dashed chocolate;
+}
+
+@media (min-width: 768px) { 
+    .body-demanda .inputs-definy {
+        text-align: end;
+    }
+    .body-demanda .inputs-definy-2 {
+        text-align: start;
+    }
 }
 
 @media (max-width: 868px) {
@@ -1920,7 +1945,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
      font-size: 14px !important; 
 
    }
-   .body-demanda .effects, .effects {
+   .body-demanda .effects, .effects-2 {
        display: none;
    }
 }
@@ -1936,12 +1961,8 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     color: var(--font-color-pagdemanda-title-subtitle);
     text-align: center;
     z-index: -1;
-  }
-
-
-.bodt-demanda .container-fluid {
-    width: 1200px;
 }
+
 
 .body-demanda .container-campo-dados-demanda {
     background-color: var(--background-color-demanda-cadastro);
@@ -1986,38 +2007,21 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     align-items: center;
     z-index: 1;
   }
-  
-.body-demanda .inputs-empresa-Demanda input{
-    margin: 10px;
-    border-radius: 15px;
-    width: 350px;
-    height: 50px;
-    z-index: 1;
-  }
-  
 
-.body-demanda .inputs-titular-Demanda input {
-    align-items: center;
-    padding:30px;
-    z-index: 1;
-  }
-  
-.body-demanda .inputs-titular-Demanda input{
-    margin: 10px;
+.container-inputs-demanda {
+    width: 350px;
+    height: 45px;
     border-radius: 15px;
-    width: 300px;
-    height: 50px;
-    z-index: 1;
-  }
-  
+    border: none;
+}
+
+.container-inputs-demanda::placeholder {
+    padding: 15px;
+}  
+
 .body-demanda .campo-dados-demanda h2{
     font-size: var(--font-size-subTitulo);
     line-height: 40px;
-    
-}
-.body-demanda .col-md-6 {
-    padding: 0;
-    width: 400px;
     
 }
 
@@ -2028,18 +2032,13 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     padding: 50px 0 10px 0;
 }
 
-.body-demanda #inputs-demanda-lists,
-.body-demanda #inputs-demanda-lists input{
+.body-demanda #inputs-demanda-lists{
     padding: 0;
     border-radius: 15px;
     height: 55px;
-    width: 100%;
+    width: 450px;
 }
 
-.body-demanda #inputs-demanda-lists input::placeholder {
-    padding: 10px;
-    font-size: 15px;
-}
 
 .body-demanda .forms-demanda button {
     margin: 60px 0 50px 0;
@@ -2051,7 +2050,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 }
 
 .body-demanda #inputs-demanda-lists {
-    padding: 35px;
+    padding-bottom: 60px;
 }
 
 .body-demanda #inputs-demanda-lists label{
@@ -2252,11 +2251,11 @@ main.form-group  {
     margin-top: 160px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /*cadastro de vagas emprego*/
 
 
-
-main.cadastro-de-vagas{
+.cadastro-de-vagas{
   max-width: 1220px;
   margin: 20px auto;
   margin-top: 160px;
