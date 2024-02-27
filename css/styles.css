@@ -1866,17 +1866,17 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     visibility: visible;
 }
 
+/* PAGINA DEMANDA  */
+
 .body-demanda, .html-demanda {
     margin: 0;
     padding: 0;
     align-items: center;
     display: block;
-    display: flex;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: white; 
-    background-size:cover;
     background-size: cover;
     background-position: center;
     overflow: hidden auto;
@@ -1893,36 +1893,43 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     filter: blur(135px);
     background-color: #AA15C2;
     opacity: 70%;
-    z-index: 1;
+    z-index: 0;
   }
-  
-.body-demanda .effects:nth-child(2) {
+
+.body-demanda div.effects:nth-child(2) {
+    content: '';
     position: absolute;
     top: 50%;
-    left: 95%;
+    left: 100%;
     height: 200px;
     width: 200px;
     transform: translate(-50%, -50%);
     filter: blur(135px);
-    opacity: 70%;
     background-color: #4815c2;
-    z-index: 1;
-  }
+    opacity: 70%;
+    z-index: 0; 
+}
 
+@media (max-width: 868px) {
+   .body-demanda .content-title-subtitle-demanda {
+       text-align: center;
+   }
+   .body-demanda .content-title-subtitle-demanda p {
+    margin: 0 30px;
+    text-align: center;
+     font-size: 14px !important; 
 
+   }
+   .body-demanda .effects, .effects {
+       display: none;
+   }
+}
 
-/* Diminuir o tamanho da fonte em telas pequenas */
- @media screen and (max-width: 576px) {
-    .conteudo {
-      font-size: 14px;
+@media (max-width: 468px) {
+    .body-demanda #container-campos-preenchimento-inputs-empresa-Demanda h1{
+        font-size: 20px;
     }
  }
-/* Diminuir ainda mais o tamanho da fonte em telas extra pequenas */
-@media screen and (max-width: 320px){
-    .conteudo {
-      font-size: 12px;
-    }
-}
 
 .body-demanda .content-title-subtitle-demanda {
     padding: 20px 0 0 0;
@@ -1930,14 +1937,10 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     text-align: center;
     z-index: -1;
   }
-  
-.body-demanda .col, .col-lg-6 {
-    padding: 0;
-    border: 1px dashed red;
-}
-.body-demanda .row {
-    padding: 0;
-    
+
+
+.bodt-demanda .container-fluid {
+    width: 1200px;
 }
 
 .body-demanda .container-campo-dados-demanda {
@@ -2121,165 +2124,6 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 .body-demanda .rodape-preto-demanda {
     text-align: center;
     background-color: transparent;
-    
-  }
-  
-.body-demanda .effects#effect2 {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    height: 320px;
-    width: 320px;
-    transform: translate(-50%, -50%);
-    filter: blur(125px);
-    opacity: 40%;
-    background-color: #4815c2;
-    z-index: 1;
-  }
-  
-
-.body-demanda .content-title-subtitle-demanda {
-    padding: 20px 0 0 0;
-    color: var(--font-color-pagdemanda-title-subtitle);
-    text-align: center;
-    z-index: -1;
-  }
-  
-.body-demanda .container-campo-dados-demanda {
-    background-color: var(--background-color-demanda-cadastro);
-    text-align: center;
-    border-radius: 20px;
-    height: 830px;
-    width: 1200px;
-    z-index: -2;
-  }
-  
-.body-demanda .content-title-subtitle-demanda h1{
-    font-size: var(--font-size-titulo)
-  
-  }
-  
-.body-demanda .content-title-subtitle-demanda p {
-    font-size: var(--font-size-subTitulo);
-  
-  }
-  
-.body-demanda .content-wrapper-all-demanda {
-    margin-top: 100px; 
-
-    
-  }
-  
-.body-demanda .inputs-empresa-Demanda {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 250px;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    align-items: center;
-    z-index: 1;
-  }
-  
-.body-demanda .inputs-titular-Demanda {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 200px;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    align-items: center;
-    z-index: 1;
-  }
-  
-.body-demanda .inputs-empresa-Demanda input{
-    margin: 10px;
-    border-radius: 15px;
-    width: 350px;
-    height: 50px;
-    z-index: 1;
-  }
-  
-.body-demanda .inputs-empresa-Demanda input,
-.body-demanda .inputs-titular-Demanda input {
-    padding: 0 30px;
-    z-index: 1;
-  }
-  
-.body-demanda .inputs-titular-Demanda input{
-    margin: 10px;
-    border-radius: 15px;
-    width: 350px;
-    height: 50px;
-    z-index: 1;
-  }
-  
-.body-demanda .campo-dados-demanda h2{
-    font-size: var(--font-size-subTitulo);
-    line-height: 40px;
-    
-  }
-  
-.body-demanda #dados-empresa-demanda-h2 {
-    font-size: 25px;
-  }
-  
-.body-demanda #dados-empresa-demanda-h2:nth-child(1) {
-    padding-top: 20px;
-  }
-
-.body-demanda .campo-dados-demanda {
-    margin-top: 90px;
-  }
-  
-.body-demanda .dados-Empresa-demanda {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.body-demanda .dados-Titular-demanda {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-  }
-  
-.body-demanda .sobre-Projeto-Demanda {
-    font-size: var(--font-size-subTitulo);
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -50px;
-  }
-  
-.body-demanda .sobre-Projeto-Demanda h2{
-    margin: 18px;
-  }
-  
-.body-demanda .enviar-Demanda{
-    padding: 15px 40px;
-    border-radius: 12px;
-    background-color: transparent;
-    color: white;
-    border-color: #3B96EB;
-    margin: 20px;
-    z-index: 1;
-    cursor: pointer;
-    
-  }
-
-.body-demanda .rodape-preto-demanda {
-    text-align: center;
-    padding-top: 1500px;
-    padding-bottom: 10px;
-    background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
     
 }
 
