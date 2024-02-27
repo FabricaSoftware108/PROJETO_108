@@ -2166,15 +2166,14 @@ input.cadastroFabrica-Software {
 /* ! Contéudos dentro Cadastro Admin ! */
 
 
-.cadastro-adm-centered {
+.cadastro-adm .cadastro-adm-centered {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-
-.cadastro-adm-container {
+.cadastro-adm .cadastro-adm-container {
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 2px solid #D9D9D9;
@@ -2186,8 +2185,7 @@ input.cadastroFabrica-Software {
     margin: 20px; 
 }
 
-
-.cadastro-adm-container-title {
+.cadastro-adm .cadastro-adm-container-title {
     background-color: #1E55D1;
     color: white;
     padding: 10px 20px; 
@@ -2200,46 +2198,46 @@ input.cadastroFabrica-Software {
     font-size: 40px;
 }
 
-.cadastro-adm {
+.cadastro-adm .cadastro-adm-distanciamento {
     padding: 65px;
 }
 
-.cadastro-adm-input {
+.cadastro-adm .cadastro-adm-input {
     background-color: #D9D9D9; 
 }
 
-.cadastro-adm-input-container {
+.cadastro-adm .cadastro-adm-input-container {
     margin-bottom: 30px; 
     text-align: left; 
 }
 
-.cadastro-adm-label {
+.cadastro-adm .cadastro-adm-label {
     display: block;
     margin-bottom: 5px;
     color: #000;
 }
 
-  .cadastro-adm-button {
+.cadastro-adm .cadastro-adm-button {
     width: 100%;
     margin-top: 100px; 
 }
 /* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
 
 
-.cadastro-adm-switch {
+.cadastro-adm .cadastro-adm-switch {
     display: inline-block;
     position: relative;
     width: 60px;
     height: 34px;
 }
   
-.cadastro-adm-switch input {
+.cadastro-adm .cadastro-adm-switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
   
-.cadastro-adm-slider {
+.cadastro-adm .cadastro-adm-slider {
     position: absolute;
     top: 0;
     left: 0;
@@ -2252,7 +2250,7 @@ input.cadastroFabrica-Software {
     border: 1px solid #000;
 }
   
-.cadastro-adm-slider:before {
+.cadastro-adm .cadastro-adm-slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -2264,19 +2262,19 @@ input.cadastroFabrica-Software {
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.cadastro-adm-switch input:checked + .cadastro-adm-slider {
+.cadastro-adm .cadastro-adm-switch input:checked + .cadastro-adm-slider {
     background-color: #C30000;
 }
   
-.cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
+.cadastro-adm .cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
     transform: translateX(-26px);
 }
   
-.cadastro-adm-slider:before {
+.cadastro-adm .cadastro-adm-slider:before {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
   
-.cadastro-adm-knob {
+.cadastro-adm .cadastro-adm-knob {
     position: absolute;
     top: 50%;
     right: 4px; /* Alteração da propriedade left para right */
@@ -2288,11 +2286,11 @@ input.cadastroFabrica-Software {
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }   
   
-.cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
+.cadastro-adm .cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
     transform: translateX(-27px) translateY(-50%);
 }
   
-.cadastro-adm-borda-com-conteudo {
+.cadastro-adm .cadastro-adm-borda-com-conteudo {
     border: 1px dotted #000;
     padding: 25px;
     text-align: center;
@@ -2303,7 +2301,7 @@ input.cadastroFabrica-Software {
     margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
 }
 
-.cadastro-adm-nome-aleatorio {
+.cadastro-adm .cadastro-adm-nome-aleatorio {
     position: absolute;
     top: 50%;
     left: 50%; /* Centralizando horizontalmente */
@@ -2311,7 +2309,7 @@ input.cadastroFabrica-Software {
     font-size: 24px;
 }
 
-.cadastro-adm-switch-container {
+.cadastro-adm .cadastro-adm-switch-container {
     position: absolute;
     bottom: 10px; /* Definindo a posição no final da borda */
     right: 10px; /* Definindo a posição no final da borda */
