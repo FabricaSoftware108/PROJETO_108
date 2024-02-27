@@ -2331,3 +2331,58 @@ input.cadastrovagas {
   margin-bottom: 30px;
   margin-top: 7px;
 }
+
+
+/* ADM HOME */
+
+.body-adm-home{
+    background-color:#D9D9D9;
+}
+
+.sphere-adm-home{
+    position:fixed;
+    height: 72px;
+    width: 80px;
+    background-color: #1E55D1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:3.5rem;
+    left:85%;
+    opacity:50%;
+}
+
+.sphere-adm-home2{
+    position:fixed;
+    height: 72px;
+    width: 80px;
+    background-color: #1E55D1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:13rem;
+    left:10%;
+    opacity:50%;
+}
+
+.sphere-adm-home3{
+    position:fixed;
+    height: 72px;
+    width: 80px;
+    background-color: #1E55D1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:45rem;
+    left:94%;
+    opacity:50%;
+}
+
+.sphere-adm-home4{
+    position:fixed;
+    height: 72px;
+    width: 80px;
+    background-color: #1E55D1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:56rem;
+    left:30%;
+    opacity:50%;
+}
