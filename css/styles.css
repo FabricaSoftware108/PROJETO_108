@@ -2132,8 +2132,8 @@ input.cadastroFabrica-Software {
 
 
 /*Inicio do rodapé branco*/
-footer.mt-5 {
-    margin-top: 500cm;
+.bodyRodapeBranco .rodape-branco {
+    background-color: #8B1A1A;
 }
 
 .rodape-branco img{
@@ -2156,6 +2156,12 @@ footer.mt-5 {
     color: #DD2A7B;
     height: 25.5px;
     width: auto;
+}
+
+@media (max-width: 650px) {
+    .copText {
+        font-size: 14px;
+    }
 }
 
 /*Fim do rodapé branco*/
