@@ -35,6 +35,23 @@ body, html .body-edital{
   filter: blur(150px) contrast(150%);
 }
 
+.container-background-edital {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  /* height: 300px; */
+}
+
+.container-background-edital .row{
+  border-radius: 15px ;
+}
+.container-background-edital .col-md-3, .col-md-8, .col-md-1{
+  border: 2px solid red;
+}
+#background-edital{
+  background-color: #281358;
+  width:1500px;
+}
 header.cabecalhoGeral{
   z-index: 10;
   position: fixed;
@@ -263,23 +280,7 @@ button {
   z-index: 102;
   border-radius: 10px;
 } 
-.text_inscricoes_edital {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 21px;
-  top: 6px;
-  left: 2px;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 103;
-}
+
 .sobre_curso-1_edital{
   position: absolute;
   width: 6px;
