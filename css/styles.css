@@ -2318,7 +2318,7 @@ input.cadastroFabrica-Software {
 
 /* Estilos para as imagens cadastro-adm */
 
-.cadastro-adm-img-1 {
+.cadastro-adm .cadastro-adm-img-1 {
     position: absolute;
     bottom: 10px;
     left: 220px;
@@ -2327,7 +2327,7 @@ input.cadastroFabrica-Software {
     box-shadow: none;
 }
 
-.cadastro-adm-img-2 {
+.cadastro-adm .cadastro-adm-img-2 {
     position: absolute;
     bottom: 10px; 
     right: 250px; /* Definindo a distância da margem direita */
