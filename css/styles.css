@@ -2246,7 +2246,7 @@ input.cadastroFabrica-Software {
     right: 0;
     bottom: 0;
     cursor: pointer;
-    background-color: #C30000;
+    background-color: #1BC300;
     border-radius: 34px;
     transition: background-color 0.3s ease;
     border: 1px solid #000;
@@ -2257,19 +2257,19 @@ input.cadastroFabrica-Software {
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
+    right: 4px; /* Alterado de left para right */
     bottom: 4px;
     background-color: #ffffff;
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-  
+
 .cadastro-adm-switch input:checked + .cadastro-adm-slider {
-    background-color: #1BC300;
+    background-color: #C30000;
 }
   
 .cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
-    transform: translateX(26px);
+    transform: translateX(-26px);
 }
   
 .cadastro-adm-slider:before {
@@ -2279,17 +2279,17 @@ input.cadastroFabrica-Software {
 .cadastro-adm-knob {
     position: absolute;
     top: 50%;
-    left: 4px;
+    right: 4px; /* Alteração da propriedade left para right */
     transform: translateY(-50%);
     width: 26px;
     height: 26px;
     background-color: #ffffff;
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
+}   
   
 .cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
-    transform: translateX(27px) translateY(-50%);
+    transform: translateX(-27px) translateY(-50%);
 }
   
 .cadastro-adm-borda-com-conteudo {
