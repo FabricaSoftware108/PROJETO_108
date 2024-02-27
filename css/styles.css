@@ -2173,18 +2173,19 @@ input.cadastroFabrica-Software {
     height: 100vh;
 }
 
+
 .cadastro-adm-container {
     background-color: #FFFFFF;
-    padding: 0; 
     border-radius: 10px;
     border: 2px solid #D9D9D9;
     width: 560px; /* Definindo largura fixa */
     height: 718px; /* Definindo altura fixa */
-    margin-right: 40px; 
     display: flex;
     flex-direction: column;
     text-align: center; 
+    margin: 20px; 
 }
+
 
 .cadastro-adm-container-title {
     background-color: #1E55D1;
@@ -2218,11 +2219,10 @@ input.cadastroFabrica-Software {
     color: #000;
 }
 
-.cadastro-adm-button {
+  .cadastro-adm-button {
     width: 100%;
     margin-top: 100px; 
 }
-
 /* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
 
 
@@ -2231,13 +2231,13 @@ input.cadastroFabrica-Software {
     position: relative;
     width: 60px;
     height: 34px;
-  }
+}
   
 .cadastro-adm-switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
 .cadastro-adm-slider {
     position: absolute;
@@ -2250,7 +2250,7 @@ input.cadastroFabrica-Software {
     border-radius: 34px;
     transition: background-color 0.3s ease;
     border: 1px solid #000;
-  }
+}
   
 .cadastro-adm-slider:before {
     position: absolute;
@@ -2262,19 +2262,19 @@ input.cadastroFabrica-Software {
     background-color: #ffffff;
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  }
+}
   
 .cadastro-adm-switch input:checked + .cadastro-adm-slider {
     background-color: #1BC300;
-  }
+}
   
 .cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
     transform: translateX(26px);
-  }
+}
   
 .cadastro-adm-slider:before {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
+}
   
 .cadastro-adm-knob {
     position: absolute;
@@ -2286,13 +2286,13 @@ input.cadastroFabrica-Software {
     background-color: #ffffff;
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  }
+}
   
 .cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
     transform: translateX(27px) translateY(-50%);
-  }
+}
   
-  .cadastro-adm-borda-com-conteudo {
+.cadastro-adm-borda-com-conteudo {
     border: 1px dotted #000;
     padding: 25px;
     text-align: center;
