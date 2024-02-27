@@ -1683,140 +1683,12 @@ main.mainFabricaJogos #effectIntro2{
 
 /*Demanda*/
 
-header.cabecalho-Demanda nav{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid black;
-    height: 80px;
-    background-color: white;
-    z-index: 2;
-}
-
-header.cabecalho-Demanda nav img {
-    height: 50px;
-    margin-right: 200px;
-    margin-left: 60px;
-}
-
-header.cabecalho-Demanda nav #menuPages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.cabecalho-Demanda nav ul li {
-    list-style-type: none;
-    padding: none;
-    margin: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.cabecalho-Demanda nav a {
-    margin-left: 40px;
-    margin-right: 40px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .7);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
-    margin-top: 15px;
-}
 
 
-header.cabecalho-Demanda nav li:nth-child(5) a, li:nth-child(6) a{
-    width: 183px;
-}
 
-header.cabecalho-Demanda nav a#logo {
-    margin: 0;
-}
-header.cabecalho-Demanda nav a#logo img{
-    box-shadow: none;
-}
 
-header.cabecalho-Demanda nav li #admButton {
-    background-color: rgb(254, 185, 105, 75);
-    border-radius: 40px;
-    height: 40px;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 100px;
-}
 
-header.cabecalho-Demanda nav ul#menuFabricas {
-    height: fit-content;
-    position: absolute;
-    top: 81px;
-    left: 540px;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    width: 340px;
-    border-radius: 0px 0px 10px 10px;
-    padding-bottom: 15px;
-    justify-content: center;
-    visibility: hidden;
-    z-index: -1;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    transition: all 2ms ease-out;
-    
-}
 
-header.cabecalho-Demanda nav ul #menuFabricas li {
-    list-style-type: none;
-    margin-top: 15px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a {
-    text-decoration: none;
-    color: black; 
-    height: 0px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 0;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fs:hover {
-    color: rgba(43, 20, 99, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fj:hover {
-    color: rgba(139, 26, 26, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fcg:hover {
-    color: rgba(226, 153, 26, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fav:hover {
-    color: rgba(66, 176, 48, 1);
-}
-
-header.cabecalho-Demanda nav li:hover a#menuFabricasBtn {
-    height: 80px;
-}
-
-header.cabecalho-Demanda nav li:hover ul#menuFabricas {
-    visibility: visible;
-}
 
 .body-demanda, .html-demanda {
     margin: 0;
@@ -1831,6 +1703,10 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     background-position: center;
     overflow: hidden auto;
     z-index: 2;
+}
+
+.body-demanda {
+    display: block;
 }
 
 .body-demanda div.effects {
