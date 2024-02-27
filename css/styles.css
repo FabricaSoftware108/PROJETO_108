@@ -2381,7 +2381,8 @@ input.cadastrovagas {
 
 .cadastro-adm-edital-input {
     background-color: #D9D9D9; 
-    margin: 37px;
+    margin: 0px;
+    margin-left: 34px;
     
 }
 
@@ -2389,6 +2390,7 @@ input.cadastrovagas {
     margin-bottom: 10px; 
     text-align: left;
     margin-right: 78px;
+    margin-top: 44px;
     
 }
 
@@ -2404,30 +2406,48 @@ input.cadastrovagas {
     color: #000;
     margin: 7px;
     text-align: 67px;
-    
+    margin-left: 34px;
     
 }
 
 
-#cadastro-adm-edital-data{
+
+#cadastroAdmEditalDataInicio{
     background-color:#1E55D1;
     color: white;
-    width: auto;
+    width:188px;
+    margin-top: 12px;
+    margin-left: 23px;
 
+}
+
+#cadastroAdmEditalDataFinal{
+    background-color:#1E55D1;
+    color: white;
+    width:188px;
+    margin-top: 12px;
+    
+    
 }
 
 .cadastro-adm-edital-label-data{
-    text-align: center;
+    margin-top: 11px;
+    margin-left: 34px;
+
 }
 
 .cadastro-adm-edital-button {
     width: 100%;
-    margin-top: 100px; 
+   
+}
+
+#centerDate{
+    margin: 0px;
 }
 
 
 
-.edital-data{
-    max-width: 100px;
 
-}
+
+
+
