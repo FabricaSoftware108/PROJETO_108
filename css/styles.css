@@ -2342,11 +2342,13 @@ input.cadastrovagas {
 /*CSS CADASTRO ADM  EDITAL*/ 
 
 
+
 .cadastro-adm-edital-centered {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
 .cadastro-adm-edital-container {
@@ -2360,6 +2362,7 @@ input.cadastrovagas {
     display: flex;
     flex-direction: column;
     text-align: center; 
+
 }
 
 .cadastro-adm-edital-container-title {
@@ -2377,6 +2380,7 @@ input.cadastrovagas {
 
 .cadastro-adm-edital{
     padding: 65px;
+    
 }
 
 .cadastro-adm-edital-input {
@@ -2390,12 +2394,12 @@ input.cadastrovagas {
     margin-bottom: 10px; 
     text-align: left;
     margin-right: 78px;
-    margin-top: 44px;
+    margin-top:30px;
+  
     
 }
 
 .cadastro-adm-edital-input-container-date{
-    margin-bottom: 1px; 
     text-align: left;
     margin-bottom: 67px;
       
@@ -2404,10 +2408,9 @@ input.cadastrovagas {
 .cadastro-adm-edital-label {
     display:block;
     color: #000;
-    margin: 7px;
+    margin: 0px;
     text-align: 67px;
     margin-left: 34px;
-    
 }
 
 
@@ -2443,8 +2446,14 @@ input.cadastrovagas {
 
 #centerDate{
     margin: 0px;
+    margin-top: 70px;
+
 }
 
+
+#buttonCadastroEditalADM{
+    margin-top: 48px;
+}
 
 
 
