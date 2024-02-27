@@ -2025,3 +2025,173 @@ input.cadastroFabrica-Software {
 #sub-titulo-white-cadastroFabrica-Software {
     color: #FFFFFF;
 }
+
+/*cadastro de vagas emprego*/
+
+
+
+main.cadastro-de-vagas{
+  max-width: 1220px;
+  margin: 20px auto;
+  margin-top: 160px;
+  text-align: center;
+  font-family: var(--font-grad-title);
+}
+
+.titulo-vagas {
+  color: #000;
+  line-height: 30px;
+}
+
+.titulo-vagas h1{
+  font-size: 56px;
+  position: relative;
+  top :100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 78px;
+  font-family: var(--font-destaque);
+  color: black;
+  
+}
+
+#titulo-subtitulo-cadastroVagas p{
+  font-size:27px ;
+  position: relative;
+  top: 78px;
+  text-align: center;
+  font-family: var(--font-destaque);
+  color: black;
+  top: 7px;
+ 
+}
+
+.sombra-roxa-cadastro-vagas{
+    box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
+    border-radius: 50%;
+    top: 300px;
+    position: absolute;
+    left: -52px;
+
+} 
+
+.sombra-rosa-cadastro-vagas{
+  box-shadow: -100px 4px 100px 100px #ab15c26b;
+  top: 200px;
+  border-radius: 90%;
+  position: absolute;
+  right: 0;
+  right: -200px;
+}
+
+#quadradoRoxo-cadastro-vagas{
+  
+  background-color: #281358;
+  border-radius: 10px;
+  text-align:center;
+}
+
+.titulo-dados-empresa-vagas h1{
+  font-size: 40px;
+  position: relative;
+  color: white;
+  top: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 160px;
+  z-index: -1;
+}
+
+.titulo-sobre-vagas h1{
+  font-size: 40px;
+  color: white;
+  left: 89px;
+  text-align: justify;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 94px;
+}
+
+
+.subtitulo-sobre-vagas p{
+  font-size:27px ;
+  /* position: absolute; */ /* dixar comentado por enquanto.*/
+  color: white;
+  margin-left: 100px;/*esquerda do texto*/
+  margin-right: 120px;/* direita texto*/
+  text-align: justify;
+  align-items: center;
+  justify-content:center;
+  margin-top: 40px;
+  z-index: 5;
+}
+
+
+@media(max-width: 500px){
+  .subtitulo-sobre-vagas p{
+      font-size: 18px;
+      color: white;
+      margin: 23px;
+      
+  }
+ }
+
+
+
+#campo-cadastroVagas{
+color: white;
+margin-top: 50px;
+}
+
+.text-area-vagas{
+  margin: 10px 80px;
+
+}
+
+.campo-texto-descricao-vagas textarea{
+  position: relative;
+  margin-left: 78px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 19px;
+  font-size: 40px;
+
+}
+
+.button-enviar-vagas button{
+  margin-bottom: 10rem;
+  width: 344px;
+  height: 80px;
+  border-radius: 17px;
+  position: relative;
+  font-size: 27px;
+  max-width: 200px;
+}
+
+@media (max-width: 600px) {
+  .button {
+    width: 100%;
+  }
+}
+
+.rodape-preto-vagas{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.rodape-preto-vagas img{
+  width: 400px;
+  height: auto;
+  box-shadow: none;
+}
+
+input.cadastrovagas {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 7px;
+}
