@@ -13,10 +13,10 @@ body, html .body-edital{
   padding-left: 130%;
 }
 
-.sombra-rosa-edital{
+/* .sombra-rosa-edital{
   box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
   left: -229px;
-  height: 350px;/* comprimento da sombra(largura-altura)*/
+  height: 350px;
   width: 156px;
   position: absolute;
   z-index: -1;
@@ -27,13 +27,13 @@ body, html .body-edital{
 .sombra-roxa-edital{
   box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
   left: 1860px;
-  height: 100px;/* comprimento da sombra(largura-altura)*/
+  height: 100px;
   top:500px;
   position: absolute;
   z-index: -1;
   border-radius: 90%;
   filter: blur(150px) contrast(150%);
-}
+} */
 
 .container-background-edital {
     background-size: cover;
@@ -186,31 +186,50 @@ button {
   padding: 0;
 }   
 .titulo_edital{
+  margin: 300px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 56px;
-  position: relative;
-  height:auto;
   text-align: justify;
   font-size: 27px;
 }
 .titulo_edital h1 {
   text-align: center;
-  line-height: 15rem;
   font-size: 56px;
   font-weight: 800;
-  z-index: 104;
 }
 .titulo_edital p{
-  width: 100%;
-  text-align: center;
+  text-align: justify;
   font-size: 27px;
-  
 }
+
+
+
+
+  @media(min-width: 576px){
+    h1 {
+      font-size: 10px;
+      background-color: red;
+    }
+  }
+    
+  
+
+  
+  @media(max-width: 576px){
+    h1 {
+      font-size: 100px;
+      background-color: blue;
+    }
+  }
+
+
+
 .borda_roxa-edital {
   position: relative;
   width: 100%;
   height: 958px;
-
   background: #2b1463;
   z-index: 25;
   overflow: visible auto;
