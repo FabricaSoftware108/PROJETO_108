@@ -595,58 +595,97 @@ nav.home li:hover ul#menuFabricas {
     padding: 0;
 }
 
-/* texto sobre fabrica software */
+/* Main Fabrica de Software */
 
-.texto-sobre-fabrica-software {
-    font-family: var(--font-grad-title);
-    line-height: 30px;
-    position: absolute;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 2%;
-    height: auto;
-    text-align: justify;
-    font-size: 22px;
-}   
-
-.texto-sobre-fabrica-software h1 {
-    text-align: center;
-    line-height: 15rem;
-    font-size:30px;
+main.fabrica-de-software {
+    margin: 0;
+    padding: 0;
 }
 
-.texto-sobre-fabrica-software button {
-    width: 190px;
-    height: 50px;
-    font-family: var(--font-grad-title);
-    border-radius: 20rem;
-    margin: 6% 0% 0% 43%;
+/* Fabrica de Software */
+
+.btn_enviar_software {
+    max-width: 190px;
+}
+
+.btn_enviar_software button{
+    height: 40px;
     background-color: rgba(43, 20, 99, 1);
     color: white;
-    font-size: 22px;
 }
 
-/* fundo */
+.texto-sobre-fabrica-software {
+    top: 200px;
+    max-height: 500px;
+}
+
+.conteudo-introdu-software {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -18rem;
+}
+
+.img-binario {
+    top: -80px;
+    left: 220px;
+    width: 1430px;
+}
+
+.container-img-binario {
+    background-image: url('../Imagens/img_binario.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.conteudo-introdu-software p {
+    text-align: justify;
+    font-size: 27px;
+}
+
+.btn-editais-software {
+    max-width: 220px;
+    padding: 1rem;
+}
+
+.btn-editais-software button {
+    background-color: rgba(43, 20, 99, 1);
+    color: white;
+    height: 40px;
+}
+
+/* fundo pagina Software*/
 
 .roxo-introdu-software {
-    height: 899px;
-    margin-top: 79px;
+    height: auto;
+    margin-top: 78px;
     background-color: rgba(43, 20, 99, 1);
 }
 
 .branco-introdu-software {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 260px 0 0 260px;
+    border-radius: 260px 0 0 210px;
+    height: auto; 
+    min-height: 200px; 
 }
 
+    @media (max-width: 767px) {
+      .background-image {
+        min-height: 100px; 
+      }
+    
+}
+
+.branco-projetos-software {
+    background-color: rgb(255, 255, 255);
+    height: 980px;
+}
 .roxo-projetos-software {
     background-color: rgba(43, 20, 99, 1);
-    border-radius: 0 240px 220px 0;
-    padding-top: 50px;
+    border-radius: 0 215px 215px 0;
     height: 980px;
     box-shadow: 100px 0px 81px -50px rgba(45, 0, 148, 1);
 }
@@ -654,343 +693,23 @@ nav.home li:hover ul#menuFabricas {
 .branco-requisitos-software{
     height: 980px;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 260px 0 260px 0;
+    border-radius: 200px 0 215px 0;
 }
 
 .roxo-requisitos-software {
     height: 980px;
     background-color: rgba(43, 20, 99, 1);
-    
 }
 .branco-gradec-software{
     height: 980px;
     background-color:rgba(255, 255, 255, 1);
-    
-    
 }
 .roxo-gradec-software{
     height: 1200px;
     background-color: rgba(43, 20, 99, 1);
-    border-radius: 260px 0 0 0;
+    border-radius: 180px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
 }
-
-/* grade curricular */
-
-.grade-curricular {
-    margin: 90px 0px 90px 700px;
-    color: white;
-    width: 300px;
-}
-
-.container-title-grad {
-    margin: 0 160px;
-    padding: 10px 0;
-}
-
-.container-title-outside {
-    display: flex;
-    font-weight: bold;
-    background-color: var(--color-grad-title);
-    font-size: 13px;
-    color: white;
-    padding: 20px 21px;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    
-}
-.container-title-outside-btn {
-    display: flex;
-    font-weight: bold;
-    background-color: var(--color-grad-title);
-    font-size: 13px;
-    color: white;
-    padding: 20px 21px;
-    border: 1px solid transparent;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-
-.container-grad-table table {
-    width: 100%;
-    border-radius: 10px; 
-    border-collapse: collapse;
-    border-radius: 20px;
-    overflow: hidden;
-    
-}
-
-th, td {
-    padding: 20px;
-    border: 1px solid rgb(0, 0, 0);
-}
-
-tr:nth-child(2n) {
-    background-color: #D9D9D9;
-}
-tr:nth-child(1) {
-    background-color: #ffffff;
-}
-tr:nth-child(3) {
-    background-color: #ffffff;
-}
-tr:nth-child(5) {
-    background-color: #ffffff;
-}
-
-.container-title-outside {
-    text-align: center;
-}
-
-
-
-/* carrosel */
-
-.Body-Fabrica-Software span {
-    font-size: x-large;
-}
-  
-.Body-Fabrica-Software .card-img {
-    box-shadow: 0 1px 2px #0003;
-    width: 100%;
-}
-  
-@media (max-width: 450px) { /*para melhoras a qualidade da imagem deixa limitada */
-    .swiper {
-      height: 270px;
-    }
-}
-  
-
-.swiper-button-prev, .swiper-button-next {
-    color:black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
-    border-radius: 50%;
-    background-color: white;
-    width: 60px; /* Largura desejada */
-    height: 60px; /* Altura desejada */
-    font-size: 12px;
-    z-index: -1;
-}
-
-
-.swiper-button-prev {
-    left: 10px; /* Ajusta a posição do botão esquerdo */
-    color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
-}
-
-.swiper-button-next {
-    right: 10px; /* Ajusta a posição do botão direito */
-    color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 40px;
-    color: black;
-  
-}
-  
-.Body-Fabrica-Software .swiper-slide{
-    background-color: rgba(102, 30, 159, 1);
-    z-index: 2;
-}
-
-@media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
-    img {
-      width: 100%;
-    }
-}
-
-.swiper {
-    height: 500px;
-    z-index: -2;
-}
-  
-.swiper-slide {
-    text-align:justify; /*arruma o texto */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.description{
-    font-size: 22px;
-    color:aliceblue;
-    overflow: hidden;
-    margin: 4rem;
-    font-family: var(--font-grad-title);
-    
-    text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
-    display: -webkit-box;   /*delimita o texto que vc coloca*/
-    -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
-    -webkit-box-orient: vertical;
-    line-height: 30px;
-}
-
-.card-image{
-    max-width: 40%;
-    height: auto;
-    width: 400rem;
-    margin: 1rem;
-}
-
-.card-img{
-    border-radius: 5px;
-}
-
-.swiper-slide{
-
-    width: 100%;
-    height: 100%;
-}
-
-.position {
-    width: 1500px;/* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/ 
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.projeto-carrossel {
-    height: 12rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-.projeto-carrossel h1 {    
-    color: white;
-    text-align: center;
-    margin: 10px;
-    font-size: 56px;
-    margin-top: 100px;
-}
-
-.projeto-carrossel p {
-    color: white;
-    text-align: center;
-    margin: 50px;
-    font-size: 27px;
- }
-
-/* Rodapé */
-
-#img-js, #img-html{
-    padding: 23px;
-    opacity: 0.5;
-}
-
-.rodape-branco {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 250rem;
-}
-
-.rodape-branco img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    box-shadow: none;
-}
-
-/*icones introducao*/
-#imgIcone{
-    opacity: 0.5;
-    width: 9rem;
-    height: 9rem;
-    padding: 10px;
-    position: absolute;
-}
-
-.icone-js{
-    left: 53rem;
-    top: 4rem;
-}
-
-.icone-html{
-    left: 100rem;
-    top: 8rem;
-}
-
-.icone-angular{
-    left: 76rem;
-    top: 43rem;
-}
-
-.icone-sql{
-    left: 105rem;
-    top: 45rem;
-}
-
-.icone-csharp {
-    left: 10rem;
-    top: 13rem;
-}
-
-
-.icone-css {
-    left: 30rem;
-    top: 45rem;
-}
-
-
-
-/*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
-
-.requisitos-software{
-    font-family: var(--font-grad-title);
-    line-height: 30px;
-    position: absolute;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 2%;
-    height: auto;
-    text-align: justify;
-    font-size: 22px;
-    color: black;
-  }
-  
-  
-  
-  .requisitos-software h1 {
-    text-align: center;
-    line-height: 10rem;
-  } 
-  
-  
-  
-  .container-soft-requisitos {
-    display: flex;
-    flex-direction: line;
-    margin-top: 100px;
-    justify-content: space-around;
-  }
-  
-  .titulo-software {
-    font-size: 22px;
-  }
-  
-  .subtext-software {
-    list-style-type: disc;
-    padding: 0;
-    margin-top: 50px;
-    font-size: 22px;
-  }
-
-
-
 
 /*Fábrica de jogos*/
 
