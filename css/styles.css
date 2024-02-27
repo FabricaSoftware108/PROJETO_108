@@ -2315,6 +2315,29 @@ input.cadastroFabrica-Software {
     right: 10px; /* Definindo a posição no final da borda */
 }
 
+
+/* Estilos para as imagens cadastro-adm */
+
+.cadastro-adm-img-1 {
+    position: absolute;
+    bottom: 10px;
+    left: 220px;
+    width: 350px; /* Defina a largura desejada */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    box-shadow: none;
+}
+
+.cadastro-adm-img-2 {
+    position: absolute;
+    bottom: 10px; 
+    right: 250px; /* Definindo a distância da margem direita */
+    width: 120px; /* Defina a largura desejada */
+    height: auto;
+    box-shadow: none;
+}
+
+
+
 /*cadastro de vagas emprego*/
 
 
