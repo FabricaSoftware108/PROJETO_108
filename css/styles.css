@@ -2179,40 +2179,56 @@ body.pag-login-ADM {
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    overflow: hidden auto;
     background-image: url(../Imagens/img_fundo_ADM.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
   
 main.login-ADM {
-    max-width: 1200px;
-    margin: 250px auto;
-    padding: 0 20px;
-    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 250px;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.inputs-campos-login-ADM input {
+
+.inputs-campos-login-ADM {
     border: 0;
     outline: 0;
     background: transparent;
-    color: #797979;
     position: relative;
-    padding: 5px;
+    padding-bottom: 5px;
     transition: all 0.3s;
     border-bottom: 2px solid black;
-}
-
-.container-campo-login-ADM {
-    background-color: #E3E0E0;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-
+    margin: 12px auto;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
 .esqueceuSenha-login-ADM {
     text-align: right;
+}
+
+.icons-login-ADM {
+    font-size: 30px;
+}
+
+#container-campos-preenchimento-login-ADM {
+    background-color: #e3e0e0be;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#campos-preenchimento-login-ADM {
+    margin-top: 50px;
+}
+
+#btn-enviar-ADM {
+    padding: 10px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* FIM LOGIN ADM*/
