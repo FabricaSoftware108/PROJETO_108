@@ -2350,8 +2350,8 @@ input.cadastrovagas {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.sphere-adm-home{
-    position:fixed;
+/* .sphere-adm-home{
+    position:absolute;
     height: 72px;
     width: 80px;
     background-color: #1E55D1;
@@ -2363,7 +2363,7 @@ input.cadastrovagas {
 }
 
 .sphere-adm-home2{
-    position:fixed;
+    position:absolute;
     height: 72px;
     width: 80px;
     background-color: #1E55D1;
@@ -2375,7 +2375,7 @@ input.cadastrovagas {
 }
 
 .sphere-adm-home3{
-    position:fixed;
+    position:absolute;
     height: 72px;
     width: 80px;
     background-color: #1E55D1;
@@ -2387,7 +2387,7 @@ input.cadastrovagas {
 }
 
 .sphere-adm-home4{
-    position:fixed;
+    position:absolute;
     height: 72px;
     width: 80px;
     background-color: #1E55D1;
@@ -2396,10 +2396,11 @@ input.cadastrovagas {
     margin-top:56rem;
     left:46%;
     opacity:50%;
-}
+} */
+
 #label-bem-vindos-adm-home{
     margin-top:10rem;
-    position:fixed;
+    position:absolute;
 }
 #label-quadrados-1-adm-home{
     background-color:#970FF2;
@@ -2423,3 +2424,18 @@ input.cadastrovagas {
     margin-top:18rem;
     font-size:x-large;
 }
+
+#container-2-adm-home-imagem{
+    margin-top:5rem;
+    width:900px;
+}
+
+#adm-home-img-1{
+    width:300px;
+    box-shadow:none;
+}
+
+#adm-home-img-2{
+    width:500px;
+}
+
