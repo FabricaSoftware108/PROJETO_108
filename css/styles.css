@@ -573,17 +573,6 @@ nav.home li:hover ul#menuFabricas {
     cursor: pointer;
 }
 
-.rodape-preto-home {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.rodape-preto-home img  {
-    width: 400px; 
-    height: auto;
-    box-shadow: none;
-}
-
 
 /*Fábrica de Software*/
 
@@ -1025,21 +1014,6 @@ tr:nth-child(5) {
     opacity: 0.5;
 }
 
-.rodape-branco {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 250rem;
-}
-
-.rodape-branco img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    box-shadow: none;
-}
 
 /*icones introducao*/
 #imgIcone{
@@ -1703,24 +1677,6 @@ main.mainFabricaJogos #effectIntro2{
     position: absolute;
 }
 
-footer.rodape-brancoFabricadejogos {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    background-color: transparent;
-    background-color: #8B1A1A;
-    height: fit-content;
-    border-collapse: collapse;
-    flex-shrink: 0;
-    margin-top: 3100px;
-}
-
-
-.rodape-brancoFabricadejogos img  {
-    width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    box-shadow: none;
-}
 
 
 
@@ -2038,22 +1994,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     
   }
 
-.body-demanda .rodape-preto-demanda {
-    text-align: center;
-    padding-top: 1500px;
-    padding-bottom: 10px;
-    background-color: transparent;
-    position: absolute;
-    left: 0;
-    right: 0;
-    
-}
 
-.body-demanda .rodape-preto-demanda img{
-    width: 400px;
-    height: auto;
-    box-shadow: none;
-}
 
 .body-demanda .file-label {
     display: inline-flex;
@@ -2162,6 +2103,70 @@ input.cadastroFabrica-Software {
     color: #FFFFFF;
 }
 
+
+/*Inicio do rodapé preto*/
+.rodape-preto img{
+    box-shadow: none;
+}
+
+.rodape-preto svg {
+    height: 25px;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+.rodape-preto li:nth-child(2) svg:hover {
+    color: #04BA1A;
+    height: 25.5px;
+    width: auto;
+}
+
+.rodape-preto li:nth-child(1) svg:hover {
+    color: #DD2A7B;
+    height: 25.5px;
+    width: auto;
+}
+
+/*Fim do rodapé*/
+
+
+
+/*Inicio do rodapé branco*/
+.bodyRodapeBranco .rodape-branco {
+    background-color: #8B1A1A;
+}
+
+.rodape-branco img{
+    box-shadow: none;
+}
+
+.rodape-branco svg {
+    height: 25px;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+.rodape-branco li:nth-child(2) svg:hover {
+    color: #04BA1A;
+    height: 25.5px;
+    width: auto;
+}
+
+.rodape-branco li:nth-child(1) svg:hover {
+    color: #DD2A7B;
+    height: 25.5px;
+    width: auto;
+}
+
+@media (max-width: 650px) {
+    .copText {
+        font-size: 14px;
+    }
+}
+
+/*Fim do rodapé branco*/
+
+
 /*cadastro de vagas emprego*/
 
 
@@ -2266,6 +2271,15 @@ main.cadastro-de-vagas{
   z-index: 5;
 }
 
+@media(max-width: 500px){
+    .titulo-sobre-vagas h1{
+        font-size: 27px;
+        color: white;
+        margin: 23px;
+        
+    }
+   }
+
 
 @media(max-width: 500px){
   .subtitulo-sobre-vagas p{
@@ -2299,7 +2313,8 @@ margin-top: 50px;
 }
 
 .button-enviar-vagas button{
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
+  margin-top: 3rem;
   width: 344px;
   height: 80px;
   border-radius: 17px;
@@ -2314,16 +2329,7 @@ margin-top: 50px;
   }
 }
 
-.rodape-preto-vagas{
-  margin-top: 40px;
-  text-align: center;
-}
 
-.rodape-preto-vagas img{
-  width: 400px;
-  height: auto;
-  box-shadow: none;
-}
 
 input.cadastrovagas {
   padding: 15px;
