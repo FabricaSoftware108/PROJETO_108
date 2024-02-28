@@ -2394,7 +2394,7 @@ main.login-ADM {
 }
 
 #container-campos-preenchimento-login-ADM {
-    background-color: #e3e0e0be;
+    background-color: #dbdbdbc5;
     border-radius: 10px;
     text-align: center;
 }
@@ -2405,6 +2405,7 @@ main.login-ADM {
 
 .btn-login-ADM {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 5px 6px 0 rgb(112, 112, 112);
 }
 
 /* FIM LOGIN ADM*/
