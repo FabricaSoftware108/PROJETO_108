@@ -2343,11 +2343,12 @@ input.cadastrovagas {
 
 .body-adm-home{
     background-color:#D9D9D9;
-    
 }
 
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-image:url(../Imagens/background-image-adm-home.png);
+    background-repeat:no-repeat; */
 }
 
 /* .sphere-adm-home{
