@@ -2477,6 +2477,15 @@ main.cadastro-de-vagas{
   z-index: 5;
 }
 
+@media(max-width: 500px){
+    .titulo-sobre-vagas h1{
+        font-size: 27px;
+        color: white;
+        margin: 23px;
+        
+    }
+   }
+
 
 @media(max-width: 500px){
   .subtitulo-sobre-vagas p{
@@ -2510,7 +2519,8 @@ margin-top: 50px;
 }
 
 .button-enviar-vagas button{
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
+  margin-top: 3rem;
   width: 344px;
   height: 80px;
   border-radius: 17px;
@@ -2525,16 +2535,7 @@ margin-top: 50px;
   }
 }
 
-.rodape-preto-vagas{
-  margin-top: 40px;
-  text-align: center;
-}
 
-.rodape-preto-vagas img{
-  width: 400px;
-  height: auto;
-  box-shadow: none;
-}
 
 input.cadastrovagas {
   padding: 15px;
