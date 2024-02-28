@@ -2384,19 +2384,19 @@ input.cadastrovagas {
     
 }
 
+
+
 .cadastro-adm-edital-input {
-    background-color: #D9D9D9; 
+    /* background-color: #75aa7b; */
     margin: 0px;
-    margin-left: 34px;
     
 }
 
 .cadastro-adm-edital-input-container {
     margin-bottom: 10px; 
     text-align: left;
-    margin-right: 78px;
+    /* margin-right: 78px; */
     margin-top:30px;
-  
     
 }
 
@@ -2406,54 +2406,54 @@ input.cadastrovagas {
       
 }
 
+
+
 .cadastro-adm-edital-label {
     display:block;
     color: #000;
     margin: 0px;
     text-align: 67px;
-    margin-left: 34px;
+    
+
 }
 
 
-
-#cadastroAdmEditalDataInicio{
+#cadastroAdmEditalDataInicial, #cadastroAdmEditalDataFinal{
     background-color:#1E55D1;
     color: white;
-    width:188px;
-    margin-top: 12px;
-    margin-left: 23px;
-
-}
-
-#cadastroAdmEditalDataFinal{
-    background-color:#1E55D1;
-    color: white;
-    width:188px;
-    margin-top: 12px;
-    
     
 }
+
+#centerDateInicio , #centerDateFinal{
+    margin-top:50px;
+}
+
 
 .cadastro-adm-edital-label-data{
     margin-top: 11px;
-    margin-left: 34px;
-
 }
 
-.cadastro-adm-edital-button {
-    width: 100%;
-   
+.button-cadastrar-edital-adm button {
+
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    width: 200px;
+    height: 80px;
+    border-radius: 17px;
+    position: relative;
+    font-size: 27px;
+    
+      
 }
 
-#centerDate{
-    margin: 0px;
-    margin-top: 70px;
 
+#arquivoAdmInput{
+    margin-top:60px;
 }
-
 
 #buttonCadastroEditalADM{
-    margin-top: 48px;
+    margin-top: 40px;
+    
 }
 
 
