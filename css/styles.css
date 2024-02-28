@@ -1910,7 +1910,9 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: 0; 
 }
 
-.body-demanda #container-cadastro-demanda { width: 1200px; background-color: #281358; border-radius: 30px; }
+.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 30px; }
+
+.body-demanda #button-demanda button { padding: 8px 60px; margin: 30px 0;}
 
 .subtitle-demanda {
     font-family: var(--font-destaque);
@@ -1919,12 +1921,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     padding: 30px 0;
 }
 
-.row {
-    border: 2px dashed red;
-}
-.col-md-6 {
-    border: 2px dashed chocolate;
-}
+
 
 @media (min-width: 768px) { 
     .body-demanda .inputs-definy {
