@@ -129,7 +129,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -143,7 +143,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -157,7 +157,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -171,7 +171,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -185,7 +185,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -199,7 +199,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -213,7 +213,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -227,7 +227,7 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()"></span>
             </label>
           </div>
         </div>
@@ -241,12 +241,19 @@
             <label class="cadastro-adm-switch">
               <input type="checkbox" class="cadastro-adm-checkbox">
               <span class="cadastro-adm-slider"></span>
-              <span class="cadastro-adm-knob"></span>
+              <span class="cadastro-adm-knob" onclick="openPopup()" ></span>
             </label>
           </div>
         </div>          
         <img src="../Imagens/cadastro-adm-pessoa-2.png" class="cadastro-adm-img-2">
       </div>
+    </div>
+
+    <div class="popup-cadastroAdm" id="popup-cadastroAdm">
+      <h2>Desativar Administrador</h2>
+      <p>Tem certeza que deseja desativar esse administrador ?</p>
+      <button type="button" class="btn btn-primary btn-lg" onclick="closePopup()" style="margin: 0 20px 0 0;">Desativar</button>
+      <button type="button" class="btn btn-danger btn-lg" onclick="closePopup()">Não Desativar</button>
     </div>
 
   </div>
@@ -257,6 +264,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+<script src="../js/cadastro-adm.js"></script>
 </body>
 
 
