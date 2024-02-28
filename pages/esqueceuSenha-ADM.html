@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login ADM</title>
-        <link rel="stylesheet" href="../Css/styles.css">
+        <title>Recuperar Senha ADM</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../js/login-ADM.js">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,31 +20,27 @@
         <main class="login-ADM container-fluid">
             <div class="container">
                 <div class="row" id="container-campos-preenchimento-login-ADM">
-                    <form class="col-12" id="campos-preenchimento-login-ADM">
-                        <h1>ADMINISTRADOR</h1><br>
-                        <div class="col-12">
-                            <i class="bi bi-envelope col-2 icons-login-ADM"></i>
-                            <input class="inputs-campos-login-ADM col-10" type="email" name="email" id="email"
-                                size="27" maxlength="100" placeholder="Email:">
+                    <form class="needs-validation col-12" id="campos-preenchimento-login-ADM">
+                        <h1>RECUPERAR SENHA</h1><br>
+                        <!--
+                        <div class="input-group mb-3 col-12">
+                            <i class="bi bi-envelope col-2 icons-login-ADM_2"></i>
+                            <input class="inputs-campos-login-ADM col-9" type="email" name="email" id="email"
+                                size="27" maxlength="100" placeholder="Email:" required>
                         </div>
-
-                        <div class="col-12">
-                            <i class="bi bi-key col-2 icons-login-ADM"></i>
-                            <input class="inputs-campos-login-ADM col-10" type="password" name="senha" id="senha" 
-                                size="27" maxlength="50" placeholder="Senha:"><br><br>
-                        </div>
+                        -->
                         
-                        <div class="input-group mb-3 col-10">
+                        <div class="input-group mb-3 col-12">
                             <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="bi bi-key col-2 icons-login-ADM"></i></span>
+                            <span class="input-group-text"><i class="bi bi-envelope col-2 icons-login-ADM"></i></span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input class="form-control" type="email" name="email" id="email"
+                            size="27" maxlength="100" placeholder="Informe seu Email:" required>
                         </div>
 
-                        <div class="esqueceuSenha-login-ADM col-11">
-                            <a href="#">Esqueceu sua senha?</a><br>
-                        </div>
-                           <button class="btn btn-primary mt-3 mb-3" id="btn-enviar-ADM"><b>LOGIN</b></button>
+                        <br>
+
+                        <a class="btn btn-primary mt-3 mb-3 col-10" id="btn-enviar-ADM" href="./login-ADM.html"><b>RECUPERAR</b></a>
                     </form>
                 </div>
             </div>

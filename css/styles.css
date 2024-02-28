@@ -2361,7 +2361,7 @@ body.pag-login-ADM {
 main.login-ADM {
     max-width: 600px;
     margin: 20px auto;
-    margin-top: 250px;
+    margin-top: 240px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -2371,17 +2371,23 @@ main.login-ADM {
     border: 0;
     outline: 0;
     background: transparent;
-    position: relative;
     padding-bottom: 5px;
     transition: all 0.3s;
     border-bottom: 2px solid black;
     margin: 12px auto;
     margin-top: 20px;
-    margin-bottom: 20px; 
+}
+
+.inputs-login-ADM {
+    margin-top: 40px;
 }
 
 .esqueceuSenha-login-ADM {
     text-align: right;
+}
+
+.icons-login-ADM_2 {
+    font-size: 50px;
 }
 
 .icons-login-ADM {
@@ -2399,7 +2405,6 @@ main.login-ADM {
 }
 
 #btn-enviar-ADM {
-    padding: 10px 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
