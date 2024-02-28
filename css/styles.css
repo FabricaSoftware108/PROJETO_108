@@ -2335,8 +2335,6 @@ margin-top: 50px;
   }
 }
 
-
-
 input.cadastrovagas {
   padding: 15px;
   border-radius: 5px;
@@ -2405,7 +2403,7 @@ main.login-ADM {
     margin-top: 50px;
 }
 
-#btn-enviar-ADM {
+.btn-login-ADM {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
