@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-    <div id="carouselExampleDark" class="carousel slide" style="background-color: #B10808; width: 1440px;">
+    <div id="carouselExampleDark" class="carousel slide" style="background-color: #B10808; width: auto;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -19,14 +19,20 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000" >
-            <div class="d-flex col-4" style="margin-left: 150px;"> 
-              <img src="../Imagens/foto-fabrica4.jpg" class="mx-1 my-5 md-auto img-fluid" style="width: 489px; height: 368px;" alt="...">
-              <div class="carousel-caption d-none d-md-block ms-auto text-start col-3">
-                <h5 style="line-height: 65px; font-weight: 900px; margin-right: 50px; width: 480px; height: 375px;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de </h5>
-              </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 order-md-1">
+                  <img src="../Imagens/foto-fabrica4.jpg" class="mx-1 my-5 md-auto img-fluid" style="width: 489px; height: 368px;" alt="...">
+                </div>
+                
+              <div class="carousel-caption col-md-6 order-md-2">
+                <h5 style="line-height: 75px; font-weight: 900px; width: 480px; height: 350px; margin-left: 800px ;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de </h5>
+            </div>
+          
+        </div>
             </div>
           </div>
-          <div class="carousel-item" style=" background-color: #FFAF23;" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="2000">
             <div class="d-flex">
               <img src="../Imagens/sobre.png" class="" style="width: 489px; height: 368px;" alt="...">
               <div class="carousel-caption d-none d-md-block">
