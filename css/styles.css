@@ -2008,13 +2008,36 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 .container-inputs-demanda {
     width: 350px;
     height: 45px;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
 }
 
-.container-inputs-demanda::placeholder {
-    padding: 15px;
-}  
+.body-demanda .file-label {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 715px;
+    height: 50px;
+    text-align: start;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+  }
+  
+.body-demanda .file-input {
+    display: none;
+    
+  }
+
+.body-demanda .file-label p{
+    color: #04BA1A;
+    margin-top: 2.5%;
+    margin-left: 10px;
+}
+
+.container-inputs-demanda {padding: 18px;}
 
 .body-demanda .campo-dados-demanda h2{
     font-size: var(--font-size-subTitulo);
@@ -2141,12 +2164,13 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     align-items: center;
     font-size: 14px;
     z-index: 2;
-  }
-  
-.body-demanda .file-input {
-    display: none;
-    
-  }
+}
+
+.body-demanda .container-wrapper-file {
+    display: flex;
+    padding: 6px 0;
+    justify-content: start;
+}
 
 .body-demanda .file-label p{
     color: #04BA1A;
