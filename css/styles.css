@@ -2342,85 +2342,75 @@ input.cadastrovagas {
 /* ADM HOME */
 
 .body-adm-home{
-    background-color:#D9D9D9;
+    background-color:#ffffff;
 }
+
 
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-image:url(../Imagens/background-image-adm-home.png);
-    background-repeat:no-repeat; */
 }
 
-/* .sphere-adm-home{
-    position:absolute;
-    height: 72px;
-    width: 80px;
-    background-color: #1E55D1;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top:3.5rem;
-    left:85%;
-    opacity:50%;
+@media(min-width:1140px){
+    .main-adm-home{
+        background-image:url(../Imagens/background-image-adm-home.png);
+        background-repeat:no-repeat;
+    }
 }
-
-.sphere-adm-home2{
-    position:absolute;
-    height: 72px;
-    width: 80px;
-    background-color: #1E55D1;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top:13rem;
-    left:15%;
-    opacity:50%;
-}
-
-.sphere-adm-home3{
-    position:absolute;
-    height: 72px;
-    width: 80px;
-    background-color: #1E55D1;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top:45rem;
-    left:94%;
-    opacity:50%;
-}
-
-.sphere-adm-home4{
-    position:absolute;
-    height: 72px;
-    width: 80px;
-    background-color: #1E55D1;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top:56rem;
-    left:46%;
-    opacity:50%;
-} */
 
 #label-bem-vindos-adm-home{
     margin-top:10rem;
     position:absolute;
+    font-size:x-large;
 }
-#label-quadrados-1-adm-home{
-    background-color:#970FF2;
-    color:#FFFFFF;
-    border-radius:5%;
-    padding:50px;
+
+ /* faz os quadrados ficarem alinhados horizontalmente */
+@media(min-width:992px){
+    #label-quadrados-1-adm-home{
+        background-color:#970FF2;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+    #label-quadrados-2-adm-home{
+        background-color:#F24607;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+    #label-quadrados-3-adm-home{
+        background-color:#49D907;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
 }
-#label-quadrados-2-adm-home{
-    background-color:#F24607;
-    color:#FFFFFF;
-    border-radius:5%;
-    padding:50px;
+
+ /* faz os quadrados ficarem alinhados verticalmente */
+@media(max-width:991px){
+    #label-quadrados-1-adm-home{
+        background-color:#970FF2;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+    #label-quadrados-2-adm-home{
+        background-color:#F24607;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+    #label-quadrados-3-adm-home{
+        background-color:#49D907;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
 }
-#label-quadrados-3-adm-home{
-    background-color:#49D907;
-    color:#FFFFFF;
-    border-radius:5%;
-    padding:50px;
-}
+
+
 #row-2-adm-home{
     margin-top:18rem;
     font-size:x-large;
@@ -2435,8 +2425,3 @@ input.cadastrovagas {
     width:300px;
     box-shadow:none;
 }
-
-#adm-home-img-2{
-    width:500px;
-}
-
