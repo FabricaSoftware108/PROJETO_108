@@ -1886,7 +1886,13 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     .body-demanda .inputs-definy-2 {
         text-align: start;
     }
+    @media (min-width: 1600px) { 
+        .body-demanda .container-inputs-demanda {
+            width: 600px;
+        }
+    }
 }
+
 
 @media (max-width: 868px) {
    .body-demanda .content-title-subtitle-demanda {
@@ -2341,10 +2347,9 @@ input.cadastroFabrica-Software {
 
 .subtitulo-sobre-vagas p{
   font-size:27px ;
-  /* position: absolute; */ /* dixar comentado por enquanto.*/
   color: white;
-  margin-left: 100px;/*esquerda do texto*/
-  margin-right: 120px;/* direita texto*/
+  margin-left: 100px;
+  margin-right: 120px;
   text-align: justify;
   align-items: center;
   justify-content:center;
