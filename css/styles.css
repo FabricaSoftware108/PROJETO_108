@@ -2372,12 +2372,12 @@ overflow: hidden;
   box-sizing: border-box;
 }
 
-.body-edital input,
+/* .body-edital input,
 .body-edital select,
 .body-edital textarea,
 .body-edital button {
   outline: 0;
-}
+} */
 
 .body-edital .sombra_rosa-edital{
   box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
@@ -2457,7 +2457,7 @@ overflow: hidden;
   
   @media(max-width: 576px){
     .body-edital h1 {
-      font-size: 100px;
+      font-size: 40px;
 
     }
   }
@@ -2472,7 +2472,7 @@ overflow: hidden;
   border-radius: 10px;
   text-align:center;
   z-index: 0;
-  overflow: visible auto;
+  /* overflow: visible auto; */
   border-radius: 20px;
   box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -2500,7 +2500,7 @@ overflow: hidden;
 .body-edital .edital_do_aluno_titulo-2 h1{
   text-align: center;
   line-height: 15rem;
-  font-size: 56;
+  font-size: 16;
 }
 .body-edital .sombra_orientacoes-edital {
   position: relative;
