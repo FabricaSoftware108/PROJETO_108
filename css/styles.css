@@ -2397,13 +2397,11 @@ input.cadastrovagas {
 
 
 
-.cadastro-adm-edital-input{
-    /* background-color: #75aa7b; */
+#cadastroAdmEditalInput{
+    background-color: #D9D9D9;
     margin: 0px;
-    /* width: 67px; */
+    border-radius: 7px;
    
-    
-    
 }
 
 .cadastro-adm-edital-input-container {
@@ -2426,7 +2424,7 @@ input.cadastrovagas {
     display:block;
     color: #000;
     margin: 0px;
-    text-align:start;
+    /* text-align:start; */
     
     
 }
@@ -2471,36 +2469,40 @@ input.cadastrovagas {
 }
 
 
+/* 2 container do cadastro de edital ADM*/
 
+/*input edital container edital ADM*/
+#cadastroAdmEditalProcura{
+    margin-top: 56px;
+    margin-bottom:53px; 
+    text-align: left;
+    
+    
+}
+    
 
-
-
-
-.cadastro-adm .cadastro-adm-container {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    border: 2px solid #D9D9D9;
-    width: 560px; /* Definindo largura fixa */
-    height: 718px; /* Definindo altura fixa */
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    margin: 20px; 
+.cadastro-adm .cadastro-adm-borda-com-conteudo {
+    border: 1px dotted #000;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px; /* Reduzindo a margem inferior para aproximar os administradores */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
 }
 
-.cadastro-adm .cadastro-adm-container-title {
-    background-color: #1E55D1;
-    color: white;
-    padding: 10px 20px; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    height: 60px; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    font-size: 40px;
+.cadastro-adm .cadastro-adm-nome-aleatorio {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
+    font-size: 24px;
 }
 
-.cadastro-adm .cadastro-adm-distanciamento {
-    padding: 65px;
-}
+
+
+
+
+
+
