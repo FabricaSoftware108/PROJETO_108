@@ -2358,11 +2358,9 @@ body.pag-login-ADM {
 }
   
 main.login-ADM {
-    max-width: 600px;
-    margin: 20px auto;
-    margin-top: 240px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 8%;
 }
 
 
