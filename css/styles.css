@@ -2433,15 +2433,17 @@ input.cadastrovagas {
     margin-top: 11px;
 }
 
-.button-cadastrar-edital-adm button {
+.button-cadastrar-edital-adm button{
 
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-    width: 200px;
-    height: 80px;
-    border-radius: 17px;
+    margin-bottom: 8rem;
+    top: 40px; /* ditancia que o botão tem do input arquivo*/
+    width: 349px;/* largura do botão*/
+    height: 47px; /* comprimento do botão.*/
+    border-radius: 10px;
     position: relative;
     font-size: 27px;
+    
+    
     
       
 }
