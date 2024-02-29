@@ -23,8 +23,27 @@
 }
 
 @media (max-width: 600px) {
-.container-title-outside-btn h2 {
-    font-size: 10px;
+    .container-title-outside-btn h2 {
+        font-size: 10px;
+        }
+       
+    .container-title-outside-btn,
+    .container-title-outside-btn svg {
+            width: 20;
+            height: 20;
+            font-size: 5px;
+        }
+    
+    .container-grad-table table {
+        font-size:8px;
+    }
+        
+    .roxo-gradec-software {
+    height: auto;
+    background-color: rgba(43, 20, 99, 1);
+    border-radius: 160px 0 0 0;
+    box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
+    }
 }
 .roxo-introdu-software {
     height: 899px;
@@ -32,24 +51,16 @@
     background-color: rgba(43, 20, 99, 1);
 }
 .branco-gradec-software{
-    height: 980px;
-    background-color:rgba(255, 255, 255, 1);
+    height: auto;
+    background-color:rgb(255, 255, 255, 1);
     
     
 }
 .roxo-gradec-software{
-    height: 1200px;
+    height: auto;
     background-color: rgba(43, 20, 99, 1);
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
-}
-
-.container-title-outside-btn,
-.container-title-outside-btn svg {
-        width: 24;
-        height: 24;
-        font-size: 12px;
-    }
 }
 
 .grade-curricular {
@@ -60,7 +71,10 @@
 
 .container-title-grad {
     margin: 0 160px;
-    padding: 10px 0;
+    padding: 10px 0 10px;
+}
+.container-title-grad h1 {
+    text-align: center;
 }
 
 .container-title-outside {
@@ -69,7 +83,7 @@
     background-color: var(--color-grad-title);
     
     color: white;
-    padding: 20px 21px;
+    padding: 20px 0px;
     border: 1px solid white;
     border-radius: 10px;
     text-align: center;
@@ -84,7 +98,7 @@
     background-color: var(--color-grad-title);
     font-size: 13px;
     color: white;
-    padding: 20px 21px;
+    padding: 20px 10px;
     border: 1px solid transparent;
     text-align: center;
     align-items: center;
