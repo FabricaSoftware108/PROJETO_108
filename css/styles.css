@@ -1104,72 +1104,11 @@ tr:nth-child(5) {
 
 /*Fábrica de jogos*/
 
-body.bodyFabricaJogos {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 
-}
-
-html.htmlFabricaJogos {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-
-.vermelho-introdu-jogos {
-    height: 899px;
-    margin-top: 79px;
+.main-fabrica-de-jogos .bg-primary {
     background-color: #8B1A1A;
-
 }
 
-.branco-introdu-jogos {
-    background-color: rgba(255, 255, 255, 1);
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 260px 0 0 260px;
-}
-
-.vermelho-projetos-jogos {
-    background-color: #8B1A1A;
-    border-radius: 0 240px 220px 0;
-    padding-top: 50px;
-    height: 980px;
-    box-shadow: 100px 0px 81px -50px #8B1A1A;
-}
-
-.branco-requisitos-jogos{
-    height: 980px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 260px 0 260px 0;
-}
-
-.vermelho-requisitos-jogos {
-    height: 980px;
-    background-color: #8B1A1A;
-    
-}
-.branco-gradec-jogos{
-    height: 980px;
-    background-color:rgba(255, 255, 255, 1);
-    
-    
-}
-.vermelho-gradec-jogos{
-    height: 1200px;
-    background-color: #8B1A1A;
-    border-radius: 260px 0 0 0;
-    box-shadow: -100px -60px 60px -92px #8B1A1A;
-}
 
 
 .bodyFabricaJogos .rodape-branco {
