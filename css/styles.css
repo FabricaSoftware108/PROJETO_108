@@ -2344,11 +2344,22 @@ input.cadastrovagas {
 
 
 
+@media(max-width: 300px){
+    #tituloCabecalhoADMEdital h1{
+        font-size: 27px;
+        color: white;
+        margin: 20px;
+        
+    }
+    }
+
 .cadastro-adm-edital-centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /*100vh*/
+    width:389px;
+    margin-top: 150px;
     
 }
 
@@ -2386,9 +2397,12 @@ input.cadastrovagas {
 
 
 
-.cadastro-adm-edital-input {
+.cadastro-adm-edital-input{
     /* background-color: #75aa7b; */
     margin: 0px;
+    /* width: 67px; */
+   
+    
     
 }
 
@@ -2412,9 +2426,9 @@ input.cadastrovagas {
     display:block;
     color: #000;
     margin: 0px;
-    text-align: 67px;
+    text-align:start;
     
-
+    
 }
 
 
@@ -2443,8 +2457,6 @@ input.cadastrovagas {
     position: relative;
     font-size: 27px;
     
-    
-    
       
 }
 
@@ -2463,3 +2475,32 @@ input.cadastrovagas {
 
 
 
+
+.cadastro-adm .cadastro-adm-container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 560px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin: 20px; 
+}
+
+.cadastro-adm .cadastro-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px;
+}
+
+.cadastro-adm .cadastro-adm-distanciamento {
+    padding: 65px;
+}
