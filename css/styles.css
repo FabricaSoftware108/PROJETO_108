@@ -1868,12 +1868,12 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
 
-.body-demanda #button-demanda button { padding: 8px 60px; margin: 30px 0;}
+.body-demanda #button-demanda button {margin: 30px 0;}
 
-.subtitle-demanda {
+.subtitle-demanda h1{
+    font-size: 30px;
     font-family: var(--font-destaque);
-    font-size: var(--font-size-titulo);
-    font-weight: bolder;
+    font-weight: 530;
     padding: 30px 0;
 }
 
@@ -1925,6 +1925,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
   }
   
 .body-demanda .content-title-subtitle-demanda h1{
+    font-weight: bolder;
     font-size: var(--font-size-titulo);
     color:#000;
   
