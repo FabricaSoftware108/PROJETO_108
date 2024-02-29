@@ -2346,12 +2346,52 @@ html, body .body-editarCarrossel {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Imagens/editar_img-carrossel.png);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: url(../Imagens/imagem_editarCarrossel.svg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 100px;
+    background-position-y: 567px ;
+    background-size: 400px; 
 }
+/* 
+@media screen and (max-length: 576px ) {
+    html, body .body-editarCarrossel {
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: url(../Imagens/imagem_editarCarrossel.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100px;
+    background-position-y: 567px ;
+    background-size: 400px; 
+} */
+
+/* @media(min-length: 576px ){
+    html, body .body-editarCarrossel {
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-image: url(../Imagens/imagem_editarCarrossel.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100px;
+    background-position-y: 567px ;
+    background-size: 400px; 
+}  */
+
 .main-editarCarrossel .caixa_fabricas_adm {
-    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 15px;
     width: 550px;
     height: 700px;
     position: relative;
@@ -2419,4 +2459,20 @@ html, body .body-editarCarrossel {
     display: flex; 
     text-align: center;
     font-size: larger;
+}
+
+ .btn_editar_carrossel-soft button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+
+.btn_editar_carrossel-cgi button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+
+.btn_editar_carrossel-jogos button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+
+.btn_editar_carrossel-audio button {
+    box-shadow: 4px 4px 4px 0 black;
 }
