@@ -1866,7 +1866,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: 0; 
 }
 
-.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 30px; }
+.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button { padding: 8px 60px; margin: 30px 0;}
 
@@ -1879,17 +1879,9 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 
 
-@media (min-width: 768px) { 
-    .body-demanda .inputs-definy {
-        text-align: end;
-    }
-    .body-demanda .inputs-definy-2 {
-        text-align: start;
-    }
-    @media (min-width: 1600px) { 
-        .body-demanda .container-inputs-demanda {
-            width: 600px;
-        }
+@media (min-width: 1780px) { 
+    .body-demanda .container-inputs-demanda {
+        width: 500px;
     }
 }
 
@@ -1899,9 +1891,9 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
        text-align: center;
    }
    .body-demanda .content-title-subtitle-demanda p {
-    margin: 0 30px;
-    text-align: center;
-     font-size: 14px !important; 
+        margin: 0 30px;
+        text-align: center;
+        font-size: 14px !important; 
 
    }
    .body-demanda .effects, .effects-2 {
@@ -1968,9 +1960,10 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
   }
 
 .container-inputs-demanda {
+    padding: 18px;
     width: 350px;
     height: 45px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: none;
 }
 
@@ -1991,7 +1984,6 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
 
-.container-inputs-demanda {padding: 18px;}
 
 .body-demanda .campo-dados-demanda h2{
     font-size: var(--font-size-subTitulo);
