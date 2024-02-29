@@ -2016,26 +2016,18 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     display: inline-flex;
     background-color: white;
     color: grey;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 12px;
-    width: 715px;
     height: 50px;
-    text-align: start;
     align-items: center;
     font-size: 14px;
     z-index: 2;
   }
   
-.body-demanda .file-input {
-    display: none;
-    
-  }
+.body-demanda .file-input { display: none; }
 
-.body-demanda .file-label p{
-    color: #04BA1A;
-    margin-top: 2.5%;
-    margin-left: 10px;
-}
+.body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
 
 .container-inputs-demanda {padding: 18px;}
 
@@ -2152,19 +2144,6 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     box-shadow: none;
 }
 
-.body-demanda .file-label {
-    display: inline-flex;
-    background-color: white;
-    color: grey;
-    padding: 10px 20px;
-    border-radius: 12px;
-    width: 715px;
-    height: 50px;
-    text-align: start;
-    align-items: center;
-    font-size: 14px;
-    z-index: 2;
-}
 
 .body-demanda .container-wrapper-file {
     display: flex;
