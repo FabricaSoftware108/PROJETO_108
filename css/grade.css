@@ -27,6 +27,10 @@
         font-size: 10px;
         }
        
+    .roxo-gradec-software h1 {
+        font-size:21px;
+    }
+
     .container-title-outside-btn,
     .container-title-outside-btn svg {
             width: 20;
@@ -45,6 +49,8 @@
     box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
     }
 }
+
+
 .roxo-introdu-software {
     height: 899px;
     margin-top: 79px;
@@ -66,7 +72,7 @@
 .grade-curricular {
     margin: 90px 0px 90px 0px;
     color: white;
-    width: 300px;
+    width: auto;
 }
 
 .container-title-grad {
