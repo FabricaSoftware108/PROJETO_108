@@ -2063,6 +2063,10 @@ main.cadastro-de-vagas{
   
 }
 
+#titulo-subtitulo-cadastroVagas h1{
+    font-weight: bold;
+}
+
 #titulo-subtitulo-cadastroVagas p{
   font-size:27px ;
   position: relative;
@@ -2199,11 +2203,352 @@ margin-top: 50px;
 
 input.cadastrovagas {
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 30px;
   margin-top: 7px;
 }
 
+/* Tela de Edital */
+
+body.body-edital {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.body-edital .wrapper-content-icon {
+  padding-left: 130%;
+}
+
+.body-edital .content-wrapper-roxo-edital {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.body-edital #background-edital {
+    padding: 20px;
+}
+
+.body-edital .container-background-edital .row{
+  border-radius: 15px ;
+  background-color: white;
+}
+
+
+.body-edital .borda_roxa{
+overflow: hidden;
+}
+
+.body-edital .borda_roxa-edital,
+.body-edital .borda_roxar * {
+  box-sizing: border-box;
+}
+
+
+.body-edital .sombra_rosa-edital{
+  box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
+  left: -229px;
+  height: 350px;
+  width: 156px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(150px) contrast(150%);
+} 
+
+.body-edital .sombra_roxa-edital{
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 90%;
+  filter: blur(150px) contrast(150%);
+}
+
+
+.body-edital #container-borda-roxa-edital .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.body-edital .container-fluid,
+.body-edital .container,
+.body-edital .col-12 #container-sobre-curso1{
+  padding: 0;
+}   
+
+
+.body-edital .titulo_edital{
+  margin: 150px 0 0 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 27px;
+  text-align: center;
+}
+.body-edital .titulo_edital h1 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+}
+.body-edital .titulo_edital p{
+  font-size: 27px;
+  margin-top: 40px;
+}
+
+
+
+  
+@media(min-width: 576px){
+    .body-edital .titulo_edital>p {
+    font-size: 10px;
+    
+  }
+  .body-edital #introducao-edital p{
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0;
+  }
+}
+  @media(min-width: 576px){
+    .body-edital .titulo_edital>h1 {
+      font-size: 10px;
+      
+    }
+  }
+    
+  
+
+  
+  @media(max-width: 576px){
+    .body-edital h1 {
+      font-size: 40px;
+
+    }
+  }
+
+
+
+.body-edital .borda_roxa-edital {
+  position: relative;
+  width: 1200px;
+  height: 958px;
+  background-color: #281358;
+  border-radius: 10px;
+  text-align:center;
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.body-edital .sombra-edital {
+  position: relative;
+  margin: 10px 0 0 1.092px;
+}
+
+.body-edital .col-3 #inscricao1-hide{
+  height: 100%;
+}
+
+
+.body-edital .sombra-edital-btn{
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px; 
+  border: none;
+}
+.body-edital .edital_do_aluno_titulo-2{
+  margin-bottom: 0;
+}
+.body-edital .edital_do_aluno_titulo-2 h1{
+  text-align: center;
+  line-height: 15rem;
+  font-size: 16;
+}
+.body-edital .sombra_orientacoes-edital {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px;
+  top:110%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-edital .sombra_orientacoes2-edital{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px;
+  top:110%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-edital .btn-inscricoes {
+  width: 100%;
+  height: 29px;
+  padding: 5px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #68da55;
+  z-index: 102;
+  border-radius: 10px;
+  font-size: 14px;
+} 
+
+.body-edital .sobre_curso-1_edital{
+  position: absolute;
+  width: 6px;
+  height: 18px;
+  top: 23px;
+  left: 253px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 100;
+}
+.body-edital .sobre_curso-1_edital .text1-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-1_edital .text2-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-1_edital .text3-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sombra2-edital {
+  position:relative;
+  margin: 10px 0 0 0px;
+}
+.body-edital .btn-inscricoes2 {
+  width: 100%;
+  height: 29px;
+  padding: 5px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #68da55;
+  z-index: 102;
+  border-radius: 10px;
+  font-size: 14px;
+} 
+.body-edital .text_inscricoes-1_edital{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 6px;
+  left: 2px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+.body-edital .inscricoes2-edital .text-1-edital {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 6px;
+  left: 2px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+.body-edital .sobre_curso-2-edital{
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  top: 23px;
+  left: 253px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 100;
+}
+.body-edital .sobre_curso-2-edital .text-1-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-2-edital.text-2-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: center;
+}
+.body-edital .sobre_curso-2-edital .text-3-edital{
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-2-edital span{
+  font-size: 13px;
+}
 
 /* ADM HOME */
 
