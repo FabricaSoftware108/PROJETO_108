@@ -2378,6 +2378,17 @@ input.cadastrovagas {
     background-color:#ffffff;
 }
 
+.quadro-branco {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+.quadro-cinza {
+    background-color: #D9D9D9; 
+    padding: 10px; 
+}
+
 
 .icon-green {
     width: 20px;
@@ -2401,8 +2412,15 @@ input.cadastrovagas {
 }
 
 
+.button-apagar-edital button{
+    width: 130px;/* largura do botão*/
+    height: 33px; /* comprimento do botão.*/
+}
 
-
+.button-editar-edital  button{
+    width: 130px;/* largura do botão*/
+    height: 30px; /* comprimento do botão.*/
+}
 
 /* ADM HOME */
 
