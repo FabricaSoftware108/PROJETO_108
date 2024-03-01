@@ -2401,8 +2401,8 @@ input.cadastrovagas {
 
 /* Editar carrossel de imagem ADM */
 
-html,
-body .body-editarCarrossel {
+html.html-editarCarrossel,
+body.body-editarCarrossel {
     height: 100px;
     margin: 0;
     display: flex;
