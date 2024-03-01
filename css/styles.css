@@ -886,152 +886,6 @@ tr:nth-child(5) {
     text-align: center;
 }
 
-
-
-/* carrosel */
-
-.Body-Fabrica-Software span {
-    font-size: x-large;
-}
-  
-.Body-Fabrica-Software .card-img {
-    box-shadow: 0 1px 2px #0003;
-    width: 100%;
-}
-  
-@media (max-width: 450px) { /*para melhoras a qualidade da imagem deixa limitada */
-    .swiper {
-      height: 270px;
-    }
-}
-  
-
-.swiper-button-prev, .swiper-button-next {
-    color:black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
-    border-radius: 50%;
-    background-color: white;
-    width: 60px; /* Largura desejada */
-    height: 60px; /* Altura desejada */
-    font-size: 12px;
-    z-index: -1;
-}
-
-
-.swiper-button-prev {
-    left: 10px; /* Ajusta a posição do botão esquerdo */
-    color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
-}
-
-.swiper-button-next {
-    right: 10px; /* Ajusta a posição do botão direito */
-    color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 40px;
-    color: black;
-  
-}
-  
-@media (max-width: 600px) {
-    .container-title-outside-btn h2{
-        font-size: 10px;
-    }
-    .container-title-outside-btn,
-    .container-title-outside-btn svg{
-        width: 24;
-        height: 24;
-        font-size: 12px;
-    }
-}
-
-.Body-Fabrica-Software .swiper-slide{
-    background-color: rgba(102, 30, 159, 1);
-    z-index: 2;
-}
-
-@media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
-    img {
-      width: 100%;
-    }
-}
-
-.swiper {
-    height: 500px;
-    z-index: -2;
-}
-  
-.swiper-slide {
-    text-align:justify; /*arruma o texto */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.description{
-    font-size: 22px;
-    color:aliceblue;
-    overflow: hidden;
-    margin: 4rem;
-    font-family: var(--font-grad-title);
-    
-    text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
-    display: -webkit-box;   /*delimita o texto que vc coloca*/
-    -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
-    -webkit-box-orient: vertical;
-    line-height: 30px;
-}
-
-.card-image{
-    max-width: 40%;
-    height: auto;
-    width: 400rem;
-    margin: 1rem;
-}
-
-.card-img{
-    border-radius: 5px;
-}
-
-.swiper-slide{
-
-    width: 100%;
-    height: 100%;
-}
-
-.position {
-    width: 1500px;/* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/ 
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.projeto-carrossel {
-    height: 12rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
-
-.projeto-carrossel h1 {    
-    color: white;
-    text-align: center;
-    margin: 10px;
-    font-size: 56px;
-    margin-top: 100px;
-}
-
-.projeto-carrossel p {
-    color: white;
-    text-align: center;
-    margin: 50px;
-    font-size: 27px;
- }
-
 /* Rodapé */
 
 #img-js, #img-html{
@@ -2361,4 +2215,92 @@ input.cadastrovagas {
   border-radius: 5px;
   margin-bottom: 30px;
   margin-top: 7px;
+}
+
+
+/* ADM HOME */
+
+.body-adm-home{
+    background-color:#ffffff;
+}
+
+
+.main-adm-home{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media(min-width:1140px){
+    .main-adm-home{
+        background-image:url(../Imagens/background-image-adm-home.png);
+        background-repeat:no-repeat;
+    }
+}
+
+#label-bem-vindos-adm-home{
+    margin-top:10rem;
+    position:absolute;
+    font-size:x-large;
+}
+
+ /* faz os quadrados ficarem alinhados horizontalmente */
+@media(min-width:992px){
+    #label-quadrados-1-adm-home{
+        background-color:#970FF2;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+    #label-quadrados-2-adm-home{
+        background-color:#F24607;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+    #label-quadrados-3-adm-home{
+        background-color:#49D907;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+}
+
+ /* faz os quadrados ficarem alinhados verticalmente */
+@media(max-width:991px){
+    #label-quadrados-1-adm-home{
+        background-color:#970FF2;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+    #label-quadrados-2-adm-home{
+        background-color:#F24607;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+    #label-quadrados-3-adm-home{
+        background-color:#49D907;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+}
+
+
+#row-2-adm-home{
+    margin-top:18rem;
+    font-size:x-large;
+}
+
+#container-2-adm-home-imagem{
+    margin-top:5rem;
+    width:900px;
+}
+
+#adm-home-img-1{
+    width:300px;
+    box-shadow:none;
 }
