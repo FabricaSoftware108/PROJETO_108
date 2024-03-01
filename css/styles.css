@@ -2063,6 +2063,10 @@ main.cadastro-de-vagas{
   
 }
 
+#titulo-subtitulo-cadastroVagas h1{
+    font-weight: bold;
+}
+
 #titulo-subtitulo-cadastroVagas p{
   font-size:27px ;
   position: relative;
@@ -2289,6 +2293,7 @@ overflow: hidden;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 27px;
+  text-align: center;
 }
 .body-edital .titulo_edital h1 {
   text-align: center;
