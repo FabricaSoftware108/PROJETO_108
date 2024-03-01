@@ -2564,14 +2564,22 @@ overflow: hidden;
     }
     }
 
-.cadastro-adm-edital-centered {
+/* .cadastro-adm-edital-centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /*100vh*/
+    height: 100vh; 
     width:389px;
     margin-top: 150px;
     
+} */
+    /*tem que usar esse para deixar o cadastro de edital e o editais certo */
+    
+.cadastro-adm-editais .cadastro-adm-edital-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .cadastro-adm-edital-container {
@@ -2601,10 +2609,10 @@ overflow: hidden;
     font-size: 40px; 
 }
 
-.cadastro-adm-edital{
+/* .cadastro-adm-editais{
     padding: 65px;
     
-}
+} */
 
 
 
@@ -2698,24 +2706,24 @@ overflow: hidden;
 }
     
 
-.cadastro-adm .cadastro-adm-borda-com-conteudo {
+/* .cadastro-adm .cadastro-adm-borda-com-conteudo {
     border: 1px dotted #000;
     padding: 25px;
     text-align: center;
     position: relative;
-    margin-bottom: 10px; /* Reduzindo a margem inferior para aproximar os administradores */
+    margin-bottom: 10px; Reduzindo a margem inferior para aproximar os administradores 
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
+    margin-top: 10px; Reduzindo a margem superior para aproximar os administradores 
 }
 
-/* .cadastro-adm .cadastro-adm-nome-aleatorio {
+.cadastro-adm .cadastro-adm-nome-aleatorio {
     position: absolute;
     top: 50%;
     left: 50%; Centralizando horizontalmente
     transform: translate(-50%, -50%); Centralizando verticalmente e horizontalmente
     font-size: 24px;
-} */
+}  */
 
 
 
@@ -2758,13 +2766,13 @@ overflow: hidden;
 
 
 .button-apagar-edital button{
-    width: 130px;/* largura do botão*/
-    height: 33px; /* comprimento do botão.*/
+    width: 240px;/* largura do botão*/
+    height: 50px; /* comprimento do botão.*/
 }
 
 .button-editar-edital  button{
-    width: 130px;/* largura do botão*/
-    height: 30px; /* comprimento do botão.*/
+    width: 240px;/* largura do botão*/
+    height: 50px; /* comprimento do botão.*/
 }
 
 /* ADM HOME */
