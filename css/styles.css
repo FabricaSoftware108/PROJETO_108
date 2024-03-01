@@ -2471,6 +2471,12 @@ input.cadastrovagas {
 
 /* 2 container do cadastro de edital ADM*/
 
+.quadro-cinza {
+    background-color: #D9D9D9; 
+    border-radius: 7px;
+   
+}
+
 /*input edital container edital ADM*/
 #cadastroAdmEditalProcura{
     margin-top: 56px;
@@ -2492,15 +2498,41 @@ input.cadastrovagas {
     margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
 }
 
-.cadastro-adm .cadastro-adm-nome-aleatorio {
+/* .cadastro-adm .cadastro-adm-nome-aleatorio {
     position: absolute;
     top: 50%;
-    left: 50%; /* Centralizando horizontalmente */
-    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
+    left: 50%; Centralizando horizontalmente
+    transform: translate(-50%, -50%); Centralizando verticalmente e horizontalmente
     font-size: 24px;
+} */
+
+
+
+.cadastro-adm-nome-aleatorio-1{
+    background-color:#ffffff;
 }
 
 
+.icon-green {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-right: 5px; 
+    margin-top: 10px;
+}
+
+
+.icon-red {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
 
 
 
