@@ -1733,7 +1733,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 }
 
 .body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
-.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0;}
+.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
 .body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
@@ -1753,6 +1753,11 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     }
 }
 
+@media (min-width: 854px) { 
+    .body-demanda .container-inputs-demanda {
+        width: 400px;
+    }
+}
 
 @media (max-width: 868px) {
    .body-demanda .content-title-subtitle-demanda {
@@ -1764,9 +1769,12 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
         font-size: 14px !important; 
 
    }
-   .body-demanda .effects, .effects-2 {
-       display: none;
-   }
+}
+@media (max-width: 1200px) {
+ 
+    .body-demanda .effects, .effects-2 {
+        display: none;
+    }
 }
 
 @media (max-width: 468px) {
@@ -1830,8 +1838,8 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .container-inputs-demanda {
     padding: 18px;
-    width: 350px;
-    height: 45px;
+    width: 430px;
+    height: 55px;
     border-radius: 15px;
     border: none;
 }
