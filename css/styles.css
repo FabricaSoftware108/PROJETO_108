@@ -2427,25 +2427,20 @@ body.body-editarCarrossel {
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
 @media (max-width: 600px) {
-    .text_editar_carrossel h1 {
+    body.body-editarCarrossel .text_editar_carrossel h1 {
         font-size: 20px;
         padding: 5px 0;
     }
-    .wrapper-carrossel_img-adm p{
+    body.body-editarCarrossel .wrapper-carrossel_img-adm p{
         font-size:15px;
         margin-top:15px;
     }
-
 }
 
-
-
-.main-editarCarrossel .caixa_fabricas_adm {
+body.body-editarCarrossel .main-editarCarrossel .caixa_fabricas_adm {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 15px;
     width: 550px;
     height: 700px;
@@ -2454,7 +2449,11 @@ body.body-editarCarrossel {
     border-radius: 10px;
 }
 
-.text_editar_carrossel h1 {
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+body.body-editarCarrossel .text_editar_carrossel h1 {
     text-align: center;
     background-color: rgba(30, 85, 209, 1);
     border-radius: 5px;
@@ -2464,19 +2463,18 @@ body.body-editarCarrossel {
     font-size: 30px;
 }
 
-
-.wrapper-carrossel_img-adm p {
+body.body-editarCarrossel .wrapper-carrossel_img-adm p {
     margin-top:15px;
 }
 
-.wrapper-carrossel_img-adm {
+body.body-editarCarrossel .wrapper-carrossel_img-adm {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.btn_editar_carrossel-soft .col-12 {
+body.body-editarCarrossel .btn_editar_carrossel-soft .col-md-6 {
     margin: 0 0 100px 0;
     display: flex;
     align-items: center;
@@ -2485,7 +2483,7 @@ body.body-editarCarrossel {
     margin-top: 100px;
 }
 
-.btn_editar_carrossel-jogos .col-12 {
+body.body-editarCarrossel .btn_editar_carrossel-jogos .col-md-12 {
     margin: 0 0 100px 0;
     display: flex;
     align-items: center;
@@ -2493,7 +2491,7 @@ body.body-editarCarrossel {
     text-align: center;
 }
 
-.btn_editar_carrossel-audio .col-12 {
+body.body-editarCarrossel .btn_editar_carrossel-audio .col-md-12 {
     margin: 0 0 100px 0;
     display: flex;
     align-items: center;
@@ -2501,7 +2499,7 @@ body.body-editarCarrossel {
     text-align: center;
 }
 
-.btn_editar_carrossel-cgi .col-12 {
+body.body-editarCarrossel .btn_editar_carrossel-cgi .col-md-12 {
     margin: 0 0 100px 0;
     display: flex;
     align-items: center;
@@ -2509,9 +2507,9 @@ body.body-editarCarrossel {
     text-align: center;
 }
 
-.main-editarCarrossel .btn-primary {
+body.body-editarCarrossel .main-editarCarrossel .btn-primary {
     align-items: center;
-    width: 500px;
+    width: 100%;
     height: 60px;
     position: absolute;
     margin-top: 100%;
@@ -2521,31 +2519,25 @@ body.body-editarCarrossel {
     font-size: larger;
 }
 
-.btn_editar_carrossel-soft button {
+body.body-editarCarrossel .btn_editar_carrossel-soft button {
     box-shadow: 4px 4px 4px 0 black;
 }
 
-.btn_editar_carrossel-cgi button {
+body.body-editarCarrossel .btn_editar_carrossel-cgi button {
     box-shadow: 4px 4px 4px 0 black;
 }
 
-.btn_editar_carrossel-jogos button {
+body.body-editarCarrossel .btn_editar_carrossel-jogos button {
     box-shadow: 4px 4px 4px 0 black;
 }
 
-.btn_editar_carrossel-audio button {
+body.body-editarCarrossel .btn_editar_carrossel-audio button {
     box-shadow: 4px 4px 4px 0 black;
 }
-.imagem-carrosselEdit svg{
+body.body-editarCarrossel .imagem-carrosselEdit svg{
     position: relative;
     left: -150%;
     margin-top: -10%;
-
-  padding: 15px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  margin-top: 7px;
-
 }
 
 /* Tela de Edital */
