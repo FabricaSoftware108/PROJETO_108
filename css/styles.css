@@ -2410,12 +2410,7 @@ body.body-editarCarrossel {
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    background-image: url(../Imagens/imagem_editarCarrossel.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 100px;
-    background-position-y: 567px;
-    background-size: 400px;
+
 }
 
 @media (max-width: 600px) {
@@ -2427,10 +2422,10 @@ body.body-editarCarrossel {
         font-size:15px;
         margin-top:15px;
     }
-    /* .caixa_fabricas_adm {
-        top: 100px;
-    } */
+
 }
+
+
 
 .main-editarCarrossel .caixa_fabricas_adm {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 15px;
@@ -2441,15 +2436,16 @@ body.body-editarCarrossel {
     border-radius: 10px;
 }
 
-.text_editar_carrossel {
+.text_editar_carrossel h1 {
     text-align: center;
     background-color: rgba(30, 85, 209, 1);
     border-radius: 5px;
     height: 60px;
     color: white;
     padding: 10px 0;
-    
+    font-size: 30px;
 }
+
 
 .wrapper-carrossel_img-adm p {
     margin-top:15px;
@@ -2521,4 +2517,9 @@ body.body-editarCarrossel {
 
 .btn_editar_carrossel-audio button {
     box-shadow: 4px 4px 4px 0 black;
+}
+.imagem-carrosselEdit svg{
+    position: relative;
+    left: -150%;
+    margin-top: -10%;
 }
