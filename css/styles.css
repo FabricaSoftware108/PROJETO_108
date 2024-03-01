@@ -2106,42 +2106,53 @@ input.cadastroFabrica-Software {
 
 /* ! Contéudos dentro Cadastro Admin ! */
 
-
 .cadastro-adm .cadastro-adm-centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.cadastro-adm .cadastro-adm-container {
+.cadastro-adm .cadastro-adm-centered .row {
+    width: 100%;
+    margin: 100px 0 0 0 ;
+}
+
+.col-md-4{
+    margin:0;
+}
+
+
+.cadastro-adm .col-md-4{
+    margin: 0;
+}
+
+.cadastro-adm .cadastro-adm-container-1 {
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 2px solid #D9D9D9;
-    width: 560px; /* Definindo largura fixa */
-    height: 718px; /* Definindo altura fixa */
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    margin: 20px; 
+    margin: 0;
+    width: 500px;
+}
+.cadastro-adm .cadastro-adm-container-2 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin: 0;
+    width: 500px;
 }
 
 .cadastro-adm .cadastro-adm-container-title {
     background-color: #1E55D1;
     color: white;
     padding: 10px 20px; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
     height: 60px; 
     display: flex;
     align-items: center; 
     justify-content: center; 
     font-size: 40px;
+    border-radius: 10px 10px 0 0;
 }
 
-.cadastro-adm .cadastro-adm-distanciamento {
-    padding: 65px;
-}
 
 .cadastro-adm .cadastro-adm-input {
     background-color: #D9D9D9; 
@@ -2152,6 +2163,10 @@ input.cadastroFabrica-Software {
     text-align: left; 
 }
 
+.cadastro-adm-input-container {
+    padding: 20px 30px 0;
+}
+
 .cadastro-adm .cadastro-adm-label {
     display: block;
     margin-bottom: 5px;
@@ -2160,7 +2175,18 @@ input.cadastroFabrica-Software {
 
 .cadastro-adm .cadastro-adm-button {
     width: 100%;
-    margin-top: 100px; 
+    margin-top: 60px; 
+    border-radius: 10px;
+}
+
+@media (max-width: 1204px) {
+    .cadastro-adm-container-title {
+        font-size: 20px !important;
+    }
+    .cadastro-adm-label,
+    .cadastro-adm-nome-aleatorio {
+        font-size: 15px !important;
+    }
 }
 /* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
 
@@ -2262,18 +2288,9 @@ input.cadastroFabrica-Software {
 .cadastro-adm .cadastro-adm-img-1 {
     position: absolute;
     bottom: 10px;
-    left: 220px;
+    left: 60px;
     width: 350px; /* Defina a largura desejada */
     height: auto; /* A altura será ajustada automaticamente para manter a proporção */
-    box-shadow: none;
-}
-
-.cadastro-adm .cadastro-adm-img-2 {
-    position: absolute;
-    bottom: 10px; 
-    right: 275px; /* Definindo a distância da margem direita */
-    width: 120px; /* Defina a largura desejada */
-    height: auto;
     box-shadow: none;
 }
 
