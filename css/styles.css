@@ -1866,6 +1866,8 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: 0; 
 }
 
+.body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
+.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0;}
 .body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
