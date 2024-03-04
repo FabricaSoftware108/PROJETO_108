@@ -981,11 +981,37 @@ tr:nth-child(5) {
     font-size: 27px;
     text-align: justify;
 }
+
+.vermelho-projetos-jogos {
+    background-color: #8B1A1A;
+    border-radius: 0 20% 20% 0;
+}
+
+.vermelho-requisitos-jogos {
+    background-color: #8B1A1A;
+}
+
+.branco-requisitos-jogos{
+    border-radius: 300px 0 300px 0;
+}
 .bodyFabricaJogos .rodape-branco {
     background-color: #8B1A1A;
 }
 
 
+.vermelho-gradec-jogos {
+    background-color: #8B1A1A;
+    border-radius: 25% 0 0 0;
+}
+@media (max-width:788px) {
+    .vermelho-projetos-jogos {
+        border-radius: 0 0 0 0;
+    }
+    .vermelho-gradec-jogos {
+        background-color: #8B1A1A;
+        border-radius: 0 0 0 0;
+    }
+}
 
 
 
