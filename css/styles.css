@@ -1600,17 +1600,16 @@ main.mainFabricaJogos #effectIntro2{
 
 .body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
 .body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
-.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
+.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
 
-.subtitle-demanda h1{
+.body-demanda .subtitle-demanda h1{
     font-size: 40px;
     font-family: var(--font-destaque);
     font-weight: 530;
     padding: 30px 0;
 }
-
 
 
 @media (min-width: 1780px) { 
@@ -1848,144 +1847,48 @@ main.mainFabricaJogos #effectIntro2{
 
 /* PÁGINA BANCO DE TALENTOS */
 
-.banco-talentos-blur-decoracoes-esquerda {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #AA15C2;
-    filter: blur(90px);
 
+.body-bancoTalentos {
+    height: 100vh;
+    width: 100%;
 }
 
-
-.banco-talentos-blur-decoracoes-direita {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #4815C2;
-    filter: blur(90px);
-
-}
-
-.banco-de-talentos {
-    background-color: #FFFFFF;
-    max-width: 1200px;
-    margin: 20px auto;
-
-}
-
-@media (min-width:1100px) {
-    .banco-de-talentos-fundo-formulario {
-        background-color: #281358;
-        color: #FFFFFF;
-        border-radius: 15px;
-    }
-    
-    .banco-de-talentos-lbl-nascimento {
-        font-size: 20px ;
-    }
-    
-    .input-pessoas {
-        padding: 15px;
-    }
-    
-    .input-nascimento {
-        padding-bottom: 15px;
-    
-    }
-    
-    .botao-enviar-dados-pessoais {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 80px;
-        text-align: center;
-        width: 20%;
-        height: 4.5em;
-        width: 250px;
-        height: 65px;
-        cursor: pointer;
-        color: #3B96EB;
-        background-color: transparent;
-        border: 2px solid #3B96EB;
-        border-radius: 15px;
-      }
-}
-
-@media (min-width:400px) {
-    .banco-de-talentos-fundo-formulario {
-        background-color: #281358;
-        color: #FFFFFF;
-        border-radius: 15px;
-    }
-    
-    .banco-de-talentos-lbl-nascimento {
-        font-size: 20px ;
-    }
-    
-    .input-pessoas {
-        padding: 10px;
-    }
-    
-    .input-nascimento {
-        padding-bottom: 10px;
-    
-    }
-    
-    .botao-enviar-dados-pessoais {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 80px;
-        text-align: center;
-        width: 20%;
-        height: 4.5em;
-        width: 250px;
-        height: 65px;
-        cursor: pointer;
-        color: #3B96EB;
-        background-color: transparent;
-        border: 2px solid #3B96EB;
-        border-radius: 15px;
-      }
-    
-}
-
-
-.banco-de-talentos-fundo-formulario {
-    background-color: #281358;
-    color: #FFFFFF;
-    border-radius: 15px;
-}
-
-.banco-de-talentos-lbl-nascimento {
-    font-size: 20px ;
-}
-
-.input-pessoas {
-    padding: 15px;
-}
-
-.input-nascimento {
-    padding-bottom: 15px;
-
-}
-
-.botao-enviar-dados-pessoais {
-    font-size: 20px;
+.body-bancoTalentos main #title-bancoTalento h1{
+    font-family: var(--font-destaque);
+    font-size: var(--font-size-titulo);
+    margin-top: 130px;
+    color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
-    margin-top: 80px;
-    text-align: center;
-    width: 20%;
-    height: 4.5em;
-    width: 250px;
-    height: 65px;
-    cursor: pointer;
-    color: #3B96EB;
-    background-color: transparent;
-    border: 2px solid #3B96EB;
+}
+
+.body-bancoTalentos main #title-bancoTalento p{
+    font-family: var(--font-destaque);
+    font-size: 15px;
+    padding: 20px 0 0 0;
+    color: var(--font-color-pag-title-subtitle);
+    font-weight: 700;
+}
+
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
+
+.body-bancoTalentos .subtitle-bancoTalento h1{
+    font-size: 40px;
+    font-family: var(--font-destaque);
+    font-weight: 530;
+    padding: 30px 0;
+}
+.body-bancoTalentos #container-bancoTalento-inputs{
+    padding:  0 50px;
+}
+
+.body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
+.body-bancoTalentos main #button-submit-bancoTalento  {margin: 30px 0;}
+
+
+.body-bancoTalentos main .cadastrovagas-bancoTalento {
+    padding: 15px;
     border-radius: 15px;
-  }
-
-
+}
 
 /*Cadastro Fabrica Software*/
 
