@@ -2002,6 +2002,12 @@ input.cadastroFabrica-Software {
     border-radius: 10px;
 }
 
+@media (max-width: 445px) {
+    #area-adm{
+        font-size: 1rem !important;
+    }
+}
+
 @media (max-width: 1204px) {
     .cadastro-adm-container-title {
         font-size: 20px !important;
