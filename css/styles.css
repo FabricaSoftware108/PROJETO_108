@@ -1646,8 +1646,15 @@ main.mainFabricaJogos #effectIntro2{
 }
 @media (max-width: 1200px) {
  
-    .body-demanda .effects, .effects-2 {
+    .body-bancoTalentos .effects, .effects-2 {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+ 
+    .body-bancoTalentos #title-bancoTalento p {
+        font-size: 13px !important;
     }
 }
 
@@ -1860,6 +1867,7 @@ main.mainFabricaJogos #effectIntro2{
 .body-bancoTalentos {
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .body-bancoTalentos main #title-bancoTalento h1{
@@ -1898,6 +1906,36 @@ main.mainFabricaJogos #effectIntro2{
     padding: 15px;
     border-radius: 15px;
 }
+
+.body-bancoTalentos div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 0;
+  }
+
+.body-bancoTalentos div.effects-2 {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #4815c2;
+    opacity: 70%;
+    z-index: 0; 
+}
+
+
+
 
 /*Cadastro Fabrica Software*/
 
