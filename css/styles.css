@@ -10,7 +10,7 @@
     --font-size-legenda: 8px;
     --line-height: 40px;
     
-    --font-color-pagdemanda-title-subtitle: #000;
+    --font-color-pag-title-subtitle: #000;
     
     --background-color-demanda-cadastro: #281358;
     
@@ -21,7 +21,10 @@
     --color-grad-title:rgba(43, 20, 99, 1);
     
     --font-size-grad: 8.5px;
+
+    --button-color-demanda: #3B96EB;
 }
+
 
 /*Cabeçalho com bootstrap*/
 
@@ -1336,6 +1339,7 @@ main.mainFabricaJogos #effectRequests2 {
 main.mainFabricaJogos #swordDecoration {
     height: auto;
     width: 200px;
+
     position: absolute;
     left: 70%;
     bottom: 0px;
@@ -1549,146 +1553,14 @@ main.mainFabricaJogos #effectIntro2{
 
 /*Demanda*/
 
-header.cabecalho-Demanda nav{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid black;
-    height: 80px;
-    background-color: white;
-    z-index: 2;
-}
 
-header.cabecalho-Demanda nav img {
-    height: 50px;
-    margin-right: 200px;
-    margin-left: 60px;
-}
-
-header.cabecalho-Demanda nav #menuPages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.cabecalho-Demanda nav ul li {
-    list-style-type: none;
-    padding: none;
-    margin: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.cabecalho-Demanda nav a {
-    margin-left: 40px;
-    margin-right: 40px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .7);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
-    margin-top: 15px;
-}
-
-
-header.cabecalho-Demanda nav li:nth-child(5) a, li:nth-child(6) a{
-    width: 183px;
-}
-
-header.cabecalho-Demanda nav a#logo {
-    margin: 0;
-}
-header.cabecalho-Demanda nav a#logo img{
-    box-shadow: none;
-}
-
-header.cabecalho-Demanda nav li #admButton {
-    background-color: rgb(254, 185, 105, 75);
-    border-radius: 40px;
-    height: 40px;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 100px;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas {
-    height: fit-content;
-    position: absolute;
-    top: 81px;
-    left: 540px;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    width: 340px;
-    border-radius: 0px 0px 10px 10px;
-    padding-bottom: 15px;
-    justify-content: center;
-    visibility: hidden;
-    z-index: -1;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    transition: all 2ms ease-out;
-    
-}
-
-header.cabecalho-Demanda nav ul #menuFabricas li {
-    list-style-type: none;
-    margin-top: 15px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a {
-    text-decoration: none;
-    color: black; 
-    height: 0px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 0;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fs:hover {
-    color: rgba(43, 20, 99, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fj:hover {
-    color: rgba(139, 26, 26, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fcg:hover {
-    color: rgba(226, 153, 26, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fav:hover {
-    color: rgba(66, 176, 48, 1);
-}
-
-header.cabecalho-Demanda nav li:hover a#menuFabricasBtn {
-    height: 80px;
-}
-
-header.cabecalho-Demanda nav li:hover ul#menuFabricas {
-    visibility: visible;
-}
+/* PAGINA DEMANDA  */
 
 .body-demanda, .html-demanda {
     margin: 0;
     padding: 0;
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -1703,52 +1575,107 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     position: absolute;
     top: 35%;
     left: 5%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     transform: translate(-50%, -50%);
     filter: blur(135px);
     background-color: #AA15C2;
     opacity: 70%;
-    z-index: 1;
+    z-index: 0;
   }
-  
-.body-demanda .effects#effect2 {
+
+.body-demanda div.effects-2 {
+    content: '';
     position: absolute;
     top: 50%;
     left: 100%;
-    height: 320px;
-    width: 320px;
+    height: 150px;
+    width: 150px;
     transform: translate(-50%, -50%);
-    filter: blur(125px);
-    opacity: 40%;
+    filter: blur(135px);
     background-color: #4815c2;
-    z-index: 1;
-  }
-  
+    opacity: 70%;
+    z-index: 0; 
+}
+
+.body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
+.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
+.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
+
+.body-demanda #button-demanda button {margin: 30px 0;}
+
+.subtitle-demanda h1{
+    font-size: 40px;
+    font-family: var(--font-destaque);
+    font-weight: 530;
+    padding: 30px 0;
+}
+
+
+
+@media (min-width: 1780px) { 
+    .body-demanda .container-inputs-demanda {
+        width: 500px;
+    }
+}
+
+@media (min-width: 854px) { 
+    .body-demanda .container-inputs-demanda {
+        width: 450px;
+    }
+}
+
+@media (max-width: 868px) {
+   .body-demanda .content-title-subtitle-demanda {
+       text-align: center;
+   }
+   .body-demanda .content-title-subtitle-demanda p {
+        margin: 0 30px;
+        text-align: center;
+        font-size: 14px !important; 
+
+   }
+}
+@media (max-width: 1200px) {
+ 
+    .body-demanda .effects, .effects-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 468px) {
+    .body-demanda #container-campos-preenchimento-inputs-empresa-Demanda h1{
+        font-size: 20px;
+    }
+ }
 
 .body-demanda .content-title-subtitle-demanda {
     padding: 20px 0 0 0;
     color: var(--font-color-pagdemanda-title-subtitle);
     text-align: center;
     z-index: -1;
-  }
-  
+}
+
+
 .body-demanda .container-campo-dados-demanda {
     background-color: var(--background-color-demanda-cadastro);
     text-align: center;
+    width: auto;
     border-radius: 20px;
-    height: 830px;
-    width: 1200px;
+    height: auto;
     z-index: -2;
   }
   
 .body-demanda .content-title-subtitle-demanda h1{
-    font-size: var(--font-size-titulo)
+    font-weight: bolder;
+    font-size: var(--font-size-titulo);
+    color:#000;
   
   }
   
 .body-demanda .content-title-subtitle-demanda p {
-    font-size: var(--font-size-subTitulo);
+    font-size: 27px;
+    color:#000; 
   
   }
   
@@ -1758,15 +1685,12 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     
   }
   
-.body-demanda .inputs-empresa-Demanda {
+.body-demanda .form-control {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 250px;
-    margin-left: 10rem;
-    margin-right: 10rem;
     align-items: center;
-    z-index: 1;
+    justify-content: center;
+    height: 60px;
+    
   }
   
 .body-demanda .inputs-titular-Demanda {
@@ -1774,53 +1698,98 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     flex-direction: column;
     flex-wrap: wrap;
     height: 200px;
-    margin-left: 10rem;
-    margin-right: 10rem;
     align-items: center;
     z-index: 1;
   }
-  
-.body-demanda .inputs-empresa-Demanda input{
-    margin: 10px;
+
+.container-inputs-demanda {
+    padding: 18px;
+    width: 430px;
+    height: 55px;
     border-radius: 15px;
-    width: 350px;
+    border: none;
+}
+
+.body-demanda .file-label {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 12px;
     height: 50px;
-    z-index: 1;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
   }
   
-.body-demanda .inputs-empresa-Demanda input,
-.body-demanda .inputs-titular-Demanda input {
-    padding: 0 30px;
-    z-index: 1;
-  }
-  
-.body-demanda .inputs-titular-Demanda input{
-    margin: 10px;
-    border-radius: 15px;
-    width: 350px;
-    height: 50px;
-    z-index: 1;
-  }
-  
+.body-demanda .file-input { display: none; }
+
+.body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
+
+
 .body-demanda .campo-dados-demanda h2{
     font-size: var(--font-size-subTitulo);
     line-height: 40px;
     
+}
+
+.body-demanda #title-demanda-first {
+    font-family: var(--font-destaque);
+    font-size: var(--font-size-titulo);
+    font-weight: bold;
+    padding: 50px 0 10px 0;
+}
+
+.body-demanda #inputs-demanda-lists{
+    padding: 0;
+    border-radius: 15px;
+    height: 55px;
+    width: 450px;
+}
+
+
+.body-demanda .forms-demanda button {
+    margin: 60px 0 50px 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid var(--button-color-demanda);
+    padding: 10px 60px;
+    color: var(--button-color-demanda);
+}
+
+.body-demanda #inputs-demanda-lists {
+    padding-bottom: 60px;
+}
+
+.body-demanda #inputs-demanda-lists label{
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+
+
+.body-demanda .campo-dados-demanda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
   }
-  
+
 .body-demanda #dados-empresa-demanda-h2 {
     font-size: 25px;
   }
   
-.body-demanda #dados-empresa-demanda-h2:nth-child(1) {
-    padding-top: 20px;
-  }
-
-.body-demanda .campo-dados-demanda {
-    margin-top: 90px;
-  }
-  
 .body-demanda .dados-Empresa-demanda {
+    width: 100%;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -1862,24 +1831,12 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 
 
-.body-demanda .file-label {
-    display: inline-flex;
-    background-color: white;
-    color: grey;
-    padding: 10px 20px;
-    border-radius: 12px;
-    width: 715px;
-    height: 50px;
-    text-align: start;
-    align-items: center;
-    font-size: 14px;
-    z-index: 2;
-  }
-  
-.body-demanda .file-input {
-    display: none;
-    
-  }
+
+.body-demanda .container-wrapper-file {
+    display: flex;
+    padding: 6px 0;
+    justify-content: start;
+}
 
 .body-demanda .file-label p{
     color: #04BA1A;
@@ -2177,8 +2134,7 @@ input.cadastroFabrica-Software {
 /*cadastro de vagas emprego*/
 
 
-
-main.cadastro-de-vagas{
+.cadastro-de-vagas{
   max-width: 1220px;
   margin: 20px auto;
   margin-top: 160px;
@@ -2202,6 +2158,10 @@ main.cadastro-de-vagas{
   font-family: var(--font-destaque);
   color: black;
   
+}
+
+#titulo-subtitulo-cadastroVagas h1{
+    font-weight: bold;
 }
 
 #titulo-subtitulo-cadastroVagas p{
@@ -2267,10 +2227,9 @@ main.cadastro-de-vagas{
 
 .subtitulo-sobre-vagas p{
   font-size:27px ;
-  /* position: absolute; */ /* dixar comentado por enquanto.*/
   color: white;
-  margin-left: 100px;/*esquerda do texto*/
-  margin-right: 120px;/* direita texto*/
+  margin-left: 100px;
+  margin-right: 120px;
   text-align: justify;
   align-items: center;
   justify-content:center;
@@ -2340,11 +2299,352 @@ margin-top: 50px;
 
 input.cadastrovagas {
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 30px;
   margin-top: 7px;
 }
 
+/* Tela de Edital */
+
+body.body-edital {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.body-edital .wrapper-content-icon {
+  padding-left: 130%;
+}
+
+.body-edital .content-wrapper-roxo-edital {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.body-edital #background-edital {
+    padding: 20px;
+}
+
+.body-edital .container-background-edital .row{
+  border-radius: 15px ;
+  background-color: white;
+}
+
+
+.body-edital .borda_roxa{
+overflow: hidden;
+}
+
+.body-edital .borda_roxa-edital,
+.body-edital .borda_roxar * {
+  box-sizing: border-box;
+}
+
+
+.body-edital .sombra_rosa-edital{
+  box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
+  left: -229px;
+  height: 350px;
+  width: 156px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(150px) contrast(150%);
+} 
+
+.body-edital .sombra_roxa-edital{
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 90%;
+  filter: blur(150px) contrast(150%);
+}
+
+
+.body-edital #container-borda-roxa-edital .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.body-edital .container-fluid,
+.body-edital .container,
+.body-edital .col-12 #container-sobre-curso1{
+  padding: 0;
+}   
+
+
+.body-edital .titulo_edital{
+  margin: 150px 0 0 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 27px;
+  text-align: center;
+}
+.body-edital .titulo_edital h1 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 800;
+}
+.body-edital .titulo_edital p{
+  font-size: 27px;
+  margin-top: 40px;
+}
+
+
+
+  
+@media(min-width: 576px){
+    .body-edital .titulo_edital>p {
+    font-size: 10px;
+    
+  }
+  .body-edital #introducao-edital p{
+    font-size: 24px;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0;
+  }
+}
+  @media(min-width: 576px){
+    .body-edital .titulo_edital>h1 {
+      font-size: 10px;
+      
+    }
+  }
+    
+  
+
+  
+  @media(max-width: 576px){
+    .body-edital h1 {
+      font-size: 40px;
+
+    }
+  }
+
+
+
+.body-edital .borda_roxa-edital {
+  position: relative;
+  width: 1200px;
+  height: 958px;
+  background-color: #281358;
+  border-radius: 10px;
+  text-align:center;
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.body-edital .sombra-edital {
+  position: relative;
+  margin: 10px 0 0 1.092px;
+}
+
+.body-edital .col-3 #inscricao1-hide{
+  height: 100%;
+}
+
+
+.body-edital .sombra-edital-btn{
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px; 
+  border: none;
+}
+.body-edital .edital_do_aluno_titulo-2{
+  margin-bottom: 0;
+}
+.body-edital .edital_do_aluno_titulo-2 h1{
+  text-align: center;
+  line-height: 15rem;
+  font-size: 16;
+}
+.body-edital .sombra_orientacoes-edital {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px;
+  top:110%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-edital .sombra_orientacoes2-edital{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 99;
+  border-radius: 15px;
+  top:110%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-edital .btn-inscricoes {
+  width: 100%;
+  height: 29px;
+  padding: 5px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #68da55;
+  z-index: 102;
+  border-radius: 10px;
+  font-size: 14px;
+} 
+
+.body-edital .sobre_curso-1_edital{
+  position: absolute;
+  width: 6px;
+  height: 18px;
+  top: 23px;
+  left: 253px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 100;
+}
+.body-edital .sobre_curso-1_edital .text1-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-1_edital .text2-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-1_edital .text3-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sombra2-edital {
+  position:relative;
+  margin: 10px 0 0 0px;
+}
+.body-edital .btn-inscricoes2 {
+  width: 100%;
+  height: 29px;
+  padding: 5px 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #68da55;
+  z-index: 102;
+  border-radius: 10px;
+  font-size: 14px;
+} 
+.body-edital .text_inscricoes-1_edital{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 6px;
+  left: 2px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+.body-edital .inscricoes2-edital .text-1-edital {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 6px;
+  left: 2px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+.body-edital .sobre_curso-2-edital{
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  top: 23px;
+  left: 253px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 100;
+}
+.body-edital .sobre_curso-2-edital .text-1-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-2-edital.text-2-edital {
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: center;
+}
+.body-edital .sobre_curso-2-edital .text-3-edital{
+  position: relative;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 21.784px;
+  text-align: left;
+}
+.body-edital .sobre_curso-2-edital span{
+  font-size: 13px;
+}
 
 /* ADM HOME */
 
