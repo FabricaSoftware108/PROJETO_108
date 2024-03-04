@@ -2549,59 +2549,6 @@ input.cadastroFabrica-Software {
     }
 }
 
-.cadastro-adm .popup-cadastroAdm{
-    background: #fff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.692);
-    border-radius: 6px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 30px 30px;
-    color: #000;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-
-.cadastro-adm .popup-cadastroAdm h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 0 10px;
-}
-
-.cadastro-adm .popup-cadastroAdm p{
-    font-size: 19px;
-    font-weight: 500;
-    margin: 40px 10px;
-}
-
-.cadastro-adm .popup-cadastroAdm button{
-    margin: 0 20px 0 0;
-}
-
-.cadastro-adm .open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-
-@media (max-width: 721px) {
-    .popup-cadastroAdm h2{
-        font-size: 24px !important;
-    }
-    .popup-cadastroAdm p{
-        font-size: 15px !important;
-    }
-}
-
-@media (max-width: 756px) {
-    .popup-cadastroAdm button{
-        margin: 0 20px 20px 20px !important;
-    }
-}
-
 
 /*Inicio do rodapé preto*/
 .rodape-preto img {
