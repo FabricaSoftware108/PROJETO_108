@@ -973,7 +973,14 @@ tr:nth-child(5) {
 
 /*Fábrica de jogos*/
 
+.vermelho-introdu-jogos {
+    background-color: #8B1A1A;
+}
 
+.vermelho-introdu-jogos p{
+    font-size: 27px;
+    text-align: justify;
+}
 .bodyFabricaJogos .rodape-branco {
     background-color: #8B1A1A;
 }
