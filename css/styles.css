@@ -12,6 +12,9 @@
 
     --font-color-pagdemanda-title-subtitle: #000;
 
+    
+    --font-color-pag-title-subtitle: #000;
+    
     --background-color-demanda-cadastro: #281358;
 
     /*Fábrica de software*/
@@ -21,7 +24,10 @@
     --color-grad-title: rgba(43, 20, 99, 1);
 
     --font-size-grad: 8.5px;
+
+    --button-color-demanda: #3B96EB;
 }
+
 
 /*Cabeçalho com bootstrap*/
 
@@ -1521,6 +1527,7 @@ main.mainFabricaJogos #effectRequests2 {
 main.mainFabricaJogos #swordDecoration {
     height: auto;
     width: 200px;
+
     position: absolute;
     left: 70%;
     bottom: 0px;
@@ -1876,12 +1883,14 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     visibility: visible;
 }
 
+/* PAGINA DEMANDA  */
+
 .body-demanda,
 .html-demanda {
     margin: 0;
     padding: 0;
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -1896,8 +1905,8 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     position: absolute;
     top: 35%;
     left: 5%;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     transform: translate(-50%, -50%);
     filter: blur(135px);
     background-color: #AA15C2;
@@ -1906,18 +1915,74 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 }
 
 .body-demanda .effects#effect2 {
+    z-index: 0;
+  }
+
+.body-demanda div.effects-2 {
+    content: '';
     position: absolute;
     top: 50%;
     left: 100%;
-    height: 320px;
-    width: 320px;
+    height: 150px;
+    width: 150px;
     transform: translate(-50%, -50%);
-    filter: blur(125px);
-    opacity: 40%;
+    filter: blur(135px);
     background-color: #4815c2;
     z-index: 1;
+    opacity: 70%;
+    z-index: 0; 
 }
 
+.body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
+.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
+.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
+
+.body-demanda #button-demanda button {margin: 30px 0;}
+
+.subtitle-demanda h1{
+    font-size: 40px;
+    font-family: var(--font-destaque);
+    font-weight: 530;
+    padding: 30px 0;
+}
+
+
+
+@media (min-width: 1780px) { 
+    .body-demanda .container-inputs-demanda {
+        width: 500px;
+    }
+}
+
+@media (min-width: 854px) { 
+    .body-demanda .container-inputs-demanda {
+        width: 450px;
+    }
+}
+
+@media (max-width: 868px) {
+   .body-demanda .content-title-subtitle-demanda {
+       text-align: center;
+   }
+   .body-demanda .content-title-subtitle-demanda p {
+        margin: 0 30px;
+        text-align: center;
+        font-size: 14px !important; 
+
+   }
+}
+@media (max-width: 1200px) {
+ 
+    .body-demanda .effects, .effects-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 468px) {
+    .body-demanda #container-campos-preenchimento-inputs-empresa-Demanda h1{
+        font-size: 20px;
+    }
+ }
 
 .body-demanda .content-title-subtitle-demanda {
     padding: 20px 0 0 0;
@@ -1926,12 +1991,13 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: -1;
 }
 
+
 .body-demanda .container-campo-dados-demanda {
     background-color: var(--background-color-demanda-cadastro);
     text-align: center;
+    width: auto;
     border-radius: 20px;
-    height: 830px;
-    width: 1200px;
+    height: auto;
     z-index: -2;
 }
 
@@ -1951,31 +2017,64 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 }
 
 .body-demanda .inputs-empresa-Demanda {
+  }
+  
+.body-demanda .content-title-subtitle-demanda h1{
+    font-weight: bolder;
+    font-size: var(--font-size-titulo);
+    color:#000;
+  
+  }
+  
+.body-demanda .content-title-subtitle-demanda p {
+    font-size: 27px;
+    color:#000; 
+  
+  }
+  
+.body-demanda .content-wrapper-all-demanda {
+    margin-top: 100px; 
+
+    
+  }
+  
+.body-demanda .form-control {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 250px;
-    margin-left: 10rem;
-    margin-right: 10rem;
     align-items: center;
     z-index: 1;
-}
-
+    justify-content: center;
+    height: 60px;
+    
+  }
+  
 .body-demanda .inputs-titular-Demanda {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 200px;
-    margin-left: 10rem;
-    margin-right: 10rem;
     align-items: center;
     z-index: 1;
 }
 
 .body-demanda .inputs-empresa-Demanda input {
     margin: 10px;
+  }
+
+.container-inputs-demanda {
+    padding: 18px;
+    width: 430px;
+    height: 55px;
     border-radius: 15px;
-    width: 350px;
+    border: none;
+}
+
+.body-demanda .file-label {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 12px;
     height: 50px;
     z-index: 1;
 }
@@ -2010,9 +2109,78 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .body-demanda .campo-dados-demanda {
     margin-top: 90px;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+  }
+  
+.body-demanda .file-input { display: none; }
+
+.body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
+
+
+.body-demanda .campo-dados-demanda h2{
+    font-size: var(--font-size-subTitulo);
+    line-height: 40px;
+    
 }
 
+.body-demanda #title-demanda-first {
+    font-family: var(--font-destaque);
+    font-size: var(--font-size-titulo);
+    font-weight: bold;
+    padding: 50px 0 10px 0;
+}
+
+.body-demanda #inputs-demanda-lists{
+    padding: 0;
+    border-radius: 15px;
+    height: 55px;
+    width: 450px;
+}
+
+
+.body-demanda .forms-demanda button {
+    margin: 60px 0 50px 0;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid var(--button-color-demanda);
+    padding: 10px 60px;
+    color: var(--button-color-demanda);
+}
+
+.body-demanda #inputs-demanda-lists {
+    padding-bottom: 60px;
+}
+
+.body-demanda #inputs-demanda-lists label{
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+
+
+.body-demanda .campo-dados-demanda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+  }
+
+.body-demanda #dados-empresa-demanda-h2 {
+    font-size: 25px;
+  }
+  
 .body-demanda .dados-Empresa-demanda {
+    width: 100%;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -2070,6 +2238,12 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .body-demanda .file-input {
     display: none;
+
+}
+.body-demanda .container-wrapper-file {
+    display: flex;
+    padding: 6px 0;
+    justify-content: start;
 
 }
 
@@ -2236,6 +2410,13 @@ main.cadastro-de-vagas {
     text-align: center;
     font-family: var(--font-grad-title);
 }
+.cadastro-de-vagas{
+  max-width: 1220px;
+  margin: 20px auto;
+  margin-top: 160px;
+  text-align: center;
+  font-family: var(--font-grad-title);
+}
 
 .titulo-vagas {
     color: #000;
@@ -2347,6 +2528,17 @@ main.cadastro-de-vagas {
     margin-top: 40px;
     z-index: 5;
 }
+.subtitulo-sobre-vagas p{
+  font-size:27px ;
+  color: white;
+  margin-left: 100px;
+  margin-right: 120px;
+  text-align: justify;
+  align-items: center;
+  justify-content:center;
+  margin-top: 40px;
+  z-index: 5;
+}
 
 @media(max-width: 500px) {
     .titulo-sobre-vagas h1 {
@@ -2416,129 +2608,6 @@ input.cadastrovagas {
     margin-top: 7px;
 }
 
-
-/* Editar carrossel de imagem ADM */
-
-html.html-editarCarrossel,
-body.body-editarCarrossel {
-    height: 100px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@media (max-width: 600px) {
-    body.body-editarCarrossel .text_editar_carrossel h1 {
-        font-size: 20px;
-        padding: 5px 0;
-    }
-    body.body-editarCarrossel .wrapper-carrossel_img-adm p{
-        font-size:15px;
-        margin-top:15px;
-    }
-}
-
-body.body-editarCarrossel .main-editarCarrossel .caixa_fabricas_adm {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 15px;
-    width: 550px;
-    height: 700px;
-    position: relative;
-    margin-top: 155%;
-    border-radius: 10px;
-}
-
-
-.caixa_fabricas_adm {
-    margin: 0;
-}
-body.body-editarCarrossel .text_editar_carrossel h1 {
-    text-align: center;
-    background-color: rgba(30, 85, 209, 1);
-    border-radius: 5px;
-    height: 60px;
-    color: white;
-    padding: 10px 0;
-    font-size: 30px;
-}
-
-body.body-editarCarrossel .wrapper-carrossel_img-adm p {
-    margin-top:15px;
-}
-
-body.body-editarCarrossel .wrapper-carrossel_img-adm {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-soft .col-md-6 {
-    margin: 0 0 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 100px;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-jogos .col-md-12 {
-    margin: 0 0 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-audio .col-md-12 {
-    margin: 0 0 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-cgi .col-md-12 {
-    margin: 0 0 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-body.body-editarCarrossel .main-editarCarrossel .btn-primary {
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    margin-top: 100%;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    font-size: larger;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-soft button {
-    box-shadow: 4px 4px 4px 0 black;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-cgi button {
-    box-shadow: 4px 4px 4px 0 black;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-jogos button {
-    box-shadow: 4px 4px 4px 0 black;
-}
-
-body.body-editarCarrossel .btn_editar_carrossel-audio button {
-    box-shadow: 4px 4px 4px 0 black;
-}
-body.body-editarCarrossel .imagem-carrosselEdit svg{
-    position: relative;
-    left: -150%;
-    margin-top: -10%;
-}
 
 /* Tela de Edital */
 
@@ -2967,4 +3036,127 @@ overflow: hidden;
 #adm-home-img-1{
     width:300px;
     box-shadow:none;
+}
+
+/* Editar carrossel de imagem ADM */
+
+html.html-editarCarrossel,
+body.body-editarCarrossel {
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 600px) {
+    body.body-editarCarrossel .text_editar_carrossel h1 {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    body.body-editarCarrossel .wrapper-carrossel_img-adm p{
+        font-size:15px;
+        margin-top:15px;
+    }
+}
+
+body.body-editarCarrossel .main-editarCarrossel .caixa_fabricas_adm {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 15px;
+    width: 550px;
+    height: 700px;
+    position: relative;
+    margin-top: 155%;
+    border-radius: 10px;
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+body.body-editarCarrossel .text_editar_carrossel h1 {
+    text-align: center;
+    background-color: rgba(30, 85, 209, 1);
+    border-radius: 5px;
+    height: 60px;
+    color: white;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+body.body-editarCarrossel .wrapper-carrossel_img-adm p {
+    margin-top:15px;
+}
+
+body.body-editarCarrossel .wrapper-carrossel_img-adm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-soft .col-md-6 {
+    margin: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-jogos .col-md-12 {
+    margin: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-audio .col-md-12 {
+    margin: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-cgi .col-md-12 {
+    margin: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.body-editarCarrossel .main-editarCarrossel .btn-primary {
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    margin-top: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: larger;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-soft button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-cgi button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-jogos button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+
+body.body-editarCarrossel .btn_editar_carrossel-audio button {
+    box-shadow: 4px 4px 4px 0 black;
+}
+body.body-editarCarrossel .imagem-carrosselEdit svg{
+    position: relative;
+    left: -150%;
+    margin-top: -10%;
 }
