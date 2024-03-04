@@ -106,6 +106,7 @@ header.cabecalhoGeral{
     .dropdown-toggle {
         margin-left: 6px;
     }
+
 }
 
 
@@ -113,14 +114,51 @@ header.cabecalhoGeral{
 
 @media (max-width: 991px){
     .content-sobre-home {
-        margin-top: -50px;
+        margin-top: -30px;
         padding-bottom: 250px;
     }
     
     .wave-top-home svg {
         margin-top: -150px;
     }
+
+    .text-fabricas-left-home p{
+        margin-right: -70px;
+    }
+    
+    .text-fabricas-right-home p{
+        margin-left: -70px;
+    }
+
+    .text-fabricas-left-home p a{
+        margin-left: 0px;
+    }
+    
+    .text-fabricas-right-home p a{
+        margin-left: 0px;
+    }
+
+    main.home p{
+        font-size: 20px;
+    }
+
+    main.home a{
+        font-size: 20px;
+    }
+
+    main.home h1{
+        font-size: 30px;
+    }
+
+    .descricao-fabrica-home {
+        font-size: 20px;
+    }
+
+    .btn-soft-home {
+        margin-left: 0;
+    }
 }
+
 
 body.home, html.home{
     margin: 0;
@@ -392,13 +430,30 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
+.descricao-home p {
+    font-size: 27px;
+}
+
+.titulo-fabricas-home{
+    font-size: 56px;
+}
+
 .fabricas-home {
     padding-top: 120px;
 }
 
-.text-fabricas-home p{
+.text-fabricas-left-home p{
     text-align: justify;
     margin-top: 60px;
+    font-size: 27px;
+    padding-right: 70px;
+}
+
+.text-fabricas-right-home p{
+    text-align: justify;
+    margin-top: 60px;
+    font-size: 27px;
+    padding-left: 70px;
 }
 
 .container-img-home {
@@ -414,7 +469,7 @@ nav.home li:hover ul#menuFabricas {
 .container-img-home img {
     border-color: white;
     border-radius: 16px;
-    height: 350px;
+    min-height: 350px;
 }
 
 .container-img-home#soft {
@@ -461,6 +516,8 @@ nav.home li:hover ul#menuFabricas {
     color: black;
     transition: 1s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-jogos-home {
@@ -474,6 +531,8 @@ nav.home li:hover ul#menuFabricas {
     color: black;
     transition: 1s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-right: 60px;
 }
 
 .btn-cgi-home {
@@ -487,6 +546,8 @@ nav.home li:hover ul#menuFabricas {
     color: black;
     transition: 1s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-audioVisual-home {
@@ -500,6 +561,8 @@ nav.home li:hover ul#menuFabricas {
     color: black;
     transition: 1s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-right: 60px;
 }
 
 .btn-soft-home:hover {
@@ -526,14 +589,16 @@ nav.home li:hover ul#menuFabricas {
     cursor: pointer;
 }
 
-#descricao-fabrica-home {
+.descricao-fabrica-home {
     text-align: justify;
     margin-top: 40px;
     margin-bottom: 80px;
+    font-size: 27px;
 }
 
 #tituloFabricas-home {
-    margin: 20px 80px;
+    padding: 20px 0;
+    font-size: 20px;
 }
 
 /*Fábrica de Software*/
