@@ -1723,6 +1723,8 @@ main.mainFabricaJogos #effectIntro2{
     z-index: 2;
   }
   
+  
+  
 .body-demanda .file-input { display: none; }
 
 .body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
@@ -1843,7 +1845,6 @@ main.mainFabricaJogos #effectIntro2{
     margin-top: 2.5%;
     margin-left: 10px;
 }
-
 
 
 /*Cadastro Fabrica Software*/
@@ -2508,6 +2509,31 @@ overflow: hidden;
 
 /*CSS CADASTRO ADM  EDITAL*/ 
 
+.body-cadastro-adm-edital .file-input {display: none;}
+.body-cadastro-adm-edital .file-label p{ color: #04BA1A; padding-bottom: 15px; }
+
+
+.body-cadastro-adm-edital .file-label p{
+    color: #04BA1A;
+    margin-top: 2.5%;
+    margin-left: 10px;
+}
+
+
+.body-cadastro-adm-edital .file-label {
+    display: inline-flex;
+    background-color: #D9D9D9;
+    color: grey;
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 12px;
+    height: 50px;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+    margin-top: 40px;
+  }
+
 
 
 @media(max-width: 300px){
@@ -2697,14 +2723,20 @@ overflow: hidden;
 
 
 .button-apagar-edital button{
-    width: 240px;/* largura do botão*/
+    width: 250px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
 }
 
 .button-editar-edital  button{
-    width: 240px;/* largura do botão*/
+    width: 250px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
 }
+
+/* @media(max-width: 300px){
+    .button-apagar-edital, .button-editar-edital{
+        font-size: 12px;
+    }
+} */
 
 /* ADM HOME */
 
