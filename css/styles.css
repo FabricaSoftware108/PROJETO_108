@@ -9,17 +9,20 @@
     --font-size-corpo: 27px;
     --font-size-legenda: 8px;
     --line-height: 40px;
+
+    --font-color-pagdemanda-title-subtitle: #000;
+
     
     --font-color-pag-title-subtitle: #000;
     
     --background-color-demanda-cadastro: #281358;
-    
+
     /*Fábrica de software*/
     --font-grad-title: Verdana, Geneva, Tahoma, sans-serif;
-    
-    --color-grad:rgba(43, 20, 99, 1);
-    --color-grad-title:rgba(43, 20, 99, 1);
-    
+
+    --color-grad: rgba(43, 20, 99, 1);
+    --color-grad-title: rgba(43, 20, 99, 1);
+
     --font-size-grad: 8.5px;
 
     --button-color-demanda: #3B96EB;
@@ -28,7 +31,7 @@
 
 /*Cabeçalho com bootstrap*/
 
-header.cabecalhoGeral{
+header.cabecalhoGeral {
     z-index: 10;
     position: fixed;
     left: 0;
@@ -40,21 +43,21 @@ header.cabecalhoGeral{
     background-color: white;
 }
 
-.cabecalhoGeral a{
+.cabecalhoGeral a {
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
     font-weight: bold;
 }
 
-.drop-fabricas a{
+.drop-fabricas a {
     color: #000;
 }
 
-.cabecalhoGeral .navbar #hubFabricasLogo{
+.cabecalhoGeral .navbar #hubFabricasLogo {
     box-shadow: none;
     height: 50px;
 }
 
-.cabecalhoGeral .bg-dropDown-header{
+.cabecalhoGeral .bg-dropDown-header {
     background-color: rgb(248, 249, 250);
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
     font-weight: bold;
@@ -64,17 +67,21 @@ header.cabecalhoGeral{
     background-color: #feb969;
     border-radius: 5px;
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(1) a:hover{
+
+.cabecalhoGeral .dropdown-menu li:nth-child(1) a:hover {
     color: rgba(43, 20, 99, 1);
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(2) a:hover{
+
+.cabecalhoGeral .dropdown-menu li:nth-child(2) a:hover {
     color: rgba(139, 26, 26, 1);
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(3) a:hover{
+
+.cabecalhoGeral .dropdown-menu li:nth-child(3) a:hover {
     color: rgba(226, 153, 26, 1);
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(4) a:hover{
-       color: rgba(66, 176, 48, 1);
+
+.cabecalhoGeral .dropdown-menu li:nth-child(4) a:hover {
+    color: rgba(66, 176, 48, 1);
 }
 
 .cabecalhoGeral .mt-3 {
@@ -83,10 +90,10 @@ header.cabecalhoGeral{
 
 .cabecalhoGeral .dropdown:hover>.dropdown-menu {
     display: block;
-  }
-  
-  .cabecalhoGeral .dropdown>.dropdown-toggle:active {
-      pointer-events: none;
+}
+
+.cabecalhoGeral .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
 }
 
 
@@ -95,6 +102,7 @@ header.cabecalhoGeral{
         background-color: transparent;
         margin-left: 11px;
     }
+
     .cabecalhoGeral .mt-3 {
         margin-top: 0 !important;
     }
@@ -114,14 +122,15 @@ header.cabecalhoGeral{
 
 
 
-body.home, html.home{
+body.home,
+html.home {
     margin: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background-color: white; 
+    background-color: white;
     background-size: cover;
     background-position: center;
     overflow: hidden auto;
@@ -194,7 +203,8 @@ nav.home a {
 }
 
 
-nav.home li:nth-child(5) a, li:nth-child(6) a{
+nav.home li:nth-child(5) a,
+li:nth-child(6) a {
     width: 100%;
 }
 
@@ -313,9 +323,9 @@ nav.home li:hover ul#menuFabricas {
     position: absolute;
     color: white;
     top: 50%;
-    left: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; 
+    text-align: center;
 }
 
 .content-sobre-home {
@@ -324,7 +334,7 @@ nav.home li:hover ul#menuFabricas {
     margin-right: 460px;
 }
 
-.content-sobre-home h1{
+.content-sobre-home h1 {
     font-size: var(--font-size-titulo);
     padding-top: 90px;
 }
@@ -334,7 +344,7 @@ nav.home li:hover ul#menuFabricas {
     margin-top: 2%;
 }
 
-.content-wrapper-home p{
+.content-wrapper-home p {
     width: 580px;
     height: 350px;
     max-width: 700px;
@@ -344,7 +354,7 @@ nav.home li:hover ul#menuFabricas {
     text-align: justify;
 }
 
-.content-wrapper-home img{
+.content-wrapper-home img {
     width: 500px;
     height: auto;
     margin-top: 15px;
@@ -385,12 +395,12 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
-.links-fabricas-home h1{
+.links-fabricas-home h1 {
     font-size: 27pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.links-fabricas-home article{
+.links-fabricas-home article {
     text-align: center;
 }
 
@@ -449,7 +459,7 @@ nav.home li:hover ul#menuFabricas {
     color: white;
 }
 
-.container-img-home  p {
+.container-img-home p {
     text-align: center;
 }
 
@@ -643,7 +653,8 @@ nav.nav-software a {
 }
 
 
-nav.nav-software li:nth-child(5) a, li:nth-child(6) a{
+nav.nav-software li:nth-child(5) a,
+li:nth-child(6) a {
     width: 183px;
 }
 
@@ -691,7 +702,7 @@ nav.nav-software ul #menuFabricas li {
 
 nav.nav-software ul#menuFabricas a {
     text-decoration: none;
-    color: black; 
+    color: black;
     height: 0px;
     font-size: 14px;
     font-weight: bold;
@@ -735,12 +746,12 @@ nav.nav-software li:hover ul#menuFabricas {
     height: auto;
     text-align: justify;
     font-size: 22px;
-}   
+}
 
 .texto-sobre-fabrica-software h1 {
     text-align: center;
     line-height: 15rem;
-    font-size:30px;
+    font-size: 30px;
 }
 
 .texto-sobre-fabrica-software button {
@@ -779,7 +790,7 @@ nav.nav-software li:hover ul#menuFabricas {
     box-shadow: 100px 0px 81px -50px rgba(45, 0, 148, 1);
 }
 
-.branco-requisitos-software{
+.branco-requisitos-software {
     height: 980px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 260px 0 260px 0;
@@ -788,15 +799,17 @@ nav.nav-software li:hover ul#menuFabricas {
 .roxo-requisitos-software {
     height: 980px;
     background-color: rgba(43, 20, 99, 1);
-    
+
 }
-.branco-gradec-software{
+
+.branco-gradec-software {
     height: 980px;
-    background-color:rgba(255, 255, 255, 1);
-    
-    
+    background-color: rgba(255, 255, 255, 1);
+
+
 }
-.roxo-gradec-software{
+
+.roxo-gradec-software {
     height: 1200px;
     background-color: rgba(43, 20, 99, 1);
     border-radius: 260px 0 0 0;
@@ -828,8 +841,9 @@ nav.nav-software li:hover ul#menuFabricas {
     text-align: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
+
 .container-title-outside-btn {
     display: flex;
     font-weight: bold;
@@ -847,14 +861,15 @@ nav.nav-software li:hover ul#menuFabricas {
 
 .container-grad-table table {
     width: 100%;
-    border-radius: 10px; 
+    border-radius: 10px;
     border-collapse: collapse;
     border-radius: 20px;
     overflow: hidden;
-    
+
 }
 
-th, td {
+th,
+td {
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -862,12 +877,15 @@ th, td {
 tr:nth-child(2n) {
     background-color: #D9D9D9;
 }
+
 tr:nth-child(1) {
     background-color: #ffffff;
 }
+
 tr:nth-child(3) {
     background-color: #ffffff;
 }
+
 tr:nth-child(5) {
     background-color: #ffffff;
 }
@@ -876,16 +894,168 @@ tr:nth-child(5) {
     text-align: center;
 }
 
+
+
+/* carrosel */
+
+.Body-Fabrica-Software span {
+    font-size: x-large;
+}
+
+.Body-Fabrica-Software .card-img {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+
+    /*para melhoras a qualidade da imagem deixa limitada */
+    .swiper {
+        height: 270px;
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    /* Largura desejada */
+    height: 60px;
+    /* Altura desejada */
+    font-size: 12px;
+    z-index: -1;
+}
+
+
+.swiper-button-prev {
+    left: 10px;
+    /* Ajusta a posição do botão esquerdo */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-next {
+    right: 10px;
+    /* Ajusta a posição do botão direito */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 40px;
+    color: black;
+
+}
+
+.Body-Fabrica-Software .swiper-slide {
+    background-color: rgba(102, 30, 159, 1);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+    img {
+        width: 100%;
+    }
+}
+
+.swiper {
+    height: 500px;
+    z-index: -2;
+}
+
+.swiper-slide {
+    text-align: justify;
+    /*arruma o texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    font-size: 22px;
+    color: aliceblue;
+    overflow: hidden;
+    margin: 4rem;
+    font-family: var(--font-grad-title);
+
+    text-overflow: ellipsis;
+    /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+    display: -webkit-box;
+    /*delimita o texto que vc coloca*/
+    -webkit-line-clamp: 8;
+    /*Definir a quantidade de linhas*/
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+}
+
+.card-image {
+    max-width: 40%;
+    height: auto;
+    width: 400rem;
+    margin: 1rem;
+}
+
+.card-img {
+    border-radius: 5px;
+}
+
+.swiper-slide {
+
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    width: 1500px;
+    /* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projeto-carrossel {
+    height: 12rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.projeto-carrossel h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 56px;
+    margin-top: 100px;
+}
+
+.projeto-carrossel p {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: 27px;
+}
+
 /* Rodapé */
 
-#img-js, #img-html{
+#img-js,
+#img-html {
     padding: 23px;
     opacity: 0.5;
 }
 
 
 /*icones introducao*/
-#imgIcone{
+#imgIcone {
     opacity: 0.5;
     width: 9rem;
     height: 9rem;
@@ -893,22 +1063,22 @@ tr:nth-child(5) {
     position: absolute;
 }
 
-.icone-js{
+.icone-js {
     left: 53rem;
     top: 4rem;
 }
 
-.icone-html{
+.icone-html {
     left: 100rem;
     top: 8rem;
 }
 
-.icone-angular{
+.icone-angular {
     left: 76rem;
     top: 43rem;
 }
 
-.icone-sql{
+.icone-sql {
     left: 105rem;
     top: 45rem;
 }
@@ -928,7 +1098,7 @@ tr:nth-child(5) {
 
 /*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
 
-.requisitos-software{
+.requisitos-software {
     font-family: var(--font-grad-title);
     line-height: 30px;
     position: absolute;
@@ -939,34 +1109,34 @@ tr:nth-child(5) {
     text-align: justify;
     font-size: 22px;
     color: black;
-  }
-  
-  
-  
-  .requisitos-software h1 {
+}
+
+
+
+.requisitos-software h1 {
     text-align: center;
     line-height: 10rem;
-  } 
-  
-  
-  
-  .container-soft-requisitos {
+}
+
+
+
+.container-soft-requisitos {
     display: flex;
     flex-direction: line;
     margin-top: 100px;
     justify-content: space-around;
-  }
-  
-  .titulo-software {
+}
+
+.titulo-software {
     font-size: 22px;
-  }
-  
-  .subtext-software {
+}
+
+.subtext-software {
     list-style-type: disc;
     padding: 0;
     margin-top: 50px;
     font-size: 22px;
-  }
+}
 
 
 
@@ -1042,14 +1212,16 @@ header.cabecalhoFabricaJogos nav.navFabricaJogos a {
 }
 
 
-header.cabecalhoFabricaJogos nav.navFabricaJogos li:nth-child(5) a, li:nth-child(6) a{
+header.cabecalhoFabricaJogos nav.navFabricaJogos li:nth-child(5) a,
+li:nth-child(6) a {
     width: 183px;
 }
 
 header.cabecalhoFabricaJogos nav.navFabricaJogos a#logo {
     margin: 0;
 }
-header.cabecalhoFabricaJogos nav.navFabricaJogos a#logo img{
+
+header.cabecalhoFabricaJogos nav.navFabricaJogos a#logo img {
     box-shadow: none;
 }
 
@@ -1093,7 +1265,7 @@ header.cabecalhoFabricaJogos nav.navFabricaJogos ul #menuFabricas li {
 
 header.cabecalhoFabricaJogos nav.navFabricaJogos ul#menuFabricas a {
     text-decoration: none;
-    color: black; 
+    color: black;
     height: 0px;
     font-size: 14px;
     font-weight: bold;
@@ -1125,17 +1297,17 @@ header.cabecalhoFabricaJogos nav.navFabricaJogos li:hover ul#menuFabricas {
 }
 
 
-main.mainFabricaJogos{
-    background-color:  rgba(139, 26, 26, 1);
+main.mainFabricaJogos {
+    background-color: rgba(139, 26, 26, 1);
     margin-top: 80px;
 }
 
-main.mainFabricaJogos .ft51-vermelho-introdu{
+main.mainFabricaJogos .ft51-vermelho-introdu {
     height: 899px;
 }
 
-main.mainFabricaJogos .ft51-branco-introdu{
-    background-color: rgba(255,255,255, 1);
+main.mainFabricaJogos .ft51-branco-introdu {
+    background-color: rgba(255, 255, 255, 1);
     width: 100%;
     height: 100%;
     margin: 0;
@@ -1154,7 +1326,7 @@ main.mainFabricaJogos .ft51-branco-introdu h1 {
 }
 
 main.mainFabricaJogos .ft51-branco-introdu p {
-    font-size: 27px; 
+    font-size: 27px;
     font-family: sans-serif;
     margin-top: 40px;
     text-align: justify;
@@ -1183,59 +1355,71 @@ main.mainFabricaJogos .edital-button {
 span {
     font-size: x-large;
 }
-  
+
 img {
     box-shadow: 0 1px 2px #0003;
     width: 100%;
 }
-  
-@media (max-width: 450px) { /*para melhoras a qualidade da imagem deixa limitada */
+
+@media (max-width: 450px) {
+
+    /*para melhoras a qualidade da imagem deixa limitada */
     .swiper {
-      height: 270px;
+        height: 270px;
     }
 }
-  
 
-.swiper-button-prev, .swiper-button-next {
-    color:black; /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
     border-radius: 50%;
     background-color: white;
-    width: 60px; /* Largura desejada */
-    height: 60px; /* Altura desejada */
+    width: 60px;
+    /* Largura desejada */
+    height: 60px;
+    /* Altura desejada */
     font-size: 12px;
     /* position: absolute; */
     z-index: 0;
-    
+
 }
 
 
 .swiper-button-prev {
-    left: 10px; /* Ajusta a posição do botão esquerdo */
-    color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
+    left: 10px;
+    /* Ajusta a posição do botão esquerdo */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-next {
-    right: 10px; /* Ajusta a posição do botão direito */
-    color:black;
-    padding: 20px;/* aqui deixa o botao no formato de circulo*/
+    right: 10px;
+    /* Ajusta a posição do botão direito */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-size: 40px;
     color: black;
-  
+
 }
-  
-.bodyFabricaJogos .swiper-slide{
+
+.bodyFabricaJogos .swiper-slide {
     background-color: rgba(177, 8, 8, 1);
     z-index: 2;
 }
 
-@media only screen and (max-width: 480px) { /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+@media only screen and (max-width: 480px) {
+
+    /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
     img {
-      width: 100%;
+        width: 100%;
     }
 }
 
@@ -1243,44 +1427,48 @@ img {
     height: 500px;
     z-index: -2;
 }
-  
+
 .swiper-slide {
-    text-align:justify; /*arruma o texto */
+    text-align: justify;
+    /*arruma o texto */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.description{
+.description {
     font-size: 22px;
     word-spacing: 5px;
-    color:aliceblue;
+    color: aliceblue;
     overflow: hidden;
     margin: 4rem;
     font-family: 'Verdana', 'Geneva', sans-serif;
-    
-    text-overflow: ellipsis;   /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
-    display: -webkit-box;   /*delimita o texto que vc coloca*/
-    -webkit-line-clamp: 8;  /*Definir a quantidade de linhas*/
+
+    text-overflow: ellipsis;
+    /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+    display: -webkit-box;
+    /*delimita o texto que vc coloca*/
+    -webkit-line-clamp: 8;
+    /*Definir a quantidade de linhas*/
     -webkit-box-orient: vertical;
     line-height: 30px;
-    
+
 }
 
-.card-image{
+.card-image {
     max-width: 40%;
     height: auto;
     width: 400rem;
     margin: 1rem;
 }
 
-.card-img{
+.card-img {
     border-radius: 5px;
 }
 
-.swiper-slide{
+.swiper-slide {
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
 .position {
@@ -1299,7 +1487,7 @@ img {
 
 
 
-main.mainFabricaJogos .ft51-vermelho-projetos{
+main.mainFabricaJogos .ft51-vermelho-projetos {
     background-color: rgba(139, 26, 26, 1);
     border-radius: 0 240px 220px 0;
     padding-top: 50px;
@@ -1308,9 +1496,9 @@ main.mainFabricaJogos .ft51-vermelho-projetos{
 }
 
 
-main.mainFabricaJogos .ft51-branco-requisitos{
+main.mainFabricaJogos .ft51-branco-requisitos {
     height: 980px;
-    background-color: rgba(255, 255, 255,1);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 260px 0 260px 0;
 }
 
@@ -1345,24 +1533,24 @@ main.mainFabricaJogos #swordDecoration {
     bottom: 0px;
 }
 
-main.mainFabricaJogos .ft51-vermelho-requisitos{
+main.mainFabricaJogos .ft51-vermelho-requisitos {
     height: 980px;
     background-color: rgba(139, 26, 26, 1);
 }
 
 
 
-main.mainFabricaJogos .ft51-vermelho-projetos h1{
+main.mainFabricaJogos .ft51-vermelho-projetos h1 {
     margin-bottom: 30px;
     color: white;
     font-size: 56px;
     text-align: center;
     position: relative;
-    margin-top: 60px ;
+    margin-top: 60px;
 }
 
 
-main.mainFabricaJogos .ft51-vermelho-projetos p:nth-child(2){
+main.mainFabricaJogos .ft51-vermelho-projetos p:nth-child(2) {
     color: white;
     font-size: 27px;
     word-spacing: 5px;
@@ -1373,12 +1561,12 @@ main.mainFabricaJogos .ft51-vermelho-projetos p:nth-child(2){
     margin-bottom: -120px;
 }
 
-main.mainFabricaJogos .ft51-vermelho-projetos p{
+main.mainFabricaJogos .ft51-vermelho-projetos p {
     font-size: 27px;
 }
 
 
-main.mainFabricaJogos .ft51-branco-requisitos{
+main.mainFabricaJogos .ft51-branco-requisitos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1390,7 +1578,7 @@ main.mainFabricaJogos .jogos-requisitos {
     text-align: center;
 }
 
-main.mainFabricaJogos .jogos-requisitos h1{
+main.mainFabricaJogos .jogos-requisitos h1 {
     margin-bottom: 30px;
     font-size: 56px;
 }
@@ -1409,7 +1597,7 @@ main.mainFabricaJogos #jogosIdadeConhecimento {
     text-align: left;
 }
 
-main.mainFabricaJogos #jogosIdadeConhecimento h2{
+main.mainFabricaJogos #jogosIdadeConhecimento h2 {
     font-size: 22px;
 }
 
@@ -1441,13 +1629,14 @@ main.mainFabricaJogos #jogosIdadeConhecimento #conhecimentos ul li {
     margin-top: 10px;
 }
 
-main.mainFabricaJogos .ft51-branco-gradec{
+main.mainFabricaJogos .ft51-branco-gradec {
     height: 980px;
-    background-color:rgba(255, 255, 255,1);  
+    background-color: rgba(255, 255, 255, 1);
 }
-main.mainFabricaJogos .ft51-vermelho-gradec{
+
+main.mainFabricaJogos .ft51-vermelho-gradec {
     height: 1200px;
-    background-color:rgba(139, 26, 26, 1);
+    background-color: rgba(139, 26, 26, 1);
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(212, 27, 27, 1);
 }
@@ -1458,13 +1647,13 @@ main.mainFabricaJogos .grade-curricular {
     margin: 100px;
     color: white;
     margin-left: 40%;
-    
+
 }
 
 main.mainFabricaJogos .container-title-grad {
     margin: 0 160px;
     padding: 10px 0;
-    
+
 }
 
 main.mainFabricaJogos .container-title-outside {
@@ -1498,13 +1687,14 @@ main.mainFabricaJogos .container-title-outside-btn {
 
 main.mainFabricaJogos .container-grad-table table {
     width: 100%;
-    border-radius: 10px; 
+    border-radius: 10px;
     border-collapse: collapse;
     border-radius: 20px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-main.mainFabricaJogos th, td {
+main.mainFabricaJogos th,
+td {
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -1512,12 +1702,15 @@ main.mainFabricaJogos th, td {
 main.mainFabricaJogos tr:nth-child(2n) {
     background-color: #D9D9D9;
 }
+
 main.mainFabricaJogos tr:nth-child(1) {
     background-color: #ffffff;
 }
+
 main.mainFabricaJogos tr:nth-child(3) {
     background-color: #ffffff;
 }
+
 main.mainFabricaJogos tr:nth-child(5) {
     background-color: #ffffff;
 }
@@ -1529,7 +1722,7 @@ main.mainFabricaJogos .container-title-outside {
 
 
 
-main.mainFabricaJogos #effectIntro1{
+main.mainFabricaJogos #effectIntro1 {
     height: auto;
     width: 160px;
     margin: 0;
@@ -1537,7 +1730,7 @@ main.mainFabricaJogos #effectIntro1{
     position: absolute;
 }
 
-main.mainFabricaJogos #effectIntro2{
+main.mainFabricaJogos #effectIntro2 {
     height: auto;
     fill: aqua;
     width: 160px;
@@ -1553,10 +1746,147 @@ main.mainFabricaJogos #effectIntro2{
 
 /*Demanda*/
 
+header.cabecalho-Demanda nav {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+    height: 80px;
+    background-color: white;
+    z-index: 2;
+}
+
+header.cabecalho-Demanda nav img {
+    height: 50px;
+    margin-right: 200px;
+    margin-left: 60px;
+}
+
+header.cabecalho-Demanda nav #menuPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.cabecalho-Demanda nav ul li {
+    list-style-type: none;
+    padding: none;
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.cabecalho-Demanda nav a {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
+    margin-top: 15px;
+}
+
+
+header.cabecalho-Demanda nav li:nth-child(5) a,
+li:nth-child(6) a {
+    width: 183px;
+}
+
+header.cabecalho-Demanda nav a#logo {
+    margin: 0;
+}
+
+header.cabecalho-Demanda nav a#logo img {
+    box-shadow: none;
+}
+
+header.cabecalho-Demanda nav li #admButton {
+    background-color: rgb(254, 185, 105, 75);
+    border-radius: 40px;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 100px;
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas {
+    height: fit-content;
+    position: absolute;
+    top: 81px;
+    left: 540px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    width: 340px;
+    border-radius: 0px 0px 10px 10px;
+    padding-bottom: 15px;
+    justify-content: center;
+    visibility: hidden;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    transition: all 2ms ease-out;
+
+}
+
+header.cabecalho-Demanda nav ul #menuFabricas li {
+    list-style-type: none;
+    margin-top: 15px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a {
+    text-decoration: none;
+    color: black;
+    height: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 0;
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fs:hover {
+    color: rgba(43, 20, 99, 1);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fj:hover {
+    color: rgba(139, 26, 26, 1);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fcg:hover {
+    color: rgba(226, 153, 26, 1);
+}
+
+header.cabecalho-Demanda nav ul#menuFabricas a#Fav:hover {
+    color: rgba(66, 176, 48, 1);
+}
+
+header.cabecalho-Demanda nav li:hover a#menuFabricasBtn {
+    height: 80px;
+}
+
+header.cabecalho-Demanda nav li:hover ul#menuFabricas {
+    visibility: visible;
+}
 
 /* PAGINA DEMANDA  */
 
-.body-demanda, .html-demanda {
+.body-demanda,
+.html-demanda {
     margin: 0;
     padding: 0;
     align-items: center;
@@ -1564,7 +1894,7 @@ main.mainFabricaJogos #effectIntro2{
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background-color: white; 
+    background-color: white;
     background-size: cover;
     background-position: center;
     overflow: hidden auto;
@@ -1581,6 +1911,10 @@ main.mainFabricaJogos #effectIntro2{
     filter: blur(135px);
     background-color: #AA15C2;
     opacity: 70%;
+    z-index: 1;
+}
+
+.body-demanda .effects#effect2 {
     z-index: 0;
   }
 
@@ -1594,6 +1928,7 @@ main.mainFabricaJogos #effectIntro2{
     transform: translate(-50%, -50%);
     filter: blur(135px);
     background-color: #4815c2;
+    z-index: 1;
     opacity: 70%;
     z-index: 0; 
 }
@@ -1664,7 +1999,23 @@ main.mainFabricaJogos #effectIntro2{
     border-radius: 20px;
     height: auto;
     z-index: -2;
-  }
+}
+
+.body-demanda .content-title-subtitle-demanda h1 {
+    font-size: var(--font-size-titulo)
+}
+
+.body-demanda .content-title-subtitle-demanda p {
+    font-size: var(--font-size-subTitulo);
+
+}
+
+.body-demanda .content-wrapper-all-demanda {
+    margin-top: 100px;
+
+
+}
+
   
 .body-demanda .content-title-subtitle-demanda h1{
     font-weight: bolder;
@@ -1688,6 +2039,7 @@ main.mainFabricaJogos #effectIntro2{
 .body-demanda .form-control {
     display: flex;
     align-items: center;
+    z-index: 1;
     justify-content: center;
     height: 60px;
     
@@ -1700,6 +2052,10 @@ main.mainFabricaJogos #effectIntro2{
     height: 200px;
     align-items: center;
     z-index: 1;
+}
+
+.body-demanda .inputs-empresa-Demanda input {
+    margin: 10px;
   }
 
 .container-inputs-demanda {
@@ -1718,6 +2074,39 @@ main.mainFabricaJogos #effectIntro2{
     padding: 10px 20px;
     border-radius: 12px;
     height: 50px;
+    z-index: 1;
+}
+
+.body-demanda .inputs-empresa-Demanda input,
+.body-demanda .inputs-titular-Demanda input {
+    padding: 0 30px;
+    z-index: 1;
+}
+
+.body-demanda .inputs-titular-Demanda input {
+    margin: 10px;
+    border-radius: 15px;
+    width: 350px;
+    height: 50px;
+    z-index: 1;
+}
+
+.body-demanda .campo-dados-demanda h2 {
+    font-size: var(--font-size-subTitulo);
+    line-height: 40px;
+
+}
+
+.body-demanda #dados-empresa-demanda-h2 {
+    font-size: 25px;
+}
+
+.body-demanda #dados-empresa-demanda-h2:nth-child(1) {
+    padding-top: 20px;
+}
+
+.body-demanda .campo-dados-demanda {
+    margin-top: 90px;
     align-items: center;
     font-size: 14px;
     z-index: 2;
@@ -1794,15 +2183,15 @@ main.mainFabricaJogos #effectIntro2{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 .body-demanda .dados-Titular-demanda {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center
-  }
-  
+}
+
 .body-demanda .sobre-Projeto-Demanda {
     font-size: var(--font-size-subTitulo);
     height: 200px;
@@ -1811,13 +2200,13 @@ main.mainFabricaJogos #effectIntro2{
     justify-content: center;
     flex-direction: column;
     margin-top: -50px;
-  }
-  
-.body-demanda .sobre-Projeto-Demanda h2{
+}
+
+.body-demanda .sobre-Projeto-Demanda h2 {
     margin: 18px;
-  }
-  
-.body-demanda .enviar-Demanda{
+}
+
+.body-demanda .enviar-Demanda {
     padding: 15px 40px;
     border-radius: 12px;
     background-color: transparent;
@@ -1826,19 +2215,37 @@ main.mainFabricaJogos #effectIntro2{
     margin: 20px;
     z-index: 1;
     cursor: pointer;
-    
-  }
+
+}
 
 
 
+.body-demanda .file-label {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 715px;
+    height: 50px;
+    text-align: start;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+}
 
+.body-demanda .file-input {
+    display: none;
+
+}
 .body-demanda .container-wrapper-file {
     display: flex;
     padding: 6px 0;
     justify-content: start;
+
 }
 
-.body-demanda .file-label p{
+.body-demanda .file-label p {
     color: #04BA1A;
     margin-top: 2.5%;
     margin-left: 10px;
@@ -1858,17 +2265,17 @@ main.cadastroFabrica-Software {
 
 input.cadastroFabrica-Software {
     padding: 15px;
-    border-radius: 5px ;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .btn-enviar-cadastroFabrica-Software {
     margin-top: 50px;
     padding: 15px 60px;
-    border: 3px solid  #3B96EB;
+    border: 3px solid #3B96EB;
     border-radius: 7px;
-    background-color: rgb(40,19,88,1);
-    color : #3B96EB;
+    background-color: rgb(40, 19, 88, 1);
+    color: #3B96EB;
     font-size: 27px;
     margin-bottom: 70px;
     margin-top: 70px;
@@ -1892,7 +2299,7 @@ input.cadastroFabrica-Software {
     top: 300px;
     position: absolute;
     left: -52px;
-} 
+}
 
 .sombra-rosa-cadastroFabrica-Software {
     box-shadow: -100px 4px 100px 100px #ab15c26b;
@@ -1903,7 +2310,7 @@ input.cadastroFabrica-Software {
     right: -200px;
 }
 
-#container-campos-preenchimento-cadastroFabrica-Software{
+#container-campos-preenchimento-cadastroFabrica-Software {
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
@@ -1913,7 +2320,7 @@ input.cadastroFabrica-Software {
     margin-top: 50px;
 }
 
-#text-sobre-cadastroFabrica-Software{
+#text-sobre-cadastroFabrica-Software {
     color: #000;
     margin-bottom: 40px;
 }
@@ -1928,7 +2335,7 @@ input.cadastroFabrica-Software {
 
 
 /*Inicio do rodapé preto*/
-.rodape-preto img{
+.rodape-preto img {
     box-shadow: none;
 }
 
@@ -1959,7 +2366,7 @@ input.cadastroFabrica-Software {
     background-color: #8B1A1A;
 }
 
-.rodape-branco img{
+.rodape-branco img {
     box-shadow: none;
 }
 
@@ -1993,6 +2400,14 @@ input.cadastroFabrica-Software {
 /*cadastro de vagas emprego*/
 
 
+
+main.cadastro-de-vagas {
+    max-width: 1220px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
+}
 .cadastro-de-vagas{
   max-width: 1220px;
   margin: 20px auto;
@@ -2002,23 +2417,34 @@ input.cadastroFabrica-Software {
 }
 
 .titulo-vagas {
-  color: #000;
-  line-height: 30px;
+    color: #000;
+    line-height: 30px;
 }
 
-.titulo-vagas h1{
-  font-size: 56px;
-  position: relative;
-  top :100px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 78px;
-  font-family: var(--font-destaque);
-  color: black;
-  
+.titulo-vagas h1 {
+    font-size: 56px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 78px;
+    font-family: var(--font-destaque);
+    color: black;
+
 }
 
+
+#titulo-subtitulo-cadastroVagas p {
+    font-size: 27px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+
+}
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
 }
@@ -2032,58 +2458,74 @@ input.cadastroFabrica-Software {
   color: black;
   top: 7px;
  
+
 }
 
-.sombra-roxa-cadastro-vagas{
+.sombra-roxa-cadastro-vagas {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
     top: 300px;
     position: absolute;
     left: -52px;
 
-} 
-
-.sombra-rosa-cadastro-vagas{
-  box-shadow: -100px 4px 100px 100px #ab15c26b;
-  top: 200px;
-  border-radius: 90%;
-  position: absolute;
-  right: 0;
-  right: -200px;
 }
 
-#quadradoRoxo-cadastro-vagas{
-  
-  background-color: #281358;
-  border-radius: 10px;
-  text-align:center;
+.sombra-rosa-cadastro-vagas {
+    box-shadow: -100px 4px 100px 100px #ab15c26b;
+    top: 200px;
+    border-radius: 90%;
+    position: absolute;
+    right: 0;
+    right: -200px;
 }
 
-.titulo-dados-empresa-vagas h1{
-  font-size: 40px;
-  position: relative;
-  color: white;
-  top: 80px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  z-index: -1;
+#quadradoRoxo-cadastro-vagas {
+
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.titulo-sobre-vagas h1{
-  font-size: 40px;
-  color: white;
-  left: 89px;
-  text-align: justify;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 94px;
+.titulo-dados-empresa-vagas h1 {
+    font-size: 40px;
+    position: relative;
+    color: white;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 160px;
+    z-index: -1;
+}
+
+.titulo-sobre-vagas h1 {
+    font-size: 40px;
+    color: white;
+    left: 89px;
+    text-align: justify;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 94px;
 }
 
 
+.subtitulo-sobre-vagas p {
+    font-size: 27px;
+    /* position: absolute; */
+    /* dixar comentado por enquanto.*/
+    color: white;
+    margin-left: 100px;
+    /*esquerda do texto*/
+    margin-right: 120px;
+    /* direita texto*/
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 5;
+}
 .subtitulo-sobre-vagas p{
   font-size:27px ;
   color: white;
@@ -2096,72 +2538,74 @@ input.cadastroFabrica-Software {
   z-index: 5;
 }
 
-@media(max-width: 500px){
-    .titulo-sobre-vagas h1{
+@media(max-width: 500px) {
+    .titulo-sobre-vagas h1 {
         font-size: 27px;
         color: white;
         margin: 23px;
-        
+
     }
-   }
-
-
-@media(max-width: 500px){
-  .subtitulo-sobre-vagas p{
-      font-size: 18px;
-      color: white;
-      margin: 23px;
-      
-  }
- }
-
-
-
-#campo-cadastroVagas{
-color: white;
-margin-top: 50px;
 }
 
-.text-area-vagas{
-  margin: 10px 80px;
 
+@media(max-width: 500px) {
+    .subtitulo-sobre-vagas p {
+        font-size: 18px;
+        color: white;
+        margin: 23px;
+
+    }
 }
 
-.campo-texto-descricao-vagas textarea{
-  position: relative;
-  margin-left: 78px;
-  margin-top: 30px;
-  padding: 10px;
-  border-radius: 19px;
-  font-size: 40px;
+
+
+#campo-cadastroVagas {
+    color: white;
+    margin-top: 50px;
+}
+
+.text-area-vagas {
+    margin: 10px 80px;
 
 }
 
-.button-enviar-vagas button{
-  margin-bottom: 7rem;
-  margin-top: 3rem;
-  width: 344px;
-  height: 80px;
-  border-radius: 17px;
-  position: relative;
-  font-size: 27px;
-  max-width: 200px;
+.campo-texto-descricao-vagas textarea {
+    position: relative;
+    margin-left: 78px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 19px;
+    font-size: 40px;
+
+}
+
+.button-enviar-vagas button {
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+    width: 344px;
+    height: 80px;
+    border-radius: 17px;
+    position: relative;
+    font-size: 27px;
+    max-width: 200px;
 }
 
 @media (max-width: 600px) {
-  .button {
-    width: 100%;
-  }
+    .button {
+        width: 100%;
+    }
 }
 
 
 
 input.cadastrovagas {
-  padding: 15px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  margin-top: 7px;
+
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 7px;
 }
+
 
 /* Tela de Edital */
 
@@ -2792,3 +3236,76 @@ overflow: hidden;
     width:300px;
     box-shadow:none;
 }
+
+
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+
+
+
+
+
