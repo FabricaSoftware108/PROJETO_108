@@ -2651,6 +2651,11 @@ overflow: hidden;
     margin-top: 45px;
    
 }
+.quadro-branco {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
 
 /*input edital container edital ADM*/
 #cadastroAdmEditalProcura{
@@ -2663,35 +2668,11 @@ overflow: hidden;
     
 
 
-.cadastro-adm-nome-aleatorio-1{
+/* .cadastro-adm-nome-aleatorio{
     background-color:#ffffff;
-}
-
-.quadro-branco {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 20px; 
-}
-
-.quadro-cinza {
-    background-color: #D9D9D9; 
-    padding: 10px; 
-}
+} */
 
 
-@media(max-width: 20px){
-    .cadastro-adm-nome-aleatorio{
-        font-size: 24px;
-        color: black;
-        margin-top: 45px;
-    }
-   }
-
-@media(max-width: 200px){
-    .quadro-cinza .button-apagar-edital .button-cadastrar-edital-adm{
-        margin-top: 23px;
-    }
-   }
 
 .icon-green {
     width: 20px;
