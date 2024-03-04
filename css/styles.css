@@ -2121,21 +2121,13 @@ input.cadastroFabrica-Software {
 
 .cadastro-adm .cadastro-adm-img-1 {
     position: absolute;
-    bottom: 50px;
+    bottom: 0px;
     left: -50px;
     width: 350px; /* Defina a largura desejada */
     height: auto; /* A altura será ajustada automaticamente para manter a proporção */
     box-shadow: none;
 }
 
-.cadastro-adm .cadastro-adm-img-2 {
-    position: absolute;
-    bottom: 50px;
-    left: 1540px;
-    width: 350px; /* Defina a largura desejada */
-    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
-    box-shadow: none;
-}
 
 .cadastro-adm .popup-cadastroAdm{
     background: #fff;
