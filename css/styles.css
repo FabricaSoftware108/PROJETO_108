@@ -1997,8 +1997,8 @@ input.cadastroFabrica-Software {
 }
 
 .cadastro-adm .cadastro-adm-button {
-    width: 100%;
-    margin-top: 60px; 
+    width: 90%;
+    margin: 40px 0 20px 0;
     border-radius: 10px;
 }
 
@@ -2009,6 +2009,17 @@ input.cadastroFabrica-Software {
     .cadastro-adm-label,
     .cadastro-adm-nome-aleatorio {
         font-size: 15px !important;
+    }
+}
+
+@media (max-width: 528px) {
+    .cadastro-adm-container-1 {
+        margin-top: 100px !important;
+    }
+}
+@media (max-width: 653px) {
+    .cadastro-adm-container-1 {
+        margin-top: 80px !important;
     }
 }
 /* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
@@ -2121,8 +2132,8 @@ input.cadastroFabrica-Software {
     background: #fff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.692);
     border-radius: 6px;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
@@ -2144,11 +2155,32 @@ input.cadastroFabrica-Software {
     margin: 40px 10px;
 }
 
+.cadastro-adm .popup-cadastroAdm button{
+    margin: 0 20px 0 0;
+}
+
 .cadastro-adm .open-popup{
     visibility: visible;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 }
+
+
+@media (max-width: 721px) {
+    .popup-cadastroAdm h2{
+        font-size: 24px !important;
+    }
+    .popup-cadastroAdm p{
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 756px) {
+    .popup-cadastroAdm button{
+        margin: 0 20px 20px 20px !important;
+    }
+}
+
 
 /*Inicio do rodapé preto*/
 .rodape-preto img{
