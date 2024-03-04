@@ -2519,15 +2519,7 @@ overflow: hidden;
     }
     }
 
-/* .cadastro-adm-edital-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    width:389px;
-    margin-top: 150px;
-    
-} */
+
     /*tem que usar esse para deixar o cadastro de edital e o editais certo */
     
 .cadastro-adm-editais .cadastro-adm-edital-centered { 
@@ -2573,10 +2565,18 @@ overflow: hidden;
 
 #cadastroAdmEditalInput{
     background-color: #D9D9D9;
-    margin: 0px;
-    border-radius: 7px;
+   
    
 }
+
+#cadastroAdmEditalInputEdital{
+    margin-top: 60px;
+    background-color: #D9D9D9;
+    margin: 0px;
+    border-radius: 7px;
+
+}
+
 
 .cadastro-adm-edital-input-container {
     margin-bottom: 10px; 
@@ -2648,6 +2648,7 @@ overflow: hidden;
 .quadro-cinza {
     background-color: #D9D9D9; 
     border-radius: 7px;
+    margin-top: 45px;
    
 }
 
@@ -2660,26 +2661,6 @@ overflow: hidden;
     
 }
     
-
-/* .cadastro-adm .cadastro-adm-borda-com-conteudo {
-    border: 1px dotted #000;
-    padding: 25px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 10px; Reduzindo a margem inferior para aproximar os administradores 
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px; Reduzindo a margem superior para aproximar os administradores 
-}
-
-.cadastro-adm .cadastro-adm-nome-aleatorio {
-    position: absolute;
-    top: 50%;
-    left: 50%; Centralizando horizontalmente
-    transform: translate(-50%, -50%); Centralizando verticalmente e horizontalmente
-    font-size: 24px;
-}  */
-
 
 
 .cadastro-adm-nome-aleatorio-1{
@@ -2697,6 +2678,20 @@ overflow: hidden;
     padding: 10px; 
 }
 
+
+@media(max-width: 20px){
+    .cadastro-adm-nome-aleatorio{
+        font-size: 24px;
+        color: black;
+        margin-top: 45px;
+    }
+   }
+
+@media(max-width: 200px){
+    .quadro-cinza .button-apagar-edital .button-cadastrar-edital-adm{
+        margin-top: 23px;
+    }
+   }
 
 .icon-green {
     width: 20px;
