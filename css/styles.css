@@ -2017,11 +2017,7 @@ input.cadastroFabrica-Software {
         margin-top: 100px !important;
     }
 }
-@media (max-width: 653px) {
-    .cadastro-adm-container-1 {
-        margin-top: 80px !important;
-    }
-}
+
 /* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
 
 
@@ -2128,6 +2124,11 @@ input.cadastroFabrica-Software {
     box-shadow: none;
 }
 
+@media (max-width: 1872px) {
+    .cadastro-adm-img-1 {
+        visibility: hidden !important;
+    }
+}
 
 .cadastro-adm .popup-cadastroAdm{
     background: #fff;
