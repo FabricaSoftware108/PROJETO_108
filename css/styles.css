@@ -3108,3 +3108,47 @@ overflow: hidden;
 
 
 
+
+
+
+
+
+
+
+/* Relatório Banco de Talento */
+
+body.body-relatorio-banco-talento{
+    padding: 0;
+    overflow-x: hidden;
+}
+body.body-relatorio-banco-talento .row{
+    border-radius: 2px dashed blue;
+}
+
+body.body-relatorio-banco-talento  .h1{
+    color: black;
+    padding: 500px;
+    text-align: center;
+    margin: 0;
+}
+
+body.body-relatorio-banco-talento .borda_relatorio_banco_talento_azul{
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+    margin-top: 10%;
+}
+body.body-relatorio-banco-talento .borda_relatorio_banco_talento_branco{
+    border: 2px solid rgb(230, 222, 222); 
+    width: 1200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
+    height: 570px;
+    margin-top: 26%;
+    border:dashed#000000;
+}
