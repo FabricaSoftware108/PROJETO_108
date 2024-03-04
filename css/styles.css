@@ -1972,7 +1972,8 @@ input.cadastroFabrica-Software {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    font-size: 40px;
+    font-size: 30px;
+    font-family: var(--font-destaque);
     border-radius: 10px 10px 0 0;
 }
 
@@ -1988,6 +1989,7 @@ input.cadastroFabrica-Software {
 
 .cadastro-adm-input-container {
     padding: 20px 30px 0;
+    font-family: var(--font-destaque);
 }
 
 .cadastro-adm .cadastro-adm-label {
@@ -2005,16 +2007,19 @@ input.cadastroFabrica-Software {
 @media (max-width: 445px) {
     #area-adm{
         font-size: 1rem !important;
+        font-family: var(--font-destaque);
     }
 }
 
 @media (max-width: 1204px) {
     .cadastro-adm-container-title {
         font-size: 20px !important;
+        font-family: var(--font-destaque);
     }
     .cadastro-adm-label,
     .cadastro-adm-nome-aleatorio {
         font-size: 15px !important;
+        font-family: var(--font-destaque);
     }
 }
 
@@ -2110,6 +2115,7 @@ input.cadastroFabrica-Software {
     left: 50%; /* Centralizando horizontalmente */
     transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
     font-size: 24px;
+    font-family: var(--font-destaque);
 }
 
 .cadastro-adm .cadastro-adm-switch-container {
