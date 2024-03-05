@@ -9,17 +9,20 @@
     --font-size-corpo: 27px;
     --font-size-legenda: 8px;
     --line-height: 40px;
+
+    --font-color-pagdemanda-title-subtitle: #000;
+
     
     --font-color-pag-title-subtitle: #000;
     
     --background-color-demanda-cadastro: #281358;
-    
+
     /*Fábrica de software*/
     --font-grad-title: Verdana, Geneva, Tahoma, sans-serif;
-    
-    --color-grad:rgba(43, 20, 99, 1);
-    --color-grad-title:rgba(43, 20, 99, 1);
-    
+
+    --color-grad: rgba(43, 20, 99, 1);
+    --color-grad-title: rgba(43, 20, 99, 1);
+
     --font-size-grad: 8.5px;
 
     --button-color-demanda: #3B96EB;
@@ -28,7 +31,7 @@
 
 /*Cabeçalho com bootstrap*/
 
-header.cabecalhoGeral{
+header.cabecalhoGeral {
     z-index: 10;
     position: fixed;
     left: 0;
@@ -40,21 +43,21 @@ header.cabecalhoGeral{
     background-color: white;
 }
 
-.cabecalhoGeral a{
+.cabecalhoGeral a {
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
     font-weight: bold;
 }
 
-.drop-fabricas a{
+.drop-fabricas a {
     color: #000;
 }
 
-.cabecalhoGeral .navbar #hubFabricasLogo{
+.cabecalhoGeral .navbar #hubFabricasLogo {
     box-shadow: none;
     height: 50px;
 }
 
-.cabecalhoGeral .bg-dropDown-header{
+.cabecalhoGeral .bg-dropDown-header {
     background-color: rgb(248, 249, 250);
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
     font-weight: bold;
@@ -64,17 +67,21 @@ header.cabecalhoGeral{
     background-color: #feb969;
     border-radius: 5px;
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(1) a:hover{
+
+.cabecalhoGeral .dropdown-menu li:nth-child(1) a:hover {
     color: rgba(43, 20, 99, 1);
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(2) a:hover{
+
+.cabecalhoGeral .dropdown-menu li:nth-child(2) a:hover {
     color: rgba(139, 26, 26, 1);
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(3) a:hover{
+
+.cabecalhoGeral .dropdown-menu li:nth-child(3) a:hover {
     color: rgba(226, 153, 26, 1);
 }
-.cabecalhoGeral .dropdown-menu li:nth-child(4) a:hover{
-       color: rgba(66, 176, 48, 1);
+
+.cabecalhoGeral .dropdown-menu li:nth-child(4) a:hover {
+    color: rgba(66, 176, 48, 1);
 }
 
 .cabecalhoGeral .mt-3 {
@@ -83,10 +90,10 @@ header.cabecalhoGeral{
 
 .cabecalhoGeral .dropdown:hover>.dropdown-menu {
     display: block;
-  }
-  
-  .cabecalhoGeral .dropdown>.dropdown-toggle:active {
-      pointer-events: none;
+}
+
+.cabecalhoGeral .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
 }
 
 
@@ -95,6 +102,7 @@ header.cabecalhoGeral{
         background-color: transparent;
         margin-left: 11px;
     }
+
     .cabecalhoGeral .mt-3 {
         margin-top: 0 !important;
     }
@@ -114,14 +122,15 @@ header.cabecalhoGeral{
 
 
 
-body.home, html.home{
+body.home,
+html.home {
     margin: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background-color: white; 
+    background-color: white;
     background-size: cover;
     background-position: center;
     overflow: hidden auto;
@@ -194,7 +203,8 @@ nav.home a {
 }
 
 
-nav.home li:nth-child(5) a, li:nth-child(6) a{
+nav.home li:nth-child(5) a,
+li:nth-child(6) a {
     width: 100%;
 }
 
@@ -313,9 +323,9 @@ nav.home li:hover ul#menuFabricas {
     position: absolute;
     color: white;
     top: 50%;
-    left: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; 
+    text-align: center;
 }
 
 .content-sobre-home {
@@ -324,7 +334,7 @@ nav.home li:hover ul#menuFabricas {
     margin-right: 460px;
 }
 
-.content-sobre-home h1{
+.content-sobre-home h1 {
     font-size: var(--font-size-titulo);
     padding-top: 90px;
 }
@@ -334,7 +344,7 @@ nav.home li:hover ul#menuFabricas {
     margin-top: 2%;
 }
 
-.content-wrapper-home p{
+.content-wrapper-home p {
     width: 580px;
     height: 350px;
     max-width: 700px;
@@ -344,7 +354,7 @@ nav.home li:hover ul#menuFabricas {
     text-align: justify;
 }
 
-.content-wrapper-home img{
+.content-wrapper-home img {
     width: 500px;
     height: auto;
     margin-top: 15px;
@@ -385,12 +395,12 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
-.links-fabricas-home h1{
+.links-fabricas-home h1 {
     font-size: 27pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.links-fabricas-home article{
+.links-fabricas-home article {
     text-align: center;
 }
 
@@ -449,7 +459,7 @@ nav.home li:hover ul#menuFabricas {
     color: white;
 }
 
-.container-img-home  p {
+.container-img-home p {
     text-align: center;
 }
 
@@ -643,7 +653,8 @@ nav.nav-software a {
 }
 
 
-nav.nav-software li:nth-child(5) a, li:nth-child(6) a{
+nav.nav-software li:nth-child(5) a,
+li:nth-child(6) a {
     width: 183px;
 }
 
@@ -691,7 +702,7 @@ nav.nav-software ul #menuFabricas li {
 
 nav.nav-software ul#menuFabricas a {
     text-decoration: none;
-    color: black; 
+    color: black;
     height: 0px;
     font-size: 14px;
     font-weight: bold;
@@ -735,12 +746,12 @@ nav.nav-software li:hover ul#menuFabricas {
     height: auto;
     text-align: justify;
     font-size: 22px;
-}   
+}
 
 .texto-sobre-fabrica-software h1 {
     text-align: center;
     line-height: 15rem;
-    font-size:30px;
+    font-size: 30px;
 }
 
 .texto-sobre-fabrica-software button {
@@ -779,7 +790,7 @@ nav.nav-software li:hover ul#menuFabricas {
     box-shadow: 100px 0px 81px -50px rgba(45, 0, 148, 1);
 }
 
-.branco-requisitos-software{
+.branco-requisitos-software {
     height: 980px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 260px 0 260px 0;
@@ -788,15 +799,17 @@ nav.nav-software li:hover ul#menuFabricas {
 .roxo-requisitos-software {
     height: 980px;
     background-color: rgba(43, 20, 99, 1);
-    
+
 }
-.branco-gradec-software{
+
+.branco-gradec-software {
     height: 980px;
-    background-color:rgba(255, 255, 255, 1);
-    
-    
+    background-color: rgba(255, 255, 255, 1);
+
+
 }
-.roxo-gradec-software{
+
+.roxo-gradec-software {
     height: 1200px;
     background-color: rgba(43, 20, 99, 1);
     border-radius: 260px 0 0 0;
@@ -828,8 +841,9 @@ nav.nav-software li:hover ul#menuFabricas {
     text-align: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
+
 .container-title-outside-btn {
     display: flex;
     font-weight: bold;
@@ -847,14 +861,15 @@ nav.nav-software li:hover ul#menuFabricas {
 
 .container-grad-table table {
     width: 100%;
-    border-radius: 10px; 
+    border-radius: 10px;
     border-collapse: collapse;
     border-radius: 20px;
     overflow: hidden;
-    
+
 }
 
-th, td {
+th,
+td {
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -862,12 +877,15 @@ th, td {
 tr:nth-child(2n) {
     background-color: #D9D9D9;
 }
+
 tr:nth-child(1) {
     background-color: #ffffff;
 }
+
 tr:nth-child(3) {
     background-color: #ffffff;
 }
+
 tr:nth-child(5) {
     background-color: #ffffff;
 }
@@ -876,16 +894,168 @@ tr:nth-child(5) {
     text-align: center;
 }
 
+
+
+/* carrosel */
+
+.Body-Fabrica-Software span {
+    font-size: x-large;
+}
+
+.Body-Fabrica-Software .card-img {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+
+    /*para melhoras a qualidade da imagem deixa limitada */
+    .swiper {
+        height: 270px;
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    /* Largura desejada */
+    height: 60px;
+    /* Altura desejada */
+    font-size: 12px;
+    z-index: -1;
+}
+
+
+.swiper-button-prev {
+    left: 10px;
+    /* Ajusta a posição do botão esquerdo */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-next {
+    right: 10px;
+    /* Ajusta a posição do botão direito */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 40px;
+    color: black;
+
+}
+
+.Body-Fabrica-Software .swiper-slide {
+    background-color: rgba(102, 30, 159, 1);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+    img {
+        width: 100%;
+    }
+}
+
+.swiper {
+    height: 500px;
+    z-index: -2;
+}
+
+.swiper-slide {
+    text-align: justify;
+    /*arruma o texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    font-size: 22px;
+    color: aliceblue;
+    overflow: hidden;
+    margin: 4rem;
+    font-family: var(--font-grad-title);
+
+    text-overflow: ellipsis;
+    /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+    display: -webkit-box;
+    /*delimita o texto que vc coloca*/
+    -webkit-line-clamp: 8;
+    /*Definir a quantidade de linhas*/
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+}
+
+.card-image {
+    max-width: 40%;
+    height: auto;
+    width: 400rem;
+    margin: 1rem;
+}
+
+.card-img {
+    border-radius: 5px;
+}
+
+.swiper-slide {
+
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    width: 1500px;
+    /* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projeto-carrossel {
+    height: 12rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.projeto-carrossel h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 56px;
+    margin-top: 100px;
+}
+
+.projeto-carrossel p {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: 27px;
+}
+
 /* Rodapé */
 
-#img-js, #img-html{
+#img-js,
+#img-html {
     padding: 23px;
     opacity: 0.5;
 }
 
 
 /*icones introducao*/
-#imgIcone{
+#imgIcone {
     opacity: 0.5;
     width: 9rem;
     height: 9rem;
@@ -893,22 +1063,22 @@ tr:nth-child(5) {
     position: absolute;
 }
 
-.icone-js{
+.icone-js {
     left: 53rem;
     top: 4rem;
 }
 
-.icone-html{
+.icone-html {
     left: 100rem;
     top: 8rem;
 }
 
-.icone-angular{
+.icone-angular {
     left: 76rem;
     top: 43rem;
 }
 
-.icone-sql{
+.icone-sql {
     left: 105rem;
     top: 45rem;
 }
@@ -928,7 +1098,7 @@ tr:nth-child(5) {
 
 /*REQUISITOS E CONHECIMENTOS NECESSÁRIOS*/
 
-.requisitos-software{
+.requisitos-software {
     font-family: var(--font-grad-title);
     line-height: 30px;
     position: absolute;
@@ -939,34 +1109,34 @@ tr:nth-child(5) {
     text-align: justify;
     font-size: 22px;
     color: black;
-  }
-  
-  
-  
-  .requisitos-software h1 {
+}
+
+
+
+.requisitos-software h1 {
     text-align: center;
     line-height: 10rem;
-  } 
-  
-  
-  
-  .container-soft-requisitos {
+}
+
+
+
+.container-soft-requisitos {
     display: flex;
     flex-direction: line;
     margin-top: 100px;
     justify-content: space-around;
-  }
-  
-  .titulo-software {
+}
+
+.titulo-software {
     font-size: 22px;
-  }
-  
-  .subtext-software {
+}
+
+.subtext-software {
     list-style-type: disc;
     padding: 0;
     margin-top: 50px;
     font-size: 22px;
-  }
+}
 
 
 
@@ -1021,7 +1191,8 @@ tr:nth-child(5) {
 
 /* PAGINA DEMANDA  */
 
-.body-demanda, .html-demanda {
+.body-demanda,
+.html-demanda {
     margin: 0;
     padding: 0;
     align-items: center;
@@ -1029,7 +1200,7 @@ tr:nth-child(5) {
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background-color: white; 
+    background-color: white;
     background-size: cover;
     background-position: center;
     overflow: hidden auto;
@@ -1046,8 +1217,10 @@ tr:nth-child(5) {
     filter: blur(135px);
     background-color: #AA15C2;
     opacity: 70%;
-    z-index: 0;
-  }
+    z-index: 1;
+}
+
+
 
 .body-demanda div.effects-2 {
     content: '';
@@ -1059,23 +1232,23 @@ tr:nth-child(5) {
     transform: translate(-50%, -50%);
     filter: blur(135px);
     background-color: #4815c2;
+    z-index: 1;
     opacity: 70%;
     z-index: 0; 
 }
 
 .body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
 .body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
-.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
+.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
 
-.subtitle-demanda h1{
+.body-demanda .subtitle-demanda h1{
     font-size: 40px;
     font-family: var(--font-destaque);
     font-weight: 530;
     padding: 30px 0;
 }
-
 
 
 @media (min-width: 1780px) { 
@@ -1103,8 +1276,15 @@ tr:nth-child(5) {
 }
 @media (max-width: 1200px) {
  
-    .body-demanda .effects, .effects-2 {
+    .body-bancoTalentos .effects, .effects-2 {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+ 
+    .body-bancoTalentos #title-bancoTalento p {
+        font-size: 13px !important;
     }
 }
 
@@ -1129,7 +1309,23 @@ tr:nth-child(5) {
     border-radius: 20px;
     height: auto;
     z-index: -2;
-  }
+}
+
+.body-demanda .content-title-subtitle-demanda h1 {
+    font-size: var(--font-size-titulo)
+}
+
+.body-demanda .content-title-subtitle-demanda p {
+    font-size: var(--font-size-subTitulo);
+
+}
+
+.body-demanda .content-wrapper-all-demanda {
+    margin-top: 100px;
+
+
+}
+
   
 .body-demanda .content-title-subtitle-demanda h1{
     font-weight: bolder;
@@ -1153,6 +1349,7 @@ tr:nth-child(5) {
 .body-demanda .form-control {
     display: flex;
     align-items: center;
+    z-index: 1;
     justify-content: center;
     height: 60px;
     
@@ -1165,6 +1362,10 @@ tr:nth-child(5) {
     height: 200px;
     align-items: center;
     z-index: 1;
+}
+
+.body-demanda .inputs-empresa-Demanda input {
+    margin: 10px;
   }
 
 .container-inputs-demanda {
@@ -1183,6 +1384,39 @@ tr:nth-child(5) {
     padding: 10px 20px;
     border-radius: 12px;
     height: 50px;
+    z-index: 1;
+}
+
+.body-demanda .inputs-empresa-Demanda input,
+.body-demanda .inputs-titular-Demanda input {
+    padding: 0 30px;
+    z-index: 1;
+}
+
+.body-demanda .inputs-titular-Demanda input {
+    margin: 10px;
+    border-radius: 15px;
+    width: 350px;
+    height: 50px;
+    z-index: 1;
+}
+
+.body-demanda .campo-dados-demanda h2 {
+    font-size: var(--font-size-subTitulo);
+    line-height: 40px;
+
+}
+
+.body-demanda #dados-empresa-demanda-h2 {
+    font-size: 25px;
+}
+
+.body-demanda #dados-empresa-demanda-h2:nth-child(1) {
+    padding-top: 20px;
+}
+
+.body-demanda .campo-dados-demanda {
+    margin-top: 90px;
     align-items: center;
     font-size: 14px;
     z-index: 2;
@@ -1259,15 +1493,15 @@ tr:nth-child(5) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+
 .body-demanda .dados-Titular-demanda {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center
-  }
-  
+}
+
 .body-demanda .sobre-Projeto-Demanda {
     font-size: var(--font-size-subTitulo);
     height: 200px;
@@ -1276,13 +1510,13 @@ tr:nth-child(5) {
     justify-content: center;
     flex-direction: column;
     margin-top: -50px;
-  }
-  
-.body-demanda .sobre-Projeto-Demanda h2{
+}
+
+.body-demanda .sobre-Projeto-Demanda h2 {
     margin: 18px;
-  }
-  
-.body-demanda .enviar-Demanda{
+}
+
+.body-demanda .enviar-Demanda {
     padding: 15px 40px;
     border-radius: 12px;
     background-color: transparent;
@@ -1291,23 +1525,117 @@ tr:nth-child(5) {
     margin: 20px;
     z-index: 1;
     cursor: pointer;
-    
-  }
+
+}
 
 
 
+.body-demanda .file-label {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: 715px;
+    height: 50px;
+    text-align: start;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+}
 
+.body-demanda .file-input {
+    display: none;
+
+}
 .body-demanda .container-wrapper-file {
     display: flex;
     padding: 6px 0;
     justify-content: start;
+
 }
 
-.body-demanda .file-label p{
+.body-demanda .file-label p {
     color: #04BA1A;
     margin-top: 2.5%;
     margin-left: 10px;
 }
+
+
+
+/* PÁGINA BANCO DE TALENTOS */
+
+
+.body-bancoTalentos {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.body-bancoTalentos main #title-bancoTalento h1{
+    font-family: var(--font-destaque);
+    font-size: var(--font-size-titulo);
+    margin-top: 130px;
+    color: var(--font-color-pag-title-subtitle);
+    font-weight: bold;
+}
+
+.body-bancoTalentos main #title-bancoTalento p{
+    font-family: var(--font-destaque);
+    font-size: 15px;
+    padding: 20px 0 0 0;
+    color: var(--font-color-pag-title-subtitle);
+    font-weight: 300;
+}
+
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
+
+.body-bancoTalentos .subtitle-bancoTalento h1{
+    font-size: 40px;
+    font-family: var(--font-destaque);
+    font-weight: 530;
+    padding: 30px 0;
+}
+.body-bancoTalentos #container-bancoTalento-inputs{
+    padding:  0 50px;
+}
+
+.body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
+.body-bancoTalentos main #button-submit-bancoTalento  {margin: 30px 0;}
+
+
+.body-bancoTalentos main .cadastrovagas-bancoTalento {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.body-bancoTalentos div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 0;
+  }
+
+.body-bancoTalentos div.effects-2 {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #4815c2;
+    opacity: 70%;
+    z-index: 0; 
+}
+
 
 
 
@@ -1323,17 +1651,17 @@ main.cadastroFabrica-Software {
 
 input.cadastroFabrica-Software {
     padding: 15px;
-    border-radius: 5px ;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .btn-enviar-cadastroFabrica-Software {
     margin-top: 50px;
     padding: 15px 60px;
-    border: 3px solid  #3B96EB;
+    border: 3px solid #3B96EB;
     border-radius: 7px;
-    background-color: rgb(40,19,88,1);
-    color : #3B96EB;
+    background-color: rgb(40, 19, 88, 1);
+    color: #3B96EB;
     font-size: 27px;
     margin-bottom: 70px;
     margin-top: 70px;
@@ -1357,7 +1685,7 @@ input.cadastroFabrica-Software {
     top: 300px;
     position: absolute;
     left: -52px;
-} 
+}
 
 .sombra-rosa-cadastroFabrica-Software {
     box-shadow: -100px 4px 100px 100px #ab15c26b;
@@ -1368,7 +1696,7 @@ input.cadastroFabrica-Software {
     right: -200px;
 }
 
-#container-campos-preenchimento-cadastroFabrica-Software{
+#container-campos-preenchimento-cadastroFabrica-Software {
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
@@ -1378,7 +1706,7 @@ input.cadastroFabrica-Software {
     margin-top: 50px;
 }
 
-#text-sobre-cadastroFabrica-Software{
+#text-sobre-cadastroFabrica-Software {
     color: #000;
     margin-bottom: 40px;
 }
@@ -1392,8 +1720,224 @@ input.cadastroFabrica-Software {
 }
 
 
+/* ! Contéudos dentro Cadastro Admin ! */
+
+.cadastro-adm .cadastro-adm-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-adm .cadastro-adm-centered .row {
+    width: 100%;
+    margin: 100px 0 0 0 ;
+}
+
+.cadastro-adm .col-md-4{
+    margin:0;
+}
+
+
+.cadastro-adm .col-md-4{
+    margin: 0;
+}
+
+.cadastro-adm .cadastro-adm-container-1 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin: 0;
+    width: 500px;
+}
+.cadastro-adm .cadastro-adm-container-2 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin: 0;
+    width: 500px;
+}
+
+.cadastro-adm .cadastro-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 30px;
+    font-family: var(--font-destaque);
+    border-radius: 10px 10px 0 0;
+}
+
+
+.cadastro-adm .cadastro-adm-input {
+    background-color: #D9D9D9; 
+}
+
+.cadastro-adm .cadastro-adm-input-container {
+    margin-bottom: 30px; 
+    text-align: left; 
+}
+
+.cadastro-adm-input-container {
+    padding: 20px 30px 0;
+    font-family: var(--font-destaque);
+}
+
+.cadastro-adm .cadastro-adm-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.cadastro-adm .cadastro-adm-button {
+    width: 90%;
+    margin: 40px 0 20px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 445px) {
+    #area-adm{
+        font-size: 1rem !important;
+        font-family: var(--font-destaque);
+    }
+}
+
+@media (max-width: 1204px) {
+    .cadastro-adm-container-title {
+        font-size: 20px !important;
+        font-family: var(--font-destaque);
+    }
+    .cadastro-adm-label,
+    .cadastro-adm-nome-aleatorio {
+        font-size: 15px !important;
+        font-family: var(--font-destaque);
+    }
+}
+
+@media (max-width: 528px) {
+    .cadastro-adm-container-1 {
+        margin-top: 100px !important;
+    }
+}
+
+/* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
+
+
+.cadastro-adm .cadastro-adm-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+  
+.cadastro-adm .cadastro-adm-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.cadastro-adm .cadastro-adm-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #1BC300;
+    border-radius: 34px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000;
+}
+  
+.cadastro-adm .cadastro-adm-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    right: 4px; /* Alterado de left para right */
+    bottom: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.cadastro-adm .cadastro-adm-switch input:checked + .cadastro-adm-slider {
+    background-color: #C30000;
+}
+  
+.cadastro-adm .cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
+    transform: translateX(-26px);
+}
+  
+.cadastro-adm .cadastro-adm-slider:before {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+.cadastro-adm .cadastro-adm-knob {
+    position: absolute;
+    top: 50%;
+    right: 4px; /* Alteração da propriedade left para right */
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}   
+  
+.cadastro-adm .cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
+    transform: translateX(-27px) translateY(-50%);
+}
+  
+.cadastro-adm .cadastro-adm-borda-com-conteudo {
+    border: 1px dotted #000;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px; /* Reduzindo a margem inferior para aproximar os administradores */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
+}
+
+.cadastro-adm .cadastro-adm-nome-aleatorio {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
+    font-size: 24px;
+    font-family: var(--font-destaque);
+}
+
+.cadastro-adm .cadastro-adm-switch-container {
+    position: absolute;
+    bottom: 10px; /* Definindo a posição no final da borda */
+    right: 10px; /* Definindo a posição no final da borda */
+}
+
+
+/* Estilos para as imagens cadastro-adm */
+
+.cadastro-adm .cadastro-adm-img-1 {
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
+    width: 350px; /* Defina a largura desejada */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    box-shadow: none;
+}
+
+@media (max-width: 1872px) {
+    .cadastro-adm-img-1 {
+        visibility: hidden !important;
+    }
+}
+
+
 /*Inicio do rodapé preto*/
-.rodape-preto img{
+.rodape-preto img {
     box-shadow: none;
 }
 
@@ -1424,7 +1968,7 @@ input.cadastroFabrica-Software {
     background-color: #8B1A1A;
 }
 
-.rodape-branco img{
+.rodape-branco img {
     box-shadow: none;
 }
 
@@ -1458,6 +2002,14 @@ input.cadastroFabrica-Software {
 /*cadastro de vagas emprego*/
 
 
+
+main.cadastro-de-vagas {
+    max-width: 1220px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
+}
 .cadastro-de-vagas{
   max-width: 1220px;
   margin: 20px auto;
@@ -1467,23 +2019,34 @@ input.cadastroFabrica-Software {
 }
 
 .titulo-vagas {
-  color: #000;
-  line-height: 30px;
+    color: #000;
+    line-height: 30px;
 }
 
-.titulo-vagas h1{
-  font-size: 56px;
-  position: relative;
-  top :100px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 78px;
-  font-family: var(--font-destaque);
-  color: black;
-  
+.titulo-vagas h1 {
+    font-size: 56px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 78px;
+    font-family: var(--font-destaque);
+    color: black;
+
 }
 
+
+#titulo-subtitulo-cadastroVagas p {
+    font-size: 27px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+
+}
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
 }
@@ -1497,58 +2060,74 @@ input.cadastroFabrica-Software {
   color: black;
   top: 7px;
  
+
 }
 
-.sombra-roxa-cadastro-vagas{
+.sombra-roxa-cadastro-vagas {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
     top: 300px;
     position: absolute;
     left: -52px;
 
-} 
-
-.sombra-rosa-cadastro-vagas{
-  box-shadow: -100px 4px 100px 100px #ab15c26b;
-  top: 200px;
-  border-radius: 90%;
-  position: absolute;
-  right: 0;
-  right: -200px;
 }
 
-#quadradoRoxo-cadastro-vagas{
-  
-  background-color: #281358;
-  border-radius: 10px;
-  text-align:center;
+.sombra-rosa-cadastro-vagas {
+    box-shadow: -100px 4px 100px 100px #ab15c26b;
+    top: 200px;
+    border-radius: 90%;
+    position: absolute;
+    right: 0;
+    right: -200px;
 }
 
-.titulo-dados-empresa-vagas h1{
-  font-size: 40px;
-  position: relative;
-  color: white;
-  top: 80px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 160px;
-  z-index: -1;
+#quadradoRoxo-cadastro-vagas {
+
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
 }
 
-.titulo-sobre-vagas h1{
-  font-size: 40px;
-  color: white;
-  left: 89px;
-  text-align: justify;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-top: 94px;
+.titulo-dados-empresa-vagas h1 {
+    font-size: 40px;
+    position: relative;
+    color: white;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 160px;
+    z-index: -1;
+}
+
+.titulo-sobre-vagas h1 {
+    font-size: 40px;
+    color: white;
+    left: 89px;
+    text-align: justify;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 94px;
 }
 
 
+.subtitulo-sobre-vagas p {
+    font-size: 27px;
+    /* position: absolute; */
+    /* dixar comentado por enquanto.*/
+    color: white;
+    margin-left: 100px;
+    /*esquerda do texto*/
+    margin-right: 120px;
+    /* direita texto*/
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 5;
+}
 .subtitulo-sobre-vagas p{
   font-size:27px ;
   color: white;
@@ -1561,72 +2140,74 @@ input.cadastroFabrica-Software {
   z-index: 5;
 }
 
-@media(max-width: 500px){
-    .titulo-sobre-vagas h1{
+@media(max-width: 500px) {
+    .titulo-sobre-vagas h1 {
         font-size: 27px;
         color: white;
         margin: 23px;
-        
+
     }
-   }
-
-
-@media(max-width: 500px){
-  .subtitulo-sobre-vagas p{
-      font-size: 18px;
-      color: white;
-      margin: 23px;
-      
-  }
- }
-
-
-
-#campo-cadastroVagas{
-color: white;
-margin-top: 50px;
 }
 
-.text-area-vagas{
-  margin: 10px 80px;
 
+@media(max-width: 500px) {
+    .subtitulo-sobre-vagas p {
+        font-size: 18px;
+        color: white;
+        margin: 23px;
+
+    }
 }
 
-.campo-texto-descricao-vagas textarea{
-  position: relative;
-  margin-left: 78px;
-  margin-top: 30px;
-  padding: 10px;
-  border-radius: 19px;
-  font-size: 40px;
+
+
+#campo-cadastroVagas {
+    color: white;
+    margin-top: 50px;
+}
+
+.text-area-vagas {
+    margin: 10px 80px;
 
 }
 
-.button-enviar-vagas button{
-  margin-bottom: 7rem;
-  margin-top: 3rem;
-  width: 344px;
-  height: 80px;
-  border-radius: 17px;
-  position: relative;
-  font-size: 27px;
-  max-width: 200px;
+.campo-texto-descricao-vagas textarea {
+    position: relative;
+    margin-left: 78px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 19px;
+    font-size: 40px;
+
+}
+
+.button-enviar-vagas button {
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+    width: 344px;
+    height: 80px;
+    border-radius: 17px;
+    position: relative;
+    font-size: 27px;
+    max-width: 200px;
 }
 
 @media (max-width: 600px) {
-  .button {
-    width: 100%;
-  }
+    .button {
+        width: 100%;
+    }
 }
 
 
 
 input.cadastrovagas {
-  padding: 15px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  margin-top: 7px;
+
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 7px;
 }
+
 
 /* Tela de Edital */
 
@@ -2056,3 +2637,76 @@ overflow: hidden;
     width:300px;
     box-shadow:none;
 }
+
+
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+
+
+
+
+
