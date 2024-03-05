@@ -3351,7 +3351,27 @@ overflow: hidden;
     margin: 0;
 }
 
+/*usuario adm*/
 
+.wrapper-content-usuario {
+    border: 2px solid rgb(230, 222, 222);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
+    height: 570px;
+    margin-top: 200px;
+    position: relative;
+    left: 500px;
+    width: 500px;
+}
 
+.wrapper-content-usuario b{
+    padding:30px;
+}
+.wrapper-content-usuario h1{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius:5px;
+}
 
 
