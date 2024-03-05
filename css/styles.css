@@ -3200,6 +3200,11 @@ overflow: hidden;
 }
 
 
+
+
+
+
+
 /*CSS CADASTRO ADM  EDITAL*/ 
 
 .body-cadastro-adm-edital .file-input {display: none;}
@@ -3209,7 +3214,7 @@ overflow: hidden;
 .body-cadastro-adm-edital .file-label p{
     color: #04BA1A;
     margin-top: 2.5%;
-    margin-left: 10px;
+    
 }
 
 
@@ -3233,13 +3238,13 @@ overflow: hidden;
     #tituloCabecalhoADMEdital h1{
         font-size: 27px;
         color: white;
-        margin: 20px;
+      
         
     }
     }
 
 
-    /*tem que usar esse para deixar o cadastro de edital e o editais certo */
+/*tem que usar esse para deixar o cadastro de edital e o editais certo */
     
 .cadastro-adm-editais .cadastro-adm-edital-centered { 
     display: flex;
@@ -3255,7 +3260,6 @@ overflow: hidden;
     border: 2px solid #D9D9D9;
     width: 560px; /* Definindo largura fixa */
     height: 718px; /* Definindo altura fixa */
-    margin-right: 40px; 
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -3275,12 +3279,6 @@ overflow: hidden;
     font-size: 40px; 
 }
 
-/* .cadastro-adm-editais{
-    padding: 65px;
-    
-} */
-
-
 
 #cadastroAdmEditalInput{
     background-color: #D9D9D9;
@@ -3289,7 +3287,6 @@ overflow: hidden;
 .cadastro-adm-edital-input-container {
     margin-bottom: 10px; 
     text-align: left;
-    /* margin-right: 78px; */
     margin-top:30px;
     
 }
@@ -3301,13 +3298,11 @@ overflow: hidden;
 }
 
 
-
 .cadastro-adm-edital-label {
     display:block;
     color: #000;
     margin: 0px;
-    /* text-align:start; */
-    
+  
     
 }
 
@@ -3352,20 +3347,14 @@ overflow: hidden;
 
 
 
-/* 2 CONTAINER CADASTRO EDITAL ADM*/
 
+/* 2 CONTAINER CADASTRO EDITAL ADM*/
 
 #cadastroAdmEditalInputEdital{
     margin-top: 60px;
     background-color: #D9D9D9;
-    margin: 5px;
     border-radius: 7px;
     position:relative;
-    margin: 34px;
-    left: -34px;
-    
-   
-
 }
 
 .cadastro-adm-nome-aleatorio {
@@ -3376,14 +3365,7 @@ overflow: hidden;
     border: 5px solid #D9D9D9;  
 }
 
-@media  (max-width: 300px) {
-    .cadastro-adm-nome-aleatorio label{
-        font-size: 18px;
-        color: white;
-        margin: 23px;
 
-    }
-}
 
 .cadastro-adm-nome-aleatorio label {
     display: block;
@@ -3401,16 +3383,16 @@ overflow: hidden;
     width: 20px;
     height: 20px;
     display: inline-block;
-    /* top: 50%;
-    */
+
+   
 }
 
 .quadro-cinza {
-    background-color: #D9D9D9;
+    background-color: white;
     padding: 1px;
     border-radius: 5px;
     margin-bottom: 10px;
-    
+    position: relative;
 }
 
 
@@ -3421,25 +3403,14 @@ overflow: hidden;
 }
 
 
-/* .quadro-branco {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 20px; 
-} */
 
 /*input edital container edital ADM*/
 #cadastroAdmEditalProcura{
     margin-top: 56px;
     margin-bottom:53px; 
     text-align: left;
-    
 }
     
-
-
-/* .cadastro-adm-nome-aleatorio{
-    background-color:#ffffff;
-} */
 
 
 
@@ -3449,7 +3420,6 @@ overflow: hidden;
     display: inline-block;
     background-color: green;
     border-radius: 3px;
-    margin-right: 5px; 
     margin-top: 10px;
 }
 
@@ -3460,7 +3430,6 @@ overflow: hidden;
     display: inline-block;
     background-color: red;
     border-radius: 3px;
-    margin-right: 5px;
     margin-top: 10px;
 }
 
@@ -3474,18 +3443,6 @@ overflow: hidden;
     width: 250px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
 }
-
-/* @media(max-width: 300px){
-    .button-apagar-edital, .button-editar-edital{
-        font-size: 12px;
-    }
-} */
-
-
-
-
-
-
 
 
 /* ADM HOME */
