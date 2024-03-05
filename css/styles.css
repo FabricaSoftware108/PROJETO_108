@@ -3355,53 +3355,49 @@ overflow: hidden;
 /* Relatorio Demanda */
 
 
-.relatorio-demanda {
-    padding-top: 50px;
-}
-
-.relatorio-demanda-container {
+.relatorio-demanda .relatorio-demanda-container {
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 2px solid #D9D9D9;
     margin-top: 50px;
     width: 100%;
-    max-width: 900px; /* Define a largura máxima do container */
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.relatorio-demanda-header {
+.relatorio-demanda .relatorio-demanda-header {
     background-color: #1E55D1;
     color: white;
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
 }
 
-.relatorio-demanda-title {
+.relatorio-demanda .relatorio-demanda-title {
     font-size: 30px;
     font-family: var(--font-destaque);
 }
 
-.relatorio-demanda-content {
+.relatorio-demanda .relatorio-demanda-content {
     padding: 20px;
 }
 
-.relatorio-demanda-background {
+.relatorio-demanda .relatorio-demanda-background {
     background-color: #D9D9D9;
     border-radius: 10px;
     padding: 10px;
-    overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
+    overflow-x: auto;
 }
 
-.label-empresa,
-.label-representante,
-.label-cnpj,
-.label-telefone,
-.label-email {
+.relatorio-demanda .label-empresa,
+.relatorio-demanda .label-representante,
+.relatorio-demanda .label-cnpj,
+.relatorio-demanda .label-telefone,
+.relatorio-demanda .label-email {
     background-color: #D9D9D9;
 }
 
-.relatorio-demanda-button {
+.relatorio-demanda .relatorio-demanda-button {
     width: 100%;
     margin-top: 20px;
     border-radius: 10px;
