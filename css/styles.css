@@ -3190,11 +3190,39 @@ overflow: hidden;
 }
 
 /*Cadastro de Carrossel ADM */
-
-#container-novo-carrossel {
-    width: 50000px;
-    height: 2000000px;
+.body-cadastro-de-carrossel.file-label-texto-carrossel {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 12px;
+    height: 50px;
+    z-index: 1;
 }
+.body-cadastro-de-carrossel .file-label-carrossel {
+border: 2px solid rgb(230, 222, 222); 
+border-radius: 20px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
+height: 300px;
+width: 280px;
+}
+
+.body-cadastro-de-carrossel .file-input-carrossel { 
+    display: none; 
+}
+
+.body-cadastro-de-carrossel.input-texto-carrossel{
+    display: flex;
+}
+
+.body-cadastro-de-carrossel h1{
+    background-color: #2b62fc;
+    color: #FFFFFF;
+}
+.body-cadastro-de-carrossel .container-adicionar-carrossel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-cadastro-de-carrossel .wrapper-content-Carrossel {border-radius: 20px}
 
 /* Editar carrossel de imagem ADM */
 
