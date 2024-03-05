@@ -1765,149 +1765,6 @@ main.mainFabricaJogos #effectIntro2 {
     position: absolute;
 }
 
-
-
-
-
-/*Demanda*/
-
-header.cabecalho-Demanda nav {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid black;
-    height: 80px;
-    background-color: white;
-    z-index: 2;
-}
-
-header.cabecalho-Demanda nav img {
-    height: 50px;
-    margin-right: 200px;
-    margin-left: 60px;
-}
-
-header.cabecalho-Demanda nav #menuPages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.cabecalho-Demanda nav ul li {
-    list-style-type: none;
-    padding: none;
-    margin: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header.cabecalho-Demanda nav a {
-    margin-left: 40px;
-    margin-right: 40px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .7);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
-    margin-top: 15px;
-}
-
-
-header.cabecalho-Demanda nav li:nth-child(5) a,
-li:nth-child(6) a {
-    width: 183px;
-}
-
-header.cabecalho-Demanda nav a#logo {
-    margin: 0;
-}
-
-header.cabecalho-Demanda nav a#logo img {
-    box-shadow: none;
-}
-
-header.cabecalho-Demanda nav li #admButton {
-    background-color: rgb(254, 185, 105, 75);
-    border-radius: 40px;
-    height: 40px;
-    width: 120px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-left: 100px;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas {
-    height: fit-content;
-    position: absolute;
-    top: 81px;
-    left: 540px;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    width: 340px;
-    border-radius: 0px 0px 10px 10px;
-    padding-bottom: 15px;
-    justify-content: center;
-    visibility: hidden;
-    z-index: -1;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    transition: all 2ms ease-out;
-
-}
-
-header.cabecalho-Demanda nav ul #menuFabricas li {
-    list-style-type: none;
-    margin-top: 15px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a {
-    text-decoration: none;
-    color: black;
-    height: 0px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 0;
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fs:hover {
-    color: rgba(43, 20, 99, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fj:hover {
-    color: rgba(139, 26, 26, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fcg:hover {
-    color: rgba(226, 153, 26, 1);
-}
-
-header.cabecalho-Demanda nav ul#menuFabricas a#Fav:hover {
-    color: rgba(66, 176, 48, 1);
-}
-
-header.cabecalho-Demanda nav li:hover a#menuFabricasBtn {
-    height: 80px;
-}
-
-header.cabecalho-Demanda nav li:hover ul#menuFabricas {
-    visibility: visible;
-}
-
 /* PAGINA DEMANDA  */
 
 .body-demanda,
@@ -1939,9 +1796,7 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
     z-index: 1;
 }
 
-.body-demanda .effects#effect2 {
-    z-index: 0;
-  }
+
 
 .body-demanda div.effects-2 {
     content: '';
@@ -1960,17 +1815,16 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 .body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
 .body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
-.body-demanda #container-cadastro-demanda { width: 100%; background-color: #281358; border-radius: 15px; }
+.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
 
-.subtitle-demanda h1{
+.body-demanda .subtitle-demanda h1{
     font-size: 40px;
     font-family: var(--font-destaque);
     font-weight: 530;
     padding: 30px 0;
 }
-
 
 
 @media (min-width: 1780px) { 
@@ -1998,8 +1852,15 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 }
 @media (max-width: 1200px) {
  
-    .body-demanda .effects, .effects-2 {
+    .body-bancoTalentos .effects, .effects-2 {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+ 
+    .body-bancoTalentos #title-bancoTalento p {
+        font-size: 13px !important;
     }
 }
 
@@ -2278,6 +2139,82 @@ header.cabecalho-Demanda nav li:hover ul#menuFabricas {
 
 
 
+/* PÁGINA BANCO DE TALENTOS */
+
+
+.body-bancoTalentos {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.body-bancoTalentos main #title-bancoTalento h1{
+    font-family: var(--font-destaque);
+    font-size: var(--font-size-titulo);
+    margin-top: 130px;
+    color: var(--font-color-pag-title-subtitle);
+    font-weight: bold;
+}
+
+.body-bancoTalentos main #title-bancoTalento p{
+    font-family: var(--font-destaque);
+    font-size: 15px;
+    padding: 20px 0 0 0;
+    color: var(--font-color-pag-title-subtitle);
+    font-weight: 300;
+}
+
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
+
+.body-bancoTalentos .subtitle-bancoTalento h1{
+    font-size: 40px;
+    font-family: var(--font-destaque);
+    font-weight: 530;
+    padding: 30px 0;
+}
+.body-bancoTalentos #container-bancoTalento-inputs{
+    padding:  0 50px;
+}
+
+.body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
+.body-bancoTalentos main #button-submit-bancoTalento  {margin: 30px 0;}
+
+
+.body-bancoTalentos main .cadastrovagas-bancoTalento {
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.body-bancoTalentos div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 0;
+  }
+
+.body-bancoTalentos div.effects-2 {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #4815c2;
+    opacity: 70%;
+    z-index: 0; 
+}
+
+
+
+
 /*Cadastro Fabrica Software*/
 
 main.cadastroFabrica-Software {
@@ -2356,6 +2293,222 @@ input.cadastroFabrica-Software {
 
 #sub-titulo-white-cadastroFabrica-Software {
     color: #FFFFFF;
+}
+
+
+/* ! Contéudos dentro Cadastro Admin ! */
+
+.cadastro-adm .cadastro-adm-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-adm .cadastro-adm-centered .row {
+    width: 100%;
+    margin: 100px 0 0 0 ;
+}
+
+.cadastro-adm .col-md-4{
+    margin:0;
+}
+
+
+.cadastro-adm .col-md-4{
+    margin: 0;
+}
+
+.cadastro-adm .cadastro-adm-container-1 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin: 0;
+    width: 500px;
+}
+.cadastro-adm .cadastro-adm-container-2 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin: 0;
+    width: 500px;
+}
+
+.cadastro-adm .cadastro-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 30px;
+    font-family: var(--font-destaque);
+    border-radius: 10px 10px 0 0;
+}
+
+
+.cadastro-adm .cadastro-adm-input {
+    background-color: #D9D9D9; 
+}
+
+.cadastro-adm .cadastro-adm-input-container {
+    margin-bottom: 30px; 
+    text-align: left; 
+}
+
+.cadastro-adm-input-container {
+    padding: 20px 30px 0;
+    font-family: var(--font-destaque);
+}
+
+.cadastro-adm .cadastro-adm-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.cadastro-adm .cadastro-adm-button {
+    width: 90%;
+    margin: 40px 0 20px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 445px) {
+    #area-adm{
+        font-size: 1rem !important;
+        font-family: var(--font-destaque);
+    }
+}
+
+@media (max-width: 1204px) {
+    .cadastro-adm-container-title {
+        font-size: 20px !important;
+        font-family: var(--font-destaque);
+    }
+    .cadastro-adm-label,
+    .cadastro-adm-nome-aleatorio {
+        font-size: 15px !important;
+        font-family: var(--font-destaque);
+    }
+}
+
+@media (max-width: 528px) {
+    .cadastro-adm-container-1 {
+        margin-top: 100px !important;
+    }
+}
+
+/* Toggle Switches e conteudos do container de Administradores do Cadastro Admin */
+
+
+.cadastro-adm .cadastro-adm-switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+  
+.cadastro-adm .cadastro-adm-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.cadastro-adm .cadastro-adm-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #1BC300;
+    border-radius: 34px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000;
+}
+  
+.cadastro-adm .cadastro-adm-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    right: 4px; /* Alterado de left para right */
+    bottom: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.cadastro-adm .cadastro-adm-switch input:checked + .cadastro-adm-slider {
+    background-color: #C30000;
+}
+  
+.cadastro-adm .cadastro-adm-switch input:checked + .cadastro-adm-slider:before {
+    transform: translateX(-26px);
+}
+  
+.cadastro-adm .cadastro-adm-slider:before {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  
+.cadastro-adm .cadastro-adm-knob {
+    position: absolute;
+    top: 50%;
+    right: 4px; /* Alteração da propriedade left para right */
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}   
+  
+.cadastro-adm .cadastro-adm-switch input:checked ~ .cadastro-adm-knob {
+    transform: translateX(-27px) translateY(-50%);
+}
+  
+.cadastro-adm .cadastro-adm-borda-com-conteudo {
+    border: 1px dotted #000;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px; /* Reduzindo a margem inferior para aproximar os administradores */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
+}
+
+.cadastro-adm .cadastro-adm-nome-aleatorio {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
+    font-size: 24px;
+    font-family: var(--font-destaque);
+}
+
+.cadastro-adm .cadastro-adm-switch-container {
+    position: absolute;
+    bottom: 10px; /* Definindo a posição no final da borda */
+    right: 10px; /* Definindo a posição no final da borda */
+}
+
+
+/* Estilos para as imagens cadastro-adm */
+
+.cadastro-adm .cadastro-adm-img-1 {
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
+    width: 350px; /* Defina a largura desejada */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+    box-shadow: none;
+}
+
+@media (max-width: 1872px) {
+    .cadastro-adm-img-1 {
+        visibility: hidden !important;
+    }
 }
 
 
