@@ -440,6 +440,10 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
+.img-descricao-home{
+    box-shadow: none;
+}
+
 .descricao-home p {
     font-size: 27px;
 }
@@ -3346,6 +3350,22 @@ overflow: hidden;
 }
 
 
+.cadastro-adm-editais .imagem-cadastroEditalADM{
+    position: absolute;
+    bottom:0px;
+    left: -50px;
+    width: 350px;
+    height: auto;
+    box-shadow: none;
+}
+
+@media(max-width:1872px){
+    .imagem-cadastroEditalADM{
+       visibility: hidden !important;
+    }
+}
+
+
 
 
 /* 2 CONTAINER CADASTRO EDITAL ADM*/
@@ -3357,7 +3377,7 @@ overflow: hidden;
     position:relative;
 }
 
-.cadastro-adm-nome-aleatorio {
+.cadastro-adm-nome-aleatorio-edital {
     display: block;
     position: relative;
     padding-left: 30px; /* Espaço para o ícone no início do label */
@@ -3368,7 +3388,7 @@ overflow: hidden;
 
 
 
-.cadastro-adm-nome-aleatorio label {
+.cadastro-adm-nome-aleatorio-edital label {
     display: block;
     position: relative;
     padding-left: 30px; /* Espaço para o ícone no início do label */
@@ -3446,6 +3466,9 @@ overflow: hidden;
 }
 
 
+
+
+
 /* ADM HOME */
 
 .body-adm-home{
@@ -3463,6 +3486,7 @@ overflow: hidden;
         background-repeat:no-repeat;
     }
 }
+
 
 #label-bem-vindos-adm-home{
     margin-top:10rem;
