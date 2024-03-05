@@ -3356,6 +3356,10 @@ overflow: hidden;
     left: -50px;
     width: 350px;
     height: auto;
+    
+}
+
+.cadastro-adm-editais .imagem-cadastroEditalADM img{
     box-shadow: none;
 }
 
