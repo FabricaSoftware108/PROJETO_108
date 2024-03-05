@@ -114,12 +114,58 @@ header.cabecalhoGeral {
     .dropdown-toggle {
         margin-left: 6px;
     }
+
 }
 
 
 /*Fim do cabeçalho com bootstarp*/
 
+@media (max-width: 991px){
+    .content-sobre-home {
+        margin-top: -30px;
+        padding-bottom: 250px;
+    }
+    
+    .wave-top-home svg {
+        margin-top: -150px;
+    }
 
+    .text-fabricas-left-home p{
+        margin-right: -70px;
+    }
+    
+    .text-fabricas-right-home p{
+        margin-left: -70px;
+    }
+
+    .text-fabricas-left-home p a{
+        margin-left: 0px;
+    }
+    
+    .text-fabricas-right-home p a{
+        margin-left: 0px;
+    }
+
+    main.home p{
+        font-size: 20px;
+    }
+
+    main.home a{
+        font-size: 20px;
+    }
+
+    main.home h1{
+        font-size: 30px;
+    }
+
+    .descricao-fabrica-home {
+        font-size: 20px;
+    }
+
+    .btn-soft-home {
+        margin-left: 0;
+    }
+}
 
 
 body.home,
@@ -136,19 +182,14 @@ html.home {
     overflow: hidden auto;
 }
 
-article.home {
-    margin-top: 2cm;
-    color: black;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: white;
-    padding: 15px;
-}
-
 main.home {
     max-width: 1200px;
     margin: 20px auto;
+    margin-top: 100px; 
     padding: 0 20px;
+    color: black;
+    align-items: center;
+    text-align: center;
 }
 
 nav.home {
@@ -292,7 +333,7 @@ nav.home li:hover ul#menuFabricas {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 850px;
+    min-height: 850px;
     position: relative;
     top: 31px;
     box-shadow: 0px 3px 5px 0px black;
@@ -330,13 +371,18 @@ nav.home li:hover ul#menuFabricas {
 
 .content-sobre-home {
     position: relative;
-    margin-left: 460px;
-    margin-right: 460px;
+    padding-top: 90px;
+    padding-bottom: 220px;
 }
 
 .content-sobre-home h1 {
     font-size: var(--font-size-titulo);
     padding-top: 90px;
+}
+
+.content-sobre-home p{
+    font-size: 18px;
+    text-align: justify;
 }
 
 .content-wrapper-home {
@@ -370,12 +416,11 @@ nav.home li:hover ul#menuFabricas {
     position: absolute;
     margin-left: -860px;
     height: 1200px;
-
 }
 
 .wave-top-home svg {
     transform: rotate(-40deg);
-    height: 420px;
+    height: 400px;
 }
 
 .wave-down-home {
@@ -395,62 +440,30 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
-.links-fabricas-home h1 {
-    font-size: 27pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.descricao-home p {
+    font-size: 27px;
 }
 
-.links-fabricas-home article {
-    text-align: center;
+.titulo-fabricas-home{
+    font-size: 56px;
 }
 
-.links-fabricas-home #descricao {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 20pt;
+.fabricas-home {
+    padding-top: 120px;
+}
+
+.text-fabricas-left-home p{
     text-align: justify;
-    font-size: 18pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    font-size: 27px;
+    padding-right: 70px;
 }
 
-.container-left-home {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-}
-
-.container-left-home p {
+.text-fabricas-right-home p{
     text-align: justify;
-    font-size: 18pt;
-    margin-left: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#tituloFabricas-home {
-    margin: 20px 80px;
-}
-
-#textoLeftFabricas-home {
-    margin-left: 0;
-}
-
-.container-right-home {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-}
-
-.container-right-home p {
-    margin: 20px;
-    text-align: justify;
-    font-size: 18pt;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    font-size: 27px;
+    padding-left: 70px;
 }
 
 .container-img-home {
@@ -466,7 +479,7 @@ nav.home li:hover ul#menuFabricas {
 .container-img-home img {
     border-color: white;
     border-radius: 16px;
-    height: 350px;
+    min-height: 350px;
 }
 
 .container-img-home#soft {
@@ -475,7 +488,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #43079C;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #43079C;
-    width: 1100px;
 }
 
 .container-img-home#jogos {
@@ -484,7 +496,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #CF023D;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #CF023D;
-    width: 1100px;
 }
 
 .container-img-home#cgi {
@@ -493,7 +504,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #E1A300;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #E1A300;
-    width: 1100px;
 }
 
 .container-img-home#audiovisual {
@@ -502,7 +512,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #04BA1A;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #04BA1A;
-    width: 1100px;
 }
 
 
@@ -516,8 +525,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #43079C;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-jogos-home {
@@ -530,8 +540,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #CF023D;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-cgi-home {
@@ -544,8 +555,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #E1A300;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-audioVisual-home {
@@ -558,8 +570,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #04BA1A;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-soft-home:hover {
@@ -586,6 +599,18 @@ nav.home li:hover ul#menuFabricas {
     cursor: pointer;
 }
 
+.descricao-fabrica-home {
+    text-align: justify;
+    padding-top: 3%;
+    margin-bottom: 80px;
+    font-size: 27px;
+    
+}
+
+#tituloFabricas-home {
+    padding: 20px 0;
+    font-size: 20px;
+}
 
 /*Fábrica de Software*/
 
@@ -3242,7 +3267,6 @@ overflow: hidden;
         margin:25px;
     }
 }
-
 
 #row-2-adm-home{
     margin-top:18rem;
