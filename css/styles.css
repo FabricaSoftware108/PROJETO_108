@@ -1814,7 +1814,7 @@ main.mainFabricaJogos #effectIntro2 {
 }
 
 .body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
-.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
+.body-demanda .wrapper-all-centainer-demanda {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; }
 .body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
@@ -2137,7 +2137,14 @@ main.mainFabricaJogos #effectIntro2 {
     margin-left: 10px;
 }
 
+input.cadastrovagas {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 7px;
+}
 
+/*  FINAL PÁGINA CADASTRO DE VAGAS*/
 
 /* PÁGINA BANCO DE TALENTOS */
 
@@ -2774,8 +2781,6 @@ main.cadastro-de-vagas {
     }
 }
 
-
-
 input.cadastrovagas {
 
     padding: 15px;
@@ -2784,6 +2789,71 @@ input.cadastrovagas {
     margin-top: 7px;
 }
 
+/*LOGIN ADM*/
+
+body.pag-login-ADM {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    overflow: hidden auto;
+    background-image: url(../Imagens/img_fundo_ADM.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+main.login-ADM {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 8%;
+}
+
+
+.inputs-campos-login-ADM {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+    border-bottom: 2px solid black;
+    margin: 12px auto;
+    margin-top: 20px;
+}
+
+.inputs-login-ADM {
+    margin-top: 40px;
+}
+
+.esqueceuSenha-login-ADM {
+    text-align: center;
+}
+
+.icons-login-ADM_2 {
+    font-size: 50px;
+}
+
+.icons-login-ADM {
+    font-size: 30px;
+}
+
+#container-campos-preenchimento-login-ADM {
+    background-color: #dbdbdbc5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#campos-preenchimento-login-ADM {
+    margin-top: 50px;
+}
+
+.btn-login-ADM {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 5px 6px 0 rgb(112, 112, 112);
+}
+
+/* FIM LOGIN ADM*/
 
 /* Tela de Edital */
 
