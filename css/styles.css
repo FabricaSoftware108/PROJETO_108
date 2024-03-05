@@ -3364,38 +3364,56 @@ overflow: hidden;
 
 /* Relatório Banco de Talento */
 
-body.body-relatorio-banco-talento{
-    padding: 0;
+body.body-relatorio-banco-talento .relatorio_banco_talentos{
     overflow-x: hidden;
 }
-body.body-relatorio-banco-talento .row{
-    border-radius: 2px dashed blue;
+
+body.body-relatorio-banco-talento .relatorio-banco-talento-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-banco-talento .relatorio-banco-talento-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-banco-talento .relatorio-banco-talento-title{
+    font-size: 30px;
+    padding: 20px;
 }
 
-body.body-relatorio-banco-talento  .h1{
-    color: black;
-    padding: 500px;
-    text-align: center;
-    margin: 0;
+body.body-relatorio-banco-talento  .relatorio-banco-talento-content{
+    padding: 20px;
 }
-
-body.body-relatorio-banco-talento .borda_relatorio_banco_talento_azul{
-    background-color: #1E55D1; 
-    color: white; 
-    padding: 0; 
-    display: flex;
+body.body-relatorio-banco-talento .relatorio-banco_talento-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    /* overflow-x: auto; */
+}
+body.body-relatorio-banco-talento .label-nome_banco_talentos,
+body.body-relatorio-banco-talento .label-email_banco_talentos,
+body.body-relatorio-banco-talento .label-cpf_banco_talentos,
+body.body-relatorio-banco-talento .label-telefone_banco_talentos,
+body.body-relatorio-banco-talento .label-linkedin_banco_talentos{
+    background-color: #D9D9D9;
+}
+body.body-relatorio-banco-talento .relatorio-banco_talento-button{
     align-items: center;
-    justify-content: center;
-    border-radius: 20px 20px 0 0;
-    height: 70px;
-    margin-top: 10%;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
 }
-body.body-relatorio-banco-talento .borda_relatorio_banco_talento_branco{
-    border: 2px solid rgb(230, 222, 222); 
-    width: 1200px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
-    height: 570px;
-    margin-top: 26%;
-    border:dashed#000000;
+body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
+    overflow-x: hidden;
+    width: 1000px;
+    /* padding: 10px; */
+    box-sizing: border-box;
 }
