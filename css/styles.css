@@ -3402,3 +3402,7 @@ overflow: hidden;
     margin-top: 20px;
     border-radius: 10px;
 }
+
+.relatorio-demanda .relatorio-demanda-container {
+    bottom: 20px;
+}
