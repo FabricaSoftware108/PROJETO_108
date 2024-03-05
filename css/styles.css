@@ -3115,24 +3115,52 @@ overflow: hidden;
 
 /* 2 container do cadastro de edital ADM*/
 
+
+/* Adicione seu estilo personalizado aqui, se necessário */
+
+.quadro-branco {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cadastro-adm-nome-aleatorio {
+    display: block;
+    position: relative;
+    padding-left: 30px; /* Espaço para o ícone no início do label */
+}
+
+.icon-green, .icon-red {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+
 .quadro-cinza {
     background-color: #D9D9D9; 
     border-radius: 7px;
     margin-top: 45px;
    
 }
-.quadro-branco {
+
+
+/* .quadro-branco {
     background-color: white;
     padding: 10px;
     margin-bottom: 20px; 
-}
+} */
 
 /*input edital container edital ADM*/
 #cadastroAdmEditalProcura{
     margin-top: 56px;
     margin-bottom:53px; 
     text-align: left;
-    
     
 }
     
@@ -3181,6 +3209,13 @@ overflow: hidden;
         font-size: 12px;
     }
 } */
+
+
+
+
+
+
+
 
 /* ADM HOME */
 
