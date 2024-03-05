@@ -3363,6 +3363,7 @@ overflow: hidden;
     padding-left: 30px; /* Espaço para o ícone no início do label */
     padding: 10px;
     border: 5px solid #D9D9D9;  
+    border-radius: 7px;
 }
 
 
@@ -3387,7 +3388,7 @@ overflow: hidden;
    
 }
 
-.quadro-cinza {
+.quadro-cinza-adm-edital {
     background-color: white;
     padding: 1px;
     border-radius: 5px;
@@ -3396,7 +3397,7 @@ overflow: hidden;
 }
 
 
-.quadro-branco {
+.quadro-branco-adm-edital {
     background-color: white; 
     border-radius: 7px;
     margin-top: 45px;
