@@ -3392,8 +3392,8 @@ overflow: hidden;
 }
 
 .relatorio-demanda .relatorio-demanda-label {
-    display: block;
-    margin-bottom: 5px;
+    display: inline-block; /* Alterado para inline-block para exibição horizontal */
+    margin-right: 20px; /* Adicionado margem para separar as labels */
     color: #000;
 }
 
@@ -3426,3 +3426,32 @@ overflow: hidden;
         margin-top: 100px !important;
     }
 }
+
+.relatorio-demanda .relatorio-demanda-list-container {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px;
+    background-color: #D9D9D9;
+}
+
+.relatorio-demanda .relatorio-demanda-distanciamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.relatorio-demanda .relatorio-demanda-background {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.relatorio-demanda .label-empresa,
+.relatorio-demanda .label-representante,
+.relatorio-demanda .label-cnpj,
+.relatorio-demanda .label-telefone,
+.relatorio-demanda .label-email {
+    background-color: #D9D9D9;
+}
+
+/* Estilos adicionais podem ser incluídos conforme necessário */

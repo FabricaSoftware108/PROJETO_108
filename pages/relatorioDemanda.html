@@ -92,36 +92,60 @@
 
 <main class="relatorio-demanda">
     <div class="container-fluid" style="padding-top: 50px;">
-      <div class="container">
-        <div class="relatorio-demanda-centered">
-          <div class="row justify-content-center align-items-center text-center">
-            <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
-              <div class="relatorio-demanda-container-1" style="width: 100%;">
-                <div class="relatorio-demanda-container-title">Relatório de Demandas</div>
-                <div class="relatorio-demanda-distanciamento">
-                  <div class="relatorio-demanda-list-container">
-                    <label for="relatorio-demanda-nome" class="relatorio-demanda-label">Empresa</label>
-                  </div>
-                  <div class="relatorio-demanda-list-container">
-                    <label for="relatorio-demanda-nome" class="relatorio-demanda-label">Representante</label>
-                  </div>
-                  <div class="relatorio-demanda-list-container">
-                    <label for="relatorio-demanda-email" class="relatorio-demanda-label">CNPJ</label>
-                  </div>
-                  <div class="relatorio-demanda-list-container">
-                    <label for="relatorio-demanda-telefone" class="relatorio-demanda-label">Telefone</label>
-                  </div>
-                  <div class="relatorio-demanda-list-container">
-                    <label for="relatorio-demanda-senha" class="relatorio-demanda-label">E-mail</label>
-                  </div>
-                  <button class="btn btn-primary relatorio-demanda-button">Imprimir</button>
+        <div class="container">
+            <div class="relatorio-demanda-centered">
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
+                        <div class="relatorio-demanda-container-1" style="width: 100%;">
+                            <div class="relatorio-demanda-background-container">
+                                <div class="relatorio-demanda-container-2" >
+                                    <div class="relatorio-demanda-container-title">Relatório de Demandas</div>
+                                    <div class="relatorio-demanda-distanciamento">
+                                        <!-- Novo container para o fundo -->
+                                        <div class="relatorio-demanda-background">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="label-empresa">Empresa</th>
+                                                        <th class="label-representante">Representante</th>
+                                                        <th class="label-cnpj">CNPJ</th>
+                                                        <th class="label-telefone">Telefone</th>
+                                                        <th class="label-email">E-mail</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- Criando 15 linhas em cada coluna -->
+                                                    <!-- Preencher as linhas com os dados correspondentes -->
+                                                    <!-- Exemplo com 15 linhas vazias -->
+                                                    <?php for ($i = 0; $i < 15; $i++): ?>
+                                                        <tr>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                            <td>...</td>
+                                                        </tr>
+                                                    <?php endfor; ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- Fim do novo container -->
+                                        <button class="btn btn-primary relatorio-demanda-button">Imprimir</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
         </div>
-      </div>
     </div>
-  </main>
+</main>
+
+
+
+
+
   
 
   <!-- Importando scripts do Bootstrap -->
