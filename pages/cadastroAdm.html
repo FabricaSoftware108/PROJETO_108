@@ -17,76 +17,70 @@
 </head>
 
 <body class="Cadastro-Admin">
-  <header>
+  <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
-      <div class="container-fluid">
-        <div class="md-auto">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <div class="container-fluid">
+            <div class="md-auto">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <a class="navbar-brand me-auto fs-2 fw-bold" id="area-adm" href="#">Área de Administração Hub Fábricas</a>
-        <a class="navbar-brand md-auto fs-6" href="#">Prof Ederson</a>
-        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header ">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>Prof Ederson
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav flex-column pe-3">
-              <li class="nav-item">
-                <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Administradores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" aria-current="page" href="#">Editais</a>
-              </li>
+            </div>
+            <a class="navbar-brand me-auto fs-2 fw-bold" href="#">Área de Administração Hub Fábricas</a>
+            <a class="navbar-brand md-auto fs-6" href="#">Prof Ederson</a>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header ">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>Prof Ederson
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-column pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" href="cadastroAdm.html">Administradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5" aria-current="page" href="editarCarrossel.html">Editais</a>
+                </li>
 
-              <li class="nav-item dropdown-adm">
-                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Fábricas
+                <li class="nav-item dropdown-adm">
+                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fábricas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Cadastrar Fábricas</a></li>
+                    <li><a class="dropdown-item" href="#">Editar Fábricas</a></li>
+                 </ul>
+                </li>
+
+
+                <li class="nav-item dropdown-adm">
+                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Relatórios
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Cadastrar Fábricas</a></li>
-                  <li><a class="dropdown-item" href="#">Editar Fábricas</a></li>
-                </ul>
-              </li>
-
-
-              <li class="nav-item dropdown-adm">
-                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Relatórios
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Edital Aluno</a></li>
-                  <li><a class="dropdown-item" href="#">Edital Empresa</a></li>
-                  <li><a class="dropdown-item" href="#">Banco de Talentos</a></li>
-                  <li><a class="dropdown-item" href="#">Vagas</a></li>
+                    <li><a class="dropdown-item" href="#">Edital Aluno</a></li>
+                    <li><a class="dropdown-item" href="#">Edital Empresa</a></li>
+                    <li><a class="dropdown-item" href="#">Banco de Talentos</a></li>
+                    <li><a class="dropdown-item" href="#">Vagas</a></li>
 
                 </ul>
-              </li>
+                </li>
 
 
-              <li class="nav-item fs-5">
-                <a class="nav-link" href="#">Usuário</a>
-              </li>
-              <li class="nav-item mt-auto mb-2">
-                <a class="nav-link fs-5" href="#">Sair</a>
-              </li>
-            </ul>
-
+                <li class="nav-item fs-5">
+                  <a class="nav-link" href="#">Usuário</a>
+                </li>
+                <li class="nav-item mt-auto mb-2">
+                  <a class="nav-link fs-5" href="#">Sair</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>        
+</header>
 
 <main class="cadastro-adm">
   <div class="container-fluid" style="padding-top: 50px;">
@@ -260,10 +254,7 @@
   </div>
 </main>
 
-  <!-- Importando scripts do Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  
 
   <script src="../js/cadastro-adm.js"></script>
 </body>
