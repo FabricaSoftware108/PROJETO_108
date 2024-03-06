@@ -3667,4 +3667,74 @@ body.body-usuario-adm .row{
 
 .td-class-2-audiovisual {
     background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+
+}
+
+
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+
 }
