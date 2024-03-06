@@ -3357,10 +3357,10 @@ overflow: hidden;
     border: 2px solid rgb(230, 222, 222);
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
-    height: 570px;
-    margin-top: 200px;
+    height: 670px;
+    margin-top: 120px;
     position: relative;
-    left: 500px;
+    left: 1000px;
     width: 500px;
 }
 
@@ -3369,9 +3369,52 @@ overflow: hidden;
 }
 .wrapper-content-usuario h1{
     text-align: center;
-    background-color: blue;
+    background-color: rgba(30, 85, 209, 1);
     color: white;
     border-radius:5px;
 }
 
+.usuario-adm-input-container button  {
+    position: relative;
+    left: 23px;
+    margin-top: 110px;
+    width: 450px;
+}
 
+.usuario-adm-input-container input  {
+    position: relative;
+    left: 23px;
+    margin-top: 5%;
+    width: 450px;
+    top: 10px;
+
+}
+
+.usuario-adm-input-container label  {
+    position: relative;
+    left: 23px;
+    margin-top: 1px;
+    width: 450px;
+    top: 28px;
+}
+
+body.body-usuario-adm #container-usuario-adm{
+    padding: 0;
+}
+
+
+body.body-usuario-adm .img_usuario-adm img{
+    box-shadow: none;
+    margin-top: -46.10%;
+    margin-left: -3%;
+    width: 800px;
+}
+@media (max-width: 1910px){
+    .img-fluid-relatorio-banco_talentos {
+        display: none;
+        box-shadow:none;
+    }
+}
+body.body-usuario-adm .row{
+    border: 2px dashed black;
+}
