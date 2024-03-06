@@ -3250,11 +3250,13 @@ overflow: hidden;
 
 /*tem que usar esse para deixar o cadastro de edital e o editais certo */
     
+/*aqui arruma o cadastro de editas eu acho*/
 .cadastro-adm-editais .cadastro-adm-edital-centered { 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding:50px;
 }
 
 .cadastro-adm-edital-container {
@@ -3267,6 +3269,7 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     text-align: center; 
+    
 
 }
 
@@ -3331,7 +3334,7 @@ overflow: hidden;
     margin-bottom: 8rem;
     top: 40px; /* ditancia que o botão tem do input arquivo*/
     width: 349px;/* largura do botão*/
-    height: 47px; /* comprimento do botão.*/
+    height: 55px; /* comprimento do botão.*/
     border-radius: 10px;
     position: relative;
     font-size: 27px;
@@ -3384,11 +3387,13 @@ overflow: hidden;
 .cadastro-adm-nome-aleatorio-edital {
     display: block;
     position: relative;
-    padding-left: 30px; /* Espaço para o ícone no início do label */
+    padding-left: 20px; /* Espaço para o ícone no início do label */
     padding: 10px;
     border: 5px solid #D9D9D9;  
     border-radius: 7px;
 }
+
+
 
 
 
@@ -3409,8 +3414,29 @@ overflow: hidden;
     height: 20px;
     display: inline-block;
 
-   
 }
+
+.icon-green {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
 
 .quadro-cinza-adm-edital {
     background-color: white;
@@ -3437,26 +3463,6 @@ overflow: hidden;
 }
     
 
-
-
-.icon-green {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: green;
-    border-radius: 3px;
-    margin-top: 10px;
-}
-
-
-.icon-red {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: red;
-    border-radius: 3px;
-    margin-top: 10px;
-}
 
 
 .button-apagar-edital button{
