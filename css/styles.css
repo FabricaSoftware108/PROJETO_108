@@ -3337,8 +3337,11 @@ overflow: hidden;
 
 /*Cadastro de Carrossel ADM */
 #label-texto-carrossel{
-    margin-left: 90%;
+    margin-left: 70%;
 
+}
+#file-input{
+    height: 200px;
 }
 
 .body-cadastro-de-carrossel.file-label-texto-carrossel {
