@@ -3425,7 +3425,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     border: none;
     z-index: -2;
 }
-body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos img{
+body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     box-shadow: none;
 }
 
