@@ -800,92 +800,6 @@ nav.nav-software li:hover ul#menuFabricas {
     box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
 }
 
-/* grade curricular */
-
-.grade-curricular {
-    margin: 90px 0px 90px 0px;
-    color: white;
-    width: 300px;
-}
-
-.container-title-grad {
-    margin: 0 160px;
-    padding: 10px 0;
-}
-
-.container-title-outside {
-    display: flex;
-    font-weight: bold;
-    background-color: var(--color-grad-title);
-    font-size: 13px;
-    color: white;
-    padding: 20px 21px;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    
-}
-.container-title-outside-btn {
-    display: flex;
-    font-weight: bold;
-    background-color: var(--color-grad-title);
-    font-size: 13px;
-    color: white;
-    padding: 20px 21px;
-    border: 1px solid transparent;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-
-.container-grad-table table {
-    width: 100%;
-    border-radius: 10px; 
-    border-collapse: collapse;
-    border-radius: 20px;
-    overflow: hidden;
-    
-}
-
-.container-grad-table th, td {
-    padding: 20px;
-    border: 1px solid rgb(0, 0, 0);
-}
-.dropdown-menu table {
-    width: 100%;
-    border-radius: 10px; 
-    border-collapse: collapse;
-    border-radius: 20px;
-    overflow: hidden;
-    
-}
-
-.dropdown-menu th, td {
-    padding: 20px;
-    border: 1px solid rgb(0, 0, 0);
-}
-
-tr:nth-child(2n) {
-    background-color: #D9D9D9;
-}
-tr:nth-child(1) {
-    background-color: #ffffff;
-}
-tr:nth-child(3) {
-    background-color: #ffffff;
-}
-tr:nth-child(5) {
-    background-color: #ffffff;
-}
-
-.container-title-outside {
-    text-align: center;
-}
-
 /* Rodapé */
 
 #img-js, #img-html{
@@ -2650,7 +2564,7 @@ overflow: hidden;
     box-shadow:none;
 }
 
-/* GRADE DE jogos */
+/* GRADE DE jogos - joao */
 
 #collapseExample1-jogos, #collapseExample2-jogos, #collapseExample3-jogos {
     color: rgb(0, 0, 0);
@@ -2710,4 +2624,211 @@ overflow: hidden;
 
 .td-class-1-jogos, .td-class-2-jogos {
     border: 1px solid black;
+}
+.td-class-2-jogos {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+/* GRADE DE software - joao */
+
+#collapseExample1-software, #collapseExample2-software, #collapseExample3-software {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grade-container-software {
+    text-align: center;
+}
+
+.body-da-grade-software {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #20133E; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-software, .segunda-grade-software, .terceira-grade-software {
+    font-size: 24px;
+}
+
+#botao-grade-software {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+#botao-grade-software:hover{
+    color: #20133E; 
+}
+
+.table-grade-software {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+
+
+}
+
+.th-grade-software, .td-class-1-software, .td-class-2-software {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-software:first-child, .td-class-1-software:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-software:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-software, .td-class-2-software {
+    border: 1px solid black;
+}
+
+.td-class-2-software {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+
+/* GRADE DE cgi - joao*/
+
+#collapseExample1-cgi, #collapseExample2-cgi, #collapseExample3-cgi {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grade-container-cgi {
+    text-align: center;
+}
+
+.body-da-grade-cgi {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E2991A; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-cgi, .segunda-grade-cgi, .terceira-grade-cgi {
+    font-size: 24px;
+}
+
+#botao-grade-cgi {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+.table-grade-cgi {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+
+
+}
+
+.th-grade-cgi, .td-class-1-cgi, .td-class-2-cgi {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-cgi:first-child, .td-class-1-cgi:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-cgi:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-cgi, .td-class-2-cgi {
+    border: 1px solid black;
+}
+
+.td-class-2-cgi {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+
+/* GRADE DE audiovisual - joao */
+
+#collapseExample1-audiovisual, #collapseExample2-audiovisual, #collapseExample3-audiovisual {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grade-container-audiovisual {
+    text-align: center;
+}
+
+.body-da-grade-audiovisual {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #198907; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-audiovisual, .segunda-grade-audiovisual, .terceira-grade-audiovisual {
+    font-size: 24px;
+}
+
+#botao-grade-audiovisual {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+.table-grade-audiovisual {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+
+
+}
+
+.th-grade-audiovisual, .td-class-1-audiovisual, .td-class-2-audiovisual {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-audiovisual:first-child, .td-class-1-audiovisual:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-audiovisual:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-audiovisual, .td-class-2-audiovisual {
+    border: 1px solid black;
+}
+
+.td-class-2-audiovisual {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
 }
