@@ -3421,7 +3421,8 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     top: 74%;
     left: 85%;
     transform: translate(-50%, -50%);
-    box-shadow:none;
+    box-shadow: none;
+    border: none;
 }
 
 
