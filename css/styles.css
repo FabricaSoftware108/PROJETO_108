@@ -3537,135 +3537,6 @@ overflow: hidden;
     background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
 }
 
-/* Relatorio Edital do Aluno ADM */
-
-
-.body-relatorioAluno_adm .container-all-relatorio {
-    border: 2px solid rgb(230, 222, 222);
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200);
-    height: 570px;
-    margin-top: 190px;
-    position: relative;
-    left: 350px;
-    height: 700px;
-    width: 1200px;
-}
-
-.body-relatorioAluno_adm .wrapper-backgroud-relatorioAluno {
-    background-color: #1E55D1; 
-    color: white; 
-    padding: 0; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px 20px 0 0;
-    height: 70px;
-}
-
-
-/*  */
-/* /*  */ */
-/*tem que usar esse para deixar o cadastro de edital e o editais certo */
-    
-.cadastro-adm-editais .cadastro-adm-edital-centered { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.cadastro-adm-edital-container {
-    background-color: #FFFFFF;
-    padding: 0; 
-    border-radius: 10px;
-    border: 2px solid #D9D9D9;
-    width: 560px; /* Definindo largura fixa */
-    height: 718px; /* Definindo altura fixa */
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-
-}
-
-.cadastro-adm-edital-container-title {
-    background-color: #1E55D1;
-    color: white;
-    padding: 10px 20px; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    height: 60px; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    font-size: 40px; 
-}
-
-
-#cadastroAdmEditalInput{
-    background-color: #D9D9D9;
-}
-
-.cadastro-adm-edital-input-container {
-    margin-bottom: 10px; 
-    text-align: left;
-    margin-top:30px;
-    
-}
-
-.cadastro-adm-edital-input-container-date{
-    text-align: left;
-    margin-bottom: 67px;
-      
-}
-
-
-.cadastro-adm-edital-label {
-    display:block;
-    color: #000;
-    margin: 0px;
-  
-    
-}
-
-
-#cadastroAdmEditalDataInicial, #cadastroAdmEditalDataFinal{
-    background-color:#1E55D1;
-    color: white;
-    
-}
-
-#centerDateInicio , #centerDateFinal{
-    margin-top:50px;
-}
-
-
-.cadastro-adm-edital-label-data{
-    margin-top: 11px;
-}
-
-.button-cadastrar-edital-adm button{
-
-    margin-bottom: 8rem;
-    top: 40px; /* ditancia que o botão tem do input arquivo*/
-    width: 349px;/* largura do botão*/
-    height: 47px; /* comprimento do botão.*/
-    border-radius: 10px;
-    position: relative;
-    font-size: 27px;
-    
-      
-}
-
-
-#arquivoAdmInput{
-    margin-top:60px;
-}
-
-#buttonCadastroEditalADM{
-    margin-top: 40px;
-    
-}
 
 /* GRADE DE audiovisual - joao */
 
@@ -3707,94 +3578,19 @@ overflow: hidden;
     width: 100%;
     border: 1px solid black;
     border-top: 1px solid black;
-
+}
 
 
 /* 2 CONTAINER CADASTRO EDITAL ADM*/
 
 #cadastroAdmEditalInputEdital{
-    margin-top: 60px;
+    margin-top: 60px;}
+#relatorioAlunoInputAdm {
     background-color: #D9D9D9;
-    border-radius: 7px;
-    position:relative;
-}
-
-.cadastro-adm-nome-aleatorio {
-    display: block;
-    position: relative;
-    padding-left: 30px; /* Espaço para o ícone no início do label */
-    padding: 10px;
-    border: 5px solid #D9D9D9;  
-    border-radius: 7px;
+    margin-top: -10px;
 }
 
 
-
-.cadastro-adm-nome-aleatorio label {
-    display: block;
-    position: relative;
-    padding-left: 30px; /* Espaço para o ícone no início do label */
-    padding: 10px;
-     
-}
-
-.icon-green, .icon-red {
-    position: absolute;
-    left: 0;
-    top: 12px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-
-   
-}
-
-.quadro-cinza-adm-edital {
-    background-color: white;
-    padding: 1px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-
-.quadro-branco-adm-edital {
-    background-color: white; 
-    border-radius: 7px;
-    margin-top: 45px;
-}
-
-
-
-/*input edital container edital ADM*/
-#cadastroAdmEditalProcura{
-    margin-top: 56px;
-    margin-bottom:53px; 
-    text-align: left;
-}
-    
-
-
-
-.icon-green {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: green;
-    border-radius: 3px;
-    margin-top: 10px;
-}
-
-
-.icon-red {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: red;
-    border-radius: 3px;
-    margin-top: 10px;
-}
 
 .th-grade-audiovisual, .td-class-1-audiovisual, .td-class-2-audiovisual {
     padding: 15px;
@@ -3816,4 +3612,127 @@ overflow: hidden;
 
 .td-class-2-audiovisual {
     background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+
+    margin-left: 5px;
+}
+
+
+/* Relatorio Edital do Aluno ADM */
+
+.body-relatorioAluno_adm {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.body-relatorioAluno_adm .container-all-relatorio {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200);
+    height: 570px;
+    margin-top: 160px;
+    position: relative;
+    left: 45px;
+    height: 700px;
+    width: 1200px;
+    
+}
+
+.body-relatorioAluno_adm .wrapper-backgroud-relatorioAluno {
+    background-color: #1E55D1; 
+    color: rgb(255, 255, 255); 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+
+  /*  */
+ /*  */
+/*  */
+
+.espaco-checkbox-imagem-do-relatorio .caixaMaior-processo_seletivo_do_relatorio-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 800px;
+    left: 600px;
+    
+    
+}
+
+.caixaMaior-processo_seletivo_do_relatorio-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 560px; /* Definindo largura fixa */
+    height: 550px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: auto;
+    
+}
+/* #caixa-processo-seletivo {
+    max-height: 400px;
+    overflow-y: auto;
+    
+} */
+
+
+.caixaMaior-processo_seletivo_do_relatorio-container input {
+    margin-top: -5px;
+    position: relative;
+} 
+
+.texto-edital-aluno-adm {
+    display: block;
+    position: relative;
+    padding-left: 30px; /* Espaço para o ícone no início do label */
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+    right: 110%;
+    margin-top: 10px;
+    
+}
+
+*.texto-edital-aluno-adm label {
+    display: block;
+    position: relative;
+    padding-left: 30px; /* Espaço para o ícone no início do label */
+    padding: 40px;
+}
+
+.icon-green-adm, .icon-red-adm {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.icon-green-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.icon-red-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
 }
