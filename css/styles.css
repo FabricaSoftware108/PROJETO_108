@@ -3418,11 +3418,12 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     width: 440px;
     box-sizing: border-box;
     position: absolute;
-    top: 74%;
-    left: 85%;
+    top: 69%;
+    left: 86.28%;
     transform: translate(-50%, -50%);
     box-shadow: none;
     border: none;
+    z-index: -2;
 }
 
 
@@ -3430,5 +3431,6 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     .img-fluid-relatorio-banco_talentos {
         display: none;
         box-shadow:none;
+        border: none;
     }
 }
