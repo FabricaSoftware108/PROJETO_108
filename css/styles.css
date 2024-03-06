@@ -974,10 +974,32 @@ nav.nav-software li:hover ul#menuFabricas {
     border-radius: 25% 0 0 0;
 }
 
-div.carousel-item{
-    width: 1000px;
-    height: 800px;
+div.carousel-item h5{
+    font-size: 27px;
 }
+
+div.carousel-item p{
+    font-size: 20px;
+}
+
+div.carousel-item img{
+    height: auto;
+    width: 932px;
+}
+
+.carousel-inner {
+    background-color: #B10808;
+}
+
+.carousel-text {
+    background-color: rgba(0, 0, 0, 0.451);
+    margin-bottom: 10px;
+    width: 932px;
+}
+.carousel-item .carousel-img-background{
+    position: relative;
+}
+
 
 @media (max-width:788px) {
     .vermelho-projetos-jogos {
@@ -986,6 +1008,11 @@ div.carousel-item{
     .vermelho-gradec-jogos {
         background-color: #8B1A1A;
         border-radius: 0 0 0 0;
+    }
+    .carousel-text {
+        background-color: rgba(0, 0, 0, 0.451);
+        margin-bottom: 10px;
+        width: 100%;
     }
 }
 
