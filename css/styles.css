@@ -3565,25 +3565,11 @@ overflow: hidden;
 }
 
 /*Cadastro de Carrossel ADM */
+#label-texto-carrossel{
+    margin-left: 90%;
 
-@media(min-width:992px){
-    #label-file-input-carrossel{
-        border-radius:5%;
-        padding:50px;
-    }
-    #label-quadrados-2-adm-home{
-        background-color:#F24607;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
-    #label-quadrados-3-adm-home{
-        background-color:#49D907;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
 }
+
 .body-cadastro-de-carrossel.file-label-texto-carrossel {
     display: inline-flex;
     background-color: white;
@@ -3604,6 +3590,8 @@ width: 280px;
 
 .body-cadastro-de-carrossel .file-input-carrossel { 
     display: none; 
+    position: absolute;
+    margin-left: 10%;
 }
 
 .body-cadastro-de-carrossel.input-texto-carrossel{
