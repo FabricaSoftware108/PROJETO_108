@@ -3406,10 +3406,12 @@ body.body-relatorio-demanda .label-linkedin_demanda{
 }
 body.body-relatorio-demanda .relatorio-demanda-button{
     align-items: center;
-    width: 100px;
     margin-top: 20px;
     border-radius: 10px;
+    max-width: 100px;
+    background-color: #1E55D1
 }
+
 body.body-relatorio-demanda .img-fluid-relatorio-demanda{
     overflow-x: hidden;
     width: 440px;
