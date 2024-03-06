@@ -3354,55 +3354,89 @@ overflow: hidden;
 
 /* Relatorio Demanda */
 
+body.body-relatorio-demanda .relatorio_demanda{
+    overflow-x: hidden;
+}
 
-.relatorio-demanda .relatorio-demanda-container {
+body.body-relatorio-demanda .relatorio-demanda-container{
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 2px solid #D9D9D9;
-    margin-top: 50px;
+    margin-top: 150px;
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
-
-.relatorio-demanda .relatorio-demanda-header {
+body.body-relatorio-demanda .relatorio-demanda-header{
     background-color: #1E55D1;
     color: white;
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
 }
-
-.relatorio-demanda .relatorio-demanda-title {
+body.body-relatorio-demanda .relatorio-demanda-title{
     font-size: 30px;
-    font-family: var(--font-destaque);
-}
-
-.relatorio-demanda .relatorio-demanda-content {
     padding: 20px;
 }
 
-.relatorio-demanda .relatorio-demanda-background {
+body.body-relatorio-demanda .relatorio-demanda-content{
+    padding: 20px;
+}
+body.body-relatorio-demanda .relatorio-demanda-background{
     background-color: #D9D9D9;
     border-radius: 10px;
     padding: 10px;
-    overflow-x: auto;
+    max-height: 510px;
+    overflow-x: auto; 
+}
+body.body-relatorio-demanda .label-titulos-planilha{
+    font-size: 20px;
 }
 
-.relatorio-demanda .label-empresa,
-.relatorio-demanda .label-representante,
-.relatorio-demanda .label-cnpj,
-.relatorio-demanda .label-telefone,
-.relatorio-demanda .label-email {
+body.body-relatorio-demanda .table tr{
+    font-size: 16px;
+}
+
+body.body-relatorio-demanda .label-nome_demanda,
+body.body-relatorio-demanda .label-email_demanda,
+body.body-relatorio-demanda .label-cpf_demanda,
+body.body-relatorio-demanda .label-telefone_demanda,
+body.body-relatorio-demanda .label-linkedin_demanda{
     background-color: #D9D9D9;
 }
-
-.relatorio-demanda .relatorio-demanda-button {
-    width: 100%;
+body.body-relatorio-demanda .relatorio-demanda-button{
+    align-items: center;
+    width: 100px;
     margin-top: 20px;
     border-radius: 10px;
 }
-
-.relatorio-demanda .relatorio-demanda-container {
-    bottom: 20px;
+body.body-relatorio-demanda .img-fluid-relatorio-demanda{
+    overflow-x: hidden;
+    width: 440px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 71%;
+    left: 7.9%;
+    transform: translate(-50%, -50%);
 }
+
+body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
+    box-shadow:none;
+}
+
+@media (max-width: 1910px){
+    .img-fluid-relatorio-demanda img{
+        display: none !important;
+        box-shadow:none !important;
+    }
+}
+
+@media (max-width: 927px){
+    .relatorio-demanda-title{
+        font-size: 20px !important;
+    }
+    .table tr{
+        font-size: 14px !important;
+    }
+}
+
