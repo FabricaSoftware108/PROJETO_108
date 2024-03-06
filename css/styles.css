@@ -114,12 +114,58 @@ header.cabecalhoGeral {
     .dropdown-toggle {
         margin-left: 6px;
     }
+
 }
 
 
 /*Fim do cabeçalho com bootstarp*/
 
+@media (max-width: 991px){
+    .content-sobre-home {
+        margin-top: -30px;
+        padding-bottom: 250px;
+    }
+    
+    .wave-top-home svg {
+        margin-top: -150px;
+    }
 
+    .text-fabricas-left-home p{
+        margin-right: -70px;
+    }
+    
+    .text-fabricas-right-home p{
+        margin-left: -70px;
+    }
+
+    .text-fabricas-left-home p a{
+        margin-left: 0px;
+    }
+    
+    .text-fabricas-right-home p a{
+        margin-left: 0px;
+    }
+
+    main.home p{
+        font-size: 20px;
+    }
+
+    main.home a{
+        font-size: 20px;
+    }
+
+    main.home h1{
+        font-size: 30px;
+    }
+
+    .descricao-fabrica-home {
+        font-size: 20px;
+    }
+
+    .btn-soft-home {
+        margin-left: 0;
+    }
+}
 
 
 body.home,
@@ -136,19 +182,14 @@ html.home {
     overflow: hidden auto;
 }
 
-article.home {
-    margin-top: 2cm;
-    color: black;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: white;
-    padding: 15px;
-}
-
 main.home {
     max-width: 1200px;
     margin: 20px auto;
+    margin-top: 100px; 
     padding: 0 20px;
+    color: black;
+    align-items: center;
+    text-align: center;
 }
 
 nav.home {
@@ -292,7 +333,7 @@ nav.home li:hover ul#menuFabricas {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 850px;
+    min-height: 850px;
     position: relative;
     top: 31px;
     box-shadow: 0px 3px 5px 0px black;
@@ -330,13 +371,18 @@ nav.home li:hover ul#menuFabricas {
 
 .content-sobre-home {
     position: relative;
-    margin-left: 460px;
-    margin-right: 460px;
+    padding-top: 90px;
+    padding-bottom: 220px;
 }
 
 .content-sobre-home h1 {
     font-size: var(--font-size-titulo);
     padding-top: 90px;
+}
+
+.content-sobre-home p{
+    font-size: 18px;
+    text-align: justify;
 }
 
 .content-wrapper-home {
@@ -370,12 +416,11 @@ nav.home li:hover ul#menuFabricas {
     position: absolute;
     margin-left: -860px;
     height: 1200px;
-
 }
 
 .wave-top-home svg {
     transform: rotate(-40deg);
-    height: 420px;
+    height: 400px;
 }
 
 .wave-down-home {
@@ -395,62 +440,34 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
-.links-fabricas-home h1 {
-    font-size: 27pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.img-descricao-home{
+    box-shadow: none;
 }
 
-.links-fabricas-home article {
-    text-align: center;
+.descricao-home p {
+    font-size: 27px;
 }
 
-.links-fabricas-home #descricao {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 20pt;
+.titulo-fabricas-home{
+    font-size: 56px;
+}
+
+.fabricas-home {
+    padding-top: 120px;
+}
+
+.text-fabricas-left-home p{
     text-align: justify;
-    font-size: 18pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    font-size: 27px;
+    padding-right: 70px;
 }
 
-.container-left-home {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-}
-
-.container-left-home p {
+.text-fabricas-right-home p{
     text-align: justify;
-    font-size: 18pt;
-    margin-left: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#tituloFabricas-home {
-    margin: 20px 80px;
-}
-
-#textoLeftFabricas-home {
-    margin-left: 0;
-}
-
-.container-right-home {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
-}
-
-.container-right-home p {
-    margin: 20px;
-    text-align: justify;
-    font-size: 18pt;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    font-size: 27px;
+    padding-left: 70px;
 }
 
 .container-img-home {
@@ -466,7 +483,7 @@ nav.home li:hover ul#menuFabricas {
 .container-img-home img {
     border-color: white;
     border-radius: 16px;
-    height: 350px;
+    min-height: 350px;
 }
 
 .container-img-home#soft {
@@ -475,7 +492,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #43079C;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #43079C;
-    width: 1100px;
 }
 
 .container-img-home#jogos {
@@ -484,7 +500,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #CF023D;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #CF023D;
-    width: 1100px;
 }
 
 .container-img-home#cgi {
@@ -493,7 +508,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #E1A300;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #E1A300;
-    width: 1100px;
 }
 
 .container-img-home#audiovisual {
@@ -502,7 +516,6 @@ nav.home li:hover ul#menuFabricas {
     background-color: #04BA1A;
     outline-offset: 0.2rem;
     outline: 0.2rem solid #04BA1A;
-    width: 1100px;
 }
 
 
@@ -516,8 +529,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #43079C;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-jogos-home {
@@ -530,8 +544,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #CF023D;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-cgi-home {
@@ -544,8 +559,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #E1A300;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-audioVisual-home {
@@ -558,8 +574,9 @@ nav.home li:hover ul#menuFabricas {
     border-color: #04BA1A;
     color: black;
     transition: 1s;
-    margin-left: 110pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    margin-left: 130px;
 }
 
 .btn-soft-home:hover {
@@ -586,6 +603,18 @@ nav.home li:hover ul#menuFabricas {
     cursor: pointer;
 }
 
+.descricao-fabrica-home {
+    text-align: justify;
+    padding-top: 3%;
+    margin-bottom: 80px;
+    font-size: 27px;
+    
+}
+
+#tituloFabricas-home {
+    padding: 20px 0;
+    font-size: 20px;
+}
 
 /*Fábrica de Software*/
 
@@ -1789,7 +1818,7 @@ main.mainFabricaJogos #effectIntro2 {
 }
 
 .body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
-.body-demanda .wrapper-all-centainer-demanda {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; }
+.body-demanda .wrapper-all-centainer-demanda {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; }
 .body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
 
 .body-demanda #button-demanda button {margin: 30px 0;}
@@ -1973,6 +2002,8 @@ main.mainFabricaJogos #effectIntro2 {
     z-index: 2;
   }
   
+  
+  
 .body-demanda .file-input { display: none; }
 
 .body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
@@ -2112,7 +2143,14 @@ main.mainFabricaJogos #effectIntro2 {
     margin-left: 10px;
 }
 
+input.cadastrovagas {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 7px;
+}
 
+/*  FINAL PÁGINA CADASTRO DE VAGAS*/
 
 /* PÁGINA BANCO DE TALENTOS */
 
@@ -2284,14 +2322,13 @@ input.cadastroFabrica-Software {
     margin: 100px 0 0 0 ;
 }
 
-.cadastro-adm .col-md-4{
+.cadastro-adm{
     margin:0;
 }
 
 
-.cadastro-adm .col-md-4{
-    margin: 0;
-}
+
+
 
 .cadastro-adm .cadastro-adm-container-1 {
     background-color: #FFFFFF;
@@ -2749,8 +2786,6 @@ main.cadastro-de-vagas {
     }
 }
 
-
-
 input.cadastrovagas {
 
     padding: 15px;
@@ -2759,6 +2794,71 @@ input.cadastrovagas {
     margin-top: 7px;
 }
 
+/*LOGIN ADM*/
+
+body.pag-login-ADM {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    overflow: hidden auto;
+    background-image: url(../Imagens/img_fundo_ADM.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+main.login-ADM {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 8%;
+}
+
+
+.inputs-campos-login-ADM {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+    border-bottom: 2px solid black;
+    margin: 12px auto;
+    margin-top: 20px;
+}
+
+.inputs-login-ADM {
+    margin-top: 40px;
+}
+
+.esqueceuSenha-login-ADM {
+    text-align: center;
+}
+
+.icons-login-ADM_2 {
+    font-size: 50px;
+}
+
+.icons-login-ADM {
+    font-size: 30px;
+}
+
+#container-campos-preenchimento-login-ADM {
+    background-color: #dbdbdbc5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#campos-preenchimento-login-ADM {
+    margin-top: 50px;
+}
+
+.btn-login-ADM {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 5px 6px 0 rgb(112, 112, 112);
+}
+
+/* FIM LOGIN ADM*/
 
 /* Tela de Edital */
 
@@ -3102,6 +3202,281 @@ overflow: hidden;
   font-size: 13px;
 }
 
+
+
+
+
+
+
+/*CSS CADASTRO ADM  EDITAL*/ 
+
+.body-cadastro-adm-edital .file-input {display: none;}
+.body-cadastro-adm-edital .file-label p{ color: #04BA1A; padding-bottom: 15px; }
+
+
+.body-cadastro-adm-edital .file-label p{
+    color: #04BA1A;
+    margin-top: 2.5%;
+    
+}
+
+
+.body-cadastro-adm-edital .file-label {
+    display: inline-flex;
+    background-color: #D9D9D9;
+    color: grey;
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 12px;
+    height: 50px;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+    margin-top: 40px;
+  }
+
+
+
+@media(max-width: 300px){
+    #tituloCabecalhoADMEdital h1{
+        font-size: 27px;
+        color: white;
+      
+        
+    }
+    }
+
+
+/*tem que usar esse para deixar o cadastro de edital e o editais certo */
+    
+/*aqui arruma o cadastro de editas eu acho*/
+.cadastro-adm-editais .cadastro-adm-edital-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cadastro-adm-edital-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 560px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    
+
+}
+
+.cadastro-adm-edital-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+
+#cadastroAdmEditalInput{
+    background-color: #D9D9D9;
+}
+
+.cadastro-adm-edital-input-container {
+    margin-bottom: 10px; 
+    text-align: left;
+    margin-top:30px;
+    
+}
+
+.cadastro-adm-edital-input-container-date{
+    text-align: left;
+    margin-bottom: 67px;
+      
+}
+
+
+.cadastro-adm-edital-label {
+    display:block;
+    color: #000;
+    margin: 0px;
+  
+    
+}
+
+
+#cadastroAdmEditalDataInicial, #cadastroAdmEditalDataFinal{
+    background-color:#1E55D1;
+    color: white;
+    
+}
+
+#centerDateInicio , #centerDateFinal{
+    margin-top:50px;
+}
+
+
+.cadastro-adm-edital-label-data{
+    margin-top: 11px;
+}
+
+.button-cadastrar-edital-adm button{
+
+    margin-bottom: 8rem;
+    top: 40px; /* ditancia que o botão tem do input arquivo*/
+    width: 349px;/* largura do botão*/
+    height: 55px; /* comprimento do botão.*/
+    border-radius: 10px;
+    position: relative;
+    font-size: 27px;
+    
+      
+}
+
+
+#arquivoAdmInput{
+    margin-top:60px;
+}
+
+#buttonCadastroEditalADM{
+    margin-top: 40px;
+    
+}
+
+
+.cadastro-adm-editais .imagem-cadastroEditalADM{
+    position: absolute;
+    bottom:0px;
+    left: -50px;
+    width: 350px;
+    height: auto;
+    
+}
+
+.cadastro-adm-editais .imagem-cadastroEditalADM img{
+    box-shadow: none;
+}
+
+@media(max-width:1872px){
+    .imagem-cadastroEditalADM{
+       visibility: hidden !important;
+    }
+}
+
+
+
+
+/* 2 CONTAINER CADASTRO EDITAL ADM*/
+
+#cadastroAdmEditalInputEdital{
+    margin-top: 60px;
+    background-color: #D9D9D9;
+    border-radius: 7px;
+    position:relative;
+}
+
+.cadastro-adm-nome-aleatorio-edital {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+}
+
+
+
+
+/* 
+.cadastro-adm-nome-aleatorio-edital label {
+    display: block;
+    position: relative;
+    padding-left: 30px; 
+    padding: 10px;
+     
+} */
+
+.icon-green, .icon-red {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.icon-green {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.quadro-cinza-adm-edital {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.quadro-branco-adm-edital {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+
+
+/*input edital container edital ADM*/
+#cadastroAdmEditalProcura{
+    margin-top: 56px;
+    margin-bottom:53px; 
+    text-align: left;
+}
+    
+
+
+
+.button-apagar-edital button{
+    width: 250px;/* largura do botão*/
+    height: 50px; /* comprimento do botão.*/
+}
+
+.button-editar-edital  button{
+    width: 250px;/* largura do botão*/
+    height: 50px; /* comprimento do botão.*/
+}
+
+
+
+
+
 /* ADM HOME */
 
 .body-adm-home{
@@ -3119,6 +3494,7 @@ overflow: hidden;
         background-repeat:no-repeat;
     }
 }
+
 
 #label-bem-vindos-adm-home{
     margin-top:10rem;
@@ -3172,7 +3548,6 @@ overflow: hidden;
         margin:25px;
     }
 }
-
 
 #row-2-adm-home{
     margin-top:18rem;
@@ -3243,72 +3618,25 @@ width: 280px;
 
 .body-cadastro-de-carrossel .wrapper-content-Carrossel {border-radius: 20px}
 
-/* Editar carrossel de imagem ADM */
-
-.body-editarCarrossel{
-    overflow-x:hidden;
+.cadastro-adm-editais .imagem-cadastroEditalADM{
+    position:absolute;
+    left: -53px;
+    width: 350px;
+    height: auto;
+    box-shadow: none;
+    top:178px;
+    z-index: -1;
+  
 }
 
-.body-editarCarrossel .btn_editar_carrossel-soft {
-    width: 100%;
-    height: 100%;
-    padding: 15px 0;
-    font-size: 20px;
-    font-family: var(--font-destaque);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
-}
-
-.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
-
-
-.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
-
-.body-editarCarrossel .img-fluid-carrossel {
-    position: absolute;
-    top: 71%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    box-shadow:none;
-}
-
-@media (max-width: 966px){
-    .img-fluid-carrossel {
-        display: none;
-        box-shadow:none;
-    }
-}
-
-.body-editarCarrossel .wrapper-background-editarCarrossel {
-    background-color: #1E55D1; 
-    color: white; 
-    padding: 0; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px 20px 0 0;
-    height: 70px;
-}
-
-.wrapper-content-Carrossel {margin-top: 200px;}
-
-
-@media (max-width: 576px) {
-    .main-editarCarrossel {
-        width: 100%;
-        height: 100%;
-    }
-    .text_editar_carrossel h1{
-        font-size: 15px !important;
-    }
-    .btn_editar_carrossel-soft {
-        font-size: 15px;
+@media(max-width: 500px){
+    .imagem-cadastroEditalADM{
+        visibility: hidden !important;
     }
 }
 
 
-.caixa_fabricas_adm {
-    margin: 0;
-}
+
 
 
 
