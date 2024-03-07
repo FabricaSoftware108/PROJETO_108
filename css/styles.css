@@ -3382,6 +3382,11 @@ body.body-relatorio-demanda .relatorio-demanda-title{
 body.body-relatorio-demanda .relatorio-demanda-content{
     padding: 20px;
 }
+
+body.relatorio_demanda #table-relatorio-demanda{
+    max-height: 500px;
+    overflow-y: auto;
+}
 body.body-relatorio-demanda .relatorio-demanda-background{
     background-color: #D9D9D9;
     border-radius: 10px;
@@ -3473,9 +3478,6 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
     .label-telefone_demanda,
     .label-email_demanda{
         font-size: 9px !important;
-    }
-    .table-2 tr{
-        font-size: 5px !important;
     }
 }
 
