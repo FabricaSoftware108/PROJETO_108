@@ -4057,7 +4057,7 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
     text-align: center; 
     margin-top: -60px;
     max-height: 600px;
-    overflow-y: auto;
+    overflow: auto;
     
 }
 
@@ -4065,6 +4065,10 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
     margin-top: -5px;
     position: relative;
 } 
+
+.wrapper-content-relatorio {
+    overflow-y: hidden;
+}
 
 .texto-edital-aluno-adm {
     display: block;
