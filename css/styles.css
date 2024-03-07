@@ -3341,7 +3341,17 @@ overflow: hidden;
 
 }
 #file-input{
-    height: 200px;
+    border-radius: 2%;
+    background-color: rgb(200, 199, 199);
+    width: 350px;
+    height: 400px;
+    margin-left: -30px;
+}
+
+#botaoCadastrar{
+    margin-top: 5%;
+    margin-left: -9%;
+    width: 350px;
 }
 
 .body-cadastro-de-carrossel.file-label-texto-carrossel {
