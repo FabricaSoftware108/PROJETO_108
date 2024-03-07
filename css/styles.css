@@ -3683,7 +3683,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
         box-shadow:none;
     }
 }
-
+/* Fim do relatório do Banco de Talentos */
 .th-grade-audiovisual, .td-class-1-audiovisual, .td-class-2-audiovisual {
     padding: 15px;
     text-align: left;
@@ -4055,3 +4055,56 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
 .caixa_fabricas_adm {
     margin: 0;
 }
+
+
+/* Relatório Edital do Aluno */
+body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
+    overflow-x: hidden;
+}
+
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-edital-do-aluno  .relatorio_edital_do_aluno-content{
+    padding: 20px;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+body.body-relatorio-edital-do-aluno .label-nome_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-cpf_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-cep_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-telefone_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-email_edital_do_aluno{
+    background-color: #D9D9D9;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* Fim do relatório Edital do Aluno */
