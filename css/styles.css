@@ -3683,3 +3683,220 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 .td-class-2-audiovisual {
     background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
 }
+
+
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+/* RELATÓRIO DETALHADO do BANCO DE TALENTOS */ 
+
+.body-relatorio-detalhado-banco-talentos{
+    background-color: #FFFFFF;
+}
+
+.main-relatorio-detalhado-banco-talentos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#relatorio-detalhado-bt-label-azul{
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    font-size: 29px;
+    padding: 15px;
+    border-radius:5px;
+}
+
+
+.relatorio-detalhado-bt-titulo{
+    text-align: center;
+}
+
+.relatorio-detalhado-bt-caixa-branca{
+    margin-top:10rem;
+}
+
+#tabela-relatorio-detalhado-bt{
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px #D9D9D9;
+    background-color: rgb(255, 255, 255);
+}
+
+.relatorio-detalhado-bt-caixa-branca, table{
+    width:100%;
+    table-layout:fixed;
+}
+
+.relatorio-detalhado-br-caixa-branca, th{
+    background-color: #D9D9D9; 
+    padding: 5px;
+    font-size: 15px;
+}
+
+.relatorio-detalhado-br-caixa-branca, td{
+    background-color: #FFFFFF;
+    font-size:14px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    
+}
+
+.info-relatorio-detalhado-bt{
+    padding-left: 30px;
+}
+
+.td-sobre-pessoa-relatorio-detalhado-bt{
+    max-inline-size:150px;
+    writing-mode: horizontal-tb;
+}
+
+#relatorio-detalhado-bt-btn{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#imagem-fundo-relatorio-detalhado-bt img{
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    display: flex;
+    margin-left:68%;
+    position:absolute;
+    margin-top:15%;
+}
+
+@media (max-width: 1910px){
+    #imagem-fundo-relatorio-detalhado-bt img{
+        display:none;
+        box-shadow:none;
+    }
+}
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+}
