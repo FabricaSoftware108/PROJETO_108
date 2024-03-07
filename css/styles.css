@@ -3059,8 +3059,88 @@ overflow: hidden;
     width: 100%;
     border: 1px solid black;
     border-top: 1px solid black;
+}
 
 
+
+
+
+
+
+
+/* Relatório Banco de Talento */
+
+body.body-relatorio-banco-talento .relatorio_banco_talentos{
+    overflow-x: hidden;
+}
+
+body.body-relatorio-banco-talento .relatorio-banco-talento-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-banco-talento .relatorio-banco-talento-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-banco-talento .relatorio-banco-talento-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-banco-talento  .relatorio-banco-talento-content{
+    padding: 20px;
+}
+body.body-relatorio-banco-talento .relatorio-banco_talento-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+body.body-relatorio-banco-talento .label-nome_banco_talentos,
+body.body-relatorio-banco-talento .label-email_banco_talentos,
+body.body-relatorio-banco-talento .label-cpf_banco_talentos,
+body.body-relatorio-banco-talento .label-telefone_banco_talentos,
+body.body-relatorio-banco-talento .label-linkedin_banco_talentos{
+    background-color: #D9D9D9;
+}
+body.body-relatorio-banco-talento .relatorio-banco_talento-button{
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
+    overflow-x: hidden;
+    width: 440px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 69%;
+    left: 14.90%;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+    border: none;
+    z-index: -2;
+}
+body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
+    box-shadow: none;
+}
+
+
+@media (max-width: 1910px){
+    .img-fluid-relatorio-banco_talentos {
+        display: none;
+        box-shadow:none;
+    }
 }
 
 .th-grade-audiovisual, .td-class-1-audiovisual, .td-class-2-audiovisual {
