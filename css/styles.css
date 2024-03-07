@@ -3551,6 +3551,7 @@ overflow: hidden;
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    
 
 }
 
@@ -3574,6 +3575,10 @@ overflow: hidden;
     border: none;
     height: 50px;
     padding: 0 15px;
+}
+
+.main-usuarioAdm .content-arrow-user {
+    padding: 5px 0;
 }
 
 .main-usuarioAdm .content-user {padding: 20px 30px;}
