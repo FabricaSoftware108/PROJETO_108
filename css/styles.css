@@ -3311,11 +3311,12 @@ overflow: hidden;
 
 #botao-grade-jogos {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
 }
 
 .table-grade-jogos {
@@ -3376,11 +3377,12 @@ overflow: hidden;
 
 #botao-grade-software {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
 }
 
 #botao-grade-software:hover{
@@ -3447,11 +3449,13 @@ overflow: hidden;
 
 #botao-grade-cgi {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
+
 }
 
 .table-grade-cgi {
@@ -3514,11 +3518,12 @@ overflow: hidden;
 
 #botao-grade-audiovisual {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
 }
 
 .table-grade-audiovisual {
