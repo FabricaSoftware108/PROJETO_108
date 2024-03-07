@@ -947,14 +947,40 @@ nav.nav-software li:hover ul#menuFabricas {
     background-color: #8B1A1A;
 }
 
+.imgCloud {
+    opacity: 10%;
+    height: 0;
+    position: relative;
+    left: 80%;
+}
+
+.imgCloud img{
+    height: 200px;
+}
+
+.vermelho-introdu-jogos h1{
+    font-size: 57px;
+    text-align: justify;
+}
+
 .vermelho-introdu-jogos p{
     font-size: 27px;
     text-align: justify;
 }
 
+.vermelho-introdu-jogos .btn{
+    font-size: 27px;
+    text-align: center;
+    background-color: #8B1A1A;
+}
+
 .vermelho-projetos-jogos {
     background-color: #8B1A1A;
     border-radius: 0 20% 20% 0;
+}
+
+.vermelho-projetos-jogos p{
+    font-size: 27px;
 }
 
 .vermelho-requisitos-jogos {
@@ -974,6 +1000,7 @@ nav.nav-software li:hover ul#menuFabricas {
     border-radius: 25% 0 0 0;
 }
 
+
 div.carousel-item h5{
     font-size: 27px;
 }
@@ -982,10 +1009,11 @@ div.carousel-item p{
     font-size: 20px;
 }
 
-div.carousel-item img{
+div.carousel-item img#carouselImg{
     height: auto;
-    width: 932px;
+    width: 600px;
 }
+
 
 .carousel-inner {
     background-color: #B10808;
@@ -994,7 +1022,8 @@ div.carousel-item img{
 .carousel-text {
     background-color: rgba(0, 0, 0, 0.451);
     margin-bottom: 10px;
-    width: 932px;
+    width: 600px;
+    color: white;
 }
 .carousel-item .carousel-img-background{
     position: relative;
@@ -2844,7 +2873,7 @@ overflow: hidden;
 
 #botao-grade-jogos {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 100px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
@@ -2860,6 +2889,8 @@ overflow: hidden;
 
 
 }
+
+
 
 .th-grade-jogos, .td-class-1-jogos, .td-class-2-jogos {
     padding: 15px;
@@ -2910,12 +2941,12 @@ overflow: hidden;
 
 #botao-grade-software {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 100px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
-
+    
 }
 
 #botao-grade-software:hover{
@@ -2927,8 +2958,8 @@ overflow: hidden;
     width: 100%;
     border: 1px solid black;
     border-top: 1px solid black;
-
-
+    
+    
 }
 
 .th-grade-software, .td-class-1-software, .td-class-2-software {
@@ -2982,13 +3013,13 @@ overflow: hidden;
 
 #botao-grade-cgi {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 100px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
-
-
+    
+    
 }
 
 .table-grade-cgi {
@@ -2996,8 +3027,8 @@ overflow: hidden;
     width: 100%;
     border: 1px solid black;
     border-top: 1px solid black;
-
-
+    
+    
 }
 
 .th-grade-cgi, .td-class-1-cgi, .td-class-2-cgi {
@@ -3051,12 +3082,12 @@ overflow: hidden;
 
 #botao-grade-audiovisual {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 100px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
-
+    
 }
 
 .table-grade-audiovisual {
@@ -3068,6 +3099,19 @@ overflow: hidden;
 
 
 
+@media (max-width: 650px) {
+    #botao-grade-jogos, #botao-grade-cgi, #botao-grade-software, #botao-grade-audiovisual {
+        font-size: 19px; /* tamanho da fonte do botão */ 
+
+    
+    }
+
+    .table-grade-jogos, .table-grade-audiovisual, .table-grade-cgi, .table-grade-software {
+        font-size: 15px;
+    
+    
+    }
+}
 
 
 
