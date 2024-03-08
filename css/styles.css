@@ -440,10 +440,6 @@ nav.home li:hover ul#menuFabricas {
     height: 110%;
 }
 
-.img-descricao-home{
-    box-shadow: none;
-}
-
 .descricao-home p {
     font-size: 27px;
 }
@@ -843,6 +839,235 @@ nav.nav-software li:hover ul#menuFabricas {
     background-color: rgba(43, 20, 99, 1);
     border-radius: 260px 0 0 0;
     box-shadow: -100px -60px 60px -92px rgba(45, 0, 148, 1);
+}
+
+/* grade curricular */
+
+.grade-curricular {
+    margin: 90px 0px 90px 700px;
+    color: white;
+    width: 300px;
+}
+
+.container-title-grad {
+    margin: 0 160px;
+    padding: 10px 0;
+}
+
+.container-title-outside {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+    padding: 20px 21px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.container-title-outside-btn {
+    display: flex;
+    font-weight: bold;
+    background-color: var(--color-grad-title);
+    font-size: 13px;
+    color: white;
+    padding: 20px 21px;
+    border: 1px solid transparent;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.container-grad-table table {
+    width: 100%;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+th,
+td {
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+tr:nth-child(2n) {
+    background-color: #D9D9D9;
+}
+
+tr:nth-child(1) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(3) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(5) {
+    background-color: #ffffff;
+}
+
+.container-title-outside {
+    text-align: center;
+}
+
+
+
+/* carrosel */
+
+.Body-Fabrica-Software span {
+    font-size: x-large;
+}
+
+.Body-Fabrica-Software .card-img {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+}
+
+@media (max-width: 450px) {
+
+    /*para melhoras a qualidade da imagem deixa limitada */
+    .swiper {
+        height: 270px;
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    /*Substitua #ff0000 pela cor desejada (código hexadecimal, RGB, etc.)*/
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    /* Largura desejada */
+    height: 60px;
+    /* Altura desejada */
+    font-size: 12px;
+    z-index: -1;
+}
+
+
+.swiper-button-prev {
+    left: 10px;
+    /* Ajusta a posição do botão esquerdo */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-next {
+    right: 10px;
+    /* Ajusta a posição do botão direito */
+    color: black;
+    padding: 20px;
+    /* aqui deixa o botao no formato de circulo*/
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 40px;
+    color: black;
+
+}
+
+.Body-Fabrica-Software .swiper-slide {
+    background-color: rgba(102, 30, 159, 1);
+    z-index: 2;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /*define que todos os elementos <img> terão uma largura de 100% quando a largura da tela atender a esse critério.*/
+    img {
+        width: 100%;
+    }
+}
+
+.swiper {
+    height: 500px;
+    z-index: -2;
+}
+
+.swiper-slide {
+    text-align: justify;
+    /*arruma o texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    font-size: 22px;
+    color: aliceblue;
+    overflow: hidden;
+    margin: 4rem;
+    font-family: var(--font-grad-title);
+
+    text-overflow: ellipsis;
+    /*Adiciona reticências se o texto estiver cortado, exemplo: o curso tal oferece...*/
+    display: -webkit-box;
+    /*delimita o texto que vc coloca*/
+    -webkit-line-clamp: 8;
+    /*Definir a quantidade de linhas*/
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+}
+
+.card-image {
+    max-width: 40%;
+    height: auto;
+    width: 400rem;
+    margin: 1rem;
+}
+
+.card-img {
+    border-radius: 5px;
+}
+
+.swiper-slide {
+
+    width: 100%;
+    height: 100%;
+}
+
+.position {
+    width: 1500px;
+    /* NÃO MECHER AQUIIIII AQUI ARRUMA A LARGURA DO CARROSSEL.*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projeto-carrossel {
+    height: 12rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.projeto-carrossel h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 56px;
+    margin-top: 100px;
+}
+
+.projeto-carrossel p {
+    color: white;
+    text-align: center;
+    margin: 50px;
+    font-size: 27px;
 }
 
 /* Rodapé */
@@ -1773,8 +1998,6 @@ main.mainFabricaJogos #effectIntro2 {
     z-index: 2;
   }
   
-  
-  
 .body-demanda .file-input { display: none; }
 
 .body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
@@ -2093,13 +2316,14 @@ input.cadastroFabrica-Software {
     margin: 100px 0 0 0 ;
 }
 
-.cadastro-adm{
+.cadastro-adm .col-md-4{
     margin:0;
 }
 
 
-
-
+.cadastro-adm .col-md-4{
+    margin: 0;
+}
 
 .cadastro-adm .cadastro-adm-container-1 {
     background-color: #FFFFFF;
@@ -2973,281 +3197,6 @@ overflow: hidden;
   font-size: 13px;
 }
 
-
-
-
-
-
-
-/*CSS CADASTRO ADM  EDITAL*/ 
-
-.body-cadastro-adm-edital .file-input {display: none;}
-.body-cadastro-adm-edital .file-label p{ color: #04BA1A; padding-bottom: 15px; }
-
-
-.body-cadastro-adm-edital .file-label p{
-    color: #04BA1A;
-    margin-top: 2.5%;
-    
-}
-
-
-.body-cadastro-adm-edital .file-label {
-    display: inline-flex;
-    background-color: #D9D9D9;
-    color: grey;
-    width: 100%;
-    padding: 6px 12px;
-    border-radius: 12px;
-    height: 50px;
-    align-items: center;
-    font-size: 14px;
-    z-index: 2;
-    margin-top: 40px;
-  }
-
-
-
-@media(max-width: 300px){
-    #tituloCabecalhoADMEdital h1{
-        font-size: 27px;
-        color: white;
-      
-        
-    }
-    }
-
-
-/*tem que usar esse para deixar o cadastro de edital e o editais certo */
-    
-/*aqui arruma o cadastro de editas eu acho*/
-.cadastro-adm-editais .cadastro-adm-edital-centered { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.cadastro-adm-edital-container {
-    background-color: #FFFFFF;
-    padding: 0; 
-    border-radius: 10px;
-    border: 2px solid #D9D9D9;
-    width: 560px; /* Definindo largura fixa */
-    height: 718px; /* Definindo altura fixa */
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    
-
-}
-
-.cadastro-adm-edital-container-title {
-    background-color: #1E55D1;
-    color: white;
-    padding: 10px 20px; 
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-    height: 60px; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    font-size: 40px; 
-}
-
-
-#cadastroAdmEditalInput{
-    background-color: #D9D9D9;
-}
-
-.cadastro-adm-edital-input-container {
-    margin-bottom: 10px; 
-    text-align: left;
-    margin-top:30px;
-    
-}
-
-.cadastro-adm-edital-input-container-date{
-    text-align: left;
-    margin-bottom: 67px;
-      
-}
-
-
-.cadastro-adm-edital-label {
-    display:block;
-    color: #000;
-    margin: 0px;
-  
-    
-}
-
-
-#cadastroAdmEditalDataInicial, #cadastroAdmEditalDataFinal{
-    background-color:#1E55D1;
-    color: white;
-    
-}
-
-#centerDateInicio , #centerDateFinal{
-    margin-top:50px;
-}
-
-
-.cadastro-adm-edital-label-data{
-    margin-top: 11px;
-}
-
-.button-cadastrar-edital-adm button{
-
-    margin-bottom: 8rem;
-    top: 40px; /* ditancia que o botão tem do input arquivo*/
-    width: 349px;/* largura do botão*/
-    height: 55px; /* comprimento do botão.*/
-    border-radius: 10px;
-    position: relative;
-    font-size: 27px;
-    
-      
-}
-
-
-#arquivoAdmInput{
-    margin-top:60px;
-}
-
-#buttonCadastroEditalADM{
-    margin-top: 40px;
-    
-}
-
-
-.cadastro-adm-editais .imagem-cadastroEditalADM{
-    position: absolute;
-    bottom:0px;
-    left: -50px;
-    width: 350px;
-    height: auto;
-    
-}
-
-.cadastro-adm-editais .imagem-cadastroEditalADM img{
-    box-shadow: none;
-}
-
-@media(max-width:1872px){
-    .imagem-cadastroEditalADM{
-       visibility: hidden !important;
-    }
-}
-
-
-
-
-/* 2 CONTAINER CADASTRO EDITAL ADM*/
-
-#cadastroAdmEditalInputEdital{
-    margin-top: 60px;
-    background-color: #D9D9D9;
-    border-radius: 7px;
-    position:relative;
-}
-
-.cadastro-adm-nome-aleatorio-edital {
-    display: block;
-    position: relative;
-    padding-left: 420px; /* Espaço para o ícone no início do label */
-    padding: 10px;
-    border: 5px solid #D9D9D9;  
-    border-radius: 7px;
-}
-
-
-
-
-/* 
-.cadastro-adm-nome-aleatorio-edital label {
-    display: block;
-    position: relative;
-    padding-left: 30px; 
-    padding: 10px;
-     
-} */
-
-.icon-green, .icon-red {
-    position: absolute;
-    left: 0;
-    top: 12px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-
-}
-
-.icon-green {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: green;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left:13px;
-}
-
-
-.icon-red {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: red;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left:13px;
-}
-
-
-.quadro-cinza-adm-edital {
-    background-color: white;
-    padding: 1px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-
-.quadro-branco-adm-edital {
-    background-color: white; 
-    border-radius: 7px;
-    margin-top: 45px;
-}
-
-
-
-/*input edital container edital ADM*/
-#cadastroAdmEditalProcura{
-    margin-top: 56px;
-    margin-bottom:53px; 
-    text-align: left;
-}
-    
-
-
-
-.button-apagar-edital button{
-    width: 250px;/* largura do botão*/
-    height: 50px; /* comprimento do botão.*/
-}
-
-.button-editar-edital  button{
-    width: 250px;/* largura do botão*/
-    height: 50px; /* comprimento do botão.*/
-}
-
-
-
-
-
 /* ADM HOME */
 
 .body-adm-home{
@@ -3265,7 +3214,6 @@ overflow: hidden;
         background-repeat:no-repeat;
     }
 }
-
 
 #label-bem-vindos-adm-home{
     margin-top:10rem;
@@ -3417,11 +3365,12 @@ width: 280px;
 
 #botao-grade-jogos {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
 }
 
 .table-grade-jogos {
@@ -3482,11 +3431,12 @@ width: 280px;
 
 #botao-grade-software {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
 }
 
 #botao-grade-software:hover{
@@ -3553,11 +3503,13 @@ width: 280px;
 
 #botao-grade-cgi {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
+
 }
 
 .table-grade-cgi {
@@ -3620,11 +3572,12 @@ width: 280px;
 
 #botao-grade-audiovisual {
     font-size: 32px; /* tamanho da fonte do botão */ 
-    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    height: 150px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
     border: 1px solid white;
     margin-left: 25px;
     margin-right: 25px;
     /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+
 }
 
 .table-grade-audiovisual {
@@ -3805,6 +3758,137 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 .caixa_fabricas_adm {
     margin: 0;
 }
+
+
+/* Relatorio Demanda */
+
+body.body-relatorio-demanda .relatorio_demanda{
+    overflow-x: hidden;
+}
+
+body.body-relatorio-demanda .relatorio-demanda-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-demanda .relatorio-demanda-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-demanda .relatorio-demanda-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-demanda .relatorio-demanda-content{
+    padding: 20px;
+}
+
+body.relatorio_demanda #table-relatorio-demanda{
+    max-height: 500px;
+    overflow-y: auto;
+}
+body.body-relatorio-demanda .relatorio-demanda-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 510px;
+    overflow-x: auto; 
+}
+body.body-relatorio-demanda .label-titulos-planilha{
+    font-size: 20px;
+}
+
+body.body-relatorio-demanda .table tr{
+    font-size: 16px;
+}
+
+body.body-relatorio-demanda .label-nome_demanda,
+body.body-relatorio-demanda .label-representante_demanda,
+body.body-relatorio-demanda .label-cpf_demanda,
+body.body-relatorio-demanda .label-telefone_demanda,
+body.body-relatorio-demanda .label-email_demanda{
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+body.body-relatorio-demanda .relatorio-demanda-button{
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #1E55D1
+}
+
+body.body-relatorio-demanda .img-fluid-relatorio-demanda{
+    overflow-x: hidden;
+    width: 440px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 71%;
+    left: 7.9%;
+    transform: translate(-50%, -50%);
+}
+
+body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
+    box-shadow:none;
+}
+
+@media (max-width: 1910px){
+    .img-fluid-relatorio-demanda img{
+        display: none !important;
+        box-shadow:none !important;
+    }
+}
+
+
+@media (max-width: 927px){
+    .label-nome_demanda,
+    .label-representante_demanda,
+    .label-cpf_demanda,
+    .label-telefone_demanda,
+    .label-email_demanda{
+        font-size: 16px !important;
+    }
+    .table tr{
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 642px){
+    .label-nome_demanda,
+    .label-representante_demanda,
+    .label-cpf_demanda,
+    .label-telefone_demanda,
+    .label-email_demanda{
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 583px){
+    .label-nome_demanda,
+    .label-representante_demanda,
+    .label-cpf_demanda,
+    .label-telefone_demanda,
+    .label-email_demanda{
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 430px){
+    .label-nome_demanda,
+    .label-representante_demanda,
+    .label-cpf_demanda,
+    .label-telefone_demanda,
+    .label-email_demanda{
+        font-size: 9px !important;
+    }
+}
+
 /* RELATÓRIO DETALHADO do BANCO DE TALENTOS */ 
 
 .body-relatorio-detalhado-banco-talentos{
@@ -3813,6 +3897,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 .main-relatorio-detalhado-banco-talentos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 #relatorio-detalhado-bt-label-azul{
     background-color: #0d6efd;
@@ -3953,4 +4038,93 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 .caixa_fabricas_adm {
     margin: 0;
 }
+
+/* RELATÓRIO DETALHADO VAGAS EMPREGO */ 
+
+.body-relatorio-detalhado-vagas-emprego{
+    background-color: #FFFFFF;
+}
+
+.main-relatorio-detalhado-vagas-emprego{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#relatorio-detalhado-ve-label-azul{
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    font-size: 29px;
+    padding: 15px;
+    border-radius:5px;
+}
+
+
+#tabela-relatorio-detalhado-ve table, th, td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+
+.relatorio-detalhado-ve-titulo{
+    text-align: center;
+}
+
+.relatorio-detalhado-ve-caixa-branca{
+    margin-top:10rem;
+}
+
+#tabela-relatorio-detalhado-ve{
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px #D9D9D9;
+    background-color: rgb(255, 255, 255);
+}
+
+.relatorio-detalhado-ve-caixa-branca, table{
+    width:100%;
+    table-layout:fixed;
+}
+
+.relatorio-detalhado-ve-caixa-branca, th{
+    background-color: #D9D9D9; 
+    padding: 5px;
+    font-size: 15px;
+}
+
+.relatorio-detalhado-ve-caixa-branca, td{
+    background-color: #FFFFFF;
+    font-size:14px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    
+}
+
+.info-relatorio-detalhado-ve{
+    padding-left: 30px;
+}
+
+.td-sobre-pessoa-relatorio-detalhado-ve{
+    max-inline-size:150px;
+    writing-mode: horizontal-tb;
+}
+
+#relatorio-detalhado-ve-btn{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#imagem-fundo-relatorio-detalhado-ve img{
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    display: flex;
+    margin-left:62%;
+    position:absolute;
+    margin-top:15%;
+}
+
+@media (max-width: 1910px){
+    #imagem-fundo-relatorio-detalhado-ve img{
+        display:none;
+        box-shadow:none;
+    }
 }
