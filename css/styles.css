@@ -4010,114 +4010,6 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
 /* RELATÓRIO DETALHADO VAGAS EMPREGO */ 
 
 
-/* Relatorio Edital do Aluno ADM */
-
-.body-relatorioAluno_adm {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-.body-relatorioAluno_adm .container-all-relatorio {
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200);
-    height: 570px;
-    margin-top: 160px;
-    position: relative;
-    left: 45px;
-    height: 700px;
-    width: 1200px;
-    
-}
-
-.body-relatorioAluno_adm .wrapper-backgroud-relatorioAluno {
-    background-color: #1E55D1; 
-    text-align: center;
-    border-radius: 15px 15px 0 0;
-    color: rgb(255, 255, 255);
-}
-
-.espaco-checkbox-imagem-do-relatorio .caixaMaior-processo_seletivo_do_relatorio-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 900px;
-    left: 600px;
-    
-}
-
-.caixaMaior-processo_seletivo_do_relatorio-container {
-    background-color: #FFFFFF;
-    padding: 0; 
-    border-radius: 10px;
-    border: 2px solid #D9D9D9;
-    width: 560px; /* Definindo largura fixa */
-    height: 550px; /* Definindo altura fixa */
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    margin-top: -60px;
-
-    max-height: 600px;
-    overflow-x: auto;
-    
-}
-
-.caixaMaior-processo_seletivo_do_relatorio-container input {
-    margin-top: -5px;
-    position: relative;
-} 
-
-/* .wrapper-content-relatorio {
-    overflow-y: hidden;
-} */
-
-.texto-edital-aluno-adm {
-    display: flex;
-    position: relative;
-    padding-left: 30px; /* Espaço para o ícone no início do label */
-    border: 5px solid #D9D9D9;  
-    border-radius: 7px;
-    right: 450px;
-    margin-top: 10px;    
-}
-
-.texto-edital-aluno-adm label {
-    display: block;
-    position: relative;
-    padding-left: 30px; /* Espaço para o ícone no início do label */
-    padding: 40px;
-}
-
-.icon-green-adm, .icon-red-adm {
-    position: absolute;
-    left: 0;
-    top: 12px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-}
-
-.icon-green-adm {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: green;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-.icon-red-adm {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: red;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
 /* Relatório Edital do Aluno */
 body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
     overflow-x: hidden;
@@ -4593,4 +4485,118 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .button-editar-edital  button{
     width: 250px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
+}
+
+
+/* Relatorio Edital do Aluno ADM */
+
+
+.main-relatorioAluno_adm .relatorio-aluno-adm-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.relatorio-aluno-adm-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 650px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-right: 1200px;
+    /* margin-left: 1200px; */
+}
+
+.relatorio-edital-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px;
+    width: 600px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+.text-relatorio-processo-seletivo {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+}
+
+.icon-green-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+.icon-green-adm, .icon-red-adm {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.quadro-cinza-adm-relatorio {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.quadro-branco-adm-relatorio {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+.imagem-do-relatorio-aluno-adm img {
+    border: none;
+    box-shadow: none;
+    margin-top: 100px;
+    margin-left: 1300px;
+    height: 500px;
+    width: 500px;
+    /* margin-right: 400px; */
+    /* padding: 0 0 0 100px; */
+}
+
+@media (max-width:876px) {
+    .imagem-do-relatorio-aluno-adm {
+        display: none;
+        box-shadow:none;
+
+    }
 }
