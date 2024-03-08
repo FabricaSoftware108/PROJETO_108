@@ -3540,7 +3540,11 @@ overflow: hidden;
     padding: 15px 0;
 
 }
-
+.main-usuarioAdm #button-editar_usuario{
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 37px;
+}
 .main-usuarioAdm #img-usuario-adm img{
     border: none;
     box-shadow: none;
@@ -3557,6 +3561,8 @@ overflow: hidden;
         margin-top: 200px;
     }
 }
+
+
 
 
 /* GRADE DE audiovisual - joao */
