@@ -4074,3 +4074,318 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
         box-shadow:none;
     }
 }
+/* Relatório Edital do Aluno */
+body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
+    overflow-x: hidden;
+}
+
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-edital-do-aluno  .relatorio_edital_do_aluno-content{
+    padding: 20px;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+body.body-relatorio-edital-do-aluno .label-nome_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-cpf_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-cep_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-telefone_edital_do_aluno,
+body.body-relatorio-edital-do-aluno .label-email_edital_do_aluno{
+    background-color: #D9D9D9;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* Fim do relatório Edital do Aluno */
+/*CSS CADASTRO ADM  EDITAL*/ 
+
+.body-cadastro-adm-edital .file-input {display: none;}
+.body-cadastro-adm-edital .file-label p{ color: #04BA1A; padding-bottom: 15px; }
+
+
+.body-cadastro-adm-edital .file-label p{
+    color: #04BA1A;
+    margin-top: 2.5%;
+    
+}
+
+
+.body-cadastro-adm-edital .file-label {
+    display: inline-flex;
+    background-color: #D9D9D9;
+    color: grey;
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 12px;
+    height: 50px;
+    align-items: center;
+    font-size: 14px;
+    z-index: 2;
+    margin-top: 40px;
+  }
+
+
+
+@media(max-width: 300px){
+    #tituloCabecalhoADMEdital h1{
+        font-size: 27px;
+        color: white;
+      
+        
+    }
+    }
+
+
+/*tem que usar esse para deixar o cadastro de edital e o editais certo */
+    
+/*aqui arruma o cadastro de editas eu acho*/
+.cadastro-adm-editais .cadastro-adm-edital-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cadastro-adm-edital-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 560px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    
+
+}
+
+.cadastro-adm-edital-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+
+#cadastroAdmEditalInput{
+    background-color: #D9D9D9;
+}
+
+.cadastro-adm-edital-input-container {
+    margin-bottom: 10px; 
+    text-align: left;
+    margin-top:30px;
+    
+}
+
+.cadastro-adm-edital-input-container-date{
+    text-align: left;
+    margin-bottom: 67px;
+      
+}
+
+
+.cadastro-adm-edital-label {
+    display:block;
+    color: #000;
+    margin: 0px;
+  
+    
+}
+
+
+#cadastroAdmEditalDataInicial, #cadastroAdmEditalDataFinal{
+    background-color:#1E55D1;
+    color: white;
+    
+}
+
+#centerDateInicio , #centerDateFinal{
+    margin-top:50px;
+}
+
+
+.cadastro-adm-edital-label-data{
+    margin-top: 11px;
+}
+
+.button-cadastrar-edital-adm button{
+
+    margin-bottom: 8rem;
+    top: 40px; /* ditancia que o botão tem do input arquivo*/
+    width: 349px;/* largura do botão*/
+    height: 55px; /* comprimento do botão.*/
+    border-radius: 10px;
+    position: relative;
+    font-size: 27px;
+    
+      
+}
+
+
+#arquivoAdmInput{
+    margin-top:60px;
+}
+
+#buttonCadastroEditalADM{
+    margin-top: 40px;
+    
+}
+
+
+.cadastro-adm-editais .imagem-cadastroEditalADM{
+    position: absolute;
+    bottom:0px;
+    left: -50px;
+    width: 350px;
+    height: auto;
+    
+}
+
+.cadastro-adm-editais .imagem-cadastroEditalADM img{
+    box-shadow: none;
+}
+
+@media(max-width:1872px){
+    .imagem-cadastroEditalADM{
+       visibility: hidden !important;
+    }
+}
+
+
+
+
+/* 2 CONTAINER CADASTRO EDITAL ADM*/
+
+#cadastroAdmEditalInputEdital{
+    margin-top: 60px;
+    background-color: #D9D9D9;
+    border-radius: 7px;
+    position:relative;
+}
+
+.cadastro-adm-nome-aleatorio-edital {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+}
+
+
+
+
+/* 
+.cadastro-adm-nome-aleatorio-edital label {
+    display: block;
+    position: relative;
+    padding-left: 30px; 
+    padding: 10px;
+     
+} */
+
+.icon-green, .icon-red {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.icon-green {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.quadro-cinza-adm-edital {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.quadro-branco-adm-edital {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+
+
+/*input edital container edital ADM*/
+#cadastroAdmEditalProcura{
+    margin-top: 56px;
+    margin-bottom:53px; 
+    text-align: left;
+}
+    
+
+
+
+.button-apagar-edital button{
+    width: 250px;/* largura do botão*/
+    height: 50px; /* comprimento do botão.*/
+}
+
+.button-editar-edital  button{
+    width: 250px;/* largura do botão*/
+    height: 50px; /* comprimento do botão.*/
+}
