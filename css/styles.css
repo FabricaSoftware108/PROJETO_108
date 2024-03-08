@@ -4135,6 +4135,7 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
     border-radius: 10px;
 }
 
+
 #imagem-fundo-relatorio-detalhado-ve img{
     width: 300px;
     height: 300px;
@@ -4151,12 +4152,13 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
         box-shadow:none;
     }
 }
-/* Relatório Edital do Aluno */
-body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
+
+/* Relatório Edital da Empresa */
+body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa{
     overflow-x: hidden;
 }
 
-body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{
+body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa-container{
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 2px solid #D9D9D9;
@@ -4166,6 +4168,60 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{
     margin-left: auto;
     margin-right: auto;
 }
+body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-edital-da-empresa  .relatorio_edital_da_empresa-content{
+    padding: 20px;
+}
+body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+body.body-relatorio-edital-da-empresa .label-nome_edital_da_empresa,
+body.body-relatorio-edital-da-empresa .label-representante_edital_da_empresa,
+body.body-relatorio-edital-da-empresa .label-cnpj_edital_da_empresa,
+body.body-relatorio-edital-da-empresa .label-telefone_edital_da_empresa,
+body.body-relatorio-edital-da-empresa .label-email_edital_da_empresa {
+    background-color: #D9D9D9;
+}
+body.body-relatorio-edital-da-empresa .label-representante_edital_da_empresa{
+    white-space: normal; 
+    word-wrap: break-word;
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    body.body-relatorio-edital-da-empresa .label-representante_edital_da_empresa:after {
+        font-size: 10px;
+    }
+}
+
+body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa-button{
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* Fim do Relatório Edital da Empresa */
+
+/* Relatório Edital do Aluno */
+body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
+    overflow-x: hidden;
+}
+
 body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-header{
     background-color: #1E55D1;
     color: white;
@@ -4176,9 +4232,18 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-title{
     font-size: 30px;
     padding: 20px;
 }
-
 body.body-relatorio-edital-do-aluno  .relatorio_edital_do_aluno-content{
     padding: 20px;
+}
+body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-background{
     background-color: #D9D9D9;
@@ -4187,7 +4252,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-background{
     max-height: 400px;
     overflow-y: auto;
 }
-
+    
 body.body-relatorio-edital-do-aluno .label-nome_edital_do_aluno,
 body.body-relatorio-edital-do-aluno .label-cpf_edital_do_aluno,
 body.body-relatorio-edital-do-aluno .label-cep_edital_do_aluno,
@@ -4202,6 +4267,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     border-radius: 10px;
 }
 /* Fim do relatório Edital do Aluno */
+
 /*CSS CADASTRO ADM  EDITAL*/ 
 
 .body-cadastro-adm-edital .file-input {display: none;}
