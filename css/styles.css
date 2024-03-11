@@ -5193,3 +5193,142 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 .caixa_fabricas_adm {
     margin: 0;
 }
+
+/* Relatório de Edital de Empresa*/
+
+
+.main-relatorioEmpresa_adm .relatorio-empresa-adm-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 700px;
+    
+}
+
+.relatorio-empresa-adm-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 650px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    /* margin-left: 1200px; */
+}
+
+.relatorio-edital-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px;
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+.text-relatorio-processo-seletivo {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.icon-green-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+.icon-green-adm, .icon-red-adm {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.quadro-cinza-adm-relatorio {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.quadro-branco-adm-relatorio {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+.imagem-do-relatorio-empresa-adm img {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    box-shadow: none;
+
+}
+
+@media (max-width:1370px) {
+    .main-relatorioEmpresa_adm .imagem-do-relatorio-empresa-adm img {
+        display: none;
+        box-shadow:none;
+
+    }
+    
+    .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
+        margin: 0;
+    }
+    @media (max-width:428px) {
+        .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
+            margin-top: 100px;
+        }
+        .relatorio-edital-adm-container-title h1 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width:751px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:522px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 14px;
+    }
+}
