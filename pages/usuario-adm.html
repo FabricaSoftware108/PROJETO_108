@@ -107,39 +107,41 @@
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Nome</h2>
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" id="nome" readonly />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Cpf</h2>
-                    <input type="text" class="form-control" />
+                    <input type="text" class="form-control" id="cpf" readonly/>
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>E-mail</h2>
-                    <input type="email" class="form-control" />
+                    <input type="email" class="form-control" id="email" readonly/>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Telefone</h2>
-                    <input type="email" class="form-control" />
+                    <input type="text" class="form-control" id="telefone" readonly />
                   </div>
                 </div>
                 <div class="row mb-5">
                   <div class="col-12 justify-content-center align-items-center text-center">
                     <button type="submit" class="btn btn-primary" id="button-editar_usuario">Editar Usuario</button>
+                    <button type="button" class="btn btn-secondary d-none" id="button-confirmar_editar">Confirmar Edição</button>
+
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-12 justify-content-center align-items-center text-center">
                     <a href="usuario-adm-rec.html">
-                      <button type="submit" class="btn btn-primary" id="button-user">Mudar Usuario</button>
+                      <button type="submit" class="btn btn-primary" id="button-user">Mudar Senha</button>
                     </a>
                   </div>
                 </div>
@@ -150,7 +152,7 @@
       </div>
     </div>
   </main>
-
+<script src="../js/editar-usuario-adm.js"></script>
 
 </body>
 

@@ -3615,6 +3615,13 @@ width: 280px;
         margin-top: 200px;
     }
 }
+#button-confirmar_editar{
+    width: 100%;
+    font-size:16px ;
+    margin-top: 37px;
+    background-color: #0d6efd;
+    padding: 15px 0px;
+}
 
 
 
