@@ -3283,6 +3283,60 @@ overflow: hidden;
     box-shadow:none;
 }
 
+/*Cadastro de Carrossel ADM */
+#label-texto-carrossel{
+    margin-left: 70%;
+
+}
+#file-input{
+    border-radius: 2%;
+    background-color: rgb(200, 199, 199);
+    width: 350px;
+    height: 400px;
+    margin-left: -30px;
+}
+
+#botaoCadastrar{
+    margin-top: 5%;
+    margin-left: -9%;
+    width: 350px;
+}
+
+.body-cadastro-de-carrossel.file-label-texto-carrossel {
+    display: inline-flex;
+    background-color: white;
+    color: grey;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 12px;
+    height: 50px;
+    z-index: 1;
+}
+.body-cadastro-de-carrossel .file-label-carrossel {
+border: 2px solid rgb(230, 222, 222); 
+border-radius: 20px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
+height: 300px;
+width: 280px;
+}
+
+.body-cadastro-de-carrossel .file-input-carrossel { 
+    display: none; 
+    position: absolute;
+    margin-left: 10%;
+}
+
+.body-cadastro-de-carrossel.input-texto-carrossel{
+    display: flex;
+}
+
+.body-cadastro-de-carrossel h1{
+    background-color: #2b62fc;
+    color: #FFFFFF;
+}
+.body-cadastro-de-carrossel .container-adicionar-carrossel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-cadastro-de-carrossel .wrapper-content-Carrossel {border-radius: 20px}
 /* GRADE DE jogos - joao */
 
 #collapseExample1-jogos, #collapseExample2-jogos, #collapseExample3-jogos {
@@ -4531,4 +4585,745 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .button-editar-edital  button{
     width: 250px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
+}
+
+
+
+
+
+/* ADM HOME */
+
+.body-adm-home{
+    background-color:#ffffff;
+}
+
+
+.main-adm-home{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media(min-width:1140px){
+    .main-adm-home{
+        background-image:url(../Imagens/background-image-adm-home.png);
+        background-repeat:no-repeat;
+    }
+}
+
+
+#label-bem-vindos-adm-home{
+    margin-top:10rem;
+    position:absolute;
+    font-size:x-large;
+}
+
+ /* faz os quadrados ficarem alinhados horizontalmente */
+@media(min-width:992px){
+    #label-quadrados-1-adm-home{
+        background-color:#970FF2;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+    #label-quadrados-2-adm-home{
+        background-color:#F24607;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+    #label-quadrados-3-adm-home{
+        background-color:#49D907;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+    }
+}
+
+ /* faz os quadrados ficarem alinhados verticalmente */
+@media(max-width:991px){
+    #label-quadrados-1-adm-home{
+        background-color:#970FF2;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+    #label-quadrados-2-adm-home{
+        background-color:#F24607;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+    #label-quadrados-3-adm-home{
+        background-color:#49D907;
+        color:#FFFFFF;
+        border-radius:5%;
+        padding:50px;
+        margin:25px;
+    }
+}
+
+#row-2-adm-home{
+    margin-top:18rem;
+    font-size:x-large;
+}
+
+#container-2-adm-home-imagem{
+    margin-top:5rem;
+    width:900px;
+}
+
+#adm-home-img-1{
+    width:300px;
+    box-shadow:none;
+}
+
+/*Cadastro de Carrossel ADM */
+
+
+
+
+.cadastro-carrossel-container {
+    box-shadow: 0 10px 10px 0;
+    background-color: #FFFFFF;
+    padding: 0; 
+    border: 2px solid rgb(0, 0, 0);
+    width: 900px; /* Definindo largura fixa */
+    height: 900px; /* Definindo altura fixa */
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center; 
+    margin-top: 35%;
+    margin-left: 10%;
+    
+}
+.cadastro-carrossel-container1 {
+    background:url(../Imagens/icon_image_carrossel_adm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0; 
+    border: 2px solid rgb(0, 0, 0);
+    width: 900px; /* Definindo largura fixa */
+    height: 900px; /* Definindo altura fixa */
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center; 
+    margin-top: 35%;
+    margin-left: 10%;
+    
+}
+
+
+.cadastro-carrossel-container-title h1{
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+#inputBuscarDocumento{
+    margin-top: 90%;
+}
+#labelBuscarDocumento{
+    margin-top: 90%;
+}
+#inputNomeFabrica{
+    height: 50px;
+    width: 600px;
+    margin-left: 20%;
+    background-color: #d4d5dc;
+    border-color: #ffffff;
+}
+#inputNomeProjeto{
+    height: 50px;
+    width: 600px;
+    margin-left: 20%;
+    background-color: #d4d5dc;
+    border: rgb(255, 255, 255);
+}
+#inputTextoTurma{
+    background-color: #d4d5dc;
+    border-color: #ffffff;
+    height: 300px;
+    width: 600px;
+    margin-left: 20%;
+}
+#labelNomeFabrica{
+    margin-top: 5%;
+}
+#labelNomeProjeto{
+    margin-top: 5%;
+}
+#labelTextoTurma{
+    margin-top: 5%;
+}
+#botao-cadastrar{
+    width: 600px;
+    margin-left: 20%;
+}
+
+/* GRADE DE jogos - joao */
+
+#collapseExample1-jogos, #collapseExample2-jogos, #collapseExample3-jogos {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.grade-container-jogos {
+    text-align: center;
+}
+
+.body-da-grade-jogos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #8B1A1A; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-jogos, .segunda-grade-jogos, .terceira-grade-jogos {
+    font-size: 24px;
+}
+
+#botao-grade-jogos {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+.table-grade-jogos {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+
+
+}
+
+.th-grade-jogos, .td-class-1-jogos, .td-class-2-jogos {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-jogos:first-child, .td-class-1-jogos:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-jogos:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-jogos, .td-class-2-jogos {
+    border: 1px solid black;
+}
+.td-class-2-jogos {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+/* GRADE DE software - joao */
+
+#collapseExample1-software, #collapseExample2-software, #collapseExample3-software {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grade-container-software {
+    text-align: center;
+}
+
+.body-da-grade-software {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #20133E; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-software, .segunda-grade-software, .terceira-grade-software {
+    font-size: 24px;
+}
+
+#botao-grade-software {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+#botao-grade-software:hover{
+    color: #20133E; 
+}
+
+.table-grade-software {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+
+
+}
+
+.th-grade-software, .td-class-1-software, .td-class-2-software {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-software:first-child, .td-class-1-software:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-software:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-software, .td-class-2-software {
+    border: 1px solid black;
+}
+
+.td-class-2-software {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+
+/* GRADE DE cgi - joao*/
+
+#collapseExample1-cgi, #collapseExample2-cgi, #collapseExample3-cgi {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grade-container-cgi {
+    text-align: center;
+}
+
+.body-da-grade-cgi {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E2991A; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-cgi, .segunda-grade-cgi, .terceira-grade-cgi {
+    font-size: 24px;
+}
+
+#botao-grade-cgi {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+.table-grade-cgi {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+
+
+}
+
+.th-grade-cgi, .td-class-1-cgi, .td-class-2-cgi {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-cgi:first-child, .td-class-1-cgi:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-cgi:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-cgi, .td-class-2-cgi {
+    border: 1px solid black;
+}
+
+.td-class-2-cgi {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+
+/* GRADE DE audiovisual - joao */
+
+#collapseExample1-audiovisual, #collapseExample2-audiovisual, #collapseExample3-audiovisual {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.grade-container-audiovisual {
+    text-align: center;
+}
+
+.body-da-grade-audiovisual {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #198907; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
+    margin: auto;  
+}
+
+.primeira-grade-audiovisual, .segunda-grade-audiovisual, .terceira-grade-audiovisual {
+    font-size: 24px;
+}
+
+#botao-grade-audiovisual {
+    font-size: 32px; /* tamanho da fonte do botão */ 
+    height: 200px; /* NÃO ADICIONAR WIDTH, POIS DESTRÓI A RESPONSIVIDADE!!! */
+    border: 1px solid white;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* A COR DO BOTAO ESTÁ NO PRÓPRO HTML, A CLASSE JA IMPORTA A COR DO BOOTSTRAP JUNTO COM O TIPO DE BOTAO */
+}
+
+.table-grade-audiovisual {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    border-top: 1px solid black;
+}
+
+
+
+
+
+
+
+
+/* Relatório Banco de Talento */
+
+body.body-relatorio-banco-talento .relatorio_banco_talentos{
+    overflow-x: hidden;
+}
+
+body.body-relatorio-banco-talento .relatorio-banco-talento-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-banco-talento .relatorio-banco-talento-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-banco-talento .relatorio-banco-talento-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-banco-talento  .relatorio-banco-talento-content{
+    padding: 20px;
+}
+body.body-relatorio-banco-talento .relatorio-banco_talento-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+body.body-relatorio-banco-talento .label-nome_banco_talentos,
+body.body-relatorio-banco-talento .label-email_banco_talentos,
+body.body-relatorio-banco-talento .label-cpf_banco_talentos,
+body.body-relatorio-banco-talento .label-telefone_banco_talentos,
+body.body-relatorio-banco-talento .label-linkedin_banco_talentos{
+    background-color: #D9D9D9;
+}
+body.body-relatorio-banco-talento .relatorio-banco_talento-button{
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
+    overflow-x: hidden;
+    width: 440px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 69%;
+    left: 14.90%;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+    border: none;
+    z-index: -2;
+}
+body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
+    box-shadow: none;
+}
+
+
+@media (max-width: 1910px){
+    .img-fluid-relatorio-banco_talentos {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.th-grade-audiovisual, .td-class-1-audiovisual, .td-class-2-audiovisual {
+    padding: 15px;
+    text-align: left;
+}
+
+.th-grade-audiovisual:first-child, .td-class-1-audiovisual:first-child {
+    border-right: 1px solid black;
+}
+
+.tr-grade-audiovisual:first-child {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.td-class-1-audiovisual, .td-class-2-audiovisual {
+    border: 1px solid black;
+}
+
+.td-class-2-audiovisual {
+    background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+}
+
+
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+/* RELATÓRIO DETALHADO do BANCO DE TALENTOS */ 
+
+.body-relatorio-detalhado-banco-talentos{
+    background-color: #FFFFFF;
+}
+
+.main-relatorio-detalhado-banco-talentos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#relatorio-detalhado-bt-label-azul{
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    font-size: 29px;
+    padding: 15px;
+    border-radius:5px;
+}
+
+
+.relatorio-detalhado-bt-titulo{
+    text-align: center;
+}
+
+.relatorio-detalhado-bt-caixa-branca{
+    margin-top:10rem;
+}
+
+#tabela-relatorio-detalhado-bt{
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px #D9D9D9;
+    background-color: rgb(255, 255, 255);
+}
+
+.relatorio-detalhado-bt-caixa-branca, table{
+    width:100%;
+    table-layout:fixed;
+}
+
+.relatorio-detalhado-br-caixa-branca, th{
+    background-color: #D9D9D9; 
+    padding: 5px;
+    font-size: 15px;
+}
+
+.relatorio-detalhado-br-caixa-branca, td{
+    background-color: #FFFFFF;
+    font-size:14px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    
+}
+
+.info-relatorio-detalhado-bt{
+    padding-left: 30px;
+}
+
+.td-sobre-pessoa-relatorio-detalhado-bt{
+    max-inline-size:150px;
+    writing-mode: horizontal-tb;
+}
+
+#relatorio-detalhado-bt-btn{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#imagem-fundo-relatorio-detalhado-bt img{
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    display: flex;
+    margin-left:68%;
+    position:absolute;
+    margin-top:15%;
+}
+
+@media (max-width: 1910px){
+    #imagem-fundo-relatorio-detalhado-bt img{
+        display:none;
+        box-shadow:none;
+    }
+}
+/* Editar carrossel de imagem ADM */
+
+.body-editarCarrossel{
+    overflow-x:hidden;
+}
+
+.body-editarCarrossel .btn_editar_carrossel-soft {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: var(--font-destaque);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+}
+
+.body-editarCarrossel .wrapper-content-Carrossel {border-radius: 20px;}
+
+
+.body-editarCarrossel .container-all-carrosel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
+
+.body-editarCarrossel .img-fluid-carrossel {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow:none;
+}
+
+@media (max-width: 966px){
+    .img-fluid-carrossel {
+        display: none;
+        box-shadow:none;
+    }
+}
+
+.body-editarCarrossel .wrapper-background-editarCarrossel {
+    background-color: #1E55D1; 
+    color: white; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    height: 70px;
+}
+
+.wrapper-content-Carrossel {margin-top: 200px;}
+
+
+@media (max-width: 576px) {
+    .main-editarCarrossel {
+        width: 100%;
+        height: 100%;
+    }
+    .text_editar_carrossel h1{
+        font-size: 15px !important;
+    }
+    .btn_editar_carrossel-soft {
+        font-size: 15px;
+    }
+}
+
+
+.caixa_fabricas_adm {
+    margin: 0;
+}
+}
 }

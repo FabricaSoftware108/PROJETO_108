@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Editar carrossel</title>
+        <meta charset="UTF-8">
+        
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link href="../css/styles.css" rel="stylesheet">
+
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<body>
+    <body class="body-cadastro-de-carrossel">
+        <!--Menu de Navegação-->
+        <header> 
+            <nav class="navbar navbar-dark bg-primary fixed-top nav-carrosssel">
+                <div class="container-fluid">
+                    <div class="md-auto">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    </div>
+                    <a class="navbar-brand me-auto fs-2 fw-bold" href="#"> Área de Administração Hub Fábricas</a>
+                    <a class="navbar-brand md-auto fs-6" href="#">Prof Ederson</a>
+                  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header ">
+                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>Prof Ederson
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav flex-column pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link fs-5" href="#">Administradores</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link fs-5" aria-current="page" href="#">Editais</a>
+                        </li>
+        
+                        <li class="nav-item dropdown-carrosssel">
+                          <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fábricas
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Cadastrar Fábricas</a></li>
+                            <li><a class="dropdown-item" href="#">Editar Fábricas</a></li>
+                         </ul>
+                        </li>
+        
+        
+                        <li class="nav-item dropdown-carrosssel">
+                          <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Relatórios
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Edital Aluno</a></li>
+                            <li><a class="dropdown-item" href="#">Edital Empresa</a></li>
+                            <li><a class="dropdown-item" href="#">Banco de Talentos</a></li>
+                            <li><a class="dropdown-item" href="#">Vagas</a></li>
+        
+                        </ul>
+                        </li>
+        
+        
+                        <li class="nav-item fs-5">
+                          <a class="nav-link" href="#">Usuário</a>
+                        </li>
+                        <li class="nav-item mt-auto mb-2">
+                          <a class="nav-link fs-5" href="#">Sair</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>        
+            </header>
+            
+            <div class="container-flex d-lg-flex d-sm-block"  >
+              <div class="container ">
+                <div class="col-md-6 small">
+                  <main class="cadastro-carrossel">
+                    <div class="cadastro-carrossel-centered">
+                      <div class="cadastro-carrossel-container1">
+                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12" id="Container-fotodaturma">
+                          <div class="cadastro-carrossel-container-title">
+                            <h1>Fotos da Turma </h1>
+                          </div>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12">
+                            </div>
+                          <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputBuscarDocumento">
+                            <label class="input-group-text" for="inputGroupFile02"id="labelBuscarDocumento">Upload</label>
+                          </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="col-md-6">
+                  <main class="cadastro-carrossel2">
+                    <div class="cadastro-carrossel-centered">
+                      <div class="cadastro-carrossel-container">
+                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                          <div class="cadastro-carrossel-container-title">
+                            <h1>Nova Fábrica</h1>
+                          </div>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12">
+                            </div>
+                            <form>
+                              <div class="mb-3">
+                                <label for="inputNomeFabrica" class="form-label-fabrica" id="labelNomeFabrica">Nome da Fábrica</label>
+                                <input type="text" class="form-control" id="inputNomeFabrica" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="inputNomeProjeto" class="form-label-fabrica" id="labelNomeProjeto">Nome do Projeto</label>
+                                <input type="text" class="form-control" id="inputNomeProjeto" aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                <label for="inputTextoTurma" class="form-label-turma" id="labelTextoTurma">Texto sobre a turma</label>
+                                <input type="text" class="form-control" id="inputTextoTurma" aria-describedby="emailHelp">
+                              </div>
+                            </form>
+                            <button type="button" class="btn btn-primary" id="botao-cadastrar">Cadastrar</button>
+
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                </div>
+              </div>
+            </div>
+                      
+                    
+            
+</body>
+</html>
