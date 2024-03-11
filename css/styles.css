@@ -5318,17 +5318,32 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
         .relatorio-edital-adm-container-title h1 {
             font-size: 20px;
         }
-    }
-}
+    }}
 
 @media (max-width:751px) {
     .text-relatorio-processo-seletivo {
         font-size: 16px;
-    }
-}
+    }}
 
 @media (max-width:522px) {
     .text-relatorio-processo-seletivo {
         font-size: 14px;
-    }
-}
+    }}
+
+@media (max-width:478px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 12px;
+    }}
+@media (max-width:424px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 10px;
+    }}
+@media (max-width:376px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 8px;
+    }}
+@media (max-width:314px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 6px;
+    }}
+    
