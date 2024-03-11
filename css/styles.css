@@ -5052,8 +5052,9 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 .main-relatorio-detalhado-banco-talentos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-#relatorio-detalhado-bt-label-azul{
+#relatorio-detalhado-bt-label-azul {
     background-color: #0d6efd;
     color: #FFFFFF;
     font-size: 29px;
@@ -5191,6 +5192,4 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 .caixa_fabricas_adm {
     margin: 0;
-}
-}
 }
