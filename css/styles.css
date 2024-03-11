@@ -4321,7 +4321,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     display:block;
     color: #000;
     margin: 0px;
-  
     
 }
 
@@ -4496,6 +4495,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-left: 700px;
 }
 
 .relatorio-aluno-adm-container {
@@ -4508,7 +4508,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     display: flex;
     flex-direction: column;
     text-align: center; 
-    margin-right: 1200px;
     /* margin-left: 1200px; */
 }
 
@@ -4519,7 +4518,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px; 
     height: 60px;
-    width: 600px; 
+    width: 100%; 
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -4583,20 +4582,31 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 }
 
 .imagem-do-relatorio-aluno-adm img {
-    border: none;
-    box-shadow: none;
-    margin-top: 100px;
-    margin-left: 1300px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     height: 500px;
     width: 500px;
-    /* margin-right: 400px; */
-    /* padding: 0 0 0 100px; */
+    box-shadow: none;
+
 }
 
-@media (max-width:876px) {
-    .imagem-do-relatorio-aluno-adm {
+@media (max-width:1370px) {
+    .main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
         display: none;
         box-shadow:none;
 
+    }
+    .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+        margin: 0;
+    }
+    @media (max-width:428px) {
+        .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+            margin-top: 100px;
+        }
+        .relatorio-edital-adm-container-title h1 {
+            font-size: 20px;
+        }
     }
 }
