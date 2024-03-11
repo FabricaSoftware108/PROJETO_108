@@ -1172,6 +1172,13 @@ tr:nth-child(5) {
 
 /*Fábrica de jogos*/
 
+.bodyFabricaJogos h1{
+    font-weight: bold;
+}
+
+.bodyFabricaJogos p{
+    font-size: 27px;
+}
 
 .main-fabrica-de-jogos #cloudEffect1, .main-fabrica-de-jogos #cloudEffect2 {
     position: absolute;
@@ -1188,13 +1195,20 @@ tr:nth-child(5) {
     right: 100px;
 }
 
+.main-fabrica-de-jogos #swordEffect {
+    position: absolute;
+    height: auto;
+    width: 150px;
+    top: 650px;
+    right: 10%;
+}
+
 .vermelho-introdu-jogos {
     background-color: #8B1A1A;
 }
 
 
 .vermelho-introdu-jogos h1{
-    font-size: 57px;
     text-align: justify;
 }
 
@@ -1224,6 +1238,7 @@ tr:nth-child(5) {
 
 .branco-requisitos-jogos{
     border-radius: 300px 0 300px 0;
+    text-align: justify;
 }
 .bodyFabricaJogos .rodape-branco {
     background-color: #8B1A1A;
@@ -1233,6 +1248,10 @@ tr:nth-child(5) {
 .vermelho-gradec-jogos {
     background-color: #8B1A1A;
     border-radius: 25% 0 0 0;
+}
+
+.carousel {
+    margin-bottom: 7%;
 }
 
 
@@ -1265,7 +1284,10 @@ div.carousel-item img#carouselImg{
 }
 
 
-@media (max-width:788px) {
+@media (max-width:1099px) {
+    .bodyFabricaJogos p{
+        font-size: 16px;
+    }
     .vermelho-projetos-jogos {
         border-radius: 0 0 0 0;
     }
@@ -1287,15 +1309,7 @@ div.carousel-item img#carouselImg{
 }
 
 @media (max-width:1000px) {
-    .vermelho-introdu-jogos h1{
-        font-size: 20px;
-        text-align: justify;
-    }
     
-    .vermelho-introdu-jogos p{
-        font-size: 15px;
-        text-align: justify;
-    }
     
     .vermelho-introdu-jogos .btn{
         font-size: 15px;
@@ -1303,6 +1317,18 @@ div.carousel-item img#carouselImg{
         background-color: #8B1A1A;
     }
 }
+
+@media (max-width:280px) {
+    .main-fabrica-de-jogos #swordEffect {
+        position: absolute;
+        height: auto;
+        width: 70px;
+        top: 800px;
+        right: 50px;
+    }
+}
+
+
 
 /*Fim Fábrica de jogos*/
 
