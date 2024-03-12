@@ -117,6 +117,15 @@ header.cabecalhoGeral {
 
 }
 
+@media (max-width: 529px) {
+    #titulo-cabecalho-adm{
+        font-size: 1rem !important;
+        font-family: var(--font-grad-title) !important;
+    }
+    #nome-cabecalho-adm{
+        font-size: 12px !important;
+    }
+}
 
 /*Fim do cabeçalho com bootstarp*/
 
@@ -2378,13 +2387,6 @@ input.cadastroFabrica-Software {
     width: 90%;
     margin: 40px 0 20px 0;
     border-radius: 10px;
-}
-
-@media (max-width: 445px) {
-    #area-adm{
-        font-size: 1rem !important;
-        font-family: var(--font-destaque);
-    }
 }
 
 @media (max-width: 1204px) {
