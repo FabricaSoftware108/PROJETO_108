@@ -1292,10 +1292,10 @@ div.carousel-item img#carouselImg{
 }
 
 .lightEffectGames {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: #8B1A1A;
-    filter: blur(30px);
+    filter: blur(50px );
     border-radius: 50% 0 0 50%;
     position: absolute;
     right: 0;
