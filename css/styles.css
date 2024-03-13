@@ -4069,12 +4069,11 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
     overflow-x: hidden;
 }
 
-body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{
-
+/* body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{} */
 .body-relatorio-detalhado-vagas-emprego{
 
     background-color: #FFFFFF;
-}}
+}
 
 .main-relatorio-detalhado-vagas-emprego{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -4735,24 +4734,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 }
 
-@media (max-width:1370px) {
-    .main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
-        display: none;
-        box-shadow:none;
-
-    }
-    .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
-        margin: 0;
-    }
-    @media (max-width:428px) {
-        .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
-            margin-top: 100px;
-        }
-        .relatorio-edital-adm-container-title h1 {
-            font-size: 20px;
-        }
-    }
-}
 .cadastro-carrossel-container {
     background-color: #FFFFFF;
     padding: 0; 
@@ -5435,20 +5416,32 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     box-shadow: none;
 
 }
 
 @media (max-width:1370px) {
     .main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
-        display: none;
-        box-shadow:none;
-
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
-        margin: 0;
+        margin-left: 380px;
+    }
+    @media (max-width:880px) {
+        .main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
+            display: none;
+            box-shadow:none;
+        }
+        .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+            margin: 0;
+        }
     }
     @media (max-width:428px) {
         .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
@@ -5457,5 +5450,30 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
         .relatorio-edital-adm-container-title h1 {
             font-size: 20px;
         }
-    }
-}
+    }}
+@media (max-width:751px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 16px;
+    }}
+
+@media (max-width:522px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 14px;
+    }}
+
+@media (max-width:478px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 12px;
+    }}
+@media (max-width:424px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 10px;
+    }}
+@media (max-width:376px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 8px;
+    }}
+@media (max-width:314px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 6px;
+    }}
