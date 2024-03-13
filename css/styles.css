@@ -5326,7 +5326,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     margin-left: 700px;
 }
 
-.relatorio-aluno-adm-container {
+.main-relatorioAluno_adm .relatorio-aluno-adm-container {
     background-color: #FFFFFF;
     padding: 0; 
     border-radius: 10px;
@@ -5339,7 +5339,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     /* margin-left: 1200px; */
 }
 
-.relatorio-edital-adm-container-title {
+.main-relatorioAluno_adm .relatorio-edital-adm-container-title {
     background-color: #1E55D1;
     color: white;
     padding: 10px 20px; 
@@ -5353,7 +5353,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     font-size: 40px; 
 }
 
-.text-relatorio-processo-seletivo {
+.main-relatorioAluno_adm .text-relatorio-processo-seletivo {
     display: block;
     position: relative;
     padding-left: 420px; /* Espaço para o ícone no início do label */
@@ -5362,7 +5362,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     border-radius: 7px;
 }
 
-.icon-green-adm {
+.main-relatorioAluno_adm .icon-green-adm {
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -5373,7 +5373,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 }
 
 
-.icon-red-adm {
+.main-relatorioAluno_adm .icon-red-adm {
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -5383,7 +5383,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     margin-left:13px;
 }
 
-.icon-green-adm, .icon-red-adm {
+.main-relatorioAluno_adm .icon-green-adm, .icon-red-adm {
     position: absolute;
     left: 0;
     top: 12px;
@@ -5394,7 +5394,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 }
 
-.quadro-cinza-adm-relatorio {
+.main-relatorioAluno_adm .quadro-cinza-adm-relatorio {
     background-color: white;
     padding: 1px;
     border-radius: 5px;
@@ -5403,13 +5403,13 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 }
 
 
-.quadro-branco-adm-relatorio {
+.main-relatorioAluno_adm .quadro-branco-adm-relatorio {
     background-color: white; 
     border-radius: 7px;
     margin-top: 45px;
 }
 
-.imagem-do-relatorio-aluno-adm img {
+.main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
     position: absolute;
     left: 30%;
     top: 50%;
@@ -5443,6 +5443,168 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     }
     @media (max-width:428px) {
         .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+            margin-top: 100px;
+        }
+        .relatorio-edital-adm-container-title h1 {
+            font-size: 20px;
+        }
+    }}
+@media (max-width:751px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 16px;
+    }}
+
+@media (max-width:522px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 14px;
+    }}
+
+@media (max-width:478px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 12px;
+    }}
+@media (max-width:424px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 10px;
+    }}
+@media (max-width:376px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 8px;
+    }}
+@media (max-width:314px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 6px;
+    }}
+
+
+/* Relatorio Edital da Empresa ADM */
+
+
+.main-relatorioEmpresa_adm .relatorio-empresa-adm-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 700px;
+}
+
+.main-relatorioEmpresa_adm .relatorio-empresa-adm-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 650px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    /* margin-left: 1200px; */
+}
+
+.main-relatorioEmpresa_adm .relatorio-edital-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px;
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+.main-relatorioEmpresa_adm .text-relatorio-processo-seletivo {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+}
+
+.main-relatorioEmpresa_adm .icon-green-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.main-relatorioEmpresa_adm .icon-red-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+.main-relatorioEmpresa_adm .icon-green-adm, .icon-red-adm {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.main-relatorioEmpresa_adm .quadro-cinza-adm-relatorio {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.main-relatorioEmpresa_adm .quadro-branco-adm-relatorio {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+.main-relatorioEmpresa_adm .imagem-do-relatorio-empresa-adm img {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    box-shadow: none;
+
+}
+
+@media (max-width:1370px) {
+    .main-relatorioEmpresa_adm .imagem-do-relatorio-empresa-adm img {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
+        margin-left: 380px;
+    }
+    @media (max-width:880px) {
+        .main-relatorioEmpresa_adm .imagem-do-relatorio-empresa-adm img {
+            display: none;
+            box-shadow:none;
+        }
+        .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
+            margin: 0;
+        }
+    }
+    @media (max-width:428px) {
+        .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
             margin-top: 100px;
         }
         .relatorio-edital-adm-container-title h1 {
