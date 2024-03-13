@@ -5295,21 +5295,32 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     left: 30%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     box-shadow: none;
 
 }
 
 @media (max-width:1370px) {
     .main-relatorioEmpresa_adm .imagem-do-relatorio-empresa-adm img {
-        display: none;
-        box-shadow:none;
-
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
-    
     .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
-        margin: 0;
+        margin-left: 380px;
+    }
+    @media (max-width:880px) {
+        .main-relatorioEmpresa_adm .imagem-do-relatorio-empresa-adm img {
+            display: none;
+            box-shadow:none;
+        }
+        .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
+            margin: 0;
+        }
     }
     @media (max-width:428px) {
         .main-relatorioEmpresa_adm  .relatorio-empresa-adm-centered {
