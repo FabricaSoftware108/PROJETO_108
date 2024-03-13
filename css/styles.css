@@ -3551,6 +3551,88 @@ overflow: hidden;
     background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
 }
 
+/*usuario adm*/
+
+.main-usuarioAdm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-usuarioAdm .wrapper-usuario-adm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    
+
+}
+
+.main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; height: 100%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
+.main-usuarioAdm .wrapper-usuario-adm {width: 100%; height: 780px;}
+
+.main-usuarioAdm .content-top-user {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background-color: #1E55D1; 
+    color: white; 
+    display: flex; justify-content: center; align-items: center; 
+    padding: 15px 0; 
+    font-family: var(--font-destaque);
+}
+
+.main-usuarioAdm .content-user input{
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    padding: 0 15px;
+}
+
+.main-usuarioAdm .content-arrow-user {
+    padding: 5px 0;
+}
+
+.main-usuarioAdm .content-user {padding: 20px 30px;}
+
+.main-usuarioAdm #button-user {
+    width: 100%;
+    padding: 15px 0;
+
+}
+.main-usuarioAdm #button-editar_usuario{
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 37px;
+}
+.main-usuarioAdm #img-usuario-adm img{
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+    .main-usuarioAdm #img-usuario-adm {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-usuarioAdm .wrapper-usuario-adm {
+        margin-top: 200px;
+    }
+}
+#button-confirmar_editar{
+    width: 100%;
+    font-size:16px ;
+    margin-top: 37px;
+    background-color: #0d6efd;
+    padding: 15px 0px;
+}
+
+
+
 
 /* GRADE DE audiovisual - joao */
 
@@ -3677,6 +3759,22 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     }
 }
 
+
+
+/* 2 CONTAINER CADASTRO EDITAL ADM*/
+
+#cadastroAdmEditalInputEdital{
+    margin-top: 60px;}
+#relatorioAlunoInputAdm {
+    background-color: #D9D9D9;
+    margin-top: -10px;
+}
+
+
+
+/* Fim do relatório do Banco de Talentos */
+
+
 .th-grade-audiovisual, .td-class-1-audiovisual, .td-class-2-audiovisual {
     padding: 15px;
     text-align: left;
@@ -3697,7 +3795,10 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 .td-class-2-audiovisual {
     background-color: #D9D9D9; /* estilização do dropdown , uma linha é branca por default e a próxima é cinza*/
+
+    margin-left: 5px;
 }
+
 
 
 /* Editar carrossel de imagem ADM */
@@ -3746,6 +3847,8 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
     height: 70px;
 }
 
+
+
 .wrapper-content-Carrossel {margin-top: 200px;}
 
 
@@ -3765,6 +3868,8 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 .caixa_fabricas_adm {
     margin: 0;
+
+
 }
 
 
@@ -3905,8 +4010,8 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
 
 .main-relatorio-detalhado-banco-talentos{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 #relatorio-detalhado-bt-label-azul{
     background-color: #0d6efd;
     color: #FFFFFF;
@@ -4049,7 +4154,15 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
 
 /* RELATÓRIO DETALHADO VAGAS EMPREGO */ 
 
+
+/* Relatório Edital do Aluno */
+body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
+    overflow-x: hidden;
+}
+
+/* body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{} */
 .body-relatorio-detalhado-vagas-emprego{
+
     background-color: #FFFFFF;
 }
 
@@ -4289,7 +4402,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
       
         
     }
-    }
+}
 
 
 /*tem que usar esse para deixar o cadastro de edital e o editais certo */
@@ -4352,7 +4465,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     display:block;
     color: #000;
     margin: 0px;
-  
     
 }
 
@@ -4520,8 +4632,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 
-
-
 /* ADM HOME */
 
 .body-adm-home{
@@ -4618,7 +4728,103 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-left: 700px;
 }
+
+.relatorio-aluno-adm-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 650px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    /* margin-left: 1200px; */
+}
+
+.relatorio-edital-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px;
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+.text-relatorio-processo-seletivo {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+}
+
+.icon-green-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+.icon-green-adm, .icon-red-adm {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.quadro-cinza-adm-relatorio {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.quadro-branco-adm-relatorio {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+.imagem-do-relatorio-aluno-adm img {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 500px;
+    box-shadow: none;
+
+}
+
 .cadastro-carrossel-container {
     background-color: #FFFFFF;
     padding: 0; 
@@ -5216,3 +5422,164 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 .caixa_fabricas_adm {
     margin: 0;
 }
+
+/* Relatorio Edital do Aluno ADM */
+
+
+.main-relatorioAluno_adm .relatorio-aluno-adm-centered { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 700px;
+}
+
+.relatorio-aluno-adm-container {
+    background-color: #FFFFFF;
+    padding: 0; 
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 650px; /* Definindo largura fixa */
+    height: 718px; /* Definindo altura fixa */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    /* margin-left: 1200px; */
+}
+
+.relatorio-edital-adm-container-title {
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 20px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    height: 60px;
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-size: 40px; 
+}
+
+.text-relatorio-processo-seletivo {
+    display: block;
+    position: relative;
+    padding-left: 420px; /* Espaço para o ícone no início do label */
+    padding: 10px;
+    border: 5px solid #D9D9D9;  
+    border-radius: 7px;
+}
+
+.icon-green-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+
+.icon-red-adm {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-left:13px;
+}
+
+.icon-green-adm, .icon-red-adm {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.quadro-cinza-adm-relatorio {
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.quadro-branco-adm-relatorio {
+    background-color: white; 
+    border-radius: 7px;
+    margin-top: 45px;
+}
+
+.imagem-do-relatorio-aluno-adm img {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    box-shadow: none;
+
+}
+
+@media (max-width:1370px) {
+    .main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+        margin-left: 380px;
+    }
+    @media (max-width:880px) {
+        .main-relatorioAluno_adm .imagem-do-relatorio-aluno-adm img {
+            display: none;
+            box-shadow:none;
+        }
+        .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+            margin: 0;
+        }
+    }
+    @media (max-width:428px) {
+        .main-relatorioAluno_adm  .relatorio-aluno-adm-centered {
+            margin-top: 100px;
+        }
+        .relatorio-edital-adm-container-title h1 {
+            font-size: 20px;
+        }
+    }}
+@media (max-width:751px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 16px;
+    }}
+
+@media (max-width:522px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 14px;
+    }}
+
+@media (max-width:478px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 12px;
+    }}
+@media (max-width:424px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 10px;
+    }}
+@media (max-width:376px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 8px;
+    }}
+@media (max-width:314px) {
+    .text-relatorio-processo-seletivo {
+        font-size: 6px;
+    }}
