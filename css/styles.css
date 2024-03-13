@@ -1230,6 +1230,11 @@ tr:nth-child(5) {
 
 .vermelho-projetos-jogos p{
     font-size: 27px;
+    /* text-align: justify; */
+}
+
+.vermelho-projetos-jogos .container-fluid .container .row p, .vermelho-projetos-jogos .container-fluid .container .row h1{
+    z-index: 2;
 }
 
 .vermelho-requisitos-jogos {
@@ -1286,6 +1291,16 @@ div.carousel-item img#carouselImg{
     position: relative;
 }
 
+.lightEffectGames {
+    height: 200px;
+    width: 200px;
+    background-color: #8B1A1A;
+    filter: blur(30px);
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
 
 @media (max-width:1099px) {
     .bodyFabricaJogos p{
@@ -1298,11 +1313,6 @@ div.carousel-item img#carouselImg{
         background-color: #8B1A1A;
         border-radius: 0 0 0 0;
     }
-    .carousel-text {
-        background-color: rgba(0, 0, 0, 0.451);
-        margin-bottom: 10px;
-        width: 100%;
-    }
     .main-fabrica-de-jogos #cloudEffect1{
         display: none;
     }
@@ -1311,15 +1321,20 @@ div.carousel-item img#carouselImg{
     }
 }
 
-@media (max-width:1000px) {
-    
-    
+@media (max-width:600px) {
+    .carousel-text {
+        background-color: rgba(0, 0, 0, 0.451);
+        margin-bottom: 10px;
+        width: 100%;
+    }
     .vermelho-introdu-jogos .btn{
         font-size: 15px;
-        text-align: center;
         background-color: #8B1A1A;
+        z-index: 1;
     }
+
 }
+
 
 @media (max-width:280px) {
     .main-fabrica-de-jogos #swordEffect {
