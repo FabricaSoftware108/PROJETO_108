@@ -3285,6 +3285,7 @@ overflow: hidden;
 
 /*Cadastro de Carrossel ADM */
 
+
 .main-addCarrossel #background-AddCarrossel{
     margin-top: 100px;
 }
@@ -3333,6 +3334,15 @@ overflow: hidden;
     color: white;
     font-family: var(--font-destaque)
 }
+
+.form-check-label{
+    margin-left: -17%;
+}
+
+#flexCheckChecked{
+    margin-left: 15%;
+}
+
 
 
 /* GRADE DE jogos - joao */
