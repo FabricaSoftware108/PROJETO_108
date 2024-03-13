@@ -5403,7 +5403,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 /* Relatorio Edital do Aluno ADM */
 
 
-.main-relatorioAluno_adm .main-relatorioAluno_adm .relatorio-aluno-adm-centered { 
+.main-relatorioAluno_adm .relatorio-aluno-adm-centered { 
     display: flex;
     justify-content: center;
     align-items: center;
