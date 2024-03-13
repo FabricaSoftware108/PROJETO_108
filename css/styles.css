@@ -122,8 +122,11 @@ header.cabecalhoGeral {
         font-size: 1rem !important;
         font-family: var(--font-grad-title) !important;
     }
+}
+
+@media (max-width: 684px) {
     #nome-cabecalho-adm{
-        font-size: 12px !important;
+        display: none !important;
     }
 }
 
