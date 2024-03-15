@@ -2582,6 +2582,14 @@ overflow: hidden;
     padding-left: 15px;
 }
 
+.main-addCarrossel .content-checking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .main-addCarrossel .container-fabrica-nome-addCarrossel{
     margin-top: 40px;
 }
