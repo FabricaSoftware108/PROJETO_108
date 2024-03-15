@@ -2716,6 +2716,7 @@ width: 280px;
     align-items: center;
     height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
     margin: auto;  
+    margin-bottom: -24px;
 }
 
 .primeira-grade-software, .segunda-grade-software, .terceira-grade-software {
