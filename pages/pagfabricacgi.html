@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="htmlFabricaSoftware">
-<head class="headFabricaSoftware">
+<html lang="pt-br" class="htmlFabricaJogos">
+<head class="headFabricaJogos">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fábrica_de_Software</title>
+    <title>Fábrica_de_Jogos</title>
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="bodyFabricaSoftware">
+<body class="bodyFabricaCGI">
   <header class="cabecalhoGeral border shadow-sm">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -43,7 +43,7 @@
                             aria-labelledby="dropdownMenuLink"> 
                             <li><a class="dropdown-item" href="./pagfabricadesoft.html">Fábrica de Software</a></li> 
                             <li><a class="dropdown-item" href="./pagfabricajogos.html">Fábrica de Jogos</a></li> 
-                            <li><a class="dropdown-item" href="#">Fábrica de Computação Gráfica</a></li> 
+                            <li><a class="dropdown-item" href="./pagfabricacgi.html">Fábrica de Computação Gráfica</a></li> 
                             <li><a class="dropdown-item" href="#">Fábrica de Audio e Video</a></li> 
                         </ul> 
                     </li>
@@ -71,20 +71,18 @@
   </header>
 
     <!-- Main -->
-    <main class="main-fabrica-de-software border-0 bg-light">
+    <main class="main-fabrica-de-cgi border-0 bg-light">
 
-        <!-- Primeira parte Fábrica de Software -->
-        <div class="roxo-introdu-software border-0">
-          <div class="branco-introdu-software border-0 bg-light rounded-start-pill py-5">
-                <div class="container conteudo-introdu-software d-flex justify-content-center align-items-center py-5">
-                    <img src="../Imagens/image-01.png" alt="imagemnumeros" class="code-background-software w-100 img-fluid">
-                
+        <!-- Primeira parte Fábrica de CGI -->
+        <div class="amarelo-introdu-cgi border-0">
+          <div class="branco-introdu-cgi border-0 bg-light rounded-start-pill py-5">
+                <div class="container conteudo-introdu-jogos d-flex justify-content-center align-items-center py-5">
                     <div class="container py-5">
                       <div class="row py-5">
-                        <h1 class="text-center pt-5">Fábrica de Software</h1>
+                        <h1 class="text-center pt-5">Fábrica de Computação Gráfica</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de software é um projeto que simula uma empresa de desenvolvimento de software, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de software, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                           <button class="btn text-light rounded-pill w-25">Editais</button>
@@ -92,15 +90,16 @@
                     </div>
                 </div>
 
+                <img src="../Imagens/boneco-fabrica-cgi.png" class="img-fluid" id="bonecoEffect-cgi">
 
             </div>
         </div>
 
 
-        <!-- Segunda parte Fábrica de Software (Carrossel)-->
-        <div class="lightEffectGames"></div>
-        <div class="branco-projetos-software bg-light">
-          <div class="roxo-projetos-software py-5">
+        <!-- Segunda parte Fábrica de CGI (Carrossel)-->
+        <div class="lightEffectCGI"></div>
+        <div class="branco-projetos-cgi bg-light">
+          <div class="amarelo-projetos-cgi py-5">
               <div class="container-fluid">
                 <div class="container col-12">
                   <div class="row">
@@ -120,7 +119,7 @@
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                   
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner" id="carousel-cgi">
 
                   <div class="carousel-item active my-5">
                     <div class="d-flex justify-content-center">                                   
@@ -173,7 +172,7 @@
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal273" style="cursor: pointer;">
                         <img src="../Imagens/foto-fabrica.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Software 273</h5>
+                          <h5>Fábrica de Jogos 273</h5>
                           <p >Gameteca</p>
                         </div>
                       </div>
@@ -181,7 +180,7 @@
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de Software 273</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de jogos 273 - Gameteca</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -219,7 +218,7 @@
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal123" style="cursor: pointer;">
                         <img src="../Imagens/foto-fabrica3.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Software 123</h5>
+                          <h5>Fábrica de Jogos 123</h5>
                           <p >Não Sabo</p>
                         </div>
                       </div>
@@ -227,7 +226,7 @@
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de Software 123 - Não Sabo</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de jogos 123 - Não Sabo</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -265,7 +264,7 @@
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal321" style="cursor: pointer;">
                         <img src="../Imagens/foto-fabrica4.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Software 321</h5>
+                          <h5>Fábrica de Jogos 321</h5>
                           <p >Ainda Não Sabo</p>
                         </div>
                       </div>
@@ -273,7 +272,7 @@
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de Software 321 - Ainda Não Sabo</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de jogos 321 - Ainda Não Sabo</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -320,9 +319,9 @@
                 
         </div>
 
-        <!-- Terceira parte Fábrica de Software (Requisitos)-->
-        <div class="roxo-requisitos-software border-0">
-            <div class="container-fluid branco-requisitos-software bg-light d-flex justify-content-center align-items-center py-5">  
+        <!-- Terceira parte Fábrica de CGI (Requisitos)-->
+        <div class="amarelo-requisitos-cgi border-0">
+            <div class="container-fluid branco-requisitos-cgi bg-light d-flex justify-content-center align-items-center py-5">  
                     <div class="container py-5">
                       <div class="row py-5">
                         <h1 class="text-center">Requisitos</h1>
@@ -353,119 +352,121 @@
             </div>
         </div>
 
-        <!-- Quarta parte Fábrica de software (Grade)-->
-        <div class="body-da-grade-software py-5">
-            <div class="grade-container-software py-5">
+        <!-- Quarta parte Fábrica de CGI (Grade)-->
+        <div class="branco-gradec-cgi border-0 bg-light">
+            <div class="amarelo-gradec-cgi border-0">  
+                <div class="body-da-grade-cgi py-5">
+                <div class="grade-container-cgi py-5">
+                    <br>
+                    <h1 class="titulo-grade-cgi" style="color: white;">Grade Curricular</h1>
                 <br>
-                <h1 class="titulo-grade-software" style="color: white;">Grade Curricular</h1>
-            <br>
-            <br>
-            <div class="primeira-grade-software">
-            <p class="d-inline-flex gap-1">
-                <button class="btn btn-danger" style="background-color: blueviolet;" data-bs-toggle="collapse" href="#collapseExample1-software" role="button" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-software">
-                  Oferta 1 - Técnico em Análise e Desenvolvimento de Sistemas ▼
-                </button>
-              </p>
-              <div class="collapse" id="collapseExample1-software">
-                <div class="card card-body">
-                    <table class="table-grade-software">
-                        <tr>
-                            <th class="th-grade-software">Unidade Curricular</th>
-                            <th class="th-grade-software">Carga Horária</th>
-                        </tr>
-                        <tr>
-                            <td class="td-class-1-software">UC 1 - Introdução a Programação</td>
-                            <td class="td-class-1-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-2-software">UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-2-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-1-software">UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-1-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-2-software">UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-2-software">100 Horas</td>
-                        </tr>
-                    </table>
-                </div>
-              </div>
-            </div>
-        
-        <br>
-        
-            <div class="segunda-grade-software">
-                <button class="btn btn-danger" style="background-color: blueviolet;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2-software" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-software">
-                    Oferta 2 - Técnico em Análise e Desenvolvimento de Sistemas ▼
-                  </button>
-                </p>
-                <div class="collapse" id="collapseExample2-software">
-                  <div class="card card-body">
-                    <table class="table-grade-software">
-                        <tr class="tr-grade-software">
-                            <th class="th-grade-software">Unidade Curricular</th>
-                            <th class="th-grade-software">Carga Horária</th>
-                        </tr>
-                        <tr>
-                            <td class="td-class-1-software">UC 1 - Introdução a Programação</td>
-                            <td class="td-class-1-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-2-software">UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-2-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-1-software">UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-1-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-2-software">UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-2-software">100 Horas</td>
-                        </tr>
-                    </table>
+                <br>
+                <div class="primeira-grade-cgi">
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample1-cgi" role="button" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-cgi">
+                      Oferta 1 - Técnico em Análise e Desenvolvimento de Sistemas ▼
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample1-cgi">
+                    <div class="card card-body">
+                        <table class="table-grade-cgi">
+                            <tr>
+                                <th class="th-grade-cgi">Unidade Curricular</th>
+                                <th class="th-grade-cgi">Carga Horária</th>
+                            </tr>
+                            <tr>
+                                <td class="td-class-1-cgi">UC 1 - Introdução a Programação</td>
+                                <td class="td-class-1-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-2-cgi">UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-2-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-1-cgi">UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-1-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-2-cgi">UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-2-cgi">100 Horas</td>
+                            </tr>
+                        </table>
+                    </div>
                   </div>
                 </div>
-        
-            </div>
-        <br>
-            <div class="terceira-grade-software">
-                <button class="btn btn-danger" style="background-color: blueviolet;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3-software" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-software">
-                    Oferta 3 - Técnico em Análise e Desenvolvimento de Sistemas ▼
-                  </button>
-                </p>
-                <div class="collapse" id="collapseExample3-software">
-                  <div class="card card-body">
-                    <table class="table-grade-software">
-                        <tr class="tabel-tr-software">
-                            <th class="th-grade-software">Unidade Curricular</th>
-                            <th clas="th-grade-software">Carga Horária</th>
-                        </tr>
-                        <tr>
-                            <td class="td-class-1-software">UC 1 - Introdução a Programação</td>
-                            <td class="td-class-1-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-2-software">UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-2-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-1-software">UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-1-software">100 Horas</td>
-                        </tr>
-                        <tr>
-                            <td class="td-class-2-software">UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
-                            <td class="td-class-2-software">100 Horas</td>
-                        </tr>
-                    </table>
-                  </div>
+                <br>
+                <div class="segunda-grade-cgi">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2-cgi" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-cgi">
+                        Oferta 2 - Técnico em Análise e Desenvolvimento de Sistemas ▼
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample2-cgi">
+                      <div class="card card-body">
+                        <table class="table-grade-cgi">
+                            <tr class="tr-grade-cgi">
+                                <th class="th-grade-cgi">Unidade Curricular</th>
+                                <th class="th-grade-cgi">Carga Horária</th>
+                            </tr>
+                            <tr>
+                                <td class="td-class-1-cgi">UC 1 - Introdução a Programação</td>
+                                <td class="td-class-1-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-2-cgi">UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-2-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-1-cgi">UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-1-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-2-cgi">UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-2-cgi">100 Horas</td>
+                            </tr>
+                        </table>
+                      </div>
+                    </div>
+
                 </div>
+                <br>
+                <div class="terceira-grade-cgi">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3-cgi" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-cgi">
+                        Oferta 3 - Técnico em Análise e Desenvolvimento de Sistemas ▼
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample3-cgi">
+                      <div class="card card-body">
+                        <table class="table-grade-cgi">
+                            <tr class="tabel-tr-cgi">
+                                <th class="th-grade-cgi">Unidade Curricular</th>
+                                <th clas="th-grade-cgi">Carga Horária</th>
+                            </tr>
+                            <tr>
+                                <td class="td-class-1-cgi">UC 1 - Introdução a Programação</td>
+                                <td class="td-class-1-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-2-cgi">UC 2 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-2-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-1-cgi">UC 3 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-1-cgi">100 Horas</td>
+                            </tr>
+                            <tr>
+                                <td class="td-class-2-cgi">UC 4 - Analisar requisitos e funcionalidades da aplicação</td>
+                                <td class="td-class-2-cgi">100 Horas</td>
+                            </tr>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+                <br>
             </div>
-        <br>
+            </div>
+  
+            </div>
         </div>
-        </div>
-        
     </main>
 
 
@@ -478,7 +479,7 @@
             <a href="/" class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
               <img src="../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png" alt="" class="img-fluid">
             </a>
-            <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de software 108</p>
+            <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de jogos 108</p>
             
             <ul class="nav justify-content-center col col-md-4 order-sm-3 order-lg-3">
               <li class="nav-item"><a href="https://www.instagram.com/senachubacademy/" target="_blank" class="nav-link px-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
