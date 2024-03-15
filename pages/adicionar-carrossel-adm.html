@@ -21,7 +21,7 @@
 
 <body class="body-cadastro-de-carrossel">
   <header>
-    <nav class="navbar navbar-dark bg-primary fixed-top nav-carrosssel">
+    <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
       <div class="container-fluid">
         <div class="md-auto">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
@@ -29,8 +29,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <a class="navbar-brand me-auto fs-2 fw-bold" href="#"> Área de Administração Hub Fábricas</a>
-        <a class="navbar-brand md-auto fs-6" href="#">Prof Ederson</a>
+        <a class="navbar-brand me-auto fs-2 fw-bold" id="titulo-cabecalho-adm" href="#">Área de Administração Hub Fábricas</a>
+        <a class="navbar-brand md-auto fs-6" id="nome-cabecalho-adm" href="#">Prof Ederson</a>
         <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header ">
@@ -50,7 +50,7 @@
                 <a class="nav-link fs-5" aria-current="page" href="#">Editais</a>
               </li>
 
-              <li class="nav-item dropdown-carrosssel">
+              <li class="nav-item dropdown-adm">
                 <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Fábricas
@@ -62,7 +62,7 @@
               </li>
 
 
-              <li class="nav-item dropdown-carrosssel">
+              <li class="nav-item dropdown-adm">
                 <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Relatórios
@@ -84,6 +84,7 @@
                 <a class="nav-link fs-5" href="#">Sair</a>
               </li>
             </ul>
+
           </div>
         </div>
       </div>
@@ -102,20 +103,20 @@
               <div class="col-md-6 col-12 text-center align-items-center justify-content-center foto-addCarrossel">
                 <div class="input-group justify-content-center">
                   <h2>Foto da turma</h2>
-                  <label for="inputGroupFile04" id="img-addCarrossel">
-                    <img src="../Imagens/icon_image_carrossel_adm.jpg" style=" width: 550px; height: 450px;" class="img-fluid">
+                  <label for="inputGroupFile04" id="img-addCarrossel" class="col-12 img-fluid">
+                    <img src="../Imagens/icon_image_carrossel_adm.jpg" style=" width: 400px; height: auto;" class="img-fluid" id="imagem-add-foto" >
                   </label>
-                  <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  <input type="file" class="form-control" id="input-document" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <input class="form-check-input ms-5 me-5" type="checkbox" value="" id="flexCheckChecked" checked>
                   <label class="form-check-label" for="flexCheckChecked">
                     Definir imagem como capa do carrossel
                   </label>
                 </div>
               </div>
               <div class="col-md-6 col-12 text-center container-inputs-addCarrossel">
-                <div class="container-fabrica-nome-addCarrossel">
+                <div class="container-fabrica-nome-addCarrossel col-12">
                   <h3>Nome da fábrica</h3>
                   <input type="text">
                 </div>
@@ -124,8 +125,8 @@
                   <input type="text">
                 </div>
                 <div class="container-fabrica-nome-addCarrossel">
-                  <h3>Nome do projeto</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="200" style="resize: none;" rows="15" placeholder="Descrição da Vaga"></textarea>
+                  <h3>Descrição do projeto</h3>
+                  <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="200" style="resize: none;" rows="15" ></textarea>
                 </div>
                 <button class="btn btn-primary" id="btn-input-carrossel">Cadastrar</button>
               </div>
