@@ -1184,47 +1184,57 @@ tr:nth-child(5) {
 
 /*Fábrica de jogos*/
 
-.bodyFabricaJogos h1{
+.bodyFabricaJogos h1, .bodyFabricaCGI h1{
     font-weight: bold;
 }
 
-.bodyFabricaJogos p{
+.bodyFabricaJogos p, .bodyFabricaCGI p{
     font-size: 27px;
 }
 
-.main-fabrica-de-jogos #cloudEffect1, .main-fabrica-de-jogos #cloudEffect2 {
+.main-fabrica-de-jogos #cloudEffect1, .main-fabrica-de-jogos #cloudEffect2, .main-fabrica-de-cgi #cloudEffect1, .main-fabrica-de-cgi #cloudEffect2{
     position: absolute;
     opacity: 10%;
     height: auto;
     width: 400px;
     top: 35px;
 }
-.main-fabrica-de-jogos #cloudEffect1 {
+.main-fabrica-de-jogos #cloudEffect1, .main-fabrica-de-cgi #cloudEffect1 {
     left: 200px;
 }
 
-.main-fabrica-de-jogos #cloudEffect2 {
+.main-fabrica-de-jogos #cloudEffect2, .main-fabrica-de-cgi #cloudEffect2{
     right: 100px;
 }
 
-.main-fabrica-de-jogos #swordEffect {
+.main-fabrica-de-jogos #swordEffect{
     position: absolute;
     height: auto;
     width: 150px;
     top: 650px;
     right: 10%;
 }
+.main-fabrica-de-cgi #bonecoEffect {
+    position: absolute;
+    height: auto;
+    width: 600px;
+    top: 370px;
+    /* right: 10%; */
+    left: 65%;
+}
 
 .vermelho-introdu-jogos {
     background-color: #8B1A1A;
 }
+.amarelo-introdu-cgi {
+    background-color: rgba(226, 153, 26, 1);
+}
 
-
-.vermelho-introdu-jogos h1{
+.vermelho-introdu-jogos h1, .amarelo-introdu-cgi h1{
     text-align: justify;
 }
 
-.vermelho-introdu-jogos p{
+.vermelho-introdu-jogos p, .amarelo-introdu-cgi p{
     font-size: 27px;
     text-align: justify;
 }
@@ -1235,8 +1245,18 @@ tr:nth-child(5) {
     background-color: #8B1A1A;
 }
 
+.amarelo-introdu-cgi .btn{
+    font-size: 27px;
+    text-align: center;
+    background-color: rgba(226, 153, 26, 1);
+}
+
 .vermelho-projetos-jogos {
     background-color: #8B1A1A;
+    border-radius: 0 20% 20% 0;
+}
+.amarelo-projetos-cgi {
+    background-color: rgba(226, 153, 26, 1);
     border-radius: 0 20% 20% 0;
 }
 
@@ -1244,16 +1264,18 @@ tr:nth-child(5) {
     font-size: 27px;
     /* text-align: justify; */
 }
+.amarelo-projetos-cgi p{font-size: 27px;}
 
-.vermelho-projetos-jogos .container-fluid .container .row p, .vermelho-projetos-jogos .container-fluid .container .row h1{
-    z-index: 2;
-}
+.vermelho-projetos-jogos .container-fluid .container .row p, .vermelho-projetos-jogos .container-fluid .container .row h1 {z-index: 2;}
+.amarelo-projetos-cgi .container-fluid .container .row p, .amarelo-projetos-cgi .container-fluid .container .row h1 {z-index: 2;}
 
 .vermelho-requisitos-jogos {
     background-color: #8B1A1A;
 }
 
-.branco-requisitos-jogos{
+.amarelo-requisitos-cgi {background-color: rgba(226, 153, 26, 1);}
+
+.branco-requisitos-jogos, .branco-requisitos-cgi{
     border-radius: 300px 0 300px 0;
     text-align: justify;
 }
@@ -1261,9 +1283,17 @@ tr:nth-child(5) {
     background-color: #8B1A1A;
 }
 
+.bodyFabricaCGI .rodape-branco {
+    background-color: rgba(226, 153, 26, 1);
+}
 
 .vermelho-gradec-jogos {
     background-color: #8B1A1A;
+    border-radius: 25% 0 0 0;
+}
+
+.amarelo-gradec-cgi {
+    background-color: rgba(226, 153, 26, 1);
     border-radius: 25% 0 0 0;
 }
 
@@ -1288,9 +1318,12 @@ div.carousel-item img#carouselImg{
     width: 600px;
 }
 
-
 .carousel-inner {
     background-color: #B10808;
+}
+
+#carousel-cgi {
+    background-color: #FFAF23;
 }
 
 .carousel-text {
@@ -1313,23 +1346,45 @@ div.carousel-item img#carouselImg{
     right: 0;
     z-index: 0;
 }
-
+.lightEffectCGI {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(226, 153, 26, 1);
+    filter: blur(50px );
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    right: 0;
+    z-index: 0; 
+}
 @media (max-width:1099px) {
     .bodyFabricaJogos p{
         font-size: 16px;
     }
+    .bodyFabricaCGI p {
+        font-size: 16px;
+    }
     .vermelho-projetos-jogos {
+        border-radius: 0 0 0 0;
+    }
+    .amarelo-projetos-cgi {
         border-radius: 0 0 0 0;
     }
     .vermelho-gradec-jogos {
         background-color: #8B1A1A;
         border-radius: 0 0 0 0;
     }
-    .main-fabrica-de-jogos #cloudEffect1{
+    .amarelo-gradec-cgi {
+        background-color:rgba(226, 153, 26, 1) ;
+        border-radius: 0 0 0 0;
+    }
+    .main-fabrica-de-jogos #cloudEffect1 {
         display: none;
     }
     .main-fabrica-de-jogos #cloudEffect2{
         right: 0px;
+    }
+    .main-fabrica-de-cgi #bonecoEffect {
+        display: none;
     }
 }
 
@@ -1344,6 +1399,11 @@ div.carousel-item img#carouselImg{
         background-color: #8B1A1A;
         z-index: 1;
     }
+    .amarelo-introdu-cgi .btn{
+        font-size: 15px;
+        background-color: rgba(226, 153, 26, 1);
+        z-index: 1;
+    }
 
 }
 
@@ -1355,6 +1415,9 @@ div.carousel-item img#carouselImg{
         width: 70px;
         top: 800px;
         right: 50px;
+    }
+    .main-fabrica-de-cgi #bonecoEffect {
+        display: none;
     }
 }
 
