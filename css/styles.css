@@ -3658,6 +3658,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 }
 /* Fim do relatório Edital do Aluno */
 
+
+
 /*CSS CADASTRO ADM  EDITAL*/ 
 
 .body-cadastro-adm-edital .file-input {display: none;}
@@ -3705,6 +3707,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 30px;
 }
 
 .cadastro-adm-edital-container {
@@ -3717,9 +3720,28 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     display: flex;
     flex-direction: column;
     text-align: center; 
+   
     
 
 }
+
+
+
+@media(max-width:388px){/*aqui é a margin do 1 container*/
+    .cadastro-adm-edital-container {
+        margin-top: 269px;
+    }
+
+}
+
+@media(max-width:388px){/*não mecher aquiiii*/
+    .cadastro-adm-edital-centered {
+        margin-top: 16vh !important;
+    }
+
+}
+
+
 
 .cadastro-adm-edital-container-title {
     background-color: #1E55D1;
@@ -3813,7 +3835,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     box-shadow: none;
 }
 
-@media(max-width:1872px){
+@media(max-width:1610px){
     .imagem-cadastroEditalADM{
        visibility: hidden !important;
     }
@@ -3823,6 +3845,11 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 /* 2 CONTAINER CADASTRO EDITAL ADM*/
+
+.label-text {
+    margin-left: 40px; 
+    display: block;
+}
 
 #cadastroAdmEditalInputEdital{
     margin-top: 60px;
