@@ -1363,6 +1363,184 @@ div.carousel-item img#carouselImg{
 /*Fim Fábrica de jogos*/
 
 
+/* Começo da Fábrca de Software */
+.bodyFabricaSoftware h1{
+    font-weight: bold;
+}
+
+.bodyFabricaSoftware p{
+    font-size: 27px;
+}
+
+.main-fabrica-de-software #cloudEffect1, .main-fabrica-de-software #cloudEffect2 {
+    position: absolute;
+    opacity: 10%;
+    height: auto;
+    width: 400px;
+    top: 35px;
+}
+.main-fabrica-de-software #cloudEffect1 {
+    left: 200px;
+}
+
+.main-fabrica-de-software #cloudEffect2 {
+    right: 100px;
+}
+
+.main-fabrica-de-software #swordEffect {
+    position: absolute;
+    height: auto;
+    width: 150px;
+    top: 650px;
+    right: 10%;
+}
+
+.roxo-introdu-software {
+    background-color: #2B1463;
+}
+
+
+.roxo-introdu-software h1{
+    text-align: justify;
+}
+
+.roxo-introdu-software p{
+    font-size: 27px;
+    text-align: justify;
+}
+
+.roxo-introdu-software .btn{
+    font-size: 27px;
+    text-align: center;
+    background-color: #2B1463;
+}
+
+.roxo-projetos-software {
+    background-color: #2B1463;
+    border-radius: 0 20% 20% 0;
+}
+
+.roxo-projetos-software p{
+    font-size: 27px;
+    /* text-align: justify; */
+}
+
+.roxo-projetos-software .container-fluid .container .row p, .roxo-projetos-software .container-fluid .container .row h1{
+    z-index: 2;
+}
+
+.roxo-requisitos-software {
+    background-color: #2B1463;
+}
+
+.branco-requisitos-software{
+    border-radius: 300px 0 300px 0;
+    text-align: justify;
+}
+.bodyFabricaSoftware .rodape-branco {
+    background-color: #2B1463;
+}
+
+
+.roxo-gradec-software {
+    background-color: #2B1463;
+    border-radius: 25% 0 0 0;
+}
+
+.bodyFabricaSoftware .carousel {
+    margin-bottom: 7%;
+}
+
+.modal-body {
+    text-align: justify;
+}
+
+div.carousel-item h5{
+    font-size: 27px;
+}
+
+div.carousel-item p{
+    font-size: 20px;
+}
+
+div.carousel-item img#carouselImg{
+    height: auto;
+    width: 600px;
+}
+
+
+.bodyFabricaSoftware .carousel-inner {
+    background-color: #2B1463;
+}
+
+.bodyFabricaSoftware .carousel-text {
+    background-color: rgba(0, 0, 0, 0.451);
+    margin-bottom: 10px;
+    width: 600px;
+    color: white;
+}
+.bodyFabricaSoftware .carousel-item .carousel-img-background{
+    position: relative;
+}
+
+.lightEffectGames {
+    height: 300px;
+    width: 300px;
+    background-color: #2B1463;
+    filter: blur(50px );
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width:1099px) {
+    .bodyFabricaSoftware p{
+        font-size: 16px;
+    }
+    .roxo-projetos-software {
+        border-radius: 0 0 0 0;
+    }
+    .roxo-gradec-software {
+        background-color: #2B1463;
+        border-radius: 0 0 0 0;
+    }
+    .main-fabrica-de-software #cloudEffect1{
+        display: none;
+    }
+    .main-fabrica-de-software #cloudEffect2{
+        right: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .carousel-text {
+        background-color: rgba(0, 0, 0, 0.451);
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .roxo-introdu-software .btn{
+        font-size: 15px;
+        background-color: #2B1463;
+        z-index: 1;
+    }
+
+}
+
+
+@media (max-width:280px) {
+    .main-fabrica-de-software #swordEffect {
+        position: absolute;
+        height: auto;
+        width: 70px;
+        top: 800px;
+        right: 50px;
+    }
+}
+
+/*Fim da Fábrica de Software*/
+
+
 /* PAGINA DEMANDA  */
 
 .body-demanda,
@@ -3008,7 +3186,7 @@ width: 280px;
 
 .body-da-grade-software {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #20133E; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    background-color: #2B1463; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
     display: flex;
     justify-content: center;
     align-items: center;
