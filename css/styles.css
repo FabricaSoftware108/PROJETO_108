@@ -2946,8 +2946,9 @@ width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; /* isso aqui faz o botão não subir e o background descer junto com o componente */
     margin: auto;  
+    margin-bottom: -24px;
+    
 }
 
 .primeira-grade-jogos, .segunda-grade-jogos, .terceira-grade-jogos {
@@ -3017,7 +3018,7 @@ width: 280px;
 }
 
 .primeira-grade-software, .segunda-grade-software, .terceira-grade-software {
-    font-size: 24px;
+    font-size: px;
 }
 
 #botao-grade-software {
