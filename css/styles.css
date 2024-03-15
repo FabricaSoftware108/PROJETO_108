@@ -4138,6 +4138,11 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 /* 2 CONTAINER CADASTRO EDITAL ADM*/
 
+.label-text {
+    margin-left: 40px; 
+    display: block;
+}
+
 #cadastroAdmEditalInputEdital{
     margin-top: 60px;
     background-color: #D9D9D9;
