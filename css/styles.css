@@ -1182,7 +1182,7 @@ tr:nth-child(5) {
 
 
 
-/*Fábrica de jogos*/
+/*Fábricas*/
 
 .bodyFabricaJogos h1, .bodyFabricaCGI h1{
     font-weight: bold;
@@ -1214,13 +1214,12 @@ tr:nth-child(5) {
     top: 650px;
     right: 10%;
 }
-.main-fabrica-de-cgi #bonecoEffect {
+
+#bonecoEffect-cgi {
     position: absolute;
-    height: auto;
-    width: 600px;
-    top: 370px;
-    /* right: 10%; */
-    left: 65%;
+    top: 30%;
+    left: 75%;
+
 }
 
 .vermelho-introdu-jogos {
@@ -1386,7 +1385,7 @@ div.carousel-item img#carouselImg{
     .main-fabrica-de-jogos #cloudEffect2{
         right: 0px;
     }
-    .main-fabrica-de-cgi #bonecoEffect {
+    .main-fabrica-de-cgi #bonecoEffect-cgi {
         display: none;
     }
 }
@@ -1419,14 +1418,14 @@ div.carousel-item img#carouselImg{
         top: 800px;
         right: 50px;
     }
-    .main-fabrica-de-cgi #bonecoEffect {
+    .main-fabrica-de-cgi #bonecoEffect-cgi {
         display: none;
     }
 }
 
 
 
-/*Fim Fábrica de jogos*/
+/*Fim Fábricas*/
 
 
 /* PAGINA DEMANDA  */
