@@ -1296,6 +1296,9 @@ tr:nth-child(5) {
     background-color: rgba(226, 153, 26, 1);
     border-radius: 25% 0 0 0;
 }
+.amarelo-gradec-cgi button {
+    color: white;
+}
 
 .carousel {
     margin-bottom: 7%;
