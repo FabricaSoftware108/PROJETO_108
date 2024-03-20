@@ -2983,6 +2983,7 @@ width: 280px;
 
 body.body-relatorio-banco-talento .relatorio_banco_talentos{
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body.body-relatorio-banco-talento .relatorio-banco-talento-container{
@@ -3172,6 +3173,7 @@ body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
 
 body.body-relatorio-demanda .relatorio_demanda{
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body.body-relatorio-demanda .relatorio-demanda-container{
@@ -3228,9 +3230,9 @@ body.body-relatorio-demanda .label-email_demanda{
 }
 body.body-relatorio-demanda .relatorio-demanda-button{
     align-items: center;
+    width: 100px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: #1E55D1
 }
 
 body.body-relatorio-demanda .img-fluid-relatorio-demanda{
@@ -3454,6 +3456,7 @@ body.body-relatorio-demanda .img-fluid-relatorio-demanda img{
 /* Relatório Edital do Aluno */
 body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* body.body-relatorio-edital-do-aluno .relatorio_edital_do_aluno-container{} */
@@ -3519,10 +3522,11 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
     writing-mode: horizontal-tb;
 }
 
-#relatorio-detalhado-ve-btn{
+.body-relatorio-detalhado-vagas-emprego .relatorio-detalhado-ve-btn{
     width: 100px;
     margin-top: 20px;
     border-radius: 10px;
+    align-items: center;
 }
 
 
@@ -3546,6 +3550,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
 /* Relatório Edital da Empresa */
 body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa{
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body.body-relatorio-edital-da-empresa .relatorio_edital_da_empresa-container{
