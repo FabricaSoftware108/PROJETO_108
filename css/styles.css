@@ -3228,9 +3228,9 @@ body.body-relatorio-demanda .label-email_demanda{
 }
 body.body-relatorio-demanda .relatorio-demanda-button{
     align-items: center;
+    width: 100px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: #1E55D1
 }
 
 body.body-relatorio-demanda .img-fluid-relatorio-demanda{
@@ -3519,10 +3519,11 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
     writing-mode: horizontal-tb;
 }
 
-#relatorio-detalhado-ve-btn{
+.body-relatorio-detalhado-vagas-emprego .relatorio-detalhado-ve-btn{
     width: 100px;
     margin-top: 20px;
     border-radius: 10px;
+    align-items: center;
 }
 
 
