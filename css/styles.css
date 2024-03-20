@@ -3519,7 +3519,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno{
     writing-mode: horizontal-tb;
 }
 
-#relatorio-detalhado-ve-btn{
+.body-relatorio-detalhado-vagas-emprego .relatorio-detalhado-ve-btn{
     width: 100px;
     margin-top: 20px;
     border-radius: 10px;
