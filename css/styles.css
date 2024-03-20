@@ -4619,3 +4619,87 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     .text-relatorio-processo-seletivo {
         font-size: 6px;
     }}
+
+
+/* Relatorio Detalhado de Demanda ADM */
+
+.body-relatorio-detalhado-demandas{
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.main-relatorio-detalhado-demandas{
+    font-family: Verdana, Geneva,  Tahoma, sans-serif;
+}
+
+#relatorio-detalhado-dm-label-azul{
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    font-size: 29px;
+    padding: 15px;
+    border-radius:5px;
+}
+
+.relatorio-detalhado-dm-titulo{
+    text-align: center;
+}
+
+.relatorio-detalhado-dm-caixa-branca{
+    margin-top:10rem;
+}
+
+#tabela-relatorio-detalhado-dm{
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px #D9D9D9;
+    background-color: rgb(255, 255, 255);
+}
+
+.relatorio-detalhado-dm-caixa-branca, table{
+    width:100%;
+    table-layout:fixed;
+}
+
+.relatorio-detalhado-dm-caixa-branca, th{
+    background-color: #D9D9D9; 
+    padding: 5px;
+    font-size: 15px;
+}
+
+.relatorio-detalhado-dm-caixa-branca, td{
+    background-color: #FFFFFF;
+    font-size:14px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+}
+
+.info-relatorio-detalhado-dm{
+    padding-left: 30px;
+}
+
+.td-sobre-pessoa-relatorio-detalhado-dm{
+    max-inline-size:150px;
+    writing-mode: horizontal-tb;
+}
+
+#relatorio-detalhado-dm-btn{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#imagem-fundo-relatorio-detalhado-dm img{
+    width: 300px;
+    height: 300px;
+    box-shadow: none;
+    display: flex;
+    margin-left:68%;
+    position:absolute;
+    margin-top:15%;
+}
+
+@media (max-width: 1910px){
+    #imagem-fundo-relatorio-detalhado-dm img{
+        display:none;
+        box-shadow:none;
+    }
+}
