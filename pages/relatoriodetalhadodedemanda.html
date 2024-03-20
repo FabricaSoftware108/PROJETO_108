@@ -19,7 +19,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="body-relatorio-detalhado-vagas-emprego">
+<body class="body-relatorio-detalhado-demandas">
 
     <!--Menu de Navegação-->
     <header>
@@ -75,7 +75,6 @@
                                     <li><a class="dropdown-item" href="#">Edital Empresa</a></li>
                                     <li><a class="dropdown-item" href="#">Banco de Talentos</a></li>
                                     <li><a class="dropdown-item" href="#">Vagas</a></li>
-
                                 </ul>
                             </li>
 
@@ -94,30 +93,26 @@
     </header>
 
     <!--Conteúdo Principal-->
-    <main class="main-relatorio-detalhado-vagas-emprego">
+    <main class="main-relatorio-detalhado-demandas">
 
         <!--Labels coloridas e responsividade do conteudo principal-->
-        <div class="container" id="relatorio-detalhato-ve-label-branca">
+        <div class="container" id="relatorio-detalhato-dm-label-branca">
             <div class="row justify-content-center">
                 <div class="col-sm-12-col-lg-6">
-                    <div class="relatorio-detalhado-ve-caixa-branca">
+                    <div class="relatorio-detalhado-dm-caixa-branca">
 
 
                         <!--Titulo da grade-->
-                        <div class="container" id="relatorio-detalhado-ve-label-azul">
+                        <div class="container" id="relatorio-detalhado-dm-label-azul">
                             <div class="row justify-content-center">
                                 <div class="col-sm-12 col-lg-6">
-                                    <p class="relatorio-detalhado-ve-titulo">Relatório - Vagas de Emprego</p>
+                                    <p class="relatorio-detalhado-dm-titulo">Relatório Detalhado de Demandas</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="img-fluid" id="imagem-fundo-relatorio-detalhado-ve">
-                            <img src="../Imagens/fundo-relatorio-detalhado-vagas-emprego.svg" alt="imagem de fundo">
-                        </div>
-
                         <!--Grade com informações do banco de talentos detalhado.-->
-                        <div class="col-12" id="tabela-relatorio-detalhado-ve">
+                        <div class="col-12" id="tabela-relatorio-detalhado-dm">
                             <table>
                                 <thead>
                                     <tr>
@@ -127,39 +122,41 @@
                                 <tbody>
                                     <tr>
                                         <td scope="col" colspan="2">Nome da Empresa:
-                                            <p class="info-relatorio-detalhado-ve">Coca Cola Pepsi Cola</p>
+                                            <p class="info-relatorio-detalhado-dm">Coca Cola Pepsi Cola</p>
                                         </td>
-                                        <td scope="col" colspan="2">Nome do Representante:
-                                            <p class="info-relatorio-detalhado-ve">Igor Souza Loureiro da Silva
-                                                Fernandes Carvalho Bragança</p>
+                                        <td scope="col" colspan="2">CNPJ:
+                                            <p class="info-relatorio-detalhado-dm">39.735.352/0001-20</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">Nome do Representante:
+                                            <p class="info-relatorio-detalhado-dm">Evandrinho</p>
+                                        </td>
+                                        <td colspan="2">CPF:
+                                            <p class="info-relatorio-detalhado-dm">000.000.000-00</p>
                                         </td>
                                     </tr>
                                 </tbody>
                                 <tbody>
                                     <tr>
                                         <td colspan="2">Telefone:
-                                            <p class="info-relatorio-detalhado-ve">67940028922</p>
+                                            <p class="info-relatorio-detalhado-dm">67940028922</p>
                                         </td>
-                                        <td colspan="2">CPF/CNPJ:
-                                            <p class="info-relatorio-detalhado-ve">000.000.000-00</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td colspan="4">E-mail:
-                                            <p class="info-relatorio-detalhado-ve">Email@example.com</p>
+                                        <td colspan="2">Email:
+                                          <p class="info-relatorio-detalhado-dm">FofinhoUzumaki@email.com</p>
                                         </td>
                                     </tr>
                                 </tbody>
                                 <thead>
                                     <tr>
-                                        <th scope="col" colspan="4">Sobre a vaga</th>
+                                        <th scope="col" colspan="4">Sobre o projeto</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="4" class="td-sobre-pessoa-relatorio-detalhado-ve">Lorem Ipsum is
+                                        <td colspan="4" class="td-sobre-pessoa-relatorio-detalhado-dm">Lorem Ipsum is
                                             simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                             been the industry's standard dummy text ever since the 1500s, when an
                                             unknown printer took a galley of type and scrambled it to make a type
@@ -174,7 +171,7 @@
 
                             <!--Botão de Imprimir-->
                             <div class="row justify-content-center">
-                                <button class="btn btn-primary relatorio-detalhado-ve-btn">Imprimir</button>
+                                <button class="btn btn-primary" id="relatorio-detalhado-dm-btn">Imprimir</button>
                             </div>
 
 
@@ -189,3 +186,4 @@
 </body>
 
 </html>
+
