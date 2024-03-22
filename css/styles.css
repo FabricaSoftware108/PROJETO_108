@@ -669,6 +669,8 @@ nav.home li:hover ul#menuFabricas {
 
 }
 
+
+
 .vermelho-introdu-jogos {
     background-color: #8B1A1A;
 }
@@ -714,6 +716,45 @@ nav.home li:hover ul#menuFabricas {
 
 .vermelho-projetos-jogos .container-fluid .container .row p, .vermelho-projetos-jogos .container-fluid .container .row h1 {z-index: 2;}
 .amarelo-projetos-cgi .container-fluid .container .row p, .amarelo-projetos-cgi .container-fluid .container .row h1 {z-index: 2;}
+
+.bodyFabricaAudiovisual #AudioVisual-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: opacity(40%);
+}
+.bodyFabricaAudiovisual #AudioVisual-img:nth-child(1){
+    position: absolute;
+    left: 90%;
+    top: 18%;
+    transform: translate(-50%, -50%);
+}
+
+.bodyFabricaAudiovisual #AudioVisual-img:nth-child(2){
+    position: absolute;
+    left: 42%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.bodyFabricaAudiovisual #AudioVisual-img:nth-child(3){
+    position: absolute;
+    left: 18%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+}
+.bodyFabricaAudiovisual #AudioVisual-img:nth-child(4){
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:1112px) {
+    .bodyFabricaAudiovisual #AudioVisual-img {
+        display: none;
+    }
+}
 
 .vermelho-requisitos-jogos {
     background-color: #8B1A1A;
@@ -1046,6 +1087,165 @@ div.carousel-item img#carouselImg{
 
 /*Fim da Fábrica de Software*/
 
+/* Começo da Fábrca de Audiovisual */
+
+.bodyFabricaAudiovisual h1{
+    font-weight: bold;
+}
+
+.bodyFabricaAudiovisual p{
+    font-size: 27px;
+    
+}
+
+
+.verde-introdu-audiovisual {
+    background-color: rgba(66, 176, 48, 1);
+}
+
+
+.verde-introdu-audiovisual h1{
+    text-align: justify;
+}
+
+.verde-introdu-audiovisual p{
+    font-size: 27px;
+    text-align: justify;
+}
+
+.verde-introdu-audiovisual .btn{
+    font-size: 27px;
+    text-align: center;
+    background-color: rgba(66, 176, 48, 1);
+}
+
+
+
+
+
+
+.verde-projetos-audiovisual {
+    background-color: rgba(66, 176, 48, 1);
+    border-radius: 0 20% 20% 0;
+}
+
+.verde-projetos-audiovisual p{
+    font-size: 27px;
+}
+
+.verde-projetos-audiovisual .container-fluid .container .row p, .verde-projetos-audiovisual .container-fluid .container .row h1{
+    z-index: 2;
+}
+
+.verde-requisitos-audiovisual {
+    background-color: rgba(66, 176, 48, 1);
+}
+
+.branco-requisitos-audiovisual{
+    border-radius: 300px 0 300px 0;
+    text-align: justify;
+}
+.bodyFabricaAudiovisual .rodape-branco {
+    background-color: rgba(66, 176, 48, 1);
+}
+
+
+.verde-gradec-audiovisual {
+    background-color: rgba(66, 176, 48, 1);
+    border-radius: 25% 0 0 0;
+}
+
+.bodyFabricaAudiovisual .carousel {
+    margin-bottom: 7%;
+}
+
+.modal-body {
+    text-align: justify;
+}
+
+div.carousel-item h5{
+    font-size: 27px;
+}
+
+div.carousel-item p{
+    font-size: 20px;
+}
+
+div.carousel-item img#carouselImg{
+    height: auto;
+    width: 600px;
+}
+
+
+.bodyFabricaAudiovisual .carousel-inner {
+    background-color: rgb(130, 213, 117);
+}
+
+.bodyFabricaAudiovisual .carousel-text {
+    background-color: rgba(0, 0, 0, 0.451);
+    margin-bottom: 10px;
+    width: 600px;
+    color: white;
+}
+.bodyFabricaAudiovisual .carousel-item .carousel-img-background{
+    position: relative;
+}
+
+.bodyFabricaAudiovisual .lightEffectGames {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(66, 176, 48, 1);
+    filter: blur(50px );
+    border-radius: 50% 0 0 50%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width:1099px) {
+    .bodyFabricaAudiovisual p{
+        font-size: 16px;
+    }
+    .verde-projetos-audiovisual {
+        border-radius: 0 0 0 0;
+    }
+    .verde-gradec-audiovisual {
+        background-color: rgba(66, 176, 48, 1);
+        border-radius: 0 0 0 0;
+    }
+    .main-fabrica-de-audiovisual #cloudEffect1{
+        display: none;
+    }
+    .main-fabrica-de-audiovisual #cloudEffect2{
+        right: 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .carousel-text {
+        background-color: rgba(0, 0, 0, 0.451);
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .verde-introdu-audiovisual .btn{
+        font-size: 15px;
+        background-color: rgba(66, 176, 48, 1);
+        z-index: 1;
+    }
+
+}
+
+
+@media (max-width:280px) {
+    .main-fabrica-de-audiovisual #swordEffect {
+        position: absolute;
+        height: auto;
+        width: 70px;
+        top: 800px;
+        right: 50px;
+    }
+}
+ /*Fim da Pagina Audio Visual*/
 
 /* PAGINA DEMANDA  */
 
@@ -2917,7 +3117,7 @@ width: 280px;
 
 .body-da-grade-audiovisual {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #198907; /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
+    background-color: rgba(66, 176, 48, 1); /* COLOQUE A COR DO FUNDO DA SUA FÁBRICA CASO PRECISAR*/
     display: flex;
     justify-content: center;
     align-items: center;
