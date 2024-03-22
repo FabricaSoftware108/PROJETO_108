@@ -4463,8 +4463,9 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     }}
 
 
-/* Relatorio Edital da Empresa ADM */
 
+
+/* Relatorio Edital da Empresa ADM */
 
 .main-relatorioEmpresa_adm .relatorio-empresa-adm-centered { 
     display: flex;
@@ -4625,6 +4626,11 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     }}
 
 
+
+
+
+/* Relatorio Detalhado de Demanda ADM */
+
 /* Relatorio Detalhado de Demanda ADM */
 
 .body-relatorio-detalhado-demandas{
@@ -4707,3 +4713,75 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         box-shadow:none;
     }
 }
+
+
+
+
+/* RELATÓRIO DETALHADO DA EMPRESA */ 
+
+
+.body-relatorio-detalhado-empresa{
+    background-color: #FFFFFF;
+}
+
+.main-relatorio-detalhado-empresa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#relatorio-detalhado-bt-label-azul{
+    background-color: #0d6efd;
+    color: #FFFFFF;
+    font-size: 29px;
+    padding: 15px;
+    border-radius:5px;
+}
+
+
+.relatorio-detalhado-bt-titulo{
+    text-align: center;
+}
+
+.relatorio-detalhado-bt-caixa-branca{
+    margin-top:10rem;
+}
+
+#tabela-relatorio-detalhado-bt{
+    padding: 20px;
+    box-shadow: 3px 3px 3px 3px #D9D9D9;
+    background-color: rgb(255, 255, 255);
+}
+
+.relatorio-detalhado-bt-caixa-branca, table{
+    width:100%;
+    table-layout:fixed;
+}
+
+.relatorio-detalhado-br-caixa-branca, th{
+    background-color: #D9D9D9; 
+    padding: 5px;
+    font-size: 15px;
+}
+
+.relatorio-detalhado-br-caixa-branca, td{
+    background-color: #FFFFFF;
+    font-size:14px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    
+}
+
+.info-relatorio-detalhado-bt{
+    padding-left: 30px;
+}
+
+.td-sobre-pessoa-relatorio-detalhado-bt{
+    max-inline-size:150px;
+    writing-mode: horizontal-tb;
+}
+
+#relatorio-detalhado-bt-btn{
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
