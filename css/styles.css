@@ -3231,29 +3231,29 @@ body.body-relatorio-banco-talento .relatorio-banco_talento-button{
     margin-top: 20px;
     border-radius: 10px;
 }
-body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
-    overflow-x: hidden;
-    width: 440px;
-    box-sizing: border-box;
+
+.body-relatorio-banco-talento .relatorio-banco_talentos-img img {
     position: absolute;
-    top: 69%;
-    left: 14.90%;
-    transform: translate(-50%, -50%);
+    left: 1%;
+    top: 68%;
     box-shadow: none;
-    border: none;
-    z-index: -2;
-}
-body.body-relatorio-banco-talento .img-fluid-relatorio-banco_talentos{
-    box-shadow: none;
+    z-index: -1;
 }
 
-
-@media (max-width: 1910px){
-    .img-fluid-relatorio-banco_talentos {
+@media (max-width: 1070px) {
+    .body-relatorio-banco-talento .relatorio-banco_talentos-img img {
         display: none;
-        box-shadow:none;
     }
 }
+
+@media (max-width: 1328px) {
+    .body-relatorio-banco-talento .relatorio-banco_talentos-img img {
+        width: 340px;
+        height: 340px;
+    }
+}
+
+
 
 
 
