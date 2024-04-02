@@ -5067,3 +5067,16 @@ input.cadastroFabrica-Cgi {
 #sub-titulo-white-cadastroFabrica-Cgi {
     color: #FFFFFF;
 }
+
+.img-fluid-cgi-img{
+width: 650px;
+height: 250px;
+align-items: center;
+}
+
+@media (max-width: 650px) {
+    .img-fluid-cgi-img {
+        width: 100%;
+        height: auto;
+    }
+}
