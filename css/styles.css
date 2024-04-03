@@ -2803,10 +2803,50 @@ overflow: hidden;
 }   
 .cadastro-carrossel-container1 {
     box-shadow: 0 10px 10px 0;
-    background:url(../Imagens/icon_image_carrossel_adm.jpg);
+    background:url(../Imagens/icon_image_carrossel_adm.jpg); /*../Imagens/icon_image_carrossel_adm.jpg*/
     background-repeat: no-repeat;
     background-size: cover;}
 
+
+
+
+    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+        .container-fluid {
+            box-shadow:none !important;
+            width:367px !important;
+            height:auto;
+            margin:23px;
+        }
+    
+    }
+
+
+    @media(max-width:388px){/*aqui ele mexe no quadrado que hospeda a imagem,para deixa-la dentro do container, pois o mesmo o está ultrapassando.*/
+        .img-fluid {
+            box-shadow:none !important;
+            width:300px !important;
+            height:10px;
+            margin:5px;
+            border-radius: 10px;
+            
+        }
+    
+    }
+
+
+
+    @media(max-width:690px){/*aqui ele vai mexer no quadrado da imagem, colocar ele para baixo, pois está ficando ao lado da label*/
+        .img-fluid {
+            box-shadow:none !important;
+            width:300px !important;
+            height:10px;
+            margin:2px;
+            border-radius: 10px;
+            align-items: center;
+            
+        }
+    
+    }
 
 
 /* GRADE DE jogos - joao */
