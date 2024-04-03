@@ -1639,21 +1639,21 @@ input.cadastrovagas {
 
 .body-bancoTalentos main #title-bancoTalento h1{
     font-family: var(--font-destaque);
-    font-size: var(--font-size-titulo);
     margin-top: 130px;
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
+    font-size: 56px;
 }
 
 .body-bancoTalentos main #title-bancoTalento p{
     font-family: var(--font-destaque);
-    font-size: 15px;
+    font-size: 27px;
     padding: 20px 0 0 0;
     color: var(--font-color-pag-title-subtitle);
     font-weight: 300;
 }
 
-.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
 
 .body-bancoTalentos .subtitle-bancoTalento h1{
     font-size: 40px;
@@ -1663,6 +1663,7 @@ input.cadastrovagas {
 }
 .body-bancoTalentos #container-bancoTalento-inputs{
     padding:  0 50px;
+
 }
 
 .body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
@@ -1671,7 +1672,8 @@ input.cadastrovagas {
 
 .body-bancoTalentos main .cadastrovagas-bancoTalento {
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 .body-bancoTalentos div.effects {
@@ -1704,9 +1706,9 @@ input.cadastrovagas {
 
 
 
-/*Cadastro Fabrica Software*/
+/*Cadastro  aluno psg*/
 
-main.cadastroFabrica-Software {
+main.cadastro-aluno-psg {
     max-width: 1200px;
     margin: 20px auto;
     margin-top: 160px;
@@ -1714,13 +1716,13 @@ main.cadastroFabrica-Software {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input.cadastroFabrica-Software {
+input.cadastro-aluno-psg {
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.btn-enviar-cadastroFabrica-Software {
+.btn-enviar-cadastro-aluno-psg {
     margin-top: 50px;
     padding: 15px 60px;
     border: 3px solid #3B96EB;
@@ -1732,19 +1734,19 @@ input.cadastroFabrica-Software {
     margin-top: 70px;
 }
 
-.btn-enviar-cadastroFabrica-Software:hover {
+.btn-enviar-cadastro-aluno-psg:hover {
     background-color: #3B96EB;
     color: white;
     cursor: pointer;
 }
 
-.input-completo-cadastroFabrica-Software {
+.input-completo-cadastro-aluno-psg {
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.sombra-roxa-cadastroFabrica-Software {
+.sombra-roxa-cadastro-aluno-psg {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
     top: 300px;
@@ -1752,7 +1754,7 @@ input.cadastroFabrica-Software {
     left: -52px;
 }
 
-.sombra-rosa-cadastroFabrica-Software {
+.sombra-rosa-cadastro-aluno-psg {
     box-shadow: -100px 4px 100px 100px #ab15c26b;
     top: 200px;
     border-radius: 90%;
@@ -1761,28 +1763,38 @@ input.cadastroFabrica-Software {
     right: -200px;
 }
 
-#container-campos-preenchimento-cadastroFabrica-Software {
+#containerCamposPreenchimentoCadastroAlunoPsg {
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
 }
 
-#campos-preenchimento-cadastroFabrica-Software {
+#camposPreenchimentoCadastroAlunoPsg {
     margin-top: 50px;
 }
 
-#text-sobre-cadastroFabrica-Software {
+#textSobreCadastroAlunoPsg {
     color: #000;
     margin-bottom: 40px;
 }
 
-#text-sobre-cadastroFabrica-Software p {
+#textSobreCadastroAlunoPsg p {
     text-align: justify;
 }
 
-#sub-titulo-white-cadastroFabrica-Software {
-    color: #FFFFFF;
-}
+.img-fluid-aluno-psg{
+    width: 650px;
+    height: 250px;
+    align-items: center;
+    }
+    
+    @media (max-width: 650px) {
+        .img-fluid-aluno-psg {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
 
 
 /* ! Contéudos dentro Cadastro Admin ! */
@@ -2758,60 +2770,102 @@ overflow: hidden;
     box-shadow:none;
 }
 
+
+
 /*Cadastro de Carrossel ADM */
-#label-texto-carrossel{
-    margin-left: 70%;
+.main-addCarrossel #background-AddCarrossel{
+    margin-top: 100px;}
 
+.main-addCarrossel .container-fabrica-nome-addCarrossel input{
+        background-color: #D9D9D9;
+        border: 0;
+        width: 100%;
+        height: 50px;
+        border-radius: 15px;
+        padding-left: 15px;
 }
-#file-input{
-    border-radius: 2%;
-    background-color: rgb(200, 199, 199);
-    width: 350px;
-    height: 400px;
-    margin-left: -30px;
+.main-addCarrossel .container-fabrica-nome-addCarrossel{
+    margin-top: 35px;
 }
+.main-addCarrossel #btnInputCarrossel{
+    margin-top: 10px;
+    width: 100%;}
+.main-addCarrossel #imgAddCarrossel {
+    box-shadow: none;
+}
+.main-addCarrossel .foto-addCarrossel {
+    margin-top: 150px;
+}
+.main-addCarrossel .wrapper-background-all-AddCarrossel {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    padding: 0;
+}
+.main-addCarrossel .container-inputs-addCarrossel {
+    padding: 0 50px;
+}
+.main-addCarrossel .container-wrapper-carrossel {width: 1150px;}
+.main-addCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px;}
 
-#botaoCadastrar{
-    margin-top: 5%;
-    margin-left: -9%;
-    width: 350px;
-}
-
-.body-cadastro-de-carrossel.file-label-texto-carrossel {
-    display: inline-flex;
-    background-color: white;
-    color: grey;
+.main-addCarrossel .title-addCarrossel {
     width: 100%;
-    padding: 10px 20px;
-    border-radius: 12px;
-    height: 50px;
-    z-index: 1;
-}
-.body-cadastro-de-carrossel .file-label-carrossel {
-border: 2px solid rgb(230, 222, 222); 
-border-radius: 20px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); 
-height: 300px;
-width: 280px;
-}
-
-.body-cadastro-de-carrossel .file-input-carrossel { 
-    display: none; 
-    position: absolute;
-    margin-left: 10%;
+    background-color: #0d6efd;
+    padding: 15px 0;
+    margin: 0;
+    color: white;
+    font-family: var(--font-destaque);
+    font-size:56px;
+}   
+.cadastro-carrossel-container1 {
+    box-shadow: 0 10px 10px 0;
+    background:url(../Imagens/icon_image_carrossel_adm.jpg); /*../Imagens/icon_image_carrossel_adm.jpg*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:40px;
 }
 
-.body-cadastro-de-carrossel.input-texto-carrossel{
-    display: flex;
-}
 
-.body-cadastro-de-carrossel h1{
-    background-color: #2b62fc;
-    color: #FFFFFF;
-}
-.body-cadastro-de-carrossel .container-adicionar-carrossel {border: 2px solid rgb(230, 222, 222); border-radius: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.200); height: 570px;}
 
-.body-cadastro-de-carrossel .wrapper-content-Carrossel {border-radius: 20px}
+
+    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+        .container-fluid {
+            box-shadow:none !important;
+            width:367px !important;
+            height:auto;
+            margin:23px;
+        }
+    
+    }
+
+
+    @media(max-width:388px){/*aqui ele mexe no quadrado que hospeda a imagem,para deixa-la dentro do container, pois o mesmo o está ultrapassando.*/
+        .img-fluid {
+            box-shadow:none !important;
+            width:300px !important;
+            height:10px;
+            margin:5px;
+            border-radius: 10px;
+            
+        }
+    
+    }
+
+
+
+    @media(max-width:690px){/*aqui ele vai mexer no quadrado da imagem, colocar ele para baixo, pois está ficando ao lado da label*/
+        .img-fluid {
+            box-shadow:none !important;
+            width:300px !important;
+            height:10px;
+            margin:2px;
+            border-radius: 10px;
+            align-items: center;
+            
+        }
+    
+    }
+
+
 /* GRADE DE jogos - joao */
 
 #collapseExample1-jogos, #collapseExample2-jogos, #collapseExample3-jogos {
@@ -4030,7 +4084,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .cadastro-adm-editais .imagem-cadastroEditalADM{
     position: absolute;
     bottom:0px;
-    left: -50px;
+    left: -90px;
     width: 350px;
     height: auto;
     
@@ -4040,7 +4094,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     box-shadow: none;
 }
 
-@media(max-width:1610px){
+@media(max-width:1542px){
     .imagem-cadastroEditalADM{
        visibility: hidden !important;
     }
