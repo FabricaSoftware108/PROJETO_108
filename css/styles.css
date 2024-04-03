@@ -1639,21 +1639,21 @@ input.cadastrovagas {
 
 .body-bancoTalentos main #title-bancoTalento h1{
     font-family: var(--font-destaque);
-    font-size: var(--font-size-titulo);
     margin-top: 130px;
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
+    font-size: 56px;
 }
 
 .body-bancoTalentos main #title-bancoTalento p{
     font-family: var(--font-destaque);
-    font-size: 15px;
+    font-size: 27px;
     padding: 20px 0 0 0;
     color: var(--font-color-pag-title-subtitle);
     font-weight: 300;
 }
 
-.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1220px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
 
 .body-bancoTalentos .subtitle-bancoTalento h1{
     font-size: 40px;
@@ -1663,6 +1663,7 @@ input.cadastrovagas {
 }
 .body-bancoTalentos #container-bancoTalento-inputs{
     padding:  0 50px;
+
 }
 
 .body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
@@ -1671,7 +1672,8 @@ input.cadastrovagas {
 
 .body-bancoTalentos main .cadastrovagas-bancoTalento {
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 .body-bancoTalentos div.effects {

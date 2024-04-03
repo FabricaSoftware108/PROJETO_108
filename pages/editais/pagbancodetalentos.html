@@ -83,7 +83,7 @@
                     <div class="effects-2"></div>
                     <div class="row justify-content-center mb-5">
                         <div class="col-md-6 col-sm-12 text-center" id="title-bancoTalento">
-                            <h1>Banco De Talentos</h1>
+                            <h1>Banco de Talentos</h1>
                             <p class="lead">Este campo é para o Banco de Talentos, uma plataforma que conecta talentos
                                 qualificados com oportunidades de carreira em diferentes áreas.</p>
                         </div>
@@ -96,51 +96,63 @@
                                         <div class="row justify-content-center align-items-center">
                                             <div class="col-md-6 col-sm-12 w-100 text-center">
                                                 <div class="subtitle-bancoTalento">
-                                                    <h1>Dados da Empresa</h1>
+                                                    <h1>Dados Pessoais</h1>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="container-fluid-inputs">
-                                            <div class="row align-items-start justify-content-start"
-                                                id="container-bancoTalento-inputs">
-                                                <div class="col-md-auto col-lg-12 mb-5">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-7 col-12"
-                                                        type="text" name="nome" id="nome" size="27" placeholder="Nome"
-                                                        required>
-                                                    <input class="cadastrovagas-bancoTalento col-lg-4 col-12"
-                                                        type="text" name="CPF" id="CPF" size="27" maxlength="11"
-                                                        placeholder="CPF" required>
-                                                    <input class="cadastrovagas-bancoTalento col-lg-5 col-12"
-                                                        type="text" name="escolaridade" id="escolaridade" size="27"
-                                                        placeholder="Escolaridade">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-4 col-12"
-                                                        type="text" name="orgao" id="orgao" size="27"
-                                                        placeholder="Orgão:">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-2 col-12"
-                                                        type="text" name="uf" id="uf" size="27" placeholder="UF:">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-5 col-12"
-                                                        type="date" name="data_nascimento" id="data_nascimento"
-                                                        placeholder="Data de Nascimento">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-6 col-12"
-                                                        type="email" name="email" id="email" size="27"
-                                                        placeholder="Email" required>
-                                                    <input class="cadastrovagas-bancoTalento col-lg-5 col-12" type="tel"
-                                                        name="telefone" id="telefone" size="27" placeholder="Telefone">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-6 col-12"
-                                                        type="text" name="rua" id="rua" size="27" placeholder="Rua">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-5 col-12"
-                                                        type="text" name="bairro" id="bairro" size="27"
-                                                        placeholder="Bairro">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-4 col-12"
-                                                        type="text" name="cidade" id="cidade" size="27"
-                                                        placeholder="Cidade">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-2 col-12"
-                                                        type="text" name="numero" id="numero" size="27"
-                                                        placeholder="Número">
-
+                                            <div class="row align-items-start justify-content-start" id="container-bancoTalento-inputs">
+                                                <div class= "col-sm-auto col-md-auto col-lg-12">
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="nome" id="nome" placeholder="Nome" required>
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="CPF" id="CPF" maxlength="11" placeholder="CPF" required>
+                                                    <select class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" name="escolaridade" id="escolaridade">
+                                                        <option value="escolaridade">Escolaridade</option>
+                                                        <option value="ensmed">Ensino Médio</option>
+                                                        <option value="superior">Superior</option>
+                                                        <option value="graduacao">Graduação</option>
+                                                    </select>
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="date" name="data_nascimento" id="data_nascimento" placeholder="Data de Nascimento">
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="email" name="email" id="email" placeholder="Email" required>
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="tel" name="telefone" id="telefone" placeholder="Telefone">
+                                                    <select class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" name="uf" id="uf">
+                                                        <option value="uf">UF:</option>
+                                                        <option value="AC">Acre</option>
+                                                        <option value="AL">Alagoas</option>
+                                                        <option value="AP">Amapá</option>
+                                                        <option value="AM">Amazonas</option>
+                                                        <option value="BA">Bahia</option>
+                                                        <option value="CE">Ceará</option>
+                                                        <option value="DF">Distrito Federal</option>
+                                                        <option value="ES">Espírito Santo</option>
+                                                        <option value="GO">Goiás</option>
+                                                        <option value="MA">Maranhão</option>    
+                                                        <option value="MT">Mato Grosso</option>
+                                                        <option value="MS">Mato Grosso do Sul</option>
+                                                        <option value="MG">Minas Gerais</option>
+                                                        <option value="PA">Pará</option>
+                                                        <option value="PB">Paraíba</option>
+                                                        <option value="PR">Paraná</option>
+                                                        <option value="PE">Pernambuco</option>
+                                                        <option value="PI">Piauí</option>
+                                                        <option value="RJ">Rio de Janeiro</option>
+                                                        <option value="RN">Rio Grande do Norte</option>
+                                                        <option value="RS">Rio Grande do Sul</option>
+                                                        <option value="RO">Rondônia</option>
+                                                        <option value="RR">Roraima</option>
+                                                        <option value="SC">Santa Catarina</option>
+                                                        <option value="SP">São Paulo</option>
+                                                        <option value="SE">Sergipe</option>
+                                                        <option value="TO">Tocantins</option>
+                                                    </select>
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="rua" id="rua" placeholder="Rua">
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="bairro" id="bairro" placeholder="Bairro">
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="cidade" id="cidade" placeholder="Cidade">
+                                                    <input class="cadastrovagas-bancoTalento col-md-5 col-12 col-sm-12" type="text" name="numero" id="numero" placeholder="Número">
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="row justify-content-center align-items-center">
                                             <div class="col-md-6 col-sm-12 w-100 text-center">
                                                 <div class="subtitle-bancoTalento">
@@ -152,11 +164,11 @@
                                             <div class="row align-items-start justify-content-start"
                                                 id="container-bancoTalento-inputs">
                                                 <div class="col-md-auto col-lg-12 ">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-5 col-md-4 col-12"
-                                                        type="text" name="github" id="github" size="27"
+                                                    <input class="cadastrovagas-bancoTalento col-12 col-lg-5 col-sm-12"
+                                                        type="text" name="github" id="github"
                                                         placeholder="Github">
-                                                    <input class="cadastrovagas-bancoTalento col-lg-5 col-md-4 col-12"
-                                                        type="text" name="Linkedin" id="linkedin" size="27"
+                                                    <input class="cadastrovagas-bancoTalento col-12 col-lg-5 col-sm-12"
+                                                        type="text" name="Linkedin" id="linkedin"
                                                         placeholder="Linkedin">
                                                 </div>
                                             </div>
