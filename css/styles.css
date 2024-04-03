@@ -1704,9 +1704,9 @@ input.cadastrovagas {
 
 
 
-/*Cadastro Fabrica Software*/
+/*Cadastro  aluno psg*/
 
-main.cadastroFabrica-Software {
+main.cadastro-aluno-psg {
     max-width: 1200px;
     margin: 20px auto;
     margin-top: 160px;
@@ -1714,13 +1714,13 @@ main.cadastroFabrica-Software {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input.cadastroFabrica-Software {
+input.cadastro-aluno-psg {
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.btn-enviar-cadastroFabrica-Software {
+.btn-enviar-cadastro-aluno-psg {
     margin-top: 50px;
     padding: 15px 60px;
     border: 3px solid #3B96EB;
@@ -1732,19 +1732,19 @@ input.cadastroFabrica-Software {
     margin-top: 70px;
 }
 
-.btn-enviar-cadastroFabrica-Software:hover {
+.btn-enviar-cadastro-aluno-psg:hover {
     background-color: #3B96EB;
     color: white;
     cursor: pointer;
 }
 
-.input-completo-cadastroFabrica-Software {
+.input-completo-cadastro-aluno-psg {
     padding: 15px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
-.sombra-roxa-cadastroFabrica-Software {
+.sombra-roxa-cadastro-aluno-psg {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
     top: 300px;
@@ -1752,7 +1752,7 @@ input.cadastroFabrica-Software {
     left: -52px;
 }
 
-.sombra-rosa-cadastroFabrica-Software {
+.sombra-rosa-cadastro-aluno-psg {
     box-shadow: -100px 4px 100px 100px #ab15c26b;
     top: 200px;
     border-radius: 90%;
@@ -1761,28 +1761,38 @@ input.cadastroFabrica-Software {
     right: -200px;
 }
 
-#container-campos-preenchimento-cadastroFabrica-Software {
+#containerCamposPreenchimentoCadastroAlunoPsg {
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
 }
 
-#campos-preenchimento-cadastroFabrica-Software {
+#camposPreenchimentoCadastroAlunoPsg {
     margin-top: 50px;
 }
 
-#text-sobre-cadastroFabrica-Software {
+#textSobreCadastroAlunoPsg {
     color: #000;
     margin-bottom: 40px;
 }
 
-#text-sobre-cadastroFabrica-Software p {
+#textSobreCadastroAlunoPsg p {
     text-align: justify;
 }
 
-#sub-titulo-white-cadastroFabrica-Software {
-    color: #FFFFFF;
-}
+.img-fluid-aluno-psg{
+    width: 650px;
+    height: 250px;
+    align-items: center;
+    }
+    
+    @media (max-width: 650px) {
+        .img-fluid-aluno-psg {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
 
 
 /* ! Contéudos dentro Cadastro Admin ! */
