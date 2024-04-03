@@ -4084,7 +4084,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .cadastro-adm-editais .imagem-cadastroEditalADM{
     position: absolute;
     bottom:0px;
-    left: -50px;
+    left: -90px;
     width: 350px;
     height: auto;
     
@@ -4094,7 +4094,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     box-shadow: none;
 }
 
-@media(max-width:1610px){
+@media(max-width:1542px){
     .imagem-cadastroEditalADM{
        visibility: hidden !important;
     }
