@@ -717,33 +717,33 @@ nav.home li:hover ul#menuFabricas {
 .vermelho-projetos-jogos .container-fluid .container .row p, .vermelho-projetos-jogos .container-fluid .container .row h1 {z-index: 2;}
 .amarelo-projetos-cgi .container-fluid .container .row p, .amarelo-projetos-cgi .container-fluid .container .row h1 {z-index: 2;}
 
-.bodyFabricaAudiovisual #AudioVisual-img{
+.bodyFabricaAudiovisual #audioVisualImg{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     filter: opacity(40%);
 }
-.bodyFabricaAudiovisual #AudioVisual-img:nth-child(1){
+.bodyFabricaAudiovisual #audioVisualImg:nth-child(1){
     position: absolute;
     left: 90%;
     top: 18%;
     transform: translate(-50%, -50%);
 }
 
-.bodyFabricaAudiovisual #AudioVisual-img:nth-child(2){
+.bodyFabricaAudiovisual #audioVisualImg:nth-child(2){
     position: absolute;
     left: 42%;
     top: 10%;
     transform: translate(-50%, -50%);
 }
-.bodyFabricaAudiovisual #AudioVisual-img:nth-child(3){
+.bodyFabricaAudiovisual #audioVisualImg:nth-child(3){
     position: absolute;
     left: 18%;
     top: 75%;
     transform: translate(-50%, -50%);
 }
-.bodyFabricaAudiovisual #AudioVisual-img:nth-child(4){
+.bodyFabricaAudiovisual #audioVisualImg:nth-child(4){
     position: absolute;
     left: 80%;
     top: 70%;
