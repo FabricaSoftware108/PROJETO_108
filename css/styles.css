@@ -2768,6 +2768,8 @@ overflow: hidden;
     box-shadow:none;
 }
 
+
+
 /*Cadastro de Carrossel ADM */
 .main-addCarrossel #background-AddCarrossel{
     margin-top: 100px;}
@@ -2783,10 +2785,10 @@ overflow: hidden;
 .main-addCarrossel .container-fabrica-nome-addCarrossel{
     margin-top: 35px;
 }
-.main-addCarrossel #btn-input-carrossel{
+.main-addCarrossel #btnInputCarrossel{
     margin-top: 10px;
     width: 100%;}
-.main-addCarrossel #img-addCarrossel {
+.main-addCarrossel #imgAddCarrossel {
     box-shadow: none;
 }
 .main-addCarrossel .foto-addCarrossel {
@@ -2809,13 +2811,16 @@ overflow: hidden;
     padding: 15px 0;
     margin: 0;
     color: white;
-    font-family: var(--font-destaque)
+    font-family: var(--font-destaque);
+    font-size:56px;
 }   
 .cadastro-carrossel-container1 {
     box-shadow: 0 10px 10px 0;
     background:url(../Imagens/icon_image_carrossel_adm.jpg); /*../Imagens/icon_image_carrossel_adm.jpg*/
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+    font-size:40px;
+}
 
 
 
