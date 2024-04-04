@@ -5116,3 +5116,18 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     margin: 0;
 }
 
+.img-fluid-cadastrar-carrossel {
+
+    display: inline-flex;
+    width: 250px;
+    height: 250px;
+    position: absolute; /* Define a posição absoluta */
+    bottom: 0; /* Alinha a parte inferior da imagem */
+    left: 0; /* Alinha a parte esquerda da imagem */
+    
+    }
+    
+    
+
+}
+
