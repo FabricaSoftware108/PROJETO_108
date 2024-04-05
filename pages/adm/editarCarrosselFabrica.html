@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Carrossel ADM</title>
-    <link rel="stylesheet" href="../../Css/styles.css">
+    <title>Editar Carrossel ADM</title>
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,6 @@
 </head>
 <body class="body-adicionar-carrossel-adm">
   
-  <!--Menu de Navegação-->
   <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
@@ -35,13 +34,13 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-column pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.html">Home</a>
+                  <a class="nav-link active fs-5" aria-current="page" href="adm-home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="./cadastroAdm.html">Administradores</a>
+                  <a class="nav-link fs-5" href="cadastroAdm.html">Administradores</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.html">Editais</a>
+                  <a class="nav-link fs-5" aria-current="page" href="./cadastro-adm-edital.html">Editais</a>
                 </li>
 
                 <li class="nav-item dropdown-adm">
@@ -49,7 +48,7 @@
                     Fábricas
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./adicionarCarrosselAdm.html">Cadastrar Fábricas</a></li>
+                    <li><a class="dropdown-item" href="#">Cadastrar Fábricas</a></li>
                     <li><a class="dropdown-item" href="./editarCarrossel.html">Editar Fábricas</a></li>
                  </ul>
                 </li>
@@ -70,50 +69,53 @@
 
 
                 <li class="nav-item fs-5">
-                  <a class="nav-link" href="./usuarioAdm.html">Usuário</a>
+                  <a class="nav-link" href="./usuario-adm.html">Usuário</a>
                 </li>
                 <li class="nav-item mt-auto mb-2">
-                  <a class="nav-link fs-5" href="./loginAdm.html">Sair</a>
+                  <a class="nav-link fs-5" href="./login-ADM.html">Sair</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>        
-  </header>
+</header>
 
-<main class="main-addCarrossel ">
+<main class="main-editarCarrossel ">
 <div class="container-fluid ">
-<div class="row justify-content-center align-items-center " id="background-AddCarrossel">
+<div class="row justify-content-center align-items-center " id="background-EditarCarrossel">
 <div class="container-wrapper-carrossel">
-  <div class="col-md-12 wrapper-background-all-AddCarrossel">
-    <div class="col-12 text-center title-addCarrossel">
-      <h1>Nova Fábrica</h1>
+  <div class="col-md-12 wrapper-background-all-EditarCarrossel">
+    <div class="col-12 text-center title-editarCarrossel">
+      <h1>Editar Fábrica</h1>
     </div>
     <div class="row ">
-      <div class="col-md-6 col-12 text-center align-items-center justify-content-center foto-addCarrossel">
+      <div class="col-md-6 col-12 text-center align-items-center justify-content-center foto-editarCarrossel">
         <div class="input-group justify-content-center">
           <h2>Foto da turma</h2>
-          <label for="inputGroupFile04" id="imgAddCarrossel">
-            <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid">
+          <label for="inputGroupFile04" id="imgEditarCarrossel">
+            <img src="../../Imagens/fabrica108.jpg" style=" width: 400px; height: 400px;" class="img-fluid">
           </label>
-          <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+          <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
         </div>
       </div>
-      <div class="col-md-6 col-12 text-center container-inputs-addCarrossel">
-        <div class="container-fabrica-nome-addCarrossel">
+      <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
+        <div class="container-fabrica-nome-editarCarrossel">
           <h3>Nome da fábrica</h3>
-          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="200" style="resize: none;" rows="1"></textarea>
+          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="10" style="resize: none;" rows="1" >Fábrica de Software 108</textarea>
         </div>
-        <div class="container-fabrica-nome-addCarrossel">
+        <div class="container-fabrica-nome-editarCarrossel">
           <h3>Nome do projeto</h3>
-          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="200" style="resize: none;" rows="1"></textarea>
+          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="10" style="resize: none;" rows="1" >Hub Fábricas, vulgo, substituto do Senacoin</textarea>
+          
         </div>
-        <div class="container-fabrica-nome-addCarrossel">
+        <div class="container-fabrica-nome-editarCarrossel">
           <h3>Texto sobre a turma</h3>
-          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="200" style="resize: none;" rows="15" placeholder="Descrição da turma"></textarea>
+          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="200" style="resize: none;" rows="15" >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam temporedebitis, delectus eos! In
+          </textarea>
         </div>
-        <button class="btn btn-primary" id="btnInputCarrossel">Cadastrar</button>
+        <button class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
       </div>
     </div>
     </div>
@@ -128,3 +130,4 @@
 
 </body>
 </html>
+

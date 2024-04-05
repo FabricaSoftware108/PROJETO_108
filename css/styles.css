@@ -2783,13 +2783,16 @@ overflow: hidden;
         height: 50px;
         border-radius: 15px;
         padding-left: 15px;
+        
 }
 .main-addCarrossel .container-fabrica-nome-addCarrossel{
     margin-top: 35px;
 }
 .main-addCarrossel #btnInputCarrossel{
-    margin-top: 10px;
-    width: 100%;}
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .main-addCarrossel #imgAddCarrossel {
     box-shadow: none;
 }
@@ -5055,3 +5058,102 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     border-radius: 5px 5px 0 0;
     width: 100%;
 }
+
+/*Editar de Carrossel ADM */
+.main-editarCarrossel #background-EditarCarrossel{
+    margin-top: 100px;}
+
+.main-editarCarrossel .container-fabrica-nome-editarCarrossel input{
+        background-color: #D9D9D9;
+        border: 0;
+        width: 100%;
+        height: 50px;
+        border-radius: 15px;
+        padding-left: 15px;
+        overflow-wrap: break-word; 
+        word-wrap: break-word;
+}
+.main-editarCarrossel .container-fabrica-nome-editarCarrossel{
+    margin-top: 35px;
+}
+.main-editarCarrossel #btnInputCarrossel{
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 20px;    
+}
+    
+.main-editarCarrossel #imgEditarCarrossel {
+    box-shadow: none;
+}
+.main-editarCarrossel .foto-editarCarrossel {
+    margin-top: 150px;
+}
+.main-editarCarrossel .wrapper-background-all-EditarCarrossel {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    padding: 0;
+}
+.main-editarCarrossel .container-inputs-editarCarrossel {
+    padding: 0 50px;
+}
+.main-editarCarrossel .container-wrapper-carrossel {width: 1150px;}
+.main-editarCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px;}
+
+.main-editarCarrossel .title-editarCarrossel {
+    width: 100%;
+    background-color: #0d6efd;
+    padding: 15px 0;
+    margin: 0;
+    color: white;
+    font-family: var(--font-destaque);
+    font-size:56px;
+}   
+.cadastro-carrossel-container1 {
+    box-shadow: 0 10px 10px 0;
+    background:url(../Imagens/icon_image_carrossel_adm.jpg); /*../Imagens/icon_image_carrossel_adm.jpg*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:40px;
+}
+
+
+
+
+    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+        .container-fluid {
+            box-shadow:none !important;
+            width:367px !important;
+            height:auto;
+            margin:23px;
+        }
+    
+    }
+
+
+    @media(max-width:388px){/*aqui ele mexe no quadrado que hospeda a imagem,para deixa-la dentro do container, pois o mesmo o está ultrapassando.*/
+        .img-fluid {
+            box-shadow:none !important;
+            width:300px !important;
+            height:10px;
+            margin:5px;
+            border-radius: 10px;
+            
+        }
+    
+    }
+
+
+
+    @media(max-width:690px){/*aqui ele vai mexer no quadrado da imagem, colocar ele para baixo, pois está ficando ao lado da label*/
+        .img-fluid {
+            box-shadow:none !important;
+            width:300px !important;
+            height:10px;
+            margin:2px;
+            border-radius: 10px;
+            align-items: center;
+            
+        }
+    
+    }
+/* Fim do Editar Carrosel adm /*
