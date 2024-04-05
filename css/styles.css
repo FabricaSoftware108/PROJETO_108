@@ -5109,6 +5109,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     .btn_editar_carrossel-soft {
         font-size: 15px;
     }
+
+  
 }
 
 
@@ -5126,8 +5128,19 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     left: 0; /* Alinha a parte esquerda da imagem */
     
     }
-    
+
+@media(max-width:767px){
+
+    .img-fluid-cadastrar-carrossel {
+        visibility: hidden;
+    }
     
 
+
 }
+   
+
+
+
+
 
