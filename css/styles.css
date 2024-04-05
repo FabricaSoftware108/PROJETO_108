@@ -3490,11 +3490,10 @@ body.body-relatorio-demanda .relatorio-demanda-button{
 }
 
 body.body-relatorio-demanda .img-fluid-relatorio-demanda{
-    overflow-x: hidden;
-    width: 234px;
+    height: 173px;
     box-sizing: border-box;
     position: absolute;
-    top: 71%;
+    top: 82%;
     left: 7.9%;
     transform: translate(-50%, -50%);
 }
