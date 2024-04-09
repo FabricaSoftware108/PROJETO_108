@@ -1,6 +1,6 @@
 <?php
 
-include '.php';
+include '.php'; // Vo precisar do banco agora
 
 if(isset($_POST['nome_empresa']) && isset($_POST['email']) && isset($_POST['cnpj']) && isset($_POST['cidade']) && isset($_POST['telefone']) && isset($_POST['estado']) && isset($_POST['campoTextoDescricaoVaga'])){
     $nome_empresa = $_POST['nome_empresa'];
