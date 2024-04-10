@@ -1,3 +1,12 @@
+/*
+Host = 10.28.1.194
+User = fabric108
+Password = 307108
+Database = hubfabricasdb
+*/
+
+
+
 create database if not exists hubfabricasdb;
 
 use hubfabricasdb;
