@@ -4221,12 +4221,16 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    overflow: hidden;
 }
 
 @media(min-width:1140px){
     .main-adm-home{
         background-image:url(../Imagens/background-image-adm-home.png);
         background-repeat:no-repeat;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -4244,6 +4248,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
+
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
