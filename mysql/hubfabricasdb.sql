@@ -84,7 +84,6 @@ insert into editais() values
 ('10/2022', 'fábrica de cgi', '2024-02-11', '2024-02-28', './arquivostest/img.jpg'),
 ('40/2024', 'fábrica de audio e video', '2024-03-03', '2024-04-05', './arquivostest/img.jpg');
 
--- Inserir 20 alunos para os editais especificados
 INSERT INTO alunosPsg() 
 VALUES
 ('11111111111', 'Aluno 1', 'RG1', '1111111111', 'aluno1@example.com', 'Mãe 1', 'Pai 1', 'Rua 1', 'Bairro 1', '1', 'Complemento 1', '12345678', '32/2023'),
@@ -117,3 +116,5 @@ select * from alunosPsg where alunosPsg.codigoEdital = '40/2024';
 select * from alunosPsg where alunosPsg.codigoEdital = '10/2022';
 select * from alunosPsg where alunosPsg.codigoEdital = '82/2024';
 
+select * from alunosPsg;
+select * from editais;
