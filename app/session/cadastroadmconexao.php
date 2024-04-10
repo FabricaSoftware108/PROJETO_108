@@ -9,8 +9,8 @@ $senha = mysqli_real_escape_string($con,$_POST['senha']);
 
 
 
-// dar um window alert para orientar o adm
 if(empty($nome) || empty($email)){
+    echo "<script>alert('Insira os dados corretamente');</script>";
     header("location:../../../pages/adm/cadastroAdm.html");
     exit();
 }
