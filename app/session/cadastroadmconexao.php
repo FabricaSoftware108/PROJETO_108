@@ -31,11 +31,11 @@ else if($row>0){
     $_SESSION["email"]=$email;
 }
 
-session_start();
-if(!$_SESSION["email"]){
-    header("location:../../../pages/adm/cadastroAdm.html");
-    exit();
-}
+// session_start();
+// if(!$_SESSION["email"]){
+//     header("location:../../../pages/adm/cadastroAdm.html");
+//     exit();
+// }
 
 if ($result){
     echo "CADASTRADO COM SUCESSO";
