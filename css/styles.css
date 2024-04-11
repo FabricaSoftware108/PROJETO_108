@@ -3090,9 +3090,7 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
-    
-
+    margin-top: 100px;
 }
 
 .main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; height: 100%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
@@ -3146,13 +3144,13 @@ overflow: hidden;
         display: none;
     }
     .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 200px !important;
+        margin-top: 100px !important;
     }
 }
 
 @media (max-width: 600px) {
     .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 150px;
+        margin-top: 100px !important;
     }
 }
 #button-confirmar_editar{
