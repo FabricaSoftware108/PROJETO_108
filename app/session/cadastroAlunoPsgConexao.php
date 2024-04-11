@@ -27,7 +27,7 @@ if(empty($nome) || empty($cpfAluno) || empty($rgAluno) || empty($telefoneAluno) 
 
 // mudar o nome da tabela para o nome do banco 
 
-$sql = "INSERT INTO tabelaAlunoPsg (nomeAluno,CPFaluno,RGaluno,emailAluno,TelefoneAluno,NomePai,NomeMãe,Rua,Bairro,Número,Cep,Complemento) 
+$sql = "INSERT INTO alunosPsg () 
 VALUES ('$nomeAluno','$cpfAluno','$rgAluno','$emailAluno','$telefoneAluno','$nomePai','$nomeMae',
 '$ruaAluno','$bairroAluno','$numeroEnderecoAluno','$cepAluno','$complementoAluno')";
 
