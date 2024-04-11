@@ -23,12 +23,14 @@ $row=mysqli_num_rows($result);
 
 
 if ($row==0){
+    echo "<script>alert('ERRO AO CADASTRAR');</script>";
     header("location:../../../pages/adm/cadastroAdm.html");
     exit();
 }
 
 else if($row>0){
-    $_SESSION["email"]=$email;
+    echo "<script>alert('CADASTRADO COM SUCESSO');</script>";
+    header("location:../../../pages/adm/cadastroAdm.html");
 }
 
 // session_start();
@@ -37,9 +39,9 @@ else if($row>0){
 //     exit();
 // }
 
-if ($result){
-    echo "CADASTRADO COM SUCESSO";
-} else {
-    echo "ERRO AO CADASTRAR";
-}
+// if ($result){
+//     echo "CADASTRADO COM SUCESSO";
+// } else {
+//     echo "ERRO AO CADASTRAR";
+// }
 ?>
