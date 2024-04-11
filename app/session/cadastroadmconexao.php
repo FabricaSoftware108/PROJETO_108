@@ -1,18 +1,12 @@
 <?php
-// Host = 10.28.1.194;
-// User = fabric108;
-// Password = 307108;
-// Database = hubfabricasdb;
-
 session_start();
-include '.php';
+include '../db/connection.php';
 
-$senha = mysqli_real_escape_string($con,$_POST['senha']);
-$nome = mysqli_real_escape_string($con,$_POST['nome']);
-$email = mysqli_real_escape_string($con,$_POST['email']);
-$telefone = mysqli_real_escape_string($con,$_POST['telefone']);
-$estado=true;
 
+$senha = mysqli_real_escape_string($connection,$_POST['senha']);
+$nome = mysqli_real_escape_string($connection,$_POST['nome']);
+$email = mysqli_real_escape_string($connection,$_POST['email']);
+$telefone = mysqli_real_escape_string($connection,$_POST['telefone']);
 
 
 if(empty($nome) || empty($email)){
@@ -22,8 +16,8 @@ if(empty($nome) || empty($email)){
 }
 
 
-$sql = "INSERT INTO admin (senha,nome,email,telefone,) VALUES ('$senha','$nome','$email','$telefone',$estado)";
-$result = mysqli_query($con,$sql);
+$sql = "INSERT INTO admin (email,senha,nome,telefone) VALUES ('$email','$senha','$nome','$telefone')";
+$result = mysqli_query($connection,$sql);
 $row=mysqli_num_rows($result);
 
 
@@ -37,16 +31,4 @@ else if($row>0){
     echo "<script>alert('CADASTRADO COM SUCESSO');</script>";
     header("location:../../../pages/adm/cadastroAdm.html");
 }
-
-// session_start();
-// if(!$_SESSION["email"]){
-//     header("location:../../../pages/adm/cadastroAdm.html");
-//     exit();
-// }
-
-// if ($result){
-//     echo "CADASTRADO COM SUCESSO";
-// } else {
-//     echo "ERRO AO CADASTRAR";
-// }
 ?>
