@@ -8,7 +8,7 @@ $database = 'hubfabricasdb';
 $connection = new mysqli($host, $user, $password, $database);
 
 if($connection){
-    echo '<script>alert(concectado)</script>';
+    echo '<script>alert("concectado")</script>';
 }
 ?>
 
@@ -191,8 +191,8 @@ if($connection){
                                             </div>
                                             <div id="inscricoes2" class="sombra_orientacoes2-edital shadow-lg">
                                                 <p>Orientações Projeto Seletivo Senac/MS</p>
-                                                <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
-                                                    Matutino | Campo Grande</p>
+                                                <a href="../../documents/edital/Elaboração de Editais - APOSTILA.pdf" target="_blanck"><p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
+                                                    Matutino | Campo Grande</p></a>
                                                 <a class="btn btn-primary mt-3 mb-3"
                                                 type="button" href="../editais/cadastroAlunoPsg.html">Candidatar-se</a>
                                             </div>
