@@ -1,3 +1,18 @@
+<?php 
+#include '../../app/db/connection.php';
+$host = '10.168.5.51';
+$user = 'pedro2';
+$password = '2787';
+$database = 'hubfabricasdb';
+
+$connection = new mysqli($host, $user, $password, $database);
+
+if($connection){
+    echo '<script>alert(concectado)</script>';
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
