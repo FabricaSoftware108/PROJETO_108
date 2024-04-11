@@ -83,105 +83,44 @@
 
   <main class="relatorio_edital_da_empresa">
     <div class="container_fluid">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-md-10">
-          <div class="relatorio_edital_da_empresa-container">
-            <div class="relatorio_edital_da_empresa-background-container">
-              <div class="relatorio_edital_da_empresa-header">   
-                <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
-              </div>
-              <div class="relatorio_edital_da_empresa-content">
-                <div class="relatorio_edital_da_empresa-background">
-                  <table class="table" id="table_relatorio_edital_da_empresa">
-                    <thead>
-                      <tr>
-                        <th class="label-nome_edital_da_empresa">Nome</th>
-                        <th class="label-representante_edital_da_empresa">Representante</th>
-                        <th class="label-cnpj_edital_da_empresa">CNPJ</th>
-                        <th class="label-telefone_edital_da_empresa">Telefone</th>
-                        <th class="label-email_edital_da_empresa">E-mail</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                    </tbody>
-                  </table>
+      <form method="post" action="demandaEmpresa.php">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-10">
+            <div class="relatorio_edital_da_empresa-container">
+              <div class="relatorio_edital_da_empresa-background-container">
+                <div class="relatorio_edital_da_empresa-header">   
+                  <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
                 </div>
-                <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
+                <div class="relatorio_edital_da_empresa-content">
+                  <div class="relatorio_edital_da_empresa-background">
+                    <table class="table" id="table_relatorio_edital_da_empresa">
+                      <thead>
+                        <tr>
+                          <th class="label-nome_edital_da_empresa">Nome</th>
+                          <th class="label-representante_edital_da_empresa">Representante</th>
+                          <th class="label-cnpj_edital_da_empresa">CNPJ</th>
+                          <th class="label-telefone_edital_da_empresa">Telefone</th>
+                          <th class="label-email_edital_da_empresa">E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><?php echo $retorno["nomeEmpresa"];?></td>
+                          <td><?php echo $retorno["nomeTitular"];?></td>
+                          <td><?php echo $retorno["cnpj"];?></td>
+                          <td><?php echo $retorno["telefoneTItular"];?></td>
+                          <td><?php echo $retorno["emailTitular"];?></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </main>
 </body>
