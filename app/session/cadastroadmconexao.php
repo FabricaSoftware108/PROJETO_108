@@ -16,8 +16,8 @@ if(empty($nome) || empty($email)){
 }
 
 
-$sql = "INSERT INTO admin (email,senha,nome,telefone) VALUES ('$email','$senha','$nome','$telefone')";
-$result = mysqli_query($connection,$sql);
+$query = "INSERT INTO admin (email, senha, nome, telefone, estado) VALUES ('$email', '$senha', '$nome', '$telefone')";
+$result = mysqli_query($connection, $query);
 $row=mysqli_num_rows($result);
 
 
