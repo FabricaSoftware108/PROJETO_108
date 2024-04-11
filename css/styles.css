@@ -3090,7 +3090,7 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 200px;
     
 
 }
@@ -3137,16 +3137,22 @@ overflow: hidden;
     border: none;
     box-shadow: none;
 }
+.main-usuarioAdm #img-usuario-adm {
+    margin-right: 40px;
+}
 
 @media (max-width: 1200px) {
     .main-usuarioAdm #img-usuario-adm {
         display: none;
     }
+    .main-usuarioAdm .wrapper-usuario-adm {
+        margin-top: 200px !important;
+    }
 }
 
 @media (max-width: 600px) {
     .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 200px;
+        margin-top: 150px;
     }
 }
 #button-confirmar_editar{
