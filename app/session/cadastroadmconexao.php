@@ -1,11 +1,17 @@
 <?php
+// Host = 10.28.1.194;
+// User = fabric108;
+// Password = 307108;
+// Database = hubfabricasdb;
+
 session_start();
 include '.php';
 
+$senha = mysqli_real_escape_string($con,$_POST['senha']);
 $nome = mysqli_real_escape_string($con,$_POST['nome']);
 $email = mysqli_real_escape_string($con,$_POST['email']);
-$telefone = mysqli_real_escape_string($con,$_POST['Telefone']);
-$senha = mysqli_real_escape_string($con,$_POST['senha']);
+$telefone = mysqli_real_escape_string($con,$_POST['telefone']);
+$estado=true;
 
 
 
@@ -16,8 +22,7 @@ if(empty($nome) || empty($email)){
 }
 
 
-// mudar o nome da table
-$sql = "INSERT INTO us_ (nome,email,Telefone,senha) VALUES ('$nome','$email','$telefone','$senha')";
+$sql = "INSERT INTO admin (senha,nome,email,telefone,) VALUES ('$senha','$nome','$email','$telefone',$estado)";
 $result = mysqli_query($con,$sql);
 $row=mysqli_num_rows($result);
 
