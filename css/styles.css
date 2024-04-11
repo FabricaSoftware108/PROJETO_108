@@ -2830,7 +2830,8 @@ overflow: hidden;
 
 
 
-    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+    @media(max-width:279px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. 
+        muda a responsividade do home adm*/
         .container-fluid {
             box-shadow:none !important;
             width:367px !important;
@@ -3995,7 +3996,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 }
 
-@media(max-width:388px){/*não mecher aquiiii*/
+@media(max-width:388){/*não mecher aquiiii*/
     .cadastro-adm-edital-centered {
         margin-top: 16vh !important;
     }
@@ -5114,7 +5115,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 
-    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+    @media(max-width:279px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem.
+        muda a responsividade do home adm*/
         .container-fluid {
             box-shadow:none !important;
             width:367px !important;
