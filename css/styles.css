@@ -3090,7 +3090,6 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
 }
 
 .main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; height: 100%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
@@ -3104,6 +3103,9 @@ overflow: hidden;
     display: flex; justify-content: center; align-items: center; 
     padding: 15px 0; 
     font-family: var(--font-destaque);
+}
+.main-usuarioAdm #content-usuarioAdm {
+    margin-top: 5%;
 }
 
 .main-usuarioAdm .content-user input{
