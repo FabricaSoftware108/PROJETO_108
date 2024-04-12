@@ -21,7 +21,7 @@ $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
 
 
-if($row['email']==$email && $row['senha']==$senha){
+if($row['email']==$email && $row['senha']==$senha && $row['estado']==1){
     $_SESSION['email'] = $row['email'];
     $_SESSION['senha'] = $row['senha'];
     $_SESSION['nome'] = $row['nome'];
@@ -31,6 +31,15 @@ if($row['email']==$email && $row['senha']==$senha){
     header("location: ../../pages/adm/admHome.php");
     exit();
 }
+
+else if($row['email']==$email && $row['senha']==$senha && $row['estado']==0){
+ 
+    
+ 
+    header("location: ../../pages/adm/loginAdm.html");
+    exit();
+}
+
 else{
     header("location: ../../pages/adm/loginAdm.html");
     exit();

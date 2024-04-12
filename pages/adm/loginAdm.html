@@ -25,14 +25,18 @@
                 <form class="col-12" id="campos-preenchimento-login-ADM" action="../../app/session/action.php" method="post">
                     <h1>ADMINISTRADOR</h1><br><br>                      
                     
-                    <div class="input-group mb-3 col-12">
-                        <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="bi bi-envelope col-2 icons-login-ADM"></i></span>
+                    <div>
+                        <div class="input-group mb-3 col-12">
+                            <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="bi bi-envelope col-2 icons-login-ADM"></i></span>
+                            </div>
+                            <input class="form-control shadow-sm p-3" type="email" name="email" id="email"
+                            size="27" maxlength="100" placeholder="Email:" required>
+                            
                         </div>
-                        <input class="form-control shadow-sm p-3" type="email" name="email" id="email"
-                        size="27" maxlength="100" placeholder="Email:" required>
-                    </div><br>
-
+                        <p style="color: brown;" class="text-start">Usuário desastivado</p>
+                        <br>
+                    </div>
                     <div class="input-group mb-3 col-12">
                         <div class="input-group-prepend">
                         <span class="input-group-text"><i class="bi bi-key col-2 icons-login-ADM"></i></span>
@@ -51,7 +55,7 @@
 
                     <br>
                     <button class="btn btn-primary mt-3 mb-3 col-10 p-2 btn-login-ADM" type="submit">LOGIN</button>
-                    <!-- <a class="btn btn-primary mt-3 mb-3 col-10 p-2 btn-login-ADM" type="submit"><b>LOGIN</b></a> -->
+                    
                 </form>
             </div>
         </main>
