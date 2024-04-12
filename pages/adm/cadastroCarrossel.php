@@ -1,27 +1,21 @@
-<?php
-include '../../app/session/verificacao.php';
-?>
-
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title>Home ADM</title>
-        <meta charset="UTF-8">
-        
-        <!-- Link Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<html lang="pt-br" class="html-editarCarrossel">
 
-        <!-- CSS -->
-        <link href="../../css/styles.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Carrossel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
 
-        <!-- Fonte -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body class="body-adm-home">
-
-        <!--Menu de Navegação-->
-        <header> 
+<body class="body-CadastrarCarrossel">
+  <!--Menu de Navegação-->
+  <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
                 <div class="container-fluid">
                     <div class="md-auto">
@@ -86,39 +80,72 @@ include '../../app/session/verificacao.php';
               </nav>        
         </header>
 
-        <!--Conteúdo da página-->
-        <main class="main-adm-home">
-          <div class="container" id="container-1-adm-home">
-            <div class="row justify-content-center" id="row-1-adm-home">
-              <div class="col-sm-12 col-lg-8" id="label-bem-vindos-adm-home">
-                <b><p class="text-center">Bem Vindo!!!</p></b>  
+  <main>
+    <div class="container-Cadastrar-Carrossel">
+      <div class="row justify-content-center align-content-center">
+        <div class="col-md-5 col-12" style="padding: 0;">
+          <div class="wrapper-content-Carrossel">
+            <div class="container-all-carrosel">
+              <div class="wrapper-background-editarCarrossel text-center align-content-center mb-5">
+                <h1>Cadastrar Carrossel</h1>
               </div>
-            </div>
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <div class="text-center">
+                    <a href="../adm/adicionarCarrosselAdm.html">
 
-            <!--Quadrados com as informações-->
-            <div class="row justify-content-center" id="row-2-adm-home">
-              <div class="col-sm-12 col-lg-3" id="label-quadrados-1-adm-home">
-                <p class="text-center">217<br>Projetos Submetidos</p>
-            </div>
-              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-2-adm-home">
-                <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
+
+                      <button type="button" class="btn btn-primary btn_cadastrar_carrossel-soft mb-5">Fábrica de
+                        software</button>
+
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-3-adm-home">
-                <p class="text-center">160<br>Banco de Talentos</p>
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <div class="text-center">
+
+                    <a href="../adm/adicionarCarrosselAdm.html">
+                      <button type="button" class="btn btn-primary btn_cadastrar_carrossel-soft mb-5">Fábrica de
+                        Jogos</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <div class="text-center">
+
+                    <a href="../adm/adicionarCarrosselAdm.html">
+
+                      <button type="button" class="btn btn-primary btn_cadastrar_carrossel-soft mb-5">Fábrica de
+                        Audiovisual</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-8">
+                  <div class="text-center">
+                    <a href="../adm/adicionarCarrosselAdm.html">
+                      <button type="button" class="btn btn-primary btn_cadastrar_carrossel-soft mb-5">Fábrica de
+                        computação
+                        gráfica</button>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
-          <!--Imagem dos gráficos-->
-          <div class="container" id="container-2-adm-home-imagem">
-            <div class="row justify-content-center">
-              <div class="col-sm-12 col-lg-8">
-                <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id-="adm-home-img-2">
-              </div>
-            </div>
-          </div>
-      </main>
+        </div>
+        <div class="img-fluid-cadastrar-carrossel" style="overflow-x: hidden;">
+          <img src="../../Imagens/imagem_editarCarrossel.svg">
+        </div>
+      </div>
+  </main>
 
-    </body>
+
+</body>
 
 </html>

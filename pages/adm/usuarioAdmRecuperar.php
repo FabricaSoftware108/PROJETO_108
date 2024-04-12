@@ -1,27 +1,28 @@
-<?php
-include '../../app/session/verificacao.php';
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Home ADM</title>
-        <meta charset="UTF-8">
-        
-        <!-- Link Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-        <!-- CSS -->
-        <link href="../../css/styles.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuario ADM</title>
+  <link rel="stylesheet" href="../../Css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-        <!-- Fonte -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body class="body-adm-home">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
 
-        <!--Menu de Navegação-->
-        <header> 
+<body class="body-usuarioAdm">
+  
+  <!--Menu de Navegação-->
+  <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
                 <div class="container-fluid">
                     <div class="md-auto">
@@ -86,39 +87,65 @@ include '../../app/session/verificacao.php';
               </nav>        
         </header>
 
-        <!--Conteúdo da página-->
-        <main class="main-adm-home">
-          <div class="container" id="container-1-adm-home">
-            <div class="row justify-content-center" id="row-1-adm-home">
-              <div class="col-sm-12 col-lg-8" id="label-bem-vindos-adm-home">
-                <b><p class="text-center">Bem Vindo!!!</p></b>  
-              </div>
-            </div>
 
-            <!--Quadrados com as informações-->
-            <div class="row justify-content-center" id="row-2-adm-home">
-              <div class="col-sm-12 col-lg-3" id="label-quadrados-1-adm-home">
-                <p class="text-center">217<br>Projetos Submetidos</p>
-            </div>
-              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-2-adm-home">
-                <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
+  <main class="main-usuarioAdm">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
+          <img src="../../Imagens/undraw_fingerprint_login_re_t71l.svg" class="img-fluid" alt="usuario-adm">
+        </div>
+        <div class="col-md-5 col-12 offset-md-1">
+          <div class="wrapper-usuario-adm">
+            <div class="content-usuario-adm">
+              <div class="content-top-user">
+                <h1>Usuário</h1>
               </div>
-              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-3-adm-home">
-                <p class="text-center">160<br>Banco de Talentos</p>
+              <div class="content-user">
+                  <div class="content-arrow-user">
+                    <a href="usuarioAdm.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" style="fill: #1E55D1 ;transform: msFilter;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+                    </a>
+                  </div>
+                <div class="row mb-3">
+                  <div class="col-12 text-start">
+                    
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-12 text-start">
+                    <h2>Senha antiga</h2>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-12 text-start">
+                    <h2>Nova senha</h2>
+                    <input type="email" class="form-control"/>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-12 text-start">
+                    <h2>Confirmar senha</h2>
+                    <input type="email" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 justify-content-center align-items-center text-center">
+                    <button type="submit" class="btn btn-primary" id="button-user">Confirmar Mudanças</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          
-          <!--Imagem dos gráficos-->
-          <div class="container" id="container-2-adm-home-imagem">
-            <div class="row justify-content-center">
-              <div class="col-sm-12 col-lg-8">
-                <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id-="adm-home-img-2">
-              </div>
-            </div>
-          </div>
-      </main>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    </body>
+
+</body>
 
 </html>

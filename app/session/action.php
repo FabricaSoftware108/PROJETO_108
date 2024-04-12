@@ -28,16 +28,21 @@ if($row['email']==$email && $row['senha']==$senha && $row['estado']==1){
     $_SESSION['telefone'] = $row['telefone'];
     $_SESSION['estado'] = $row['estado'];
     
+
     header("location: ../../pages/adm/admHome.php");
     exit();
 }
 
 else if($row['email']==$email && $row['senha']==$senha && $row['estado']==0){
- 
-    
- 
-    header("location: ../../pages/adm/loginAdm.html");
+    // header("location: ../../pages/adm/loginAdm.html");
+    echo ('<script>
+    alert("Usuário Desativado");
+    location.href = "../../pages/adm/loginAdm.html";
     exit();
+    </script>');
+    // exit();
+
+
 }
 
 else{
