@@ -1,22 +1,22 @@
-
-<html lang="pt-br ">
+<?php
+include '../../app/session/verificacao.php';
+?>
+<!DOCTYPE html>
+<html lang="pt-br" class="html-editarCarrossel">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro Admin</title>
+  <title>Editar Carrossel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../css/styles.css">
-  <script src="../../js/cadastro-adm.js"></script>
-
 </head>
 
-<body class="Cadastro-Admin">
+<body class="body-editarCarrossel">
   <!--Menu de Navegação-->
   <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -36,19 +36,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-column pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.html">Home</a>
+                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.php">Home</a>
                 </li>
                 <li class="nav-item dropdown-adm">
                   <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Administradores
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroAdm.html">Adicionar Administradores</a></li>
-                    <li><a class="dropdown-item" href="./editarAdm.html">Editar Administradores </a></li>
+                    <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
+                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.html">Editais</a>
+                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.php">Editais</a>
                 </li>
 
                 <li class="nav-item dropdown-adm">
@@ -56,8 +56,8 @@
                     Fábricas
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroCarrossel.html">Cadastrar Carrossel</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrossel.html">Editar Carrossel </a></li>
+                    <li><a class="dropdown-item" href="./cadastroCarrossel.php">Cadastrar Carrossel</a></li>
+                    <li><a class="dropdown-item" href="./editarCarrossel.php">Editar Carrossel </a></li>
                  </ul>
                 </li>
 
@@ -67,20 +67,20 @@
                     Relatórios
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./relatorioAlunoADM.html">Edital Aluno</a></li>
-                    <li><a class="dropdown-item" href="./relatorioEmpresaAdm.html">Edital Empresa</a></li>
-                    <li><a class="dropdown-item" href="./relatoriobancotalento.html">Banco de Talentos</a></li>
-                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.html">Vagas</a></li>
+                    <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
+                    <li><a class="dropdown-item" href="./relatorioEmpresaAdm.php">Edital Empresa</a></li>
+                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
 
                 </ul>
                 </li>
 
 
                 <li class="nav-item fs-5">
-                  <a class="nav-link" href="./usuarioAdm.html">Usuário</a>
+                  <a class="nav-link" href="./usuarioAdm.php">Usuário</a>
                 </li>
                 <li class="nav-item mt-auto mb-2">
-                  <a class="nav-link fs-5" href="./loginAdm.html">Sair</a>
+                  <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
                 </li>
               </ul>
             </div>
@@ -123,14 +123,15 @@
             </div>
           </div>
         </div>
+        
+      </div>
+      <div class="img-fluid-carrossel" style="overflow-x: hidden;">
+        <img src="../../Imagens/imagem_editarCarrossel.svg" width="300px"height="200px">
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-  
 
-  <script src="../js/cadastro-adm.js"></script>
 </body>
 
 </html>
