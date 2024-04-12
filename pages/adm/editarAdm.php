@@ -1,4 +1,6 @@
-
+<?php
+include '../../app/session/verificacao.php';
+?>
 <html lang="pt-br ">
 
 <head>
@@ -36,19 +38,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-column pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.html">Home</a>
+                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.php">Home</a>
                 </li>
                 <li class="nav-item dropdown-adm">
                   <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Administradores
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroAdm.html">Adicionar Administradores</a></li>
-                    <li><a class="dropdown-item" href="./editarAdm.html">Editar Administradores </a></li>
+                    <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
+                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
                  </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.html">Editais</a>
+                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.php">Editais</a>
                 </li>
 
                 <li class="nav-item dropdown-adm">
@@ -56,8 +58,8 @@
                     Fábricas
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroCarrossel.html">Cadastrar Carrossel</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrossel.html">Editar Carrossel </a></li>
+                    <li><a class="dropdown-item" href="./cadastroCarrossel.php">Cadastrar Carrossel</a></li>
+                    <li><a class="dropdown-item" href="./editarCarrossel.php">Editar Carrossel </a></li>
                  </ul>
                 </li>
 
@@ -67,20 +69,20 @@
                     Relatórios
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./relatorioAlunoADM.html">Edital Aluno</a></li>
-                    <li><a class="dropdown-item" href="./relatorioEmpresaAdm.html">Edital Empresa</a></li>
-                    <li><a class="dropdown-item" href="./relatoriobancotalento.html">Banco de Talentos</a></li>
-                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.html">Vagas</a></li>
+                    <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
+                    <li><a class="dropdown-item" href="./relatorioEmpresaAdm.php">Edital Empresa</a></li>
+                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
 
                 </ul>
                 </li>
 
 
                 <li class="nav-item fs-5">
-                  <a class="nav-link" href="./usuarioAdm.html">Usuário</a>
+                  <a class="nav-link" href="./usuarioAdm.php">Usuário</a>
                 </li>
                 <li class="nav-item mt-auto mb-2">
-                  <a class="nav-link fs-5" href="./loginAdm.html">Sair</a>
+                  <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
                 </li>
               </ul>
             </div>
