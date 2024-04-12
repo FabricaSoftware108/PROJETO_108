@@ -107,7 +107,7 @@ include '../../app/session/verificacao.php';
                       </tr>
                     </thead>
                     <tbody>
-                      <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.html'">
+                      <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php'">
                         <td>Coca Cola Pepsi Cola</td>
                         <td>coca@gmail.com</td>
                         <td>000.000.000-00</td>

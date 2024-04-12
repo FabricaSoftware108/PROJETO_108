@@ -81,14 +81,6 @@ include '../../app/session/verificacao.php';
                         </li>
                       </ul>
                       </li>
-      
-      
-                      <li class="nav-item fs-5">
-                        <a class="nav-link" href="./usuarioAdm.html">Usuário</a>
-                      </li>
-                      <li class="nav-item mt-auto mb-2">
-                        <a class="nav-link fs-5" href="./loginAdm.html">Sair</a>
-                      </li>
                     </ul>
                   </div>
                 </div>
