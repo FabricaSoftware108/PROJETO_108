@@ -17,10 +17,14 @@ include "../../app/db/connection.php";
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <?php
+      $query = "SELECT * FROM demandas";
+      $result = mysqli_query($connection, $query);
+    ?>
 </head>
 
 <body class="body-relatorio-edital-da-empresa">
-  
+ 
   <!--Menu de Navegação-->
   <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -89,7 +93,7 @@ include "../../app/db/connection.php";
 
   <main class="relatorio_edital_da_empresa">
     <div class="container_fluid">
-      <form method="post" action="demandaEmpresa.php">
+      <!-- <form method="post" action="demandaEmpresa.php"> -->
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-md-10">
             <div class="relatorio_edital_da_empresa-container">
@@ -109,15 +113,15 @@ include "../../app/db/connection.php";
                           <th class="label-email_edital_da_empresa">E-mail</th>
                         </tr>
                       </thead>
-                      <?php while ($retorno = mysqli_fetch_array($result)){?>
                       <tbody>
-                        <tr>
-                          <td><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td><?php echo $retorno["nomeTitular"];?></td>
-                          <td><?php echo $retorno["cnpj"];?></td>
-                          <td><?php echo $retorno["telefoneTItular"];?></td>
-                          <td><?php echo $retorno["emailTitular"];?></td>
-                        </tr>
+                        <?php while ($retorno = mysqli_fetch_array($result)){?>
+                          <tr>
+                            <td><?php echo $retorno["nomeEmpresa"];?></td>
+                            <td><?php echo $retorno["nomeTitular"];?></td>
+                            <td><?php echo $retorno["cnpj"];?></td>
+                            <td><?php echo $retorno["telefoneTitular"];?></td>
+                            <td><?php echo $retorno["emailTitular"];?></td>
+                          </tr>
                         <?php }?>
                       </tbody>
                     </table>
@@ -128,7 +132,7 @@ include "../../app/db/connection.php";
             </div>
           </div>
         </div>
-      </form>
+      <!-- </form> -->
     </div>
   </main>
 </body>
