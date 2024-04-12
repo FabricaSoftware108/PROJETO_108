@@ -1,11 +1,5 @@
 <?php 
-#include '../../app/db/connection.php';
-$host = '10.168.5.51';
-$user = 'pedro2';
-$password = '2787';
-$database = 'hubfabricasdb';
-
-$connection = new mysqli($host, $user, $password, $database);
+include '../../app/db/connection.php';
 
 if($connection){
     echo '<script>alert("concectado")</script>';
@@ -134,7 +128,6 @@ if($connection){
                                                 class="col-md-3 d-flex align-items-center justify-content-center text-center">
                                                 <span class="btn-inscricoes">INSCRIÇÕES ABERTAS</span>
                                             </div>
-    
                                             <div
                                                 class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
                                                 <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
@@ -151,6 +144,13 @@ if($connection){
                                                     </svg>
                                                 </button>
                                             </div>
+                                            <?php
+                                                $query = 'SELECT * FROM editais';
+                                                $result = mysqli_query($connection, $query);
+                                                while($row = mysqli_fetch_array($result)){
+                                            ?>
+                                                
+                                            <?php } ?>
                                             <div id="inscricoes1" class="sombra_orientacoes-edital shadow-lg">
                                                 <p>Orientações Projeto Seletivo Senac/MS</p>
                                                 <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
