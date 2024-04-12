@@ -1,3 +1,9 @@
+<?php 
+session_start();
+include "../../app/db/connection.php"
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -109,6 +115,7 @@
                           <th class="label-email_edital_da_empresa">E-mail</th>
                         </tr>
                       </thead>
+                      <?php while ($retorno = mysqli_fetch_array($result)){?>
                       <tbody>
                         <tr>
                           <td><?php echo $retorno["nomeEmpresa"];?></td>
@@ -117,6 +124,7 @@
                           <td><?php echo $retorno["telefoneTItular"];?></td>
                           <td><?php echo $retorno["emailTitular"];?></td>
                         </tr>
+                        <?php }?>
                       </tbody>
                     </table>
                   </div>
@@ -130,5 +138,4 @@
     </div>
   </main>
 </body>
-
 </html>
