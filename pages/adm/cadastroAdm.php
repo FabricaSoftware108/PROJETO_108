@@ -1,4 +1,6 @@
-
+<?php
+include '../../app/session/verificacao.php';
+?>
 <html lang="pt-br ">
 
 <head>

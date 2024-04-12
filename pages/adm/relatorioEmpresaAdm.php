@@ -1,3 +1,6 @@
+<?php
+include '../../app/session/verificacao.php';
+?>
 <!-- CABEÇALHO E MENU SANDUICHE DO ADM -->
 <!DOCTYPE html>
 <html lang="pt-br">

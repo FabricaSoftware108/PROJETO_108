@@ -1,3 +1,7 @@
+<?php 
+include '../../app/session/verificacao.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
