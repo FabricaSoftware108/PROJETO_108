@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../app/session/verificacao.php';
+// include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
 ?>
@@ -123,16 +123,17 @@ include '../../app/db/connection.php';
                         <th class="label-linkedin_banco_talento">Descrição</th>
                       </tr>
                     </thead>
-                    <?php while ($retorno = mysqli_fetch_array($result)){?>
                     <tbody>
-                      <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.html'">
-                        <td><?php echo $retorno["cnpj"];?></td>
-                        <td><?php echo $retorno["nomeEmpresa"];?></td>
-                        <td><?php echo $retorno["emailEmpresa"];?></td>
-                        <td><?php echo $retorno["cidade"];?></td>
-                        <td><?php echo $retorno["estado"];?></td>
-                        <td><?php echo $retorno["descricao"];?></td>
-                      </tr>
+                      <?php while ($retorno = mysqli_fetch_array($result)){?>
+                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.html'">
+                          <td><?php echo $retorno["nomeEmpresa"];?></td>
+                          <td><?php echo $retorno["emailEmpresa"];?></td>
+                          <td><?php echo $retorno["cnpj"];?></td>
+                          <td><?php echo $retorno["telefone"];?></td>
+                          <td><?php echo $retorno["cidade"];?></td>
+                          <td><?php echo $retorno["estado"];?></td>
+                          <td><?php echo $retorno["descricao"];?></td>
+                        </tr>
                       <?php }?>
                     </tbody>
                   </table>
