@@ -1,6 +1,7 @@
 <?php
 session_start();
 include '../db/connection.php';
+// include 'verificacao.php';
 
 
 $senha = mysqli_real_escape_string($connection,$_POST['senha']);
