@@ -91,45 +91,46 @@
                 </div>
 
                 <div class="row" id="quadradoRoxo-cadastro-vagas">
-                    <form action="conexaoVagasEmprego.php" class="col-12" id="campo-cadastroVagas">
+                    <form action="../../app/session/conexaoVagasEmprego.php" method="post" class="col-12" id="campo-cadastroVagas">
                         <h1>Dados Da Empresa</h1><br>
                         <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa" id="nome_empresa" 
                                 size="27" maxlength="11" placeholder="Nome da Empresa">
-            
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email" id="email"
-                                size="27" maxlength="7" placeholder="Email"><br>
-            
+                    
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="email" name="email" id="email"
+                                size="27" placeholder="Email"><br>
+                    
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj" 
                                 size="27" maxlength="11" placeholder="CNPJ">
-            
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="email" name="cidade" id="cidade" 
+                    
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cidade" id="cidade" 
                                 size="27" maxlength="70" placeholder="Cidade"><br>
-            
+                    
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
                                 size="27" maxlength="50" placeholder="Telefone">
-            
+                    
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado" id="estado" 
                                 size="27" maxlength="50" placeholder="Estado"><br>
                         </div>
                         
-                            <div class="col-12" id="subtitulo-cadastroVagas">
-                                <div class="titulo-sobre-vagas">
-                                    <h1>Sobre a Vaga</h1>
-                                </div>
-                                <div class="subtitulo-sobre-vagas">
-                                    <p>Informe os requisitos e informações da vaga de emprego no campo abaixo.</p>
-                                </div>
-                                
-                                <div class="text-area-vagas">
-                                    <textarea class="form-control" id="campoTextoDescricaoVaga"  size="200" style="resize: none;" rows="15" placeholder="Descrição da Vaga"></textarea>
-                                </div><br>
-
-                                 <div class="button-enviar-vagas">
-                                    <button type="button" class="btn btn-primary">Enviar</button>
-                                </div> 
+                        <div class="col-12" id="subtitulo-cadastroVagas">
+                            <div class="titulo-sobre-vagas">
+                                <h1>Sobre a Vaga</h1>
                             </div>
+                            <div class="subtitulo-sobre-vagas">
+                                <p>Informe os requisitos e informações da vaga de emprego no campo abaixo.</p>
+                            </div>
+                            
+                            <div class="text-area-vagas">
+                                <textarea class="form-control" id="campoTextoDescricaoVaga" style="resize: none;" rows="15" name="descricao_vaga" placeholder="Descrição da Vaga"></textarea>
+                            </div><br>
+                    
+                            <div class="button-enviar-vagas">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div> 
+                        </div>
                     </form>
+                    
                 </div>
                     
                 
