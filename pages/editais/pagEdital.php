@@ -132,7 +132,14 @@ if($connection){
                                                 class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
                                                 <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
                                                     Grande</p>
-                                            </div>
+                                                </div>
+                                                    <?php
+                                                        $query = 'SELECT * FROM editais';
+                                                        $result = mysqli_query($connection, $query);
+                                                        while($row = mysqli_fetch_array($result)){
+                                                    ?>
+                                                        <h1> <?php echo "{$row["codigo"]} {$row["nome"]} {$row["dataInicio"]}" ?></h1>
+                                                    <?php } ?>
                                             <div class="col-md-1 ">
                                                 <button class="sombra-edital-btn" onclick="toggletabble_inscricoes1()">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -144,13 +151,6 @@ if($connection){
                                                     </svg>
                                                 </button>
                                             </div>
-                                            <?php
-                                                $query = 'SELECT * FROM editais';
-                                                $result = mysqli_query($connection, $query);
-                                                while($row = mysqli_fetch_array($result)){
-                                            ?>
-                                                
-                                            <?php } ?>
                                             <div id="inscricoes1" class="sombra_orientacoes-edital shadow-lg">
                                                 <p>Orientações Projeto Seletivo Senac/MS</p>
                                                 <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
