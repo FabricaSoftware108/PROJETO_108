@@ -1,26 +1,24 @@
-<?php 
-include "../../app/session/verificacao.php";
-include "../../app/db/connection.php";
+<?php
+include '../../app/session/verificacao.php';
 ?>
-
-
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br ">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demanda Empresa</title>
-  <link rel="stylesheet" href="../../css/styles.css">
+  <title>Cadastro Admin</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/cadastro-adm.js"></script>
+
 </head>
 
-<body class="body-relatorio-edital-da-empresa">
-  
+<body class="Cadastro-Admin">
   <!--Menu de Navegação-->
   <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -87,49 +85,46 @@ include "../../app/db/connection.php";
               </nav>        
         </header>
 
-  <main class="relatorio_edital_da_empresa">
-    <div class="container_fluid">
-      <form method="post" action="demandaEmpresa.php">
+<main class="cadastro-adm">
+  <div class="container-fluid" style="padding-top: 50px;">
+    <div class="container">
+      <div class="cadastro-adm-centered">
         <div class="row justify-content-center align-items-center text-center">
-          <div class="col-md-10">
-            <div class="relatorio_edital_da_empresa-container">
-              <div class="relatorio_edital_da_empresa-background-container">
-                <div class="relatorio_edital_da_empresa-header">   
-                  <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
+          <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
+            <div class="cadastro-adm-container-1" style="width: 100%;">
+              <div class="cadastro-adm-container-title">Adicionar ADM</div>
+              <div class="cadastro-adm-distanciamento">
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-nome" class="cadastro-adm-label">Nome</label>
+                  <input type="text" id="cadastro-adm-nome" class="form-control cadastro-adm-input">
                 </div>
-                <div class="relatorio_edital_da_empresa-content">
-                  <div class="relatorio_edital_da_empresa-background">
-                    <table class="table" id="table_relatorio_edital_da_empresa">
-                      <thead>
-                        <tr>
-                          <th class="label-nome_edital_da_empresa">Nome</th>
-                          <th class="label-representante_edital_da_empresa">Representante</th>
-                          <th class="label-cnpj_edital_da_empresa">CNPJ</th>
-                          <th class="label-telefone_edital_da_empresa">Telefone</th>
-                          <th class="label-email_edital_da_empresa">E-mail</th>
-                        </tr>
-                      </thead>
-                      <?php while ($retorno = mysqli_fetch_array($result)){?>
-                      <tbody>
-                        <tr>
-                          <td><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td><?php echo $retorno["nomeTitular"];?></td>
-                          <td><?php echo $retorno["cnpj"];?></td>
-                          <td><?php echo $retorno["telefoneTItular"];?></td>
-                          <td><?php echo $retorno["emailTitular"];?></td>
-                        </tr>
-                        <?php }?>
-                      </tbody>
-                    </table>
-                  </div>
-                  <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-email" class="cadastro-adm-label">E-Mail</label>
+                  <input type="email" id="cadastro-adm-email" class="form-control cadastro-adm-input">
                 </div>
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-telefone" class="cadastro-adm-label">Telefone</label>
+                  <input type="tel" id="cadastro-adm-telefone" class="form-control cadastro-adm-input">
+                </div>
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-senha" class="cadastro-adm-label">Senha Pré-Definida</label>
+                  <input type="text" id="cadastro-adm-senha" class="form-control cadastro-adm-input" readonly>
+                </div>
+                <button class="btn btn-primary cadastro-adm-button">Ativar</button>
               </div>
+              <!-- IMAGEM -->
+               <img src="../../Imagens/cadastro-adm-imagem-1.png" class="cadastro-adm-img-1"> 
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
-  </main>
+  </div>
+</main>
+
+  
+
+  <script src="../js/cadastro-adm.js"></script>
 </body>
+
 </html>

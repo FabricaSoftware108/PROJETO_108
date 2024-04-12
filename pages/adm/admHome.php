@@ -1,28 +1,27 @@
-<?php 
-include "../../app/session/verificacao.php";
-include "../../app/db/connection.php";
+<?php
+include '../../app/session/verificacao.php';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <title>Home ADM</title>
+        <meta charset="UTF-8">
+        
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demanda Empresa</title>
-  <link rel="stylesheet" href="../../css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</head>
+        <!-- CSS -->
+        <link href="../../css/styles.css" rel="stylesheet">
 
-<body class="body-relatorio-edital-da-empresa">
-  
-  <!--Menu de Navegação-->
-  <header> 
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body class="body-adm-home">
+
+        <!--Menu de Navegação-->
+        <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
                 <div class="container-fluid">
                     <div class="md-auto">
@@ -81,55 +80,47 @@ include "../../app/db/connection.php";
                           <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
                         </li>
                       </ul>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </nav>        
+              </div>
+            </nav>        
         </header>
 
-  <main class="relatorio_edital_da_empresa">
-    <div class="container_fluid">
-      <form method="post" action="demandaEmpresa.php">
-        <div class="row justify-content-center align-items-center text-center">
-          <div class="col-md-10">
-            <div class="relatorio_edital_da_empresa-container">
-              <div class="relatorio_edital_da_empresa-background-container">
-                <div class="relatorio_edital_da_empresa-header">   
-                  <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
-                </div>
-                <div class="relatorio_edital_da_empresa-content">
-                  <div class="relatorio_edital_da_empresa-background">
-                    <table class="table" id="table_relatorio_edital_da_empresa">
-                      <thead>
-                        <tr>
-                          <th class="label-nome_edital_da_empresa">Nome</th>
-                          <th class="label-representante_edital_da_empresa">Representante</th>
-                          <th class="label-cnpj_edital_da_empresa">CNPJ</th>
-                          <th class="label-telefone_edital_da_empresa">Telefone</th>
-                          <th class="label-email_edital_da_empresa">E-mail</th>
-                        </tr>
-                      </thead>
-                      <?php while ($retorno = mysqli_fetch_array($result)){?>
-                      <tbody>
-                        <tr>
-                          <td><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td><?php echo $retorno["nomeTitular"];?></td>
-                          <td><?php echo $retorno["cnpj"];?></td>
-                          <td><?php echo $retorno["telefoneTItular"];?></td>
-                          <td><?php echo $retorno["emailTitular"];?></td>
-                        </tr>
-                        <?php }?>
-                      </tbody>
-                    </table>
-                  </div>
-                  <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
-                </div>
+        <!--Conteúdo da página-->
+        <main class="main-adm-home">
+          <div class="container" id="container-1-adm-home">
+            <div class="row justify-content-center" id="row-1-adm-home">
+              <div class="col-sm-12 col-lg-8" id="label-bem-vindos-adm-home">
+                <b><p class="text-center">Bem Vindo!!!</p></b>  
+              </div>
+            </div>
+
+            <!--Quadrados com as informações-->
+            <div class="row justify-content-center" id="row-2-adm-home">
+              <div class="col-sm-12 col-lg-3" id="label-quadrados-1-adm-home">
+                <p class="text-center">217<br>Projetos Submetidos</p>
+            </div>
+              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-2-adm-home">
+                <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
+              </div>
+              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-3-adm-home">
+                <p class="text-center">160<br>Banco de Talentos</p>
               </div>
             </div>
           </div>
-        </div>
-      </form>
-    </div>
-  </main>
-</body>
+          
+          <!--Imagem dos gráficos-->
+          <div class="container" id="container-2-adm-home-imagem">
+            <div class="row justify-content-center">
+              <div class="col-sm-12 col-lg-8">
+                <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id-="adm-home-img-2">
+              </div>
+            </div>
+          </div>
+      </main>
+
+    </body>
+
 </html>
