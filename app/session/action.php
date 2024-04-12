@@ -16,28 +16,25 @@ $query = "SELECT * FROM admin WHERE email = '{$email}' AND senha = '{$senha}'";
 
 $result = mysqli_query($connection, $query);
 
-$nome = $result['nome'];
-echo $nome;
+
 
 $row = mysqli_fetch_array($result);
 
 
-    // $row = mysqli_num_rows($result);
+if($row['email']==$email && $row['senha']==$senha){
+    $_SESSION['email'] = $row['email'];
+    $_SESSION['senha'] = $row['senha'];
+    $_SESSION['nome'] = $row['nome'];
+    $_SESSION['telefone'] = $row['telefone'];
+    $_SESSION['estado'] = $row['estado'];
 
-    if($row['email']==$email && $row['senha']==$senha){
-        $_SESSION['email'] = $row['email'];
-        $_SESSION['senha'] = $row['senha'];
-        $_SESSION['nome'] = $row['nome'];
-        $_SESSION['telefone'] = $row['telefone'];
-        $_SESSION['estado'] = $row['estado'];
-  
-        header("location: ../../pages/adm/admHome.html");
-        exit();
-    }
-    else{
-        header("location: ../../pages/adm/loginAdm.html");
-        exit();
-    }
+    header("location: ../../pages/adm/admHome.html");
+    exit();
+}
+else{
+    header("location: ../../pages/adm/loginAdm.html");
+    exit();
+}
 
 
 
