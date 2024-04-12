@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Carrossel ADM</title>
-    <link rel="stylesheet" href="../../Css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,8 +37,14 @@
                 <li class="nav-item">
                   <a class="nav-link active fs-5" aria-current="page" href="./admHome.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5" href="./cadastroAdm.html">Administradores</a>
+                <li class="nav-item dropdown-adm">
+                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administradores
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./cadastroCarrossel.html">Adicionar Administradores</a></li>
+                    <li><a class="dropdown-item" href="./editarCarrossel.html">Editar Administradores </a></li>
+                 </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.html">Editais</a>
