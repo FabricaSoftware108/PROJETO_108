@@ -1,3 +1,7 @@
+<?php
+include '../../app/session/verificacao.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -106,6 +110,7 @@
           </div>
           
           <!--Imagem dos gráficos-->
+          <h1><?php echo $_SESSION['nome'] ?></h1>
           <div class="container" id="container-2-adm-home-imagem">
             <div class="row justify-content-center">
               <div class="col-sm-12 col-lg-8">

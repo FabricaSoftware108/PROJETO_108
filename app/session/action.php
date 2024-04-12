@@ -28,7 +28,7 @@ if($row['email']==$email && $row['senha']==$senha){
     $_SESSION['telefone'] = $row['telefone'];
     $_SESSION['estado'] = $row['estado'];
     
-    header("location: ../../pages/adm/admHome.html");
+    header("location: ../../pages/adm/admHome.php");
     exit();
 }
 else{
