@@ -1,33 +1,24 @@
 <?php
-session_start();
-// include '../../app/session/verificacao.php';
-include '../../app/db/connection.php';
-
+include '../../app/session/verificacao.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br ">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatorio Banco de Talentos</title>
-  <link rel="stylesheet" href="../../css/styles.css">
+  <title>Cadastro Admin</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <?php
-    
-    $query="select *  from vagasEmprego";
-    $result=mysqli_query($connection,$query);
+  <link rel="stylesheet" href="../../css/styles.css">
+  <script src="../../js/cadastro-adm.js"></script>
 
-    ?>
 </head>
 
-<body class="body-relatorio-banco-talento">
-  
+<body class="Cadastro-Admin">
   <!--Menu de Navegação-->
   <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -94,53 +85,46 @@ include '../../app/db/connection.php';
               </nav>        
         </header>
 
-  <main class="relatorio_banco_talentos">
-    <div class="container_fluid">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-md-10 col-lg-6">
-          <div class="relatorio-banco-talento-container">
-            <div class="relatorio-banco-talento-background-container">
-              <div class="relatorio-banco-talento-header">
-                <div class="relatorio-banco-talento-title">Relatório Vagas de Emprego</div>
-              </div>
-              <div class="relatorio-banco-talento-content">
-                <div class="relatorio-banco_talento-background">
-                  <table class="table" id="table_relatorio_banco_talentos">
-                    <thead>
-                      <tr>
-                        <th class="label-nome_banco_talento">Nome</th>
-                        <th class="label-email_banco_talento">E-mail</th>
-                        <th class="label-cpf_banco_talento">CNPJ</th>
-                        <th class="label-telefone_banco_talento">Telefone</th>
-                        <th class="label-linkedin_banco_talento">Cidade</th>
-                        <th class="label-linkedin_banco_talento">Estado</th>
-                        <th class="label-linkedin_banco_talento">Descrição</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <?php while ($retorno = mysqli_fetch_array($result)){?>
-                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.html'">
-                          <td><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td><?php echo $retorno["emailEmpresa"];?></td>
-                          <td><?php echo $retorno["cnpj"];?></td>
-                          <td><?php echo $retorno["telefone"];?></td>
-                          <td><?php echo $retorno["cidade"];?></td>
-                          <td><?php echo $retorno["estado"];?></td>
-                          <td><?php echo $retorno["descricao"];?></td>
-                        </tr>
-                      <?php }?>
-                    </tbody>
-                  </table>
+<main class="cadastro-adm">
+  <div class="container-fluid" style="padding-top: 50px;">
+    <div class="container">
+      <div class="cadastro-adm-centered">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
+            <div class="cadastro-adm-container-1" style="width: 100%;">
+              <div class="cadastro-adm-container-title">Adicionar ADM</div>
+              <div class="cadastro-adm-distanciamento">
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-nome" class="cadastro-adm-label">Nome</label>
+                  <input type="text" id="cadastro-adm-nome" class="form-control cadastro-adm-input">
                 </div>
-                <button class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-email" class="cadastro-adm-label">E-Mail</label>
+                  <input type="email" id="cadastro-adm-email" class="form-control cadastro-adm-input">
+                </div>
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-telefone" class="cadastro-adm-label">Telefone</label>
+                  <input type="tel" id="cadastro-adm-telefone" class="form-control cadastro-adm-input">
+                </div>
+                <div class="cadastro-adm-input-container">
+                  <label for="cadastro-adm-senha" class="cadastro-adm-label">Senha Pré-Definida</label>
+                  <input type="text" id="cadastro-adm-senha" class="form-control cadastro-adm-input" readonly>
+                </div>
+                <button class="btn btn-primary cadastro-adm-button">Ativar</button>
               </div>
+              <!-- IMAGEM -->
+               <img src="../../Imagens/cadastro-adm-imagem-1.png" class="cadastro-adm-img-1"> 
             </div>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 
+  
+
+  <script src="../js/cadastro-adm.js"></script>
 </body>
 
 </html>

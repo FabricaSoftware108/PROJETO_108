@@ -1,35 +1,27 @@
 <?php
-session_start();
-// include '../../app/session/verificacao.php';
-include '../../app/db/connection.php';
-
+include '../../app/session/verificacao.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <title>Home ADM</title>
+        <meta charset="UTF-8">
+        
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatorio Banco de Talentos</title>
-  <link rel="stylesheet" href="../../css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-    <?php
-    
-    $query="select *  from vagasEmprego";
-    $result=mysqli_query($connection,$query);
+        <!-- CSS -->
+        <link href="../../css/styles.css" rel="stylesheet">
 
-    ?>
-</head>
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body class="body-adm-home">
 
-<body class="body-relatorio-banco-talento">
-  
-  <!--Menu de Navegação-->
-  <header> 
+        <!--Menu de Navegação-->
+        <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
                 <div class="container-fluid">
                     <div class="md-auto">
@@ -88,59 +80,47 @@ include '../../app/db/connection.php';
                           <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
                         </li>
                       </ul>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </nav>        
+              </div>
+            </nav>        
         </header>
 
-  <main class="relatorio_banco_talentos">
-    <div class="container_fluid">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-md-10 col-lg-6">
-          <div class="relatorio-banco-talento-container">
-            <div class="relatorio-banco-talento-background-container">
-              <div class="relatorio-banco-talento-header">
-                <div class="relatorio-banco-talento-title">Relatório Vagas de Emprego</div>
+        <!--Conteúdo da página-->
+        <main class="main-adm-home">
+          <div class="container" id="container-1-adm-home">
+            <div class="row justify-content-center" id="row-1-adm-home">
+              <div class="col-sm-12 col-lg-8" id="label-bem-vindos-adm-home">
+                <b><p class="text-center">Bem Vindo!!!</p></b>  
               </div>
-              <div class="relatorio-banco-talento-content">
-                <div class="relatorio-banco_talento-background">
-                  <table class="table" id="table_relatorio_banco_talentos">
-                    <thead>
-                      <tr>
-                        <th class="label-nome_banco_talento">Nome</th>
-                        <th class="label-email_banco_talento">E-mail</th>
-                        <th class="label-cpf_banco_talento">CNPJ</th>
-                        <th class="label-telefone_banco_talento">Telefone</th>
-                        <th class="label-linkedin_banco_talento">Cidade</th>
-                        <th class="label-linkedin_banco_talento">Estado</th>
-                        <th class="label-linkedin_banco_talento">Descrição</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <?php while ($retorno = mysqli_fetch_array($result)){?>
-                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.html'">
-                          <td><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td><?php echo $retorno["emailEmpresa"];?></td>
-                          <td><?php echo $retorno["cnpj"];?></td>
-                          <td><?php echo $retorno["telefone"];?></td>
-                          <td><?php echo $retorno["cidade"];?></td>
-                          <td><?php echo $retorno["estado"];?></td>
-                          <td><?php echo $retorno["descricao"];?></td>
-                        </tr>
-                      <?php }?>
-                    </tbody>
-                  </table>
-                </div>
-                <button class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
+            </div>
+
+            <!--Quadrados com as informações-->
+            <div class="row justify-content-center" id="row-2-adm-home">
+              <div class="col-sm-12 col-lg-3" id="label-quadrados-1-adm-home">
+                <p class="text-center">217<br>Projetos Submetidos</p>
+            </div>
+              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-2-adm-home">
+                <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
+              </div>
+              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-3-adm-home">
+                <p class="text-center">160<br>Banco de Talentos</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </main>
+          
+          <!--Imagem dos gráficos-->
+          <div class="container" id="container-2-adm-home-imagem">
+            <div class="row justify-content-center">
+              <div class="col-sm-12 col-lg-8">
+                <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id-="adm-home-img-2">
+              </div>
+            </div>
+          </div>
+      </main>
 
-</body>
+    </body>
 
 </html>
