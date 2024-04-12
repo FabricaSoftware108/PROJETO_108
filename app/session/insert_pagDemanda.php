@@ -1,6 +1,6 @@
 <?php
 include ('../db/connection.php');
-// include ('verificacao.php');
+include ('verificacao.php');
 
 session_start();
 
@@ -12,9 +12,9 @@ $telefone_empresa= mysqli_real_escape_string($connection, $_POST["telefone"]);
 $cidade= mysqli_real_escape_string($connection, $_POST["cidade"]);
 
 $nome_titular= mysqli_real_escape_string($connection, $_POST["nome"]);
-$email_titular= mysqli_real_escape_string($connection, $_POST["email"]);
+$email_titular= mysqli_real_escape_string($connection, $_POST["email_titular"]);
 $cpf= mysqli_real_escape_string($connection, $_POST["CPF"]);
-$telefone_titular= mysqli_real_escape_string($connection, $_POST["telefone"]);
+$telefone_titular= mysqli_real_escape_string($connection, $_POST["telefone_titular"]);
 $arquivo= mysqli_real_escape_string($connection, $_POST["arquivo"]);
 
 
