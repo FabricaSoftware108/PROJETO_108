@@ -6,3 +6,7 @@ $password = '307108';
 $database = 'hubfabricasdb';
 
 $connection = new mysqli($host, $user, $password, $database);
+
+
+
+?>
