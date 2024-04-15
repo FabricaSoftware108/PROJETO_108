@@ -1,6 +1,6 @@
 <?php 
 include "../../app/session/verificacao.php";
-include "../../app/session/demandaEmpresa.php"
+include "../../app/session/conexaoDemandaEmpresa.php"
 ?>
 
 
