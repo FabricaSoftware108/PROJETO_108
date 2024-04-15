@@ -1,6 +1,9 @@
-<?php
-include '../../app/session/verificacao.php';
+<?php 
+include "../../app/session/verificacao.php";
+include "../../app/session/conexaoDemandaEmpresa.php"
 ?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,10 +17,11 @@ include '../../app/session/verificacao.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    
 </head>
 
 <body class="body-relatorio-edital-da-empresa">
-  
+ 
   <!--Menu de Navegação-->
   <header> 
             <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -63,7 +67,7 @@ include '../../app/session/verificacao.php';
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
-                            <li><a class="dropdown-item" href="./relatorioEmpresaAdm.php">Edital Empresa</a></li>
+                            <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
                             <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
                             <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
         
@@ -86,107 +90,47 @@ include '../../app/session/verificacao.php';
 
   <main class="relatorio_edital_da_empresa">
     <div class="container_fluid">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-md-10">
-          <div class="relatorio_edital_da_empresa-container">
-            <div class="relatorio_edital_da_empresa-background-container">
-              <div class="relatorio_edital_da_empresa-header">   
-                <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
-              </div>
-              <div class="relatorio_edital_da_empresa-content">
-                <div class="relatorio_edital_da_empresa-background">
-                  <table class="table" id="table_relatorio_edital_da_empresa">
-                    <thead>
-                      <tr>
-                        <th class="label-nome_edital_da_empresa">Nome</th>
-                        <th class="label-representante_edital_da_empresa">Representante</th>
-                        <th class="label-cnpj_edital_da_empresa">CNPJ</th>
-                        <th class="label-telefone_edital_da_empresa">Telefone</th>
-                        <th class="label-email_edital_da_empresa">E-mail</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>Representante 1</td>
-                        <td>CNPJ 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                    </tbody>
-                  </table>
+      <!-- <form method="post" action="demandaEmpresa.php"> -->
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-10">
+            <div class="relatorio_edital_da_empresa-container">
+              <div class="relatorio_edital_da_empresa-background-container">
+                <div class="relatorio_edital_da_empresa-header">   
+                  <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
                 </div>
-                <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
+                <div class="relatorio_edital_da_empresa-content">
+                  <div class="relatorio_edital_da_empresa-background">
+                    <table class="table" id="table_relatorio_edital_da_empresa">
+                      <thead>
+                        <tr>
+                          <th class="label-nome_edital_da_empresa">Nome</th>
+                          <th class="label-representante_edital_da_empresa">Representante</th>
+                          <th class="label-cnpj_edital_da_empresa">CNPJ</th>
+                          <th class="label-telefone_edital_da_empresa">Telefone</th>
+                          <th class="label-email_edital_da_empresa">E-mail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php while ($retorno = mysqli_fetch_array($result)){?>
+                          <tr>
+                            <td><?php echo $retorno["nomeEmpresa"];?></td>
+                            <td><?php echo $retorno["nomeTitular"];?></td>
+                            <td><?php echo $retorno["cnpj"];?></td>
+                            <td><?php echo $retorno["telefoneTitular"];?></td>
+                            <td><?php echo $retorno["emailTitular"];?></td>
+                          </tr>
+                        <?php }?>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      <!-- </form> -->
     </div>
   </main>
 </body>
-
 </html>
