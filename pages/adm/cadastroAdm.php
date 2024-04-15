@@ -92,29 +92,31 @@ include '../../app/session/verificacao.php';
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
             <div class="cadastro-adm-container-1" style="width: 100%;">
+            <form method="post" action="../../app/session/cadastroadmconexao.php">
               <div class="cadastro-adm-container-title">Adicionar ADM</div>
               <div class="cadastro-adm-distanciamento">
                 <div class="cadastro-adm-input-container">
                   <label for="cadastro-adm-nome" class="cadastro-adm-label">Nome</label>
-                  <input type="text" id="cadastro-adm-nome" class="form-control cadastro-adm-input">
+                  <input type="text" id="cadastro-adm-nome" name="nome" class="form-control cadastro-adm-input">
                 </div>
                 <div class="cadastro-adm-input-container">
                   <label for="cadastro-adm-email" class="cadastro-adm-label">E-Mail</label>
-                  <input type="email" id="cadastro-adm-email" class="form-control cadastro-adm-input">
+                  <input type="email" id="cadastro-adm-email" name="email" class="form-control cadastro-adm-input">
                 </div>
                 <div class="cadastro-adm-input-container">
                   <label for="cadastro-adm-telefone" class="cadastro-adm-label">Telefone</label>
-                  <input type="tel" id="cadastro-adm-telefone" class="form-control cadastro-adm-input">
+                  <input type="tel" id="cadastro-adm-telefone" name="telefone" class="form-control cadastro-adm-input">
                 </div>
                 <div class="cadastro-adm-input-container">
                   <label for="cadastro-adm-senha" class="cadastro-adm-label">Senha Pré-Definida</label>
-                  <input type="text" id="cadastro-adm-senha" class="form-control cadastro-adm-input" readonly>
+                  <input type="text" id="cadastro-adm-senha" name="senha" class="form-control cadastro-adm-input" readonly>
                 </div>
-                <button class="btn btn-primary cadastro-adm-button">Ativar</button>
+                <button type="submit" class="btn btn-primary cadastro-adm-button">Ativar</button>
               </div>
               <!-- IMAGEM -->
-               <img src="../../Imagens/cadastro-adm-imagem-1.png" class="cadastro-adm-img-1"> 
+              <img src="../../Imagens/cadastro-adm-imagem-1.png" class="cadastro-adm-img-1"> 
             </div>
+          </form>
           </div>
         </div>
       </div>
