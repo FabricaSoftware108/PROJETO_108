@@ -92,7 +92,7 @@ include '../../app/session/verificacao.php';
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
             <div class="cadastro-adm-container-1" style="width: 100%;">
-            <form method="post" action="../../app/session/cadastroadmconexao.php">
+            <form method="post" action="../../app/session/conexaoCadastroAdm.php">
               <div class="cadastro-adm-container-title">Adicionar ADM</div>
               <div class="cadastro-adm-distanciamento">
                 <div class="cadastro-adm-input-container">
