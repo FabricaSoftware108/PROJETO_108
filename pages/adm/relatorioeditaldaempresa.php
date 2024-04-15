@@ -1,6 +1,5 @@
 <?php 
-include "../../app/session/verificacao.php";
-include "../../app/db/connection.php";
+include "../../app/session/demandaEmpresa.php"
 ?>
 
 
@@ -17,10 +16,7 @@ include "../../app/db/connection.php";
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <?php
-      $query = "SELECT * FROM demandas";
-      $result = mysqli_query($connection, $query);
-    ?>
+    
 </head>
 
 <body class="body-relatorio-edital-da-empresa">
