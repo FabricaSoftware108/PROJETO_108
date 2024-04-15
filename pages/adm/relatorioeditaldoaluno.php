@@ -106,77 +106,16 @@ include '../../app/session/verificacao.php';
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                    </tbody>
+                        <?php while ($retorno = mysqli_fetch_array($result)){?>
+                          <tr>
+                            <td><?php echo $retorno["nome"];?></td>
+                            <td><?php echo $retorno["cpf"];?></td>
+                            <td><?php echo $retorno["cep"];?></td>
+                            <td><?php echo $retorno["telefone"];?></td>
+                            <td><?php echo $retorno["email"];?></td>
+                          </tr>
+                        <?php }?>
+                      </tbody>
                   </table>
                 </div>
                 <button class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
