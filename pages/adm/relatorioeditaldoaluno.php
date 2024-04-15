@@ -1,5 +1,6 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/session/conexaoAlunosPSG.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
