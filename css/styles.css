@@ -2754,7 +2754,12 @@ overflow: hidden;
         margin:25px;
     }
 }
-
+@media(max-width:690px){
+#adm-home-img-2{
+    width:690px;
+    box-shadow:none;
+}
+}
 #row-2-adm-home{
     margin-top:18rem;
     font-size:x-large;
@@ -2769,6 +2774,7 @@ overflow: hidden;
     width:300px;
     box-shadow:none;
 }
+
 
 
 
