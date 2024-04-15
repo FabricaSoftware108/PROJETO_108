@@ -43,3 +43,5 @@ function toggletabble_inscricoes2() {
         ins2.style.display = "none";
     }
 }
+
+
