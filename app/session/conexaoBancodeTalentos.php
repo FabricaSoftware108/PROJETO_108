@@ -1,34 +1,38 @@
 <?php
 
-include '.php';
+include '../db/connection.php';
+session_start();
 
+// Verifica se os valores foram recebidos do formulário antes de usá-los
+if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["CPF"]) && !empty($_POST["escolaridade"]) && !empty($_POST["data_nascimento"]) && !empty($_POST["email"]) && !empty($_POST["telefone"]) && !empty($_POST["uf"]) && !empty($_POST["rua"]) && !empty($_POST["bairro"]) && !empty($_POST["cidade"]) && !empty($_POST["numero"]) && !empty($_POST["github"]) && !empty($_POST["Linkedin"])) {
+    $nome = mysqli_real_escape_string($connection, $_POST["nome"]);
+    $sobrenome = mysqli_real_escape_string($connection, $_POST["sobrenome"]);
+    $cpf = mysqli_real_escape_string($connection, $_POST["CPF"]);
+    $escolaridade = mysqli_real_escape_string($connection, $_POST["escolaridade"]);
+    $dataNascimento = mysqli_real_escape_string($connection, $_POST["data_nascimento"]);
+    $email = mysqli_real_escape_string($connection, $_POST["email"]);
+    $telefone = mysqli_real_escape_string($connection, $_POST["telefone"]);
+    $estado = mysqli_real_escape_string($connection, $_POST["uf"]);
+    $rua = mysqli_real_escape_string($connection, $_POST["rua"]);
+    $bairro = mysqli_real_escape_string($connection, $_POST["bairro"]);
+    $cidade = mysqli_real_escape_string($connection, $_POST["cidade"]);
+    $numero = mysqli_real_escape_string($connection, $_POST["numero"]);
+    $github = mysqli_real_escape_string($connection, $_POST["github"]);
+    $linkedin = mysqli_real_escape_string($connection, $_POST["Linkedin"]);
 
-if(isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['cpf']) && isset($_POST['escolaridade']) && isset($_POST['data_nascimento'])
- && isset($_POST['email']) && isset($_POST['telefone']) && isset($_POST['uf']) && isset($_POST['rua']) && isset($_POST['bairro']) && isset($_POST['cidade'])
- && isset($_POST['numero']) && isset($_POST['github']) && isset($_POST['linkedin'])){
-    $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
-    $cpf = $_POST['cpf'];
-    $escolaridade = $_POST['escolaridade'];
-    $data_nascimento = $_POST['data_nascimento'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $uf = $_POST['uf'];
-    $rua = $_POST['rua'];
-    $bairro = $_POST['bairro'];
-    $cidade = $_POST['cidade'];
-    $numero = $_POST['numero'];  
-    $github = $_POST['github'];
-    $linkedin = $_POST['linkedin'];
-    
+    $query = "INSERT INTO bancosTalentos (cpf, nome, sobrenome, escolaridade, dataNascimento, email, telefone, estado, cidade, bairro, rua, numero, github, linkedin) 
+              VALUES ('$cpf', '$nome', '$sobrenome', '$escolaridade', '$dataNascimento', '$email', '$telefone', '$estado', '$cidade', '$bairro', '$rua', '$numero', '$github', '$linkedin')";
 
-    $query = "INSERT INTO banco_taletos (nome, sobrenome, cpf, escolaridade, data_nascimento) VALUES ('$nome','$sobrenome','$cpf','$escolaridade','$data_nascimento','$email','$telefone','$uf','$rua','$bairro','$cidade','$numero','$github','$linkedin')";
-    
-    $result = mysqli_query($con, $query);
-    
+    $result = mysqli_query($connection, $query);
+
+    if (!$result) {
+        echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro'); window.location.href='../../pages/editais/pagBancoTalentos.html    ';</script>";
+    } else {
+        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
+    }
 } else {
-    header("location: ../../pages/editais/pagBancoTalentos.html");
-    exit();
+    echo "<script language='javascript'>window.alert('Por favor, preencha todos os campos do formulário'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
 }
 
+exit();
 ?>
