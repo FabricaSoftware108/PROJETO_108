@@ -4,16 +4,26 @@ include '../../app/session/verificacao.php';
 
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Home ADM</title>
-        <meta charset="UTF-8">
-        
-        <!-- Link Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-        <!-- CSS -->
-        <link href="../../css/styles.css" rel="stylesheet">
+<head>
+  <title>Home ADM</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+ 
+
+  <!-- CSS -->
+  <link href="../../css/styles.css" rel="stylesheet">
+  <!--Menu de Navegação-->
+
 
         <!-- Fonte -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -101,30 +111,31 @@ include '../../app/session/verificacao.php';
               </div>
             </div>
 
-            <!--Quadrados com as informações-->
-            <div class="row justify-content-center" id="row-2-adm-home">
-              <div class="col-sm-12 col-lg-3" id="label-quadrados-1-adm-home">
-                <p class="text-center">217<br>Projetos Submetidos</p>
-            </div>
-              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-2-adm-home">
-                <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
-              </div>
-              <div class="col-sm-12 col-lg-3 offset-lg-1" id="label-quadrados-3-adm-home">
-                <p class="text-center">160<br>Banco de Talentos</p>
-              </div>
-            </div>
-          </div>
-          
-          <!--Imagem dos gráficos-->
-          <div class="container" id="container-2-adm-home-imagem">
-            <div class="row justify-content-center">
-              <div class="col-sm-12 col-lg-8">
-                <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id-="adm-home-img-2">
-              </div>
-            </div>
-          </div>
-      </main>
+      <!--Quadrados com as informações-->
+      <div class="row justify-content-center" id="row-2-adm-home">
+        <div class="col-sm-12 col-lg-3 w-sm-100" id="label-quadrados-1-adm-home">
+          <p class="text-center">217<br>Projetos Submetidos</p>
+        </div>
+        <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100" id="label-quadrados-2-adm-home">
+          <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
+        </div>
+        <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100" id="label-quadrados-3-adm-home">
+          <p class="text-center">160<br>Banco de Talentos</p>
+        </div>
+      </div>
+    </div>
 
-    </body>
+    <!--Imagem dos gráficos-->
+    <div class="container w-100" id="container2AdmHomeImagem">
+  <div class="row justify-content-center d-flex align-items-center">
+    <div class="col-sm-12 col-lg-8">
+      <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id="adm-home-img-2">
+    </div>
+  </div>
+</div>
+
+  </main>
+
+</body>
 
 </html>
