@@ -2759,7 +2759,12 @@ overflow: hidden;
         margin:25px;
     }
 }
-
+@media(max-width:690px){
+#adm-home-img-2{
+    width:690px;
+    box-shadow:none;
+}
+}
 #row-2-adm-home{
     margin-top:18rem;
     font-size:x-large;
@@ -2774,6 +2779,7 @@ overflow: hidden;
     width:300px;
     box-shadow:none;
 }
+
 
 
 
@@ -2835,7 +2841,8 @@ overflow: hidden;
 
 
 
-    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+    @media(max-width:279px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. 
+        muda a responsividade do home adm*/
         .container-fluid {
             box-shadow:none !important;
             width:367px !important;
@@ -4006,7 +4013,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 }
 
-@media(max-width:388px){/*não mecher aquiiii*/
+@media(max-width:388){/*não mecher aquiiii*/
     .cadastro-adm-edital-centered {
         margin-top: 16vh !important;
     }
@@ -4232,12 +4239,16 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    overflow: hidden;
 }
 
 @media(min-width:1140px){
     .main-adm-home{
         background-image:url(../Imagens/background-image-adm-home.png);
         background-repeat:no-repeat;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -4255,6 +4266,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
+
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
@@ -4300,7 +4312,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     font-size:x-large;
 }
 
-#container-2-adm-home-imagem{
+#container2AdmHomeImagem{
     margin-top:5rem;
     width:900px;
 }
@@ -4953,7 +4965,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 
-    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+    @media(max-width:279px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem.
+        muda a responsividade do home adm*/
         .container-fluid {
             box-shadow:none !important;
             width:367px !important;
