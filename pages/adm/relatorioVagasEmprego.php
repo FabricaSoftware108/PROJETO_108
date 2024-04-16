@@ -119,7 +119,8 @@ include '../../app/db/connection.php';
                     </thead>
                     <tbody>
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
-                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php'">
+                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php' <?php $_SESSION['id'] = $retorno['id'] ?>" > 
+                          <td><?php echo $retorno["id"];?></td>
                           <td><?php echo $retorno["nomeEmpresa"];?></td>
                           <td><?php echo $retorno["emailEmpresa"];?></td>
                           <td><?php echo $retorno["cnpj"];?></td>
