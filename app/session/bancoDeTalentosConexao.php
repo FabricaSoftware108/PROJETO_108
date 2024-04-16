@@ -11,7 +11,8 @@ $emailBancodeTalentos = mysqli_real_escape_string($con,$_POST['emailBancodeTalen
 $telefoneBancodeTalentos = mysqli_real_escape_string($con,$_POST['telefoneBancodeTalentos']);
 
 //window alert 
-if(empty($nomeBancodeTalentos) || empty($cpfBancodeTalentos) || empty($escolaridadeBancodeTalentos) || empty($dataDeNascimentoBancodeTalentos) || empty($emailBancodeTalentos) || empty($telefoneBancodeTalentos )){
+if(empty($nomeBancodeTalentos) || empty($cpfBancodeTalentos) || empty($escolaridadeBancodeTalentos) || 
+empty($dataDeNascimentoBancodeTalentos) || empty($emailBancodeTalentos) || empty($telefoneBancodeTalentos )){
     header("location:../../../pages/editais/pagBancoTalentos.html");
     exit();
 }
@@ -19,8 +20,9 @@ if(empty($nomeBancodeTalentos) || empty($cpfBancodeTalentos) || empty($escolarid
 
 // mudar o nome da tabela para o nome do banco 
 
-$sql = "INSERT INTO tabelaBancoTalentos (nomeBancodeTalentos,cpfBancodeTalentos,escolaridadeBancodeTalentos,dataDeNascimentoBancodeTalentos,emailBancodeTalentos,telefoneBancodeTalentos) 
-VALUES ('$nomeBancodeTalentos','$cpfBancodeTalentos','$escolaridadeBancodeTalentos','$dataDeNascimentoBancodeTalentos','$emailBancodeTalentos','$telefoneBancodeTalentos')";
+$sql = "INSERT INTO bancosTalentos () 
+VALUES ('$nomeBancodeTalentos','$cpfBancodeTalentos','$escolaridadeBancodeTalentos','$dataDeNascimentoBancodeTalentos',
+       '$emailBancodeTalentos','$telefoneBancodeTalentos')";
 $result = mysqli_query($con,$sql);
 $row=mysqli_num_rows($result);
 
