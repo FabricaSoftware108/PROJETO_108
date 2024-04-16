@@ -1,3 +1,6 @@
+<?php
+include '../../app/session/verificacao.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -40,13 +43,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav flex-column pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.html">Home</a>
+                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.php">Home</a>
+                </li>
+                <li class="nav-item dropdown-adm">
+                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administradores
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
+                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
+                 </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-5" href="./cadastroAdm.html">Administradores</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.html">Editais</a>
+                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.php">Editais</a>
                 </li>
 
                 <li class="nav-item dropdown-adm">
@@ -54,8 +63,8 @@
                     Fábricas
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroCarrossel.html">Cadastrar Carrossel</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrossel.html">Editar Carrossel </a></li>
+                    <li><a class="dropdown-item" href="./cadastroCarrossel.php">Cadastrar Carrossel</a></li>
+                    <li><a class="dropdown-item" href="./editarCarrossel.php">Editar Carrossel </a></li>
                  </ul>
                 </li>
 
@@ -65,20 +74,20 @@
                     Relatórios
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./relatorioAlunoADM.html">Edital Aluno</a></li>
-                    <li><a class="dropdown-item" href="./relatorioEmpresaAdm.html">Edital Empresa</a></li>
-                    <li><a class="dropdown-item" href="./relatoriobancotalento.html">Banco de Talentos</a></li>
-                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.html">Vagas</a></li>
+                    <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
+                    <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
+                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
 
                 </ul>
                 </li>
 
 
                 <li class="nav-item fs-5">
-                  <a class="nav-link" href="./usuarioAdm.html">Usuário</a>
+                  <a class="nav-link" href="./usuarioAdm.php">Usuário</a>
                 </li>
                 <li class="nav-item mt-auto mb-2">
-                  <a class="nav-link fs-5" href="./loginAdm.html">Sair</a>
+                  <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
                 </li>
               </ul>
             </div>
@@ -92,7 +101,7 @@
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
-          <img src="../../Imagens/undraw_fingerprint_login_re_t71l.svg" class="img-fluid" alt="usuario-adm">
+          <img src="../../Imagens/undraw_mobile_content_xvgr.svg" class="img-fluid" alt="usuario-adm">
         </div>
         <div class="col-md-5 col-12 offset-md-1">
           <div class="wrapper-usuario-adm">
@@ -101,40 +110,45 @@
                 <h1>Usuário</h1>
               </div>
               <div class="content-user">
-                  <div class="content-arrow-user">
-                    <a href="usuarioAdm.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" style="fill: #1E55D1 ;transform: msFilter;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
-                    </a>
-                  </div>
                 <div class="row mb-3">
                   <div class="col-12 text-start">
-                    
+                    <h2>Nome</h2>
+                    <input type="text" class="form-control" id="nome" readonly />
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <div class="col-12 text-start">
-                    <h2>Senha antiga</h2>
-                    <input type="text" class="form-control"/>
+                    <h2>Cpf</h2>
+                    <input type="text" class="form-control" id="cpf" readonly/>
                   </div>
                 </div>
 
                 <div class="row mb-3">
                   <div class="col-12 text-start">
-                    <h2>Nova senha</h2>
-                    <input type="email" class="form-control"/>
+                    <h2>E-mail</h2>
+                    <input type="email" class="form-control" id="email" readonly/>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-12 text-start">
+                    <h2>Telefone</h2>
+                    <input type="text" class="form-control" id="telefone" readonly />
                   </div>
                 </div>
                 <div class="row mb-5">
-                  <div class="col-12 text-start">
-                    <h2>Confirmar senha</h2>
-                    <input type="email" class="form-control"/>
+                  <div class="col-12 justify-content-center align-items-center text-center">
+                    <button type="submit" class="btn btn-primary" id="button-editar_usuario">Editar Usuario</button>
+                    <button type="button" class="btn btn-secondary d-none" id="button-confirmar_editar">Confirmar Edição</button>
+
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-12 justify-content-center align-items-center text-center">
-                    <button type="submit" class="btn btn-primary" id="button-user">Confirmar Mudanças</button>
+                    <a href="usuarioAdmRecuperar.php">
+                      <button type="submit" class="btn btn-primary" id="button-user">Mudar Senha</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -144,7 +158,7 @@
       </div>
     </div>
   </main>
-
+<script src="../js/editar-usuario-adm.js"></script>
 
 </body>
 
