@@ -2038,8 +2038,12 @@ input.cadastro-aluno-psg {
     background-color: #8B1A1A;
 }
 
+
 .rodape-branco img {
     box-shadow: none;
+    height: 100px;
+   
+
 }
 
 .rodape-branco svg {
@@ -2866,7 +2870,7 @@ overflow: hidden;
         .img-fluid {
             box-shadow:none !important;
             width:300px !important;
-            height:10px;
+            height:100px;
             margin:2px;
             border-radius: 10px;
             align-items: center;
