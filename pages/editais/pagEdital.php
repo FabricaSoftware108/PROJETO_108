@@ -111,88 +111,49 @@ include '../../app/db/connection.php';
             </div>
             <div class="col-2"></div>
         </div>
-        <!-- <?php
-            $query = 'SELECT * FROM editais';
-            $result = mysqli_query($connection, $query);
-            while($row = mysqli_fetch_array($result)){
-                $dateText;
-                $dateColor;
-                $editalState;
-                $today = date("Y-m-d");
-                if($today >= $row["dataFim"]){
-                    $dateText = "INSCRIÇÕES ENCERRADAS";
-                    $dateColor = "red";
-                    $editalState = "disabled";
-                }else if($today <= $row["dataInicio"]){
-                    $dateText = "EM AGUARDO";
-                    $dateColor = "orange";
-                    $editalState = "disabled";
-                }
-                else{
-                    $dateText = "INSCRIÇÕES ABERTAS";
-                    $dateColor = "green";
-                    $editalState = "";
-                }
-        ?>
-            <h1> <?php echo "<b style='background-color:$dateColor'>{$dateText}</b> Processo Seletivo {$row["codigo"]} - {$row["nome"]} | Campo Grande" ?></h1>
-            <?php } ?> -->
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
                 <div class="content-wrapper-roxo-edital">
                     <div class="borda_roxa-edital h-auto">
-
-                        <div class="row mx-4 my-4">
-                            <p class="d-inline-flex gap-1 mt-2 mb-1"> 
-                                <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                    <div class="bg-success text-light px-4 rounded ">INSCRIÇÕES ABERTAS</div><div>Processo Seletivo 31/2023 - Fabrica de Jogos Vespertino | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
-                                </button>
-                            </p>
-                            <div class="collapse" id="collapseExample">
-                                <div class="card card-body mb-4 bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center">
-                                    <p><a href="../../documents/edital/Elaboração de Editais - APOSTILA.pdf" target="_blank">Descritivo da Vaga Processo Seletivo 32/2023 -Fabrica de Software Matutino | Campo Grande</a></p>
-                                    <input class="btn btn-primary w-lg-25 w-sm-100" type="submit" value="Submit">
-                                </div>
-                            </div>
-                        </div>
-
-                            <!-- <div class="container-fluid" id="wrapper-content-edital">
-                                <div class="row" id="background-edital">
-                                    <div class="col-12">
-                                        <div class=" container container-background-edital" >
-                                            <div class="row ">
-                                                <div
-                                                    class="col-md-3 d-flex align-items-center justify-content-center text-center">
-                                                    <span class="btn-inscricoes">INSCRIÇÕES ABERTAS</span>
-                                                </div>
-                                                <div
-                                                    class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
-                                                    <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
-                                                        Grande</p>
-                                                    </div>
-                                                <div class="col-md-1 ">
-                                                    <button class="sombra-edital-btn" onclick="toggletabble_inscricoes1()">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24"
-                                                            style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
-                                                            <path
-                                                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
-                                                            </path>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <div id="inscricoes1" class="sombra_orientacoes-edital shadow-lg">
-                                                    <p>Orientações Projeto Seletivo Senac/MS</p>
-                                                    <a href="../../documents/edital/Elaboração de Editais - APOSTILA.pdf" target=”_blank”><p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
-                                                        Matutino | Campo Grande</p></a>
-                                                    
-                                                    <a class="btn btn-primary mt-3 mb-3"
-                                                        type="button" href="../editais/cadastroAlunoPsg.html" >Candidatar-se</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <?php
+                            $query = 'SELECT * FROM editais';
+                            $result = mysqli_query($connection, $query);
+                            while($row = mysqli_fetch_array($result)){
+                                $dateText;
+                                $dateColor;
+                                $editalState;
+                                $today = date("Y-m-d");
+                                if($today >= $row["dataFim"]){
+                                    $dateText = "INSCRIÇÕES ENCERRADAS";
+                                    $dateColor = "danger";
+                                    $editalState = "disabled";
+                                }else if($today <= $row["dataInicio"]){
+                                    $dateText = "EM AGUARDO";
+                                    $dateColor = "warning";
+                                    $editalState = "disabled";
+                                }
+                                else{
+                                    $dateText = "INSCRIÇÕES ABERTAS";
+                                    $dateColor = "success";
+                                    $editalState = "";
+                                }
+                        ?>
+                            <!-- <h1> <?php echo "<b style='background-color:$dateColor'>{$dateText}</b> Processo Seletivo {$row["codigo"]} - {$row["nome"]} | Campo Grande" ?></h1> -->
+                            <div class="row mx-4 my-4">
+                                <p class="d-inline-flex gap-1 mt-2 mb-1"> 
+                                    <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="bg-success text-light px-4 rounded ">INSCRIÇÕES ABERTAS</div><div>Processo Seletivo 31/2023 - Fabrica de Jogos Vespertino | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body mb-4 bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center">
+                                        <p><a href="../../documents/edital/Elaboração de Editais - APOSTILA.pdf" target="_blank">Descritivo da Vaga Processo Seletivo 32/2023 -Fabrica de Software Matutino | Campo Grande</a></p>
+                                        <input class="btn btn-primary w-lg-25 w-sm-100" type="submit" value="Candidatar-se">
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
+                            <?php } ?>
+
                     </div>
                 </div>
             </div>
