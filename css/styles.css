@@ -2382,6 +2382,7 @@ overflow: hidden;
 .body-edital .borda_roxa-edital,
 .body-edital .borda_roxar * {
   box-sizing: border-box;
+  height: auto;
 }
 
 
