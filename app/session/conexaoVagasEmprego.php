@@ -1,7 +1,7 @@
 <?php
 
 include '../db/connection.php';
-include
+
 if (isset($_POST['nome_empresa']) && 
     isset($_POST['email']) && 
     isset($_POST['cnpj']) && 
@@ -22,6 +22,16 @@ if (isset($_POST['nome_empresa']) &&
     
     $result = mysqli_query($connection, $query);
     
+    if ($result) {
+        echo "<script>alert('Cadastro realizado com sucesso!');</script>";
+        header("location: ../../pages/editais/cadastroVagasEmprego.html");
+        exit();
+    } else {
+        echo "<script>alert('Erro ao cadastrar os dados.');</script>";
+        header("location: ../../pages/editais/cadastroVagasEmprego.html");
+        exit();
+    }
+
 } else {
     header("location: ../../pages/editais/cadastroVagasEmprego.html");
     exit();
