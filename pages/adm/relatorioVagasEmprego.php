@@ -1,6 +1,10 @@
 <?php
-include '../../app/session/verificacao.php';
+session_start();
+// include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
+
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,6 +18,12 @@ include '../../app/session/verificacao.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <?php
+    
+    $query="select *  from vagasEmprego";
+    $result=mysqli_query($connection,$query);
+
+    ?>
 </head>
 
 <body class="body-relatorio-banco-talento">
@@ -63,7 +73,7 @@ include '../../app/session/verificacao.php';
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
-                            <li><a class="dropdown-item" href="./relatorioEmpresaAdm.php">Edital Empresa</a></li>
+                            <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
                             <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
                             <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
         
@@ -104,105 +114,21 @@ include '../../app/session/verificacao.php';
                         <th class="label-telefone_banco_talento">Telefone</th>
                         <th class="label-linkedin_banco_talento">Cidade</th>
                         <th class="label-linkedin_banco_talento">Estado</th>
+                        <th class="label-linkedin_banco_talento">Descrição</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php'">
-                        <td>Coca Cola Pepsi Cola</td>
-                        <td>coca@gmail.com</td>
-                        <td>000.000.000-00</td>
-                        <td>67940028922</td>
-                        <td>Pará</td>
-                        <td>Curralinho</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
-                      <tr>
-                        <td>Nome Teste</td>
-                        <td>E-mail Teste</td>
-                        <td>CNPJ Teste</td>
-                        <td>Telefone Teste</td>
-                        <td>Cidade Teste</td>
-                        <td>Estado Teste</td>
-                      </tr>
+                      <?php while ($retorno = mysqli_fetch_array($result)){?>
+                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php'">
+                          <td><?php echo $retorno["nomeEmpresa"];?></td>
+                          <td><?php echo $retorno["emailEmpresa"];?></td>
+                          <td><?php echo $retorno["cnpj"];?></td>
+                          <td><?php echo $retorno["telefone"];?></td>
+                          <td><?php echo $retorno["cidade"];?></td>
+                          <td><?php echo $retorno["estado"];?></td>
+                          <td><?php echo $retorno["descricao"];?></td>
+                        </tr>
+                      <?php }?>
                     </tbody>
                   </table>
                 </div>
