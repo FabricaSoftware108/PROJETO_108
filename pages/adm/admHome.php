@@ -126,13 +126,14 @@ include '../../app/session/verificacao.php';
     </div>
 
     <!--Imagem dos gráficos-->
-    <div class="container w-100" id="container-2-adm-home-imagem">
+    <div class="container w-100" id="container2AdmHomeImagem">
   <div class="row justify-content-center d-flex align-items-center">
     <div class="col-sm-12 col-lg-8">
       <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id="adm-home-img-2">
     </div>
   </div>
 </div>
+
   </main>
 
 </body>
