@@ -45,8 +45,8 @@ include '../../app/session/verificacao.php';
                     Administradores
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroCarrossel.php">Adicionar Administradores</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrossel.php">Editar Administradores </a></li>
+                    <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
+                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
                  </ul>
                 </li>
                 <li class="nav-item">
