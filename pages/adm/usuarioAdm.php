@@ -103,7 +103,7 @@ include '../../app/session/verificacao.php';
         <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
           <img src="../../Imagens/undraw_mobile_content_xvgr.svg" class="img-fluid" alt="usuario-adm">
         </div>
-        <div class="col-md-5 col-12 offset-md-1">
+        <div class="col-md-5 col-12">
           <div class="wrapper-usuario-adm">
             <div class="content-usuario-adm">
               <div class="content-top-user">
