@@ -8,7 +8,7 @@ include '../../app/session/verificacao.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usuario ADM</title>
-  <link rel="stylesheet" href="../../Css/styles.css">
+  <link rel="stylesheet" href="../../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -96,14 +96,13 @@ include '../../app/session/verificacao.php';
       </nav>        
   </header>
 
-
   <main class="main-usuarioAdm">
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
         <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
           <img src="../../Imagens/undraw_mobile_content_xvgr.svg" class="img-fluid" alt="usuario-adm">
         </div>
-        <div class="col-md-5 col-12 offset-md-1">
+        <div class="col-md-5 col-12">
           <div class="wrapper-usuario-adm">
             <div class="content-usuario-adm">
               <div class="content-top-user">
