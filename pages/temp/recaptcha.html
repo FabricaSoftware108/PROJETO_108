@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<!-- Api do Goggle  -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Verificação do Recaptcha com o formulário. Se não for marcado ele nao envia o formulário. -->
+    <script>
+        function validarPost(){
+            if(grecaptcha.getResponse() != "") return true;
+            
+            alert('Selecione a caixa de "Não sou um Robô"')
+
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>    
+    <main>
+        <!-- Adicionado o onsubmit="return validarPost()" dentro do <form>, e o arquivo php -->
+        <form action="../../app/session/suaconexaodophp.php" onsubmit="return validarPost()" method="post">
+        <!-- O recaptch, Coloque de preferência no final e NÃO MEXE NO DATA-SITEKEY. -->
+        <div class="g-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>                          
+    </main>
+        
+    
+</body>
+</html>
