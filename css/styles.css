@@ -1703,6 +1703,12 @@ input.cadastrovagas {
     z-index: 0; 
 }
 
+.bancoTalento-recaptcha{
+    
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
 
 
 
