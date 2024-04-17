@@ -85,7 +85,7 @@ include '../../app/db/connection.php';
                     <div class="sombra_roxa-edital"></div>
                     <div class="titulo_edital">
                         <div class="titulo_escrito_edital">
-                            <h1>Editais</h1>
+                            <h1>Editais</h1><br>
                             <div class="row align-items-center justify-content-center" id="introducao-edital">
                                 <div class="col-md-12 col-sm-9">
                                     <p>Este campo é destinado aos editais, das Empresas e das Fabricas de
@@ -104,7 +104,7 @@ include '../../app/db/connection.php';
                     <div class="col-2"></div>
                     <div class="col-md-12">
                         <div class="edital_do_aluno_titulo-2">
-                            <h1>Edital do Aluno</h1>
+                            <!-- <h1>Edital do Aluno</h1> -->
                         </div>
                     </div>
                 </div>
