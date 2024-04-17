@@ -1381,7 +1381,7 @@ div.carousel-item img#carouselImg{
 }
 
 .body-demanda .content-title-subtitle-demanda h1 {
-    font-size: var(--font-size-titulo)
+    font-size: var(--font-size-titulo);
 }
 
 .body-demanda .content-title-subtitle-demanda p {
