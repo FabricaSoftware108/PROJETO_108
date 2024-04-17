@@ -1249,6 +1249,17 @@ div.carousel-item img#carouselImg{
 
 /* PAGINA DEMANDA  */
 
+
+
+.pagDemanda-recaptcha{
+    
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
+
+
+
 .body-demanda,
 .html-demanda {
     margin: 0;

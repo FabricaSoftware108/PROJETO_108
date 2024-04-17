@@ -1,4 +1,5 @@
-v
+
+
 <!DOCTYPE html>
 <html lang="pt-br" class="html-demanda">
 
@@ -6,6 +7,9 @@ v
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demanda</title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +22,17 @@ v
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script>
+            function validarPost(){
+               //verifica se o recaptcha foi selecionado
+               if(grecaptcha.getResponse() !='') return true;
+               alert('Selecione o checkbox de não sou um robô!!')
+                return false;
+            }
+        </script>
 </head>
+
 
 <body class="body-demanda">
     <!-- Header -->
@@ -77,10 +91,11 @@ v
 
     <main>
         <div class="content-wrapper-all-demanda">
-            <form action="cadastro.php" method="post">
+            <form action="../../app/session/conexaoPagDemanda.php" method="POST" onsubmit="return validarPost()">
                 <div class="content-title-subtitle-demanda">
-                    <h1>Demanda</h1><br><br>
-                    <p class="lead">Página destinada às Demandas de projetos para as <br>Fábricas de Software, Jogos, Computação Gráfica e Audiovisual. <br>Solicitações que serão analisadas e desenvolvidas pelos alunos.</p> <br>
+                    <h1>Demanda</h1>
+                    <p class="lead">Este campo é destinado a Demanda de projetos para as Fábricas de <br>
+                         Software, Jogos, Computação Gráfica e Audiovisual.</p> <br>
                     <div class="effects"></div>
                     <div class="effects-2"></div>
                 </div>
@@ -98,16 +113,16 @@ v
                                 <div class="row align-items-center justify-content-center mb-5">
                                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa"
-                                            id="nome_empresa" size="27" maxlength="11" placeholder="Nome da Empresa">
+                                            id="nome_empresa" size="27" maxlength="45" placeholder="Nome da Empresa">
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email"
-                                            id="email" size="27" maxlength="7" placeholder="Email"><br>
+                                            id="email" size="27" placeholder="Email"><br>
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj"
-                                            size="27" maxlength="11" placeholder="CNPJ">
+                                            size="27" maxlength="45" placeholder="CNPJ">
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado"
                                             id="estado" size="27" maxlength="50" placeholder="Estado"><br>
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone"
                                             id="telefone" size="27" maxlength="50" placeholder="Telefone">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="email" name="cidade"
+                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cidade"
                                             id="cidade" size="27" maxlength="70" placeholder="Cidade"><br>
                                     </div>
                                 </div>
@@ -121,9 +136,9 @@ v
                                 <div class="row align-items-center justify-content-center mb-5">
                                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome" id="nome"
-                                            size="27" maxlength="11" placeholder="Nome">
+                                            size="27" maxlength="45" placeholder="Nome">
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email"
-                                            id="email" size="27" maxlength="7" placeholder="Email"><br>
+                                            id="email" size="27"  placeholder="Email"><br>
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="CPF" id="CPF"
                                             size="27" maxlength="11" placeholder="CPF">
                                         <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone"
@@ -151,10 +166,15 @@ v
                                             </svg>
                                             <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
                                             <input type="file" id="file-input" class="file-input"
-                                                title="Arquivo pdf ou docx">
+                                                title="Arquivo pdf ou docx" name="arquivo">
                                         </label>
                                     </div>
-                                </div>
+                                </div> 
+
+                                <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
+                              <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+
+                                
                                 <div class="row justify-content-center align-items-center">
                                     <div class="col-12 justify-content-center align-items-center text-center"
                                         id="button-demanda">
@@ -170,6 +190,7 @@ v
         </div>
     </main>
     <footer>
+        
         <div class="container-fluid rodape-preto py-1">
             <footer
                 class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
@@ -200,6 +221,9 @@ v
             </footer>
         </div>
     </footer>
+
+   
 </body>
 
 </html>
+
