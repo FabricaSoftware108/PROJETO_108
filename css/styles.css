@@ -2296,6 +2296,11 @@ input.cadastrovagas {
     margin-bottom: 30px;
     margin-top: 7px;
 }
+.vagasEmprego-recaptcha{
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
 
 /*LOGIN ADM*/
 
