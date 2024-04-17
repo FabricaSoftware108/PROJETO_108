@@ -1386,8 +1386,8 @@ div.carousel-item img#carouselImg{
 
   
 .body-demanda .content-title-subtitle-demanda h1{
-    font-weight: bolder;
-    font-size: var(--font-size-titulo);
+    font-weight: bold;
+    font-size: 50px;
     color:#000;
   
   }
@@ -1642,7 +1642,7 @@ input.cadastrovagas {
     margin-top: 130px;
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
-    font-size: 56px;
+    font-size: 50px;
 }
 
 .body-bancoTalentos main #title-bancoTalento p{
@@ -2129,6 +2129,7 @@ main.cadastro-de-vagas {
 }
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
+    font-size: 50px;
 }
 
 #titulo-subtitulo-cadastroVagas p{
@@ -2444,7 +2445,7 @@ overflow: hidden;
 }
 .body-edital .titulo_edital h1 {
   text-align: center;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 800;
 }
 .body-edital .titulo_edital p{
