@@ -45,17 +45,6 @@ if ($result == ''){
 }
 
 
-/* essas linhas é que estavam dando erro, e não estavam deixando inserir.*/
-// $retorno = mysqli_fetch_array($result);
-// echo $result;
-
-
-
-
-// echo $row;
-
-
-
 //----------------------------------------------------------------------------------------------------------//
 
 /*AQUI SE O ROW RETORNAR MAIOR QUE 0 ELE VAI  PARA A TELA SEGUINTE*/
