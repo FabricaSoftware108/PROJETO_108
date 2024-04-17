@@ -2365,6 +2365,9 @@ body.body-edital {
     overflow-x: hidden;
 }
 
+.body-edital .cabecalhoGeral .navbar #hubFabricasLogo {
+    margin-left:10px
+}
 .body-edital .wrapper-content-icon {
   padding-left: 130%;
 }
@@ -2413,9 +2416,10 @@ overflow: hidden;
   top:500px;
   position: absolute;
   z-index: -1;
-  border-radius: 90%;
+  border-radius: 50%;
   filter: blur(150px) contrast(150%);
 }
+
 
 
 .body-edital #container-borda-roxa-edital .row{
@@ -2427,7 +2431,6 @@ overflow: hidden;
 .body-edital .col-12 #container-sobre-curso1{
   padding: 0;
 }   
-
 
 .body-edital .titulo_edital{
   margin: 150px 0 0 0;
