@@ -1,6 +1,5 @@
 <?php 
-include "../../app/session/verificacao.php";
-include "../../app/session/conexaoCarrosselSoftware.php"
+include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
 ?>
 
 <!DOCTYPE html>
@@ -137,7 +136,7 @@ include "../../app/session/conexaoCarrosselSoftware.php"
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
                         
                           <h5 class="text-center"><?php echo $retorno["titulo"];?></h5>
-                          <p class="text-center"><?php echo $retorno["subtitulo"];?></p>
+                          <p class="text-center"><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal108" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -170,7 +169,7 @@ include "../../app/session/conexaoCarrosselSoftware.php"
                         <img src="../../Imagens/foto-fabrica.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
                           <h5><?php echo $retorno["titulo"];?></h5>
-                          <p ><?php echo $retorno["subtitulo"];?></p>
+                          <p ><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal273" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -203,7 +202,7 @@ include "../../app/session/conexaoCarrosselSoftware.php"
                         <img src="../../Imagens/foto-fabrica3.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
                           <h5><?php echo $retorno["titulo"];?></h5>
-                          <p ><?php echo $retorno["subtitulo"];?></p>
+                          <p ><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -236,7 +235,7 @@ include "../../app/session/conexaoCarrosselSoftware.php"
                         <img src="../../Imagens/foto-fabrica4.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
                           <h5><?php echo $retorno["titulo"];?></h5>
-                          <p ><?php echo $retorno["subtitulo"];?></p>
+                          <p ><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal321" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

@@ -1,3 +1,7 @@
+<?php
+include "../../app/session/fabricas/conexaoCarrosselCGI.php"
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="htmlFabricaJogos">
 <head class="headFabricaJogos">
@@ -124,19 +128,20 @@
                 <div class="carousel-inner" id="carousel-cgi">
 
                   <div class="carousel-item active my-5">
+                  <?php while ($retorno = mysqli_fetch_array($result)){?>
                     <div class="d-flex justify-content-center">                                   
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal108" style="cursor: pointer;">
                         <img src="../../Imagens/fabrica108.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5 class="text-center">Fábrica de Software 108</h5>
-                          <p class="text-center">Hub Fábricas, vulgo, substituto do Senacoin</p>
+                          <h5 class="text-center"><?php echo $retorno["titulo"];?></h5>
+                          <p class="text-center"><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal108" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de software 108 - Hub Fábricas</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -146,21 +151,8 @@
                                   <img src="../../Imagens/fabrica108.jpg" alt="" class="" id="modalImg">
                                 </div>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
+                                <p><?php echo $retorno["descricao"];?></p>
+                                <?php }?>
                               </div>
                             </div>
                           </div>
@@ -170,19 +162,20 @@
                   </div>
 
                   <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
+                    <div class="d-flex justify-content-center">     
+                    <?php while ($retorno = mysqli_fetch_array($result)){?>
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal273" style="cursor: pointer;">
                         <img src="../../Imagens/foto-fabrica.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Jogos 273</h5>
-                          <p >Gameteca</p>
+                          <h5><?php echo $retorno["titulo"];?></h5>
+                          <p ><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal273" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de jogos 273 - Gameteca</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -192,21 +185,8 @@
                                   <img src="../../Imagens/foto-fabrica.jpg" alt="" class="" id="modalImg">
                                 </div>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
+                                <p><?php echo $retorno["descricao"];?></p>
+                                <?php }?>
                               </div>
                             </div>
                           </div>
@@ -216,19 +196,20 @@
                   </div>
 
                   <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
+                    <div class="d-flex justify-content-center">   
+                    <?php while ($retorno = mysqli_fetch_array($result)){?>
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal123" style="cursor: pointer;">
                         <img src="../../Imagens/foto-fabrica3.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Jogos 123</h5>
-                          <p >Não Sabo</p>
+                          <h5><?php echo $retorno["titulo"];?></h5>
+                          <p ><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de jogos 123 - Não Sabo</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -238,21 +219,8 @@
                                   <img src="../../Imagens/foto-fabrica3.jpg" alt="" class="" id="modalImg">
                                 </div>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
+                                <p><?php echo $retorno["descricao"];?></p>
+                                <?php }?>
                               </div>
                             </div>
                           </div>
@@ -262,19 +230,20 @@
                   </div>
 
                   <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
+                    <div class="d-flex justify-content-center">   
+                    <?php while ($retorno = mysqli_fetch_array($result)){?>
                       <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal321" style="cursor: pointer;">
                         <img src="../../Imagens/foto-fabrica4.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Jogos 321</h5>
-                          <p >Ainda Não Sabo</p>
+                          <h5><?php echo $retorno["titulo"];?></h5>
+                          <p ><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
                       <div class="modal fade" id="exampleModal321" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de jogos 321 - Ainda Não Sabo</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -284,21 +253,8 @@
                                   <img src="../../Imagens/foto-fabrica4.jpg" alt="" class="" id="modalImg">
                                 </div>
 
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
+                                <p><?php echo $retorno["descricao"];?></p>
+                                <?php }?>
                               </div>
                             </div>
                           </div>
