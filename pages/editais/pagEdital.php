@@ -120,9 +120,6 @@ include '../../app/db/connection.php';
                             $query = 'SELECT * FROM editais';
                             $result = mysqli_query($connection, $query);
                             while($row = mysqli_fetch_array($result)){
-                                $dateText;
-                                $dateColor;
-                                $editalState;
                                 $today = date("Y-m-d");
                                 if($today >= $row["dataFim"]){
                                     $dateText = "INSCRIÇÕES ENCERRADAS";
@@ -139,17 +136,19 @@ include '../../app/db/connection.php';
                                     $editalState = "";
                                 }
                         ?>
-                            <!-- <h1> <?php echo "<b style='background-color:$dateColor'>{$dateText}</b> Processo Seletivo {$row["codigo"]} - {$row["nome"]} | Campo Grande" ?></h1> -->
                             <div class="row mx-4 my-4">
                                 <p class="d-inline-flex gap-1 mt-2 mb-1"> 
-                                    <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#<?php echo $row["codigo"] ?>" aria-expanded="false" aria-controls="collapseExample">
-                                        <div class="bg-<?php echo $dateColor ?> text-light px-4 rounded "><?php echo $dateText ?></div><div>Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
+                                    <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100 " data-bs-toggle="collapse" data-bs-target="#<?php echo $row["codigo"] ?>" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="bg-<?php echo $dateColor ?> text-light px-4 rounded col-lg-3 col-sm-12"><?php echo $dateText ?></div><div class="col-lg-8 col-sm-12 text-lg-start text-sm-center">Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
                                     </button>
                                 </p>
                                 <div class="collapse" id="<?php echo $row["codigo"] ?>">
                                     <div class="card card-body mb-4 bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center">
                                         <p><a href="<?php echo $row["arquivo"] ?>" target="_blank">Descritivo da Vaga Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</a></p>
-                                        <input class="btn btn-primary w-lg-25 w-sm-100 <?php echo $editalState ?>" type="submit" value="Candidatar-se">
+                                        <form action="../../app/session/actionPsg.php" method="post">
+
+                                            <input class="btn btn-primary <?php echo $editalState ?>" type="submit" value="<?php echo ("{$row["codigo"]}") ?>" name="editalCode">
+                                        </form>
                                     </div>
                                 </div>
                             </div>

@@ -1,3 +1,9 @@
+<?php
+include '../../db/session/verificacaoPsg.php';
+include '../../db/session/actionPsg.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
     <head>
@@ -78,7 +84,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12" id="textSobreCadastroAlunoPsg">
-                        <h1><b>Cadastro Aluno PSG</b></h1><br><br>
+                        <h1><b>Cadastro Aluno PSG <?php echo $_SESSION['editalCode']; ?></b></h1><br><br>
                         <p><b>“O programa de gratuidade do SENAC é uma politica de incentivo única que busca 
                             oferecer uma educação profissional inclusiva cm instrutores especializados e gratuita”</b></p>
                     </div>
