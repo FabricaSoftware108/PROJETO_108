@@ -1,6 +1,6 @@
 <?php
-session_start();
-// include '../../app/session/verificacao.php';
+// session_start();
+include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 ?>
 <!DOCTYPE html>
