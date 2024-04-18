@@ -4,7 +4,7 @@
 
 :root {
     --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
-    --font-size-titulo: 56px;
+    --font-size-titulo: 50px;
     --font-size-subTitulo: 20px;
     --font-size-corpo: 27px;
     --font-size-legenda: 8px;
@@ -1249,6 +1249,17 @@ div.carousel-item img#carouselImg{
 
 /* PAGINA DEMANDA  */
 
+
+
+.pagDemanda-recaptcha{
+    
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
+
+
+
 .body-demanda,
 .html-demanda {
     margin: 0;
@@ -1370,7 +1381,7 @@ div.carousel-item img#carouselImg{
 }
 
 .body-demanda .content-title-subtitle-demanda h1 {
-    font-size: var(--font-size-titulo)
+    font-size: var(--font-size-titulo);
 }
 
 .body-demanda .content-title-subtitle-demanda p {
@@ -1386,8 +1397,8 @@ div.carousel-item img#carouselImg{
 
   
 .body-demanda .content-title-subtitle-demanda h1{
-    font-weight: bolder;
-    font-size: var(--font-size-titulo);
+    font-weight: bold;
+    font-size: 50px;
     color:#000;
   
   }
@@ -1642,7 +1653,7 @@ input.cadastrovagas {
     margin-top: 130px;
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
-    font-size: 56px;
+    font-size: 50px;
 }
 
 .body-bancoTalentos main #title-bancoTalento p{
@@ -1703,6 +1714,12 @@ input.cadastrovagas {
     z-index: 0; 
 }
 
+.bancoTalento-recaptcha{
+    
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
 
 
 
@@ -2038,8 +2055,12 @@ input.cadastro-aluno-psg {
     background-color: #8B1A1A;
 }
 
+
 .rodape-branco img {
     box-shadow: none;
+    height: 100px;
+   
+
 }
 
 .rodape-branco svg {
@@ -2119,10 +2140,11 @@ main.cadastro-de-vagas {
 }
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
+    font-size: 50px;
 }
 
 #titulo-subtitulo-cadastroVagas p{
-  font-size:27px ;
+  font-size: 27px ;
   position: relative;
   top: 78px;
   text-align: center;
@@ -2275,6 +2297,11 @@ input.cadastrovagas {
     margin-bottom: 30px;
     margin-top: 7px;
 }
+.vagasEmprego-recaptcha{
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
 
 /*LOGIN ADM*/
 
@@ -2355,6 +2382,9 @@ body.body-edital {
     overflow-x: hidden;
 }
 
+.body-edital .cabecalhoGeral .navbar #hubFabricasLogo {
+    margin-left:10px
+}
 .body-edital .wrapper-content-icon {
   padding-left: 130%;
 }
@@ -2403,9 +2433,10 @@ overflow: hidden;
   top:500px;
   position: absolute;
   z-index: -1;
-  border-radius: 90%;
+  border-radius: 50%;
   filter: blur(150px) contrast(150%);
 }
+
 
 
 .body-edital #container-borda-roxa-edital .row{
@@ -2417,7 +2448,6 @@ overflow: hidden;
 .body-edital .col-12 #container-sobre-curso1{
   padding: 0;
 }   
-
 
 .body-edital .titulo_edital{
   margin: 150px 0 0 0;
@@ -2431,7 +2461,7 @@ overflow: hidden;
 }
 .body-edital .titulo_edital h1 {
   text-align: center;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 800;
 }
 .body-edital .titulo_edital p{
@@ -2754,7 +2784,12 @@ overflow: hidden;
         margin:25px;
     }
 }
-
+@media(max-width:690px){
+#adm-home-img-2{
+    width:690px;
+    box-shadow:none;
+}
+}
 #row-2-adm-home{
     margin-top:18rem;
     font-size:x-large;
@@ -2769,6 +2804,7 @@ overflow: hidden;
     width:300px;
     box-shadow:none;
 }
+
 
 
 
@@ -2830,7 +2866,8 @@ overflow: hidden;
 
 
 
-    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+    @media(max-width:279px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. 
+        muda a responsividade do home adm*/
         .container-fluid {
             box-shadow:none !important;
             width:367px !important;
@@ -2859,7 +2896,7 @@ overflow: hidden;
         .img-fluid {
             box-shadow:none !important;
             width:300px !important;
-            height:10px;
+            height:100px;
             margin:2px;
             border-radius: 10px;
             align-items: center;
@@ -3090,9 +3127,7 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    
-
+    margin-top: 50px;
 }
 
 .main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; height: 100%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
@@ -3106,6 +3141,9 @@ overflow: hidden;
     display: flex; justify-content: center; align-items: center; 
     padding: 15px 0; 
     font-family: var(--font-destaque);
+}
+.main-usuarioAdm #content-usuarioAdm {
+    margin-top: 5%;
 }
 
 .main-usuarioAdm .content-user input{
@@ -3137,16 +3175,22 @@ overflow: hidden;
     border: none;
     box-shadow: none;
 }
+.main-usuarioAdm #img-usuario-adm {
+    margin-right: 40px;
+}
 
 @media (max-width: 1200px) {
     .main-usuarioAdm #img-usuario-adm {
         display: none;
     }
+    .main-usuarioAdm .wrapper-usuario-adm {
+        margin-top: 120px !important;
+    }
 }
 
 @media (max-width: 600px) {
     .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 200px;
+        margin-top: 120px !important;
     }
 }
 #button-confirmar_editar{
@@ -3156,7 +3200,6 @@ overflow: hidden;
     background-color: #0d6efd;
     padding: 15px 0px;
 }
-
 
 
 
@@ -3995,7 +4038,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 }
 
-@media(max-width:388px){/*não mecher aquiiii*/
+@media(max-width:388){/*não mecher aquiiii*/
     .cadastro-adm-edital-centered {
         margin-top: 16vh !important;
     }
@@ -4221,12 +4264,16 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    overflow: hidden;
 }
 
 @media(min-width:1140px){
     .main-adm-home{
         background-image:url(../Imagens/background-image-adm-home.png);
         background-repeat:no-repeat;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -4244,6 +4291,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
+
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
@@ -4289,7 +4337,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     font-size:x-large;
 }
 
-#container-2-adm-home-imagem{
+#container2AdmHomeImagem{
     margin-top:5rem;
     width:900px;
 }
@@ -4942,7 +4990,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 
-    @media(max-width:388px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem. */
+    @media(max-width:279px){/*aqui ele tira a margem que estava ficando quando diminuia a tela na responsividade, ele deixa o container sem essa margem.
+        muda a responsividade do home adm*/
         .container-fluid {
             box-shadow:none !important;
             width:367px !important;
