@@ -97,8 +97,6 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                       </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
@@ -120,26 +118,37 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
               
               <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  
+                  <?php
+                    $c = 0;
+                    $state = "";
+                    while ($retorno = mysqli_fetch_array($result)){
+                      if($c == 0){$state = "active";}else{$state = "";};
+                  ?>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo ("$c")?>" class="<?php echo ("$state")?>" ></button>
+                  <?php 
+                    $c++;}
+                    mysqli_data_seek($result, 0);
+                  ?>
                 </div>
                 <div class="carousel-inner">
-
-                  <div class="carousel-item active my-5">
-                    <?php while ($retorno = mysqli_fetch_array($result)){?>
+                  <?php
+                    $c = 0;
+                    $state = "";
+                    while ($retorno = mysqli_fetch_array($result)){
+                      if($c == 0){$state = "active";}else{$state = "";};
+                      ?>
+                      
+                  <div class="carousel-item <?php echo $state ?> my-5">
                     <div class="d-flex justify-content-center">                                   
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal108" style="cursor: pointer;">
-                        <img src="../../Imagens/fabrica108.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
+                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="<?php echo ("#$c")?>" style="cursor: pointer;">
+                        <img src="<?php echo $retorno["img"];?>" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
                         
                           <h5 class="text-center"><?php echo $retorno["titulo"];?></h5>
                           <p class="text-center"><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
-                      <div class="modal fade" id="exampleModal108" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="<?php echo ("$c")?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -150,10 +159,9 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                               <div class="container">
                                 <div class="row">
 
-                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
+                                  <img src="<?php echo $retorno["img"];?>" alt="" class="" id="modalImg">
                                 </div>
                                   <p><?php echo $retorno["descricao"];?></p>
-                                <?php }?>
                               </div>
                             </div>
                           </div>
@@ -161,107 +169,10 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                       </div>
                     </div>
                   </div>
-
-                  <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
-                      <?php while ($retorno = mysqli_fetch_array($result)){?>
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal273" style="cursor: pointer;">
-                        <img src="../../Imagens/foto-fabrica.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
-                        <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5><?php echo $retorno["titulo"];?></h5>
-                          <p ><?php echo $retorno["projeto"];?></p>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="exampleModal273" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container">
-                                <div class="row">
-
-                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
-                                </div>
-                                <p><?php echo $retorno["descricao"];?></p>
-                                <?php }?>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">  
-                    <?php while ($retorno = mysqli_fetch_array($result)){?>
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal123" style="cursor: pointer;">
-                        <img src="../../Imagens/foto-fabrica3.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
-                        <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5><?php echo $retorno["titulo"];?></h5>
-                          <p ><?php echo $retorno["projeto"];?></p>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container">
-                                <div class="row">
-
-                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
-                                </div>
-
-                                <p><?php echo $retorno["descricao"];?></p>
-                                <?php }?>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">    
-                    <?php while ($retorno = mysqli_fetch_array($result)){?>
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal321" style="cursor: pointer;">
-                        <img src="../../Imagens/foto-fabrica4.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
-                        <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5><?php echo $retorno["titulo"];?></h5>
-                          <p ><?php echo $retorno["projeto"];?></p>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="exampleModal321" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container">
-                                <div class="row">
-
-                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
-                                </div>
-
-                                <p><?php echo $retorno["descricao"];?></p>
-                                <?php }?>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <?php $c++; }?>
                 </div>
+
+                 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
