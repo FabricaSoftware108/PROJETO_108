@@ -101,6 +101,19 @@ include '../../app/session/verificacao.php';
     </div>
     <div class="row ">
       <div class="col-md-6 col-12 text-center align-items-center justify-content-center foto-addCarrossel">
+        <div class="container-dropdown mb-5">
+            <div class="dropdown">
+              <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Fabrica de Software 108
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fabrica de Software 108</a></li>
+                <li><a class="dropdown-item" href="#">Fabrica de Software 206</a></li>
+                <li><a class="dropdown-item" href="#">Fabrica de Software 203</a></li>
+                <li><a class="dropdown-item" href="#">Fabrica de Software 102</a></li>
+              </ul>
+            </div>
+          </div>
         <div class="input-group justify-content-center">
           <h2>Foto da turma</h2>
           <label for="inputGroupFile04" id="imgAddCarrossel">
