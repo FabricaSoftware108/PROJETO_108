@@ -4,7 +4,7 @@
 
 :root {
     --font-destaque: "Verdana", "Geneva", "Tahoma", sans-serif;
-    --font-size-titulo: 56px;
+    --font-size-titulo: 50px;
     --font-size-subTitulo: 20px;
     --font-size-corpo: 27px;
     --font-size-legenda: 8px;
@@ -1249,6 +1249,17 @@ div.carousel-item img#carouselImg{
 
 /* PAGINA DEMANDA  */
 
+
+
+.pagDemanda-recaptcha{
+    
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
+
+
+
 .body-demanda,
 .html-demanda {
     margin: 0;
@@ -1370,7 +1381,7 @@ div.carousel-item img#carouselImg{
 }
 
 .body-demanda .content-title-subtitle-demanda h1 {
-    font-size: var(--font-size-titulo)
+    font-size: var(--font-size-titulo);
 }
 
 .body-demanda .content-title-subtitle-demanda p {
@@ -1386,8 +1397,8 @@ div.carousel-item img#carouselImg{
 
   
 .body-demanda .content-title-subtitle-demanda h1{
-    font-weight: bolder;
-    font-size: var(--font-size-titulo);
+    font-weight: bold;
+    font-size: 50px;
     color:#000;
   
   }
@@ -1642,7 +1653,7 @@ input.cadastrovagas {
     margin-top: 130px;
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
-    font-size: 56px;
+    font-size: 50px;
 }
 
 .body-bancoTalentos main #title-bancoTalento p{
@@ -1703,6 +1714,12 @@ input.cadastrovagas {
     z-index: 0; 
 }
 
+.bancoTalento-recaptcha{
+    
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
 
 
 
@@ -2123,10 +2140,11 @@ main.cadastro-de-vagas {
 }
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
+    font-size: 50px;
 }
 
 #titulo-subtitulo-cadastroVagas p{
-  font-size:27px ;
+  font-size: 27px ;
   position: relative;
   top: 78px;
   text-align: center;
@@ -2279,6 +2297,11 @@ input.cadastrovagas {
     margin-bottom: 30px;
     margin-top: 7px;
 }
+.vagasEmprego-recaptcha{
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
 
 /*LOGIN ADM*/
 
@@ -2359,6 +2382,9 @@ body.body-edital {
     overflow-x: hidden;
 }
 
+.body-edital .cabecalhoGeral .navbar #hubFabricasLogo {
+    margin-left:10px
+}
 .body-edital .wrapper-content-icon {
   padding-left: 130%;
 }
@@ -2407,9 +2433,10 @@ overflow: hidden;
   top:500px;
   position: absolute;
   z-index: -1;
-  border-radius: 90%;
+  border-radius: 50%;
   filter: blur(150px) contrast(150%);
 }
+
 
 
 .body-edital #container-borda-roxa-edital .row{
@@ -2421,7 +2448,6 @@ overflow: hidden;
 .body-edital .col-12 #container-sobre-curso1{
   padding: 0;
 }   
-
 
 .body-edital .titulo_edital{
   margin: 150px 0 0 0;
@@ -2435,7 +2461,7 @@ overflow: hidden;
 }
 .body-edital .titulo_edital h1 {
   text-align: center;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 800;
 }
 .body-edital .titulo_edital p{

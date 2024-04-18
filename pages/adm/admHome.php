@@ -1,5 +1,18 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
+
+$queryVagas = "SELECT * FROM vagasEmprego;";
+$queryDemandas = "SELECT * FROM demandas;";
+$queryBT = "SELECT * FROM bancosTalentos;";
+
+$dadosVagas = mysqli_query($connection, $queryVagas);
+$dadosDemandas = mysqli_query($connection, $queryDemandas);
+$dadosBT = mysqli_query($connection, $queryBT);
+
+$retornoVagas = mysqli_num_rows($dadosVagas);
+$retornoDemandas = mysqli_num_rows($dadosDemandas);
+$retornoBT = mysqli_num_rows($dadosBT);
 ?>
 
 <!DOCTYPE html>
@@ -114,13 +127,13 @@ include '../../app/session/verificacao.php';
       <!--Quadrados com as informações-->
       <div class="row justify-content-center" id="row-2-adm-home">
         <div class="col-sm-12 col-lg-3 w-sm-100" id="label-quadrados-1-adm-home">
-          <p class="text-center">217<br>Projetos Submetidos</p>
+          <p class="text-center"><p><?php echo$retornoDemandas?></p><br>Projetos Submetidos</p>
         </div>
         <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100" id="label-quadrados-2-adm-home">
-          <p class="text-center">218<br>Inscrição - Vagas de Emprego</p>
+          <p class="text-center"><p><?php echo$retornoVagas?></p><br>Inscrição - Vagas de Emprego</p>
         </div>
         <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100" id="label-quadrados-3-adm-home">
-          <p class="text-center">160<br>Banco de Talentos</p>
+          <p class="text-center"><p><?php echo$retornoBT?></p><br>Banco de Talentos</p>
         </div>
       </div>
     </div>

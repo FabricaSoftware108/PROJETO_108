@@ -17,6 +17,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function validarPost(){
+            if(grecaptcha.getResponse() != "") return true;
+            
+            alert('Selecione a caixa de "Não sou um Robô"')
+
+            return false;
+        }
+    </script>
 
 </head>
 
@@ -78,19 +88,20 @@
 
 
     <main>
+        <form action="../../app/session/conexaoBancodeTalentos.php" onsubmit="return validarPost()" method="post">
         <div class="wrapper-content-bancoTalento">
             <div class="content-title-bancoTalento">
                 <div class="container-fluid mb-5">
                     <div class="effects"></div>
                     <div class="effects-2"></div>
                     <div class="row justify-content-center mb-5">
-                        <div class="col-md-6 col-sm-12 text-center" id="title-bancoTalento">
+                        <div class="col-md-6 col-sm-12 text-center" id="title-bancoTalento"><br><br>
                             <h1>Banco de Talentos</h1>
                             <p class="lead">Este campo é para o Banco de Talentos, uma plataforma que conecta talentos
                                 qualificados com oportunidades de carreira em diferentes áreas.</p>
                         </div>
                     </div>
-                    <form action="cadastro-bancoTalento.php" method="post">
+                    
                         <div class="row align-items-center justify-content-center">
                             <div class="wrapper-background-bancoTalento">
                                 <div class="col-md-10 col-sm-8 justify-content-center align-items-center text-center">
@@ -172,7 +183,10 @@
                                                     <input class="cadastrovagas-bancoTalento col-12 col-lg-5 col-sm-12"
                                                         type="text" name="Linkedin" id="linkedin"
                                                         placeholder="Linkedin">
+                                                    
+                                                    <div class="g-recaptcha bancoTalento-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
                                                 </div>
+                    
                                             </div>
                                         </div>
                                         <div class="row justify-content-center align-items-center">
@@ -186,10 +200,11 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    
                 </div>
             </div>
         </div>
+    </form>
     </main>
     <div class="effects"></div>
     <div class="effects" id="effect2"></div>
