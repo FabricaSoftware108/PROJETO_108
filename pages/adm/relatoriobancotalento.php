@@ -1,5 +1,7 @@
 <?php
-include '../../app/session/verificacao.php';
+session_start();
+// include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,6 +16,14 @@ include '../../app/session/verificacao.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+    <?php
+      
+      $query = "select * from bancosTalentos";
+      $result = mysqli_query($connection, $query);
+
+    ?>
+
 </head>
 
 <body class="body-relatorio-banco-talento">
@@ -106,87 +116,20 @@ include '../../app/session/verificacao.php';
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>E-mail 1</td>
-                        <td>CPF 1</td>
-                        <td>Telefone 1</td>
-                        <td>Linkedin 1</td>
-                      </tr>
+                      <?php while ($retorno = mysqli_fetch_array($result)){?>
+                        <tr onclick="window.location.href = 'relatoriodetalhadobancodetalentos.php'">
+                          <td><?php echo $retorno["nome"];?></td>
+                          <td><?php echo $retorno["email"];?></td>
+                          <td><?php echo $retorno["cpf"];?></td>
+                          <td><?php echo $retorno["telefone"];?></td>
+                          <td><?php echo $retorno["linkedin"];?></td>
+                        </tr>
+                      <?php }?>
                     </tbody>
                   </table>
                 </div>
                 <button class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
+
               </div>
             </div>
           </div>

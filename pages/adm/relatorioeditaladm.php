@@ -66,10 +66,8 @@ include '../../app/session/verificacao.php';
                             <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
                             <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
                             <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
-        
                         </ul>
                         </li>
-        
         
                         <li class="nav-item fs-5">
                           <a class="nav-link" href="./usuarioAdm.php">Usuário</a>
