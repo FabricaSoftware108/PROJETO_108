@@ -150,7 +150,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                               <div class="container">
                                 <div class="row">
 
-                                  <img src="../../Imagens/fabrica108.jpg" alt="" class="" id="modalImg">
+                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
                                 </div>
                                   <p><?php echo $retorno["descricao"];?></p>
                                 <?php }?>
@@ -183,7 +183,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                               <div class="container">
                                 <div class="row">
 
-                                  <img src="../../Imagens/foto-fabrica.jpg" alt="" class="" id="modalImg">
+                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
                                 </div>
                                 <p><?php echo $retorno["descricao"];?></p>
                                 <?php }?>
@@ -216,7 +216,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                               <div class="container">
                                 <div class="row">
 
-                                  <img src="../../Imagens/foto-fabrica3.jpg" alt="" class="" id="modalImg">
+                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
                                 </div>
 
                                 <p><?php echo $retorno["descricao"];?></p>
@@ -249,7 +249,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                               <div class="container">
                                 <div class="row">
 
-                                  <img src="../../Imagens/foto-fabrica4.jpg" alt="" class="" id="modalImg">
+                                  <img <?php echo $retorno["img"];?> alt="" class="" id="modalImg">
                                 </div>
 
                                 <p><?php echo $retorno["descricao"];?></p>
