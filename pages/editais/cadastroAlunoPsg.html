@@ -83,13 +83,11 @@
                             oferecer uma educação profissional inclusiva cm instrutores especializados e gratuita”</b></p>
                     </div>
                 </div>
-
                 <div class="row" id="containerCamposPreenchimentoCadastroAlunoPsg">
-                    <form class="col-12" id="camposPreenchimentoCadastroAlunoPsg">
+                    <form class="col-12" id="camposPreenchimentoCadastroAlunoPsg" method="post" action="../../app/session/conexaoCadastroAlunoPsg.php">
                         <h1><b>Informações Pessoais</b></h1><br>
                         <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome" id="nome"
                             size="27" maxlength="100" placeholder="Nome Completo">
-
                         <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cpf" id="cpf" 
                                 size="27" maxlength="11" placeholder="CPF">
@@ -104,11 +102,9 @@
                             <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai" 
                                 size="27" maxlength="50" placeholder="Nome do Pai"><br>
                         </div>
-
                             <h1 id="camposPreenchimentoCadastroAlunoPsg"><b>Endereço</b></h1><br>
                             <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua" 
                                 size="27" maxlength="100" placeholder="Rua">
-                            
                             <div class="col-12">
                                 <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro" 
                                     size="27" maxlength="50" placeholder="Bairro">
@@ -119,7 +115,6 @@
                                 <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="complemento" id="complemento" 
                                     size="27" maxlength="100" placeholder="Complemento"><br>
                             </div>
-
                            <button class="btn btn-primary mt-3 mb-3" type="button">Enviar</button>
                         </div>
                     </form>
@@ -130,9 +125,6 @@
         </main>
         <div class="container-fluid rodape-preto py-1">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
-              
-              
-              
               <a href="/" class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt="" class="img-fluid">
               </a>
