@@ -15,6 +15,7 @@ create table if not exists editais(
     nome varchar(255) not null,
     dataInicio date not null,
     dataFim date not null,
+    quantidadeAlunos int not null,
     arquivo varchar(255) not null
 );
 
