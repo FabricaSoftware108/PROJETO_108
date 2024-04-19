@@ -60,13 +60,13 @@ include '../../app/session/verificacaoPsg.php';
                             </a>
 
                             <ul class="dropdown-menu border-0 shadow-sm mt-1" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaSoftware.html">Fábrica de
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaSoftware.php">Fábrica de
                                         Software</a></li>
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaJogos.html">Fábrica de
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaJogos.php">Fábrica de
                                         Jogos</a></li>
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.html">Fábrica de Computação
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.php">Fábrica de Computação
                                         Gráfica</a></li>
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.html">Fábrica de
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de
                                         Audio e Video</a></li>
                             </ul>
                         </li>

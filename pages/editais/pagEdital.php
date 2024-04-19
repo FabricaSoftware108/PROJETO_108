@@ -52,10 +52,10 @@ include '../../app/db/connection.php';
                     
                             <ul class="dropdown-menu border-0 shadow-sm mt-1" 
                                 aria-labelledby="dropdownMenuLink"> 
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaSoftware.html">Fábrica de Software</a></li> 
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaJogos.html">Fábrica de Jogos</a></li> 
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.html">Fábrica de Computação Gráfica</a></li> 
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.html">Fábrica de Audio e Video</a></li> 
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaSoftware.php">Fábrica de Software</a></li> 
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaJogos.php">Fábrica de Jogos</a></li> 
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.php">Fábrica de Computação Gráfica</a></li> 
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de Audio e Video</a></li> 
                             </ul> 
                         </li>
                         <li class="nav-item">
