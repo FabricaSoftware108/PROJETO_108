@@ -82,7 +82,7 @@ create table if not exists alunosPsg(
 create table if not exists carroselSoftware(
 	id int auto_increment not null primary key,
 	titulo varchar(255) not null,
-    subtitulo varchar(255) not null,
+    projeto varchar(255) not null,
     descricao varchar(1400) not null,
     img varchar(255) not null
 );
@@ -90,7 +90,7 @@ create table if not exists carroselSoftware(
 create table if not exists carroselJogos(
 	id int auto_increment not null primary key,
 	titulo varchar(255) not null,
-    subtitulo varchar(255) not null,
+    projeto varchar(255) not null,
     descricao varchar(1400) not null,
     img varchar(255) not null
 );
@@ -98,7 +98,7 @@ create table if not exists carroselJogos(
 create table if not exists carroselCgi(
 	id int auto_increment not null primary key,
 	titulo varchar(255) not null,
-    subtitulo varchar(255) not null,
+    projeto varchar(255) not null,
     descricao varchar(1400) not null,
     img varchar(255) not null
 );
@@ -106,7 +106,7 @@ create table if not exists carroselCgi(
 create table if not exists carroselAudioVideo(
 	id int auto_increment not null primary key,
 	titulo varchar(255) not null,
-    subtitulo varchar(255) not null,
+    projeto varchar(255) not null,
     descricao varchar(1400) not null,
     img varchar(255) not null
 );
