@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cadastro Aluno PSG</title>
+    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +20,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script>
+            function validarPost(){
+               //verifica se o recaptcha foi selecionado
+               if(grecaptcha.getResponse() !='') return true;
+               alert('Selecione o checkbox de não sou um robô!!')
+                return false;
+            }
+        </script>
 </head>
 
 <body class="home">
@@ -127,6 +140,10 @@
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="complemento"
                             id="complemento" size="27" maxlength="100" placeholder="Complemento"><br>
                     </div>
+
+                     <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
+                     <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+
                     <button class="btn btn-primary mt-3 mb-3" type="submit">Enviar</button>
             </div>
             </form>
