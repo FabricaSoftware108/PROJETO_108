@@ -31,8 +31,7 @@ $result = mysqli_query($connection, $query);
 
 
 if ($result){
-    echo "<script>alert('CADASTRADO COM SUCESSO');</script>";
-    echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/cadastroAlunoPsg.php'; }, 1000);</script>";
+    header("location: ../../pages/editais/cadastroAlunoPsg.php");
     exit();
 } else {
     echo "<script>alert('ERRO AO CADASTRAR: " . $connection->error . "');</script>";
