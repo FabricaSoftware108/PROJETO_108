@@ -1,5 +1,9 @@
 <?php 
+session_start();
+session_destroy();
 include '../../app/db/connection.php';
+
+
 ?>
 
 
@@ -55,7 +59,7 @@ include '../../app/db/connection.php';
                             </ul> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.html">Edital</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Edital</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda</a>
@@ -116,43 +120,43 @@ include '../../app/db/connection.php';
             <div class="row align-items-center justify-content-center">
                 <div class="content-wrapper-roxo-edital">
                     <div class="borda_roxa-edital h-auto">
-                        <?php
-                            $query = 'SELECT * FROM editais';
-                            $result = mysqli_query($connection, $query);
-                            while($row = mysqli_fetch_array($result)){
-                                $today = date("Y-m-d");
-                                if($today >= $row["dataFim"]){
-                                    $dateText = "INSCRIÇÕES ENCERRADAS";
-                                    $dateColor = "danger";
-                                    $editalState = "disabled";
-                                }else if($today <= $row["dataInicio"]){
-                                    $dateText = "EM AGUARDO";
-                                    $dateColor = "warning";
-                                    $editalState = "disabled";
-                                }
-                                else{
-                                    $dateText = "INSCRIÇÕES ABERTAS";
-                                    $dateColor = "success";
-                                    $editalState = "";
-                                }
-                        ?>
-                            <div class="row mx-4 my-4">
-                                <p class="d-inline-flex gap-1 mt-2 mb-1"> 
-                                    <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100 " data-bs-toggle="collapse" data-bs-target="#<?php echo $row["codigo"] ?>" aria-expanded="false" aria-controls="collapseExample">
-                                        <div class="bg-<?php echo $dateColor ?> text-light px-4 rounded col-lg-3 col-sm-12"><?php echo $dateText ?></div><div class="col-lg-8 col-sm-12 text-lg-start text-sm-center">Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
-                                    </button>
-                                </p>
-                                <div class="collapse" id="<?php echo $row["codigo"] ?>">
-                                    <div class="card card-body mb-4 bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center">
-                                        <p><a href="<?php echo $row["arquivo"] ?>" target="_blank">Descritivo da Vaga Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</a></p>
-                                        <form action="../../app/session/actionPsg.php" method="post">
+                        <form action="../../app/session/actionPsg.php" method="post">
+                                <?php
+                                    $query = 'SELECT * FROM editais';
+                                    $result = mysqli_query($connection, $query);
+                                    while($row = mysqli_fetch_array($result)){
+                                        $today = date("Y-m-d");
+                                        if($today >= $row["dataFim"]){
+                                            $dateText = "INSCRIÇÕES ENCERRADAS";
+                                            $dateColor = "danger";
+                                            $editalState = "disabled";
+                                        }else if($today <= $row["dataInicio"]){
+                                            $dateText = "EM AGUARDO";
+                                            $dateColor = "warning";
+                                            $editalState = "disabled";
+                                        }
+                                        else{
+                                            $dateText = "INSCRIÇÕES ABERTAS";
+                                            $dateColor = "success";
+                                            $editalState = "";
+                                        }
+                                        ?>
+                                        <div class="row mx-4 my-4">
+                                            <p class="d-inline-flex gap-1 mt-2 mb-1"> 
+                                                <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100 " data-bs-toggle="collapse" data-bs-target="#<?php echo $row["codigo"] ?>" aria-expanded="false" aria-controls="collapseExample" type="button">
+                                                    <div class="bg-<?php echo $dateColor ?> text-light px-4 rounded col-lg-3 col-sm-12"><?php echo $dateText ?></div><div class="col-lg-8 col-sm-12 text-lg-start text-sm-center">Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
+                                                </button>
+                                            </p>
+                                            <div class="collapse" id="<?php echo $row["codigo"] ?>">
+                                                <div class="card card-body mb-4 bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center">
+                                                    <p><a href="<?php echo $row["arquivo"] ?>" target="_blank">Descritivo da Vaga Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</a></p>
 
-                                            <input class="btn btn-primary <?php echo $editalState ?>" type="submit" value="<?php echo ("{$row["codigo"]}") ?>" name="editalCode">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php } ?>
+                                                    <button class="btn btn-primary <?php echo $editalState ?>" value="<?php echo "{$row["codigo"]}" ?>" name="editalCode" type="submit">Candidatar-se</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <?php } ?>
+                        </form>
 
                     </div>
                 </div>

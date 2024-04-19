@@ -1,3 +1,8 @@
+<?php
+include '../../app/session/verificacaoPsg.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 
@@ -66,7 +71,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.html">Edital</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Edital</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page"
