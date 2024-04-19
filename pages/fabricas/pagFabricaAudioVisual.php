@@ -1,3 +1,5 @@
+<?php include "../../app/session/fabricas/conexaoCarrosselAudioVisual.php"?>
+
 <!DOCTYPE html>
 <html lang="pt-br" class="htmlFabricaAudiovisual">
 <head class="headFabricaAudiovisual">
@@ -111,59 +113,56 @@
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, amet. Ullam quod accusamus quidem nisi, corrupti hic eveniet cumque quis sed dolores nihil velit esse, atque in ex a vitae?</p>
+                    <p>A Fábrica de AudioVisual é um projeto que simula o ambiente de uma empresa de desenvolvimento de audio visual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Audio Visual.</p>
                   </div>
                 </div>
               </div>
               
               <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  
+                <?php
+                    $c = 0;
+                    $state = "";
+                    while ($retorno = mysqli_fetch_array($result)){
+                      if($c == 0){$state = "active";}else{$state = "";};
+                  ?>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo ("$c")?>" class="<?php echo ("$state")?>" ></button>
+                  <?php 
+                    $c++;}
+                    mysqli_data_seek($result, 0);
+                  ?>                  
                 </div>
                 <div class="carousel-inner">
-
-                  <div class="carousel-item active my-5">
+                  <?php
+                      $c = 0;
+                      $state = "";
+                      while ($retorno = mysqli_fetch_array($result)){
+                        if($c == 0){$state = "active";}else{$state = "";};
+                        ?>
+                  <div class="carousel-item <?php echo $state ?> my-5">
                     <div class="d-flex justify-content-center">                                   
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal108" style="cursor: pointer;">
-                        <img src="../../Imagens/fabrica108.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
+                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="<?php echo ("#$c")?>" style="cursor: pointer;">
+                        <img src="<?php echo $retorno["img"];?>" class="d-block img-fluid" alt="..." id="carouselImg">
                         <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5 class="text-center">Fábrica de Audiovisual 108</h5>
-                          <p class="text-center">Hub Fábricas, vulgo, substituto do Senacoin</p>
+
+                          <h5 class="text-center"><?php echo $retorno["titulo"];?></h5>
+                          <p class="text-center"><?php echo $retorno["projeto"];?></p>
                         </div>
                       </div>
-                      <div class="modal fade" id="exampleModal108" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal fade" id="<?php echo ("$c")?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de audiovisual 108 - Hub Fábricas</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <div class="container">
                                 <div class="row">
 
-                                  <img src="../../Imagens/fabrica108.jpg" alt="" class="" id="modalImg">
+                                  <img src="<?php echo $retorno["img"];?>" alt="" class="" id="modalImg">
                                 </div>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
+                                <p><?php echo $retorno["descricao"];?></p>
                               </div>
                             </div>
                           </div>
@@ -171,144 +170,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal273" style="cursor: pointer;">
-                        <img src="../../Imagens/foto-fabrica.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
-                        <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Audiovisual 273</h5>
-                          <p >Gameteca</p>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="exampleModal273" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de Audiovisual 273</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container">
-                                <div class="row">
-
-                                  <img src="../../Imagens/foto-fabrica.jpg" alt="" class="" id="modalImg">
-                                </div>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal123" style="cursor: pointer;">
-                        <img src="../../Imagens/foto-fabrica3.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
-                        <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Audiovisual 123</h5>
-                          <p >Não Sabo</p>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="exampleModal123" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de Audiovisual 123 - Não Sabo</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container">
-                                <div class="row">
-
-                                  <img src="../../Imagens/foto-fabrica3.jpg" alt="" class="" id="modalImg">
-                                </div>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item my-5">
-                    <div class="d-flex justify-content-center">                                   
-                      <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="#exampleModal321" style="cursor: pointer;">
-                        <img src="../../Imagens/foto-fabrica4.jpg" class="d-block img-fluid" alt="..." id="carouselImg">
-                        <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                          <h5>Fábrica de Audiovisual 321</h5>
-                          <p >Ainda Não Sabo</p>
-                        </div>
-                      </div>
-                      <div class="modal fade" id="exampleModal321" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Fábrica de Audiovisual 321 - Ainda Não Sabo</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="container">
-                                <div class="row">
-
-                                  <img src="../../Imagens/foto-fabrica4.jpg" alt="" class="" id="modalImg">
-                                </div>
-
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore
-                                   officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste.
-                                   Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique
-                                   iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore
-                                   debitis, delectus eos! In!</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <?php $c++; }?>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -479,10 +341,10 @@
         
         
         
-            <a href="/" class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <a href="../../index.html" class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
               <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png" alt="" class="img-fluid">
             </a>
-            <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de audiovisual 108</p>
+            <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de Audiovisual 108</p>
             
             <ul class="nav justify-content-center col col-md-4 order-sm-3 order-lg-3">
               <li class="nav-item"><a href="https://www.instagram.com/senachubacademy/" target="_blank" class="nav-link px-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
