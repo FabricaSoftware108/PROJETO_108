@@ -46,10 +46,10 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                  
                         <ul class="dropdown-menu border-0 shadow-sm mt-1" 
                             aria-labelledby="dropdownMenuLink"> 
-                            <li><a class="dropdown-item" href="./pagFabricaSoftware.html">Fábrica de Software</a></li> 
-                            <li><a class="dropdown-item" href="./pagFabricaJogos.html">Fábrica de Jogos</a></li> 
-                            <li><a class="dropdown-item" href="./pagFabricaCgi.html">Fábrica de Computação Gráfica</a></li> 
-                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.html">Fábrica de Audio e Video</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaSoftware.php">Fábrica de Software</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaJogos.php">Fábrica de Jogos</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaCgi.php">Fábrica de Computação Gráfica</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Audio e Video</a></li> 
                         </ul> 
                     </li>
                     <li class="nav-item">
