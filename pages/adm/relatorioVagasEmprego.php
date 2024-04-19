@@ -66,8 +66,8 @@ include '../../app/db/connection.php';
                     Fábricas
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroCarrossel.php">Cadastrar Carrossel</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrossel.php">Editar Carrossel </a></li>
+                    <li><a class="dropdown-item" href="./adicionarCarrosselAdm.php">Cadastrar Carrossel</a></li>
+                    <li><a class="dropdown-item" href="./editarCarrosselAdm.php">Editar Carrossel </a></li>
                  </ul>
                 </li>
 
