@@ -132,13 +132,13 @@ include '../../app/session/verificacao.php';
                   <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Nova senha</h2>
-                      <input type="email" class="form-control" name="newPassword"/>
+                      <input type="text" class="form-control" name="newPassword"/>
                     </div>
                   </div>
                   <div class="row mb-5">
                     <div class="col-12 text-start">
                       <h2>Confirmar senha</h2>
-                      <input type="email" class="form-control" name="confirmNewPassword"/>
+                      <input type="text" class="form-control" name="confirmNewPassword"/>
                     </div>
                   </div>
   
