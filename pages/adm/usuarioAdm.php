@@ -149,7 +149,7 @@ include '../../app/session/verificacao.php';
       </div>
     </div>
   </main>
-<script src="../js/editar-usuario-adm.js"></script>
+<script src="../../js/editar-usuario-adm.js"></script>
 
 </body>
 
