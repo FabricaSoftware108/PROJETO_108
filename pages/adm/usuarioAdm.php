@@ -108,43 +108,28 @@ include '../../app/session/verificacao.php';
               <div class="content-top-user">
                 <h1>Usuário</h1>
               </div>
-              <div class="content-user">
+              <div class="content-user mt-5">
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Nome</h2>
-                    <input type="text" class="form-control" id="nome" readonly />
+                    <input type="text" class="form-control" id="nome" readonly value="<?php echo $_SESSION['nome']?>"/> 
                   </div>
                 </div>
-
-                <div class="row mb-3">
-                  <div class="col-12 text-start">
-                    <h2>Cpf</h2>
-                    <input type="text" class="form-control" id="cpf" readonly/>
-                  </div>
-                </div>
-
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>E-mail</h2>
-                    <input type="email" class="form-control" id="email" readonly/>
+                    <input type="email" class="form-control" id="email" readonly value="<?php echo $_SESSION['email']?>"/>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Telefone</h2>
-                    <input type="text" class="form-control" id="telefone" readonly />
-                  </div>
-                </div>
-                <div class="row mb-5">
-                  <div class="col-12 justify-content-center align-items-center text-center">
-                    <button type="submit" class="btn btn-primary" id="button-editar_usuario">Editar Usuario</button>
-                    <button type="button" class="btn btn-secondary d-none" id="button-confirmar_editar">Confirmar Edição</button>
-
+                    <input type="text" class="form-control" id="telefone" readonly value="<?php echo $_SESSION['telefone']?>"/>
                   </div>
                 </div>
 
                 <div class="row">
-                  <div class="col-12 justify-content-center align-items-center text-center">
+                  <div class="col-12 justify-content-center mt-5 align-items-center text-center">
                     <a href="usuarioAdmRecuperar.php">
                       <button type="submit" class="btn btn-primary" id="button-user">Mudar Senha</button>
                     </a>
@@ -157,7 +142,7 @@ include '../../app/session/verificacao.php';
       </div>
     </div>
   </main>
-<script src="../js/editar-usuario-adm.js"></script>
+  <script src="../../js//editar-usuario-adm.js"></script>
 
 </body>
 
