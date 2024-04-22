@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
-<body class="body-edital">
+<body>
     <!-- Header -->
     <header class="cabecalhoGeral border shadow-sm">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -71,114 +71,101 @@
         </nav>
     </header>
 
-    <main>
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div class="sombra_rosa-edital"></div>
-                    <div class="sombra_roxa-edital"></div>
-                    <div class="titulo_edital">
-                        <div class="titulo_escrito_edital">
-                            <h1>Editais</h1><br>
-                            <div class="row align-items-center justify-content-center" id="introducao-edital">
-                                <div class="col-md-12 col-sm-9">
-                                    <p>Editais das Empresas e das Fabricas de Software, Jogos, Computação Gráfica e AudioVisual.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main class="edital">
+        
+            <div class="col-2"></div>
+            
+                <div class="sombra_rosa-edital"></div>
+                <div class="sombra_roxa-edital"></div>
+                <div class="titulo_edital">
+                    
                 </div>
-                <div class="col-2"></div>
+            
+            <div class="col-2"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="titulo-subtitulo-edital">
+                    <h1>Edital</h1><br><br>
+                    <p>Editais das Empresas e das Fabricas de Software, Jogos, Computação Gráfica e AudioVisual.</p><br>
+                </div>
             </div>
 
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-md-12">
-                        <div class="edital_do_aluno_titulo-2">
-                            <!-- <h1>Edital do Aluno</h1> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <div class="content-wrapper-roxo-edital">
-                    <div class="borda_roxa-edital">
-                        <div class="container-fluid" id="wrapper-content-edital">
-                            <div class="row" id="background-edital">
-                                <div class="col-12">
-                                    <div class=" container container-background-edital" >
-                                        <div class="row ">
-                                            <div
-                                                class="col-md-3 d-flex align-items-center justify-content-center text-center">
-                                                <span class="btn-inscricoes">INSCRIÇÕES ABERTAS</span>
+                <div class="row align-items-center justify-content-center">
+                    <div class="content-wrapper-roxo-edital">
+                        <div class="borda_roxa-edital">
+                            <div class="container-fluid" id="wrapper-content-edital">
+                                <div class="row" id="background-edital">
+                                    <div class="col-12">
+                                        <div class=" container container-background-edital" >
+                                            <div class="row ">
+                                                <div
+                                                    class="col-md-3 d-flex align-items-center justify-content-center text-center">
+                                                    <span class="btn-inscricoes">INSCRIÇÕES ABERTAS</span>
+                                                </div>
+         
+                                                <div
+                                                    class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
+                                                    <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
+                                                        Grande</p>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="sombra-edital-btn" onclick="toggletabble_inscricoes1()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24"
+                                                            style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                                                            <path
+                                                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div id="inscricoes1" class="sombra_orientacoes-edital shadow-lg">
+                                                    <p>Orientações Projeto Seletivo Senac/MS</p>
+                                                    <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
+                                                        Matutino | Campo Grande</p>
+                                                    <a class="btn btn-primary mt-3 mb-3"
+                                                        type="button" href="../editais/cadastroAlunoPsg.html">Candidatar-se</a>
+                                                </div>
                                             </div>
-     
-                                            <div
-                                                class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
-                                                <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
-                                                    Grande</p>
-                                            </div>
-                                            <div class="col-md-1 ">
-                                                <button class="sombra-edital-btn" onclick="toggletabble_inscricoes1()">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24"
-                                                        style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
-                                                        <path
-                                                            d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
-                                                        </path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <div id="inscricoes1" class="sombra_orientacoes-edital shadow-lg">
-                                                <p>Orientações Projeto Seletivo Senac/MS</p>
-                                                <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
-                                                    Matutino | Campo Grande</p>
-                                                <a class="btn btn-primary mt-3 mb-3"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid" id="wrapper2-content-edital">
+                                <div class="row" id="background-edital">
+                                    <div class="col-12">
+                                        <div class=" container container-background-edital" >
+                                            <div class="row ">
+                                                <div
+                                                    class="col-md-3 d-flex align-items-center justify-content-center text-center">
+                                                    <span class="btn-inscricoes2">INSCRIÇÕES ABERTAS</span>
+                                                </div>
+        
+                                                <div
+                                                    class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
+                                                    <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
+                                                        Grande</p>
+                                                </div>
+                                                <div class="col-md-1 ">
+                                                    <button class="sombra-edital-btn" onclick="toggletabble_inscricoes2()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24"
+                                                            style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
+                                                            <path
+                                                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div id="inscricoes2" class="sombra_orientacoes2-edital shadow-lg">
+                                                    <p>Orientações Projeto Seletivo Senac/MS</p>
+                                                    <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
+                                                        Matutino | Campo Grande</p>
+                                                    <a class="btn btn-primary mt-3 mb-3"
                                                     type="button" href="../editais/cadastroAlunoPsg.html">Candidatar-se</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid" id="wrapper2-content-edital">
-                            <div class="row" id="background-edital">
-                                <div class="col-12">
-                                    <div class=" container container-background-edital" >
-                                        <div class="row ">
-                                            <div
-                                                class="col-md-3 d-flex align-items-center justify-content-center text-center">
-                                                <span class="btn-inscricoes2">INSCRIÇÕES ABERTAS</span>
-                                            </div>
-    
-                                            <div
-                                                class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
-                                                <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
-                                                    Grande</p>
-                                            </div>
-                                            <div class="col-md-1 ">
-                                                <button class="sombra-edital-btn" onclick="toggletabble_inscricoes2()">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24"
-                                                        style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
-                                                        <path
-                                                            d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
-                                                        </path>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <div id="inscricoes2" class="sombra_orientacoes2-edital shadow-lg">
-                                                <p>Orientações Projeto Seletivo Senac/MS</p>
-                                                <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
-                                                    Matutino | Campo Grande</p>
-                                                <a class="btn btn-primary mt-3 mb-3"
-                                                type="button" href="../editais/cadastroAlunoPsg.html">Candidatar-se</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -188,9 +175,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-    </main>
+                
+            
+        </main>
     <div class="container-fluid rodape-preto py-1">
         <footer
             class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
