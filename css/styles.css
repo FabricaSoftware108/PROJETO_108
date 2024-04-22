@@ -1650,11 +1650,29 @@ input.cadastrovagas {
 
 .body-bancoTalentos main #title-bancoTalento h1{
     font-family: var(--font-destaque);
-    margin-top: 130px;
+    margin-top: 112px;
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
     font-size: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .body-bancoTalentos main #title-bancoTalento p{
     font-family: var(--font-destaque);
@@ -1662,7 +1680,39 @@ input.cadastrovagas {
     padding: 20px 0 0 0;
     color: var(--font-color-pag-title-subtitle);
     font-weight: 300;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
 
@@ -2112,6 +2162,7 @@ main.cadastro-de-vagas {
 .titulo-vagas {
     color: #000;
     line-height: 30px;
+    
 }
 
 .titulo-vagas h1 {
@@ -2124,6 +2175,7 @@ main.cadastro-de-vagas {
     margin: 78px;
     font-family: var(--font-destaque);
     color: black;
+    
 
 }
 
@@ -2142,6 +2194,11 @@ main.cadastro-de-vagas {
     font-weight: bold;
     font-size: 50px;
 }
+
+
+
+
+
 
 #titulo-subtitulo-cadastroVagas p{
   font-size: 27px ;
