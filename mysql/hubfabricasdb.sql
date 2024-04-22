@@ -16,8 +16,10 @@ create table if not exists editais(
     dataInicio date not null,
     dataFim date not null,
     quantidadeAlunos int not null,
+    alunosCadastrados int not null default 0,
     arquivo varchar(255) not null
 );
+
 
 create table if not exists demandas(
 	id int auto_increment not null primary key,
@@ -111,3 +113,14 @@ create table if not exists carroselAudioVideo(
     descricao varchar(1400) not null,
     img varchar(255) not null
 );
+
+DELIMITER $
+
+CREATE TRIGGER Tgr_Psg_Insert BEFORE INSERT
+ON alunosPsg
+FOR EACH ROW
+BEGIN
+	UPDATE editais SET alunosCadastrados = alunosCadastrados + 1 where codigo = new.codigoEdital;
+END$
+
+DELIMITER ;
