@@ -112,27 +112,19 @@ include '../../app/session/verificacao.php';
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Nome</h2>
-                    <input type="text" class="form-control" id="nome" readonly />
+                    <input type="text" class="form-control" id="nome" readonly value="<?php echo $_SESSION['nome']?>"/> 
                   </div>
                 </div>
-
-                <div class="row mb-3">
-                  <div class="col-12 text-start">
-                    <h2>Cpf</h2>
-                    <input type="text" class="form-control" id="cpf" readonly/>
-                  </div>
-                </div>
-
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>E-mail</h2>
-                    <input type="email" class="form-control" id="email" readonly/>
+                    <input type="email" class="form-control" id="email" readonly value="<?php echo $_SESSION['email']?>"/>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Telefone</h2>
-                    <input type="text" class="form-control" id="telefone" readonly />
+                    <input type="text" class="form-control" id="telefone" readonly value="<?php echo $_SESSION['telefone']?>"/>
                   </div>
                 </div>
                 <div class="row mb-5">
