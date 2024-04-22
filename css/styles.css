@@ -1656,62 +1656,14 @@ input.cadastrovagas {
     font-size: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .body-bancoTalentos main #title-bancoTalento p{
     font-family: var(--font-destaque);
     font-size: 27px;
     padding: 20px 0 0 0;
     color: var(--font-color-pag-title-subtitle);
-    font-weight: 300;
+    font-weight: 200;
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
