@@ -120,20 +120,20 @@ $retornoBT = mysqli_num_rows($dadosBT);
           <div class="container" id="container-1-adm-home">
             <div class="row justify-content-center" id="row-1-adm-home">
               <div class="col-sm-12 col-lg-8" id="label-bem-vindos-adm-home">
-                <p class="text-center">BEM VINDO!!</p>  
+                <b><p class="text-center">Bem Vindo!!!</p></b>  
               </div>
             </div>
 
       <!--Quadrados com as informações-->
       <div class="row justify-content-center" id="row-2-adm-home">
         <div class="col-sm-12 col-lg-3 w-sm-100" id="label-quadrados-1-adm-home">
-          <p class="text-center"><p class='numero-adm-home'><?php echo$retornoDemandas?></p><br>Projetos Submetidos</p>
+          <p class="text-center"><p><?php echo$retornoDemandas?></p><br>Projetos Submetidos</p>
         </div>
         <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100" id="label-quadrados-2-adm-home">
-          <p class="text-center"><p class='numero-adm-home'><?php echo$retornoVagas?></p><br>Inscrição - Vagas de Emprego</p>
+          <p class="text-center"><p><?php echo$retornoVagas?></p><br>Inscrição - Vagas de Emprego</p>
         </div>
         <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100" id="label-quadrados-3-adm-home">
-          <p class="text-center"><p class='numero-adm-home'><?php echo$retornoBT?></p><br>Banco de Talentos</p>
+          <p class="text-center"><p><?php echo$retornoBT?></p><br>Banco de Talentos</p>
         </div>
       </div>
     </div>

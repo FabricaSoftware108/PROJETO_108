@@ -2721,11 +2721,8 @@ overflow: hidden;
 }
 
 
-
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    overflow: hidden;
 }
 
 @media(min-width:1140px){
@@ -2738,12 +2735,7 @@ overflow: hidden;
 #label-bem-vindos-adm-home{
     margin-top:10rem;
     position:absolute;
-    font-size:50px;
-    font-weight: 800;
-}
-
-.numero-adm-home {
-    font-size: 50px;
+    font-size:x-large;
 }
 
  /* faz os quadrados ficarem alinhados horizontalmente */
@@ -2753,25 +2745,18 @@ overflow: hidden;
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-        font-size: x-large;
-        
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-        font-size: x-large;
     }
     #label-quadrados-3-adm-home{
         background-color:#49D907;
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-        font-size: x-large;
     }
 }
 
@@ -2783,8 +2768,6 @@ overflow: hidden;
         border-radius:5%;
         padding:50px;
         margin:25px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-        font-size:x-large;
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
@@ -2792,8 +2775,6 @@ overflow: hidden;
         border-radius:5%;
         padding:50px;
         margin:25px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-        font-size: x-large;
     }
     #label-quadrados-3-adm-home{
         background-color:#49D907;
@@ -2801,8 +2782,6 @@ overflow: hidden;
         border-radius:5%;
         padding:50px;
         margin:25px;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-        font-size: x-large;
     }
 }
 @media(max-width:690px){
@@ -2813,7 +2792,7 @@ overflow: hidden;
 }
 #row-2-adm-home{
     margin-top:18rem;
-    font-size: 35px;
+    font-size:x-large;
 }
 
 #container-2-adm-home-imagem{
@@ -2825,8 +2804,6 @@ overflow: hidden;
     width:300px;
     box-shadow:none;
 }
-
-
 
 
 
@@ -4313,7 +4290,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     margin-top:10rem;
     position:absolute;
     font-size:x-large;
-    font-family: ;
 }
 
  /* faz os quadrados ficarem alinhados horizontalmente */
