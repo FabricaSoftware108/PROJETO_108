@@ -108,7 +108,7 @@ include '../../app/session/verificacao.php';
               <div class="content-top-user">
                 <h1>Usuário</h1>
               </div>
-              <div class="content-user">
+              <div class="content-user mt-5">
                 <div class="row mb-3">
                   <div class="col-12 text-start">
                     <h2>Nome</h2>
@@ -127,16 +127,9 @@ include '../../app/session/verificacao.php';
                     <input type="text" class="form-control" id="telefone" readonly value="<?php echo $_SESSION['telefone']?>"/>
                   </div>
                 </div>
-                <div class="row mb-5">
-                  <div class="col-12 justify-content-center align-items-center text-center">
-                    <button type="submit" class="btn btn-primary" id="button-editar_usuario">Editar Usuario</button>
-                    <button type="button" class="btn btn-secondary d-none" id="button-confirmar_editar">Confirmar Edição</button>
-
-                  </div>
-                </div>
 
                 <div class="row">
-                  <div class="col-12 justify-content-center align-items-center text-center">
+                  <div class="col-12 justify-content-center mt-5 align-items-center text-center">
                     <a href="usuarioAdmRecuperar.php">
                       <button type="submit" class="btn btn-primary" id="button-user">Mudar Senha</button>
                     </a>
@@ -149,7 +142,7 @@ include '../../app/session/verificacao.php';
       </div>
     </div>
   </main>
-<script src="../../js/editar-usuario-adm.js"></script>
+
 
 </body>
 
