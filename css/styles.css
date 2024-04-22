@@ -2429,7 +2429,7 @@ main.login-ADM {
 /* Tela de Edital */
 
 main.edital {
-    max-width: 1220px;
+    max-width: 1270px;  
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
@@ -2505,7 +2505,7 @@ overflow: hidden;
   top:500px;
   position: absolute;
   z-index: -1;
-  border-radius: 50%;
+  border-radius: 10px;
   filter: blur(150px) contrast(150%);
 }
 
@@ -2518,13 +2518,13 @@ overflow: hidden;
 
 .borda_roxa-edital {
   position: relative;
-  width: 1200px;
+  width: 1220px;
   height: 958px;
   background-color: #281358;
   border-radius: 10px;
   text-align:center;
   z-index: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .sombra-edital {
@@ -2722,6 +2722,11 @@ overflow: hidden;
   font-size: 13px;
 }
 
+@media (max-width: 576px){
+    #titulo-subtitulo-edital p{
+        font-size: 20px;
+    }
+}
 /* ADM HOME */
 
 .body-adm-home{
