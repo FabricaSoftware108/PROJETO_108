@@ -25,7 +25,7 @@ if(empty($nomeAluno) || empty($cpfAluno) || empty($rgAluno) || empty($telefoneAl
 }
 
 
-$query = "INSERT INTO alunosPsg () VALUES (null,'$cpfAluno','$nomeAluno','$rgAluno','$telefoneAluno','$emailAluno','$nomePai','$nomeMae','$ruaAluno','$bairroAluno','$numeroEnderecoAluno','$complementoAluno','$cepAluno','50/2024');";
+$query = "INSERT INTO alunosPsg () VALUES (null,'$cpfAluno','$nomeAluno','$rgAluno','$telefoneAluno','$emailAluno','$nomePai','$nomeMae','$ruaAluno','$bairroAluno','$numeroEnderecoAluno','$complementoAluno','$cepAluno','{$_SESSION["editalCode"]}');";
 
 $result = mysqli_query($connection, $query);
 
@@ -38,6 +38,3 @@ if ($result){
     header("location: ../../pages/editais/cadastroAlunoPsg.php");
     exit();
 }
-?>
-
- 

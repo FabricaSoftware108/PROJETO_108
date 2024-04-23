@@ -2404,6 +2404,9 @@ body.body-edital {
   background-color: white;
 }
 
+.edital-state{
+    width: 25%;
+}
 
 .body-edital .borda_roxa{
 overflow: hidden;
@@ -2412,6 +2415,7 @@ overflow: hidden;
 .body-edital .borda_roxa-edital,
 .body-edital .borda_roxar * {
   box-sizing: border-box;
+  height: auto;
 }
 
 
