@@ -98,52 +98,54 @@ include '../../app/session/verificacao.php';
 
 
   <main class="main-usuarioAdm">
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
-          <img src="../../Imagens/undraw_fingerprint_login_re_t71l.svg" class="img-fluid" alt="usuario-adm">
-        </div>
-        <div class="col-md-5 col-12 offset-md-1">
-          <div class="wrapper-usuario-adm">
-            <div class="content-usuario-adm">
-              <div class="content-top-user">
-                <h1>Usuário</h1>
-              </div>
-              <div class="content-user">
-                  <div class="content-arrow-user">
-                    <a href="usuarioAdm.php">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" style="fill: #1E55D1 ;transform: msFilter;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
-                    </a>
-                  </div>
-                <div class="row mb-3">
-                  <div class="col-12 text-start">
-                    
-                  </div>
+    <form method="post" action="../../app/session/conexaoUsuarioAdmRecuperar.php">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
+            <img src="../../Imagens/undraw_fingerprint_login_re_t71l.svg" class="img-fluid" alt="usuario-adm">
+          </div>
+          <div class="col-md-5 col-12 offset-md-1">
+            <div class="wrapper-usuario-adm">
+              <div class="content-usuario-adm">
+                <div class="content-top-user">
+                  <h1>Usuário</h1>
                 </div>
-
-                <div class="row mb-3">
-                  <div class="col-12 text-start">
-                    <h2>Senha antiga</h2>
-                    <input type="text" class="form-control"/>
+                <div class="content-user">
+                    <div class="content-arrow-user">
+                      <a href="usuarioAdm.php">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" style="fill: #1E55D1 ;transform: msFilter;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+                      </a>
+                    </div>
+                  <div class="row mb-3">
+                    <div class="col-12 text-start">
+                      
+                    </div>
                   </div>
-                </div>
-
-                <div class="row mb-3">
-                  <div class="col-12 text-start">
-                    <h2>Nova senha</h2>
-                    <input type="email" class="form-control"/>
+  
+                  <div class="row mb-3">
+                    <div class="col-12 text-start">
+                      <h2>Senha antiga</h2>
+                      <input type="text" class="form-control" name="oldPassword" value="<?php echo $_SESSION["senha"];?>"/>
+                    </div>
                   </div>
-                </div>
-                <div class="row mb-5">
-                  <div class="col-12 text-start">
-                    <h2>Confirmar senha</h2>
-                    <input type="email" class="form-control"/>
+  
+                  <div class="row mb-3">
+                    <div class="col-12 text-start">
+                      <h2>Nova senha</h2>
+                      <input type="text" class="form-control" name="newPassword"/>
+                    </div>
                   </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12 justify-content-center align-items-center text-center">
-                    <button type="submit" class="btn btn-primary" id="button-user">Confirmar Mudanças</button>
+                  <div class="row mb-5">
+                    <div class="col-12 text-start">
+                      <h2>Confirmar senha</h2>
+                      <input type="text" class="form-control" name="confirmNewPassword"/>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="col-12 justify-content-center align-items-center text-center">
+                      <button type="submit" class="btn btn-primary" id="button-user">Confirmar Mudanças</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,7 +153,7 @@ include '../../app/session/verificacao.php';
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </main>
 
 
