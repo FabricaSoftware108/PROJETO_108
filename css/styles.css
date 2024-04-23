@@ -3334,12 +3334,15 @@ body.body-relatorio-banco-talento .relatorio-banco_talento-background{
     overflow-y: auto;
 }
 
-body.body-relatorio-banco-talento .label-nome_banco_talentos,
-body.body-relatorio-banco-talento .label-email_banco_talentos,
-body.body-relatorio-banco-talento .label-cpf_banco_talentos,
-body.body-relatorio-banco-talento .label-telefone_banco_talentos,
-body.body-relatorio-banco-talento .label-linkedin_banco_talentos{
+body.body-relatorio-banco-talento .label-nome_banco_talento,
+body.body-relatorio-banco-talento .label-email_banco_talento,
+body.body-relatorio-banco-talento .label-cpf_banco_talento,
+body.body-relatorio-banco-talento .label-telefone_banco_talento,
+body.body-relatorio-banco-talento .label-linkedin_banco_talento{
     background-color: #D9D9D9;
+    word-wrap: break-word;
+    font-size: clamp(0.1rem, 2.2vw, 1rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body.body-relatorio-banco-talento .relatorio-banco_talento-button{
     align-items: center;
@@ -3905,12 +3908,15 @@ body.body-relatorio-edital-da-empresa .label-cnpj_edital_da_empresa,
 body.body-relatorio-edital-da-empresa .label-telefone_edital_da_empresa,
 body.body-relatorio-edital-da-empresa .label-email_edital_da_empresa {
     background-color: #D9D9D9;
+    word-wrap: break-word;
+    font-size: clamp(0.1rem, 2.2vw, 1rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body.body-relatorio-edital-da-empresa .label-representante_edital_da_empresa{
-    white-space: normal; 
+    background-color: #D9D9D9;
     word-wrap: break-word;
-    text-align: center;
-    display: block;
+    font-size: clamp(0.1rem, 2.2vw, 1rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -5145,7 +5151,68 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 }
    
 
+/*Relatório Vagas Emprego*/
+
+body.body-relatorio-vagas-emprego .relatorio_vagas_emprego{
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.body-relatorio-vagas-emprego .relatorio-vagas_emprego-container{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    margin-top: 200px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.body-relatorio-vagas-emprego .relatorio-vagas-emprego-header{
+    background-color: #1E55D1;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+body.body-relatorio-vagas-emprego .relatorio-vagas-emprego-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-content{
+    padding: 20px;
+}
+body.body-relatorio-vagas-emprego .relatorio-vagas_emprego-background{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+body.body-relatorio-vagas-emprego .label-nome_vagas_emprego,
+body.body-relatorio-vagas-emprego .label-email_vagas_emprego,
+body.body-relatorio-vagas-emprego .label-telefone_vagas_emprego,
+body.body-relatorio-vagas-emprego .label-linkedin_vagas_emprego{
+    background-color: #D9D9D9;
+    word-wrap: break-word;
+    font-size: clamp(0.1rem, 2.2vw, 1rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body.body-relatorio-vagas-emprego .label-cnpj_vagas_emprego{
+    background-color: #D9D9D9;  
+    word-wrap: break-word; 
+    font-size: clamp(0.1rem, 2.2vw, 1rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-button{
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
 
 
-
-
+/* Fim do Relatório Vagas Emprego */
