@@ -1260,20 +1260,19 @@ div.carousel-item img#carouselImg{
 
 
 
-.body-demanda,
-.html-demanda {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    display: block;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden auto;
-    z-index: 2;
+main.body-demanda {
+    max-width: 1220px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
+}
+.body-demanda{
+  max-width: 1220px;
+  margin: 20px auto;
+  margin-top: 160px;
+  text-align: center;
+  font-family: var(--font-grad-title);
 }
 
 .body-demanda div.effects {
@@ -1306,11 +1305,29 @@ div.carousel-item img#carouselImg{
     z-index: 0; 
 }
 
-.body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
-.body-demanda .wrapper-all-centainer-demanda {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; }
-.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
+.body-demanda #button-submit-demanda {
+    width: 150px; 
+    height: 70px; 
+    font-size: 22px;
+}
 
-.body-demanda #button-demanda button {margin: 30px 0;}
+.body-demanda .wrapper-all-centainer-demanda {
+    width: 1468px; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+}
+
+.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { 
+    width: 100%; 
+    background-color: #281358;
+     border-radius: 15px; 
+    }
+
+.body-demanda #button-demanda button {
+    margin: 30px 0;
+}
 
 .body-demanda .subtitle-demanda h1{
     font-size: 40px;
@@ -1339,8 +1356,11 @@ div.carousel-item img#carouselImg{
    .body-demanda .content-title-subtitle-demanda p {
         margin: 0 30px;
         text-align: center;
-        font-size: 14px !important; 
+        font-size: 18px !important; 
 
+   }
+   .body-demanda .content-title-subtitle-demanda h1{
+        font-size: 35px !important;
    }
 }
 @media (max-width: 1200px) {
@@ -2676,7 +2696,10 @@ overflow: hidden;
 
 @media (max-width: 576px){
     #titulo-subtitulo-edital p{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    #titulo-subtitulo-edital h1{
+        font-size: 35px
     }
 }
 /* ADM HOME */

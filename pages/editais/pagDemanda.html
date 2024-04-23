@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="pt-br" class="html-demanda">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
 </head>
 
 
-<body class="body-demanda">
+<body>
     <!-- Header -->
     <header class="cabecalhoGeral border shadow-sm">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -89,106 +89,103 @@
         </nav>
     </header>
 
-    <main>
-        <div class="content-wrapper-all-demanda">
-            <form action="../../app/session/conexaoPagDemanda.php" method="POST" onsubmit="return validarPost()">
-                <div class="content-title-subtitle-demanda"><br><br>
-                    <h1>Demanda</h1><br>
-                    <p class="lead">Este campo é destinado a Demanda de projetos para as Fábricas de <br>
-                         Software, Jogos, Computação Gráfica e Audiovisual.</p> <br>
+    <main class="body-demanda">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="titulo-subtitulo-demanda">
+                    <h1>Demanda</h1><br><br>
+                    <p>Página destinada às Demandas de projetos para as Fábricas de Software, Jogos, Computação Gráfica e Audiovisual. Solicitações que serão analisadas e desenvolvidas pelos alunos.</p><br>
                     <div class="effects"></div>
                     <div class="effects-2"></div>
                 </div>
-                <div class="row justify-content-center align-items-center">
-                    <div class="wrapper-all-centainer-demanda">
-                        <div class="col-md-10 col-sm-8 col-12 justify-content-center align-items-center text-center">
-                            <div class="container-fluid" id="container-cadastro-demanda" style="z-index: 999;">
-                                <div class="row justify-content-center align-items-center ">
-                                    <div class="col-md-6">
-                                        <div class="subtitle-demanda text-center">
-                                            <h1>Dados da Empresa</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center justify-content-center mb-5">
-                                    <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa"
-                                            id="nome_empresa" size="27" maxlength="45" placeholder="Nome da Empresa">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email"
-                                            id="email" size="27" placeholder="Email"><br>
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj"
-                                            size="27" maxlength="45" placeholder="CNPJ">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado"
-                                            id="estado" size="27" maxlength="50" placeholder="Estado"><br>
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone"
-                                            id="telefone" size="27" maxlength="50" placeholder="Telefone">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cidade"
-                                            id="cidade" size="27" maxlength="70" placeholder="Cidade"><br>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="row">
-                                        <div class="subtitle-demanda text-center">
-                                            <h1>Dados do Titular da Empresa</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center justify-content-center mb-5">
-                                    <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome" id="nome"
-                                            size="27" maxlength="45" placeholder="Nome">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email"
-                                            id="email" size="27"  placeholder="Email"><br>
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="CPF" id="CPF"
-                                            size="27" maxlength="11" placeholder="CPF">
-                                        <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone"
-                                            id="telefone" size="27" maxlength="50" placeholder="Telefone">
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="row">
-                                        <div class="subtitle-demanda text-center">
-                                            <h1>Sobre seu Projeto</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-center justify-content-center text-center">
-                                    <div class="col-md-8 col-sm-12 col-10 text-center">
-                                        <label for="file-input" class="file-label" style="text-align: center; width: 100%;">
-                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt"
-                                                height="16.000000pt" viewBox="0 0 16.000000 16.000000"
-                                                preserveAspectRatio="xMidYMid meet">
-                                                <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
-                                                    fill="grey" stroke="none">
-                                                    <path
-                                                        d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z" />
-                                                </g>
-                                            </svg>
-                                            <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
-                                            <input type="file" id="file-input" class="file-input"
-                                                title="Arquivo pdf ou docx" name="arquivo">
-                                        </label>
-                                    </div>
-                                </div> 
+            </div>
 
-                                <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
-                              <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
-
-                                
-                                <div class="row justify-content-center align-items-center">
-                                    <div class="col-12 justify-content-center align-items-center text-center"
-                                        id="button-demanda">
-                                        <button type="submit" class="btn btn-primary"
-                                            id="button-submit-demanda">Enviar</button>
-                                    </div>
-                                </div>
+            <div class="row" id="quadradoRoxo-cadastro-vagas">
+                
+                    <h1>Dados Da Empresa</h1><br>
+                    <form action="../../app/session/conexaoPagDemanda.php" method="POST" onsubmit="return validarPost()">
+                    <div class="row align-items-center justify-content-center mb-5">
+                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa"
+                                id="nome_empresa" size="27" maxlength="45" placeholder="Nome da Empresa">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email"
+                                id="email" size="27" placeholder="Email"><br>
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj"
+                                size="27" maxlength="45" placeholder="CNPJ">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado"
+                                id="estado" size="27" maxlength="50" placeholder="Estado"><br>
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone"
+                                id="telefone" size="27" maxlength="50" placeholder="Telefone">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cidade"
+                                id="cidade" size="27" maxlength="70" placeholder="Cidade"><br>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="row">
+                            <div class="subtitle-demanda text-center">
+                                <h1>Dados do Titular da Empresa</h1>
                             </div>
                         </div>
                     </div>
+                    <div class="row align-items-center justify-content-center mb-5">
+                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome" id="nome"
+                                size="27" maxlength="45" placeholder="Nome">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email"
+                                id="email" size="27"  placeholder="Email"><br>
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="CPF" id="CPF"
+                                size="27" maxlength="11" placeholder="CPF">
+                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone"
+                                id="telefone" size="27" maxlength="50" placeholder="Telefone">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="row">
+                            <div class="subtitle-demanda text-center">
+                                <h1>Sobre seu Projeto</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center text-center">
+                        <div class="col-md-8 col-sm-12 col-10 text-center">
+                            <label for="file-input" class="file-label" style="text-align: center; width: 100%;">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt"
+                                    height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
+                                        fill="grey" stroke="none">
+                                        <path
+                                            d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z" />
+                                    </g>
+                                </svg>
+                                <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
+                                <input type="file" id="file-input" class="file-input"
+                                    title="Arquivo pdf ou docx" name="arquivo">
+                            </label>
+                        </div>
+                    </div> 
+
+                    <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
+                  <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+
+                    
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 justify-content-center align-items-center text-center"
+                            id="button-demanda">
+                            <button type="submit" class="btn btn-primary"
+                                id="button-submit-demanda">Enviar</button>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
-    </main>
+    </div>
+</form>
+                
+            </div>
+                
+            
+        </main>
     <footer>
         
         <div class="container-fluid rodape-preto py-1">
