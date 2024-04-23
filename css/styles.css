@@ -1261,7 +1261,7 @@ div.carousel-item img#carouselImg{
 
 
 main.body-demanda {
-    max-width: 1220px;
+    max-width: 1300px;
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
@@ -2131,7 +2131,7 @@ input.cadastro-aluno-psg {
 
 
 main.cadastro-de-vagas {
-    max-width: 1220px;
+    max-width: 1300px;
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
@@ -2415,19 +2415,13 @@ main.login-ADM {
 /* Tela de Edital */
 
 main.edital {
-    max-width: 1270px;  
+    max-width: 1300px;  
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
     font-family: var(--font-grad-title);
 }
-.edital{
-  max-width: 1220px;
-  margin: 20px auto;
-  margin-top: 160px;
-  text-align: center;
-  font-family: var(--font-grad-title);
-}
+
 #titulo-subtitulo-edital p{
   font-size: 27px ;
   position: relative;
@@ -2470,8 +2464,7 @@ main.edital {
 overflow: hidden;
 }
 
-.borda_roxa-edital,
-.borda_roxar * {
+.borda_roxa-edital{
   box-sizing: border-box;
   height: auto;
 }
