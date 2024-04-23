@@ -13,7 +13,7 @@ if (!empty($senha) || !empty($confirmPassword)){
         
         if ($result){
             echo "<script>alert('SENHA ALTERADA COM SUCESSO!');</script>";
-            echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
+            echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/loginAdm.html'; }, 5);</script>";
             exit();}
 
         }
