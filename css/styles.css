@@ -2808,6 +2808,11 @@ overflow: hidden;
 }
 
 
+.numero-adm-home {
+    font-size: 50px;
+}
+
+
 
 
 /*Cadastro de Carrossel ADM */
@@ -4267,7 +4272,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 /* ADM HOME */
 
-.body-adm-home{
+.body-adm-home {
     background-color:#ffffff;
 }
 
@@ -4306,7 +4311,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        
 
     }
     #label-quadrados-2-adm-home{
