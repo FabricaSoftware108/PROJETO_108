@@ -1,3 +1,12 @@
+<?php 
+session_start();
+session_destroy();
+include '../../app/db/connection.php';
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -16,9 +25,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <!-- Header -->
-    <header class="cabecalhoGeral border shadow-sm">
+<body class="body-edital">
+
+<!-- Header -->
+<header class="cabecalhoGeral border shadow-sm">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5 logo-margin" href="../../index.html"><img src="../../Imagens/logoHubFabricas.svg" alt="" id="hubFabricasLogo"></a>
@@ -49,7 +59,7 @@
                             </ul> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.html">Edital</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Edital</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda</a>
@@ -92,86 +102,56 @@
             </div>
 
             <div class="container-fluid">
-                <div class="row align-items-center justify-content-center">
-                    <div class="content-wrapper-roxo-edital">
-                        <div class="borda_roxa-edital">
-                            <div class="container-fluid" id="wrapper-content-edital">
-                                <div class="row" id="background-edital">
-                                    <div class="col-12">
-                                        <div class=" container container-background-edital" >
-                                            <div class="row ">
-                                                <div
-                                                    class="col-md-3 d-flex align-items-center justify-content-center text-center">
-                                                    <span class="btn-inscricoes">INSCRIÇÕES ABERTAS</span>
-                                                </div>
-         
-                                                <div
-                                                    class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
-                                                    <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
-                                                        Grande</p>
-                                                </div>
-                                                <div class="col-md-1 ">
-                                                    <button class="sombra-edital-btn" onclick="toggletabble_inscricoes1()">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24"
-                                                            style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
-                                                            <path
-                                                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
-                                                            </path>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <div id="inscricoes1" class="sombra_orientacoes-edital shadow-lg">
-                                                    <p>Orientações Projeto Seletivo Senac/MS</p>
-                                                    <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
-                                                        Matutino | Campo Grande</p>
-                                                    <a class="btn btn-primary mt-3 mb-3"
-                                                        type="button" href="../editais/cadastroAlunoPsg.html">Candidatar-se</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container-fluid" id="wrapper2-content-edital">
-                                <div class="row" id="background-edital">
-                                    <div class="col-12">
-                                        <div class=" container container-background-edital" >
-                                            <div class="row ">
-                                                <div
-                                                    class="col-md-3 d-flex align-items-center justify-content-center text-center">
-                                                    <span class="btn-inscricoes2">INSCRIÇÕES ABERTAS</span>
-                                                </div>
-        
-                                                <div
-                                                    class="col-md-8 d-flex align-items-center justify-content-center text-center mt-3">
-                                                    <p>Processo Seletivo 32/2023 - Fabrica de Software Matutino | Campo
-                                                        Grande</p>
-                                                </div>
-                                                <div class="col-md-1 ">
-                                                    <button class="sombra-edital-btn" onclick="toggletabble_inscricoes2()">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                            viewBox="0 0 24 24"
-                                                            style="fill: rgba(0, 0, 0, 1);transform: msFilter;">
-                                                            <path
-                                                                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
-                                                            </path>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <div id="inscricoes2" class="sombra_orientacoes2-edital shadow-lg">
-                                                    <p>Orientações Projeto Seletivo Senac/MS</p>
-                                                    <p>Descritivo da Vaga Processo Seletivo 32/2023 -Fábrica de Software
-                                                        Matutino | Campo Grande</p>
-                                                    <a class="btn btn-primary mt-3 mb-3"
-                                                    type="button" href="../editais/cadastroAlunoPsg.html">Candidatar-se</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-md-12">
+                        <div class="edital_do_aluno_titulo-2">
+                            <!-- <h1>Edital do Aluno</h1> -->
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="content-wrapper-roxo-edital">
+                    <div class="borda_roxa-edital h-auto">
+                        <form action="../../app/session/actionPsg.php" method="post">
+                                <?php
+                                    $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
+                                    $result = mysqli_query($connection, $query);
+
+                                    while($row = mysqli_fetch_array($result)){
+                                        $today = date("Y-m-d");
+                                        if($today >= $row["dataFim"] || $row["quantidadeAlunos"] == $row["alunosCadastrados"]){
+                                            $dateText = "INSCRIÇÕES ENCERRADAS";
+                                            $dateColor = "danger";
+                                            $editalState = "disabled";
+                                        }
+                                        else{
+                                            $dateText = "INSCRIÇÕES ABERTAS";
+                                            $dateColor = "success";
+                                            $editalState = "";
+                                        }
+                                        ?>
+                                        <div class="row mx-4 my-4">
+                                            <p class="d-inline-flex gap-1 mt-2 mb-1"> 
+                                                <button class="btn bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center w-100 " data-bs-toggle="collapse" data-bs-target="#<?php echo $row["codigo"] ?>" aria-expanded="false" aria-controls="collapseExample" type="button">
+                                                    <div class="bg-<?php echo $dateColor ?> text-light px-4 rounded col-lg-3 col-sm-12"><?php echo $dateText ?></div><div class="col-lg-8 col-sm-12 text-lg-start text-sm-center">Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</div> <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16"><path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/></svg></div>
+                                                </button>
+                                            </p>
+                                            <div class="collapse" id="<?php echo $row["codigo"] ?>">
+                                                <div class="card card-body mb-4 bg-light rounded d-lg-flex d-sm-block justify-content-between align-items-center">
+                                                    <p><a href="<?php echo $row["arquivo"] ?>" target="_blank">Descritivo da Vaga Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?> | Campo Grande</a></p>
+
+                                                    <button class="btn btn-primary <?php echo $editalState ?>" value="<?php echo "{$row["codigo"]}" ?>" name="editalCode" type="submit">Candidatar-se</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <?php } ?>
+                        </form>
+
                     </div>
                 </div>
             </div>
