@@ -1688,6 +1688,7 @@ input.cadastrovagas {
     color: var(--font-color-pag-title-subtitle);
     font-weight: bold;
     font-size: 50px;
+    font-size: clamp(1.9rem, 2.2vw, 4.0 rem);
 }
 
 .body-bancoTalentos main #title-bancoTalento p{
@@ -1749,7 +1750,7 @@ input.cadastrovagas {
     opacity: 70%;
     z-index: 0; 
 }
-
+  
 .bancoTalento-recaptcha{
     
     margin:auto;
@@ -1757,6 +1758,16 @@ input.cadastrovagas {
     margin-top:25px;
 }
 
+
+    
+    
+
+
+    @media (max-width: 650px) {
+        .lead{
+            font-size: 18px;
+            text-align: center;
+}}
 
 
 /*Cadastro  aluno psg*/
