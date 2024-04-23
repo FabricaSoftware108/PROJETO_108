@@ -1267,13 +1267,7 @@ main.body-demanda {
     text-align: center;
     font-family: var(--font-grad-title);
 }
-.body-demanda{
-  max-width: 1220px;
-  margin: 20px auto;
-  margin-top: 160px;
-  text-align: center;
-  font-family: var(--font-grad-title);
-}
+
 
 .body-demanda div.effects {
     position: absolute;
@@ -1289,6 +1283,7 @@ main.body-demanda {
 }
 #titulo-subtitulo-demanda p {
     font-size: 27px;
+    max-width: 1400px;
     position: relative;
     top: 78px;
     text-align: center;
