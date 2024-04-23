@@ -101,7 +101,7 @@ include "../../app/session/conexaoDemandaEmpresa.php"
             <div class="relatorio_edital_da_empresa-container">
               <div class="relatorio_edital_da_empresa-background-container">
                 <div class="relatorio_edital_da_empresa-header">   
-                  <div class="relatorio_edital_da_empresa-title">Demanda Empresa</div>
+                  <div class="relatorio_edital_da_empresa-title">Demandas de Empresas</div>
                 </div>
                 <div class="relatorio_edital_da_empresa-content">
                   <div class="relatorio_edital_da_empresa-background">
@@ -109,7 +109,7 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                       <thead>
                         <tr>
                           <th class="label-nome_edital_da_empresa">Nome</th>
-                          <th class="label-representante_edital_da_empresa">Representante</th>
+                          <th class="label-representante_edital_da_empresa">Responsável</th>
                           <th class="label-cnpj_edital_da_empresa">CNPJ</th>
                           <th class="label-telefone_edital_da_empresa">Telefone</th>
                           <th class="label-email_edital_da_empresa">E-mail</th>
@@ -118,11 +118,11 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                       <tbody>
                         <?php while ($retorno = mysqli_fetch_array($result)){?>
                           <tr>
-                            <td><?php echo $retorno["nomeEmpresa"];?></td>
-                            <td><?php echo $retorno["nomeTitular"];?></td>
-                            <td><?php echo $retorno["cnpj"];?></td>
-                            <td><?php echo $retorno["telefoneTitular"];?></td>
-                            <td><?php echo $retorno["emailTitular"];?></td>
+                            <td class="h9"><?php echo $retorno["nomeEmpresa"];?></td>
+                            <td class="h9"><?php echo $retorno["nomeTitular"];?></td>
+                            <td class="h9"><?php echo $retorno["cnpj"];?></td>
+                            <td class="h9"><?php echo $retorno["telefoneTitular"];?></td>
+                            <td class="h9"><?php echo $retorno["emailTitular"];?></td>
                           </tr>
                         <?php }?>
                       </tbody>
@@ -139,3 +139,4 @@ include "../../app/session/conexaoDemandaEmpresa.php"
   </main>
 </body>
 </html>
+    

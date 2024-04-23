@@ -26,7 +26,7 @@ include '../../app/db/connection.php';
     ?>
 </head>
 
-<body class="body-relatorio-banco-talento">
+<body class="body-relatorio-vagas-emprego">
   
 <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -97,45 +97,43 @@ include '../../app/db/connection.php';
           </div>
         </div>
       </nav>        
-  </header><main class="relatorio_banco_talentos">
+  </header><main class="relatorio_vagas_emprego">
     <div class="container_fluid">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-md-10 col-lg-6">
-          <div class="relatorio-banco-talento-container">
-            <div class="relatorio-banco-talento-background-container">
-              <div class="relatorio-banco-talento-header">
-                <div class="relatorio-banco-talento-title">Relatório Vagas de Emprego</div>
+          <div class="relatorio-vagas_emprego-container">
+            <div class="relatorio-vagas-emprego-background-container">
+              <div class="relatorio-vagas-emprego-header">
+                <div class="relatorio-vagas-emprego-title">Vagas de Emprego</div>
               </div>
-              <div class="relatorio-banco-talento-content">
-                <div class="relatorio-banco_talento-background">
-                  <table class="table" id="table_relatorio_banco_talentos">
+              <div class="relatorio-vagas_emprego-content">
+                <div class="relatorio-vagas_emprego-background">
+                  <table class="table" id="table_relatorio_vagas_emprego">
                     <thead>
                       <tr>
-                        <th class="label-nome_banco_talento">Nome</th>
-                        <th class="label-email_banco_talento">E-mail</th>
-                        <th class="label-cpf_banco_talento">CNPJ</th>
-                        <th class="label-telefone_banco_talento">Telefone</th>
-                        <th class="label-linkedin_banco_talento">Cidade</th>
-                        <th class="label-linkedin_banco_talento">Estado</th>
-                        <th class="label-linkedin_banco_talento">Descrição</th>
+                        <th class="label-nome_vagas_emprego">Nome</th>
+                        <th class="label-email_vagas_emprego">E-mail</th>
+                        <th class="label-cnpj_vagas_emprego">CNPJ</th>
+                        <th class="label-telefone_vagas_emprego">Telefone</th>
+                        <th class="label-linkedin_vagas_emprego">Cidade</th>
+                        <th class="label-linkedin_vagas_emprego">Estado</th>
                       </tr>
                     </thead>
                     <tbody>
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
                         <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php'">
-                          <td><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td><?php echo $retorno["emailEmpresa"];?></td>
-                          <td><?php echo $retorno["cnpj"];?></td>
-                          <td><?php echo $retorno["telefone"];?></td>
-                          <td><?php echo $retorno["cidade"];?></td>
-                          <td><?php echo $retorno["estado"];?></td>
-                          <td><?php echo $retorno["descricao"];?></td>
+                          <td class="h9"><?php echo $retorno["nomeEmpresa"];?></td>
+                          <td class="h9"><?php echo $retorno["emailEmpresa"];?></td>
+                          <td class="h9"><?php echo $retorno["cnpj"];?></td>
+                          <td class="h9"><?php echo $retorno["telefone"];?></td>
+                          <td class="h9"><?php echo $retorno["cidade"];?></td>
+                          <td class="h9"><?php echo $retorno["estado"];?></td>
                         </tr>
                       <?php }?>
                     </tbody>
                   </table>
                 </div>
-                <button class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
+                <button class="btn btn-primary relatorio-vagas_emprego-button">Imprimir</button>
               </div>
             </div>
           </div>
