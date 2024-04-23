@@ -1287,6 +1287,21 @@ main.body-demanda {
     opacity: 70%;
     z-index: 1;
 }
+#titulo-subtitulo-demanda p {
+    font-size: 27px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+
+}
+#titulo-subtitulo-demanda h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: black
+}
 
 
 
@@ -1657,6 +1672,10 @@ input.cadastrovagas {
   margin-top: 7px;
 }
 
+#campo-demanda {
+    color: white;
+    margin-top: 50px;
+}
 /*  FINAL PÁGINA CADASTRO DE VAGAS*/
 
 /* PÁGINA BANCO DE TALENTOS */
@@ -2303,7 +2322,7 @@ main.cadastro-de-vagas {
 }
 
 .button-enviar-vagas button {
-    margin-bottom: 7rem;
+    margin-bottom: 2.5rem;
     margin-top: 3rem;
     width: 344px;
     height: 80px;
