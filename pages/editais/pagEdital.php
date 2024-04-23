@@ -97,7 +97,7 @@ include '../../app/db/connection.php';
             <div class="row">
                 <div class="col-12" id="titulo-subtitulo-edital">
                     <h1>Edital</h1><br><br>
-                    <p>Editais das Empresas e das Fabricas de Software, Jogos, Computação Gráfica e AudioVisual.</p><br>
+                    <p>Editais das Empresas e das Fabricasdddads de Software, Jogos, Computação Gráfica e AudioVisual.</p><br>
                 </div>
             </div>
 
