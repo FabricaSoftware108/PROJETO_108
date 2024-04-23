@@ -2739,7 +2739,8 @@ overflow: hidden;
 #label-bem-vindos-adm-home{
     margin-top:10rem;
     position:absolute;
-    font-size:x-large;
+    font-size:50;
+    font-weight: 800;
 }
 
  /* faz os quadrados ficarem alinhados horizontalmente */
@@ -2749,6 +2750,7 @@ overflow: hidden;
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
+        box-shadow: 5px,5px,10px rgba(0.8);
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
@@ -2807,6 +2809,12 @@ overflow: hidden;
 #adm-home-img-1{
     width:300px;
     box-shadow:none;
+}
+
+
+.numero-adm-home {
+    font-size: 50px;
+    font-weight: 800;
 }
 
 
@@ -4275,8 +4283,12 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 /* ADM HOME */
 
-.body-adm-home{
+.body-adm-home {
     background-color:#ffffff;
+}
+
+.numero-adm-home {
+    font-size: 50px;
 }
 
 
@@ -4299,7 +4311,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 #label-bem-vindos-adm-home{
     margin-top:10rem;
     position:absolute;
-    font-size:x-large;
+    font-size:50px;
+    font-weight: 800;
 }
 
  /* faz os quadrados ficarem alinhados horizontalmente */
@@ -4309,6 +4322,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
+        
 
     }
     #label-quadrados-2-adm-home{
