@@ -18,8 +18,13 @@ if (!empty($senha) || !empty($confirmPassword)){
 
         }
 else {
-    echo "<script>alert('ERRO AO CADASTRAR:');</script>";
+    echo "<script>alert('ERRO AO CADASTRAR');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
     exit();}
 }
+
+elseif (empty ($senha) || empty($confirmPassword)){
+    echo "<script>alert('CADASTRO EM BRANCO');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
+    exit();}
 ?>
