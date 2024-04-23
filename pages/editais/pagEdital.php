@@ -123,7 +123,6 @@ include '../../app/db/connection.php';
                         <form action="../../app/session/actionPsg.php" method="post">
                                 <?php
                                     $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
-                                    // $queryQuantity = 'SELECT * FROM editais ORDER BY dataFim DESC';
                                     $result = mysqli_query($connection, $query);
 
                                     while($row = mysqli_fetch_array($result)){
