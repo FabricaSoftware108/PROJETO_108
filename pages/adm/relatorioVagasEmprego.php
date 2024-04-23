@@ -114,7 +114,7 @@ include '../../app/db/connection.php';
                         <th class="label-nome_vagas_emprego">Nome</th>
                         <th class="label-email_vagas_emprego">E-mail</th>
                         <th class="label-cnpj_vagas_emprego">CNPJ</th>
-                        <th class="label-telefone_vagas_emprego">Telefone</th>
+                        <th class="label-telefone_vagas_emprego">Fone</th>
                         <th class="label-linkedin_vagas_emprego">Cidade</th>
                         <th class="label-linkedin_vagas_emprego">Estado</th>
                       </tr>
