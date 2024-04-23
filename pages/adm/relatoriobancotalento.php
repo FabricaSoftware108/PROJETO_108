@@ -107,7 +107,7 @@ include '../../app/db/connection.php';
           <div class="relatorio-banco-talento-container">
             <div class="relatorio-banco-talento-background-container">
               <div class="relatorio-banco-talento-header">
-                <div class="relatorio-banco-talento-title">Relatório Banco de Talentos</div>
+                <div class="relatorio-banco-talento-title">Banco de Talentos</div>
               </div>
               <div class="relatorio-banco-talento-content">
                 <div class="relatorio-banco_talento-background">
@@ -124,11 +124,11 @@ include '../../app/db/connection.php';
                     <tbody>
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
                         <tr onclick="window.location.href = 'relatoriodetalhadobancodetalentos.php'">
-                          <td><?php echo $retorno["nome"];?></td>
-                          <td><?php echo $retorno["email"];?></td>
-                          <td><?php echo $retorno["cpf"];?></td>
-                          <td><?php echo $retorno["telefone"];?></td>
-                          <td><?php echo $retorno["linkedin"];?></td>
+                          <td class="h9"><?php echo $retorno["nome"];?></td>
+                          <td class="h9"><?php echo $retorno["email"];?></td>
+                          <td class="h9"><?php echo $retorno["cpf"];?></td>
+                          <td class="h9"><?php echo $retorno["telefone"];?></td>
+                          <td class="h9"><?php echo $retorno["linkedin"];?></td>
                         </tr>
                       <?php }?>
                     </tbody>
