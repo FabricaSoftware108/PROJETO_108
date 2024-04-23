@@ -16,21 +16,44 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
         <?php
-         session_start();
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            include "./app/session/verificacao.php";
+            include "../../app/db/connection.php";
+               
+            $email = $_POST ['email'];
+            if(empty($_POST ['email'])){
+                echo ('<script>
+                alert("Preencha o campo de email");
+                </script>');
+            }
+            else{
 
-                $email = $_POST ['email'];
-                $novaSenha = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(8/strlen($x)) )),1,8);
-
-                $to = $email;
-                $subject = 'Recuperação de Senha';
-                $message = 'Sua nova senha é: ' . $novaSenha;
-                $headers = 'From: larissacgr05@gmail.com';
-
-                if (mail($to, $subject, $message, $headers)) {
-                    echo 'E-mail de recuperação de senha enviado com sucesso.';
-                } else {
-                    echo 'Erro ao enviar o e-mail de recuperação de senha.';
+                $query = "SELECT * from admin where email = '$email'";
+    
+                $result = mysqli_query($connection, $query);
+    
+    
+    
+                if (mysqli_num_rows($result) == 0){
+                    
+                    echo ('<script>
+                    alert("Email não encontrado");
+                    </script>');
+                }
+                
+                else {
+                    $row = mysqli_fetch_array($result);
+                    $novaSenha = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(8/strlen($x)) )),1,8);
+                    $queryChangeEmail = "UPDATE admin SET senha = '$novaSenha' WHERE email = '$email' AND senha = '{$row["row"]}'";
+                    mysqli_query($connection, $queryChangeEmail);
+                    $to = $email;
+                    $subject = 'Redefinir senha';
+                    $message = 'Sua nova senha é: '($novaSenha);
+                    $headers = 'From: hubfabricas@senac.com'. "\r\n".'X-Mailer: PHP/' . phpversion();
+            
+                    mail($to, $subject, $message, $headers);
+    
+                    // $query = "UPDATE ADMIN SET "
+                
                 }
             }
         ?>
