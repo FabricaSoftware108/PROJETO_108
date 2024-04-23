@@ -125,7 +125,7 @@ include '../../app/session/verificacao.php';
                   <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Senha antiga</h2>
-                      <input type="text" class="form-control" value="<?php echo $_SESSION["senha"];?>"/>
+                      <input type="text" class="form-control" name="oldPassword" value="<?php echo $_SESSION["senha"];?>"/>
                     </div>
                   </div>
   
