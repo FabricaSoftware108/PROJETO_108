@@ -751,7 +751,11 @@ nav.home li:hover ul#menuFabricas {
 }
 
 @media (max-width: 755px) {
-    .bodyFabricaAudiovisual #audioVisualImg {
+    .bodyFabricaAudiovisual #audioVisualImg,
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(1),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(2),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(3),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(4){
         display: none;
     }
 }
