@@ -91,146 +91,34 @@ include '../../app/session/verificacao.php';
       </nav>        
   </header>
 
-<main class="cadastro-adm">
+ <main class="editar-adm">
   <div class="container-fluid" style="padding-top: 50px;">
     <div class="container">
-      <div class="cadastro-adm-centered">
+      <div class="editar-adm-centered">
         <div class="row justify-content-center align-items-center text-center">
 
           <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
-            <div class="cadastro-adm-container-2" style="width: 100%;">
-              <div class="cadastro-adm-container-title">Administradores</div>
+            <div class="editar-adm-container" style="width: 100%;">
+              <div class="editar-adm-container-title">Administradores</div>
 
               <!-- REPETIÇÃO DE ADMIN -->
 
               <!-- Administrador 1 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Serginho</div>
+              <?php while($row = mysqli_fetch_array($result)){ ?>
+              <div class="editar-adm-borda-com-conteudo">
+                <div class="editar-adm-nome-aleatorio"><?php echo $row["nome"]?> <?php echo $row['email']?></div>
 
                 <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
+                <div class="editar-adm-switch-container">
+                  <label class="editar-adm-switch">
                     <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
+                    <span class="editar-adm-slider"></span>
+                    <span class="editar-adm-knob" ></span>
                   </label>
                 </div>
               </div>
+              <?php } ?>
 
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Julinho</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 3 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Mariazinha</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 4 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Ederson</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 5 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Mauricio</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 6 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Thiago</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 7 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Carlos</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 8 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Pedro</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- Administrador 9 -->
-              <div class="cadastro-adm-borda-com-conteudo">
-                <div class="cadastro-adm-nome-aleatorio">Julia</div>
-
-                <!-- Toggle switch -->
-                <div class="cadastro-adm-switch-container">
-                  <label class="cadastro-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="cadastro-adm-slider"></span>
-                    <span class="cadastro-adm-knob" onclick="openPopup()"></span>
-                  </label>
-                </div>
-              </div>
-              <!-- Administrador 2 -->
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
