@@ -116,14 +116,6 @@ $retornoBT = mysqli_num_rows($dadosBT);
   <!--Conteúdo da página-->
   <main class="main-adm-home">
     <div class="container" id="container-1-adm-home">
-      <div class="row justify-content-center" id="row-1-adm-home">
-        <div class="col-sm-12 col-lg-8" id="label-bem-vindos-adm-home">
-          <b>
-            <p class="text-center">BEM VINDO!!</p>
-          </b>
-        </div>
-      </div>
-
       <!--Quadrados com as informações-->
       <div class="row justify-content-center" id="row-2-adm-home">
         <div class="col-sm-12 col-lg-3 w-sm-100 shadow-lg" id="label-quadrados-1-adm-home">
@@ -145,6 +137,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
     <div class="container w-100" id="container2AdmHomeImagem">
       <div class="row justify-content-center d-flex align-items-center">
         <div class="col-sm-12 col-lg-8">
+          <img src="../../Imagens/adm-home-fundo.png" class="img-fundo-adm-home" alt="Background Imagem">
           <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id="adm-home-img-2">
         </div>
       </div>

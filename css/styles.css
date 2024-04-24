@@ -2722,104 +2722,10 @@ overflow: hidden;
   font-size: 13px;
 }
 
-/* ADM HOME */
-
-.body-adm-home{
-    background-color:#ffffff;
-}
 
 
-.main-adm-home{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@media(min-width:1140px){
-    .main-adm-home{
-        background-image:url(../Imagens/background-image-adm-home.png);
-        background-repeat:no-repeat;
-    }
-}
-
-#label-bem-vindos-adm-home{
-    margin-top:10rem;
-    position:absolute;
-    font-size:50;
-    font-weight: 800;
-}
-
- /* faz os quadrados ficarem alinhados horizontalmente */
-@media(min-width:992px){
-    #label-quadrados-1-adm-home{
-        background-color:#970FF2;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        box-shadow: 5px,5px,10px rgba(0.8);
-    }
-    #label-quadrados-2-adm-home{
-        background-color:#F24607;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
-    #label-quadrados-3-adm-home{
-        background-color:#49D907;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
-}
-
- /* faz os quadrados ficarem alinhados verticalmente */
-@media(max-width:991px){
-    #label-quadrados-1-adm-home{
-        background-color:#970FF2;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        margin:25px;
-    }
-    #label-quadrados-2-adm-home{
-        background-color:#F24607;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        margin:25px;
-    }
-    #label-quadrados-3-adm-home{
-        background-color:#49D907;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        margin:25px;
-    }
-}
-@media(max-width:690px){
-#adm-home-img-2{
-    width:690px;
-    box-shadow:none;
-}
-}
-#row-2-adm-home{
-    margin-top:18rem;
-    font-size:x-large;
-}
-
-#container-2-adm-home-imagem{
-    margin-top:5rem;
-    width:900px;
-}
-
-#adm-home-img-1{
-    width:300px;
-    box-shadow:none;
-}
 
 
-.numero-adm-home {
-    font-size: 50px;
-    font-weight: 800;
-}
 
 
 
@@ -4291,33 +4197,12 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     background-color:#ffffff;
 }
 
-.numero-adm-home {
-    font-size: 50px;
-}
-
 
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    overflow: hidden;
 }
 
-@media(min-width:1140px){
-    .main-adm-home{
-        background-image:url(../Imagens/background-image-adm-home.png);
-        background-repeat:no-repeat;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-#label-bem-vindos-adm-home{
-    margin-top:10rem;
-    position:absolute;
-    font-size:50px;
-    font-weight: 800;
-}
 
  /* faz os quadrados ficarem alinhados horizontalmente */
 @media(min-width:992px){
@@ -4326,8 +4211,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
-        
-
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
@@ -4369,7 +4252,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 }
 
 #row-2-adm-home{
-    margin-top:18rem;
+    margin-top:7rem;
     font-size:x-large;
 }
 
@@ -4381,6 +4264,18 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 #adm-home-img-1{
     width:300px;
     box-shadow:none;
+}
+
+.numero-adm-home {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.img-fundo-adm-home {
+    display:flex;
+    position: absolute;
+    left:0;
+    bottom:0;
 }
 
 /*Cadastro de Carrossel ADM */
