@@ -5,7 +5,7 @@
 <head class="headFabricaAudiovisual">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fábrica de AudioVisual</title>
+    <title>Fábrica de Áudio e Vídeo</title>
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +47,7 @@
                             <li><a class="dropdown-item" href="./pagFabricaSoftware.php">Fábrica de Software</a></li> 
                             <li><a class="dropdown-item" href="./pagFabricaJogos.php">Fábrica de Jogos</a></li> 
                             <li><a class="dropdown-item" href="./pagFabricaCgi.php">Fábrica de Computação Gráfica</a></li> 
-                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Audio e Video</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Áudio e Vídeo</a></li> 
                         </ul> 
                     </li>
                     <li class="nav-item">
@@ -86,10 +86,10 @@
               <img src="../../Imagens/img_stop.png" id="audioVisualImg">
                     <div class="container py-5">
                       <div class="row py-5">
-                        <h1 class="text-center pt-5">Fábrica de AudioVisual</h1>
+                        <h1 class="text-center pt-5">Fábrica de Áudio e Vídeo</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica Audio Visual é um projeto que simula uma empresa de desenvolvimento de Audio Visual, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de Audio Visual, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de Audio Visual, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">A Fábrica Áudio e Vídeo é um projeto que simula uma empresa de desenvolvimento de Audio Visual, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de Audio Visual, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de Audio Visual, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
@@ -113,7 +113,7 @@
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p>A Fábrica de AudioVisual é um projeto que simula o ambiente de uma empresa de desenvolvimento de audio visual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Audio Visual.</p>
+                    <p>A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audio visual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
                   </div>
                 </div>
               </div>
@@ -229,7 +229,7 @@
             <div class="primeira-grade-audiovisual">
             <p class="d-inline-flex gap-1">
                 <button class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample1-audiovisual" role="button" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-audiovisual">
-                  Oferta 1 - Técnico em Desenvolvimento de Audio Visual ▼
+                  Oferta 1 - Técnico em Desenvolvimento de Áudio e Vídeo ▼
                 </button>
               </p>
               <div class="collapse" id="collapseExample1-audiovisual">
@@ -264,7 +264,7 @@
         
             <div class="segunda-grade-audiovisual">
                 <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2-audiovisual" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-audiovisual">
-                    Oferta 2 - Técnico em Desenvolvimento de Audio Visual ▼
+                    Oferta 2 - Técnico em Desenvolvimento de Áudio e Vídeo ▼
                   </button>
                 </p>
                 <div class="collapse" id="collapseExample2-audiovisual">
@@ -298,7 +298,7 @@
         <br>
             <div class="terceira-grade-audiovisual">
                 <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3-audiovisual" aria-expanded="false" aria-controls="collapseExample" id="botao-grade-audiovisual">
-                    Oferta 3 - Técnico em Desenvolvimento de Audio Visual ▼
+                    Oferta 3 - Técnico em Desenvolvimento de Áudio e Vídeo ▼
                   </button>
                 </p>
                 <div class="collapse" id="collapseExample3-audiovisual">
