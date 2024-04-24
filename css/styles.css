@@ -750,8 +750,12 @@ nav.home li:hover ul#menuFabricas {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width:1112px) {
-    .bodyFabricaAudiovisual #AudioVisual-img {
+@media (max-width: 755px) {
+    .bodyFabricaAudiovisual #audioVisualImg,
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(1),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(2),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(3),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(4){
         display: none;
     }
 }
