@@ -4276,6 +4276,15 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     position: absolute;
     left:0;
     bottom:0;
+    top:60%;
+    height:360px;
+    box-shadow:none;
+}
+
+@media(max-width: 1566px){
+    .img-fundo-adm-home{
+        display:none;
+    }
 }
 
 /*Cadastro de Carrossel ADM */
