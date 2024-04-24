@@ -94,7 +94,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
                   <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
                   <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
                   <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
-                  <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
+                  <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                 </ul>
               </li>
