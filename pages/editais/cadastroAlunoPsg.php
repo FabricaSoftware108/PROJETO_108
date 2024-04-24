@@ -108,7 +108,7 @@ include '../../app/session/verificacaoPsg.php';
                 <div class="col-12" id="textSobreCadastroAlunoPsg">
                     <h1>Cadastro Aluno PSG</h1><br><br>
                     <p>“O programa de gratuidade do SENAC é uma politica de incentivo única que busca
-                            oferecer uma educação profissional inclusiva cm instrutores especializados e gratuita”
+                            oferecer uma educação profissional inclusiva com instrutores especializados e gratuita”
                     </p>
                 </div>
             </div>

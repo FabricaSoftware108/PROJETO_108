@@ -1403,22 +1403,7 @@ main.body-demanda {
     text-align: center;
     z-index: -1;
 }
-#titulo-subtitulo-demanda p {
-    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
-    max-width: 1400px;
-    position: relative;
-    top: 78px;
-    text-align: center;
-    font-family: var(--font-destaque);
-    color: black;
-    top: 7px;
 
-}
-#titulo-subtitulo-demanda h1{
-    font-weight: bold;
-    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
-    color: black
-}
 
 
 .body-demanda .container-campo-dados-demanda {
