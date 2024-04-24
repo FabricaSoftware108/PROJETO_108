@@ -243,7 +243,7 @@ include '../../app/session/verificacao.php';
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-auto mt-3">
+                                                <div class="col-md-12 mt-3">
                                                     <div class="container mb-3">
                                                         <div class="row">
                                                             <div class="col-md-6">
