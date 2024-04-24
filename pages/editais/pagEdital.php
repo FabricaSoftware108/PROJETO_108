@@ -82,27 +82,24 @@ include '../../app/db/connection.php';
         </nav>
     </header>
 
-    <main>
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <div class="sombra_rosa-edital"></div>
-                    <div class="sombra_roxa-edital"></div>
-                    <div class="titulo_edital">
-                        <div class="titulo_escrito_edital">
-                            <h1>Editais</h1><br>
-                            <div class="row align-items-center justify-content-center" id="introducao-edital">
-                                <div class="col-md-12 col-sm-9">
-                                    <p>Este campo é destinado aos editais, das Empresas e das Fabricas de
-                                        <br /> Software, Jogos, Computação Gráfica e AudioVisual.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main class="edital">
+        
+            <div class="col-2"></div>
+            
+                <div class="sombra_rosa-edital"></div>
+                <div class="sombra_roxa-edital"></div>
+                <div class="titulo_edital">
+                    
                 </div>
-                <div class="col-2"></div>
+            
+            <div class="col-2"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="titulo-subtitulo-edital">
+                    <h1>Edital</h1><br><br>
+                    <p>Editais das Empresas e das Fabricasdddads de Software, Jogos, Computação Gráfica e AudioVisual.</p><br>
+                </div>
             </div>
 
             <div class="container-fluid">
@@ -159,9 +156,9 @@ include '../../app/db/connection.php';
                     </div>
                 </div>
             </div>
-        </div>
-
-    </main>
+                
+            
+        </main>
     <div class="container-fluid rodape-preto py-1">
         <footer
             class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
