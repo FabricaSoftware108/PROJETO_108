@@ -1399,6 +1399,11 @@ main.body-demanda {
     text-align: center;
     z-index: -1;
 }
+@media (max-witdh: 576px){
+    #titulo-subtitulo-demanda h1{
+        font-size: 35px;
+    }
+}
 
 
 .body-demanda .container-campo-dados-demanda {
@@ -1666,6 +1671,12 @@ input.cadastrovagas {
   margin-bottom: 30px;
   margin-top: 7px;
 }
+.cadastrovagas{
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 7px;
+ }
 
 #campo-demanda {
     color: white;
@@ -1682,37 +1693,12 @@ input.cadastrovagas {
     overflow-x: hidden;
 }
 
-.body-bancoTalentos main #title-bancoTalento h1{
-    font-family: var(--font-destaque);
-    margin-top: 112px;
-    color: var(--font-color-pag-title-subtitle);
-    font-weight: bold;
-    font-size: 50px;
-    font-size: clamp(1.9rem, 2.2vw, 4.0 rem);
-}
 
-.body-bancoTalentos main #title-bancoTalento p{
-    font-family: var(--font-destaque);
-    font-size: 27px;
-    padding: 20px 0 0 0;
-    color: var(--font-color-pag-title-subtitle);
-    font-weight: 200;
-    
-}
 
 
 .body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
 
-.body-bancoTalentos .subtitle-bancoTalento h1{
-    font-size: 40px;
-    font-family: var(--font-destaque);
-    font-weight: 530;
-    padding: 30px 0;
-}
-.body-bancoTalentos #container-bancoTalento-inputs{
-    padding:  0 50px;
 
-}
 
 .body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
 .body-bancoTalentos main #button-submit-bancoTalento  {margin: 30px 0;}
@@ -1721,7 +1707,9 @@ input.cadastrovagas {
 .body-bancoTalentos main .cadastrovagas-bancoTalento {
     padding: 15px;
     border-radius: 5px;
-    margin: 20px 0;
+    margin-bottom: 30px;
+    margin-top: 7px;
+    size: 27px;
 }
 
 .body-bancoTalentos div.effects {
@@ -1757,17 +1745,35 @@ input.cadastrovagas {
     max-width:305px;
     margin-top:25px;
 }
+#titulo-subtitulo-bancotalentos p {
+    font-size: 27px;
+    max-width: 1400px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
 
+}
+#titulo-subtitulo-bancotalentos h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: black
+}
 
+@media (max-witdh: 576px){
+    #titulo-subtitulo-bancotalentos h1{
+        font-size: 35px;
+    }
+    #titulo-subtitulo-bancotalentos p{
+        font-size: 18px;
+    }
+}
     
-    
 
 
-    @media (max-width: 650px) {
-        .lead{
-            font-size: 18px;
-            text-align: center;
-}}
+
 
 
 /*Cadastro  aluno psg*/
