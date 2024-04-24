@@ -88,9 +88,7 @@ header.cabecalhoGeral {
     margin-top: 20px !important;
 }
 
-.cabecalhoGeral .dropdown:hover>.dropdown-menu {
-    display: block;
-}
+
 
 .cabecalhoGeral .dropdown>.dropdown-toggle:active {
     pointer-events: none;
