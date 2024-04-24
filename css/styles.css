@@ -1746,7 +1746,7 @@ input.cadastrovagas {
     margin-top:25px;
 }
 #titulo-subtitulo-bancotalentos p {
-    font-size: 27px;
+    font-size: clamp(1rem, 2.333vw, 1.5rem);
     max-width: 1400px;
     position: relative;
     top: 78px;
@@ -1758,16 +1758,16 @@ input.cadastrovagas {
 }
 #titulo-subtitulo-bancotalentos h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(1rem, 8.333vw, 3.5rem);
     color: black
 }
 
 @media (max-witdh: 576px){
     #titulo-subtitulo-bancotalentos h1{
-        font-size: 35px;
+        font-size: 35px !important;
     }
     #titulo-subtitulo-bancotalentos p{
-        font-size: 18px;
+        font-size: 18px !important;
     }
 }
     
