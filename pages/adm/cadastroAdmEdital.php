@@ -246,13 +246,13 @@ include '../../app/session/verificacao.php';
                                                 <div class="col-md-12 mt-3">
                                                     <div class="container mb-3">
                                                         <div class="row">
-                                                            <div class="col-md-12">
+                                                            <div class="col-md-6">
                                                                 <div class="button-apagar-edital">
                                                                     <button type="button" class="btn btn-primary">Apagar</button>
                                                                 </div>
                                                             </div>
                                                             
-                                                            <div class="col-md-12 mt-2 mt-md-0">
+                                                            <div class="col-md-6 mt-2 mt-md-0">
                                                                 <div class="button-editar-edital">
                                                                     <button type="button" class="btn btn-primary">Editar</button>
                                                                 </div>
