@@ -4182,6 +4182,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .button-apagar-edital button{
     width: 250px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
+    margin: 2px;
 }
 
 .button-editar-edital  button{
