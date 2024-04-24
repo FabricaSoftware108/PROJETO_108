@@ -93,7 +93,7 @@
     </header>
 
 
-    <main class="body-demanda">
+    <main class="body-banco-talentos">
         <div class="container">
             <div class="row">
                 <div class="col-12" id="titulo-subtitulo-bancotalentos">
@@ -103,10 +103,10 @@
                 </div>
             </div>
 
-            <div class="row" id="quadradoRoxo-cadastro-vagas">
+            <div class="row" id="quadradoRoxo-banco-talentos">
 
 
-                <form action="../../app/session/conexaoPagDemanda.php" id="campo-demanda" method="POST"
+                <form action="../../app/session/bancoDeTalentosConexao.php" id="campo-demanda" method="POST"
                     onsubmit="return validarPost()">
                     <h1>Dados Da Empresa</h1><br>
                     <div class="container-fluid-inputs">
@@ -191,9 +191,9 @@
                         <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
                     </div>
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-12 justify-content-center align-items-center text-center" id="button-demanda">
-                            <button type="submit" class="btn btn-primary" id="button-submit-demanda">Enviar</button>
-                        </div>
+                        <div class="button-enviar-vagas">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div> 
                     </div>
             </div>
         </div>

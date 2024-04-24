@@ -1403,10 +1403,21 @@ main.body-demanda {
     text-align: center;
     z-index: -1;
 }
-@media (max-witdh: 576px){
-    #titulo-subtitulo-demanda h1{
-        font-size: 35px;
-    }
+#titulo-subtitulo-demanda p {
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
+    max-width: 1400px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+
+}
+#titulo-subtitulo-demanda h1{
+    font-weight: bold;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
+    color: black
 }
 
 
@@ -1635,6 +1646,12 @@ main.body-demanda {
     cursor: pointer;
 
 }
+#quadradoRoxo-demanda {
+
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
+}
 
 
 
@@ -1691,21 +1708,36 @@ input.cadastrovagas {
 /* PÁGINA BANCO DE TALENTOS */
 
 
-.body-bancoTalentos {
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
+main.body-banco-talentos {
+    max-width: 1300px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
 }
 
 
 
 
-.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+    color: white;
+}
 
 
 
-.body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
-.body-bancoTalentos main #button-submit-bancoTalento  {margin: 30px 0;}
+.body-bancoTalentos main #button-submit-bancoTalento { 
+    width: 150px; 
+    height: 70px; 
+    font-size: 22px;
+}
+
+.body-bancoTalentos main #button-submit-bancoTalento  {
+    margin: 30px 0;
+}
 
 
 .body-bancoTalentos main .cadastrovagas-bancoTalento {
@@ -1750,7 +1782,7 @@ input.cadastrovagas {
     margin-top:25px;
 }
 #titulo-subtitulo-bancotalentos p {
-    font-size: clamp(1rem, 2.333vw, 1.5rem);
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     max-width: 1400px;
     position: relative;
     top: 78px;
@@ -1762,18 +1794,17 @@ input.cadastrovagas {
 }
 #titulo-subtitulo-bancotalentos h1{
     font-weight: bold;
-    font-size: clamp(1rem, 8.333vw, 3.5rem);
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
     color: black
 }
+#quadradoRoxo-banco-talentos {
 
-@media (max-witdh: 576px){
-    #titulo-subtitulo-bancotalentos h1{
-        font-size: 35px !important;
-    }
-    #titulo-subtitulo-bancotalentos p{
-        font-size: 18px !important;
-    }
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
 }
+
+
     
 
 
@@ -1782,12 +1813,13 @@ input.cadastrovagas {
 
 /*Cadastro  aluno psg*/
 
-main.cadastro-aluno-psg {
-    max-width: 1200px;
+main.body-aluno-psg {
+    max-width: 1300px;
     margin: 20px auto;
-    margin-top: 160px;
+    margin-top: 135px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-grad-title);
+    color:white;
 }
 
 input.cadastro-aluno-psg {
@@ -1838,24 +1870,35 @@ input.cadastro-aluno-psg {
 }
 
 #containerCamposPreenchimentoCadastroAlunoPsg {
+    width: 1300px;
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
 }
 
 #camposPreenchimentoCadastroAlunoPsg {
-    margin-top: 50px;
+    margin-top: 52px;
 }
 
 #textSobreCadastroAlunoPsg {
-    color: #000;
-    margin-bottom: 40px;
+    color:black;
+    margin-bottom: 25px;
 }
 
 #textSobreCadastroAlunoPsg p {
-    text-align: justify;
-}
-
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+  }
+  #textSobreCadastroAlunoPsg h1 {
+    font-weight: bold;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
+    
+  }
 .img-fluid-aluno-psg{
     width: 650px;
     height: 250px;
@@ -2166,11 +2209,25 @@ main.cadastro-de-vagas {
   font-family: var(--font-grad-title);
 }
 
-.titulo-vagas {
-    color: #000;
-    line-height: 30px;
     
+    
+
+
+.titulo-vagas h1 {
+    font-size: 56px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 78px;
+    font-family: var(--font-destaque);
+    color: black;
+    
+
 }
+
+
 
 .titulo-vagas h1 {
     font-size: 56px;
@@ -2188,7 +2245,7 @@ main.cadastro-de-vagas {
 
 
 #titulo-subtitulo-cadastroVagas p {
-    font-size: 27px;
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     position: relative;
     top: 78px;
     text-align: center;
@@ -2199,7 +2256,7 @@ main.cadastro-de-vagas {
 }
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
 }
 
 
@@ -2207,17 +2264,7 @@ main.cadastro-de-vagas {
 
 
 
-#titulo-subtitulo-cadastroVagas p{
-  font-size: 27px ;
-  position: relative;
-  top: 78px;
-  text-align: center;
-  font-family: var(--font-destaque);
-  color: black;
-  top: 7px;
- 
 
-}
 
 .sombra-roxa-cadastro-vagas {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
@@ -2436,7 +2483,7 @@ main.login-ADM {
 /* Tela de Edital */
 
 main.edital {
-    max-width: 1300px;  
+    max-width: 1325px;  
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
@@ -2444,7 +2491,7 @@ main.edital {
 }
 
 #titulo-subtitulo-edital p{
-  font-size: 27px ;
+font-size: clamp(1.125rem, 2.333vw, 1.688rem);
   position: relative;
   top: 78px;
   text-align: center;
@@ -2455,7 +2502,7 @@ main.edital {
 
 #titulo-subtitulo-edital h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
 }
 
 .wrapper-content-icon {
@@ -2522,7 +2569,7 @@ overflow: hidden;
 
 .borda_roxa-edital {
   position: relative;
-  width: 1220px;
+  width: 1325px;
   height: 958px;
   background-color: #281358;
   border-radius: 10px;
