@@ -1,3 +1,7 @@
+
+
+
+
 <?php
 // include '../../app/session/verificacao.php';
 
@@ -25,8 +29,8 @@ $result = mysqli_query($connection, $query);
 </head>
 
 <body class="Cadastro-Admin">
-  <!-- Menu de Navegação-->
-   <header> 
+  <!--Menu de Navegação-->
+  <!-- <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -95,9 +99,10 @@ $result = mysqli_query($connection, $query);
           </div>
         </div>
       </nav>        
-  </header> 
+  </header> -->
 
-  <main class="editar-adm">
+ 
+<main class="editar-adm">
   <div class="container-fluid" style="padding-top: 50px;">
     <div class="container">
       <div class="editar-adm-centered">
@@ -118,8 +123,8 @@ $result = mysqli_query($connection, $query);
                 <div class="editar-adm-switch-container">
                   <label class="editar-adm-switch">
                     <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class="editar-adm-slider"></span>
-                    <span class="editar-adm-knob" ></span>
+                    <span class=" editar-adm-slider"></span>
+                    <span class=" editar-adm-knob" ></span>
                   </label>
                 </div>
               </div>
@@ -131,9 +136,9 @@ $result = mysqli_query($connection, $query);
   </div>
 </main>
 
-  
 
   <script src="../js/cadastro-adm.js"></script>
 </body>
 
 </html>
+

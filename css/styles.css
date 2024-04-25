@@ -2225,6 +2225,11 @@ input.cadastro-aluno-psg {
     }
 }
 
+
+
+
+/*AQUI FICAM OS MEDIAS PARA DEIXAR AS LABELS RESPONSIVAS E SE ADQUAREM AO TAMANHO DE TELA, QUANDO DIMINUIDO.*/
+ 
 @media (max-width:290px) {
      .editar-adm-nome-aleatorio{
         font-size: 12px !important;
@@ -2284,13 +2289,33 @@ input.cadastro-aluno-psg {
         
     }}
 
-@media (max-width:300px) {
+@media (max-width:506px) {
     .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
+        font-size: 17px !important;
         margin: 1 10px;
 
         
     }}
+
+
+@media (max-width:412px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        margin: 1 10px;
+
+        
+    }} 
+
+
+/*TESTE DE RESPONSIVIDADE DAS LABELS AO TAMANHO DE TELA.*/
+/* @media only screen and  (min-width: 296px) and (max-width: 310px) and (max-width: 506px){
+    .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+            margin: 1 10px;
+
+    }
+   
+    }     */
 
 
 
@@ -2397,10 +2422,77 @@ input.cadastro-aluno-psg {
     position: absolute;
     bottom: 10px; /* Definindo a posição no final da borda */
     right: 10px; /* Definindo a posição no final da borda */
+
 }
-/* .editar-adm p.adm-infos{
-    font-size: 50px;
-} */
+
+
+/*TESTE DE RESPONSIVIDADE DO BOTAO AO TAMANHO DE TELA deu certo.*/
+
+
+@media only screen and (max-width:1880px) {
+    .editar-adm-switch-container
+     .editar-adm-slider {
+        display: flex;
+        margin: 0 1px;
+    
+    }}
+
+
+@media only screen and (max-width:1222px) {
+    .editar-adm-switch-container
+        .editar-adm-slider {
+        display: flex;
+        margin: 0 3px;
+    
+    }}   
+    
+    
+@media only screen and (min-width:1152px) and (max-width:1154px) {
+    .editar-adm-switch-container
+        .editar-adm-slider
+        .editar-adm-knob {
+        display: flex;
+        margin: 0 7px;
+    }
+    .editar-adm-knob{
+        display: flex;
+        margin: 0 7px;
+    }}
+
+@media only screen and (max-width:1104px) {
+    .editar-adm-switch-container
+        .editar-adm-slider {
+        display: flex;
+        margin: 0 7px;
+    
+    }
+    .editar-adm-knob{
+        display: flex;
+        margin: 0 7px;
+}}  
+
+
+@media only screen and (max-width:517px) {
+    .editar-adm-switch-container
+        .editar-adm-slider
+        .editar-adm-knob {
+        display: flex;
+        margin: 0 5px;
+    
+    }}   
+    
+    
+@media only screen and (max-width:310px) and (max-width:344px){
+    .editar-adm-switch-container
+        .editar-adm-slider {
+        display: flex;
+        margin: 0 8px;
+    
+    }
+    .editar-adm-knob{
+        display: flex;
+        margin: 0 8px;
+}}  
 
 
 /*FIM DO CSS PÁGINA EDITAR ADM.PHP*/
