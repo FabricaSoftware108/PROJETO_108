@@ -1,3 +1,6 @@
+<?php
+include "../../app/db/connection.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -15,48 +18,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         
-        <?php
-            include "./app/session/verificacao.php";
-            include "../../app/db/connection.php";
-               
-            $email = $_POST ['email'];
-            if(empty($_POST ['email'])){
-                echo ('<script>
-                alert("Preencha o campo de email");
-                </script>');
-            }
-            else{
-
-                $query = "SELECT * from admin where email = '$email'";
-    
-                $result = mysqli_query($connection, $query);
-    
-    
-    
-                if (mysqli_num_rows($result) == 0){
-                    
-                    echo ('<script>
-                    alert("Email não encontrado");
-                    </script>');
-                }
-                
-                else {
-                    $row = mysqli_fetch_array($result);
-                    $novaSenha = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(8/strlen($x)) )),1,8);
-                    $queryChangeEmail = "UPDATE admin SET senha = '$novaSenha' WHERE email = '$email' AND senha = '{$row["row"]}'";
-                    mysqli_query($connection, $queryChangeEmail);
-                    $to = $email;
-                    $subject = 'Redefinir senha';
-                    $message = 'Sua nova senha é: '($novaSenha);
-                    $headers = 'From: hubfabricas@senac.com'. "\r\n".'X-Mailer: PHP/' . phpversion();
-            
-                    mail($to, $subject, $message, $headers);
-    
-                    // $query = "UPDATE ADMIN SET "
-                
-                }
-            }
-        ?>
+        
     </head> 
 
 
@@ -68,7 +30,7 @@
         <main class="login-ADM container-fluid">
             <div class="container">
                 <div class="row" id="container-campos-preenchimento-login-ADM">
-                    <form class="needs-validation col-12" id="campos-preenchimento-login-ADM">
+                    <form class="needs-validation col-12" id="campos-preenchimento-login-ADM" action="../../app/session/actionForgotPassword.php" method="post">
                         <h1>RECUPERAR SENHA</h1><br>
                         
                         <div class="input-group mb-3 col-12">
@@ -80,8 +42,7 @@
                         </div>
 
                         <br>
-
-                        <a class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM" href="./loginAdm.html"><b>RECUPERAR</b></a><br><br>
+                        <button class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM" type="submit"><b>RECUPERAR</b></button><br><br>
                     </form>
                 </div>
             </div>
