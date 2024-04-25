@@ -27,12 +27,28 @@
             $novaSenha = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(8/strlen($x)) )),1,8);
             $queryChangeEmail = "UPDATE admin SET senha = '$novaSenha' WHERE email = '$email' AND senha = '{$row["senha"]}'";
             mysqli_query($connection, $queryChangeEmail);
-            $to = $email;
-            $subject = 'Redefinir senha';
-            $message = "Sua nova senha é: ($novaSenha)";
-            $headers = 'From: hubfabricas@senac.com'. "\r\n".'X-Mailer: PHP/' . phpversion();
+
+            // $to = $email;
+            // $subject = 'Redefinir senha';
+            // $message = "Sua nova senha é: ($novaSenha)";
+            // $headers = 'From: hubfabricas@senac.com'. "\r\n".'X-Mailer: PHP/' . phpversion();
+
+
+            $mail->Host = 'smtp.gmail.com';
+
+            $mail->Port = 587;
+
+            $mail->SMTPAuth = true;
+
+            $mail->SMTPSecure = true;
+
+            $mail->Username = 'senachub108@gmail.com';
+
+            $mail->Password = 'S3nha123+';
+
+            $mail->send();
     
-            mail($to, $subject, $message, $headers);
+            //mail($to, $subject, $message, $headers);
 
             // $query = "UPDATE ADMIN SET "
         
