@@ -7,7 +7,7 @@ include '../../app/session/verificacao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório Banco de Talentos</title>
+    <title>Relatório  Banco de Talentos</title>
     <link rel="stylesheet" href="../../Css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@ include '../../app/session/verificacao.php';
                     <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
                     <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
                     <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
-                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
+                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                 </ul>
                 </li>

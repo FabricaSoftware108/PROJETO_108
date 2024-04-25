@@ -11,7 +11,7 @@ include '../../app/db/connection.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatorio Banco de Talentos</title>
+  <title>Relatorio Vagas de Emprego</title>
   <link rel="stylesheet" href="../../css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -80,7 +80,7 @@ include '../../app/db/connection.php';
                     <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
                     <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
                     <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
-                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
+                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                 </ul>
                 </li>

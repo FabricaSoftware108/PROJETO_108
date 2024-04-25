@@ -16,6 +16,7 @@ include '../../app/session/verificacaoPsg.php';
 
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../../js/dropdownfabricas.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +37,7 @@ include '../../app/session/verificacaoPsg.php';
         </script>
 </head>
 
-<body class="home">
+<body>
     <!-- Header -->
     <header class="cabecalhoGeral border shadow-sm">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -102,20 +103,20 @@ include '../../app/session/verificacaoPsg.php';
     <div class="sombra-roxa-cadastro-aluno-psg col-1"></div>
     <div class="sombra-rosa-cadastro-aluno-psg col-1"></div>
 
-    <main class="cadastro-aluno-psg container-fluid">
+    <main class="body-aluno-psg">
         <div class="container">
             <div class="row">
                 <div class="col-12" id="textSobreCadastroAlunoPsg">
-                    <h1><b>Cadastro Aluno PSG</b></h1><br><br>
-                    <p><b>“O programa de gratuidade do SENAC é uma politica de incentivo única que busca
-                            oferecer uma educação profissional inclusiva cm instrutores especializados e gratuita”</b>
+                    <h1>Cadastro Aluno PSG</h1><br><br>
+                    <p>O programa de gratuidade do SENAC é uma politica de incentivo única que busca
+                            oferecer uma educação profissional inclusiva com instrutores especializados e gratuita
                     </p>
                 </div>
             </div>
-            <div class="row" id="containerCamposPreenchimentoCadastroAlunoPsg">
+            <div class="row" id="quadradoRoxo-demanda">
                 <form class="col-12" id="camposPreenchimentoCadastroAlunoPsg" method="post"
                     action="../../app/session/conexaoCadastroAlunoPsg.php">
-                    <h1><b>Informações Pessoais</b></h1><br>
+                    <h1>Informações Pessoais</h1><br>
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome"
                         id="nome" size="27" maxlength="100" placeholder="Nome Completo">
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
@@ -132,7 +133,7 @@ include '../../app/session/verificacaoPsg.php';
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai"
                             size="27" maxlength="50" placeholder="Nome do Pai"><br>
                     </div>
-                    <h1 id="camposPreenchimentoCadastroAlunoPsg"><b>Endereço</b></h1><br>
+                    <h1 id="camposPreenchimentoCadastroAlunoPsg">Endereço</h1><br>
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua"
                         size="27" maxlength="100" placeholder="Rua">
                     <div class="col-12">
@@ -149,7 +150,9 @@ include '../../app/session/verificacaoPsg.php';
                      <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
                      <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
 
-                    <button class="btn btn-primary mt-3 mb-3" type="submit">Enviar</button>
+                     <div class="button-enviar-vagas">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div> 
             </div>
             </form>
 

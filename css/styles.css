@@ -88,9 +88,7 @@ header.cabecalhoGeral {
     margin-top: 20px !important;
 }
 
-.cabecalhoGeral .dropdown:hover>.dropdown-menu {
-    display: block;
-}
+
 
 .cabecalhoGeral .dropdown>.dropdown-toggle:active {
     pointer-events: none;
@@ -750,8 +748,12 @@ nav.home li:hover ul#menuFabricas {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width:1112px) {
-    .bodyFabricaAudiovisual #AudioVisual-img {
+@media (max-width: 755px) {
+    .bodyFabricaAudiovisual #audioVisualImg,
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(1),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(2),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(3),
+    .bodyFabricaAudiovisual #audioVisualImg:nth-child(4){
         display: none;
     }
 }
@@ -1260,21 +1262,14 @@ div.carousel-item img#carouselImg{
 
 
 
-.body-demanda,
-.html-demanda {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    display: block;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden auto;
-    z-index: 2;
+main.body-demanda {
+    max-width: 1300px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
 }
+
 
 .body-demanda div.effects {
     position: absolute;
@@ -1287,6 +1282,22 @@ div.carousel-item img#carouselImg{
     background-color: #AA15C2;
     opacity: 70%;
     z-index: 1;
+}
+#titulo-subtitulo-demanda p {
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
+    max-width: 1400px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+
+}
+#titulo-subtitulo-demanda h1{
+    font-weight: bold;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
+    color: black
 }
 
 
@@ -1306,11 +1317,29 @@ div.carousel-item img#carouselImg{
     z-index: 0; 
 }
 
-.body-demanda #button-submit-demanda {width: 150px; height: 70px; font-size: 22px;}
-.body-demanda .wrapper-all-centainer-demanda {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; }
-.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { width: 100%; background-color: #281358; border-radius: 15px; }
+.body-demanda #button-submit-demanda {
+    width: 150px; 
+    height: 70px; 
+    font-size: 22px;
+}
 
-.body-demanda #button-demanda button {margin: 30px 0;}
+.body-demanda .wrapper-all-centainer-demanda {
+    width: 1468px; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+}
+
+.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { 
+    width: 100%; 
+    background-color: #281358;
+     border-radius: 15px; 
+    }
+
+.body-demanda #button-demanda button {
+    margin: 30px 0;
+}
 
 .body-demanda .subtitle-demanda h1{
     font-size: 40px;
@@ -1339,8 +1368,11 @@ div.carousel-item img#carouselImg{
    .body-demanda .content-title-subtitle-demanda p {
         margin: 0 30px;
         text-align: center;
-        font-size: 14px !important; 
+        font-size: 18px !important; 
 
+   }
+   .body-demanda .content-title-subtitle-demanda h1{
+        font-size: 35px !important;
    }
 }
 @media (max-width: 1200px) {
@@ -1369,6 +1401,7 @@ div.carousel-item img#carouselImg{
     text-align: center;
     z-index: -1;
 }
+
 
 
 .body-demanda .container-campo-dados-demanda {
@@ -1596,6 +1629,12 @@ div.carousel-item img#carouselImg{
     cursor: pointer;
 
 }
+#quadradoRoxo-demanda {
+
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
+}
 
 
 
@@ -1636,55 +1675,60 @@ input.cadastrovagas {
   margin-bottom: 30px;
   margin-top: 7px;
 }
+.cadastrovagas{
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 7px;
+ }
 
+#campo-demanda {
+    color: white;
+    margin-top: 50px;
+}
 /*  FINAL PÁGINA CADASTRO DE VAGAS*/
 
 /* PÁGINA BANCO DE TALENTOS */
 
 
-.body-bancoTalentos {
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
+main.body-banco-talentos {
+    max-width: 1300px;
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
 }
 
-.body-bancoTalentos main #title-bancoTalento h1{
-    font-family: var(--font-destaque);
-    margin-top: 130px;
-    color: var(--font-color-pag-title-subtitle);
-    font-weight: bold;
-    font-size: 50px;
+
+
+
+.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+    color: white;
 }
 
-.body-bancoTalentos main #title-bancoTalento p{
-    font-family: var(--font-destaque);
-    font-size: 27px;
-    padding: 20px 0 0 0;
-    color: var(--font-color-pag-title-subtitle);
-    font-weight: 300;
+
+
+.body-bancoTalentos main #button-submit-bancoTalento { 
+    width: 150px; 
+    height: 70px; 
+    font-size: 22px;
 }
 
-.body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; padding: 0; justify-content: center; align-items: center; display: flex; color: white;}
-
-.body-bancoTalentos .subtitle-bancoTalento h1{
-    font-size: 40px;
-    font-family: var(--font-destaque);
-    font-weight: 530;
-    padding: 30px 0;
+.body-bancoTalentos main #button-submit-bancoTalento  {
+    margin: 30px 0;
 }
-.body-bancoTalentos #container-bancoTalento-inputs{
-    padding:  0 50px;
-
-}
-
-.body-bancoTalentos main #button-submit-bancoTalento { width: 150px; height: 70px; font-size: 22px;}
-.body-bancoTalentos main #button-submit-bancoTalento  {margin: 30px 0;}
 
 
 .body-bancoTalentos main .cadastrovagas-bancoTalento {
     padding: 15px;
     border-radius: 5px;
-    margin: 20px 0;
+    margin-bottom: 30px;
+    margin-top: 7px;
+    size: 27px;
 }
 
 .body-bancoTalentos div.effects {
@@ -1713,24 +1757,52 @@ input.cadastrovagas {
     opacity: 70%;
     z-index: 0; 
 }
-
+  
 .bancoTalento-recaptcha{
     
     margin:auto;
     max-width:305px;
     margin-top:25px;
 }
+#titulo-subtitulo-bancotalentos p {
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
+    max-width: 1400px;
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+
+}
+#titulo-subtitulo-bancotalentos h1{
+    font-weight: bold;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
+    color: black
+}
+#quadradoRoxo-banco-talentos {
+
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+    
+
+
 
 
 
 /*Cadastro  aluno psg*/
 
-main.cadastro-aluno-psg {
-    max-width: 1200px;
+main.body-aluno-psg {
+    max-width: 1300px;
     margin: 20px auto;
-    margin-top: 160px;
+    margin-top: 135px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-grad-title);
+    color:white;
 }
 
 input.cadastro-aluno-psg {
@@ -1781,24 +1853,35 @@ input.cadastro-aluno-psg {
 }
 
 #containerCamposPreenchimentoCadastroAlunoPsg {
+    width: 1300px;
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
 }
 
 #camposPreenchimentoCadastroAlunoPsg {
-    margin-top: 50px;
+    margin-top: 52px;
 }
 
 #textSobreCadastroAlunoPsg {
-    color: #000;
-    margin-bottom: 40px;
+    color:black;
+    margin-bottom: 25px;
 }
 
 #textSobreCadastroAlunoPsg p {
-    text-align: justify;
-}
-
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
+    position: relative;
+    top: 78px;
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: black;
+    top: 7px;
+  }
+  #textSobreCadastroAlunoPsg h1 {
+    font-weight: bold;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
+    
+  }
 .img-fluid-aluno-psg{
     width: 650px;
     height: 250px;
@@ -2095,7 +2178,7 @@ input.cadastro-aluno-psg {
 
 
 main.cadastro-de-vagas {
-    max-width: 1220px;
+    max-width: 1300px;
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
@@ -2109,10 +2192,9 @@ main.cadastro-de-vagas {
   font-family: var(--font-grad-title);
 }
 
-.titulo-vagas {
-    color: #000;
-    line-height: 30px;
-}
+    
+    
+
 
 .titulo-vagas h1 {
     font-size: 56px;
@@ -2124,12 +2206,29 @@ main.cadastro-de-vagas {
     margin: 78px;
     font-family: var(--font-destaque);
     color: black;
+    
+
+}
+
+
+
+.titulo-vagas h1 {
+    font-size: 56px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 78px;
+    font-family: var(--font-destaque);
+    color: black;
+    
 
 }
 
 
 #titulo-subtitulo-cadastroVagas p {
-    font-size: 27px;
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     position: relative;
     top: 78px;
     text-align: center;
@@ -2140,20 +2239,15 @@ main.cadastro-de-vagas {
 }
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
 }
 
-#titulo-subtitulo-cadastroVagas p{
-  font-size: 27px ;
-  position: relative;
-  top: 78px;
-  text-align: center;
-  font-family: var(--font-destaque);
-  color: black;
-  top: 7px;
- 
 
-}
+
+
+
+
+
 
 .sombra-roxa-cadastro-vagas {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
@@ -2274,7 +2368,7 @@ main.cadastro-de-vagas {
 }
 
 .button-enviar-vagas button {
-    margin-bottom: 7rem;
+    margin-bottom: 2.5rem;
     margin-top: 3rem;
     width: 344px;
     height: 80px;
@@ -2371,35 +2465,44 @@ main.login-ADM {
 
 /* Tela de Edital */
 
-body.body-edital {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow-x: hidden;
+main.edital {
+    max-width: 1325px;  
+    margin: 20px auto;
+    margin-top: 160px;
+    text-align: center;
+    font-family: var(--font-grad-title);
 }
 
-.body-edital .cabecalhoGeral .navbar #hubFabricasLogo {
-    margin-left:10px
+#titulo-subtitulo-edital p{
+font-size: clamp(1.125rem, 2.333vw, 1.688rem);
+  position: relative;
+  top: 78px;
+  text-align: center;
+  font-family: var(--font-destaque);
+  color: black;
+  top: 7px;
 }
-.body-edital .wrapper-content-icon {
+
+#titulo-subtitulo-edital h1{
+    font-weight: bold;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
+}
+
+.wrapper-content-icon {
   padding-left: 130%;
 }
 
-.body-edital .content-wrapper-roxo-edital {
+.content-wrapper-roxo-edital {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.body-edital #background-edital {
+#background-edital {
     padding: 20px;
 }
 
-.body-edital .container-background-edital .row{
+.container-background-edital .row{
   border-radius: 15px ;
   background-color: white;
 }
@@ -2408,18 +2511,17 @@ body.body-edital {
     width: 25%;
 }
 
-.body-edital .borda_roxa{
+.borda_roxa{
 overflow: hidden;
 }
 
-.body-edital .borda_roxa-edital,
-.body-edital .borda_roxar * {
+.borda_roxa-edital{
   box-sizing: border-box;
   height: auto;
 }
 
 
-.body-edital .sombra_rosa-edital{
+.sombra_rosa-edital{
   box-shadow: 92px 76px 129px 21px rgba(170, 21, 194, 1);
   left: -229px;
   height: 350px;
@@ -2430,105 +2532,41 @@ overflow: hidden;
   filter: blur(150px) contrast(150%);
 } 
 
-.body-edital .sombra_roxa-edital{
+.sombra_roxa-edital{
   box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
   left: 1860px;
   height: 100px;
   top:500px;
   position: absolute;
   z-index: -1;
-  border-radius: 50%;
+  border-radius: 10px;
   filter: blur(150px) contrast(150%);
 }
 
 
 
-.body-edital #container-borda-roxa-edital .row{
+#container-borda-roxa-edital .row{
   display: flex;
   flex-wrap: wrap;
 }
-.body-edital .container-fluid,
-.body-edital .container,
-.body-edital .col-12 #container-sobre-curso1{
-  padding: 0;
-}   
 
-.body-edital .titulo_edital{
-  margin: 150px 0 0 0;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 27px;
-  text-align: center;
-}
-.body-edital .titulo_edital h1 {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 800;
-}
-.body-edital .titulo_edital p{
-  font-size: 27px;
-  margin-top: 40px;
-}
-
-
-
-  
-@media(min-width: 576px){
-    .body-edital .titulo_edital>p {
-    font-size: 10px;
-    
-  }
-  .body-edital #introducao-edital p{
-    font-size: 24px;
-    text-align: justify;
-    margin-top: 10px;
-    padding: 0;
-  }
-}
-  @media(min-width: 576px){
-    .body-edital .titulo_edital>h1 {
-      font-size: 10px;
-      
-    }
-  }
-    
-  
-
-  
-  @media(max-width: 576px){
-    .body-edital h1 {
-      font-size: 40px;
-
-    }
-  }
-
-
-
-.body-edital .borda_roxa-edital {
+.borda_roxa-edital {
   position: relative;
-  width: 1200px;
+  width: 1325px;
   height: 958px;
   background-color: #281358;
   border-radius: 10px;
   text-align:center;
   z-index: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 10px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.body-edital .sombra-edital {
+.sombra-edital {
   position: relative;
   margin: 10px 0 0 1.092px;
 }
 
-.body-edital .col-3 #inscricao1-hide{
-  height: 100%;
-}
-
-
-.body-edital .sombra-edital-btn{
+.sombra-edital-btn{
   position: relative;
   width: 100%;
   height: 65px;
@@ -2537,15 +2575,15 @@ overflow: hidden;
   border-radius: 15px; 
   border: none;
 }
-.body-edital .edital_do_aluno_titulo-2{
+.edital_do_aluno_titulo-2{
   margin-bottom: 0;
 }
-.body-edital .edital_do_aluno_titulo-2 h1{
+.edital_do_aluno_titulo-2 h1{
   text-align: center;
   line-height: 15rem;
   font-size: 16;
 }
-.body-edital .sombra_orientacoes-edital {
+.sombra_orientacoes-edital {
   position: relative;
   width: 100%;
   height: 100%;
@@ -2557,7 +2595,7 @@ overflow: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.body-edital .sombra_orientacoes2-edital{
+.sombra_orientacoes2-edital{
   position: relative;
   width: 100%;
   height: 100%;
@@ -2569,7 +2607,7 @@ overflow: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.body-edital .btn-inscricoes {
+.btn-inscricoes {
   width: 100%;
   height: 29px;
   padding: 5px 20px;
@@ -2581,7 +2619,7 @@ overflow: hidden;
   font-size: 14px;
 } 
 
-.body-edital .sobre_curso-1_edital{
+.sobre_curso-1_edital{
   position: absolute;
   width: 6px;
   height: 18px;
@@ -2596,7 +2634,7 @@ overflow: hidden;
   white-space: nowrap;
   z-index: 100;
 }
-.body-edital .sobre_curso-1_edital .text1-edital {
+.sobre_curso-1_edital .text1-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -2605,7 +2643,7 @@ overflow: hidden;
   line-height: 21.784px;
   text-align: left;
 }
-.body-edital .sobre_curso-1_edital .text2-edital {
+.sobre_curso-1_edital .text2-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -2614,7 +2652,7 @@ overflow: hidden;
   line-height: 21.784px;
   text-align: left;
 }
-.body-edital .sobre_curso-1_edital .text3-edital {
+.sobre_curso-1_edital .text3-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -2623,11 +2661,11 @@ overflow: hidden;
   line-height: 21.784px;
   text-align: left;
 }
-.body-edital .sombra2-edital {
+.sombra2-edital {
   position:relative;
   margin: 10px 0 0 0px;
 }
-.body-edital .btn-inscricoes2 {
+.btn-inscricoes2 {
   width: 100%;
   height: 29px;
   padding: 5px 20px;
@@ -2638,7 +2676,7 @@ overflow: hidden;
   border-radius: 10px;
   font-size: 14px;
 } 
-.body-edital .text_inscricoes-1_edital{
+.text_inscricoes-1_edital{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2655,7 +2693,7 @@ overflow: hidden;
   white-space: nowrap;
   z-index: 103;
 }
-.body-edital .inscricoes2-edital .text-1-edital {
+.inscricoes2-edital .text-1-edital {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -2672,7 +2710,7 @@ overflow: hidden;
   white-space: nowrap;
   z-index: 103;
 }
-.body-edital .sobre_curso-2-edital{
+.sobre_curso-2-edital{
   position: absolute;
   width: 100%;
   height: 18px;
@@ -2687,7 +2725,7 @@ overflow: hidden;
   white-space: nowrap;
   z-index: 100;
 }
-.body-edital .sobre_curso-2-edital .text-1-edital {
+.sobre_curso-2-edital .text-1-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -2696,7 +2734,7 @@ overflow: hidden;
   line-height: 21.784px;
   text-align: left;
 }
-.body-edital .sobre_curso-2-edital.text-2-edital {
+.sobre_curso-2-edital.text-2-edital {
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -2705,7 +2743,7 @@ overflow: hidden;
   line-height: 21.784px;
   text-align: center;
 }
-.body-edital .sobre_curso-2-edital .text-3-edital{
+.sobre_curso-2-edital .text-3-edital{
   position: relative;
   color: #000000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -2714,100 +2752,14 @@ overflow: hidden;
   line-height: 21.784px;
   text-align: left;
 }
-.body-edital .sobre_curso-2-edital span{
+.sobre_curso-2-edital span{
   font-size: 13px;
 }
 
-/* ADM HOME */
-
-.body-adm-home{
-    background-color:#ffffff;
-}
 
 
-.main-adm-home{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-@media(min-width:1140px){
-    .main-adm-home{
-        background-image:url(../Imagens/background-image-adm-home.png);
-        background-repeat:no-repeat;
-    }
-}
 
-#label-bem-vindos-adm-home{
-    margin-top:10rem;
-    position:absolute;
-    font-size:x-large;
-}
-
- /* faz os quadrados ficarem alinhados horizontalmente */
-@media(min-width:992px){
-    #label-quadrados-1-adm-home{
-        background-color:#970FF2;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
-    #label-quadrados-2-adm-home{
-        background-color:#F24607;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
-    #label-quadrados-3-adm-home{
-        background-color:#49D907;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-    }
-}
-
- /* faz os quadrados ficarem alinhados verticalmente */
-@media(max-width:991px){
-    #label-quadrados-1-adm-home{
-        background-color:#970FF2;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        margin:25px;
-    }
-    #label-quadrados-2-adm-home{
-        background-color:#F24607;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        margin:25px;
-    }
-    #label-quadrados-3-adm-home{
-        background-color:#49D907;
-        color:#FFFFFF;
-        border-radius:5%;
-        padding:50px;
-        margin:25px;
-    }
-}
-@media(max-width:690px){
-#adm-home-img-2{
-    width:690px;
-    box-shadow:none;
-}
-}
-#row-2-adm-home{
-    margin-top:18rem;
-    font-size:x-large;
-}
-
-#container-2-adm-home-imagem{
-    margin-top:5rem;
-    width:900px;
-}
-
-#adm-home-img-1{
-    width:300px;
-    box-shadow:none;
-}
 
 
 
@@ -4166,6 +4118,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 
+
+
 /* 2 CONTAINER CADASTRO EDITAL ADM*/
 
 .label-text {
@@ -4262,12 +4216,12 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 .button-apagar-edital button{
-    width: 250px;/* largura do botão*/
+    width: 160px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
 }
 
 .button-editar-edital  button{
-    width: 250px;/* largura do botão*/
+    width: 160px;/* largura do botão*/
     height: 50px; /* comprimento do botão.*/
 }
 
@@ -4275,7 +4229,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 /* ADM HOME */
 
-.body-adm-home{
+.body-adm-home {
     background-color:#ffffff;
 }
 
@@ -4283,24 +4237,8 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .main-adm-home{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    overflow: hidden;
 }
 
-@media(min-width:1140px){
-    .main-adm-home{
-        background-image:url(../Imagens/background-image-adm-home.png);
-        background-repeat:no-repeat;
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
-#label-bem-vindos-adm-home{
-    margin-top:10rem;
-    position:absolute;
-    font-size:x-large;
-}
 
  /* faz os quadrados ficarem alinhados horizontalmente */
 @media(min-width:992px){
@@ -4309,7 +4247,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
         color:#FFFFFF;
         border-radius:5%;
         padding:50px;
-
     }
     #label-quadrados-2-adm-home{
         background-color:#F24607;
@@ -4351,7 +4288,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 }
 
 #row-2-adm-home{
-    margin-top:18rem;
+    margin-top:7rem;
     font-size:x-large;
 }
 
@@ -4363,6 +4300,27 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 #adm-home-img-1{
     width:300px;
     box-shadow:none;
+}
+
+.numero-adm-home {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.img-fundo-adm-home {
+    display:flex;
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:60%;
+    height:360px;
+    box-shadow:none;
+}
+
+@media(max-width: 1566px){
+    .img-fundo-adm-home{
+        display:none;
+    }
 }
 
 /*Cadastro de Carrossel ADM */

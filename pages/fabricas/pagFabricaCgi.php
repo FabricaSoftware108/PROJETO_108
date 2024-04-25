@@ -11,6 +11,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../../js/dropdownfabricas.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +54,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                         </ul> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.html">Edital</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Edital</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda</a>
