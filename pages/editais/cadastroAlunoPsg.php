@@ -67,8 +67,8 @@ include '../../app/session/verificacaoPsg.php';
                                         Jogos</a></li>
                                 <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.php">Fábrica de Computação
                                         Gráfica</a></li>
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de
-                                        Audio e Video</a></li>
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de 
+                                        Áudio e Vídeo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
