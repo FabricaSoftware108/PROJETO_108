@@ -1284,7 +1284,7 @@ main.body-demanda {
     z-index: 1;
 }
 #titulo-subtitulo-demanda p {
-    font-size: 27px;
+    font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     max-width: 1400px;
     position: relative;
     top: 78px;
@@ -1296,7 +1296,7 @@ main.body-demanda {
 }
 #titulo-subtitulo-demanda h1{
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(2.188rem, 3.333vw, 3.125rem);
     color: black
 }
 
