@@ -1,7 +1,7 @@
 <?php
 
-include '../db/connection.php';
 session_start();
+include '../db/connection.php';
 
 // Verifica se os valores foram recebidos do formulário antes de usá-los
 if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["CPF"]) && !empty($_POST["escolaridade"]) && !empty($_POST["data_nascimento"]) && !empty($_POST["email"]) && !empty($_POST["telefone"]) && !empty($_POST["uf"]) && !empty($_POST["rua"]) && !empty($_POST["bairro"]) && !empty($_POST["cidade"]) && !empty($_POST["numero"]) && !empty($_POST["github"]) && !empty($_POST["Linkedin"])) {
