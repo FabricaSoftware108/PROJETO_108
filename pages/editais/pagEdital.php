@@ -120,12 +120,11 @@ include '../../app/db/connection.php';
                     <div class="borda_roxa-edital h-auto">
                         <form action="../../app/session/actionPsg.php" method="post">
                                 <?php
-                                    $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
+                                    $query = 'SELECT * FROM editaisBugFix';
                                     $result = mysqli_query($connection, $query);
 
                                     while($row = mysqli_fetch_array($result)){
-                                        $today = date("Y-m-d");
-                                        if($today >= $row["dataFim"] || $row["quantidadeAlunos"] == $row["alunosCadastrados"]){
+                                        if($row["quantidadeAlunos"] == $row["alunosCadastrados"]){
                                             $dateText = "INSCRIÇÕES ENCERRADAS";
                                             $dateColor = "danger";
                                             $editalState = "disabled";
