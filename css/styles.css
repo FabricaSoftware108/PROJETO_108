@@ -2092,7 +2092,36 @@ input.cadastro-aluno-psg {
 
 /* EDITAR ADM.PHP*/
 
+/* Estilos para o botão de slider padrão */
+.editar-adm-slider .editar-adm-knob {
+    width: 100%; /* Largura padrão */
+    
+    
+  }
+  
+  /* Estilos adicionais para quando a tela for menor que 600px */
+  @media  screen and (max-width: 600px) {
+    .editar-adm-slider .editar-adm-knob {
+      width: 80%; /* Largura reduzida */
+   
+    }
+  }
+  
+  /* Estilos adicionais para quando a tela for menor que 400px */
+  @media screen and (max-width: 400px) {
+    .editar-adm-slider .editar-adm-knob {
+      width: 60%; /* Largura ainda mais reduzida */
+ 
+    }
+  }
 
+@media screen and (max-width: 289px) {
+.editar-adm-slider .editar-adm-knob {
+    width: 60%; /* Largura ainda mais reduzida */
+
+}
+}
+  
 
 .editar-adm .editar-adm-centered {
     display: flex;
@@ -2128,14 +2157,30 @@ input.cadastro-aluno-psg {
     display: flex;
     justify-content: left;
     align-items: center;
-    background-color: white;
+    background-color: #ffffff;
 }
-.editar-adm-container .editar-adm-nome-aleatorio {
+.editar-adm-container .editar-adm-nome-aleatorio {/* aqui é o quadrado das labels que tem que arrumar*/
+    display:contents;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cf6767;
+    /* display:contents; */
+}
+
+
+/* .editar-adm-container .editar-adm-borda-com-conteudo{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    background-color: white !important;
+} */
+
+/* .editar-adm-container .editar-adm-nome-aleatorio {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e52929;
-}
+    background-color: #ffffff;
+} */
 
 .editar-adm-container .editar-adm-nome-aleatorio {
     position: absolute;
@@ -2148,7 +2193,7 @@ input.cadastro-aluno-psg {
 
 .editar-adm .editar-adm-container-title {
     background-color: #1E55D1;
-    color: white;
+    color: rgb(255, 251, 251);
     padding: 10px 20px; 
     height: 60px; 
     display: flex;
@@ -2169,63 +2214,84 @@ input.cadastro-aluno-psg {
 
 
 
-@media (max-width: 1204px) {
+@media (max-width: 1832px) {
     .editar-adm-container-title {
-        font-size: 20px !important;
+        font-size: 17px !important;
         font-family: var(--font-destaque);
     }
-    .cadastro-adm-label,
     .editar-adm-nome-aleatorio {
         font-size: 15px !important;
         font-family: var(--font-destaque);
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:290px) {
+     .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        margin: 1 10px;
+        
+    }}
+
+@media (max-width:412px) {
     .editar-adm-nome-aleatorio{
         font-size: 12px !important;
-        margin: 0px;
-    }
-    
-}
-
-@media (max-width:800px) {
-    .editar-adm-borda-com-conteudo .editar-adm-nome-aleatorio{
-        font-size: 12px !important ;
-        margin: 0px;
-        left: 34px;
+        margin: 1 10px;
         
-    }
-    
-}
+    }}
 
-/* @media (max-width:600px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 11px !important ;
-        margin: 0px;
+
+@media (max-width:366px) {
+     .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        margin: 1 10px;
         
-    }
-    
-} */
+    }}
 
 
-/* @media (min-width:600px) {
+@media (max-width:360px) {
+     .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        margin: 1 10px;
+        
+    }}
+
+@media (max-width:350px) {
+      .editar-adm-nome-aleatorio{
+        font-size: 11px !important;
+        margin: 1 10px;
+        
+    }}
+
+@media (max-width:330px) {
+      .editar-adm-nome-aleatorio{
+        font-size: 10px !important;
+        margin: 1 10px;
+        
+    }}
+
+@media (max-width:310px) {
     .editar-adm-nome-aleatorio{
-        font-size: 12px !important ;
-        margin: 0px;
-        align-items: flex-end;
-    }
-    
-}
+        font-size: 10px !important;
+        margin: 1 10px;
+        
+    }}
 
-@media (min-width:600px) {
+@media (max-width:300px) {
+     .editar-adm-nome-aleatorio{
+        font-size: 10px !important;
+        margin: 1 10px;
+
+        
+    }}
+
+@media (max-width:300px) {
     .editar-adm-nome-aleatorio{
-        font-size: 12px !important ;
-        margin: 0px;
-        align-items: flex-end;
-    }
-    
-} */
+        font-size: 10px !important;
+        margin: 1 10px;
+
+        
+    }}
+
 
 
 /* Toggle Switches e conteudos do container de Administradores do EDITAR ADM */
@@ -2312,6 +2378,7 @@ input.cadastro-aluno-psg {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px; /* Reduzindo a margem superior para aproximar os administradores */
+    background-color: white !important;
 }
 
 /* aqui ele deixa os elementos(labels, botoes) mais juntos, mais grandes*/
@@ -2331,13 +2398,12 @@ input.cadastro-aluno-psg {
     bottom: 10px; /* Definindo a posição no final da borda */
     right: 10px; /* Definindo a posição no final da borda */
 }
-.editar-adm p.adm-infos{
+/* .editar-adm p.adm-infos{
     font-size: 50px;
-}
+} */
 
 
 /*FIM DO CSS PÁGINA EDITAR ADM.PHP*/
-
 
 
 

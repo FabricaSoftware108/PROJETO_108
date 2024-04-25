@@ -1,5 +1,11 @@
 <?php
-include '../../app/session/verificacao.php';
+// include '../../app/session/verificacao.php';
+
+include '../../app/db/connection.php';
+
+$query = 'SELECT * FROM admin';
+
+$result = mysqli_query($connection, $query);
 ?>
 <html lang="pt-br ">
 
@@ -19,8 +25,8 @@ include '../../app/session/verificacao.php';
 </head>
 
 <body class="Cadastro-Admin">
-  <!--Menu de Navegação-->
-  <header> 
+  <!-- Menu de Navegação-->
+   <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -89,7 +95,7 @@ include '../../app/session/verificacao.php';
           </div>
         </div>
       </nav>        
-  </header>
+  </header> 
 
  <main class="editar-adm">
   <div class="container-fluid" style="padding-top: 50px;">
