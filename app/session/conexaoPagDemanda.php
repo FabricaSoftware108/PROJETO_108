@@ -21,7 +21,7 @@ $arquivo= mysqli_real_escape_string($connection, $_POST["arquivo"]);
 if (empty($nome_empresa) || empty($email_empresa) || empty($cnpj) || empty($estado) || empty($telefone_empresa) 
 || empty($cidade) || empty($nome_titular) || empty($email_titular) || empty($cpf) || empty($telefone_titular)
 ||empty($arquivo)){ /*aqui ele fica retornando para a página de login SE 1 DOS 2 FICAR VAZIO, até a pessoa digitar o login correto.*/
-    header("location: pagDemanda.html");
+    header("location: ../../pages/editais/pagDemanda.html");
 //script Informa campos vazios
     exit();}
 
@@ -35,12 +35,12 @@ $result= mysqli_query($connection,$query);
 echo $result;
 
 if ($result == ''){
-    echo "<script language:'javascript'> window.alert('Não foi possível efetuar o cadastro'); windows.location.href='pagDemanda.html';</script>";
+    echo "<script language:'javascript'> window.alert('Não foi possível efetuar o cadastro'); windows.location.href='../../pages/editais/pagDemanda.html';</script>";
     
     }
     else
  {
-     echo "<script language:'javascript'> window.alert('Cadastro efetuado com sucesso'); window.location.href='pagDemanda.html';</script>";
+     echo "<script language:'javascript'> window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/pagDemanda.html';</script>";
      exit();
 }
 
