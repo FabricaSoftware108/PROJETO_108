@@ -97,7 +97,7 @@ $result = mysqli_query($connection, $query);
       </nav>        
   </header> 
 
- <main class="editar-adm">
+  <main class="editar-adm">
   <div class="container-fluid" style="padding-top: 50px;">
     <div class="container">
       <div class="editar-adm-centered">
