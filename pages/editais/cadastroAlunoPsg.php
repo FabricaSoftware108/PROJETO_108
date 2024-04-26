@@ -120,11 +120,11 @@ include '../../app/session/verificacaoPsg.php';
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome"
                         id="nome" size="27" maxlength="100" placeholder="Nome Completo">
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cpf" id="cpf" size="27"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="cpf" id="cpf" size="27"
                             maxlength="11" placeholder="CPF">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="rg" id="rg" size="27"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="rg" id="rg" size="27"
                             maxlength="7" placeholder="RG"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="telefone" id="telefone"
                             size="27" maxlength="11" placeholder="Telefone">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email"
                             size="27" maxlength="70" placeholder="E-mail"><br>
@@ -139,9 +139,9 @@ include '../../app/session/verificacaoPsg.php';
                     <div class="col-12">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro"
                             size="27" maxlength="50" placeholder="Bairro">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="numero" id="numero"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero"
                             size="27" maxlength="4" placeholder="Número"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="cep" id="cep" size="27"
                             maxlength="8" placeholder="CEP">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="complemento"
                             id="complemento" size="27" maxlength="100" placeholder="Complemento"><br>
