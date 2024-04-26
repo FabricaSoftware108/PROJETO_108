@@ -1,5 +1,10 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
+
+$query = "SELECT * FROM vagasEmprego WHERE id = '{$_SESSION["vagasEmpregoCodigo"]}'";
+$result = mysqli_query($connection, $query);
+$row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -108,7 +113,7 @@ include '../../app/session/verificacao.php';
                         <div class="container" id="relatorio-detalhado-ve-label-azul">
                             <div class="row justify-content-center">
                                 <div class="col-sm-12 col-lg-6">
-                                    <p class="relatorio-detalhado-ve-titulo">Relatório - Vagas de Emprego</p>
+                                    <p class="relatorio-detalhado-ve-titulo">Relatório - Vagas de Emprego - Nº <?php echo $row["id"] ?> </p>
                                 </div>
                             </div>
                         </div>
@@ -128,27 +133,27 @@ include '../../app/session/verificacao.php';
                                 <tbody>
                                     <tr>
                                         <td scope="col" colspan="2">Nome:
-                                            <p class="info-relatorio-detalhado-ve">Coca Cola Pepsi Cola</p>
+                                            <p class="info-relatorio-detalhado-ve"><?php echo $row["nomeEmpresa"] ?></p>
                                         </td>
                                         <td scope="col" colspan="2">E-mail:
-                                            <p class="info-relatorio-detalhado-ve">coca@gmail.com</p>
+                                            <p class="info-relatorio-detalhado-ve"><?php echo $row["emailEmpresa"] ?></p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">Telefone:
-                                            <p class="info-relatorio-detalhado-ve">67940028922</p>
+                                            <p class="info-relatorio-detalhado-ve"><?php echo $row["telefone"] ?></p>
                                         </td>
-                                        <td colspan="2">CPF/CNPJ:
-                                            <p class="info-relatorio-detalhado-ve">000.000.000-00</p>
+                                        <td colspan="2">CNPJ:
+                                            <p class="info-relatorio-detalhado-ve"><?php echo $row["cnpj"] ?></p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td colspan="2">Estado:
-                                            <p class="info-relatorio-detalhado-ve">Pará
+                                            <p class="info-relatorio-detalhado-ve"><?php echo $row["estado"] ?>
                                             </p>
                                         </td>
                                         <td colspan="2">Cidade:
-                                            <p class="info-relatorio-detalhado-ve">Marabá</p>
+                                            <p class="info-relatorio-detalhado-ve"><?php echo $row["cidade"] ?></p>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -159,15 +164,7 @@ include '../../app/session/verificacao.php';
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="4" class="td-sobre-pessoa-relatorio-detalhado-ve">Lorem Ipsum is
-                                            simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                            been the industry's standard dummy text ever since the 1500s, when an
-                                            unknown printer took a galley of type and scrambled it to make a type
-                                            specimen book. It has survived not only five centuries, but also the leap
-                                            into electronic typesetting, remaining essentially unchanged. It was
-                                            popularised in the 1960s with the release of Letraset sheets containing
-                                            Lorem Ipsum passages, and more recently with desktop publishing software
-                                            like Aldus PageMaker including versions of Lorem Ipsum.</td>
+                                        <td colspan="4" class="td-sobre-pessoa-relatorio-detalhado-ve"><?php echo $row["descricao"] ?></td>
                                     </tr>
                                 </tbody>
                             </table>
