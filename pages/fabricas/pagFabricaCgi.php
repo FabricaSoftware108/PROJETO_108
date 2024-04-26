@@ -88,7 +88,9 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                         <h1 class="text-center pt-5">Fábrica de Computação Gráfica</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">Fábrica de Computação Gráfica é um projeto que simula uma empresa de produção de elementos visuais digitais, atendendo a uma demanda de mercado ou do Senac MS.
+                        Seu objetivo é criar experiências interativas personalizadas e de alta qualidade, além de formar profissionais qualificados para atender à demanda de mídia e entretenimento. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. Essa abordagem prática permite que os alunos vivenciem todo as etapas de desenvolvimento de projetos, preparando-os para os desafios do mercado de trabalho.
+                        O projeto também visa impulsionar o avanço do mercado de mídia e entretenimento, promovendo inovação, criatividade e excelência, enquanto prepara uma nova geração de talentos para atender às demandas desse segmento.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "

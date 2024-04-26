@@ -90,8 +90,13 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
                         <h1 class="text-center pt-5">Fábrica de jogos</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de Jogos é um projeto que simula uma empresa de desenvolvimento de jogos, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de jogos, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de jogos, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
-                      </div>
+                        <p class="col-12">A Fábrica de Jogos é um projeto inovador que simula uma empresa de desenvolvimento de jogos digitais, atendendo às demandas do mercado ou do Senac/MS.
+                        Seu propósito consiste em criar experiências interativas e envolventes, proporcionando aos alunos uma vivência completa no processo de concepção e entrega de jogos de alta qualidade para o cliente.
+                        Os alunos desse projeto são designados para compor equipes multidisciplinares, assumindo tarefas que abrangem desde a concepção da ideia, pesquisa e breafing até a entrega do jogo finalizado.
+                        Essa abordagem prática possibilita que os alunos experimentem todas as etapas do desenvolvimento de jogos, preparando-os amplamente para os desafios desse segmento no mercado de trabalho.
+                        Durante o desenvolvimento do projeto, os alunos têm a chance de explorar e aperfeiçoar diversas habilidades, como Game design, programação, arte visual, efeitos sonoros, narrativa e gerenciamento de projetos. 
+                        Eles têm acesso a tecnologias avançadas e ferramentas especializadas, além de receber orientação de profissionais experientes da indústria dos jogos.
+                        
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
                         type="button" href="../editais/pagEdital.php">Editais</a>
