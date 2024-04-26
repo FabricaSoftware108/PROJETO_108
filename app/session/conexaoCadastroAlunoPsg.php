@@ -20,7 +20,8 @@ $complementoAluno = ($_POST['complemento']);
 
 // dar um window alert para orientar o aluno
 if(empty($nomeAluno) || empty($cpfAluno) || empty($rgAluno) || empty($telefoneAluno) || empty($emailAluno) || empty($nomeMae) || empty($nomePai) || empty($ruaAluno) || empty($bairroAluno)|| empty($numeroEnderecoAluno) || empty($cepAluno) || empty($complementoAluno)){
-    header("location:../../pages/editais/cadastroAlunoPsg.php");
+    echo "<script>alert('TODOS ESPAÇOS DEVEM ESTAR PREENCHIDOS');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagEdital.php'; }, 5);</script>";
     exit();
 }
 
@@ -31,10 +32,11 @@ $result = mysqli_query($connection, $query);
 
 
 if ($result){
-    header("location: ../../pages/editais/cadastroAlunoPsg.php");
+    echo "<script>alert('CADASTRO FEITO COM SUCESSO');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagEdital.php'; }, 5);</script>";
     exit();
 } else {
-    echo "<script>alert('ERRO AO CADASTRAR: " . $connection->error . "');</script>";
-    header("location: ../../pages/editais/cadastroAlunoPsg.php");
+    echo "<script>alert('ERRO AO CADASTRAR');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagEdital.php'; }, 5);</script>";
     exit();
 }
