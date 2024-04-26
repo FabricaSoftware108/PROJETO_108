@@ -5133,6 +5133,7 @@ body.body-relatorio-vagas-emprego .relatorio-vagas_emprego-background{
     padding: 10px;
     max-height: 400px;
     overflow-y: auto;
+    overflow: scroll;
 }
 
 body.body-relatorio-vagas-emprego .label-nome_vagas_emprego,
