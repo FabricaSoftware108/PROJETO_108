@@ -56,7 +56,7 @@ include '../../app/db/connection.php';
                                 <li><a class="dropdown-item" href="../fabricas/pagFabricaSoftware.php">Fábrica de Software</a></li> 
                                 <li><a class="dropdown-item" href="../fabricas/pagFabricaJogos.php">Fábrica de Jogos</a></li> 
                                 <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.php">Fábrica de Computação Gráfica</a></li> 
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de Audio e Video</a></li> 
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de Áudio e Vídeo</a></li> 
                             </ul> 
                         </li>
                         <li class="nav-item">
@@ -98,7 +98,7 @@ include '../../app/db/connection.php';
             <div class="row">
                 <div class="col-12" id="titulo-subtitulo-edital">
                     <h1>Edital</h1><br><br>
-                    <p>Editais das Empresas e das Fabricasdddads de Software, Jogos, Computação Gráfica e AudioVisual.</p><br>
+                    <p>Editais das Empresas e das Fabricas de Software, Jogos, Computação Gráfica e Áudio e Vídeo.</p><br>
                 </div>
             </div>
 
