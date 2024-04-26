@@ -1,7 +1,9 @@
 <?php
-session_start();
-// include '../../app/session/verificacao.php';
+include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
+
+$query="SELECT * FROM vagasEmprego";
+$result=mysqli_query($connection,$query);
 
 ?>
 
@@ -18,12 +20,6 @@ include '../../app/db/connection.php';
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <?php
-    
-    $query="select *  from vagasEmprego";
-    $result=mysqli_query($connection,$query);
-
-    ?>
 </head>
 
 <body class="body-relatorio-vagas-emprego">
@@ -99,7 +95,7 @@ include '../../app/db/connection.php';
       </nav>        
   </header><main class="relatorio_vagas_emprego">
     <div class="container_fluid">
-      <div class="row justify-content-center align-items-center text-center">
+      <div class="row justify-content-center align-items-center text-center scroll">
         <div class="col-md-10 col-lg-6">
           <div class="relatorio-vagas_emprego-container">
             <div class="relatorio-vagas-emprego-background-container">
@@ -111,6 +107,7 @@ include '../../app/db/connection.php';
                   <table class="table" id="table_relatorio_vagas_emprego">
                     <thead>
                       <tr>
+                        <th class="label-nome_vagas_emprego">ID</th>
                         <th class="label-nome_vagas_emprego">Nome</th>
                         <th class="label-email_vagas_emprego">E-mail</th>
                         <th class="label-cnpj_vagas_emprego">CNPJ</th>
@@ -120,16 +117,19 @@ include '../../app/db/connection.php';
                       </tr>
                     </thead>
                     <tbody>
+                      <form action="../../app/session/actionVagasEmpregoDeatalhado.php" method="post">
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
-                        <tr onclick="window.location.href = 'relatoriodetalhavagasemprego.php'">
-                          <td class="h9"><?php echo $retorno["nomeEmpresa"];?></td>
-                          <td class="h9"><?php echo $retorno["emailEmpresa"];?></td>
-                          <td class="h9"><?php echo $retorno["cnpj"];?></td>
-                          <td class="h9"><?php echo $retorno["telefone"];?></td>
-                          <td class="h9"><?php echo $retorno["cidade"];?></td>
-                          <td class="h9"><?php echo $retorno["estado"];?></td>
+                        <tr>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["id"];?></button></td>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["nomeEmpresa"];?></button></td>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["emailEmpresa"];?></button></td>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["cnpj"];?></button></td>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["telefone"];?></button></td>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["cidade"];?></button></td>
+                          <td class="h9"><button type="submit" class="btn w-100" value="<?php echo $retorno["id"]?>" name="vagasEmpregoCodigo"><?php echo $retorno["estado"];?></button></td>
                         </tr>
                       <?php }?>
+                      </form>
                     </tbody>
                   </table>
                 </div>

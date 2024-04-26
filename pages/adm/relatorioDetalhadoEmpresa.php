@@ -1,5 +1,7 @@
 <?php
 include '../../app/session/verificacao.php';
+
+echo "<script>alert("{$_SESSION['vagasEmpregoCodigo']}")</script>";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
