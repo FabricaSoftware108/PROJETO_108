@@ -115,7 +115,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p class="col-12" id="text-carrossel-CGI">A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                    <p class="col-12" style="text-align: justify;">A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                   </div>
                 </div>
               </div>
