@@ -138,7 +138,7 @@ include '../../app/session/verificacao.php';
                 <div class="row">
                   <div class="col-12 justify-content-center mt-5 align-items-center text-center">
                     <a href="usuarioAdmRecuperar.php">
-                      <button type="submit" class="btn btn-primary" id="button-user">Alterar Senha</button>
+                      <button type="button" class="btn btn-primary" id="button-user">Alterar Senha</button>
                     </a>
                   </div>
                 </div>
