@@ -120,7 +120,7 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p>A Fábrica de Jogos é um projeto que simula uma empresa de desenvolvimento de jogos, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de jogos, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de jogos, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                    <p class="col-12" id="text-carrossel-JG">A Fábrica de Jogos é um projeto que simula uma empresa de desenvolvimento de jogos, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de jogos, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de jogos, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                   </div>
                 </div>
               </div>

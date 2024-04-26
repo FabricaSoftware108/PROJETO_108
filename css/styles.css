@@ -660,6 +660,14 @@ nav.home li:hover ul#menuFabricas {
     right: 10%;
 }
 
+.main-fabrica-de-jogos #text-carrossel-JG {
+    text-align: justify;
+}
+
+.main-fabrica-de-cgi #text-carrossel-CGI {
+    text-align: justify;
+}
+
 #bonecoEffect-cgi {
     position: absolute;
     top: 30%;
@@ -1043,6 +1051,10 @@ div.carousel-item img#carouselImg{
     z-index: 0;
 }
 
+.bodyFabricaSoftware #text-carrossel-SF {
+    text-align: justify;
+}
+
 @media (max-width:1099px) {
     .bodyFabricaSoftware p{
         font-size: 16px;
@@ -1246,6 +1258,10 @@ div.carousel-item img#carouselImg{
         top: 800px;
         right: 50px;
     }
+}
+
+.main-fabrica-de-audiovisual #text-carrossel-AV {
+    text-align: justify;
 }
  /*Fim da Pagina Audio Visual*/
 
