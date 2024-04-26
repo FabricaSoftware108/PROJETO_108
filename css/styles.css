@@ -2089,6 +2089,7 @@ input.cadastro-aluno-psg {
 
 /* EDITAR ADM.PHP*/
 
+
 /* Estilos para o botão de slider padrão */
 .editar-adm-slider .editar-adm-knob {
     width: 100%; /* Largura padrão */
@@ -2127,8 +2128,8 @@ input.cadastro-aluno-psg {
 }
 
 .editar-adm .editar-adm-centered .row {
-    width: 100%;
-    margin: 100px 0 0 0 ;
+    width: 900%;
+    margin:  78 10px ;
 }
 
 .editar-adm .col-md-4{
@@ -2211,7 +2212,7 @@ input.cadastro-aluno-psg {
 
 
 
-@media (max-width: 1832px) {
+ @media (max-width: 1832px) {
     .editar-adm-container-title {
         font-size: 17px !important;
         font-family: var(--font-destaque);
@@ -2220,7 +2221,7 @@ input.cadastro-aluno-psg {
         font-size: 15px !important;
         font-family: var(--font-destaque);
     }
-}
+} 
 
 
 
@@ -2234,6 +2235,13 @@ input.cadastro-aluno-psg {
         
     }}
 
+@media (max-width:366px) {
+        .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        margin: 1 10px;
+        
+    }}
+
 @media (max-width:412px) {
     .editar-adm-nome-aleatorio{
         font-size: 12px !important;
@@ -2241,67 +2249,208 @@ input.cadastro-aluno-psg {
         
     }}
 
-
-@media (max-width:366px) {
-     .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin: 1 10px;
+@media (max-width:443px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 10px !important;
+        margin-bottom: 45PX;
         
     }}
 
+
+    
+@media (max-width:300px) {
+        .editar-adm-nome-aleatorio{
+        font-size: 10px !important;
+        margin: 1 10px;
+        text-align: end;
+
+        
+    }}
+
+    /*teste responsividade telas.*/
+
+@media (max-width:375px) {
+    .editar-adm-nome-aleatorio{
+    font-size: 10px !important;
+    margin: 1 10px;
+    text-align: end;
+
+    
+}}
+
+
+@media (max-width:414px) {
+    .editar-adm-nome-aleatorio{
+    font-size: 10px !important;
+    margin: 1 10px;
+    text-align: end;
+
+    
+}}
+
+
+/*==============================*/
+@media (max-width:310px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 10px !important;
+        margin: 1 10px;
+        text-align: end;
+        
+    }}
+
+@media (max-width:330px) {
+        .editar-adm-nome-aleatorio{
+        font-size: 10px !important;
+        margin: 1 10px;
+        text-align: end;
+        
+    }}
+
+@media (max-width:350px) {
+        .editar-adm-nome-aleatorio{
+        font-size: 11px !important;
+        margin: 1 10px;
+        text-align: end;
+        
+    }}
 
 @media (max-width:360px) {
      .editar-adm-nome-aleatorio{
         font-size: 12px !important;
         margin: 1 10px;
+        text-align: end;
         
     }}
 
-@media (max-width:350px) {
-      .editar-adm-nome-aleatorio{
-        font-size: 11px !important;
-        margin: 1 10px;
-        
-    }}
 
-@media (max-width:330px) {
-      .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin: 1 10px;
-        
-    }}
-
-@media (max-width:310px) {
+@media (max-width:408px) {
     .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin: 1 10px;
-        
-    }}
-
-@media (max-width:300px) {
-     .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin: 1 10px;
+        font-size: 2px !important;
+        text-overflow: ellipsis;
+        white-space:initial;
+        overflow: hidden; 
+        text-align: end;
 
         
-    }}
+        
+        
+    }} 
 
-@media (max-width:506px) {
+@media  (max-width:440px) {
     .editar-adm-nome-aleatorio{
-        font-size: 17px !important;
-        margin: 1 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; 
+        margin: 45px;
 
         
-    }}
+        
+        
+    }} 
+
+@media (max-width:462px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        text-align:end;
+        align-items: center;
+
+        text-overflow: ellipsis !important;
+        white-space:initial !important;
+        overflow: hidden !important; 
+
+        
+        
+        
+    }} 
+
+    
 
 
+
+
+
+
+    
+    
 @media (max-width:412px) {
     .editar-adm-nome-aleatorio{
         font-size: 12px !important;
         margin: 1 10px;
+        text-align: end;
+        
+        
+    }} 
+    
+        
+            
+@media (max-width:506px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 17px !important;
+        margin: 1 10px;
+        text-align: end;
 
         
     }} 
+/* 
+
+@media  only screen and  (min-width:375px) and  (max-width:991px)  {
+    .editar-adm-nome-aleatorio{
+        font-size: 18px !important;
+
+      }
+
+        .editar-adm-container{
+            width: 400px!important;
+            margin: 5 89px;
+        }
+
+        
+    } */
+
+ @media (max-width:894px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 2px !important;
+        text-overflow: ellipsis;
+        white-space:initial;
+        overflow: hidden; 
+
+        
+        
+        
+    }} 
+
+
+@media (max-width:920px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 12px !important;
+        margin:  899px;
+        text-align:right;
+
+        
+    }}   
+
+
+
+@media (max-width:940px) {
+    .editar-adm-nome-aleatorio{
+        margin:  899px;
+        text-align:right;
+
+        
+    }}   
+
+@media (max-width:991px) {
+    .editar-adm-nome-aleatorio{
+        font-size: 13px !important;
+        text-align: center;
+        overflow:unset;
+        text-overflow: ellipsis;
+
+        
+    }}   
+
+    
+
 
 
 /*TESTE DE RESPONSIVIDADE DAS LABELS AO TAMANHO DE TELA.*/
@@ -2493,6 +2642,8 @@ input.cadastro-aluno-psg {
 
 
 /*FIM DO CSS PÁGINA EDITAR ADM.PHP*/
+
+
 
 
 

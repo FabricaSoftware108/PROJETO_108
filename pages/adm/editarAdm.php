@@ -29,8 +29,8 @@ $result = mysqli_query($connection, $query);
 </head>
 
 <body class="Cadastro-Admin">
-  <!--Menu de Navegação-->
-  <!-- <header> 
+  <!-- Menu de Navegação-->
+ <!-- <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -99,7 +99,7 @@ $result = mysqli_query($connection, $query);
           </div>
         </div>
       </nav>        
-  </header> -->
+  </header>  -->
 
  
 <main class="editar-adm">
@@ -137,7 +137,7 @@ $result = mysqli_query($connection, $query);
 </main>
 
 
-  <script src="../js/cadastro-adm.js"></script>
+
 </body>
 
 </html>
