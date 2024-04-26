@@ -117,11 +117,7 @@
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-<<<<<<< Updated upstream
-                    <p class="col-12" style="text-align: justify;">A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audio visual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
-=======
-                    <p>A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audiovisual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
->>>>>>> Stashed changes
+                    <p class="col-12" style="text-align: justify;">A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audiovisual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
                   </div>
                 </div>
               </div>
