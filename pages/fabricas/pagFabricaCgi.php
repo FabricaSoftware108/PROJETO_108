@@ -92,7 +92,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
-                        type="button" href="../editais/pagEdital.html">Editais</a>
+                        type="button" href="../editais/pagEdital.php">Editais</a>
                       </div>
                     </div>
                 </div>
