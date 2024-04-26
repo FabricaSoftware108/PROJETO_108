@@ -90,7 +90,10 @@
                         <h1 class="text-center pt-5">Fábrica de Áudio e Vídeo</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica Áudio e Vídeo é um projeto que simula uma empresa de desenvolvimento de Audio Visual, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de Audio Visual, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de Audio Visual, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">A Fábrica de Audiovisual é um projeto que visa a concepção e entrega de produtos de audiovisuais realizada pelos alunos que colocam em prática os conhecimentos e competências desenvolvidas ao longo do curso.
+                        O projeto é desenhado por meio de um atendimento corporativo atendendo uma demanda de mercado, seja de um parceiro Senac ou até mesmo da própria Instituição.
+                        Seu objetivo é proporcionar ao time de alunos uma experiência prática e imersiva na criação de conteúdo de alta qualidade, com produção e edição de produtos audiovisuais. Essa abordagem permite que os alunos vivenciem todo as etapas de desenvolvimento de projetos audiovisuais, preparando-os para os desafios do mercado de trabalho.
+                        No desenvolvimento do projeto, eles têm a oportunidade de trabalhar com equipamentos profissionais, software de edição e produção, e aprender com profissionais do mercado. Dessa forma, a Fábrica Audiovisual prepara uma nova geração de talentos para atuar no mercado de produção de conteúdo audiovisual, promovendo a inovação, criatividade e excelência na entrega.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
