@@ -50,7 +50,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                             <li><a class="dropdown-item" href="./pagFabricaSoftware.php">Fábrica de Software</a></li> 
                             <li><a class="dropdown-item" href="./pagFabricaJogos.php">Fábrica de Jogos</a></li> 
                             <li><a class="dropdown-item" href="./pagFabricaCgi.php">Fábrica de Computação Gráfica</a></li> 
-                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Audio e Video</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Áudio e Vídeo</a></li> 
                         </ul> 
                     </li>
                     <li class="nav-item">
@@ -94,7 +94,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
-                        type="button" href="../editais/pagEdital.html">Editais</a>
+                        type="button" href="../editais/pagEdital.php">Editais</a>
                       </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p>A Fábrica de Software é um projeto que simula o ambiente de uma empresa de desenvolvimento de software, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Sistemas.</p>
+                    <p class="col-12" style="text-align: justify;">A Fábrica de Software é um projeto que simula o ambiente de uma empresa de desenvolvimento de software, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Sistemas.</p>
                   </div>
                 </div>
               </div>

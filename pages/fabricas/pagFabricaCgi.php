@@ -50,7 +50,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                             <li><a class="dropdown-item" href="./pagFabricaSoftware.php">Fábrica de Software</a></li> 
                             <li><a class="dropdown-item" href="./pagFabricaJogos.php">Fábrica de Jogos</a></li> 
                             <li><a class="dropdown-item" href="./pagFabricaCgi.php">Fábrica de Computação Gráfica</a></li> 
-                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Audio e Video</a></li> 
+                            <li><a class="dropdown-item" href="./pagFabricaAudioVisual.php">Fábrica de Áudio e Vídeo</a></li> 
                         </ul> 
                     </li>
                     <li class="nav-item">
@@ -88,11 +88,13 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                         <h1 class="text-center pt-5">Fábrica de Computação Gráfica</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">Fábrica de Computação Gráfica é um projeto que simula uma empresa de produção de elementos visuais digitais, atendendo a uma demanda de mercado ou do Senac MS.
+                        Seu objetivo é criar experiências interativas personalizadas e de alta qualidade, além de formar profissionais qualificados para atender à demanda de mídia e entretenimento. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. Essa abordagem prática permite que os alunos vivenciem todo as etapas de desenvolvimento de projetos, preparando-os para os desafios do mercado de trabalho.
+                        O projeto também visa impulsionar o avanço do mercado de mídia e entretenimento, promovendo inovação, criatividade e excelência, enquanto prepara uma nova geração de talentos para atender às demandas desse segmento.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
-                        type="button" href="../editais/pagEdital.html">Editais</a>
+                        type="button" href="../editais/pagEdital.php">Editais</a>
                       </div>
                     </div>
                 </div>
@@ -113,7 +115,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p>A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                    <p class="col-12" style="text-align: justify;">A Fábrica de cgi é um projeto que simula uma empresa de desenvolvimento de cgi, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de cgi, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de cgi, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                   </div>
                 </div>
               </div>
@@ -345,7 +347,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
             <a href="../../index.html" class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
               <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png" alt="" class="img-fluid">
             </a>
-            <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de Cgi 108</p>
+            <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de Software 108</p>
             
             <ul class="nav justify-content-center col col-md-4 order-sm-3 order-lg-3">
               <li class="nav-item"><a href="https://www.instagram.com/senachubacademy/" target="_blank" class="nav-link px-2 text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

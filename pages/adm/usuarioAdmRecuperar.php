@@ -125,7 +125,7 @@ include '../../app/session/verificacao.php';
                   <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Senha antiga</h2>
-                      <input type="text" class="form-control" name="oldPassword" value="<?php echo $_SESSION["senha"];?>"/>
+                      <input type="text" class="form-control" name="oldPassword"/>
                     </div>
                   </div>
   
@@ -144,7 +144,7 @@ include '../../app/session/verificacao.php';
   
                   <div class="row">
                     <div class="col-12 justify-content-center align-items-center text-center">
-                      <button type="submit" class="btn btn-primary" id="button-user">Confirmar Mudanças</button>
+                      <button type="submit" class="btn btn-primary" id="button-user">Confirmar Alterações</button>
                     </div>
                   </div>
                 </div>

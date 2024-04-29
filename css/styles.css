@@ -1247,6 +1247,7 @@ div.carousel-item img#carouselImg{
         right: 50px;
     }
 }
+
  /*Fim da Pagina Audio Visual*/
 
 /* PAGINA DEMANDA  */
@@ -1303,18 +1304,14 @@ main.body-demanda {
 
 
 .body-demanda div.effects-2 {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #4815c2;
-    z-index: 1;
-    opacity: 70%;
-    z-index: 0; 
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
 }
 
 .body-demanda #button-submit-demanda {
@@ -5136,6 +5133,7 @@ body.body-relatorio-vagas-emprego .relatorio-vagas_emprego-background{
     padding: 10px;
     max-height: 400px;
     overflow-y: auto;
+    overflow: scroll;
 }
 
 body.body-relatorio-vagas-emprego .label-nome_vagas_emprego,
