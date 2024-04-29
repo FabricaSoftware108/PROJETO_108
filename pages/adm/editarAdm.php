@@ -100,42 +100,41 @@ $result = mysqli_query($connection, $query);
         </div>
       </nav>        
   </header>  -->
-
- 
-<main class="editar-adm">
-  <div class="container-fluid" style="padding-top: 50px;">
-    <div class="container">
-      <div class="editar-adm-centered">
-        <div class="row justify-content-center align-items-center text-center">
-
-          <div class="col-md-6 col-sm-12 justify-content-center align-items-center mb-5">
-            <div class="editar-adm-container" style="width: 100%;">
-              <div class="editar-adm-container-title">Administradores</div>
-
-              <!-- REPETIÇÃO DE ADMIN -->
-
-              <!-- Administrador 1 -->
-              <?php while($row = mysqli_fetch_array($result)){ ?>
-              <div class="editar-adm-borda-com-conteudo">
-                <div class="editar-adm-nome-aleatorio"><?php echo $row["nome"]?> <?php echo $row['email']?></div>
-
-                <!-- Toggle switch -->
-                <div class="editar-adm-switch-container">
-                  <label class="editar-adm-switch">
-                    <input type="checkbox" class="cadastro-adm-checkbox">
-                    <span class=" editar-adm-slider"></span>
-                    <span class=" editar-adm-knob" ></span>
-                  </label>
+    <main class="wrapper-editar-adm editar-adm" >
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-11 justify-content-center align-items-center container-editar-adm" >
+            <div class="col-12 editar-adm-container-title text-center" >
+              <h1>Administradores</h1>
+            </div>
+            <div class="container-fluid">
+            <?php while($row = mysqli_fetch_array($result)){ ?>
+              <div class="row p-0">
+                <div class="col-10 container-name-adm text-center" style="overflow-x: hidden;">
+                  <div class="row">
+                  <div class="col-md-6 col-12" >
+                    <p><?php echo $row['nome'] ?></p>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <p><?php echo $row['email'] ?></p>
+                  </div>
                 </div>
               </div>
-              <?php } ?>
+              <div class="col-2 justify-content-center align-items-center d-flex switch-active-adm m-0">
+              <label class="editar-adm-switch">
+                <input type="checkbox" class="cadastro-adm-checkbox">
+                <span class="editar-adm-slider"></span>
+                <span class="editar-adm-knob"></span>
+            </label>  
 
-
+                </div>
+            </div>
+            <?php } ?>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</main>
-
+  </main>
 
 
 </body>

@@ -2090,56 +2090,6 @@ input.cadastro-aluno-psg {
 /* EDITAR ADM.PHP*/
 
 
-/* Estilos para o botão de slider padrão */
-.editar-adm-slider .editar-adm-knob {
-    width: 100%; /* Largura padrão */
-    
-    
-  }
-  
-  /* Estilos adicionais para quando a tela for menor que 600px */
-  @media  screen and (max-width: 600px) {
-    .editar-adm-slider .editar-adm-knob {
-      width: 80%; /* Largura reduzida */
-   
-    }
-  }
-  
-  /* Estilos adicionais para quando a tela for menor que 400px */
-  @media screen and (max-width: 400px) {
-    .editar-adm-slider .editar-adm-knob {
-      width: 60%; /* Largura ainda mais reduzida */
- 
-    }
-  }
-
-@media screen and (max-width: 289px) {
-.editar-adm-slider .editar-adm-knob {
-    width: 60%; /* Largura ainda mais reduzida */
-
-}
-}
-  
-
-.editar-adm .editar-adm-centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.editar-adm .editar-adm-centered .row {
-    width: 900%;
-    margin:  78 10px ;
-}
-
-.editar-adm .col-md-4{
-    margin:0;
-}
-
-
-.editar-adm .col-md-4{
-    margin: 0;
-}
 
 
 .editar-adm .editar-adm-container{
@@ -2157,53 +2107,14 @@ input.cadastro-aluno-psg {
     align-items: center;
     background-color: #ffffff;
 }
-.editar-adm-container .editar-adm-nome-aleatorio {/* aqui é o quadrado das labels que tem que arrumar*/
-    display:contents;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #cf6767;
-    /* display:contents; */
-}
 
 
-/* .editar-adm-container .editar-adm-borda-com-conteudo{
-    display: flex;
-    justify-content: left;
-    align-items:center;
-    background-color: white !important;
-} */
-
-/* .editar-adm-container .editar-adm-nome-aleatorio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-} */
-
-.editar-adm-container .editar-adm-nome-aleatorio {
-    position: absolute;
-    top: 50%;
-    left: 50%; /* Centralizando horizontalmente */
-    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
-    
-    font-family: var(--font-destaque);
-}
-
-.editar-adm .editar-adm-container-title {
-    background-color: #1E55D1;
-    color: rgb(255, 251, 251);
-    padding: 10px 20px; 
-    height: 60px; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    font-size: 30px;
-    font-family: var(--font-destaque);
-    border-radius: 10px 10px 0 0;
-}
-
-
-
+.wrapper-editar-adm .editar-adm-container-title h1 { font-weight: 500; color: white; font-family: var(--font-destaque); font-size: 30px; padding: 20px 0;}
+.wrapper-editar-adm .editar-adm-container-title { background-color: #1E55D1; border-radius: 10px 10px 0 0; }
+.wrapper-editar-adm {margin-top:  180px;}
+.wrapper-editar-adm .container-editar-adm { border: 1px dashed red; padding: 0; border-radius: 10px 10px 0 0;}
+.wrapper-editar-adm .content-name-editar-adm .nome-aleatorio-2{ font-size: 159px; color: #000    ;  }
+.switch-active-adm p {margin: 0;}
 
 .editar-adm-input-container {
     padding: 20px 30px 0;
@@ -2212,263 +2123,16 @@ input.cadastro-aluno-psg {
 
 
 
- @media (max-width: 1832px) {
-    .editar-adm-container-title {
-        font-size: 17px !important;
-        font-family: var(--font-destaque);
-    }
-    .editar-adm-nome-aleatorio {
-        font-size: 15px !important;
-        font-family: var(--font-destaque);
-    }
-} 
 
-
-
-
-/*AQUI FICAM OS MEDIAS PARA DEIXAR AS LABELS RESPONSIVAS E SE ADQUAREM AO TAMANHO DE TELA, QUANDO DIMINUIDO.*/
- 
-@media (max-width:290px) {
-     .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin: 1 10px;
-        
-    }}
-
-@media (max-width:366px) {
-        .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin: 1 10px;
-        
-    }}
-
-@media (max-width:412px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin: 1 10px;
-        
-    }}
-
-@media (max-width:443px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin-bottom: 45PX;
-        
-    }}
+  
 
 
     
-@media (max-width:300px) {
-        .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin: 1 10px;
-        text-align: end;
-
-        
-    }}
-
-    /*teste responsividade telas.*/
-
-@media (max-width:375px) {
-    .editar-adm-nome-aleatorio{
-    font-size: 10px !important;
-    margin: 1 10px;
-    text-align: end;
-
-    
-}}
-
-
-@media (max-width:414px) {
-    .editar-adm-nome-aleatorio{
-    font-size: 10px !important;
-    margin: 1 10px;
-    text-align: end;
-
-    
-}}
-
-
-/*==============================*/
-@media (max-width:310px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin: 1 10px;
-        text-align: end;
-        
-    }}
-
-@media (max-width:330px) {
-        .editar-adm-nome-aleatorio{
-        font-size: 10px !important;
-        margin: 1 10px;
-        text-align: end;
-        
-    }}
-
-@media (max-width:350px) {
-        .editar-adm-nome-aleatorio{
-        font-size: 11px !important;
-        margin: 1 10px;
-        text-align: end;
-        
-    }}
-
-@media (max-width:360px) {
-     .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin: 1 10px;
-        text-align: end;
-        
-    }}
-
-
-@media (max-width:408px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 2px !important;
-        text-overflow: ellipsis;
-        white-space:initial;
-        overflow: hidden; 
-        text-align: end;
-
-        
-        
-        
-    }} 
-
-@media  (max-width:440px) {
-    .editar-adm-nome-aleatorio{
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden; 
-        margin: 45px;
-
-        
-        
-        
-    }} 
-
-@media (max-width:462px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        text-align:end;
-        align-items: center;
-
-        text-overflow: ellipsis !important;
-        white-space:initial !important;
-        overflow: hidden !important; 
-
-        
-        
-        
-    }} 
-
-    
-
-
-
-
-
-
-    
-    
-@media (max-width:412px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin: 1 10px;
-        text-align: end;
-        
-        
-    }} 
-    
-        
-            
-@media (max-width:506px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 17px !important;
-        margin: 1 10px;
-        text-align: end;
-
-        
-    }} 
-/* 
-
-@media  only screen and  (min-width:375px) and  (max-width:991px)  {
-    .editar-adm-nome-aleatorio{
-        font-size: 18px !important;
-
-      }
-
-        .editar-adm-container{
-            width: 400px!important;
-            margin: 5 89px;
-        }
-
-        
-    } */
-
- @media (max-width:894px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 2px !important;
-        text-overflow: ellipsis;
-        white-space:initial;
-        overflow: hidden; 
-
-        
-        
-        
-    }} 
-
-
-@media (max-width:920px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-        margin:  899px;
-        text-align:right;
-
-        
-    }}   
-
-
-
-@media (max-width:940px) {
-    .editar-adm-nome-aleatorio{
-        margin:  899px;
-        text-align:right;
-
-        
-    }}   
-
-@media (max-width:991px) {
-    .editar-adm-nome-aleatorio{
-        font-size: 13px !important;
-        text-align: center;
-        overflow:unset;
-        text-overflow: ellipsis;
-
-        
-    }}   
-
-    
-
-
-
-/*TESTE DE RESPONSIVIDADE DAS LABELS AO TAMANHO DE TELA.*/
-/* @media only screen and  (min-width: 296px) and (max-width: 310px) and (max-width: 506px){
-    .editar-adm-nome-aleatorio{
-        font-size: 12px !important;
-            margin: 1 10px;
-
-    }
-   
-    }     */
-
-
 
 /* Toggle Switches e conteudos do container de Administradores do EDITAR ADM */
 
 
-.editar-adm .editar-adm-switch {
+.editar-adm .editar-adm-switch{
     display: inline-block;
     position: relative;
     width: 60px;
@@ -2572,77 +2236,8 @@ input.cadastro-aluno-psg {
 }
 
 
-/*TESTE DE RESPONSIVIDADE DO BOTAO AO TAMANHO DE TELA deu certo.*/
-
-
-@media only screen and (max-width:1880px) {
-    .editar-adm-switch-container
-     .editar-adm-slider {
-        display: flex;
-        margin: 0 1px;
-    
-    }}
-
-
-@media only screen and (max-width:1222px) {
-    .editar-adm-switch-container
-        .editar-adm-slider {
-        display: flex;
-        margin: 0 3px;
-    
-    }}   
-    
-    
-@media only screen and (min-width:1152px) and (max-width:1154px) {
-    .editar-adm-switch-container
-        .editar-adm-slider
-        .editar-adm-knob {
-        display: flex;
-        margin: 0 7px;
-    }
-    .editar-adm-knob{
-        display: flex;
-        margin: 0 7px;
-    }}
-
-@media only screen and (max-width:1104px) {
-    .editar-adm-switch-container
-        .editar-adm-slider {
-        display: flex;
-        margin: 0 7px;
-    
-    }
-    .editar-adm-knob{
-        display: flex;
-        margin: 0 7px;
-}}  
-
-
-@media only screen and (max-width:517px) {
-    .editar-adm-switch-container
-        .editar-adm-slider
-        .editar-adm-knob {
-        display: flex;
-        margin: 0 5px;
-    
-    }}   
-    
-    
-@media only screen and (max-width:310px) and (max-width:344px){
-    .editar-adm-switch-container
-        .editar-adm-slider {
-        display: flex;
-        margin: 0 8px;
-    
-    }
-    .editar-adm-knob{
-        display: flex;
-        margin: 0 8px;
-}}  
-
 
 /*FIM DO CSS PÁGINA EDITAR ADM.PHP*/
-
 
 
 
