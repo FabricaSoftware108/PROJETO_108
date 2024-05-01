@@ -1,7 +1,3 @@
-
-
-
-
 <?php
 // include '../../app/session/verificacao.php';
 
@@ -29,8 +25,8 @@ $result = mysqli_query($connection, $query);
 </head>
 
 <body class="Cadastro-Admin">
-  <!-- Menu de Navegação-->
- <!-- <header> 
+  <!--Menu de Navegação-->
+  <!-- <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -99,8 +95,9 @@ $result = mysqli_query($connection, $query);
           </div>
         </div>
       </nav>        
-  </header>  -->
-    <main class="wrapper-editar-adm editar-adm" >
+  </header> -->
+
+  <main class="wrapper-editar-adm editar-adm" >
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-md-5 col-11 justify-content-center align-items-center container-editar-adm" >
@@ -111,23 +108,24 @@ $result = mysqli_query($connection, $query);
             <?php while($row = mysqli_fetch_array($result)){ ?>
               <div class="row p-0">
                 <div class="col-10 container-name-adm text-center" style="overflow-x: hidden;">
-                  <div class="row">
-                  <div class="col-md-6 col-12" >
-                    <p><?php echo $row['nome'] ?></p>
-                  </div>
-                  <div class="col-md-6 col-12">
-                    <p><?php echo $row['email'] ?></p>
+                  <div class="admin-entry mb-3 p-2 border " >
+                    <div class="row">
+                    <div class="col-md-6 col-12" >
+                      <p><?php echo $row['nome'] ?></p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                      <p><?php echo $row['email'] ?></p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-2 justify-content-center align-items-center d-flex switch-active-adm m-0">
-              <label class="editar-adm-switch">
-                <input type="checkbox" class="cadastro-adm-checkbox">
-                <span class="editar-adm-slider"></span>
-                <span class="editar-adm-knob"></span>
-            </label>  
-
-                </div>
+                <label class="editar-adm-switch">
+                  <input type="checkbox" class="cadastro-adm-checkbox">
+                  <span class="editar-adm-slider"></span>
+                  <span class="editar-adm-knob"></span>
+                </label>  
+              </div>
             </div>
             <?php } ?>
             </div>
@@ -137,7 +135,7 @@ $result = mysqli_query($connection, $query);
   </main>
 
 
+  <script src="../js/cadastro-adm.js"></script>
 </body>
 
 </html>
-
