@@ -122,8 +122,14 @@ include '../../app/session/verificacaoPsg.php';
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="cpf" id="cpf" size="27"
                             maxlength="11" placeholder="CPF">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="rg" id="rg" size="27"
-                            maxlength="7" placeholder="RG"><br>
+
+                        <input class="cadastro-aluno-psg col-md-5 col-10 col-sm-12" name="data_nascimento_psg"
+                            id="data_nascimento_psg" placeholder="Data de Nascimento"
+                            type='text'
+                            onfocus="this.type = 'date'"
+                            onblur="if(!this.value) this.type='text'"
+                            max = "9999-12-31"><br>
+
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="telefone" id="telefone"
                             size="27" maxlength="11" placeholder="Telefone">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email"
