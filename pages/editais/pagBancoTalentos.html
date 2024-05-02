@@ -19,6 +19,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <script>
         function validarPost() {
             if (grecaptcha.getResponse() != "") return true;
@@ -118,7 +120,7 @@
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome" id="sobrenome"
                                 size="27" placeholder="Sobrenome">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cpf" id="cpf" size="27"
-                                maxlength="45" placeholder="CPF">
+                                maxlength="14" placeholder="CPF">
                             <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade" id="escolaridade">
                                 <option value="escolaridade">Escolaridade</option>
                                 <option value="medio">Ensino Médio</option>
@@ -130,7 +132,7 @@
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email" id="email" size="27"
                                 maxlength="50" placeholder="Email">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone"
-                                size="27" maxlength="70" placeholder="Telefone">
+                                size="27" maxlength="15" placeholder="Telefone">
                             <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf">
                                 <option value="uf">UF:</option>
                                 <option value="AC">Acre</option>
@@ -207,6 +209,7 @@
 
 
     </main>
+    <script src="../../js/mascara-bancotalentos.js"></script>
     <div class="effects"></div>
     <div class="effects" id="effect2"></div>
 
