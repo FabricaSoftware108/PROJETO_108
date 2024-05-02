@@ -18,6 +18,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <!-- Api do Goggle  -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Verificação do Recaptcha com o formulário. Se não for marcado ele nao envia o formulário. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
     <script>
         function validarPost(){
             if(grecaptcha.getResponse() != "") return true;
@@ -112,13 +114,13 @@
                                 size="27" placeholder="Email"><br>
                     
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj" 
-                                size="27" maxlength="11" placeholder="CNPJ">
+                                size="27" maxlength="18" placeholder="CNPJ">
                     
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cidade" id="cidade" 
                                 size="27" maxlength="70" placeholder="Cidade"><br>
                     
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
-                                size="27" maxlength="50" placeholder="Telefone">
+                                size="27" maxlength="15" placeholder="Telefone">
                     
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="estado" id="estado" 
                                 size="27" maxlength="50" placeholder="Estado"><br>
@@ -148,6 +150,8 @@
                     
                 
             </main>
+    <script src="../../js/mascara-vagasemprego.js"></script>
+
             
             <div class="container-fluid rodape-preto py-1">
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
