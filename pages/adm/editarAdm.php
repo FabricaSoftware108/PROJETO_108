@@ -23,7 +23,7 @@ $result = mysqli_query($connection, $query);
 
 </head>
 
-<body class="Cadastro-Admin">
+<body class="Editar-adm">
   <!--Menu de Navegação-->
   <header>
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
@@ -104,7 +104,7 @@ $result = mysqli_query($connection, $query);
           <div class="col-12 editar-adm-container-title text-center">
             <h1>Administradores</h1>
           </div>
-          <div class="container-fluid">
+          <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
             <?php while ($row = mysqli_fetch_array($result)) { ?>
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
