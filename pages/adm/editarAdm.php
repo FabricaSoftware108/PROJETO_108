@@ -129,6 +129,15 @@ $result = mysqli_query($connection, $query);
               </div>
             <?php } ?>
           </div>
+          <!-- Parte das funçôes no javascript com o switch -->
+          <!-- // Um botão switch específico 
+          $('#id-do-botao-switch').on('switchButton:activated', function() {
+          // do something
+          }) -->
+          <!-- // Um botão switch específico 
+          $('#id-do-botao-switch').on('switchButton:deactivated', function() {
+          // do something
+          }) -->
         </div>
       </div>
     </div>
