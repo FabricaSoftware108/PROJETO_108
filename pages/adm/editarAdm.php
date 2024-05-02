@@ -1,5 +1,5 @@
 <?php
-// include '../../app/session/verificacao.php';
+include '../../app/session/verificacao.php';
 
 include '../../app/db/connection.php';
 
@@ -25,81 +25,82 @@ $result = mysqli_query($connection, $query);
 
 <body class="Cadastro-Admin">
   <!--Menu de Navegação-->
-  <!-- <header> 
+  <header>
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
-        <div class="container-fluid">
-            <div class="md-auto">
+      <div class="container-fluid">
+        <div class="md-auto">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            </div>
-            <a class="navbar-brand me-auto fs-2 fw-bold" id="titulo-cabecalho-adm" href="#">Área de Administração Hub Fábricas</a>
-            <a class="navbar-brand md-auto fs-6" id="nome-cabecalho-adm" href="#"><?php echo $_SESSION['nome'] ?></a>
-          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header ">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5><?php echo $_SESSION['nome'] ?>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-column pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active fs-5" aria-current="page" href="./admHome.php">Home</a>
-                </li>
-                <li class="nav-item dropdown-adm">
-                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Administradores
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
-                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
-                 </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.php">Editais</a>
-                </li>
-
-                <li class="nav-item dropdown-adm">
-                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Fábricas
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./adicionarCarrosselAdm.php">Cadastrar Carrossel</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrosselAdm.php">Editar Carrossel </a></li>
-                 </ul>
-                </li>
-
-
-                <li class="nav-item dropdown-adm">
-                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Relatórios
+        </div>
+        <a class="navbar-brand me-auto fs-2 fw-bold" id="titulo-cabecalho-adm" href="#">Área de Administração Hub Fábricas</a>
+        <a class="navbar-brand md-auto fs-6" id="nome-cabecalho-adm" href="#"><?php echo $_SESSION['nome'] ?></a>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header ">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5><?php echo $_SESSION['nome'] ?>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column pe-3">
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="./admHome.php">Home</a>
+              </li>
+              <li class="nav-item dropdown-adm">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Administradores
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
-                    <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
-                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
-                    <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
+                  <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
+                  <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" aria-current="page" href="./cadastroAdmEdital.php">Editais</a>
+              </li>
+
+              <li class="nav-item dropdown-adm">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fábricas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="./adicionarCarrosselAdm.php">Cadastrar Carrossel</a></li>
+                  <li><a class="dropdown-item" href="./editarCarrosselAdm.php">Editar Carrossel </a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown-adm">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Relatórios
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
+                  <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
+                  <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                  <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                 </ul>
-                </li>
+              </li>
 
 
-                <li class="nav-item fs-5">
-                  <a class="nav-link" href="./usuarioAdm.php">Usuário</a>
-                </li>
-                <li class="nav-item mt-auto mb-2">
-                  <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
-                </li>
-              </ul>
-            </div>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="./usuarioAdm.php">Usuário</a>
+              </li>
+              <li class="nav-item mt-auto mb-2">
+                <a class="nav-link fs-5" href="../../app/session/logout.php">Sair</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>        
-  </header> -->
+      </div>
+    </nav>
+  </header>
+
 
   <main class="wrapper-editar-adm editar-adm">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-md-5 col-11 justify-content-center align-items-center container-editar-adm">
+        <div class="col-md-6 col-11 justify-content-center align-items-center container-editar-adm">
           <div class="col-12 editar-adm-container-title text-center">
             <h1>Administradores</h1>
           </div>
@@ -107,22 +108,22 @@ $result = mysqli_query($connection, $query);
             <?php while ($row = mysqli_fetch_array($result)) { ?>
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
-                  
-                    <div class="row">
-                      <div class="col-md-12 col-12">
-                       
-                        <div class="ls-box">
-                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2>
-                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
 
-                          <div data-ls-module="switchButton" class="ls-switch-btn ls-float-right">
-                            <input type="checkbox" id="teste">
-                            <label class="ls-switch-label" for="teste" name="label-teste" ><span></span></label>
-                          </div>
+                  <div class="row">
+                    <div class="col-md-12 col-12">
+
+                      <div class="ls-box outline-box" style="text-align: start;">
+                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
+                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
+
+                        <div data-ls-module="switchButton" class="ls-switch-btn ls-float-right switchbutton">
+                          <input type="checkbox" id="teste">
+                          <label class="ls-switch-label" for="teste" name="label-teste"><span></span></label>
                         </div>
                       </div>
                     </div>
-                  
+                  </div>
+
                 </div>
 
               </div>
@@ -133,7 +134,7 @@ $result = mysqli_query($connection, $query);
     </div>
   </main>
   <footer>
-  <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script> 
+    <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
   </footer>
 
 
