@@ -117,8 +117,8 @@ $result = mysqli_query($connection, $query);
                         <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
 
                         <div data-ls-module="switchButton" class="ls-switch-btn ls-float-right switchbutton">
-                          <input type="checkbox" id="teste">
-                          <label class="ls-switch-label" for="teste" name="label-teste"><span></span></label>
+                          <input type="checkbox" id="switch-adm">
+                          <label class="ls-switch-label" for="teste" name="switch-adm" ><span></span></label>
                         </div>
                       </div>
                     </div>
@@ -137,7 +137,8 @@ $result = mysqli_query($connection, $query);
           <!-- // Um botão switch específico 
           $('#id-do-botao-switch').on('switchButton:deactivated', function() {
           // do something
-          }) -->
+          })
+        https://opensource.locaweb.com.br/locawebstyle/documentacao/componentes/botao-switch/ -->
         </div>
       </div>
     </div>
