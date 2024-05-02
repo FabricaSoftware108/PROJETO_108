@@ -112,16 +112,21 @@ include '../../app/session/verificacao.php';
                                                 <input type="email" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
                                             </div>
 
+                                            <div class="cadastro-adm-edital-input-container">
+                                                <label for="cadastro-adm-edital-limite-aluno" class="cadastro-adm-edital-label">Limite de Alunos</label>
+                                                <input type="number" size="10"  id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
+                                            </div>
+
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-md-6">
 
-                                                        <label for="cadastro-adm-edital-data" id="centerDateInicio" class="cadastro-adm-edital-label-data">Data de Início</label>
+                                                        <label for="cadastro-adm-edital-data" id="centerDateInicio" class="cadastro-adm-edital-label-data">Data Ínicial</label>
                                                         <input type="date" class="form-control" id="cadastroAdmEditalDataInicial">
                                                     </div>
                                                     <div class="col-md-6 mt-2 mt-md-0">
 
-                                                        <label for="cadastro-adm-edital-data"  id="centerDateFinal"class="cadastro-adm-edital-label-data">Data de Fim</label>
+                                                        <label for="cadastro-adm-edital-data"  id="centerDateFinal"class="cadastro-adm-edital-label-data">Data Final</label>
                                                         <input type="date" class="form-control" id="cadastroAdmEditalDataFinal">
                                                     </div>
                                                 </div>
