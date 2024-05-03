@@ -26,6 +26,8 @@ include '../../app/session/verificacaoPsg.php';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
         <script>
             function validarPost(){
@@ -120,12 +122,16 @@ include '../../app/session/verificacaoPsg.php';
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome"
                         id="nome" size="27" maxlength="100" placeholder="Nome Completo">
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="cpf" id="cpf" size="27"
-                            maxlength="11" placeholder="CPF">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="rg" id="rg" size="27"
-                            maxlength="7" placeholder="RG"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="telefone" id="telefone"
-                            size="27" maxlength="11" placeholder="Telefone">
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cpf" id="cpf" size="27"
+                            maxlength="14" placeholder="CPF">
+                        <input class="cadastro-aluno-psg col-md-5 col-10 col-sm-12" name="data_nascimento_psg"
+                            id="data_nascimento_psg" placeholder="Data de Nascimento"
+                            type='text'
+                            onfocus="this.type = 'date'"
+                            onblur="if(!this.value) this.type='text'"
+                            max = "9999-12-31"><br>
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
+                            size="27" maxlength="15" placeholder="Telefone">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email"
                             size="27" maxlength="70" placeholder="E-mail"><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomeMae" id="nomeMae"
@@ -139,10 +145,10 @@ include '../../app/session/verificacaoPsg.php';
                     <div class="col-12">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro"
                             size="27" maxlength="50" placeholder="Bairro">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="numero" id="numero"
                             size="27" maxlength="4" placeholder="Número"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="cep" id="cep" size="27"
-                            maxlength="8" placeholder="CEP">
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27"
+                            maxlength="9" placeholder="CEP">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="complemento"
                             id="complemento" size="27" maxlength="100" placeholder="Complemento"><br>
                     </div>
@@ -160,6 +166,7 @@ include '../../app/session/verificacaoPsg.php';
 
         </div>
     </main>
+    <script src="../../js/mascara-aluno.js"></script>
     <div class="container-fluid rodape-preto py-1">
         <footer
             class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
