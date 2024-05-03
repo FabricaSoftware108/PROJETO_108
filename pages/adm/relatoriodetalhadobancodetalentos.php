@@ -1,5 +1,10 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
+
+$query = "SELECT * FROM bancosTalentos WHERE cpf = '{$_SESSION["bancoTalentosCodigo"]}'";
+$result = mysqli_query($connection, $query);
+$row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -119,7 +124,7 @@ include '../../app/session/verificacao.php';
                                     </div>
 
                                     <div class="col-12" id="tabela-relatorio-detalhado-bt">
-                                        <table>
+                                        <table >
                                             <thead>
                                                 <tr>
                                                     <th scope="col" colspan="4">Informações</th>
@@ -127,58 +132,72 @@ include '../../app/session/verificacao.php';
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td scope="col" colspan="4">Nome:
-                                                        <p class="info-relatorio-detalhado-bt">Igor Souza Loureiro
-                                                            da
-                                                            Silva Fernandes Carvalho Bragança</p>
+                                                    <td scope="col" colspan="2">Nome:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['nome'] ?></p>
                                                     </td>
+                                                    <td scope="col" colspan="2">Sobrenome:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['sobrenome'] ?></p>
+                                                    </td>
+                                                    
                                                 </tr>
-                                            </tbody>
-                                            <tbody>
                                                 <tr>
                                                     <td colspan="2">Telefone:
-                                                        <p class="info-relatorio-detalhado-bt">67940028922</p>
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['telefone'] ?></p>
                                                     </td>
                                                     <td colspan="2">CPF:
-                                                        <p class="info-relatorio-detalhado-bt">000.000.000-00</p>
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cpf'] ?></p>
                                                     </td>
                                                 </tr>
-                                            </tbody>
-                                            <tbody>
                                                 <tr>
                                                     <td colspan="2">E-mail:
-                                                        <p class="info-relatorio-detalhado-bt">Email@example.com</p>
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['email'] ?></p>
                                                     </td>
-                                                    <td colspan="2">Linkedin:
-                                                        <p class="info-relatorio-detalhado-bt">
-                                                            https://br.linkedin.com/exemplodeperfil</p>
+                                                    <td colspan="2">Data de Nascimento:
+                                                        <p class="info-relatorio-detalhado-bt"><?php
+                                                            $date = date_create( $row['dataNascimento']);
+                                                            echo (date_format( $date, "d/m/Y"));
+                                                         ?></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Escolaridade:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['escolaridade'] ?></p>
+                                                    </td>
+                                                    <td colspan="2">Estado:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['estado'] ?></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Cidade:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cidade'] ?></p>
+                                                    </td>
+                                                    <td colspan="2">Bairro:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['bairro'] ?></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Rua:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['rua'] ?></p>
+                                                    </td>
+                                                    <td colspan="2">Numero:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['numero'] ?></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" colspan="4">Sobre a pessoa</th>
+                                                    <th scope="col" colspan="4">Contato</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td colspan="4" class="td-sobre-pessoa-relatorio-detalhado-bt">
-                                                        Lorem
-                                                        Ipsum is simply dummy text of the printing and typesetting
-                                                        industry. Lorem Ipsum has been the industry's standard dummy
-                                                        text ever since the 1500s, when an unknown printer took a
-                                                        galley
-                                                        of type and scrambled it to make a type specimen book. It
-                                                        has
-                                                        survived not only five centuries, but also the leap into
-                                                        electronic typesetting, remaining essentially unchanged. It
-                                                        was
-                                                        popularised in the 1960s with the release of Letraset sheets
-                                                        containing Lorem Ipsum passages, and more recently with
-                                                        desktop
-                                                        publishing software like Aldus PageMaker including versions
-                                                        of
-                                                        Lorem Ipsum.</td>
+                                                    <td colspan="2">Linkedin:
+                                                        <p class="info-relatorio-detalhado-bt"><a href="<?php echo $row['linkedin'] ?>"><?php echo $row['linkedin'] ?></a></p>
+                                                    </td>
+    
+                                                    <td colspan="2">GitHub:
+                                                        <p class="info-relatorio-detalhado-bt"><a href="<?php echo $row['github'] ?>"><?php echo $row['github'] ?></a></p>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

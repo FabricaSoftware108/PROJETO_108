@@ -121,15 +121,15 @@ include '../../app/db/connection.php';
                         <th class="label-linkedin_banco_talento">Linkedin</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
                       <form action="../../app/session/actionBancoTalentosDetalhado.php" method="post">
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
                         <tr>
-                          <td class="h9"><button class="btn" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"];?>"> <?php echo $retorno["nome"];?></button></td>
-                          <td class="h9"><?php echo $retorno["email"];?></td>
-                          <td class="h9"><?php echo $retorno["cpf"];?></td>
-                          <td class="h9"><?php echo $retorno["telefone"];?></td>
-                          <td class="h9"><?php echo $retorno["linkedin"];?></td>
+                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"> <?php echo $retorno["nome"];?></button></td>
+                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["email"];?></button></td>
+                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["cpf"];?></button></td>
+                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["telefone"];?></button></td>
+                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["linkedin"];?></button></td>
                         </tr>
                       <?php }?>
                       </form>
