@@ -127,8 +127,12 @@
                                 <option value="superior">Superior</option>
                                 <option value="graduacao">Graduação</option>
                             </select><br>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="date" name="data_nascimento"
-                                id="data_nascimento">
+                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento"
+                                id="dataNascimento" placeholder="Data de Nascimento"
+                                type='text'
+                                onfocus="this.type = 'date'"
+                                onblur="if(!this.value) this.type='text'"
+                                max = "9999-12-31">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email" id="email" size="27"
                                 maxlength="50" placeholder="Email">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone"
