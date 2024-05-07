@@ -1,5 +1,7 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
+
 ?>
 <!-- CABEÇALHO E MENU SANDUICHE DO ADM -->
 <!DOCTYPE html>
@@ -110,7 +112,7 @@ include '../../app/session/verificacao.php';
                   <h1>Relatório Aluno</h1>
                 </div>
                 <!-- <div class="container mt-3"> -->
-                <input type="text" size="34" maxlength="11" id="relatorioAlunoAdmInput"
+                <input type="text" size="34" id="relatorioAlunoAdmInput"
                   class="form-control relatorio-aluno-adm-input" placeholder="Digite o nome do edital que procura.">
                 <!-- </div> -->
               </div>
@@ -120,77 +122,40 @@ include '../../app/session/verificacao.php';
                 <div class="quadro-cinza-adm-relatorio">
                   <div class="quadro-branco-adm-relatorio">
                     <div class="relatorio-adm-borda-com-conteudo">
+                      <form action="../../app/session/actionEdital.php" method="post">
+                          <?php
+                              $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
+                              $result = mysqli_query($connection, $query);
 
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 12/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 12/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 12/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-red-adm"></span>
-                        Processo Seletivo 06/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-red-adm"></span>
-                        Processo Seletivo 06/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-red-adm"></span>
-                        Processo Seletivo 06/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 08/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 10/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 11/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 13/2023 - Fábrica de Software - Aluno
-                      </label>
-
-                      <label class="text-relatorio-processo-seletivo">
-                        <span class="icon-green-adm"></span>
-                        Processo Seletivo 12/2023 - Fábrica de Software - Aluno
-                      </label>
-
+                              while($row = mysqli_fetch_array($result)){
+                                  $today = date("Y-m-d");
+                                  if($today >= $row["dataFim"] || $row["quantidadeAlunos"] == $row["alunosCadastrados"]){
+                                      $dateColor = "icon-red-adm";
+                                  }
+                                  else{
+                                      $dateColor = "icon-green-adm";
+                                  }
+                                  ?>
+                                  <div class="mx-2 my-2">
+                                    <label class="text-relatorio-processo-seletivo editalRelat <?php echo "{$row["codigo"]}" ?> btn btn-light" type="submit" name="editalCode" value="<?php echo $row["codigo"] ?>">
+                                      <span class="<?php echo $dateColor ?>"></span>
+                                      Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?>
+                                    </label>
+                                  </div>
+                          <?php } ?>
+                        </form>
                     </div>
                   </div>
                 </div>
-                <!-- </div> -->
-                <!-- </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- </div> -->
     </div>
   </main>
+
+  <script src="../../js/editalFilter.js"></script>
 </body>
 
 </html>
