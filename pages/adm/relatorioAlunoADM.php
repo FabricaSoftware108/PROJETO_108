@@ -130,17 +130,20 @@ include '../../app/db/connection.php';
                               while($row = mysqli_fetch_array($result)){
                                   $today = date("Y-m-d");
                                   if($today >= $row["dataFim"] || $row["quantidadeAlunos"] == $row["alunosCadastrados"]){
-                                      $dateColor = "icon-red-adm";
+                                      $dateColor = "bg-danger";
                                   }
                                   else{
-                                      $dateColor = "icon-green-adm";
+                                      $dateColor = "bg-success";
                                   }
                                   ?>
                                   <div class="mx-2 my-2">
-                                    <label class="text-relatorio-processo-seletivo editalRelat <?php echo "{$row["codigo"]}" ?> btn btn-light" type="submit" name="editalCode" value="<?php echo $row["codigo"] ?>">
-                                      <span class="<?php echo $dateColor ?>"></span>
-                                      Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?>
-                                    </label>
+                                    <button class="btn w-100 btn-light editalRelat" id=" <?php echo "{$row["codigo"]}"?> <?php echo $row["nome"] ?>" type="submit" name="editalCode" value="<?php echo $row["codigo"] ?>">
+                                      <label class="d-flex align-items-center">
+                                        <div class="<?php echo $dateColor ?> me-4 rounded" style="width: 20px; height:20px;"></div>
+                                        Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?>
+                                      </label>
+
+                                    </button>
                                   </div>
                           <?php } ?>
                         </form>

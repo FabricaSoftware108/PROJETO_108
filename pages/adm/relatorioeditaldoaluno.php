@@ -1,6 +1,10 @@
 <?php
 include '../../app/session/verificacao.php';
-include '../../app/session/conexaoAlunosPSG.php';
+include '../../app/db/connection.php';
+
+$query = "SELECT * FROM alunosPsg WHERE cpf = '{$_SESSION["alunoCode"]}'";
+$result = mysqli_query($connection, $query);
+$row = mysqli_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -97,33 +101,79 @@ include '../../app/session/conexaoAlunosPSG.php';
           <div class="relatorio_edital_do_aluno-container">
             <div class="relatorio_edital_do_aluno-background-container">
               <div class="relatorio_edital_do_aluno-header">
-                <div class="relatorio_edital_do_aluno-title">Relatório do Edital do Aluno</div>
+                <div class="relatorio_edital_do_aluno-title">Relatório Detalhado - Aluno</div>
               </div>
               <div class="relatorio_edital_do_aluno-content">
-                <div class="relatorio_edital_do_aluno-background">
-                  <table class="table" id="table_relatorio_edital_do_aluno">
-                    <thead>
-                      <tr>
-                        <th class="label-nome_edital_do_aluno">Nome</th>
-                        <th class="label-cpf_edital_do_aluno">CPF</th>
-                        <th class="label-cep_edital_do_aluno">CEP</th>
-                        <th class="label-telefone_edital_do_aluno">Telefone</th>
-                        <th class="label-email_edital_do_aluno">E-mail</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <?php while ($retorno = mysqli_fetch_array($result)){?>
-                          <tr>
-                            <td><?php echo $retorno["nome"];?></td>
-                            <td><?php echo $retorno["cpf"];?></td>
-                            <td><?php echo $retorno["cep"];?></td>
-                            <td><?php echo $retorno["telefone"];?></td>
-                            <td><?php echo $retorno["email"];?></td>
-                          </tr>
-                        <?php }?>
-                      </tbody>
-                  </table>
-                </div>
+                  <table >
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">Informações Pessoais</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-start">
+
+                            <tr >
+                                <td scope="col" colspan="4">Nome:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['nome'] ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Telefone:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['telefone'] ?></p>
+                                </td>
+                                <td colspan="2">CPF:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['cpf'] ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">E-mail:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['email'] ?></p>
+                                </td>
+                                <td colspan="2">Data de Nascimento:
+                                    <p class="info-relatorio-detalhado-bt"><?php
+                                        $date = date_create( $row['dataNascimento']);
+                                        echo (date_format( $date, "d/m/Y"));
+                                      ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Nome do Pai:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['nomePai'] ?></p>
+                                </td>
+                                <td colspan="2">Nome da Mãe:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['nomeMae'] ?></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">Endereço</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-start">
+                            <tr>
+                                <td colspan="2">Rua:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['rua'] ?></p>
+                                </td>
+                                <td colspan="2">Bairro:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['bairro'] ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Número:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['numero'] ?></p>
+                                </td>
+                                <td colspan="2">Complemento:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['complemento'] ?></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">CEP:
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['cep'] ?></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 <button class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
               </div>
             </div>
