@@ -29,14 +29,14 @@ include '../../app/session/verificacaoPsg.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
-        <script>
+        <!-- <script>
             function validarPost(){
                //verifica se o recaptcha foi selecionado
                if(grecaptcha.getResponse() !='') return true;
                alert('Selecione o checkbox de não sou um robô!!')
                 return false;
             }
-        </script>
+        </script> -->
 </head>
 
 <body>
@@ -154,7 +154,7 @@ include '../../app/session/verificacaoPsg.php';
                     </div>
 
                      <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
-                     <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+                     <!-- <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div> -->
 
                      <div class="button-enviar-vagas">
                         <button type="submit" class="btn btn-primary">Enviar</button>
