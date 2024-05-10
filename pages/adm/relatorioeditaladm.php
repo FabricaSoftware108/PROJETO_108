@@ -182,10 +182,10 @@ include '../../app/db/connection.php';
                       <form action="../../app/session/actionEditalDetalhado.php" method="post">
                         <tr>
                           <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["nome"]?></button></td>
-                          <td><?php echo $row["cpf"] ?></td>
-                          <td><?php echo $row["cep"] ?></td>
-                          <td><?php echo $row["telefone"] ?></td>
-                          <td><?php echo $row["email"] ?></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["cpf"] ?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["cep"] ?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["telefone"] ?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["email"] ?></button></td>
                         </tr>
 
                       </form>

@@ -116,15 +116,18 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                         </tr>
                       </thead>
                       <tbody>
-                        <?php while ($retorno = mysqli_fetch_array($result)){?>
-                          <tr>
-                            <td class="h9"><?php echo $retorno["nomeEmpresa"];?></td>
-                            <td class="h9"><?php echo $retorno["nomeTitular"];?></td>
-                            <td class="h9"><?php echo $retorno["cnpj"];?></td>
-                            <td class="h9"><?php echo $retorno["telefoneTitular"];?></td>
-                            <td class="h9"><?php echo $retorno["emailTitular"];?></td>
-                          </tr>
-                        <?php }?>
+                        <form action="../../app/session/actionDemanda.php" method="post">
+
+                          <?php while ($row = mysqli_fetch_array($result)){?>
+                            <tr>
+                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["nomeEmpresa"];?></button></td>
+                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["nomeTitular"];?></button></td>
+                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["cnpj"];?></button></td>
+                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["telefoneTitular"];?></button></td>
+                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["emailTitular"];?></button></td>
+                            </tr>
+                          <?php }?>
+                        </form>
                       </tbody>
                     </table>
                   </div>
