@@ -96,15 +96,15 @@ include '../../app/session/verificacao.php';
       </nav>        
   </header>
 
-  <main class="main-usuarioAdm">
+  <main class="main-usuarioAdm mt-5 pt-1">
   <form method="post" action="../../app/session/conexaoUsuarioAdm.php">
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center">
+    <div class="container-fluid justify-content-center align-items-center d-flex">
+      <div class="row justify-content-center align-items-center" style="width: 100%;">
         <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
           <img src="../../Imagens/undraw_mobile_content_xvgr.svg" class="img-fluid" alt="usuario-adm">
         </div>
-        <div class="col-md-5 col-12">
-          <div class="wrapper-usuario-adm">
+        <div class="col-md-6 col-12" >
+          <div class="wrapper-usuario-adm" >
             <div class="content-usuario-adm">
               <div class="content-top-user">
                 <h1>Usuário</h1>
@@ -136,7 +136,7 @@ include '../../app/session/verificacao.php';
                 </div>
 
                 <div class="row">
-                  <div class="col-12 justify-content-center mt-5 align-items-center text-center">
+                  <div class="col-12 justify-content-center mt-2 mb-5 align-items-center text-center">
                     <a href="usuarioAdmRecuperar.php">
                       <button type="button" class="btn btn-primary" id="button-user">Alterar Senha</button>
                     </a>

@@ -97,14 +97,14 @@ include '../../app/session/verificacao.php';
   </header>
 
 
-  <main class="main-usuarioAdm">
+  <main class="main-usuarioAdm mt-5">
     <form method="post" action="../../app/session/conexaoUsuarioAdmRecuperar.php">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
             <img src="../../Imagens/undraw_fingerprint_login_re_t71l.svg" class="img-fluid" alt="usuario-adm">
           </div>
-          <div class="col-md-5 col-12 offset-md-1">
+          <div class="col-md-5 col-12 ">
             <div class="wrapper-usuario-adm">
               <div class="content-usuario-adm">
                 <div class="content-top-user">
@@ -142,7 +142,7 @@ include '../../app/session/verificacao.php';
                     </div>
                   </div>
   
-                  <div class="row">
+                  <div class="row mb-3">
                     <div class="col-12 justify-content-center align-items-center text-center">
                       <button type="submit" class="btn btn-primary" id="button-user">Confirmar Alterações</button>
                     </div>

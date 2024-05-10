@@ -3119,21 +3119,15 @@ overflow: hidden;
 
 /*usuario adm*/
 
-.main-usuarioAdm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
 .main-usuarioAdm .wrapper-usuario-adm {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; height: 100%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
+.main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
 .main-usuarioAdm .wrapper-usuario-adm {width: 100%; height: 780px;}
 
 .main-usuarioAdm .content-top-user {
@@ -3186,16 +3180,9 @@ overflow: hidden;
     .main-usuarioAdm #img-usuario-adm {
         display: none;
     }
-    .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 120px !important;
-    }
 }
 
-@media (max-width: 600px) {
-    .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 120px !important;
-    }
-}
+
 #button-confirmar_editar{
     width: 100%;
     font-size:16px ;

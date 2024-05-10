@@ -90,10 +90,10 @@
                         <h1 class="text-center pt-5">Fábrica de Áudio e Vídeo</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de Audiovisual é um projeto que visa a concepção e entrega de produtos de audiovisuais realizada pelos alunos que colocam em prática os conhecimentos e competências desenvolvidas ao longo do curso.
+                        <p class="col-12">A Fábrica de Áudio e Vídeo é um projeto que visa a concepção e entrega de produtos audiovisuais realizadas pelos alunos que colocam em prática os conhecimentos e competências desenvolvidas ao longo do curso.
                         O projeto é desenhado por meio de um atendimento corporativo atendendo uma demanda de mercado, seja de um parceiro Senac ou até mesmo da própria Instituição.
                         Seu objetivo é proporcionar ao time de alunos uma experiência prática e imersiva na criação de conteúdo de alta qualidade, com produção e edição de produtos audiovisuais. Essa abordagem permite que os alunos vivenciem todo as etapas de desenvolvimento de projetos audiovisuais, preparando-os para os desafios do mercado de trabalho.
-                        No desenvolvimento do projeto, eles têm a oportunidade de trabalhar com equipamentos profissionais, software de edição e produção, e aprender com profissionais do mercado. Dessa forma, a Fábrica Audiovisual prepara uma nova geração de talentos para atuar no mercado de produção de conteúdo audiovisual, promovendo a inovação, criatividade e excelência na entrega.</p>
+                        No desenvolvimento do projeto, eles têm a oportunidade de trabalhar com equipamentos profissionais, software de edição e produção, e aprender com profissionais do mercado. Dessa forma, a Fábrica de Áudio e Vídeo prepara uma nova geração de talentos para atuar no mercado de produção de conteúdo audiovisual, promovendo a inovação, criatividade e excelência na entrega.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
@@ -117,7 +117,7 @@
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
                   <div class="row text-light pb-5">
-                    <p class="col-12" style="text-align: justify;">A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audio visual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
+                    <p class="col-12" style="text-align: justify;">A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audiovisual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
                   </div>
                 </div>
               </div>
