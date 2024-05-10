@@ -1,7 +1,11 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
 
-echo "<script>alert('{$_SESSION['vagasEmpregoCodigo']}')</script>";
+$query = "SELECT * FROM demandas";
+$result = mysqli_query($connection, $query);
+$row = mysqli_fetch_array($result);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -106,7 +110,7 @@ echo "<script>alert('{$_SESSION['vagasEmpregoCodigo']}')</script>";
                                     <div class="container" id="relatorio-detalhado-bt-label-azul">
                                         <div class="row justify-content-center">
                                             <div class="col-sm-12 col-lg-8">
-                                                <p class="relatorio-detalhado-bt-titulo">Relatório Detalhado Empresa
+                                                <p class="relatorio-detalhado-bt-titulo">Relatório Detalhado Empresa <?php echo $_SESSION['demandaCode'] ?>
                                                 </p>
                                             </div>
                                         </div>
@@ -117,38 +121,56 @@ echo "<script>alert('{$_SESSION['vagasEmpregoCodigo']}')</script>";
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" colspan="4">Informações</th>
+                                                    <th scope="col" colspan="4">Dados da Empresa</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td scope="col" colspan="2">Nome da Empresa:
-                                                        <p class="info-relatorio-detalhado-bt">Tchurusbangos</p>
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['nomeEmpresa'] ?></p>
                                                     </td>
-                                                    <td scope="col" colspan="2">Nome do Representante:
-                                                        <p class="info-relatorio-detalhado-bt">Jack Smith Turner</p>
+                                                    <td scope="col" colspan="2">Email:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['emailEmpresa'] ?></p>
                                                     </td>
                                                     
                                                 </tr>
-                                            </tbody>
-                                            <tbody>
                                                 <tr>
-                                                    <td colspan="2">Telefone:
-                                                        <p class="info-relatorio-detalhado-bt">6799864578</p>
+                                                    <td colspan="2">CNPJ:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cnpj'] ?></p>
                                                     </td>
-                                                    <td colspan="2">CPF/CNPJ:
-                                                        <p class="info-relatorio-detalhado-bt">000.000.000-00</p>
+                                                    <td colspan="2">Estado:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['estadoEmpresa'] ?></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Cidade:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cidadeEmpresa'] ?></p>
+                                                    </td>
+                                                    <td colspan="2">Telefone:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['telefoneEmpresa'] ?></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" colspan="4">Dados do Titular</th>
+                                                </tr>
+                                            </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td colspan="2">E-mail Representante:
-                                                        <p class="info-relatorio-detalhado-bt">Email@example.com</p>
+                                                    <td colspan="2">Nome:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['nomeTitular'] ?></p>
                                                     </td>
-                                                    <td colspan="2">E-mail Empresa:
-                                                        <p class="info-relatorio-detalhado-bt">
-                                                            Email@example.com</p>
+                                                    <td colspan="2">E-mail:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['emailTitular'] ?></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">CPF:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cpf'] ?></p>
+                                                    </td>
+                                                    <td colspan="2">Telefone:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['telefoneTitular'] ?></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -158,17 +180,15 @@ echo "<script>alert('{$_SESSION['vagasEmpregoCodigo']}')</script>";
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <!-- <tr class="d-flex justify-content-center align-items-center bg-primary w-100">
+                                                    <td colspan="4" class="td-proposta-projeto-relatorio-detalhado-bt ">
+                                                        
+                                                    </td>
+                                                </tr> -->
                                                 <tr>
-                                                    <td colspan="4" class="td-proposta-projeto-relatorio-detalhado-bt">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                        Atque rerum dolorem vel perspiciatis blanditiis ipsum 
-                                                        dicta sit quia quae! Aliquid soluta nulla facere eveniet!
-                                                        Sed aperiam cumque rerum consequatur itaque. Lorem ipsum
-                                                        dolor sit amet consectetur, adipisicing elit.
-                                                        Architecto minus excepturi, placeat quam qui
-                                                        quo cupiditate debitis sit nobis recusandae?
-                                                        Expedita dicta quas laborum cumque magnam,
-                                                        porro modi sed similique.</td>
+                                                    <td colspan="4">
+                                                        <p><a href="../../documents/projetos/OfertaDemanda.pdf" class="ms-4 link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" Download>Download Projeto</a></p>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

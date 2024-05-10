@@ -1,5 +1,6 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -158,7 +159,7 @@ include '../../app/session/verificacao.php';
           <div class="relatorio_edital_do_aluno-container">
             <div class="relatorio_edital_do_aluno-background-container">
               <div class="relatorio_edital_do_aluno-header">
-                <div class="relatorio_edital_do_aluno-title">Relatório do Edital do Aluno</div>
+                <div class="relatorio_edital_do_aluno-title">Relatório do Edital do Aluno - <?php echo $_SESSION['editalCode']?></div>
               </div>
               <div class="relatorio_edital_do_aluno-content">
                 <div class="relatorio_edital_do_aluno-background">
@@ -173,76 +174,22 @@ include '../../app/session/verificacao.php';
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
-                      <tr>
-                        <td>Nome 1</td>
-                        <td>CPF 1</td>
-                        <td>CEP 1</td>
-                        <td>Telefone 1</td>
-                        <td>E-mail 1</td>
-                      </tr>
+                    <?php
+                      $query = "SELECT * FROM alunosPsg WHERE alunosPsg.codigoEdital = '{$_SESSION["editalCode"]}'";
+                      $result = mysqli_query($connection, $query);
+
+                      while($row = mysqli_fetch_array($result)){ ?>
+                      <form action="../../app/session/actionEditalDetalhado.php" method="post">
+                        <tr>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["nome"]?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["cpf"] ?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["cep"] ?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["telefone"] ?></button></td>
+                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["email"] ?></button></td>
+                        </tr>
+
+                      </form>
+                      <?php } ?>
                     </tbody>
                   </table>
                 </div>

@@ -29,14 +29,14 @@ include '../../app/session/verificacaoPsg.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
-        <script>
+        <!-- <script>
             function validarPost(){
                //verifica se o recaptcha foi selecionado
                if(grecaptcha.getResponse() !='') return true;
                alert('Selecione o checkbox de não sou um robô!!')
                 return false;
             }
-        </script>
+        </script> -->
 </head>
 
 <body>
