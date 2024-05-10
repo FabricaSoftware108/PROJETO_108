@@ -2085,6 +2085,48 @@ input.cadastro-aluno-psg {
 }
 
 
+
+
+/* EDITAR ADM.PHP*/
+
+
+
+
+.wrapper-editar-adm .editar-adm-container-title h1 { font-weight: 500; color: white; font-family: var(--font-destaque); font-size: 30px; padding: 20px 0;}
+.wrapper-editar-adm .editar-adm-container-title { background-color: #1E55D1; border-radius: 10px 10px 0 0; }
+.wrapper-editar-adm {margin-top:  180px;}
+.wrapper-editar-adm .container-editar-adm { border: 1px double rgb(11, 11, 11); padding: 0; border-radius: 10px 10px 0 0;}
+.wrapper-editar-adm .content-name-editar-adm .nome-aleatorio-2{ font-size: 159px; color: #000    ;  }
+.switch-active-adm p {margin: 0;}
+
+.editar-adm-input-container {
+    padding: 20px 30px 0;
+    font-family: var(--font-destaque);
+}
+
+  
+
+.editar-adm .outline-box {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+@media (max-witdh: 360px){
+    .switchbutton{
+        overflow-wrap: break-word;
+}
+}
+
+
+
+/*FIM DO CSS PÁGINA EDITAR ADM.PHP*/
+
+
+
+
+
+
+
+
 /* Estilos para as imagens cadastro-adm */
 
 .cadastro-adm .cadastro-adm-img-1 {
