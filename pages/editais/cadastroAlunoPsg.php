@@ -154,7 +154,7 @@ include '../../app/session/verificacaoPsg.php';
                     </div>
 
                      <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
-                     <!-- <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div> -->
+                     <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
 
                      <div class="button-enviar-vagas">
                         <button type="submit" class="btn btn-primary">Enviar</button>
