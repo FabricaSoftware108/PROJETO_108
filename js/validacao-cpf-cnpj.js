@@ -28,16 +28,28 @@ var cnpj= "77.180.345/0001-07";
 function valida_cnpj(cnpj){
     let numeros = cnpj.split("-") [0].replace(/\D/g, '');
     consolo.log(numeros);
-    let digitos = cnpj.split('-') [0].replace(/\D/g, '');
+    let digitos = cnpj.split('-') [1];
+    console.log(digitos);
+    if(getPrimeiroDigito() != digitos[0])
+        return "cnpj("+cnpj+") - invalido";
+
+    return "cnpj("+cnpj+") - valido";
+    
 }
 
 function getPrimeiroDigito(numeros){
-    return;
+    for (let i= numeros.length -1 ; i > 0; i--){
+        console.log(i);
+    }
+    return 0;
 }
 
 function getSegundoNumero(){
-    
+    return 0;
 }
+
+console.log(valida_cnpj(cnpj));
+valida_cnpj(cnpj);
 
 
 // const validarCpf = (cpf) =>{
