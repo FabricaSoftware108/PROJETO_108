@@ -33,23 +33,15 @@ if($row['email']==$email && $row['senha']==$senha && $row['estado']==1){
     exit();
 }
 
-else if($row['email']==$email && $row['senha']==$senha && $row['estado']==0){
-    // header("location: ../../pages/adm/loginAdm.html");
-    echo ('<script>
-    alert("Usuário Desativado");
-    location.href = "../../pages/adm/loginAdm.html";
+else if($row['email'] == $email && $row['senha'] == $senha && $row['estado'] == 0){
+    // Usuário desativado
+    header("location: ../../pages/adm/loginAdm.php?erro=desativado");
     exit();
-    </script>');
-    // exit();
-
-
 }
-
 else{
-    header("location: ../../pages/adm/loginAdm.html");
+    // Credenciais incorretas
+    header("location: ../../pages/adm/loginAdm.php?erro=incorreto");
     exit();
 }
-
-
 
 ?>
