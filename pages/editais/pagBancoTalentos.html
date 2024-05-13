@@ -116,12 +116,12 @@
                     <div class="row align-items-center justify-content-center mb-5" id="id="container-bancoTalento-inputs">
                         <div class= "col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="nome" id="nome" size="27"
-                                maxlength="45" placeholder="Nome">
+                                maxlength="45" placeholder="Nome" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome" id="sobrenome"
-                                size="27" placeholder="Sobrenome">
+                                size="27" placeholder="Sobrenome" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cpf" id="cpf" size="27"
-                                maxlength="14" placeholder="CPF">
-                            <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade" id="escolaridade">
+                                maxlength="14" placeholder="CPF" required>
+                            <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade" id="escolaridade" required>
                                 <option value="escolaridade">Escolaridade</option>
                                 <option value="medio">Ensino Médio</option>
                                 <option value="superior">Superior</option>
@@ -132,12 +132,12 @@
                                 type='text'
                                 onfocus="this.type = 'date'"
                                 onblur="if(!this.value) this.type='text'"
-                                max = "9999-12-31">
+                                max = "9999-12-31" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email" id="email" size="27"
-                                maxlength="50" placeholder="Email">
+                                maxlength="50" placeholder="Email" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone"
-                                size="27" maxlength="15" placeholder="Telefone">
-                            <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf">
+                                size="27" maxlength="15" placeholder="Telefone" required>
+                            <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf" required>
                                 <option value="uf">UF:</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
@@ -168,13 +168,13 @@
                                 <option value="TO">Tocantins</option>
                             </select>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="rua" id="rua" size="27"
-                                placeholder="Rua">
+                                placeholder="Rua" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="bairro" id="bairro"
-                                size="27" maxlength="11" placeholder="Bairro">
+                                size="27" maxlength="11" placeholder="Bairro" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade" id="cidade"
-                                size="27" maxlength="50" placeholder="Cidade">
+                                size="27" maxlength="50" placeholder="Cidade" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="numero" id="numero"
-                                size="27" maxlength="50" placeholder="Número">
+                                size="27" maxlength="50" placeholder="Número" required>
                         </div>
                     </div>
                     <div class="row justify-content-center align-items-center">
@@ -187,9 +187,9 @@
                     <div class="row align-items-center justify-content-center mb-5">
                         <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="github" id="github"
-                                size="27" maxlength="50" placeholder="Github">
+                                size="27" maxlength="50" placeholder="Github" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="linkedin" id="linkedin"
-                                size="27" maxlength="50" placeholder="Likedin">
+                                size="27" maxlength="50" placeholder="Likedin" required>
                         </div>
                     </div>
 
