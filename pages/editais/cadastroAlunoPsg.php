@@ -92,7 +92,7 @@ include '../../app/session/verificacaoPsg.php';
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active back me-5 loginADM" aria-current="page"
-                                href="../adm/loginAdm.html">Login ADM</a>
+                                href="../adm/loginAdm.php">Login ADM</a>
                         </li>
                     </ul>
                 </div>
