@@ -1289,7 +1289,7 @@ main.body-demanda {
     max-width: 1400px;
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
@@ -1766,7 +1766,7 @@ main.body-banco-talentos {
     max-width: 1400px;
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
@@ -1869,7 +1869,7 @@ input.cadastro-aluno-psg {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
@@ -2270,12 +2270,13 @@ main.cadastro-de-vagas {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
 
 }
+
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
