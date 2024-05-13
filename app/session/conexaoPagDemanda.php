@@ -5,16 +5,16 @@ include ('../../app/db/connection.php');
 session_start();
 
 $nome_empresa= mysqli_real_escape_string($connection, $_POST["nome_empresa"]);
-$email_empresa= mysqli_real_escape_string($connection, $_POST["email"]);
+$email_empresa= mysqli_real_escape_string($connection, $_POST["email_empresa"]);
 $cnpj= mysqli_real_escape_string($connection, $_POST["cnpj"]);
 $estado= mysqli_real_escape_string($connection, $_POST["estado"]);
-$telefone_empresa= mysqli_real_escape_string($connection, $_POST["telefone"]);
+$telefone_empresa= mysqli_real_escape_string($connection, $_POST["telefone_empresa"]);
 $cidade= mysqli_real_escape_string($connection, $_POST["cidade"]);
 
-$nome_titular= mysqli_real_escape_string($connection, $_POST["nome"]);
-$email_titular= mysqli_real_escape_string($connection, $_POST["email"]);
+$nome_titular= mysqli_real_escape_string($connection, $_POST["nome_titular"]);
+$email_titular= mysqli_real_escape_string($connection, $_POST["email_titular"]);
 $cpf= mysqli_real_escape_string($connection, $_POST["CPF"]);
-$telefone_titular= mysqli_real_escape_string($connection, $_POST["telefone"]);
+$telefone_titular= mysqli_real_escape_string($connection, $_POST["telefone_titular"]);
 $arquivo= mysqli_real_escape_string($connection, $_POST["arquivo"]);
 
 
