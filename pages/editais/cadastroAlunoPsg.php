@@ -153,6 +153,11 @@ include '../../app/session/verificacaoPsg.php';
                             id="complemento" size="27" maxlength="100" placeholder="Complemento"><br>
                     </div>
 
+                    <div class="check-consentimento-dados">
+                        <input type="checkbox" id="horns" name="horns" required>
+                        <label for="horns">Eu autorizo o uso das minhas informações pessoais, e concordo em receber e-mails que podem ser cancelados a qualquer momento. </label>
+                    </div>
+
                      <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
                      <div class="g-recaptcha pagDemanda-recaptcha" data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
 
