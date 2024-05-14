@@ -1,4 +1,5 @@
 <?php
+
 include '../../app/session/verificacao.php';
 
 include '../../app/db/connection.php';
@@ -19,6 +20,8 @@ $result = mysqli_query($connection, $query);
   <link rel="stylesheet" href="../../css/styles.css">
   <script src="../../js/cadastro-adm.js"></script>
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css">
+  <!-- Coloque o CSS no seu HEAD -->
+  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/edge/stylesheets/locastyle.css">
 
 
 </head>
@@ -105,6 +108,7 @@ $result = mysqli_query($connection, $query);
             <h1>Administradores</h1>
           </div>
           <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
+          <form action="../../app/session/actionDesativarADM.php" method="post">
             <?php while ($row = mysqli_fetch_array($result)) { ?>
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
@@ -112,14 +116,19 @@ $result = mysqli_query($connection, $query);
                   <div class="row">
                     <div class="col-md-12 col-12">
 
-                      <div class="ls-box outline-box" style="text-align: start;">
-                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
-                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
+                      <div class="ls-box outline-box d-lg-flex d-sm-block justify-content-between align-items-center" style="text-align: start;">
+                        <div class="w-75">
 
-                        <div data-ls-module="switchButton" class="ls-switch-btn ls-float-right switchbutton">
-                          <input type="checkbox" id="switch-adm">
-                          <label class="ls-switch-label" for="teste" name="switch-adm" ><span></span></label>
+                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
+                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
                         </div>
+
+                          <div class="form-check form-switch" name="switchState" value="<?php echo $row['nome'] ?>" type="submit"  >
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="height: 25px; width: 55px;" <?php if($row["estado"]){echo "checked";} ?> >
+                              <button class="btn z-5 d-flex justify-content-center align-items-center position-relative" name="switchState" value="<?php echo $row['nome'] ?>" type="submit" >
+                              </button>
+                          </div>
+
                       </div>
                     </div>
                   </div>
@@ -128,6 +137,7 @@ $result = mysqli_query($connection, $query);
 
               </div>
             <?php } ?>
+            </form>
           </div>
           <!-- Parte das funçôes no javascript com o switch -->
           <!-- // Um botão switch específico 
@@ -138,17 +148,23 @@ $result = mysqli_query($connection, $query);
           $('#id-do-botao-switch').on('switchButton:deactivated', function() {
           // do something
           })
-        https://opensource.locaweb.com.br/locawebstyle/documentacao/componentes/botao-switch/ -->
+        https://opensource.locaweb.com.br/locawebstyle/documentacao/componentes/botao-switch/
         </div>
+        <!-- Desativado -->
       </div>
     </div>
   </main>
   <footer>
-    <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
-  </footer>
+    </footer>
+    
+    
+  <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
+  
 
 
-  <script src="../js/cadastro-adm.js"></script>
+  <!-- Coloque o JS no seu FOOTER, logo depois da jQuery -->
+  <script src="//assets.locaweb.com.br/locastyle/edge/javascripts/locastyle.js"></script>
+  <script src="../../js/chageAdmState.js"></script>
 </body>
 
 </html>
