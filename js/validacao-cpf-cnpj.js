@@ -1,7 +1,7 @@
-
-// validar cpf.
-// const form = document.querySelector("#campo-demanda");
-// const cpfInput=  document.querySelector("#CPF");
+ 
+//validar cpf.
+// const form = document.getElementById('campo-demanda');
+// const cpfInput=  document.getElementById('CPF');
 
 // form.addEventListener("submit", (event) =>{
 //     event.preventDefault();
@@ -15,134 +15,105 @@
 
 //     //se todos os campos estiverem preenchidos corretamente evia o form.
 //     form.submit();
+
+
 // })
 
+var cpf = "169.169.000-75";
+   cpf = "469.957.937-06";
 
-//validar cnpj
 
-const form = document.querySelector("#campo-demanda");
-const cnpjInput=  document.querySelector("#cnpj");
+function isCPF(cpf=0){
+    console.log(cpf);
+    cpf = cpf.replace(/\.|-/g,"");
 
-var cnpj= "77.180.345/0001-07";
+    let soma = 0;
+    soma += cpf[0] * 10;
+    soma += cpf[1] * 9;
+    soma += cpf[2] * 8;
+    soma += cpf[3] * 7;
+    soma += cpf[4] * 6;
+    soma += cpf[5] * 5;
+    soma += cpf[6] * 4;
+    soma += cpf[7] * 3;
+    soma += cpf[8] * 2;
+    soma = (soma * 10 ) % 11;
 
-function valida_cnpj(cnpj){
-    let numeros = cnpj.split("-") [0].replace(/\D/g, '');
-    consolo.log(numeros);
-    let digitos = cnpj.split('-') [1];
-    console.log(digitos);
-    if(getPrimeiroDigito() != digitos[0])
-        return "cnpj("+cnpj+") - invalido";
+    if(soma == 10 || soma == 11)
+        soma = 0;
 
-    return "cnpj("+cnpj+") - valido";
+    console.log("Primeiro digito: "+soma);
+
+    if(soma != cpf[9] )
+        return false;
+
+    soma = 0;
+    soma += cpf[0] * 11;
+    soma += cpf[1] * 10;
+    soma += cpf[2] * 9;
+    soma += cpf[3] * 8;
+    soma += cpf[4] * 7;
+    soma += cpf[5] * 6;
+    soma += cpf[6] * 5;
+    soma += cpf[7] * 4;
+    soma += cpf[8] * 3;
+    soma += cpf[9] * 2;
+    soma = (soma * 10 ) % 11;
+
+    if(soma == 10 || soma == 11)
+        soma = 0;
+
     
+
+    if(soma != cpf[10] )
+        return false;
+
+
+    console.log("Segundo digito: "+soma);
+    return true;
 }
-
-function getPrimeiroDigito(numeros){
-    for (let i= numeros.length -1 ; i > 0; i--){
-        console.log(i);
-    }
-    return 0;
-}
-
-function getSegundoNumero(){
-    return 0;
-}
-
-console.log(valida_cnpj(cnpj));
-valida_cnpj(cnpj);
+console.log(isCPF(cpf));
 
 
-// const validarCpf = (cpf) =>{
-//     cpf = cpf.replace(/\D/g, '') //remove todos os caracteres que nao sao numericos
 
-//     if (cpf,length !==11){ // vreifica se esse cpf tem 11 digitos.
-//         document.alert('cpf inválido. documento nao possui 11 caracteres.')
-//         return
-//     }
 
-//     const proximoDigitoVerificador = (cpfIncompleto) =>{
-//         let somatoria = 0
 
-//         for (let i = 0; i < cpfIncompleto.length; i++) {
-//             let digitoAtual = cpfIncompleto.charAt(i)
+ //validar cnpj
 
-//             let constante = (cpfIncompleto.length + 1 -i)
+// const form = document.querySelector("#campo-demanda"); 
+// const cnpjInput=  document.querySelector("#cnpj");
 
-//             somatoria += Number(digitoAtual) * constante
+// var cnpj= "77.180.345/0001-07";
 
-//         }
-//         const resto = somatoria % 11
-//         return  resto < 2 ? "0" : (11 - resto).toString()
-//     }
+// function valida_cnpj(cnpj){
+//     let numeros = cnpj.split("-") [0].replace(/\D/g, '');    
+//     consolo.log(numeros);
+//     let digitos = cnpj.split('-') [1];
+//     console.log(digitos);
+//     if(getPrimeiroDigito() != digitos[0])
+//         return "cnpj("+cnpj+") - invalido";    
 
-//     let primeiroDigitoVerificador = proximoDigitoVerificador(cpf.substring(0,9))
-//     let segundoDigitoVerificador = proximoDigitoVerificador(cpf.substring(0,9) + primeiroDigitoVerificador)
-
-//     if (cpf !== cpfCorreto){
-//         console.error('Cpf invalido.')
-//         return
-//     }
-
-//     console.log("cpf valido")
-//     return true
+//     return "cnpj("+cnpj+") - valido";
+    
 // }
 
-// validarCpf("158.001.580-88")
+// function getPrimeiroDigito(numeros){
+//     for (let i= numeros.length -1 ; i > 0; i--){
+//         console.log(i);    
+//     }
+//     return 0;
+// }
+
+// function getSegundoNumero(){
+//     return 0;    
+// }
+
+// console.log(valida_cnpj(cnpj));
+// valida_cnpj(cnpj); -->
 
 
-function validacao_cpf(CPF){
 
-    var numeros_cpf = cpf.val().replace(/\D/g, '');
-    if ((numeros_cpf.length === 11)  && (validar_cpf(numeros_cpf))){
-
-        // se a quantidade de numeros do cpf for 11 e forem validos, ele mostra isso visualmente.
-       cpf.removeClass("is-invalid");
-       cpf.addClass("is-invalid");
-       validado = true;
-       // na variavel validade ele armazena true, isso significa que em algum momento,
-       // o que foi digitado pleo usuario foi digitado corretamente.
-    }
-    else if ((numeros_cpf.length === 11) && (!validar_cpf(numeros_cpf))) {
-        //se a quantidade de numeros do cpf for 11 e nao forem validos ele mostra isso visualmente.
-        cpf.removeClass("is-valid");
-        cpf.addClass("is-invalid");
-        validado = false;
-    }
-    else if (validado){
-        // se em algum mmento o usuario digitar um cpf valido a retorceder a quantidade de digitos tornando os.
-        cpf.removeClass("is-invalid");
-        cpf.addClass("is-invalid");
-    }
-}
-
-function validar_cpf(strcpf){
-    var soma;
-    var resto;
-    soma = 0;
-    if (strcpf == '00000000000')
-        return false;
-    
-    for (i = 1; i<=9; i++ )
-        soma = soma +parseInt(strcpf.substring(i - 1, i)) * (11 - i);
-    resto = (soma* 10) % 11;
-    if ((resto == 10) || (resto ==11))
-        resto= 0;
-    if(resto != parseInt(strcpf.substring(9, 10)))
-        return false;
-
-        soma = 0;
-        for (i = 1; i<=10 ; i++)
-            soma = soma + parseInt(strcpf.substring(i - 1 , 1)) *( 12 - 1);
-        resto = (soma * 10) % 11;
-        if ((resto == 10 )|| (resto == 11))
-            resto = 0;
-        if (resto != parseInt(strcpf.substring(10, 11)))
-            return false;
-        return true;
-        
-    
-
-}
+//validar cpf ESSE ESTÁ FUNCIONANDOO.
 
 
 
