@@ -54,7 +54,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                         </ul> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Edital</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Edital de Vagas Gratuitas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda</a>
