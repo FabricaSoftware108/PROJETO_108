@@ -172,9 +172,7 @@ header.cabecalhoGeral {
         font-size: 20px;
     }
 
-    .btn-soft-home {
-        margin-left: 0;
-    }
+
 }
 
 
@@ -454,13 +452,6 @@ nav.home li:hover ul#menuFabricas {
     font-size: 27px;
 }
 
-.titulo-fabricas-home{
-    font-size: 56px;
-}
-
-.fabricas-home {
-    padding-top: 120px;
-}
 
 .text-fabricas-left-home p{
     text-align: justify;
@@ -476,139 +467,6 @@ nav.home li:hover ul#menuFabricas {
     padding-left: 70px;
 }
 
-.container-img-home {
-    text-align: center;
-    border-radius: 16px;
-    color: white;
-}
-
-.container-img-home p {
-    text-align: center;
-}
-
-.container-img-home img {
-    border-color: white;
-    border-radius: 16px;
-    min-height: 350px;
-    width: 100%;
-}
-
-.container-img-home#soft {
-    box-shadow: 0pt 0pt 90pt -10pt #43079C;
-    border-radius: 16px;
-    background-color: #43079C;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #43079C;
-}
-
-.container-img-home#jogos {
-    box-shadow: 0pt 0pt 90pt -10pt #CF023D;
-    border-radius: 16px;
-    background-color: #CF023D;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #CF023D;
-}
-
-.container-img-home#cgi {
-    box-shadow: 0pt 0pt 90pt -10pt #E1A300;
-    border-radius: 16px;
-    background-color: #E1A300;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #E1A300;
-}
-
-.container-img-home#audiovisual {
-    box-shadow: 0pt 0pt 90pt -10pt #04BA1A;
-    border-radius: 16px;
-    background-color: #04BA1A;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #04BA1A;
-}
-
-
-.btn-soft-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #43079C;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-jogos-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #CF023D;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-cgi-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #E1A300;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-audioVisual-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #04BA1A;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-soft-home:hover {
-    background-color: #43079C;
-    color: white;
-    cursor: pointer;
-}
-
-.btn-jogos-home:hover {
-    background-color: #CF023D;
-    color: white;
-    cursor: pointer;
-}
-
-.btn-cgi-home:hover {
-    background-color: #E1A300;
-    color: white;
-    cursor: pointer;
-}
-
-.btn-audioVisual-home:hover {
-    background-color: #04BA1A;
-    color: white;
-    cursor: pointer;
-}
 
 .descricao-fabrica-home {
     text-align: justify;
@@ -618,13 +476,62 @@ nav.home li:hover ul#menuFabricas {
     
 }
 
-#tituloFabricas-home {
-    padding: 20px 0;
-    font-size: 20px;
+.wrap-factories-home {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
+.wrap-factories-home .wrapper-images-factories {
+    background-color: #43079C;
+    box-shadow: 0 0 50px #43079c6c;
+    border-radius: 22px;
+    color: #fff;
+}
+
+.wrap-factories-home .content-border-transparent-factories {
+    padding: 3px;
+    background-image: linear-gradient(to bottom, #43079C, #fff);
+    border-radius: 22px;
+}
+
+.wrap-factories-home .wrap-container-all-image-factories {
+    display: grid;
+    place-items: center;
+}
+
+.wrap-factories-home .wrapper-image {
+    padding: 15px 5px;
+    background-color: #43079C;
+    border: 2px solid white;
+    border-radius: 22px;
+    height: 100%;
+}
+
+.wrap-factories-home .container-button-factories {
+    padding: 10px 0 0 0;
+    display: grid;
+    place-items: center center;
+    grid-template-rows: 2fr 1fr;
+}
+
+.wrap-factories-home .wrapper-image img{ border-radius: 22px; }
+.wrap-factories-home .wrapper-describe-factories { text-align: justify; }
 
 
+.wrap-factories-home .wrap-content-describe h1{
+    font-size: 34px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .wrap-factories-home  {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /*Fábricas*/
