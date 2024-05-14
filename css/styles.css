@@ -5212,7 +5212,9 @@ body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-button{
     padding-left: 35px;
     display: inline-block;
     line-height: 25px;
+    width: 80%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
 }
 
 /* Estilo do círculo */
