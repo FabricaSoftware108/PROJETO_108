@@ -60,7 +60,7 @@ include '../../app/db/connection.php';
                             </ul> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Edital</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Edital de Vagas Gratuitas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda</a>
