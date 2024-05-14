@@ -1,7 +1,8 @@
 
-var cpf = "169.169.000-75";
-   cpf = "085.430.241-71";
+// var cpf = "169.169.000-75";
+//    cpf = "085.430.241-71";
 
+var cpf= document.getElementById('CPF');
 
 function isCPF(cpf=0){
     console.log(cpf);
@@ -52,8 +53,8 @@ function isCPF(cpf=0){
     console.log("Segundo digito: "+soma);
     return true;
 }
-// console.log(isCPF(cpf));
+console.log(isCPF(cpf));
 
-document.querySelector("#cnpj").addEventListener("input", function (e){
+document.querySelector("#CPF").addEventListener("input", function (e){
     console.log(e.target.value)
 })

@@ -9,7 +9,7 @@
     <title>Demanda</title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src = "../../js/validacao-cpf-cnpj.js"></script>
+
 
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,6 +135,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                        <script src="../../js/validacao-cpf-cnpj.js"></script>
                     <div class="row align-items-center justify-content-center mb-5">
                         <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_titular" id="nome_titular"
@@ -142,7 +144,7 @@
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email_titular"
                                 id="email_titular" size="27"  placeholder="Email" required><br>
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="CPF" id="CPF"
-                                size="27" maxlength="14" placeholder="CPF" required>
+                                size="27" maxlength="14" placeholder="CPF" required onsubmit="return isCPF()">
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone2"
                                 id="telefone2" size="27" maxlength="15" placeholder="Telefone" required>
                         </div>
