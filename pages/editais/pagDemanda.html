@@ -143,7 +143,7 @@
                                 size="27" maxlength="45" placeholder="Nome" required>
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email_titular"
                                 id="email_titular" size="27"  placeholder="Email" required><br>
-                            <input class="cadastrovagas col-xs-6 col-lg-5 cpfverification" type="text" name="CPF" id="CPF"
+                            <input class="cadastrovagas col-xs-6 col-lg-5 cpfverification" id="documento "type="text" name="CPF" id="CPF"
                                 size="27" maxlength="14" placeholder="CPF" onsubmit="return isCPF()">
                             <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone2"
                                 id="telefone2" size="27" maxlength="15" placeholder="Telefone" required>
@@ -189,7 +189,7 @@
                         <div class="col-12 justify-content-center align-items-center text-center"
                             id="button-demanda">
                             <button type="submit" class="btn btn-primary"
-                                id="button-submit-demanda">Enviar</button>
+                                id="button-submit-demanda" onclick="validar()">Enviar</button>
 
                                 
                         </div>
