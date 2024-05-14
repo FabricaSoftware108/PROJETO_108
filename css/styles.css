@@ -5192,3 +5192,66 @@ body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-button{
 
 
 /* Fim do Relatório Vagas Emprego */
+
+/* Estruturação do checkbox de consentimento de dados */
+
+.check-consentimento-dados {
+    padding-top: 25px;
+}
+
+
+/* Ocultar o checkbox padrão */
+.check-consentimento-dados input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilizar o novo checkbox circular */
+.check-consentimento-dados label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    display: inline-block;
+    line-height: 25px;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+/* Estilo do círculo */
+.check-consentimento-dados label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #dcdcdc;
+    background-color: #dcdcdc;
+}
+
+/* Estilo do círculo quando o checkbox está marcado */
+.check-consentimento-dados input[type="checkbox"]:checked + label::before {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+}
+
+/* Estilo do ponto no meio */
+.check-consentimento-dados label::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0;
+}
+
+/* Mostrar o ponto preto quando o checkbox está marcado */
+.check-consentimento-dados input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+
+/* Fim da estruturação do checkbox de consentimento de dados */
