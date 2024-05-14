@@ -1,26 +1,6 @@
- 
-//validar cpf.
-// const form = document.getElementById('campo-demanda');
-// const cpfInput=  document.getElementById('CPF');
-
-// form.addEventListener("submit", (event) =>{
-//     event.preventDefault();
-
-//     //verifica se o cpf está vazio.
-
-//     if (cpfInput.value ==''){
-//         alert("Preencha o campo CPF CORRETAMENTE!!")
-//         return false;
-//     }
-
-//     //se todos os campos estiverem preenchidos corretamente evia o form.
-//     form.submit();
-
-
-// })
 
 var cpf = "169.169.000-75";
-   cpf = "469.957.937-06";
+   cpf = "085.430.241-71";
 
 
 function isCPF(cpf=0){
@@ -72,48 +52,8 @@ function isCPF(cpf=0){
     console.log("Segundo digito: "+soma);
     return true;
 }
-console.log(isCPF(cpf));
+// console.log(isCPF(cpf));
 
-
-
-
-
- //validar cnpj
-
-// const form = document.querySelector("#campo-demanda"); 
-// const cnpjInput=  document.querySelector("#cnpj");
-
-// var cnpj= "77.180.345/0001-07";
-
-// function valida_cnpj(cnpj){
-//     let numeros = cnpj.split("-") [0].replace(/\D/g, '');    
-//     consolo.log(numeros);
-//     let digitos = cnpj.split('-') [1];
-//     console.log(digitos);
-//     if(getPrimeiroDigito() != digitos[0])
-//         return "cnpj("+cnpj+") - invalido";    
-
-//     return "cnpj("+cnpj+") - valido";
-    
-// }
-
-// function getPrimeiroDigito(numeros){
-//     for (let i= numeros.length -1 ; i > 0; i--){
-//         console.log(i);    
-//     }
-//     return 0;
-// }
-
-// function getSegundoNumero(){
-//     return 0;    
-// }
-
-// console.log(valida_cnpj(cnpj));
-// valida_cnpj(cnpj); -->
-
-
-
-//validar cpf ESSE ESTÁ FUNCIONANDOO.
-
-
-
+document.querySelector("#cnpj").addEventListener("input", function (e){
+    console.log(e.target.value)
+})
