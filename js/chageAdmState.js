@@ -1,4 +1,3 @@
-document.querySelector("#switchConfirm").addEventListener("change", function(){
-    alert("vgvgv")
-    document.querySelector().submit();
-})
+function changeUserState(object){
+    console.log(object.father)
+}

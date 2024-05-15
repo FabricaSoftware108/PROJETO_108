@@ -18,7 +18,6 @@ $result = mysqli_query($connection, $query);
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../css/styles.css">
-  <script src="../../js/cadastro-adm.js"></script>
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css">
   <!-- Coloque o CSS no seu HEAD -->
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/edge/stylesheets/locastyle.css">
@@ -108,8 +107,8 @@ $result = mysqli_query($connection, $query);
             <h1>Administradores</h1>
           </div>
           <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
-          <form action="../../app/session/actionDesativarADM.php" method="post">
             <?php while ($row = mysqli_fetch_array($result)) { ?>
+              <form action="../../app/session/actionDesativarADM.php" method="post">
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
 
@@ -123,10 +122,11 @@ $result = mysqli_query($connection, $query);
                           <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
                         </div>
 
-                          <div class="form-check form-switch" name="switchState" value="<?php echo $row['nome'] ?>" type="submit"  >
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="height: 25px; width: 55px;" <?php if($row["estado"]){echo "checked";} ?> >
-                              <button class="btn z-5 d-flex justify-content-center align-items-center position-relative" name="switchState" value="<?php echo $row['nome'] ?>" type="submit" >
-                              </button>
+                          <div class="form-check form-switch" >
+                            <input class="form-check-input text-none" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="height: 25px; width: 55px;" <?php if($row["estado"]){echo "checked";} ?> name="switchState" value="<?php echo $row['email'].$row['estado'] ?>" onfocus="this.type = 'submit'" >
+                            <!-- Esse botão é clicado quando o switch é mudado, assim, dando um submit 
+                            <button   type="submit" class="btn" id="switchState"></button> -->
+                              
                           </div>
 
                       </div>
@@ -136,35 +136,15 @@ $result = mysqli_query($connection, $query);
                 </div>
 
               </div>
-            <?php } ?>
             </form>
+            <?php } ?>
           </div>
-          <!-- Parte das funçôes no javascript com o switch -->
-          <!-- // Um botão switch específico 
-          $('#id-do-botao-switch').on('switchButton:activated', function() {
-          // do something
-          }) -->
-          <!-- // Um botão switch específico 
-          $('#id-do-botao-switch').on('switchButton:deactivated', function() {
-          // do something
-          })
-        https://opensource.locaweb.com.br/locawebstyle/documentacao/componentes/botao-switch/
-        </div>
-        <!-- Desativado -->
       </div>
     </div>
   </main>
-  <footer>
-    </footer>
-    
-    
-  <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
   
-
-
-  <!-- Coloque o JS no seu FOOTER, logo depois da jQuery -->
-  <script src="//assets.locaweb.com.br/locastyle/edge/javascripts/locastyle.js"></script>
   <script src="../../js/chageAdmState.js"></script>
+  
 </body>
 
 </html>
