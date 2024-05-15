@@ -522,7 +522,7 @@ nav.home li:hover ul#menuFabricas {
 }
 
 .wrap-factories-home .wrap-content-describe h1{
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -556,6 +556,7 @@ nav.home li:hover ul#menuFabricas {
 .wrap-factories-home .container-button-factories a button {
     padding: 15px 20px;
     border: 2px solid #43079C;
+    box-shadow: 0 0 55px #43079c34;
     border-radius: 45px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
@@ -564,7 +565,17 @@ nav.home li:hover ul#menuFabricas {
     transition: 0.16s ease, color 0.16s ease;
 }
 
-.wrap-factories-home .container-button-factories button:hover { background-color: #43079C; color: #fff; }
+.wrap-factories-home .container-button-factories button:hover { 
+    background-color: #43079C; 
+    color: #fff; 
+}
+.wrap-factories-home #container-button-factories-game a button { border: 2px solid #CF023D; box-shadow: 0 0 55px #cf023c49;}
+.wrap-factories-home #container-button-factories-grafica a button { border: 2px solid #E1A300; box-shadow: 0 0 55px #e1a1004d;}
+.wrap-factories-home #container-button-factories-audio a button { border: 2px solid #04BA1A; box-shadow: 0 0 55px #04ba1959;}
+
+.wrap-factories-home #container-button-factories-game button:hover { background-color: #CF023D; color: #fff; }
+.wrap-factories-home #container-button-factories-grafica button:hover { background-color: #E1A300; color: #fff; }
+.wrap-factories-home #container-button-factories-audio button:hover { background-color: #04BA1A; color: #fff; }
 .wrap-factories-home .wrapper-image img{ border-radius: 22px; }
 .wrap-factories-home .wrapper-describe-factories { text-align: justify; }
 
