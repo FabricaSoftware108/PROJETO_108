@@ -60,16 +60,16 @@ include '../../app/db/connection.php';
                             </ul> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Edital de Vagas Gratuitas</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Vagas Gratuitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Empresas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./cadastroVagasEmprego.html">Cadastro de Vagas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagBancoTalentos.html">Banco de Talentos</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagBancoTalentos.html">Talentos das Fábricas</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
