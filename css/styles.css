@@ -2463,6 +2463,13 @@ main.login-ADM {
     box-shadow: 0 5px 6px 0 rgb(112, 112, 112);
 }
 
+
+/* .input-group-append{    arrumar
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+} */
 /* FIM LOGIN ADM*/
 
 /* Tela de Edital */
