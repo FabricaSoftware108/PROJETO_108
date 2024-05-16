@@ -1,7 +1,3 @@
-// aqui ele pega o valor que tem no meu input.
-// const form = document.querySelector('#campo-demanda')
-// const campo = document.querySelector('.inputCPF');
-
 function verificarCPF(strCpf) {
     if (!/[0-9]{11}/.test(strCpf)) return false;
     if (strCpf === "00000000000") return false;
@@ -44,14 +40,15 @@ function verificarCPF(strCpf) {
     return true;
 }
 
-    function validarNome() {
-        var strCpf = document.getElementById('CPF').value;
-        if (!verificarCPF(strCpf)) {
-            alert("CPF inválido");
-            return;
-        }
-        document.getElementById('campo-demanda').submit();
+function validarcpf() {
+    var strCpf = document.getElementById('CPF').value;
+    if (!verificarCPF(strCpf)) {
+        alert("CPF inválido");
+        return;
     }
+    document.getElementById('').submit();
+}
+    
 
   
 
