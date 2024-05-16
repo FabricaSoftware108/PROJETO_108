@@ -486,7 +486,8 @@ nav.home li:hover ul#menuFabricas {
 
 .wrap-all-container-factories-row {
     display: grid;
-    gap: 50px 0;
+    gap: 120px 0;
+
 }
 
 .wrap-factories-home .wrapper-images-factories {
@@ -495,6 +496,9 @@ nav.home li:hover ul#menuFabricas {
     border-radius: 22px;
     color: #fff;
 }
+
+.wrap-factories-home { animation: AnimatedFactories 0.7s ease-in; animation-fill-mode: forwards; }
+.wrap-factories-home-animated { animation: AnimatedFactories2 0.7s ease-in; animation-fill-mode: forwards; }
 
 .wrap-factories-home #wrapper-images-factories-game{ background-color: #CF023D; box-shadow: 0 0 50px #CF023D; }
 .wrap-factories-home #wrapper-images-factories-grafica{ background-color: #E1A300; box-shadow: 0 0 50px #E1A300; }
@@ -542,8 +546,7 @@ nav.home li:hover ul#menuFabricas {
     padding: 10px 0 0 0;
     display: grid;
     place-items: center center;
-    grid-template-rows: 2fr 1fr;
-    gap: 10px 0;
+    grid-template-rows: 4fr 1fr;
 }
 
 .wrap-factories-home .container-button-factories h3{
@@ -563,12 +566,18 @@ nav.home li:hover ul#menuFabricas {
     font-size: 18px;
     background-color: transparent;
     transition: 0.16s ease, color 0.16s ease;
+    place-items: start center;
 }
 
 .wrap-factories-home .container-button-factories button:hover { 
     background-color: #43079C; 
     color: #fff; 
 }
+
+.wrap-factories-home #container-button-factories-game { place-items: start center; }
+.wrap-factories-home #container-button-factories-grafica { place-items: start center; }
+.wrap-factories-home #container-button-factories-audio { place-items: start center; }
+
 .wrap-factories-home #container-button-factories-game a button { border: 2px solid #CF023D; box-shadow: 0 0 55px #cf023c49;}
 .wrap-factories-home #container-button-factories-grafica a button { border: 2px solid #E1A300; box-shadow: 0 0 55px #e1a1004d;}
 .wrap-factories-home #container-button-factories-audio a button { border: 2px solid #04BA1A; box-shadow: 0 0 55px #04ba1959;}
@@ -579,6 +588,9 @@ nav.home li:hover ul#menuFabricas {
 .wrap-factories-home .wrapper-image img{ border-radius: 22px; }
 .wrap-factories-home .wrapper-describe-factories { text-align: justify; }
 
+@keyframes AnimatedFactories { 0% {transform: translate(-4.5em, 0); opacity: 0;} 100% {transform: translate(0, 0); opacity: 1;} }
+@keyframes AnimatedFactories2 { 0% {transform: translate(4.5em, 0); opacity: 0;} 100% {transform: translate(0, 0); opacity: 1;} }
+
 @media (max-width: 768px) {
     .wrap-factories-home  { grid-template-columns: 1fr; }
     .wrap-factories-home .container-button-factories { grid-template-rows: 2fr 1fr; }
@@ -586,6 +598,13 @@ nav.home li:hover ul#menuFabricas {
     .wrap-factories-home .content-border-transparent-factories { max-width: 100%; }
     .container-img img{ height: 200px; }
     .wrap-factories-home .container-button-factories h3{ font-size: 20px; }
+    
+    .wrap-factories-home #container-button-factories-software,
+    .wrap-factories-home #container-button-factories-game,
+    .wrap-factories-home #container-button-factories-grafica,
+    .wrap-factories-home #container-button-factories-audio
+     { place-items: center center; }
+
 }
 
 
