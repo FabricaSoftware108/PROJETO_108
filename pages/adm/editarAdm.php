@@ -1,4 +1,5 @@
 <?php
+
 include '../../app/session/verificacao.php';
 
 include '../../app/db/connection.php';
@@ -17,8 +18,10 @@ $result = mysqli_query($connection, $query);
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../css/styles.css">
-  <script src="../../js/cadastro-adm.js"></script>
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css">
+  <!-- Coloque o CSS no seu HEAD -->
+  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/edge/stylesheets/locastyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
 </head>
@@ -105,21 +108,32 @@ $result = mysqli_query($connection, $query);
             <h1>Administradores</h1>
           </div>
           <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
-            <?php while ($row = mysqli_fetch_array($result)) { ?>
+            <form action="../../app/session/actionDesativarADM.php" method="post">
+            <?php while ($row = mysqli_fetch_array($result)) {
+              if($row["estado"]){
+                $outline = "text-success";
+                $icon = "bi-toggle-on";
+              }else{
+                $outline = "text-danger";
+                $icon = "bi-toggle-off";
+              }
+              ?>
+            
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
 
                   <div class="row">
                     <div class="col-md-12 col-12">
 
-                      <div class="ls-box outline-box" style="text-align: start;">
-                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
-                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
+                      <div class="ls-box outline-box d-lg-flex d-sm-block justify-content-between align-items-center" style="text-align: start;">
+                        <div class="w-75">
 
-                        <div data-ls-module="switchButton" class="ls-switch-btn ls-float-right switchbutton">
-                          <input type="checkbox" id="switch-adm">
-                          <label class="ls-switch-label" for="teste" name="switch-adm" ><span></span></label>
+                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
+                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
                         </div>
+                        <button type="submit" class="btn d-flex justify-content-center align-items-center" name="switchState" value="<?php echo $row['email'] ?>">
+                          <i class="bi <?php echo $icon ?> <?php echo $outline ?>" style="font-size: 40px;"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -127,28 +141,15 @@ $result = mysqli_query($connection, $query);
                 </div>
 
               </div>
-            <?php } ?>
+              <?php } ?>
+            </form>
           </div>
-          <!-- Parte das funçôes no javascript com o switch -->
-          <!-- // Um botão switch específico 
-          $('#id-do-botao-switch').on('switchButton:activated', function() {
-          // do something
-          }) -->
-          <!-- // Um botão switch específico 
-          $('#id-do-botao-switch').on('switchButton:deactivated', function() {
-          // do something
-          })
-        https://opensource.locaweb.com.br/locawebstyle/documentacao/componentes/botao-switch/ -->
-        </div>
       </div>
     </div>
   </main>
-  <footer>
-    <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
-  </footer>
-
-
-  <script src="../js/cadastro-adm.js"></script>
+  
+  <script src="../../js/chageAdmState.js"></script>
+  
 </body>
 
 </html>
