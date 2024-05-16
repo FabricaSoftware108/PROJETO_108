@@ -54,16 +54,16 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
                         </ul> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Edital de Vagas Gratuitas</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Vagas Gratuitas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Empresas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/cadastroVagasEmprego.html">Cadastro de Vagas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagBancoTalentos.html">Banco de Talentos</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagBancoTalentos.html">Talentos das Fábricas</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
