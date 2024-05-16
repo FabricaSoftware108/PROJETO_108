@@ -21,6 +21,7 @@ $result = mysqli_query($connection, $query);
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css">
   <!-- Coloque o CSS no seu HEAD -->
   <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/edge/stylesheets/locastyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
 </head>
@@ -107,8 +108,17 @@ $result = mysqli_query($connection, $query);
             <h1>Administradores</h1>
           </div>
           <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
-            <?php while ($row = mysqli_fetch_array($result)) { ?>
-              <form action="../../app/session/actionDesativarADM.php" method="post">
+            <form action="../../app/session/actionDesativarADM.php" method="post">
+            <?php while ($row = mysqli_fetch_array($result)) {
+              if($row["estado"]){
+                $outline = "text-success";
+                $icon = "bi-toggle-on";
+              }else{
+                $outline = "text-danger";
+                $icon = "bi-toggle-off";
+              }
+              ?>
+            
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
 
@@ -121,14 +131,9 @@ $result = mysqli_query($connection, $query);
                           <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
                           <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
                         </div>
-
-                          <div class="form-check form-switch" >
-                            <input class="form-check-input text-none" type="checkbox" role="switch" id="flexSwitchCheckDefault" style="height: 25px; width: 55px;" <?php if($row["estado"]){echo "checked";} ?> name="switchState" value="<?php echo $row['email'].$row['estado'] ?>" onfocus="this.type = 'submit'" >
-                            <!-- Esse botão é clicado quando o switch é mudado, assim, dando um submit 
-                            <button   type="submit" class="btn" id="switchState"></button> -->
-                              
-                          </div>
-
+                        <button type="submit" class="btn d-flex justify-content-center align-items-center" name="switchState" value="<?php echo $row['email'] ?>">
+                          <i class="bi <?php echo $icon ?> <?php echo $outline ?>" style="font-size: 40px;"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -136,8 +141,8 @@ $result = mysqli_query($connection, $query);
                 </div>
 
               </div>
+              <?php } ?>
             </form>
-            <?php } ?>
           </div>
       </div>
     </div>
