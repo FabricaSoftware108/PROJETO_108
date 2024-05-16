@@ -44,14 +44,15 @@ function verificarCPF(strCpf) {
     return true;
 }
 
-function validarNome() {
-    var strCpf = document.getElementById('CPF').value;
-    if (!verificarCPF(strCpf)) {
-        alert("CPF inválido");
-        return;
+    function validarNome() {
+        var strCpf = document.getElementById('CPF').value;
+        if (!verificarCPF(strCpf)) {
+            alert("CPF inválido");
+            return;
+        }
+        document.getElementById('campo-demanda').submit();
     }
-    document.getElementById('campo-demanda').submit();
-}
+
   
 
 
