@@ -549,7 +549,8 @@ nav.home li:hover ul#menuFabricas {
     padding: 10px 0 0 0;
     display: grid;
     place-items: center center;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 4fr 2fr;
+    position: relative;
 }
 
 .wrap-factories-home .container-button-factories h3{
@@ -577,9 +578,11 @@ nav.home li:hover ul#menuFabricas {
     color: #fff; 
 }
 
-.wrap-factories-home #container-button-factories-game { place-items: start center; }
-.wrap-factories-home #container-button-factories-grafica { place-items: start center; }
-.wrap-factories-home #container-button-factories-audio { place-items: start center; }
+.wrap-factories-home #container-button-factories-software,
+.wrap-factories-home #container-button-factories-game,
+.wrap-factories-home #container-button-factories-grafica,
+.wrap-factories-home #container-button-factories-audio
+{ place-items: start center; }
 
 .wrap-factories-home #container-button-factories-game a button { border: 2px solid #CF023D; box-shadow: 0 0 55px #cf023c49;}
 .wrap-factories-home #container-button-factories-grafica a button { border: 2px solid #E1A300; box-shadow: 0 0 55px #e1a1004d;}
@@ -591,6 +594,10 @@ nav.home li:hover ul#menuFabricas {
 .wrap-factories-home .wrapper-image img{ border-radius: 22px; }
 .wrap-factories-home .wrapper-describe-factories { text-align: justify; }
 
+.margin-home-factories-button-software { position: absolute; bottom: 0; left: 50%; top: 95%; transform: translate(-50%, -50%); }
+.margin-home-factories-button-games { position: absolute; bottom: 0; left: 50%; top: 80%; transform: translate(-50%, -50%); }
+.margin-home-factories-button-grafica { position: absolute; bottom: 0; left: 50%; top: 84%; transform: translate(-50%, -50%); }
+.margin-home-factories-button-audio { position: absolute; bottom: 0; left: 50%; top: 84%; transform: translate(-50%, -50%); } 
 
 .animated-all { animation: AnimatedFactories 0.7s ease-in; animation-fill-mode: forwards; }
 .animated-all2 { animation: AnimatedFactories2 0.7s ease-in; animation-fill-mode: forwards; }
