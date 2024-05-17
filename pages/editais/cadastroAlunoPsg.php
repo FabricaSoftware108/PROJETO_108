@@ -11,6 +11,7 @@ include '../../app/session/verificacaoPsg.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Cadastro Aluno PSG</title>
+    <link rel="icon" href="./Imagens/favicon.png">
     
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 

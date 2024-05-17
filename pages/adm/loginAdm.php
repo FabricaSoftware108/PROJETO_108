@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login ADM</title>
+    <link rel="icon" href="./Imagens/favicon.png">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../js/login-ADM.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">

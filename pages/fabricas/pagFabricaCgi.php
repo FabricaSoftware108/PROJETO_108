@@ -8,6 +8,7 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica de Computação Gráfica</title>
+    <link rel="icon" href="./Imagens/favicon.png">
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
