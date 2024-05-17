@@ -172,7 +172,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
         
         labels: Object.keys(dic),
         datasets: [{
-          label: 'Número de alunos cadastrados por ano',
+          label: 'Soma da quantidade de alunos cadastrados',
           data: Object.values(dic),
           borderWidth: 1,
           borderColor: '#0000FF',
