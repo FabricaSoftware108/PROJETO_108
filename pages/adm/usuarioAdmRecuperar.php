@@ -14,7 +14,7 @@ include '../../app/session/verificacao.php';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -116,18 +116,25 @@ include '../../app/session/verificacao.php';
                           <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" style="fill: #1E55D1 ;transform: msFilter;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
                       </a>
                     </div>
-                  <div class="row mb-3">
-                    <div class="col-12 text-start">
-                      
+
+                    <!-- colocar no js os oldpassword e o newpassword -->
+                  
+                    <h2>Senha antiga</h2>
+                    <div class="input-group mb-3 col-12 ">
+                      <input class="form-control shadow-sm p-3" type="password" name="senha" id="senha" >
+                      <div class="input-group-append">
+                          <button class="input-group-text" type="button" id="toggle-password-btn"><i class="bi bi-eye col-2 icons-login-ADM"></i></button>
+                      </div>
                     </div>
-                  </div>
-  
-                  <div class="row mb-3">
+
+
+
+                  <!-- <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Senha antiga</h2>
                       <input type="text" class="form-control" name="oldPassword"/>
                     </div>
-                  </div>
+                  </div> -->
   
                   <div class="row mb-3">
                     <div class="col-12 text-start">
@@ -155,8 +162,7 @@ include '../../app/session/verificacao.php';
       </div>
     </form>
   </main>
-
-
+  <script src="../../js/mostrar-senha.js"></script>
 </body>
 
 </html>
