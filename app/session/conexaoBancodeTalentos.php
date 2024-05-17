@@ -4,12 +4,12 @@ session_start();
 include '../db/connection.php';
 
 // Verifica se os valores foram recebidos do formulário antes de usá-los
-if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["cpf"]) && !empty($_POST["escolaridade"]) && !empty($_POST["data_nascimento"]) && !empty($_POST["email"]) && !empty($_POST["telefone"]) && !empty($_POST["uf"]) && !empty($_POST["rua"]) && !empty($_POST["bairro"]) && !empty($_POST["cidade"]) && !empty($_POST["numero"]) && !empty($_POST["github"]) && !empty($_POST["linkedin"])) {
+if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["cpf"]) && !empty($_POST["escolaridade"]) && !empty($_POST["dataNascimento"]) && !empty($_POST["email"]) && !empty($_POST["telefone"]) && !empty($_POST["uf"]) && !empty($_POST["rua"]) && !empty($_POST["bairro"]) && !empty($_POST["cidade"]) && !empty($_POST["numero"]) && !empty($_POST["github"]) && !empty($_POST["linkedin"])) {
     $nome = mysqli_real_escape_string($connection, $_POST["nome"]);
     $sobrenome = mysqli_real_escape_string($connection, $_POST["sobrenome"]);
     $cpf = mysqli_real_escape_string($connection, $_POST["cpf"]);
     $escolaridade = mysqli_real_escape_string($connection, $_POST["escolaridade"]);
-    $dataNascimento = mysqli_real_escape_string($connection, $_POST["data_nascimento"]);
+    $dataNascimento = mysqli_real_escape_string($connection, $_POST["dataNascimento"]);
     $email = mysqli_real_escape_string($connection, $_POST["email"]);
     $telefone = mysqli_real_escape_string($connection, $_POST["telefone"]);
     $estado = mysqli_real_escape_string($connection, $_POST["uf"]);
