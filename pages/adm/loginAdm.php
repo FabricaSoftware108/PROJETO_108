@@ -51,7 +51,7 @@
                     </div>
                     <input class="form-control shadow-sm p-3" type="password" name="senha" id="senha" size="27" maxlength="50" placeholder="Senha:" required>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="toggle-password-btn"><i class="bi bi-eye"></i></button>
+                        <button class="input-group-text" type="button" id="toggle-password-btn"><i class="bi bi-eye col-2 icons-login-ADM"></i></button>
                     </div>
                 </div>
 

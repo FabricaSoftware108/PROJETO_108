@@ -3,6 +3,6 @@
 session_start();
 
 if (!$_SESSION['email']){ 
-    header('location: ../../pages/adm/loginAdm.html'); 
+    header('location: ../../pages/adm/loginAdm.php'); 
     exit();
 }

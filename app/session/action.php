@@ -7,7 +7,7 @@ $email = mysqli_real_escape_string($connection,$_POST["email"]);
 $senha = mysqli_real_escape_string($connection,$_POST["senha"]);
 
 if(empty($email) || empty($senha)){
-    header("location: ../../pages/adm/loginAdm.html");
+    header("location: ../../pages/adm/loginAdm.php");
     exit();
 }
 
