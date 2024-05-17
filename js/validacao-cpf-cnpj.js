@@ -41,15 +41,10 @@ function verificarCPF(strCpf) {
 }
 
 function validarcpf() {
-    var strCpf = document.getElementById('CPF').value;
-    while (verificarCPF!=(strCpf)) {
-        alert("CPF inválido")
-        return strCpf;
-        
-       
-    
-    // } else {
-    //     return true;
+    const strCpf = document.getElementById('CPF').value;
+    if (!verificarCPF(strCpf)) {
+        alert("CPF inválido");
+        return;
     }
 }
     
