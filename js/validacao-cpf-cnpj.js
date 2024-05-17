@@ -42,11 +42,12 @@ function verificarCPF(strCpf) {
 
 function validarcpf() {
     var strCpf = document.getElementById('CPF').value;
-    if (!verificarCPF(strCpf)) {
+    if (verificarCPF!=(strCpf)) {
         alert("CPF inválido");
-        return;
+      
+        return document.getElementById('campo-demanda').submit();
+        
     }
-    document.getElementById('').submit();
 }
     
 
