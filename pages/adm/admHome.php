@@ -5,10 +5,14 @@ include '../../app/db/connection.php';
 $queryVagas = "SELECT * FROM vagasEmprego;";
 $queryDemandas = "SELECT * FROM demandas;";
 $queryBT = "SELECT * FROM bancosTalentos;";
+$queryGraphic = "SELECT LEFT(dataFim, 4) AS lastNums, quantidadeAlunos FROM editais ORDER BY dataFim";
+
+
 
 $dadosVagas = mysqli_query($connection, $queryVagas);
 $dadosDemandas = mysqli_query($connection, $queryDemandas);
 $dadosBT = mysqli_query($connection, $queryBT);
+$graphicData = mysqli_query($connection, $queryGraphic);
 
 $retornoVagas = mysqli_num_rows($dadosVagas);
 $retornoDemandas = mysqli_num_rows($dadosDemandas);
@@ -136,15 +140,66 @@ $retornoBT = mysqli_num_rows($dadosBT);
     <!--Imagem dos gráficos-->
     <div class="container w-100" id="container2AdmHomeImagem">
       <div class="row justify-content-center d-flex align-items-center">
-        <div class="col-sm-12 col-lg-8">
+        <div class="col-sm-12 col-lg-7">
           <img src="../../Imagens/adm-home-fundo.png" class="img-fundo-adm-home" alt="Background Imagem">
-          <img src="../../Imagens/imagem_grafico_adm_home.png" class="img-fluid" alt="Responsive image" id="adm-home-img-2">
+          <canvas id="myChart"></canvas>
+          
         </div>
       </div>
     </div>
 
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    var dic = {}
+    <?php while ($row = mysqli_fetch_array($graphicData)){ ?>
+      if(!Object.keys(dic).includes("<?php echo $row["lastNums"] ?>")){
+        dic[<?php echo $row["lastNums"] ?>] = <?php echo $row["quantidadeAlunos"] ?>     
+      }
+      else{
+        dic[<?php echo $row["lastNums"] ?>] = dic[<?php echo $row["lastNums"] ?>] + <?php echo $row["quantidadeAlunos"] ?>;
+      }
+    <?php }?>
+
+    
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        
+        labels: Object.keys(dic),
+        datasets: [{
+          label: 'Número de alunos cadastrados por ano',
+          data: Object.values(dic),
+          borderWidth: 1,
+          borderColor: '#0000FF',
+          backgroundColor: 'rgb(47,112,255)',
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            title:{
+              display: true,
+              text: 'Número de alunos cadastrados',
+              position: 'right'
+            }
+          },
+          x: {
+            beginAtZero: true,
+            title:{
+              display: true,
+              text: 'Anos dos editais'
+            }
+          }
+        }
+      }
+    })
+  </script>
 </body>
 
 </html>
