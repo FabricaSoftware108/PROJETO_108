@@ -43,10 +43,11 @@ function verificarCPF(strCpf) {
 function validarcpf() {
     var strCpf = document.getElementById('CPF').value;
     if (verificarCPF!=(strCpf)) {
-        alert("CPF inválido");
-      
-        return document.getElementById('campo-demanda').submit();
-        
+        alert("CPF inválido")
+       
+    
+    } else {
+        return true;
     }
 }
     
