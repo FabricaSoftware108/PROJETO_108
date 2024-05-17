@@ -490,6 +490,11 @@ nav.home li:hover ul#menuFabricas {
 
 }
 
+.wrap-all-container-factories-row .hidden {
+    opacity: 0;
+    
+}
+
 .wrap-factories-home .wrapper-images-factories {
     background-color: #43079C;
     box-shadow: 0 0 50px #43079c6c;
@@ -497,8 +502,6 @@ nav.home li:hover ul#menuFabricas {
     color: #fff;
 }
 
-.wrap-factories-home { animation: AnimatedFactories 0.7s ease-in; animation-fill-mode: forwards; }
-.wrap-factories-home-animated { animation: AnimatedFactories2 0.7s ease-in; animation-fill-mode: forwards; }
 
 .wrap-factories-home #wrapper-images-factories-game{ background-color: #CF023D; box-shadow: 0 0 50px #CF023D; }
 .wrap-factories-home #wrapper-images-factories-grafica{ background-color: #E1A300; box-shadow: 0 0 50px #E1A300; }
@@ -587,6 +590,10 @@ nav.home li:hover ul#menuFabricas {
 .wrap-factories-home #container-button-factories-audio button:hover { background-color: #04BA1A; color: #fff; }
 .wrap-factories-home .wrapper-image img{ border-radius: 22px; }
 .wrap-factories-home .wrapper-describe-factories { text-align: justify; }
+
+
+.animated-all { animation: AnimatedFactories 0.7s ease-in; animation-fill-mode: forwards; }
+.animated-all2 { animation: AnimatedFactories2 0.7s ease-in; animation-fill-mode: forwards; }
 
 @keyframes AnimatedFactories { 0% {transform: translate(-4.5em, 0); opacity: 0;} 100% {transform: translate(0, 0); opacity: 1;} }
 @keyframes AnimatedFactories2 { 0% {transform: translate(4.5em, 0); opacity: 0;} 100% {transform: translate(0, 0); opacity: 1;} }
