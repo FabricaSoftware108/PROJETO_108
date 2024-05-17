@@ -1,31 +1,33 @@
 const rows = [
-    { element: document.getElementById('animated-left-js-software'), triggerHeight: 480 },
-    { element: document.getElementById('animated-right-js-game'), triggerHeight: 1000 },
-    { element: document.getElementById('animated-left-js-grafica'), triggerHeight: 1520 },
-    { element: document.getElementById('animated-right-js-audio'), triggerHeight: 2040 }
+    { element: document.getElementById('animated-left-js-software'), triggerHeight: 480, type: 'default' },
+    { element: document.getElementById('animated-right-js-game'), triggerHeight: 1000, type: 'special' },
+    { element: document.getElementById('animated-left-js-grafica'), triggerHeight: 1520, type: 'default' },
+    { element: document.getElementById('animated-right-js-audio'), triggerHeight: 2040, type: 'special' }
 ];
 
 const delay = 1000;
 
-function animatedSoft(event) {
+function animatedSoft(element, type) {
     setTimeout(() => {
-        event.classList.remove('hidden');
-        event.classList.add('show', 'animated-all');
+        element.classList.remove('hidden');
+        if (type === 'special') {
+            element.classList.add('show', 'animated-all2');
+        } else {
+            element.classList.add('show', 'animated-all');
+        }
     }, delay);
 }
 
 function onScroll() {
     const scrollY2 = window.scrollY;
-
     rows.forEach((row, index) => {
-        if (scrollY2 >= row.triggerHeight && !row.triggered) {
-            animatedSoft(row.element);
-            row.triggered = true;
+        if (scrollY2 >= row.triggerHeight) {
+            animatedSoft(row.element, row.type);
+            rows.splice(index, 1); 
         }
     });
-
-    if (rows.every(row => row.triggered)) {
-        window.removeEventListener('scroll', onScroll);
+    if (rows.length === 0) {
+        window.removeEventListener('scroll', onScroll); 
     }
 }
 
