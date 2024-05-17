@@ -759,6 +759,35 @@ nav.home li:hover ul#menuFabricas {
     text-align: justify;
 }
 
+.modal-header {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    padding: 1rem;
+}
+
+/* Estilo para o h1 com classes modal-title e fs-5 */
+h1.modal-title.fs-5 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 0; 
+    flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+    text-align: center; /* Garante que o texto do título esteja centralizado */
+}
+
+/* Estilo para o botão de fechamento */
+.btn-close {
+    position: absolute; /* Posição absoluta dentro do contêiner pai */
+    right: 1rem; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+
+
+
 div.carousel-item h5{
     font-size: 27px;
 }
@@ -880,7 +909,7 @@ div.carousel-item img#carouselImg{
 /*Fim Fábricas*/
 
 
-/* Começo da Fábrca de Software */
+/* Começo da Fábrica de Software */
 
 .bodyFabricaSoftware h1{
     font-weight: bold;
@@ -965,6 +994,33 @@ div.carousel-item img#carouselImg{
 .modal-body {
     text-align: justify;
 }
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    padding: 1rem; 
+}
+
+/* Estilo para o h1 com classes modal-title e fs-5 */
+h1.modal-title.fs-5 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 0; 
+    flex-grow: 1;
+    text-align: center; 
+}
+
+/* Estilo para o botão de fechamento */
+.btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
 
 div.carousel-item h5{
     font-size: 27px;
