@@ -125,11 +125,11 @@ include '../../app/db/connection.php';
                       <form action="../../app/session/actionBancoTalentosDetalhado.php" method="post">
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
                         <tr>
-                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"> <?php echo $retorno["nome"];?></button></td>
-                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["email"];?></button></td>
-                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["cpf"];?></button></td>
-                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["telefone"];?></button></td>
-                          <td class="h9"><button class="btn w-100" type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["linkedin"];?></button></td>
+                          <td class="h9"><a type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"> <?php echo $retorno["nome"];?></a></td>
+                          <td class="h9"><a type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["email"];?></a></td>
+                          <td class="h9"><a type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["cpf"];?></a></td>
+                          <td class="h9"><a type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["telefone"];?></a></td>
+                          <td class="h9"><a type="submit" name="bancoTalentosCodigo" value="<?php echo $retorno["cpf"] ?>"><?php echo $retorno["linkedin"];?></a></td>
                         </tr>
                       <?php }?>
                       </form>
