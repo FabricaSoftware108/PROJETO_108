@@ -1,54 +1,95 @@
-function verificarCPF(strCpf) {
-    if (!/[0-9]{11}/.test(strCpf)) return false;
-    if (strCpf === "00000000000") return false;
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('CPF').addEventListener('blur', validarCPF);
+    document.getElementById('cnpj').addEventListener('blur', validarCNPJ);
+});
 
-    var soma = 0;
-
-    for (var i = 1; i <= 9; i++) {
-        soma += parseInt(strCpf.substring(i - 1, i)) * (11 - i);
+function validarCPF() {
+    const cpf = document.getElementById('CPF').value.replace(/\D/g, '');
+    if (!isCPFValid(cpf)) {
+        alert("CPF inválido! Verifique e tente novamente.");
     }
+}
 
-    var resto = soma % 11;
-
-    if (resto === 10 || resto === 11 || resto < 2) {
-        resto = 0;
-    } else {
-        resto = 11 - resto;
+function validarCNPJ() {
+    const cnpj = document.getElementById('cnpj').value.replace(/\D/g, '');
+    if (!isCNPJValid(cnpj)) {
+        alert("CNPJ inválido! Verifique e tente novamente.");
     }
+}
 
-    if (resto !== parseInt(strCpf.substring(9, 10))) {
+function isCPFValid(cpf) {
+    if (cpf.length !== 11 ||
+        /^(\d)\1+$/.test(cpf)) {
         return false;
     }
 
-    soma = 0;
-
-    for (var i = 1; i <= 10; i++) {
-        soma += parseInt(strCpf.substring(i - 1, i)) * (12 - i);
+    let sum = 0;
+    for (let i = 0; i < 9; i++) {
+        sum += parseInt(cpf.charAt(i)) * (10 - i);
     }
-    resto = soma % 11;
-
-    if (resto === 10 || resto === 11 || resto < 2) {
-        resto = 0;
-    } else {
-        resto = 11 - resto;
+    let remainder = 11 - (sum % 11);
+    if (remainder === 10 || remainder === 11) {
+        remainder = 0;
+    }
+    if (remainder !== parseInt(cpf.charAt(9))) {
+        return false;
     }
 
-    if (resto !== parseInt(strCpf.substring(10, 11))) {
+    sum = 0;
+    for (let i = 0; i < 10; i++) {
+        sum += parseInt(cpf.charAt(i)) * (11 - i);
+    }
+    remainder = 11 - (sum % 11);
+    if (remainder === 10 || remainder === 11) {
+        remainder = 0;
+    }
+    if (remainder !== parseInt(cpf.charAt(10))) {
         return false;
     }
 
     return true;
 }
 
-function validarcpf() {
-    const strCpf = document.getElementById('CPF').value;
-    if (!verificarCPF(strCpf)) {
-        alert("CPF inválido");
-        return;
+function isCNPJValid(cnpj) {
+    if (cnpj.length !== 14 ||
+        /^(\d)\1+$/.test(cnpj)) {
+        return false;
     }
+
+    let length = cnpj.length - 2;
+    let numbers = cnpj.substring(0, length);
+    let digits = cnpj.substring(length);
+    let sum = 0;
+    let pos = length - 7;
+
+    for (let i = length; i >= 1; i--) {
+        sum += numbers.charAt(length - i) * pos--;
+        if (pos < 2) {
+            pos = 9;
+        }
+    }
+
+    let result = sum % 11 < 2 ? 0 : 11 - sum % 11;
+    if (result !== parseInt(digits.charAt(0))) {
+        return false;
+    }
+
+    length += 1;
+    numbers = cnpj.substring(0, length);
+    sum = 0;
+    pos = length - 7;
+
+    for (let i = length; i >= 1; i--) {
+        sum += numbers.charAt(length - i) * pos--;
+        if (pos < 2) {
+            pos = 9;
+        }
+    }
+
+    result = sum % 11 < 2 ? 0 : 11 - sum % 11;
+    if (result !== parseInt(digits.charAt(1))) {
+        return false;
+    }
+
+    return true;
 }
-    
-
-  
-
-
