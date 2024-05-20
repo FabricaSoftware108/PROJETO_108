@@ -24,6 +24,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
 
 <head>
   <title>Home ADM</title>
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="icon" href="./Imagens/favicon.png">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

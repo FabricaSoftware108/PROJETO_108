@@ -20,7 +20,7 @@ include '../../app/db/connection.php';
     crossorigin="anonymous"></script>
 
   <title>Relatórios Aluno ADM</title>
-  <link rel="icon" href="./Imagens/favicon.png">
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
 </head>
 
 <body class="body-relatorioAluno_adm">
