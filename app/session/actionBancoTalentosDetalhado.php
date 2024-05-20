@@ -3,7 +3,7 @@ session_start();
 if($_POST['bancoTalentosCodigo']){
     $_SESSION['bancoTalentosCodigo'] = $_POST['bancoTalentosCodigo'];
 
-    header('location: ../../pages/adm/relatorioDetalhadoBancoDeTalentos.php');
+    header('location: ../../pages/adm/relatoriodetalhadobancodetalentos.php');
     exit();
 }
 else{
