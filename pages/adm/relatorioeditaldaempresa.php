@@ -114,6 +114,7 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                           <th class="label-cnpj_edital_da_empresa">CNPJ</th>
                           <th class="label-telefone_edital_da_empresa">Telefone</th>
                           <th class="label-email_edital_da_empresa">E-mail</th>
+                          <td class="label-email_edital_da_empresa">...</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -121,11 +122,19 @@ include "../../app/session/conexaoDemandaEmpresa.php"
 
                           <?php while ($row = mysqli_fetch_array($result)){?>
                             <tr>
-                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["nomeEmpresa"];?></button></td>
-                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["nomeTitular"];?></button></td>
-                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["cnpj"];?></button></td>
-                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["telefoneTitular"];?></button></td>
-                              <td class="h9"><button class="btn w-100" type="submit" name="demandaCode" value="<?php echo $row["id"] ?>"><?php echo $row["emailTitular"];?></button></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["nomeEmpresa"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["nomeTitular"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["cnpj"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["telefoneTitular"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["emailTitular"];?></a></td>
+                              <td class="h9"><button type="submit" class="btn btn-primary relatorio-edital_da_empresa-button_irParaDetalhado" name="demandaCode"
+                                value="<?php echo $row["id"]?>">
+                                  <!--Seta dentro do botão-->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                                  </svg>
+                                  <!--Seta dentro do botão-->
+                              </button>
                             </tr>
                           <?php }?>
                         </form>
