@@ -14,6 +14,7 @@ include '../../app/db/connection.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Edital</title>
+    <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../../js/dropdownfabricas.js" defer></script>
@@ -96,9 +97,11 @@ include '../../app/db/connection.php';
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12" id="titulo-subtitulo-edital">
-                    <h1>Edital</h1><br><br>
-                    <p>Editais das Empresas e das Fabricas de Software, Jogos, Computação Gráfica e Áudio e Vídeo.</p><br>
+                <div class="col-12" id="titulo-subtitulo-edital" >
+                    <h1>Vagas Gratuitas</h1><br><br>
+                    <p style="text-align: justify;">O Senac por meio de seu Programa de gratuidade, destinado ao público de baixa renda,
+                            oferece a possibilidade de acesso aos cursos técnicos das fábricas, deseja estar conosco neste
+                            projeto? Cadastre-se aqui.</p><br>
                 </div>
             </div>
 
