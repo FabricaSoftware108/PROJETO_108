@@ -1,7 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('CPF').addEventListener('blur', validarCPF);
     document.getElementById('cnpj').addEventListener('blur', validarCNPJ);
+
+
+
+    
 });
+
+function validarCPF() {
+    const cpf = document.getElementById('test').value.replace(/\D/g, '');
+    if (!isCPFValid(cpf)) {
+        alert("CPF inválido! Verifique e tente novamente.");
+      
+    }
+}
 
 function validarCPF() {
     const cpf = document.getElementById('CPF').value.replace(/\D/g, '');

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../../Css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../../js/dropdownfabricas.js" defer></script>
+
+    <!-- <script src="../../js/validacaoCPF-pagbancoTalentos.js"></script> -->
+    <script src="../../js/validacaoCPF-pagbancoTalentos.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,14 +118,14 @@
                     onsubmit="return validarPost()">
                     <h1>Dados Pessoais</h1><br>
                     <div class="container-fluid-inputs">
-                    <div class="row align-items-center justify-content-center mb-5" id="id="container-bancoTalento-inputs">
+                    <div class="row align-items-center justify-content-center mb-5" id="container-bancoTalento-inputs">
                         <div class= "col-sm-auto col-md-auto col-lg-12">
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="nome" id="nome" size="27"
                                 maxlength="45" placeholder="Nome" required>
                             <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome" id="sobrenome"
                                 size="27" placeholder="Sobrenome" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cpf" id="cpf" size="27"
-                                maxlength="14" placeholder="CPF" required>
+                            <input class="cadastrovagas col-md-5 col-10 col-sm-12 " type="text" name="cpf" id="cpf" size="27"
+                                maxlength="14" placeholder="CPF" onblur='validarcpf()'>
                             <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade" id="escolaridade" required>
                                 <option value="escolaridade">Escolaridade</option>
                                 <option value="medio">Ensino Médio</option>
