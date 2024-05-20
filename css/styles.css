@@ -2140,9 +2140,6 @@ input.cadastro-aluno-psg {
 
 /* EDITAR ADM.PHP*/
 
-
-
-
 .wrapper-editar-adm .editar-adm-container-title h1 { font-weight: 500; color: white; font-family: var(--font-destaque); font-size: 30px; padding: 20px 0;}
 .wrapper-editar-adm .editar-adm-container-title { background-color: #1E55D1; border-radius: 10px 10px 0 0; }
 .wrapper-editar-adm {margin-top:  180px;}
@@ -2155,8 +2152,6 @@ input.cadastro-aluno-psg {
     font-family: var(--font-destaque);
 }
 
-  
-
 .editar-adm .outline-box {
     margin-bottom: 5px !important;
     margin-top: 5px !important;
@@ -2165,6 +2160,22 @@ input.cadastro-aluno-psg {
     .switchbutton{
         overflow-wrap: break-word;
 }
+}
+
+.container-info-editar-adm {
+    border-color: #cacaca;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.label-nome-editar-adm {
+    font-size: 20px;
+}
+
+.label-email-editar-adm {
+    font-size: 20px;
 }
 
 
