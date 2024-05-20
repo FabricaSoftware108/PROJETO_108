@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('CPF || cpf' ).addEventListener('blur', validarCPF);
-    document.getElementById('CNPJ || cnpj').addEventListener('blur', validarCNPJ);
-
-   
+    document.getElementById('cpf' && 'CPF' ).addEventListener('blur', validarCPF);
+    document.getElementById('CNPJ' && 'cnpj').addEventListener('blur', validarCNPJ);
 
     
 });
@@ -10,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function validarCPF() {
-    const cpf = document.getElementById('CPF || cpf').value.replace(/\D/g, '');
+    const cpf = document.getElementById('cpf' && 'CPF').value.replace(/\D/g, '');
     if (isCPFValid!=(cpf)) {
         alert("CPF inválido! Verifique e tente novamente.");
       
@@ -18,7 +16,7 @@ function validarCPF() {
 }
 
 function validarCNPJ() {
-    const cnpj = document.getElementById('CNPJ || cnpj').value.replace(/\D/g, '');
+    const cnpj = document.getElementById('CNPJ' && 'cnpj').value.replace(/\D/g, '');
     if (!isCNPJValid(cnpj)) {
         alert("CNPJ inválido! Verifique e tente novamente.");
    
