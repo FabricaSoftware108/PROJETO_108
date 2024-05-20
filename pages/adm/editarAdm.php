@@ -12,7 +12,7 @@ $result = mysqli_query($connection, $query);
 <html lang="pt-br">
 
 <head>
-  <title>Home ADM</title>
+  <title>Editar ADM</title>
   <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="icon" href="./Imagens/favicon.png">
   <meta charset="UTF-8">
