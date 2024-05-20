@@ -27,7 +27,6 @@ $result = mysqli_query($connection, $query);
 
   <!-- CSS -->
   <link href="../../css/styles.css" rel="stylesheet">
-  <!--<link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css">  Erro Aqui! -->  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!--Menu de Navegação-->
 
@@ -135,11 +134,11 @@ $result = mysqli_query($connection, $query);
                   <div class="row">
                     <div class="col-md-12 col-12">
 
-                      <div class="ls-box outline-box d-lg-flex d-sm-block justify-content-between align-items-center" style="text-align: start;">
+                      <div class="ls-box outline-box d-lg-flex d-sm-block justify-content-between align-items-center container-info-editar-adm" style="text-align: start;">
                         <div class="w-75">
 
-                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
-                          <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
+                          <h2 class="ls-title-5 ls-display-inline-block label-nome-editar-adm"><?php echo $row['nome'] ?></h2>
+                          <h2 class="ls-title-5 ls-display-inline-block label-email-editar-adm"><?php echo $row['email'] ?></h2>
                         </div>
                         <button type="submit" class="btn d-flex justify-content-center align-items-center" name="switchState" value="<?php echo $row['email'] ?>">
                           <i class="bi <?php echo $icon ?> <?php echo $outline ?>" style="font-size: 40px;"></i>
