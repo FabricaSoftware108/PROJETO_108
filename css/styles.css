@@ -1335,6 +1335,54 @@ main.body-demanda {
     opacity: 70%;
     z-index: 1;
 }
+.edital div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
+.cadastro-de-vagas div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
+.body-aluno-psg div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
+.body-banco-talentos div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
 #titulo-subtitulo-demanda p {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     max-width: 1400px;
@@ -1357,6 +1405,47 @@ main.body-demanda {
 .body-demanda div.effects-2 {
   box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
   left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+
+.edital div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+.cadastro-de-vagas div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+.body-aluno-psg div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+.body-banco-talentos div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1780px;
   height: 100px;
   top:500px;
   position: absolute;
@@ -1424,11 +1513,12 @@ main.body-demanda {
    }
 }
 @media (max-width: 1200px) {
- 
-    .body-bancoTalentos .effects, .effects-2 {
+    [class*="effects"],
+    .effects-2 {
         display: none;
     }
 }
+
 
 @media (max-width: 500px) {
  
@@ -1740,6 +1830,7 @@ input.cadastrovagas {
 
 
 main.body-banco-talentos {
+    overflow-x: hidden;
     max-width: 1300px;
     margin: 20px auto;
     margin-top: 160px;
@@ -1792,19 +1883,6 @@ main.body-banco-talentos {
     z-index: 0;
   }
 
-.body-bancoTalentos div.effects-2 {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #4815c2;
-    opacity: 70%;
-    z-index: 0; 
-}
   
 .bancoTalento-recaptcha{
     
