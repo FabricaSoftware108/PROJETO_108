@@ -118,24 +118,12 @@ include '../../app/session/verificacao.php';
                       </a>
                     </div>
 
-                    <!-- colocar no js os oldpassword e o newpassword -->
-                  
-                    <h2>Senha antiga</h2>
-                    <div class="input-group mb-3 col-12 ">
-                      <input class="form-control shadow-sm p-3" type="password" name="senha" id="senha" >
-                      <div class="input-group-append">
-                          <button class="input-group-text" type="button" id="toggle-password-btn"><i class="bi bi-eye col-2 icons-login-ADM"></i></button>
-                      </div>
-                    </div>
-
-
-
-                  <!-- <div class="row mb-3">
+                  <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Senha antiga</h2>
-                      <input type="text" class="form-control" name="oldPassword"/>
+                      <input type="password" class="form-control" name="oldPassword"/>
                     </div>
-                  </div> -->
+                  </div>
   
                   <div class="row mb-3">
                     <div class="col-12 text-start">
@@ -163,7 +151,7 @@ include '../../app/session/verificacao.php';
       </div>
     </form>
   </main>
-  <script src="../../js/mostrar-senha.js"></script>
+
 </body>
 
 </html>
