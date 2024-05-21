@@ -88,8 +88,6 @@ include '../../app/db/connection.php';
         <div class="effects-2"></div>
             <div class="col-2"></div>
             
-                <div class="sombra_rosa-edital"></div>
-                <div class="sombra_roxa-edital"></div>
                 <div class="titulo_edital">
                     
                 </div>
