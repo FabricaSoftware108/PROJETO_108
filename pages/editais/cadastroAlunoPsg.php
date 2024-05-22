@@ -15,7 +15,7 @@ include '../../app/session/verificacaoPsg.php';
     
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <script src="../../js/validacao-cpf-cnpj.js"></script>
+    <script src="../../js/validacao-cpf-pagCadastroAlunoPsg.js"></script>
 
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
