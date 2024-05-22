@@ -104,11 +104,9 @@ include '../../app/session/verificacaoPsg.php';
     </header>
 
 
-    /*Sombras no Fundo da Página*/
-    <div class="sombra-roxa-cadastro-aluno-psg col-1"></div>
-    <div class="sombra-rosa-cadastro-aluno-psg col-1"></div>
-
     <main class="body-aluno-psg">
+        <div class="effects"></div>
+        <div class="effects-2"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12" id="textSobreCadastroAlunoPsg">

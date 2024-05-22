@@ -84,11 +84,10 @@ include '../../app/db/connection.php';
     </header>
 
     <main class="edital">
-        
+        <div class="effects"></div>
+        <div class="effects-2"></div>
             <div class="col-2"></div>
             
-                <div class="sombra_rosa-edital"></div>
-                <div class="sombra_roxa-edital"></div>
                 <div class="titulo_edital">
                     
                 </div>
@@ -101,7 +100,7 @@ include '../../app/db/connection.php';
                     <h1>Vagas Gratuitas</h1><br><br>
                     <p style="text-align: justify;">O Senac por meio de seu Programa de gratuidade, destinado ao público de baixa renda,
                             oferece a possibilidade de acesso aos cursos técnicos das fábricas, deseja estar conosco neste
-                            projeto? Cadastre-se aqui.</p><br>
+                            projeto? Cadxastre-se aqui.</p><br>
                 </div>
             </div>
 
