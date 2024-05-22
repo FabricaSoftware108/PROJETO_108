@@ -118,7 +118,7 @@ include '../../app/session/verificacao.php';
           <div class="content-image-describe py-5">
             <h2>Foto da turma</h2>
             <label for="inputGroupFile04" id="imgEditarCarrossel">
-              <img src="../../Imagens/fabrica108.jpg" style=" width: 400px; height: 400px;" class="img-fluid">
+              <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid">
             </label>
             <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
           </div>
