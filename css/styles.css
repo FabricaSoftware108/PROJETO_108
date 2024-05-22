@@ -57,6 +57,10 @@ header.cabecalhoGeral {
     height: 50px;
 }
 
+.offcanvas-title{
+    margin-left:86%;
+}
+
 .cabecalhoGeral .bg-dropDown-header {
     background-color: rgb(248, 249, 250);
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
