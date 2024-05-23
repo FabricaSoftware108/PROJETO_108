@@ -14,7 +14,9 @@ if(empty($nome) || empty($email)){
     exit();
 }
 
-$query = "INSERT INTO admin (email, senha, nome, telefone, estado) VALUES ('$email', '$senha', '$nome', '$telefone', true)";
+$senhacrip = password_hash($senha, PASSWORD_DEFAULT);
+
+$query = "INSERT INTO admin (email, senha, nome, telefone, estado) VALUES ('$email', '$senhacrip', '$nome', '$telefone', true)";
 $result = mysqli_query($connection, $query);
 
 if ($result){
