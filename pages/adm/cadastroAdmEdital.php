@@ -106,7 +106,7 @@ include '../../app/session/verificacao.php';
                                         <div class="col-12" id="tituloCadastroEdital">
                                             <div class="cadastro-adm-edital-input-container ">
                                                 <label for="cadastro-adm-edital-nome" class="cadastro-adm-edital-label">Nome do Edital</label>
-                                                <input type="text"  size="60" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
+                                                <input type="text"  size="60" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
                                             </div>
                                             <div class="cadastro-adm-edital-input-container">
                                                 <label for="cadastro-adm-edital-email" class="cadastro-adm-edital-label">Código Do Edital</label>
@@ -123,12 +123,14 @@ include '../../app/session/verificacao.php';
                                                     <div class="col-md-6">
 
                                                         <label for="cadastro-adm-edital-data" id="centerDateInicio" class="cadastro-adm-edital-label-data">Data Ínicial</label>
-                                                        <input type="date" class="form-control" id="cadastroAdmEditalDataInicial">
+                                                        <input type="date" class="form-control" id="cadastroAdmEditalDataInicial"
+                                                        max = "9999-12-31" required>
                                                     </div>
                                                     <div class="col-md-6 mt-2 mt-md-0">
 
                                                         <label for="cadastro-adm-edital-data"  id="centerDateFinal"class="cadastro-adm-edital-label-data">Data Final</label>
-                                                        <input type="date" class="form-control" id="cadastroAdmEditalDataFinal">
+                                                        <input type="date" class="form-control" id="cadastroAdmEditalDataFinal"
+                                                        max = "9999-12-31" required>
                                                     </div>
                                                 </div>
                                             </div>
