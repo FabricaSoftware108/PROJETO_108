@@ -9,6 +9,7 @@ function validarCNPJ() {
     const cnpj = document.getElementById('cnpj').value.replace(/\D/g, '');
     if (!isCNPJValid(cnpj)) {
         alert("CNPJ inválido! Verifique e tente novamente.");
+        document.getElementById('cnpj').value = ''; // Limpa o campo de input , quando clicado no ok, do alert.
    
     }
 }

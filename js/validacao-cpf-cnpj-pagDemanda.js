@@ -11,7 +11,7 @@ function validarCPF() {
     const cpf = document.getElementById('CPF').value.replace(/\D/g, '');
     if (isCPFValid!=(cpf)) {
         alert("CPF inválido! Verifique e tente novamente.");
-      
+        document.getElementById('CPF').value = ''; // Limpa o campo de input , quando clicado no ok, do alert.
     }
 }
 
@@ -19,7 +19,7 @@ function validarCNPJ() {
     const cnpj = document.getElementById('cnpj').value.replace(/\D/g, '');
     if (!isCNPJValid(cnpj)) {
         alert("CNPJ inválido! Verifique e tente novamente.");
-   
+        document.getElementById('cnpj').value = ''; // Limpa o campo de input
     }
 }
 

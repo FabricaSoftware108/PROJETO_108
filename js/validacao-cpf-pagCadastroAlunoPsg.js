@@ -9,6 +9,7 @@ function validarCPF() {
     const cpf = document.getElementById('cpf').value.replace(/\D/g, '');
     if (!isCPFValid(cpf)) {
         alert("CPF inválido! Verifique e tente novamente.");
+        document.getElementById('cpf').value = ''; // Limpa o campo de input , quando clicado no ok, do alert.
       
     }
 }
