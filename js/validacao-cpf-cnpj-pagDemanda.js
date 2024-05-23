@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('CPF' ).addEventListener('blur', validarCPF);
+    document.getElementById('cpf' ).addEventListener('blur', validarCPF);
     document.getElementById('cnpj' ).addEventListener('blur', validarCNPJ);
 
-    
+
 });
 
 
 
 function validarCPF() {
-    const cpf = document.getElementById('CPF').value.replace(/\D/g, '');
+    const cpf = document.getElementById('cpf').value.replace(/\D/g, '');
     if (isCPFValid!=(cpf)) {
         alert("CPF inválido! Verifique e tente novamente.");
-        document.getElementById('CPF').value = ''; // Limpa o campo de input , quando clicado no ok, do alert.
+        document.getElementById('cpf').value = ''; // Limpa o campo de input , quando clicado no ok, do alert.
     }
 }
 
