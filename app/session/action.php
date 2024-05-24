@@ -11,35 +11,31 @@ if(empty($email) || empty($senha)){
     exit();
 }
 
-$query = "SELECT * FROM admin WHERE email = '{$email}' AND senha = '{$senha}'";
-
+$query = "SELECT * FROM admin WHERE email = '{$email}'";
 
 $result = mysqli_query($connection, $query);
 
-
-
-$row = mysqli_fetch_array($result);
-
-
-if($row['email']==$email && $row['senha']==$senha && $row['estado']==1){
-    $_SESSION['email'] = $row['email'];
-    $_SESSION['senha'] = $row['senha'];
-    $_SESSION['nome'] = $row['nome'];
-    $_SESSION['telefone'] = $row['telefone'];
-    $_SESSION['estado'] = $row['estado'];
+if(mysqli_num_rows($result) == 1){
+    $row = mysqli_fetch_assoc($result);
+    $hashed_password = $row['senha'];
     
-
-    header("location: ../../pages/adm/admHome.php");
-    exit();
-}
-
-else if($row['email'] == $email && $row['senha'] == $senha && $row['estado'] == 0){
-    // Usuário desativado
-    header("location: ../../pages/adm/loginAdm.php?erro=desativado");
-    exit();
-}
-else{
-    // Credenciais incorretas
+    if(password_verify($senha, $hashed_password) && $row['estado'] == 1){
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['senha'] = $hashed_password; 
+        $_SESSION['nome'] = $row['nome'];
+        $_SESSION['telefone'] = $row['telefone'];
+        $_SESSION['estado'] = $row['estado'];
+        
+        header("location: ../../pages/adm/admHome.php");
+        exit();
+    } elseif($row['estado'] == 0) {
+        header("location: ../../pages/adm/loginAdm.php?erro=desativado");
+        exit();
+    } else {
+        header("location: ../../pages/adm/loginAdm.php?erro=incorreto");
+        exit();
+    }
+} else {
     header("location: ../../pages/adm/loginAdm.php?erro=incorreto");
     exit();
 }
