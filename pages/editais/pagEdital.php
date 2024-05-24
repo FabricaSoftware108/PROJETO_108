@@ -98,9 +98,9 @@ include '../../app/db/connection.php';
             <div class="row">
                 <div class="col-12" id="titulo-subtitulo-edital" >
                     <h1>Vagas Gratuitas</h1><br><br>
-                    <p style="text-align: justify;">O Senac por meio de seu Programa de gratuidade, destinado ao público de baixa renda,
-                            oferece a possibilidade de acesso aos cursos técnicos das fábricas, deseja estar conosco neste
-                            projeto? Cadxastre-se aqui.</p><br>
+                    <p style="text-align: justify;">O Senac por meio de seu Programa de Gratuidade, destinado ao público de baixa renda,
+                            oferece a possibilidade de acesso aos cursos técnicos das fábricas. Deseja estar conosco neste
+                            projeto? Cadastre-se aqui.</p><br>
                 </div>
             </div>
 

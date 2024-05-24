@@ -111,8 +111,8 @@ include '../../app/session/verificacaoPsg.php';
             <div class="row">
                 <div class="col-12" id="textSobreCadastroAlunoPsg">
                     <h1>Cadastro Aluno PSG</h1><br><br>
-                    <p>O programa de gratuidade do SENAC é uma politica de incentivo única que busca
-                            oferecer uma educação profissional inclusiva com instrutores especializados e gratuita
+                    <p>O Programa SENAC de Gratuidade é uma política de incentivo única que busca
+                            oferecer uma educação profissional inclusiva com instrutores especializados e gratuita.
                     </p>
                 </div>
             </div>
@@ -156,7 +156,7 @@ include '../../app/session/verificacaoPsg.php';
 
                     <div class="check-consentimento-dados">
                         <input type="checkbox" id="horns" name="horns" required>
-                        <label for="horns">Eu autorizo o uso das minhas informações pessoais, e concordo em receber e-mails que podem ser cancelados a qualquer momento. </label>
+                        <label for="horns">Eu autorizo o uso das minhas informações pessoais e concordo em receber e-mails que podem ser cancelados a qualquer momento. </label>
                     </div>
 
                      <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
