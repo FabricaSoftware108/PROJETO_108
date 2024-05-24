@@ -144,7 +144,7 @@ include '../../app/session/verificacaoPsg.php';
                     <div class="col-12">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro"
                             size="27" maxlength="50" placeholder="Bairro">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="numero" id="numero"
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero"
                             size="27" maxlength="4" placeholder="Número"><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27"
                             maxlength="9" placeholder="CEP">
