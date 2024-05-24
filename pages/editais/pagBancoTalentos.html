@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/styles.css">
-    <title>Banco de Talentos</title>
+    <title>Talentos das Fábricas</title>
     <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../Css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../../js/dropdownfabricas.js" defer></script>
+
+    <script src="../../js/validacaoCPF-pagBancoTalentos.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,15 +120,15 @@
                     onsubmit="return validarPost()">
                     <h1>Dados Pessoais</h1><br>
                     <div class="container-fluid-inputs">
-                        <div class="row align-items-center justify-content-center mb-5" id="id="
-                            container-bancoTalento-inputs">
+                        <div class="row align-items-center justify-content-center mb-5"
+                            id="container-bancoTalento-inputs">
                             <div class="col-sm-auto col-md-auto col-lg-12">
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="nome" id="nome"
-                                    size="27" maxlength="45" placeholder="Nome" required>
+                                    size="27" maxlength="80" placeholder="Nome" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome"
                                     id="sobrenome" size="27" placeholder="Sobrenome" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="tel" name="cpf" id="cpf"
-                                    size="27" maxlength="14" placeholder="CPF" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12 " type="tel" name="cpf" id="cpf"
+                                    size="27" maxlength="14" placeholder="CPF" onblur='validarcpf()'>
                                 <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade"
                                     id="escolaridade" required>
                                     <option value="escolaridade">Escolaridade</option>
@@ -133,12 +136,12 @@
                                     <option value="superior">Superior</option>
                                     <option value="graduacao">Graduação</option>
                                 </select><br>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento" ´s
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento"
                                     id="dataNascimento" placeholder="Data de Nascimento" type='text'
                                     onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'"
                                     max="9999-12-31" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email"
-                                    id="email" size="27" maxlength="50" placeholder="Email" required>
+                                    id="email" size="27" maxlength="80" placeholder="Email" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="tel" name="telefone"
                                     id="telefone" size="27" maxlength="15" placeholder="Telefone" required>
                                 <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf" required>
@@ -178,44 +181,44 @@
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade"
                                     id="cidade" size="27" maxlength="80" placeholder="Cidade" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="numero"
-                                    id="numero" size="27" maxlength="15" placeholder="Número" required>
+                                    id="numero" size="27" maxlength="50" placeholder="Número" required>
                             </div>
-                        </div>
-                        <div class="row justify-content-center align-items-center">
-                            <div class="row">
-                                <div class="subtitle-demanda text-center">
-                                    <h1>Contato</h1>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="row">
+                                    <div class="subtitle-demanda text-center">
+                                        <h1>Contato</h1>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row align-items-center justify-content-center mb-5">
-                            <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="github"
-                                    id="github" size="27" maxlength="80" placeholder="Github" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="linkedin"
-                                    id="linkedin" size="27" maxlength="80" placeholder="Likedin" required>
+                            <div class="row align-items-center justify-content-center mb-5">
+                                <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                                    <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="github"
+                                        id="github" size="27" maxlength="80" placeholder="Github" required>
+                                    <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="linkedin"
+                                        id="linkedin" size="27" maxlength="80" placeholder="Likedin" required>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="check-consentimento-dados">
-                            <input type="checkbox" id="horns" name="horns" required>
-                            <label for="horns">Eu autorizo o uso das minhas informações pessoais, e concordo em receber
-                                e-mails que podem ser cancelados a qualquer momento. </label>
-                        </div>
+                            <div class="check-consentimento-dados">
+                                <input type="checkbox" id="horns" name="horns" required>
+                                <label for="horns">Eu autorizo o uso das minhas informações pessoais, e concordo em
+                                    receber
+                                    e-mails que podem ser cancelados a qualquer momento. </label>
+                            </div>
 
-                        <!--essa div é do RECAPTCHA, NÃO MUDAR OU MEXER NELA EM HIPÓTESE ALGUMA!.-->
-                        <div class="col-12 align-items-center">
-                            <div class="g-recaptcha pagDemanda-recaptcha"
-                                data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
-                        </div>
-                        <div class="row justify-content-center align-items-center">
-                            <div class="button-enviar-vagas">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            <!--essa div é do RECAPTCHA, NÃO MUDAR OU MEXER NELA EM HIPÓTESE ALGUMA!.-->
+                            <div class="col-12 align-items-center">
+                                <div class="g-recaptcha pagDemanda-recaptcha"
+                                    data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+                            </div>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="button-enviar-vagas">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
             </div>
-        </div>
         </div>
         </div>
         </form>
