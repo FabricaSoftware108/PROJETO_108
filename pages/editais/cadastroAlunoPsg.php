@@ -134,18 +134,18 @@ include '../../app/session/verificacaoPsg.php';
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone"
                             size="27" maxlength="15" placeholder="Telefone">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email"
-                            size="27" maxlength="70" placeholder="E-mail"><br>
+                            size="27" maxlength="80" placeholder="E-mail"><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomeMae" id="nomeMae"
-                            size="27" maxlength="50" placeholder="Nome da Mãe">
+                            size="27" maxlength="80" placeholder="Nome da Mãe">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai"
-                            size="27" maxlength="50" placeholder="Nome do Pai"><br>
+                            size="27" maxlength="80" placeholder="Nome do Pai"><br>
                     </div>
                     <h1 id="camposPreenchimentoCadastroAlunoPsg">Endereço</h1><br>
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua"
                         size="27" maxlength="100" placeholder="Rua">
                     <div class="col-12">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro"
-                            size="27" maxlength="50" placeholder="Bairro">
+                            size="27" maxlength="80" placeholder="Bairro">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero"
                             size="27" maxlength="4" placeholder="Número"><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27"
