@@ -5,7 +5,7 @@ const rows = [
     { element: document.getElementById('animated-right-js-audio'), triggerHeight: 2040, type: 'special' }
 ];
 
-const delay = 1000;
+const delay = 200;
 
 function animatedSoft(element, type) {
     setTimeout(() => {
