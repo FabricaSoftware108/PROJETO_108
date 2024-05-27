@@ -1,72 +1,31 @@
-document.getElementById('cep').addEventListener('blur', function() {
-  const cep = this.value.replace(/\D/g, '');
-  
-  if (cep.length !== 8) {
-      alert('Por favor, insira um CEP válido.');
-      return;
-  }
+(function() {
+    const cep = document.querySelector("input[name=cep]");
 
-  fetch(`https://viacep.com.br/ws/${cep}/json/`)
-      .then(response => response.json())
-      .then(data => {
-          if (data.erro) {
-              alert('CEP não encontrado.');
-              return;
-          }
+    cep.addEventListener('blur', e => {
+        const value = cep.value.replace(/[^0-9]+/g, '');
 
-          document.getElementById('rua').textContent = data.logradouro;
-          document.getElementById('bairro').textContent = data.bairro;
-          document.getElementById('complemento').textContent = data.complemento || 'N/A';
-      })
-      .catch(error => {
-          console.error('Erro ao buscar o CEP:', error);
-          alert('Erro ao buscar o CEP. Tente novamente mais tarde.');
-      });
-});
+        if (value.length !== 8) {
+            alert('Por favor, insira um CEP válido.');
+            cep.value = '';
+            return;
+        }
 
+        const url = `https://viacep.com.br/ws/${value}/json/`;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById('cep').addEventListener('blur', function() {
-//   const cep = this.value.replace(/\D/g, '');
-  
-//   if (cep.length !== 8) {
-//       alert('Por favor, insira um CEP válido.');
-//       return;
-//   }
-
-//   fetch(`https://viacep.com.br/ws/${cep}/json/`)
-//       .then(response => response.json())
-//       .then(data => {
-//           if (data.erro) {
-//               alert('CEP não encontrado.');
-//               return;
-//           }
-
-//           document.getElementById('rua').textContent = data.logradouro;
-//           document.getElementById('bairro').textContent = data.bairro;
-//           document.getElementById('complemento').textContent = data.complemento || 'N/A';
-//       })
-//       .catch(error => {
-//           console.error('Erro ao buscar o CEP:', error);
-//           alert('Erro ao buscar o CEP. Tente novamente mais tarde.');
-//       });
-// });
+        fetch(url)
+        .then(response => response.json())
+        .then(json => {
+            if (json.erro) {
+                alert('CEP não encontrado.');
+                cep.value = '';
+            } else if (json.logradouro) {
+                document.querySelector('input[name=rua]').value = json.logradouro;
+                document.querySelector('input[name=bairro]').value = json.bairro;
+            }
+        })
+        .catch(error => {
+            console.error('Erro ao buscar o CEP:', error);
+            alert('Ocorreu um erro ao buscar o CEP.');
+        });
+    });
+})();
