@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('cnpj' ).addEventListener('blur', validarCNPJ);
+    
 
     
 });

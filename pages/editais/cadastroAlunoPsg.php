@@ -17,6 +17,8 @@ include '../../app/session/verificacaoPsg.php';
 
     <script src="../../js/validacao-cpf-pagCadastroAlunoPsg.js"></script>
 
+    <script src= "../../js/cep-pagAlunoPsg.js"></script>
+
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../../js/dropdownfabricas.js" defer></script>
@@ -166,6 +168,7 @@ include '../../app/session/verificacaoPsg.php';
         </footer>
 
     </div>
+    <script src= "../../js/cep-pagAlunoPsg.js"></script>
 </body>
 
 </html>

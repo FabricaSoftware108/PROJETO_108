@@ -9,4 +9,3 @@ $connection = new mysqli($host, $user, $password, $database);
 
 
 
-?>
