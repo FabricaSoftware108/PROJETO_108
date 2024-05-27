@@ -68,12 +68,13 @@
                                 </li>
                                 <li><a class="dropdown-item" href="../fabricas/pagFabricaCgi.php">Fábrica de Computação
                                         Gráfica</a></li>
-                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de 
+                                <li><a class="dropdown-item" href="../fabricas/pagFabricaAudioVisual.php">Fábrica de
                                         Áudio e Vídeo</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Vagas Gratuitas</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Vagas
+                                Gratuitas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page"
@@ -119,74 +120,101 @@
                     onsubmit="return validarPost()">
                     <h1>Dados Pessoais</h1><br>
                     <div class="container-fluid-inputs">
-                    <div class="row align-items-center justify-content-center mb-5" id="container-bancoTalento-inputs">
-                        <div class= "col-sm-auto col-md-auto col-lg-12">
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="nome" id="nome" size="27"
-                                maxlength="45" placeholder="Nome" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome" id="sobrenome"
-                                size="27" placeholder="Sobrenome" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12 " type="text" name="cpf" id="cpf" size="27"
-                                maxlength="14" placeholder="CPF" onblur='validarcpf()'>
-                            <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade" id="escolaridade" required>
-                                <option value="escolaridade">Escolaridade</option>
-                                <option value="medio">Ensino Médio</option>
-                                <option value="superior">Superior</option>
-                                <option value="graduacao">Graduação</option>
-                            </select><br>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento"
-                                id="dataNascimento" placeholder="Data de Nascimento"
-                                type='text'
-                                onfocus="this.type = 'date'"
-                                onblur="if(!this.value) this.type='text'"
-                                max = "9999-12-31" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email" id="email" size="27"
-                                maxlength="50" placeholder="Email" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone"
-                                size="27" maxlength="15" placeholder="Telefone" required>
-                            <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf" required>
-                                <option value="uf">UF:</option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </select>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="rua" id="rua" size="27"
-                                placeholder="Rua" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="bairro" id="bairro"
-                                size="27" maxlength="11" placeholder="Bairro" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade" id="cidade"
-                                size="27" maxlength="50" placeholder="Cidade" required>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="numero" id="numero"
-                                size="27" maxlength="50" placeholder="Número" required>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="row">
-                            <div class="subtitle-demanda text-center">
-                                <h1>Contato</h1>
+                        <div class="row align-items-center justify-content-center mb-5"
+                            id="container-bancoTalento-inputs">
+                            <div class="col-sm-auto col-md-auto col-lg-12">
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="nome" id="nome"
+                                    size="27" maxlength="80" placeholder="Nome" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome"
+                                    id="sobrenome" size="27" placeholder="Sobrenome" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12 " type="text" name="cpf" id="cpf"
+                                    size="27" maxlength="14" placeholder="CPF" onblur='validarcpf()'>
+                                <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade"
+                                    id="escolaridade" required>
+                                    <option value="escolaridade">Escolaridade</option>
+                                    <option value="medio">Ensino Médio</option>
+                                    <option value="superior">Superior</option>
+                                    <option value="graduacao">Graduação</option>
+                                </select><br>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento"
+                                    id="dataNascimento" placeholder="Data de Nascimento" type='text'
+                                    onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'"
+                                    max="9999-12-31" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email"
+                                    id="email" size="27" maxlength="80" placeholder="Email" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="tel" name="telefone"
+                                    id="telefone" size="27" maxlength="15" placeholder="Telefone" required>
+                                <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf" required>
+                                    <option value="uf">UF:</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="rua" id="rua"
+                                    size="27" placeholder="Rua" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="bairro"
+                                    id="bairro" size="27" maxlength="80" placeholder="Bairro" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade"
+                                    id="cidade" size="27" maxlength="80" placeholder="Cidade" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="numero"
+                                    id="numero" size="27" maxlength="50" placeholder="Número" required>
+                            </div>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="row">
+                                    <div class="subtitle-demanda text-center">
+                                        <h1>Contato</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center justify-content-center mb-5">
+                                <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                                    <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="github"
+                                        id="github" size="27" maxlength="80" placeholder="Github" required>
+                                    <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="linkedin"
+                                        id="linkedin" size="27" maxlength="80" placeholder="Likedin" required>
+                                </div>
+                            </div>
+
+                            <div class="check-consentimento-dados">
+                                <input type="checkbox" id="horns" name="horns" required>
+                                <label for="horns">Eu autorizo o uso das minhas informações pessoais, e concordo em
+                                    receber
+                                    e-mails que podem ser cancelados a qualquer momento. </label>
+                            </div>
+
+                            <!--essa div é do RECAPTCHA, NÃO MUDAR OU MEXER NELA EM HIPÓTESE ALGUMA!.-->
+                            <div class="col-12 align-items-center">
+                                <div class="g-recaptcha pagDemanda-recaptcha"
+                                    data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+                            </div>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="button-enviar-vagas">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -214,8 +242,6 @@
                         </div> 
                     </div>
             </div>
-        </div>
-        </div>
         </div>
         </div>
         </form>
