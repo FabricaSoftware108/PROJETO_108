@@ -91,7 +91,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                         <h1 class="text-center pt-5">Fábrica de Software</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de software é um projeto que simula uma empresa de desenvolvimento de software, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de software, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">A Fábrica de Software é um projeto que simula uma empresa de desenvolvimento de software, visando criar experiências interativas personalizadas e de alta qualidade. Além da produção de software, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
@@ -209,8 +209,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                         <div class="col">
                           <h2>Conhecimentos necessários:</h2>
                           <ul>
-                            <li><p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio ou 2ª fase
-                              da EJA;</p></li>
+                            <li><p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio, ou 2ª fase da EJA;</p></li>
                             <li><p>Possuir conhecimentos de informática básica;</p></li>
                           </ul>
                         </div>
