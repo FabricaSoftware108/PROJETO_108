@@ -1,5 +1,5 @@
 (function() {
-    const cep = document.querySelector("input[name=cep]"); //MUDAR O NOME DO INPUT QUE ELES VÃO ADICIONAR NA PÁGINA DO BANCO DE TALENTOS.
+    const cep = document.querySelector("input[name=cep]"); 
 
     cep.addEventListener('blur', e => {
         const value = cep.value.replace(/[^0-9]+/g, '');
