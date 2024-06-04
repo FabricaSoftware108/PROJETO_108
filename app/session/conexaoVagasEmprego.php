@@ -22,19 +22,13 @@ if (isset($_POST['nome_empresa']) &&
     
     $result = mysqli_query($connection, $query);
     
-    if ($result) {
-        echo "<script>alert('Cadastro realizado com sucesso!');</script>";
-        header("location: ../../pages/editais/cadastroVagasEmprego.html");
-        exit();
+    if (!$result) {
+        echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro'); window.location.href='../../pages/editais/cadastroVagasEmprego.html    ';</script>";
     } else {
-        echo "<script>alert('Erro ao cadastrar os dados.');</script>";
-        header("location: ../../pages/editais/cadastroVagasEmprego.html");
-        exit();
+        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/cadastroVagasEmprego.html';</script>";
     }
-
 } else {
-    header("location: ../../pages/editais/cadastroVagasEmprego.html");
-    exit();
+    echo "<script language='javascript'>window.alert('Por favor, preencha todos os campos do formulário'); window.location.href='../../pages/editais/cadastroVagasEmprego.html';</script>";
 }
 
 ?>

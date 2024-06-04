@@ -8,6 +8,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábrica de Software</title>
+    <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
     
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,21 +55,21 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                         </ul> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Edital</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Vagas Gratuitas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Empresas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/cadastroVagasEmprego.html">Cadastro de Vagas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagBancoTalentos.html">Banco de Talentos</a>
+                        <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagBancoTalentos.html">Talentos das Fábricas</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active back me-5 loginADM" aria-current="page" href="../adm/loginAdm.html">Login ADM</a>
+                    <a class="nav-link active back me-5 loginADM" aria-current="page" href="../adm/loginAdm.php">Login ADM</a>
                 </li>
                 </ul>
             </div>
@@ -90,7 +91,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                         <h1 class="text-center pt-5">Fábrica de Software</h1>
                       </div>
                       <div class="row">
-                        <p class="col-12">A Fábrica de software é um projeto que simula uma empresa de desenvolvimento de software, com o objetivo de criar experiências interativas personalizadas e de alta qualidade. Além da produção de software, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
+                        <p class="col-12">A Fábrica de Software é um projeto que simula uma empresa de desenvolvimento de software, visando criar experiências interativas personalizadas e de alta qualidade. Além da produção de software, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
@@ -154,7 +155,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                           <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $retorno["titulo"];?></h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                               <div class="container">
@@ -208,8 +209,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                         <div class="col">
                           <h2>Conhecimentos necessários:</h2>
                           <ul>
-                            <li><p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio ou 2ª fase
-                              da EJA;</p></li>
+                            <li><p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio, ou 2ª fase da EJA;</p></li>
                             <li><p>Possuir conhecimentos de informática básica;</p></li>
                           </ul>
                         </div>

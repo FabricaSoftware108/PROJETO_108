@@ -57,6 +57,10 @@ header.cabecalhoGeral {
     height: 50px;
 }
 
+.offcanvas-title{
+    margin-left:86%;
+}
+
 .cabecalhoGeral .bg-dropDown-header {
     background-color: rgb(248, 249, 250);
     font-family: 'Montserrat', 'Verdana', 'Geneva', sans-serif;
@@ -172,9 +176,7 @@ header.cabecalhoGeral {
         font-size: 20px;
     }
 
-    .btn-soft-home {
-        margin-left: 0;
-    }
+
 }
 
 
@@ -454,13 +456,6 @@ nav.home li:hover ul#menuFabricas {
     font-size: 27px;
 }
 
-.titulo-fabricas-home{
-    font-size: 56px;
-}
-
-.fabricas-home {
-    padding-top: 120px;
-}
 
 .text-fabricas-left-home p{
     text-align: justify;
@@ -476,139 +471,6 @@ nav.home li:hover ul#menuFabricas {
     padding-left: 70px;
 }
 
-.container-img-home {
-    text-align: center;
-    border-radius: 16px;
-    color: white;
-}
-
-.container-img-home p {
-    text-align: center;
-}
-
-.container-img-home img {
-    border-color: white;
-    border-radius: 16px;
-    min-height: 350px;
-    width: 100%;
-}
-
-.container-img-home#soft {
-    box-shadow: 0pt 0pt 90pt -10pt #43079C;
-    border-radius: 16px;
-    background-color: #43079C;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #43079C;
-}
-
-.container-img-home#jogos {
-    box-shadow: 0pt 0pt 90pt -10pt #CF023D;
-    border-radius: 16px;
-    background-color: #CF023D;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #CF023D;
-}
-
-.container-img-home#cgi {
-    box-shadow: 0pt 0pt 90pt -10pt #E1A300;
-    border-radius: 16px;
-    background-color: #E1A300;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #E1A300;
-}
-
-.container-img-home#audiovisual {
-    box-shadow: 0pt 0pt 90pt -10pt #04BA1A;
-    border-radius: 16px;
-    background-color: #04BA1A;
-    outline-offset: 0.2rem;
-    outline: 0.2rem solid #04BA1A;
-}
-
-
-.btn-soft-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #43079C;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-jogos-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #CF023D;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-cgi-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #E1A300;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-audioVisual-home {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    border-radius: 150px;
-    border-style: solid;
-    border-color: #04BA1A;
-    color: black;
-    transition: 1s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 27px;
-    margin-left: 130px;
-}
-
-.btn-soft-home:hover {
-    background-color: #43079C;
-    color: white;
-    cursor: pointer;
-}
-
-.btn-jogos-home:hover {
-    background-color: #CF023D;
-    color: white;
-    cursor: pointer;
-}
-
-.btn-cgi-home:hover {
-    background-color: #E1A300;
-    color: white;
-    cursor: pointer;
-}
-
-.btn-audioVisual-home:hover {
-    background-color: #04BA1A;
-    color: white;
-    cursor: pointer;
-}
 
 .descricao-fabrica-home {
     text-align: justify;
@@ -618,13 +480,150 @@ nav.home li:hover ul#menuFabricas {
     
 }
 
-#tituloFabricas-home {
-    padding: 20px 0;
-    font-size: 20px;
+.wrap-factories-home {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.wrap-all-container-factories-row {
+    display: grid;
+    gap: 120px 0;
+
+}
+
+.wrap-all-container-factories-row .hidden {
+    opacity: 0;
+    
+}
+
+.wrap-factories-home .wrapper-images-factories {
+    background-color: #43079C;
+    box-shadow: 0 0 50px #43079c6c;
+    border-radius: 22px;
+    color: #fff;
 }
 
 
+.wrap-factories-home #wrapper-images-factories-game{ background-color: #CF023D; box-shadow: 0 0 50px #CF023D; }
+.wrap-factories-home #wrapper-images-factories-grafica{ background-color: #E1A300; box-shadow: 0 0 50px #E1A300; }
+.wrap-factories-home #wrapper-images-factories-audio{ background-color: #04BA1A; box-shadow: 0 0 50px #04BA1A; }
 
+
+.wrap-factories-home .content-border-transparent-factories {
+    padding: 3px;
+    background-image: linear-gradient(to bottom, #43079C, #4b07b1);
+    border-radius: 22px;
+    max-width: 90%;
+}
+.wrap-factories-home #content-border-transparent-factories-game { background-image: linear-gradient(to bottom, #CF023D, #CF023D); }
+.wrap-factories-home #content-border-transparent-factories-grafica { background-image: linear-gradient(to bottom, #E1A300, #E1A300); }
+.wrap-factories-home #content-border-transparent-factories-audio { background-image: linear-gradient(to bottom, #04BA1A, #04BA1A); }
+
+.wrap-factories-home .wrap-container-all-image-factories {
+    display: grid;
+    place-items: start center;
+}
+
+.wrap-factories-home .wrap-factories-home-right { 
+    grid-column: 2; 
+    grid-row: -1; 
+}
+
+.wrap-factories-home .wrap-content-describe h1{
+    font-size: 1.9em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrap-factories-home .wrapper-image {
+    padding: 15px 5px 8px ;
+    background-color: #43079C;
+    border: 2px solid rgba(255, 255, 255, 0.877);
+    border-radius: 22px;
+    height: 100%;
+}
+.wrap-factories-home #wrapper-image-game { background-color: #CF023D; }
+.wrap-factories-home #wrapper-image-grafica { background-color: #E1A300; }
+.wrap-factories-home #wrapper-image-audio { background-color: #04BA1A; }
+
+.wrap-factories-home .container-button-factories {
+    padding: 10px 0 0 0;
+    display: grid;
+    place-items: center center;
+    grid-template-rows: 4fr 2fr;
+    position: relative;
+}
+
+.wrap-factories-home .container-button-factories h3{
+    padding: 15px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 27px;
+    font-style: normal;
+}
+
+.wrap-factories-home .container-button-factories a button {
+    padding: 15px 20px;
+    border: 2px solid #43079C;
+    box-shadow: 0 0 55px #43079c34;
+    border-radius: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: transparent;
+    transition: 0.16s ease, color 0.16s ease;
+    place-items: start center;
+}
+
+.wrap-factories-home .container-button-factories button:hover { 
+    background-color: #43079C; 
+    color: #fff; 
+}
+
+.wrap-factories-home #container-button-factories-software,
+.wrap-factories-home #container-button-factories-game,
+.wrap-factories-home #container-button-factories-grafica,
+.wrap-factories-home #container-button-factories-audio
+{ place-items: start center; }
+
+.wrap-factories-home #container-button-factories-game a button { border: 2px solid #CF023D; box-shadow: 0 0 55px #cf023c49;}
+.wrap-factories-home #container-button-factories-grafica a button { border: 2px solid #E1A300; box-shadow: 0 0 55px #e1a1004d;}
+.wrap-factories-home #container-button-factories-audio a button { border: 2px solid #04BA1A; box-shadow: 0 0 55px #04ba1959;}
+
+.wrap-factories-home #container-button-factories-game button:hover { background-color: #CF023D; color: #fff; }
+.wrap-factories-home #container-button-factories-grafica button:hover { background-color: #E1A300; color: #fff; }
+.wrap-factories-home #container-button-factories-audio button:hover { background-color: #04BA1A; color: #fff; }
+.wrap-factories-home .wrapper-image img{ border-radius: 22px; }
+.wrap-factories-home .wrapper-describe-factories { text-align: justify; }
+
+.margin-home-factories-button-software { position: absolute; bottom: 0; left: 50%; top: 95%; transform: translate(-50%, -50%); }
+.margin-home-factories-button-games { position: absolute; bottom: 0; left: 50%; top: 80%; transform: translate(-50%, -50%); }
+.margin-home-factories-button-grafica { position: absolute; bottom: 0; left: 50%; top: 84%; transform: translate(-50%, -50%); }
+.margin-home-factories-button-audio { position: absolute; bottom: 0; left: 50%; top: 84%; transform: translate(-50%, -50%); } 
+
+.animated-all { animation: AnimatedFactories 0.7s ease-in; animation-fill-mode: forwards; }
+.animated-all2 { animation: AnimatedFactories2 0.7s ease-in; animation-fill-mode: forwards; }
+
+@keyframes AnimatedFactories { 0% {transform: translate(-4.8em, 0); opacity: 0;} 100% {transform: translate(0, 0); opacity: 1;} }
+@keyframes AnimatedFactories2 { 0% {transform: translate(4.8em, 0); opacity: 0;} 100% {transform: translate(0, 0); opacity: 1;} }
+
+@media (max-width: 768px) {
+    .wrap-factories-home  { grid-template-columns: 1fr; }
+    .wrap-factories-home .container-button-factories { grid-template-rows: 2fr 1fr; }
+    .wrap-factories-home .wrap-factories-home-right { grid-column: 1; grid-row: 0; }
+    .wrap-factories-home .content-border-transparent-factories { max-width: 100%; }
+    .container-img img{ height: 200px; }
+    .wrap-factories-home .container-button-factories h3{ font-size: 20px; }
+    
+    .wrap-factories-home #container-button-factories-software,
+    .wrap-factories-home #container-button-factories-game,
+    .wrap-factories-home #container-button-factories-grafica,
+    .wrap-factories-home #container-button-factories-audio
+     { place-items: center center; }
+
+}
 
 
 /*Fábricas*/
@@ -797,6 +796,35 @@ nav.home li:hover ul#menuFabricas {
     text-align: justify;
 }
 
+.modal-header {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    padding: 1rem;
+}
+
+/* Estilo para o h1 com classes modal-title e fs-5 */
+h1.modal-title.fs-5 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 0; 
+    flex-grow: 1; /* Permite que o título ocupe o espaço disponível */
+    text-align: center; /* Garante que o texto do título esteja centralizado */
+}
+
+/* Estilo para o botão de fechamento */
+.btn-close {
+    position: absolute; /* Posição absoluta dentro do contêiner pai */
+    right: 1rem; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+
+
+
 div.carousel-item h5{
     font-size: 27px;
 }
@@ -918,7 +946,7 @@ div.carousel-item img#carouselImg{
 /*Fim Fábricas*/
 
 
-/* Começo da Fábrca de Software */
+/* Começo da Fábrica de Software */
 
 .bodyFabricaSoftware h1{
     font-weight: bold;
@@ -1003,6 +1031,33 @@ div.carousel-item img#carouselImg{
 .modal-body {
     text-align: justify;
 }
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    padding: 1rem; 
+}
+
+/* Estilo para o h1 com classes modal-title e fs-5 */
+h1.modal-title.fs-5 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin: 0; 
+    flex-grow: 1;
+    text-align: center; 
+}
+
+/* Estilo para o botão de fechamento */
+.btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
 
 div.carousel-item h5{
     font-size: 27px;
@@ -1284,12 +1339,60 @@ main.body-demanda {
     opacity: 70%;
     z-index: 1;
 }
+.edital div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
+.cadastro-de-vagas div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
+.body-aluno-psg div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
+.body-banco-talentos div.effects {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background-color: #AA15C2;
+    opacity: 70%;
+    z-index: 1;
+}
 #titulo-subtitulo-demanda p {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     max-width: 1400px;
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
@@ -1306,6 +1409,47 @@ main.body-demanda {
 .body-demanda div.effects-2 {
   box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
   left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+
+.edital div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+.cadastro-de-vagas div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+.body-aluno-psg div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1860px;
+  height: 100px;
+  top:500px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+  filter: blur(150px) contrast(150%);
+}
+.body-banco-talentos div.effects-2 {
+  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
+  left: 1780px;
   height: 100px;
   top:500px;
   position: absolute;
@@ -1373,11 +1517,12 @@ main.body-demanda {
    }
 }
 @media (max-width: 1200px) {
- 
-    .body-bancoTalentos .effects, .effects-2 {
+    [class*="effects"],
+    .effects-2 {
         display: none;
     }
 }
+
 
 @media (max-width: 500px) {
  
@@ -1689,6 +1834,7 @@ input.cadastrovagas {
 
 
 main.body-banco-talentos {
+    overflow-x: hidden;
     max-width: 1300px;
     margin: 20px auto;
     margin-top: 160px;
@@ -1741,19 +1887,6 @@ main.body-banco-talentos {
     z-index: 0;
   }
 
-.body-bancoTalentos div.effects-2 {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #4815c2;
-    opacity: 70%;
-    z-index: 0; 
-}
   
 .bancoTalento-recaptcha{
     
@@ -1766,7 +1899,7 @@ main.body-banco-talentos {
     max-width: 1400px;
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
@@ -1869,7 +2002,7 @@ input.cadastro-aluno-psg {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
@@ -2085,6 +2218,59 @@ input.cadastro-aluno-psg {
 }
 
 
+
+
+/* EDITAR ADM.PHP*/
+
+.wrapper-editar-adm .editar-adm-container-title h1 { font-weight: 500; color: white; font-family: var(--font-destaque); font-size: 30px; padding: 20px 0;}
+.wrapper-editar-adm .editar-adm-container-title { background-color: #1E55D1; border-radius: 10px 10px 0 0; }
+.wrapper-editar-adm {margin-top:  180px;}
+.wrapper-editar-adm .container-editar-adm { border: 1px double rgb(11, 11, 11); padding: 0; border-radius: 10px 10px 0 0;}
+.wrapper-editar-adm .content-name-editar-adm .nome-aleatorio-2{ font-size: 159px; color: #000    ;  }
+.switch-active-adm p {margin: 0;}
+
+.editar-adm-input-container {
+    padding: 20px 30px 0;
+    font-family: var(--font-destaque);
+}
+
+.editar-adm .outline-box {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+@media (max-witdh: 360px){
+    .switchbutton{
+        overflow-wrap: break-word;
+}
+}
+
+.container-info-editar-adm {
+    border-color: #cacaca;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.label-nome-editar-adm {
+    font-size: 20px;
+}
+
+.label-email-editar-adm {
+    font-size: 20px;
+}
+
+
+
+/*FIM DO CSS PÁGINA EDITAR ADM.PHP*/
+
+
+
+
+
+
+
+
 /* Estilos para as imagens cadastro-adm */
 
 .cadastro-adm .cadastro-adm-img-1 {
@@ -2228,12 +2414,13 @@ main.cadastro-de-vagas {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     position: relative;
     top: 78px;
-    text-align: center;
+    text-align: justify;
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
 
 }
+
 #titulo-subtitulo-cadastroVagas h1{
     font-weight: bold;
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
@@ -2457,6 +2644,8 @@ main.login-ADM {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 0 5px 6px 0 rgb(112, 112, 112);
 }
+
+
 
 /* FIM LOGIN ADM*/
 
@@ -3077,21 +3266,15 @@ overflow: hidden;
 
 /*usuario adm*/
 
-.main-usuarioAdm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
 .main-usuarioAdm .wrapper-usuario-adm {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
-.main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; height: 100%; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
+.main-usuarioAdm .content-usuario-adm {background-color: white; width: 600px; border-radius: 20px; border: 2px solid rgba(0, 0, 0, 0.25); box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);}
 .main-usuarioAdm .wrapper-usuario-adm {width: 100%; height: 780px;}
 
 .main-usuarioAdm .content-top-user {
@@ -3144,16 +3327,9 @@ overflow: hidden;
     .main-usuarioAdm #img-usuario-adm {
         display: none;
     }
-    .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 120px !important;
-    }
 }
 
-@media (max-width: 600px) {
-    .main-usuarioAdm .wrapper-usuario-adm {
-        margin-top: 120px !important;
-    }
-}
+
 #button-confirmar_editar{
     width: 100%;
     font-size:16px ;
@@ -5162,3 +5338,66 @@ body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-button{
 
 
 /* Fim do Relatório Vagas Emprego */
+
+/* Estruturação do checkbox de consentimento de dados */
+
+.check-consentimento-dados {
+    padding-top: 25px;
+}
+
+
+/* Ocultar o checkbox padrão */
+.check-consentimento-dados input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilizar o novo checkbox circular */
+.check-consentimento-dados label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    display: inline-block;
+    line-height: 25px;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+/* Estilo do círculo */
+.check-consentimento-dados label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #dcdcdc;
+    background-color: #dcdcdc;
+}
+
+/* Estilo do círculo quando o checkbox está marcado */
+.check-consentimento-dados input[type="checkbox"]:checked + label::before {
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+}
+
+/* Estilo do ponto no meio */
+.check-consentimento-dados label::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0;
+}
+
+/* Mostrar o ponto preto quando o checkbox está marcado */
+.check-consentimento-dados input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
+
+/* Fim da estruturação do checkbox de consentimento de dados */

@@ -10,6 +10,7 @@ include '../../app/db/connection.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatorio Banco de Talentos</title>
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -119,18 +120,29 @@ include '../../app/db/connection.php';
                         <th class="label-cpf_banco_talento">CPF</th>
                         <th class="label-telefone_banco_talento">Telefone</th>
                         <th class="label-linkedin_banco_talento">Linkedin</th>
+                        <th class="label-linkedin_banco_talento">...</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody >
+                      <form action="../../app/session/actionBancoTalentosDetalhado.php" method="post">
                       <?php while ($retorno = mysqli_fetch_array($result)){?>
-                        <tr onclick="window.location.href = 'relatoriodetalhadobancodetalentos.php'">
-                          <td class="h9"><?php echo $retorno["nome"];?></td>
-                          <td class="h9"><?php echo $retorno["email"];?></td>
-                          <td class="h9"><?php echo $retorno["cpf"];?></td>
-                          <td class="h9"><?php echo $retorno["telefone"];?></td>
-                          <td class="h9"><?php echo $retorno["linkedin"];?></td>
+                        <tr>
+                          <td class="h9"><a name="bancoTalentosCodigo"> <?php echo $retorno["nome"];?></a></td>
+                          <td class="h9"><a name="bancoTalentosCodigo"><?php echo $retorno["email"];?></a></td>
+                          <td class="h9"><a name="bancoTalentosCodigo"><?php echo $retorno["cpf"];?></a></td>
+                          <td class="h9"><a name="bancoTalentosCodigo"><?php echo $retorno["telefone"];?></a></td>
+                          <td class="h9"><a name="bancoTalentosCodigo"><?php echo $retorno["linkedin"];?></a></td>
+                          <td class="h9"><button type="submit" class="btn btn-primary relatorio-banco_talento-button_irParaDetalhado" name="bancoTalentosCodigo"
+                          value="<?php echo $retorno["cpf"]?>">
+                            <!--Seta dentro do botão-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                            <!--Seta dentro do botão-->
+                          </button>
                         </tr>
                       <?php }?>
+                      </form>
                     </tbody>
                   </table>
                 </div>

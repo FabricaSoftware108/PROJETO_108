@@ -8,13 +8,14 @@ include '../../app/session/verificacao.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alterar Senha ADM</title>
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -97,14 +98,14 @@ include '../../app/session/verificacao.php';
   </header>
 
 
-  <main class="main-usuarioAdm">
+  <main class="main-usuarioAdm mt-5">
     <form method="post" action="../../app/session/conexaoUsuarioAdmRecuperar.php">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-3 img_usuario_adm" id="img-usuario-adm">
             <img src="../../Imagens/undraw_fingerprint_login_re_t71l.svg" class="img-fluid" alt="usuario-adm">
           </div>
-          <div class="col-md-5 col-12 offset-md-1">
+          <div class="col-md-5 col-12 ">
             <div class="wrapper-usuario-adm">
               <div class="content-usuario-adm">
                 <div class="content-top-user">
@@ -116,33 +117,28 @@ include '../../app/session/verificacao.php';
                           <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" style="fill: #1E55D1 ;transform: msFilter;"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
                       </a>
                     </div>
-                  <div class="row mb-3">
-                    <div class="col-12 text-start">
-                      
-                    </div>
-                  </div>
-  
+
                   <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Senha antiga</h2>
-                      <input type="text" class="form-control" name="oldPassword"/>
+                      <input type="password" class="form-control" name="oldPassword"/>
                     </div>
                   </div>
   
                   <div class="row mb-3">
                     <div class="col-12 text-start">
                       <h2>Nova senha</h2>
-                      <input type="text" class="form-control" name="newPassword"/>
+                      <input type="password" class="form-control" name="newPassword"/>
                     </div>
                   </div>
                   <div class="row mb-5">
                     <div class="col-12 text-start">
                       <h2>Confirmar senha</h2>
-                      <input type="text" class="form-control" name="confirmNewPassword"/>
+                      <input type="password" class="form-control" name="confirmNewPassword"/>
                     </div>
                   </div>
   
-                  <div class="row">
+                  <div class="row mb-3">
                     <div class="col-12 justify-content-center align-items-center text-center">
                       <button type="submit" class="btn btn-primary" id="button-user">Confirmar Alterações</button>
                     </div>
@@ -155,7 +151,6 @@ include '../../app/session/verificacao.php';
       </div>
     </form>
   </main>
-
 
 </body>
 

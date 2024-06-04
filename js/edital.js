@@ -1,6 +1,6 @@
 
 
-// document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {CPF
 //     var edital = document.getElementById("inscricoes1");
 //     if (edital) {
 //         edital.style.display = "none";  // Initial state: hidden
