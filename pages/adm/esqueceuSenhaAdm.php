@@ -32,7 +32,11 @@ include "../../app/db/connection.php";
                 <div class="row" id="container-campos-preenchimento-login-ADM">
                     <form class="needs-validation col-12" id="campos-preenchimento-login-ADM" action="../../app/session/actionForgotPassword.php" method="post">
                         <h1>RECUPERAR SENHA</h1><br>
-                        
+                        <?php
+                            if (isset($_GET['erro'])) {
+                                echo '<div class="alert alert-danger" role="alert">E-mail não cadastrado</div>';
+                            }
+                            ?>
                         <div class="input-group mb-3 col-12">
                             <div class="input-group-prepend">
                             <span class="input-group-text"><i class="bi bi-envelope col-2 icons-login-ADM"></i></span>

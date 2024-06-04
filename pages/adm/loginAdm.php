@@ -62,7 +62,7 @@
                 <br>
 
                 <div class="esqueceuSenha-login-ADM col-12">
-                    <a href="./esqueceuSenhaAdm.html">Esqueceu sua senha?</a>
+                    <a href="./esqueceuSenhaAdm.php">Esqueceu sua senha?</a>
                 </div>
 
                 <br>
