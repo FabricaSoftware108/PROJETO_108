@@ -4,9 +4,9 @@ session_start();
 include '../db/connection.php';
 
 // Verifica se os valores foram recebidos do formulário antes de usá-los
-if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["cpf"]) && !empty($_POST["escolaridade"]) && !empty($_POST["dataNascimento"]) && !empty($_POST["email"]) && !empty($_POST["telefone"]) && !empty($_POST["uf"]) && !empty($_POST["rua"]) && !empty($_POST["bairro"]) && !empty($_POST["cidade"]) && !empty($_POST["numero"]) && !empty($_POST["github"]) && !empty($_POST["linkedin"])) {
+if (!empty($_POST["nome"]) && !empty($_POST["cep"]) && !empty($_POST["cpf"]) && !empty($_POST["escolaridade"]) && !empty($_POST["dataNascimento"]) && !empty($_POST["email"]) && !empty($_POST["telefone"]) && !empty($_POST["uf"]) && !empty($_POST["rua"]) && !empty($_POST["bairro"]) && !empty($_POST["cidade"]) && !empty($_POST["numero"]) && !empty($_POST["github"]) && !empty($_POST["linkedin"])) {
     $nome = mysqli_real_escape_string($connection, $_POST["nome"]);
-    $sobrenome = mysqli_real_escape_string($connection, $_POST["sobrenome"]);
+    $cep = mysqli_real_escape_string($connection, $_POST["cep"]);
     $cpf = mysqli_real_escape_string($connection, $_POST["cpf"]);
     $escolaridade = mysqli_real_escape_string($connection, $_POST["escolaridade"]);
     $dataNascimento = mysqli_real_escape_string($connection, $_POST["dataNascimento"]);
@@ -20,8 +20,8 @@ if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["cpf"
     $github = mysqli_real_escape_string($connection, $_POST["github"]);
     $linkedin = mysqli_real_escape_string($connection, $_POST["linkedin"]);
 
-    $query = "INSERT INTO bancosTalentos (cpf, nome, sobrenome, escolaridade, dataNascimento, email, telefone, estado, cidade, bairro, rua, numero, github, linkedin) 
-              VALUES ('$cpf', '$nome', '$sobrenome', '$escolaridade', '$dataNascimento', '$email', '$telefone', '$estado', '$cidade', '$bairro', '$rua', '$numero', '$github', '$linkedin')";
+    $query = "INSERT INTO bancosTalentos (cpf, nome, cep, escolaridade, dataNascimento, email, telefone, estado, cidade, bairro, rua, numero, github, linkedin) 
+              VALUES ('$cpf', '$nome', '$cep', '$escolaridade', '$dataNascimento', '$email', '$telefone', '$estado', '$cidade', '$bairro', '$rua', '$numero', '$github', '$linkedin')";
 
     $result = mysqli_query($connection, $query);
 
@@ -35,4 +35,3 @@ if (!empty($_POST["nome"]) && !empty($_POST["sobrenome"]) && !empty($_POST["cpf"
 }
 
 exit();
-?>

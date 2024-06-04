@@ -17,7 +17,7 @@ include '../../app/session/verificacaoPsg.php';
 
     <script src="../../js/validacao-cpf-pagCadastroAlunoPsg.js"></script>
 
-    <script src= "../../js/cep-pagAlunoPsg.js"></script>
+    <script src="../../js/cep-pagAlunoPsg.js"></script>
 
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -103,7 +103,7 @@ include '../../app/session/verificacaoPsg.php';
                 <div class="col-12" id="textSobreCadastroAlunoPsg">
                     <h1>Cadastro Aluno PSG</h1><br><br>
                     <p>O Programa SENAC de Gratuidade é uma política de incentivo única que busca
-                            oferecer uma educação profissional inclusiva com instrutores especializados e gratuita.
+                        oferecer uma educação profissional inclusiva com instrutores especializados e gratuita.
                     </p>
                 </div>
             </div>
@@ -120,11 +120,14 @@ include '../../app/session/verificacaoPsg.php';
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai" size="27" maxlength="80" placeholder="Nome do Pai"><br>
                     </div>
                     <h1 id="camposPreenchimentoCadastroAlunoPsg">Endereço</h1><br>
-                    <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua" size="27" maxlength="100" placeholder="Rua">
+                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27" maxlength="9" placeholder="CEP">
+                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero" size="27" maxlength="4" placeholder="Número"><br>
+
+
                     <div class="col-12">
+                        <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua" size="27" maxlength="100" placeholder="Rua">
+
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro" size="27" maxlength="80" placeholder="Bairro">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero" size="27" maxlength="4" placeholder="Número"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27" maxlength="9" placeholder="CEP">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="complemento" id="complemento" size="27" maxlength="100" placeholder="Complemento"><br>
                     </div>
 
@@ -168,7 +171,7 @@ include '../../app/session/verificacaoPsg.php';
         </footer>
 
     </div>
-    <script src= "../../js/cep-pagAlunoPsg.js"></script>
+    <script src="../../js/cep-pagAlunoPsg.js"></script>
 </body>
 
 </html>

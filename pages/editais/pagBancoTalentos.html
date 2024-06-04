@@ -126,25 +126,37 @@
                             <div class="col-sm-auto col-md-auto col-lg-12">
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="nome" id="nome"
                                     size="27" maxlength="80" placeholder="Nome" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="sobrenome"
-                                    id="sobrenome" size="27" placeholder="Sobrenome" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12 " type="text" name="cpf" id="cpf"
                                     size="27" maxlength="14" placeholder="CPF" onblur='validarcpf()'>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento"
+                                    id="dataNascimento" placeholder="Data de Nascimento" type='text'
+                                    onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'"
+                                    max="9999-12-31" required>
+
                                 <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade"
                                     id="escolaridade" required>
                                     <option value="escolaridade">Escolaridade</option>
                                     <option value="medio">Ensino Médio</option>
                                     <option value="superior">Superior</option>
                                     <option value="graduacao">Graduação</option>
-                                </select><br>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" name="dataNascimento"
-                                    id="dataNascimento" placeholder="Data de Nascimento" type='text'
-                                    onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'"
-                                    max="9999-12-31" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email"
-                                    id="email" size="27" maxlength="80" placeholder="Email" required>
+                                </select>
+
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="tel" name="telefone"
                                     id="telefone" size="27" maxlength="15" placeholder="Telefone" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email"
+                                    id="email" size="27" maxlength="80" placeholder="Email" required>
+
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cep" id="cep"
+                                    maxlength="9" placeholder="CEP" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="numero"
+                                    id="numero" size="27" maxlength="50" placeholder="Número" required>
+
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="rua" id="rua"
+                                    size="27" placeholder="Rua" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="bairro"
+                                    id="bairro" size="27" maxlength="80" placeholder="Bairro" required>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade"
+                                    id="cidade" size="27" maxlength="80" placeholder="Cidade" required>
                                 <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf" required>
                                     <option value="uf">UF:</option>
                                     <option value="AC">Acre</option>
@@ -175,14 +187,7 @@
                                     <option value="SE">Sergipe</option>
                                     <option value="TO">Tocantins</option>
                                 </select>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="rua" id="rua"
-                                    size="27" placeholder="Rua" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="bairro"
-                                    id="bairro" size="27" maxlength="80" placeholder="Bairro" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade"
-                                    id="cidade" size="27" maxlength="80" placeholder="Cidade" required>
-                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="numero"
-                                    id="numero" size="27" maxlength="50" placeholder="Número" required>
+
                             </div>
                             <div class="row justify-content-center align-items-center">
                                 <div class="row">
@@ -258,7 +263,18 @@
         </footer>
 
     </div>
-
+    <script>$(document).ready(function () {
+            $('#cep').on('input', function () {
+                var cep = $(this).val().replace(/\D/g, '');
+                if (cep.length > 8) {
+                    cep = cep.substr(0, 8);
+                }
+                if (cep.length > 5) {
+                    cep = cep.replace(/^(\d{5})(\d)/, '$1-$2');
+                }
+                $(this).val(cep);
+            });
+        });</script>
 </body>
 
 </html>
