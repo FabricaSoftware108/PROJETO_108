@@ -21,6 +21,8 @@
             } else if (json.logradouro) {
                 document.querySelector('input[name=rua]').value = json.logradouro;
                 document.querySelector('input[name=bairro]').value = json.bairro;
+                document.querySelector('input[name=cidade]').value = json.localidade;
+                document.querySelector('input[name=uf]').value = json.uf;
             }
         })
         .catch(error => {
