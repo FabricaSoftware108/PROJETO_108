@@ -13,6 +13,8 @@
 
     <script src="../../js/validacaoCPF-pagbancoTalentos.js"></script>
 
+    <script src="../../js/cep-pagbancoTalentos.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -147,7 +149,7 @@
                                     id="email" size="27" maxlength="80" placeholder="Email" required>
 
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cep" id="cep"
-                                    maxlength="9" placeholder="CEP" required>
+                                    maxlength="9" placeholder="CEP" required >
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="numero"
                                     id="numero" size="27" maxlength="50" placeholder="Número" required>
 
@@ -157,36 +159,8 @@
                                     id="bairro" size="27" maxlength="80" placeholder="Bairro" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade"
                                     id="cidade" size="27" maxlength="80" placeholder="Cidade" required>
-                                <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="uf" id="uf" required>
-                                    <option value="uf">UF:</option>
-                                    <option value="AC">Acre</option>
-                                    <option value="AL">Alagoas</option>
-                                    <option value="AP">Amapá</option>
-                                    <option value="AM">Amazonas</option>
-                                    <option value="BA">Bahia</option>
-                                    <option value="CE">Ceará</option>
-                                    <option value="DF">Distrito Federal</option>
-                                    <option value="ES">Espírito Santo</option>
-                                    <option value="GO">Goiás</option>
-                                    <option value="MA">Maranhão</option>
-                                    <option value="MT">Mato Grosso</option>
-                                    <option value="MS">Mato Grosso do Sul</option>
-                                    <option value="MG">Minas Gerais</option>
-                                    <option value="PA">Pará</option>
-                                    <option value="PB">Paraíba</option>
-                                    <option value="PR">Paraná</option>
-                                    <option value="PE">Pernambuco</option>
-                                    <option value="PI">Piauí</option>
-                                    <option value="RJ">Rio de Janeiro</option>
-                                    <option value="RN">Rio Grande do Norte</option>
-                                    <option value="RS">Rio Grande do Sul</option>
-                                    <option value="RO">Rondônia</option>
-                                    <option value="RR">Roraima</option>
-                                    <option value="SC">Santa Catarina</option>
-                                    <option value="SP">São Paulo</option>
-                                    <option value="SE">Sergipe</option>
-                                    <option value="TO">Tocantins</option>
-                                </select>
+                                <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="uf"
+                                    id="uf" size="27" maxlength="80" placeholder="UF" required>
 
                             </div>
                             <div class="row justify-content-center align-items-center">
@@ -275,6 +249,7 @@
                 $(this).val(cep);
             });
         });</script>
+        <script src="../../js/cep-pagbancoTalentos.js"></script>
 </body>
 
 </html>
