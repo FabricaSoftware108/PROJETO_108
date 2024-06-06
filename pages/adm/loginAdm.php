@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login ADM</title>
+    <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../js/login-ADM.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,12 +46,16 @@
 
                 </div><br>
 
-                <div class="input-group mb-3 col-12">
+                <div class="input-group mb-3 col-12 ">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="bi bi-key col-2 icons-login-ADM"></i></span>
                     </div>
                     <input class="form-control shadow-sm p-3" type="password" name="senha" id="senha" size="27" maxlength="50" placeholder="Senha:" required>
+                    <div class="input-group-append">
+                        <button class="input-group-text" type="button" id="toggle-password-btn"><i class="bi bi-eye col-2 icons-login-ADM"></i></button>
+                    </div>
                 </div>
+
 
 
                 <br>
@@ -66,6 +71,7 @@
             </form>
         </div>
     </main>
+    <script src="../../js/mostrar-senha.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@ include '../../app/session/verificacao.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adicionar Carrossel ADM</title>
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,7 +120,7 @@ include '../../app/session/verificacao.php';
                 <div class="input-group justify-content-center">
                   <h2>Foto da turma</h2>
                   <label for="inputGroupFile04" id="imgAddCarrossel">
-                    <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid">
+                  <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid">
                   </label>
                   <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                 </div>

@@ -9,6 +9,7 @@ include '../../app/db/connection.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatorio Edital do Aluno</title>
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -171,6 +172,7 @@ include '../../app/db/connection.php';
                         <th class="label-cep_edital_do_aluno">CEP</th>
                         <th class="label-telefone_edital_do_aluno">Telefone</th>
                         <th class="label-email_edital_do_aluno">E-mail</th>
+                        <th class="label-email_edital_do_aluno">...</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -181,11 +183,19 @@ include '../../app/db/connection.php';
                       while($row = mysqli_fetch_array($result)){ ?>
                       <form action="../../app/session/actionEditalDetalhado.php" method="post">
                         <tr>
-                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["nome"]?></button></td>
-                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["cpf"] ?></button></td>
-                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["cep"] ?></button></td>
-                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["telefone"] ?></button></td>
-                          <td><button class="btn w-100" type="submit" name="alunoCode" value="<?php echo $row["cpf"] ?>"><?php echo $row["email"] ?></button></td>
+                          <td><a name="alunoCode"><?php echo $row["nome"]?></a</td>
+                          <td><a name="alunoCode"><?php echo $row["cpf"] ?></a></td>
+                          <td><a name="alunoCode"><?php echo $row["cep"] ?></a></td>
+                          <td><a name="alunoCode"><?php echo $row["telefone"] ?></a></td>
+                          <td><a name="alunoCode"><?php echo $row["email"] ?></a></td>
+                          <td><button type="submit" class="btn btn-primary relatorio-edital_adm-button_irParaDetalhado" name="alunoCode"
+                          value="<?php echo $row["cpf"]?>">
+                            <!--Seta dentro do botão-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                            </svg>
+                            <!--Seta dentro do botão-->
+                          </button>
                         </tr>
 
                       </form>

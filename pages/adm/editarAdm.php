@@ -1,4 +1,5 @@
 <?php
+
 include '../../app/session/verificacao.php';
 
 include '../../app/db/connection.php';
@@ -7,20 +8,31 @@ $query = 'SELECT * FROM admin';
 
 $result = mysqli_query($connection, $query);
 ?>
-<html lang="pt-br ">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
+  <title>Editar ADM</title>
+  <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./Imagens/favicon.png">
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editar Admin</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../css/styles.css">
-  <script src="../../js/cadastro-adm.js"></script>
-  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/3.10.1/stylesheets/locastyle.css">
 
 
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+  <!-- CSS -->
+  <link href="../../css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--Menu de Navegação-->
+
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body class="Editar-adm">
@@ -105,21 +117,32 @@ $result = mysqli_query($connection, $query);
             <h1>Administradores</h1>
           </div>
           <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
-            <?php while ($row = mysqli_fetch_array($result)) { ?>
+            <form action="../../app/session/actionDesativarADM.php" method="post">
+            <?php while ($row = mysqli_fetch_array($result)) {
+              if($row["estado"]){
+                $outline = "text-success";
+                $icon = "bi-toggle-on";
+              }else{
+                $outline = "text-danger";
+                $icon = "bi-toggle-off";
+              }
+              ?>
+            
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
 
                   <div class="row">
                     <div class="col-md-12 col-12">
 
-                      <div class="ls-box outline-box" style="text-align: start;">
-                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['nome'] ?></h2><br>  
-                        <h2 class="ls-title-5 ls-display-inline-block"><?php echo $row['email'] ?></h2>
+                      <div class="ls-box outline-box d-lg-flex d-sm-block justify-content-between align-items-center container-info-editar-adm" style="text-align: start;">
+                        <div class="w-75">
 
-                        <div data-ls-module="switchButton" class="ls-switch-btn ls-float-right switchbutton">
-                          <input type="checkbox" id="switch-adm">
-                          <label class="ls-switch-label" for="teste" name="switch-adm" ><span></span></label>
+                          <h2 class="ls-title-5 ls-display-inline-block label-nome-editar-adm"><?php echo $row['nome'] ?></h2>
+                          <h2 class="ls-title-5 ls-display-inline-block label-email-editar-adm"><?php echo $row['email'] ?></h2>
                         </div>
+                        <button type="submit" class="btn d-flex justify-content-center align-items-center" name="switchState" value="<?php echo $row['email'] ?>">
+                          <i class="bi <?php echo $icon ?> <?php echo $outline ?>" style="font-size: 40px;"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -127,28 +150,15 @@ $result = mysqli_query($connection, $query);
                 </div>
 
               </div>
-            <?php } ?>
+              <?php } ?>
+            </form>
           </div>
-          <!-- Parte das funçôes no javascript com o switch -->
-          <!-- // Um botão switch específico 
-          $('#id-do-botao-switch').on('switchButton:activated', function() {
-          // do something
-          }) -->
-          <!-- // Um botão switch específico 
-          $('#id-do-botao-switch').on('switchButton:deactivated', function() {
-          // do something
-          })
-        https://opensource.locaweb.com.br/locawebstyle/documentacao/componentes/botao-switch/ -->
-        </div>
       </div>
     </div>
   </main>
-  <footer>
-    <script src="//assets.locaweb.com.br/locastyle/3.10.1/javascripts/locastyle.js"></script>
-  </footer>
-
-
-  <script src="../js/cadastro-adm.js"></script>
+  
+  <script src="../../js/chageAdmState.js"></script>
+  
 </body>
 
 </html>
