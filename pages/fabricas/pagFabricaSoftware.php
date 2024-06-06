@@ -95,7 +95,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                       </div>
                       <div class="row d-lg-flex justify-content-center py-5">
                         <a class="btn text-light rounded-pill w-25 "
-                        type="button" href="../editais/pagEdital.php">Editais</a>
+                        type="button" href="../editais/pagEdital.php">Editais para alunos</a>
                       </div>
                     </div>
                 </div>
@@ -112,9 +112,9 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                   <div class="row">
                     <h1 class="col-12 text-center text-light py-5">Projetos</h1>
                   </div>
-                  <div class="row text-light pb-5">
+                  <!-- <div class="row text-light pb-5">
                     <p class="col-12" style="text-align: justify;">A Fábrica de Software é um projeto que simula o ambiente de uma empresa de desenvolvimento de software, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Sistemas.</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               
@@ -194,22 +194,22 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
             <div class="container-fluid branco-requisitos-software bg-light d-flex justify-content-center align-items-center py-5">  
                     <div class="container py-5">
                       <div class="row py-5">
-                        <h1 class="text-center">Requisitos</h1>
+                        <h1 class="text-center">Requisitos para matrícula</h1>
                       </div>
                       <div class="row">
                         <p class="col-12">Pessoas interessadas em atuar como Técnico em Desenvolvimento de Sistemas, que tenham no
-                          mínimo 17 anos completos e tenham concluído o Ensino Médio ou estejam cursando no mínimo o
-                          3º ano do Ensino Médio. Devem ser atendidos os seguintes critérios:</p>
+                          mínimo 16 anos completos e tenham concluído o Ensino Médio ou estejam cursando no mínimo o
+                          2º ano do Ensino Médio. Devem ser atendidos os seguintes critérios:</p>
                       </div>
                       <div class="row d-lg-flex d-sm-block justify-content-center py-5">
                         <div class="col">
                           <h2>Idade mínima:</h2>
-                          <ul><li><p>Possuir idade mínima de 17 anos;</p></li></ul>
+                          <ul><li><p>Possuir idade mínima de 16 anos;</p></li></ul>
                         </div>
                         <div class="col">
-                          <h2>Conhecimentos necessários:</h2>
+                          <h2>Requisitos necessários:</h2>
                           <ul>
-                            <li><p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio, ou 2ª fase da EJA;</p></li>
+                            <li><p>Comprovar conclusão do Ensino Médio ou estar cursando o 2º ano do Ensino Médio, ou 2ª fase da EJA;</p></li>
                             <li><p>Possuir conhecimentos de informática básica;</p></li>
                           </ul>
                         </div>

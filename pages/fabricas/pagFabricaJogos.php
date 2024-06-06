@@ -90,7 +90,7 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
               <p class="col-12">A Fábrica de Jogos é um projeto inovador que simula uma empresa de desenvolvimento de jogos digitais, atendendo às demandas do mercado ou do Senac/MS. Seu propósito consiste em criar experiências interativas e envolventes, proporcionando aos alunos uma vivência completa no processo de concepção e entrega de jogos de alta qualidade para o cliente. Os alunos desse projeto são designados para compor equipes multidisciplinares, assumindo tarefas que abrangem desde a concepção da ideia, pesquisa e briefing até a entrega do jogo finalizado. Essa abordagem prática possibilita que os alunos experimentem todas as etapas do desenvolvimento de jogos, preparando-os amplamente para os desafios desse segmento no mercado de trabalho. Durante o desenvolvimento do projeto, os alunos têm a chance de explorar e aperfeiçoar diversas habilidades, como game design, programação, arte visual, efeitos sonoros, narrativa e gerenciamento de projetos. Eles têm acesso a tecnologias avançadas e ferramentas especializadas, além de receber orientação de profissionais experientes da indústria dos jogos.
 
               <div class="row d-lg-flex justify-content-center py-5">
-                <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais</a>
+                <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais para alunos</a>
               </div>
             </div>
           </div>
@@ -110,9 +110,9 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
               <div class="row">
                 <h1 class="col-12 text-center text-light py-5">Projetos</h1>
               </div>
-              <div class="row text-light pb-5">
+              <!-- <div class="row text-light pb-5">
                 <p class="col-12" style="text-align: justify;">A Fábrica de Jogos é um projeto que simula uma empresa de desenvolvimento de jogos, visando criar experiências interativas personalizadas e de alta qualidade. Além da produção de jogos, o projeto visa formar profissionais qualificados para a indústria de entretenimento digital. Os times de alunos são designados para desenvolver soluções únicas, assumindo responsabilidade desde a concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de jogos, promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -201,27 +201,27 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
         <div class="container-fluid branco-requisitos-jogos bg-light d-flex justify-content-center align-items-center py-5">
           <div class="container py-5">
             <div class="row py-5">
-              <h1 class="text-center">Requisitos</h1>
+              <h1 class="text-center">Requisitos para matrícula</h1>
             </div>
             <div class="row">
               <p class="col-12">Pessoas interessadas em atuar como Técnico em Programação de Jogos Digitais, que tenham no
-                mínimo 17 anos completos e tenham concluído o Ensino Médio ou estejam cursando no mínimo o
-                3º ano do Ensino Médio. Devem ser atendidos os seguintes critérios:</p>
+                mínimo 16 anos completos e tenham concluído o Ensino Médio ou estejam cursando no mínimo o
+                2º ano do Ensino Médio. Devem ser atendidos os seguintes critérios:</p>
             </div>
             <div class="row d-lg-flex d-sm-block justify-content-center py-5">
               <div class="col">
                 <h2>Idade mínima:</h2>
                 <ul>
                   <li>
-                    <p>Possuir idade mínima de 17 anos;</p>
+                    <p>Possuir idade mínima de 16 anos;</p>
                   </li>
                 </ul>
               </div>
               <div class="col">
-                <h2>Conhecimentos necessários:</h2>
+                <h2>Requisitos necessários:</h2>
                 <ul>
                   <li>
-                    <p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio, ou 2ª fase da EJA;</p>
+                    <p>Comprovar conclusão do Ensino Médio ou estar cursando o 2º ano do Ensino Médio, ou 2ª fase da EJA;</p>
                   </li>
                   <li>
                     <p>Possuir conhecimentos de informática básica;</p>
