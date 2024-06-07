@@ -103,176 +103,136 @@
         </nav>
     </header>
 
-    <main class="body-demanda">
+    <!--sombras no Fundo da Página-->
+
+    <main class="main-demanda">
+        <div class="effects"></div>
+        <div class="effects-2"></div>
         <div class="container">
             <div class="row">
-                <div class="col-12" id="titulo-subtitulo-demanda">
+                <div class="col-12" id="tituloSubtituloDemanda">
                     <h1>Demanda de projeto</h1><br><br>
                     <p>Cadastro destinado a pessoas, empresas e instituições, públicas ou privadas, que possuam
                         necessidades para demandas de projetos. Fale-nos do que precisa!</p><br>
-                    <div class="effects"></div>
-                    <div class="effects-2"></div>
                 </div>
             </div>
 
-            <div class="row" id="quadradoRoxo-demanda">
-
-
-                <form action="../../app/session/conexaoPagDemanda.php" id="campo-demanda" method="POST"
-                    onsubmit="return validarPost()">
+            <div class="row" id="quadradoRoxoDemanda">
+                <form action="../../app/session/conexaoPagDemanda.php" method="post" class="col-12"
+                    id="campoCadastroDemanda" onsubmit="return validarPost()">
                     <h1>Dados Da Empresa</h1><br>
-                    <div class="row align-items-center justify-content-center mb-5">
-                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_empresa"
-                                id="nome_empresa" size="27" maxlength="80" placeholder="Nome da Empresa" required>
+                    <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="nome_empresa"
+                            id="nome_empresa" size="27" maxlength="80" placeholder="Nome da Empresa" required>
 
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email_empresa"
-                                id="email_empresa" size="27" placeholder="Email" required><br>
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cnpj" id="cnpj" size="27"
-                                maxlength="18" placeholder="CNPJ" onblur='validarcnpj()'>
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="cidade" id="cidade"
-                                size="27" maxlength="80" placeholder="Cidade" required><br>
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="telefone_empresa"
-                                id="telefone_empresa" size="27" maxlength="80" placeholder="Telefone" required>
-                                <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="estado" id="estado" required>
-                                    <option value="uf">UF:</option>
-                                    <option value="AC">Acre</option>
-                                    <option value="AL">Alagoas</option>
-                                    <option value="AP">Amapá</option>
-                                    <option value="AM">Amazonas</option>
-                                    <option value="BA">Bahia</option>
-                                    <option value="CE">Ceará</option>
-                                    <option value="DF">Distrito Federal</option>
-                                    <option value="ES">Espírito Santo</option>
-                                    <option value="GO">Goiás</option>
-                                    <option value="MA">Maranhão</option>
-                                    <option value="MT">Mato Grosso</option>
-                                    <option value="MS">Mato Grosso do Sul</option>
-                                    <option value="MG">Minas Gerais</option>
-                                    <option value="PA">Pará</option>
-                                    <option value="PB">Paraíba</option>
-                                    <option value="PR">Paraná</option>
-                                    <option value="PE">Pernambuco</option>
-                                    <option value="PI">Piauí</option>
-                                    <option value="RJ">Rio de Janeiro</option>
-                                    <option value="RN">Rio Grande do Norte</option>
-                                    <option value="RS">Rio Grande do Sul</option>
-                                    <option value="RO">Rondônia</option>
-                                    <option value="RR">Roraima</option>
-                                    <option value="SC">Santa Catarina</option>
-                                    <option value="SP">São Paulo</option>
-                                    <option value="SE">Sergipe</option>
-                                    <option value="TO">Tocantins</option>
-                                </select>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email" id="email"
+                            size="27" placeholder="Email" required><br>
+
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cnpj" id="cnpj"
+                            size="27" maxlength="18" placeholder="CNPJ" onblur='validarcnpj()'>
+
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cidade" id="cidade"
+                            size="27" maxlength="80" placeholder="Cidade" required><br>
+
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone"
+                            size="27" maxlength="15" placeholder="Telefone" required>
+
+                        <select class="cadastro-demanda col-md-5 col-10 col-sm-12" name="estado" id="estado" required>
+                            <option value="uf">UF:</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12" id="subtituloDemanda">
+                        <div class="titulo-sobre-projeto-demanda">
+                            <h1>Como é o Projeto</h1>
+                        </div><br>
+                        <div class="subtitulo-sobre-projeto-demanda">
+                            <p>Informe os requisitos e informações sobre o projeto no campo abaixo.</p>
+                        </div>
+
+                        <div class="text-area-demanda">
+                            <textarea class="form-control" id="campoTextoDescricaoVaga" style="resize: none;" rows="15"
+                                name="descricao_vaga" placeholder="Descrição do projeto"></textarea>
+                        </div><br>
+
+                        <div class="check-consentimento-dados">
+                            <input type="checkbox" id="horns" name="horns" required>
+                            <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</label>
+                        </div>
+
+
+                        <div class="g-recaptcha demanda-recaptcha"
+                            data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
+
+                        <div class="button-enviar-demanda">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </div>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="row">
-                            <div class="subtitle-demanda text-center">
-                                <h1>Dados do Titular da Empresa / Pessoa Fisica</h1>
-                            </div>
-                        </div>
-                    </div>
+                </form>
 
-
-                    <div class="row align-items-center justify-content-center mb-5">
-                        <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12 ">
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="nome_titular"
-                                id="nome_titular" size="27" maxlength="80" placeholder="Nome" required>
-                            <input class="cadastrovagas col-xs-6 col-lg-5" type="text" name="email_titular"
-                                id="email_titular" size="27" placeholder="Email" required><br>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="cpf" id="cpf"
-                                size="27" maxlength="14" placeholder="CPF" required onblur='validarcpf()'>
-                            <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="tel" name="telefone_titular"
-                                id="telefone_titular" size="27" maxlength="15" placeholder="Telefone" required>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="row">
-                            <div class="subtitle-demanda text-center">
-                                <h1>Sobre seu Projeto</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-center text-center">
-                        <div class="col-md-8 col-sm-12 col-10 text-center">
-                            <label for="file-input" class="file-label" style="text-align: center; width: 100%;">
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt"
-                                    height="16.000000pt" viewBox="0 0 16.000000 16.000000"
-                                    preserveAspectRatio="xMidYMid meet">
-                                    <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)" fill="grey"
-                                        stroke="none">
-                                        <path
-                                            d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z" />
-                                    </g>
-                                </svg>
-                                <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
-                                <input type="file" id="file-input" class="file-input" title="Arquivo pdf ou docx"
-                                    name="arquivo">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="check-consentimento-dados">
-                        <input type="checkbox" id="horns" name="horns" required>
-                        <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</label>
-                    </div>
-
-
-                    <!--essa div é do RECAPTCHA, NÃO MUDAR OU MEXER NELA EM HIPÓTESE ALGUMA!.-->
-                    <div class="g-recaptcha pagDemanda-recaptcha"
-                        data-sitekey="6LcLar0pAAAAADP5nBru5esVi5ROxd8Ezw5fHmpK"></div>
-
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-12 justify-content-center align-items-center text-center" id="button-demanda">
-                            <button type="submit" class="btn btn-primary" id="button-submit-demanda">Enviar</button>
-
-                        </div>
-                    </div>
             </div>
-        </div>
-        </div>
-        </div>
-        </form>
-        </div>
 
 
     </main>
-    <script src="../../js/mascara-demanda.js"></script>
-    <footer>
-
-        <div class="container-fluid rodape-preto py-1">
-            <footer
-                class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
-                <a href="../../index.html"
-                    class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                    <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt=""
-                        class="img-fluid">
-                </a>
-                <p class="col-md-4 mb-0 text-muted justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica
-                    de Software 108</p>
-
-                <ul class="nav justify-content-center col col-md-4 order-sm-3 order-lg-3">
-                    <li class="nav-item"><a href="https://www.instagram.com/senachubacademy/" target="_blank"
-                            class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg></a>
-                    </li>
-                    <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=556799492638" target="_blank"
-                            class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                <path
-                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                            </svg></a>
-                    </li>
-                </ul>
-            </footer>
-        </div>
-    </footer>
+    <script src="../../js/mascara-vagasemprego.js"></script>
 
 
+    <div class="container-fluid rodape-preto py-1">
+        <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container align-items-center">
+            <a href="../../index.html"
+                class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-preto.png" alt=""
+                    class="img-fluid">
+            </a>
+            <p class="col-md-4 mb-0 text-muted justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de
+                Software 108</p>
+
+            <ul class="nav justify-content-center col col-md-4 order-sm-3 order-lg-3">
+                <li class="nav-item"><a href="https://www.instagram.com/senachubacademy/" target="_blank"
+                        class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                </li>
+                <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=556799492638" target="_blank"
+                        class="nav-link px-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>
