@@ -4,43 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <<<<<<< HEAD <title>Demanda</title>
-        =======
+    <title>Demanda de projeto</title>
 
-        <title>Empresas</title>
-        >>>>>>> main
-        <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-        <script src="../../js/validacao-cpf-cnpj-pagDemanda.js"></script>
+    <script src="../../js/validacao-cpf-cnpj-pagDemanda.js"></script>
 
 
-        <link rel="stylesheet" href="../../css/styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <script src="../../js/dropdownfabricas.js" defer></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../../js/dropdownfabricas.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-        <script>
-            function validarPost() {
-                //verifica se o recaptcha foi selecionado
-                if (grecaptcha.getResponse() != '') return true;
-                alert('Selecione o checkbox de não sou um robô!!')
-                return false;
-            }
-        </script>
+    <script>
+        function validarPost() {
+            //verifica se o recaptcha foi selecionado
+            if (grecaptcha.getResponse() != '') return true;
+            alert('Selecione o checkbox de não sou um robô!!')
+            return false;
+        }
+    </script>
 </head>
 
 
@@ -84,7 +81,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page"
-                                href="./pagDemanda.html">Empresas</a>
+                                href="./pagDemanda.html">Demanda de projeto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page"
@@ -110,8 +107,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12" id="titulo-subtitulo-demanda">
-                    <h1>Empresas</h1><br><br>
-                    <p>Cadastro destinado a empresas e instituições, públicas ou privadas, que possuam
+                    <h1>Demanda de projeto</h1><br><br>
+                    <p>Cadastro destinado a pessoas, empresas e instituições, públicas ou privadas, que possuam
                         necessidades para demandas de projetos. Fale-nos do que precisa!</p><br>
                     <div class="effects"></div>
                     <div class="effects-2"></div>
@@ -144,7 +141,7 @@
                     <div class="row justify-content-center align-items-center">
                         <div class="row">
                             <div class="subtitle-demanda text-center">
-                                <h1>Dados do Titular da Empresa</h1>
+                                <h1>Dados do Titular da Empresa / Pessoa Fisica</h1>
                             </div>
                         </div>
                     </div>
@@ -190,7 +187,7 @@
 
                     <div class="check-consentimento-dados">
                         <input type="checkbox" id="horns" name="horns" required>
-                        <label for="horns">Eu autorizo o uso das minhas informações pessoais e concordo em receber e-mails que podem ser cancelados a qualquer momento. </label>
+                        <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</label>
                     </div>
 
 

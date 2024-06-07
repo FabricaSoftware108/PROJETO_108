@@ -75,7 +75,7 @@ include '../../app/session/verificacaoPsg.php';
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Vagas Gratuitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Empresas</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda de projeto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./cadastroVagasEmprego.html">Cadastro de Vagas</a>
@@ -101,10 +101,10 @@ include '../../app/session/verificacaoPsg.php';
         <div class="container">
             <div class="row">
                 <div class="col-12" id="textSobreCadastroAlunoPsg">
-                    <h1>Cadastro Aluno PSG</h1><br><br>
-                    <p>O Programa SENAC de Gratuidade é uma política de incentivo única que busca
+                    <h1>Cadastro Aluno</h1><br><br>
+                    <!-- <p>O Programa SENAC de Gratuidade é uma política de incentivo única que busca
                         oferecer uma educação profissional inclusiva com instrutores especializados e gratuita.
-                    </p>
+                    </p> -->
                 </div>
             </div>
             <div class="row" id="quadradoRoxo-demanda">
@@ -133,7 +133,7 @@ include '../../app/session/verificacaoPsg.php';
 
                     <div class="check-consentimento-dados">
                         <input type="checkbox" id="horns" name="horns" required>
-                        <label for="horns">Eu autorizo o uso das minhas informações pessoais e concordo em receber e-mails que podem ser cancelados a qualquer momento. </label>
+                        <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</label>
                     </div>
 
                     <!--essa div é do RECAPTCHA, NÃO MUDAR OU MECHER NELA EM HIPÓTESE ALGUMA!.-->
