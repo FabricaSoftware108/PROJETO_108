@@ -52,7 +52,7 @@
               <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Vagas Gratuitas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Empresas</a>
+              <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda de projeto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/cadastroVagasEmprego.html">Cadastro de Vagas</a>
@@ -90,7 +90,7 @@
               <p class="col-12">A Fábrica de Áudio e Vídeo é um projeto que visa a concepção e entrega de produtos audiovisuais realizados pelos alunos que colocam em prática os conhecimentos e competências desenvolvidas ao longo do curso. O projeto é desenhado por meio de um atendimento corporativo, atendendo uma demanda de mercado, seja de um parceiro Senac ou até mesmo da própria Instituição. Seu objetivo é proporcionar ao time de alunos uma experiência prática e imersiva na criação de conteúdo de alta qualidade, com produção e edição de produtos audiovisuais. Essa abordagem permite que os alunos vivenciem todas as etapas de desenvolvimento de projetos audiovisuais, preparando-os para os desafios do mercado de trabalho. No desenvolvimento do projeto, eles têm a oportunidade de trabalhar com equipamentos profissionais, software de edição e produção, e aprender com profissionais do mercado. Dessa forma, a Fábrica de Áudio e Vídeo prepara uma nova geração de talentos para atuar no mercado de produção de conteúdo audiovisual, promovendo a inovação, criatividade e excelência na entrega.</p>
             </div>
             <div class="row d-lg-flex justify-content-center py-5">
-              <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais</a>
+              <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais para alunos</a>
             </div>
           </div>
         </div>
@@ -109,9 +109,9 @@
             <div class="row">
               <h1 class="col-12 text-center text-light py-5">Projetos</h1>
             </div>
-            <div class="row text-light pb-5">
+            <!-- <div class="row text-light pb-5">
               <p class="col-12" style="text-align: justify;">A Fábrica de Áudio e Vídeo é um projeto que simula o ambiente de uma empresa de desenvolvimento de audiovisual, criando soluções tecnológicas para micro e pequenas empresas e instituições parceiras, preparando mão de obra especializada para o mercado de trabalho ao longo da execução do curso Técnico em Desenvolvimento de Áudio e Vídeo.</p>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -198,27 +198,27 @@
       <div class="container-fluid branco-requisitos-audiovisual bg-light d-flex justify-content-center align-items-center py-5">
         <div class="container py-5">
           <div class="row py-5">
-            <h1 class="text-center">Requisitos</h1>
+            <h1 class="text-center">Requisitos para matrícula</h1>
           </div>
           <div class="row">
             <p class="col-12">Pessoas interessadas em atuar como Técnico em Produção de Áudio e Vídeo, que tenham no
-              mínimo 17 anos completos e tenham concluído o Ensino Médio ou estejam cursando no mínimo o
-              3º ano do Ensino Médio. Devem ser atendidos os seguintes critérios:</p>
+              mínimo 16 anos completos e tenham concluído o Ensino Médio ou estejam cursando no mínimo o
+              2º ano do Ensino Médio. Devem ser atendidos os seguintes critérios:</p>
           </div>
           <div class="row d-lg-flex d-sm-block justify-content-center py-5">
             <div class="col">
               <h2>Idade mínima:</h2>
               <ul>
                 <li>
-                  <p>Possuir idade mínima de 17 anos;</p>
+                  <p>Possuir idade mínima de 16 anos;</p>
                 </li>
               </ul>
             </div>
             <div class="col">
-              <h2>Conhecimentos necessários:</h2>
+              <h2>Requisitos necessários:</h2>
               <ul>
                 <li>
-                  <p>Comprovar conclusão do Ensino Médio ou estar cursando o 3º ano do Ensino Médio, ou 2ª fase da EJA;</p>
+                  <p>Comprovar conclusão do Ensino Médio ou estar cursando o 2º ano do Ensino Médio, ou 2ª fase da EJA;</p>
                 </li>
                 <li>
                   <p>Possuir conhecimentos de informática básica;</p>

@@ -54,7 +54,7 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
               <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagEdital.php">Vagas Gratuitas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Empresas</a>
+              <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda de projeto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/cadastroVagasEmprego.html">Cadastro de Vagas</a>
