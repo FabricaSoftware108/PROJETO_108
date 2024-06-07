@@ -46,8 +46,9 @@ include "../../app/db/connection.php";
                         </div>
 
                         <br>
+                        <button type="submit" class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM">RECUPERAR</button>
+                        <a class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM" href="" type="submit"><b>RECUPERAR</b></a><br><br>
 
-                        <a class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM" href="./loginAdm.php"><b>RECUPERAR</b></a><br><br>
                     </form>
                 </div>
             </div>
