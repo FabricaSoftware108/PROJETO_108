@@ -2292,7 +2292,7 @@ input.cadastro-aluno-psg {
 /*Inicio do rodapé preto*/
 .rodape-preto p {
     font-size: 15px !important;
-    font-family: var(--font-grad-title);
+    font-family: var(--font-grad-title) !important;
 }
 
 .rodape-preto img {
@@ -2324,7 +2324,7 @@ input.cadastro-aluno-psg {
 /*Inicio do rodapé branco*/
 .rodape-branco p {
     font-size: 15px !important;
-    font-family: var(--font-grad-title);
+    font-family: var(--font-grad-title) !important;
 }
 
 .bodyRodapeBranco .rodape-branco {
