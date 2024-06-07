@@ -2290,6 +2290,11 @@ input.cadastro-aluno-psg {
 
 
 /*Inicio do rodapé preto*/
+.rodape-preto p {
+    font-size: 15px !important;
+    font-family: var(--font-grad-title);
+}
+
 .rodape-preto img {
     box-shadow: none;
 }
@@ -2317,6 +2322,11 @@ input.cadastro-aluno-psg {
 
 
 /*Inicio do rodapé branco*/
+.rodape-branco p {
+    font-size: 15px !important;
+    font-family: var(--font-grad-title);
+}
+
 .bodyRodapeBranco .rodape-branco {
     background-color: #8B1A1A;
 }
@@ -2324,7 +2334,7 @@ input.cadastro-aluno-psg {
 
 .rodape-branco img {
     box-shadow: none;
-    height: 100px;
+    
    
 
 }
