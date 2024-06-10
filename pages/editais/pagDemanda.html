@@ -120,22 +120,22 @@
             <div class="row" id="quadradoRoxoDemanda">
                 <form action="../../app/session/conexaoPagDemanda.php" method="post" class="col-12"
                     id="campoCadastroDemanda" onsubmit="return validarPost()">
-                    <h1>Dados Da Empresa</h1><br>
+                    <h1>Dados Pessoais/Empresa</h1><br>
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="nome_empresa"
-                            id="nome_empresa" size="27" maxlength="80" placeholder="Nome da Empresa" required>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="nome_Pessoal/empresa"
+                            id="nome_Pessoal/empresa" size="27" maxlength="80" placeholder="Nome Pessoal/Empresa" required>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email" id="email"
-                            size="27" placeholder="Email" required><br>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email_Pessoal/empresa" id="email_Pessoal/empresa"
+                            size="27" placeholder="Email Pessoal/empresa" required><br>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cnpj" id="cnpj"
-                            size="27" maxlength="18" placeholder="CNPJ" onblur='validarcnpj()'>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cnpj/CPF" id="cnpj/CPF"
+                            size="27" maxlength="18" placeholder="CNPJ/CPF" onblur='validarcnpj()'>
 
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cidade" id="cidade"
                             size="27" maxlength="80" placeholder="Cidade" required><br>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone"
-                            size="27" maxlength="15" placeholder="Telefone" required>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone_Pessoal/empresa" id="telefone_Pessoal/empresa"
+                            size="27" maxlength="15" placeholder="Telefone Pessoal/empresa" required>
 
                         <select class="cadastro-demanda col-md-5 col-10 col-sm-12" name="estado" id="estado" required>
                             <option value="uf">UF:</option>
@@ -171,7 +171,7 @@
 
                     <div class="col-12" id="subtituloDemanda">
                         <div class="titulo-sobre-projeto-demanda">
-                            <h1>Como é o Projeto</h1>
+                            <h1>Sobre o Projeto</h1>
                         </div><br>
                         <div class="subtitulo-sobre-projeto-demanda">
                             <p>Informe os requisitos e informações sobre o projeto no campo abaixo.</p>
@@ -201,7 +201,7 @@
 
 
     </main>
-    <script src="../../js/mascara-vagasemprego.js"></script>
+    <script src="../../js/mascara-demanda.js"></script>
 
 
     <div class="container-fluid rodape-preto py-1">
