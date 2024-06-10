@@ -131,7 +131,7 @@ include '../../app/session/verificacao.php';
         </div>
         <div class="container-fabrica-nome-editarCarrossel">
           <h3>Nome do projeto</h3>
-          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="10" style="resize: none;" rows="1" >Hub Fábricas, vulgo, substituto do Senacoin</textarea>
+          <textarea class="form-control" id="campoTextoDescricaoCarrossel"  size="10" style="resize: none;" rows="1" >Hub Fábricas</textarea>
           
         </div>
         <div class="container-fabrica-nome-editarCarrossel">
