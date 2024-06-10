@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION['ForgotError'] = false;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

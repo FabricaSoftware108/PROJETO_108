@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "../../app/db/connection.php";
 ?>
 <!DOCTYPE html>
@@ -33,8 +34,9 @@ include "../../app/db/connection.php";
                     <form class="needs-validation col-12" id="campos-preenchimento-login-ADM" action="../../app/session/actionForgotPassword.php" method="post">
                         <h1>RECUPERAR SENHA</h1><br>
                         <?php
-                            if (isset($_GET['erro'])) {
-                                echo '<div class="alert alert-danger" role="alert">E-mail não cadastrado</div>';
+                            
+                            if ($_SESSION['ForgotError']) {
+                                echo '<div class="alert alert-danger" role="alert">E-mail digitado errado ou não cadastrado</div>';
                             }
                             ?>
                         <div class="input-group mb-3 col-12">
@@ -47,7 +49,6 @@ include "../../app/db/connection.php";
 
                         <br>
                         <button type="submit" class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM">RECUPERAR</button>
-                        <a class="btn btn-primary mt-3 mb-3 col-8 p-2 btn-login-ADM" href="" type="submit"><b>RECUPERAR</b></a><br><br>
 
                     </form>
                 </div>

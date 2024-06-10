@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include '../db/connection.php';
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
@@ -6,35 +7,26 @@
                
     $email = $_POST ['email'];
     if(empty($_POST ['email'])){
-        echo ('<script>
-        alert("Preencha o campo de email");
-        </script>');
+        $_SESSION['ForgotError'] = true;
     }
     else{
-
         $query = "SELECT * from admin where email = '$email'";
 
         $result = mysqli_query($connection, $query);
 
-
-
         if (mysqli_num_rows($result) == 0){
             
-            echo ('<script>
-            alert("Email não encontrado");
-            </script>');
+            $_SESSION['ForgotError'] = true;
+            header("location: ../../pages/adm/esqueceuSenhaAdm.php");
         }
         
         else {
+            $_SESSION['ForgotError'] = false;
             $row = mysqli_fetch_array($result);
             $novaSenha = substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(8/strlen($x)) )),1,8);
             $senhacrip = password_hash($novaSenha, PASSWORD_DEFAULT);
             $queryChangeEmail = "UPDATE admin SET senha = '$senhacrip' WHERE email = '$email' AND senha = '{$row["senha"]}'";
             mysqli_query($connection, $queryChangeEmail);
-
-
-
-            $from		= 'contato@ajudarfazbem.org.br';
 
             //Load Composer's autoloader
             require 'vendor/autoload.php';
@@ -55,16 +47,16 @@
             $mail->CharSet = "utf-8";
 
             //Recipients
-            $mail->setFrom('cheiradordevelha69@gmail.com', 'Senac Contato');
-            $mail->addAddress("cheiradordevelha69@gmail.com", "Pedro");     //Add a recipient
-            $mail->addAddress("cheiradordevelha69@gmail.com");               //Name is optional
+            $mail->setFrom('pedroca2787@gmail.com', 'Senac Contato');
+            $mail->addAddress($email, $row['nome']);     //Add a recipient
+            // $mail->addAddress("cheiradordevelha69@gmail.com");               //Name is optional
             // $mail->addReplyTo('pedroca2787@gmail.com', 'Information');
             // $mail->addCC("$email", "$name");
-            $mail->addCC('cheiradordevelha69@gmail.com', "Contato");
+            // $mail->addCC('cheiradordevelha69@gmail.com', "Contato");
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = "Teste";
+            $mail->Subject = "Nova Senha";
             $mail->Body    = "
             <h2>Hub fábricas</h2>
             <p>Sua nova senha para assesar a area administrativa é:</p>
@@ -73,7 +65,7 @@
             $mail->AltBody = "Hub fábricas, sua nova senha para assesar a area administrativa é: \n $novaSenha";
 
             $mail->send();
-
+            echo("<script>window.location.href = '../../pages/adm/loginAdm.php' </script>");
         
         
     }
