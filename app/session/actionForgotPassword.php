@@ -64,10 +64,10 @@
             ";
             $mail->AltBody = "Hub fábricas, sua nova senha para assesar a area administrativa é: \n $novaSenha";
 
+            // echo("<script>window.location.href = '../../pages/adm/loginAdm.php'; exit();</script>");
+            header("location: ../../pages/adm/loginAdm.php");
             $mail->send();
-            echo("<script>window.location.href = '../../pages/adm/loginAdm.php' </script>");
-        
-        
+            
     }
 }
 
