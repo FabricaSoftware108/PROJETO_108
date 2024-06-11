@@ -3004,7 +3004,12 @@ overflow: hidden;
     padding: 0 50px;
 }
 .main-addCarrossel .container-wrapper-carrossel {width: 1150px;}
-.main-addCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px;}
+.main-addCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px; }
+
+#campoTextoNomeCarrossel {
+    /* margin-right: 500px; */
+    padding: 50px;
+}
 
 .main-addCarrossel .title-addCarrossel {
     width: 100%;
@@ -5126,8 +5131,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .main-editarCarrossel .container-inputs-editarCarrossel {
     padding: 0 50px;
 }
-.main-editarCarrossel .container-wrapper-carrossel {width: 1150px; margin-top: 40px}
-.main-editarCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px;}
 
 .main-editarCarrossel .title-editarCarrossel {
     width: 100%;
