@@ -5195,6 +5195,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     overflow-x:hidden;
 }
 
+#selectadicioncarrossel { margin: 0 auto; width: 350px; }
 .body-CadastrarCarrossel .btn_cadastrar_carrossel-soft {
     width: 100%;
     height: 100%;
