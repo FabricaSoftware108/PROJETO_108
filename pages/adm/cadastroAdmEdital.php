@@ -147,9 +147,11 @@ include '../../app/session/verificacao.php';
                                                                     d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z" />
                                                             </g>
                                                         </svg>
-                                                        <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
-                                                        <input type="file" id="file-input" class="file-input"
+                                                        <form action="./upload.php" method="post" enctype="multipart/form-data">
+                                                            <p style="padding-top: 15px;">Arquivo pdf ou docx</p>
+                                                            <input type="file" id="file-input" class="file-input"
                                                             title="Arquivo pdf ou docx">
+                                                        </form>
                                                     </label>
                                                 </div>
                                             </div>
