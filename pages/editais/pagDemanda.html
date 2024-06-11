@@ -122,20 +122,21 @@
                     id="campoCadastroDemanda" onsubmit="return validarPost()">
                     <h1>Dados Pessoais/Empresa</h1><br>
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="nome_Pessoal/empresa"
-                            id="nome_Pessoal/empresa" size="27" maxlength="80" placeholder="Nome Pessoal/Empresa" required>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="nome_responsavel"
+                            id="nome_responsavel" size="27" maxlength="80" placeholder="Nome Pessoal/ Nome Responsável" required>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email_Pessoal/empresa" id="email_Pessoal/empresa"
-                            size="27" placeholder="Email Pessoal/empresa" required><br>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email_responsavel" id="email_responsavel"
+                            size="27" placeholder="Email Pessoal/ Email Responsável" required><br>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cnpj/CPF" id="cnpj/CPF"
-                            size="27" maxlength="18" placeholder="CNPJ/CPF" onblur='validarcnpj()'>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cpf" id="cpf"
+                            size="27" maxlength="14" placeholder="CPF Pessoal/ CPF Responsável" onblur='validarcpf()'>
+
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone_responsavel" id="telefone_responsavel"
+                            size="27" maxlength="15" placeholder="Telefone Pessoal/ Telefone Responsável" required>
 
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cidade" id="cidade"
-                            size="27" maxlength="80" placeholder="Cidade" required><br>
-
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone_Pessoal/empresa" id="telefone_Pessoal/empresa"
-                            size="27" maxlength="15" placeholder="Telefone Pessoal/empresa" required>
+                            size="27" maxlength="80" placeholder="Cidade" required>
+                        
 
                         <select class="cadastro-demanda col-md-5 col-10 col-sm-12" name="estado" id="estado" required>
                             <option value="uf">UF:</option>
