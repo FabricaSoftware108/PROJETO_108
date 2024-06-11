@@ -10,7 +10,7 @@
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    <script src="../../js/validacao-cpf-cnpj-pagDemanda.js"></script>
+    <script src="../../js/validacao-cpf-pagDemanda.js"></script>
 
 
     <link rel="stylesheet" href="../../css/styles.css">
@@ -128,8 +128,8 @@
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email_responsavel" id="email_responsavel"
                             size="27" placeholder="Email Pessoal/ Email Responsável" required><br>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cpf" id="cpf"
-                            size="27" maxlength="14" placeholder="CPF Pessoal/ CPF Responsável" onblur='validarcpf()'>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12 " type="text" name="cpf" id="cpf"
+                                size="27" maxlength="14" placeholder="CPF Pessoal/ CPF Responsável" onblur='validarcpf()' required>
 
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone_responsavel" id="telefone_responsavel"
                             size="27" maxlength="15" placeholder="Telefone Pessoal/ Telefone Responsável" required>
@@ -180,7 +180,7 @@
 
                         <div class="text-area-demanda">
                             <textarea class="form-control" id="campoTextoDescricaoVaga" style="resize: none;" rows="15"
-                                name="descricao_vaga" placeholder="Descrição do projeto"></textarea>
+                                name="descricao_vaga" placeholder="Descrição do projeto" required></textarea>
                         </div><br>
 
                         <div class="check-consentimento-dados">
@@ -202,7 +202,7 @@
 
 
     </main>
-    <script src="../../js/mascara-demanda.js"></script>
+    <script src="../../js/mascara-pagDemanda.js"></script>
 
 
     <div class="container-fluid rodape-preto py-1">
