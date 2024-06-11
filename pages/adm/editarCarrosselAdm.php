@@ -110,10 +110,10 @@ include '../../app/session/verificacao.php';
                         Fabrica de Software 108
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Fabrica de Software</a></li>
-                        <li><a class="dropdown-item" href="#">Fabrica de Jogos</a></li>
-                        <li><a class="dropdown-item" href="#">Fabrica de Computação Gráfica</a></li>
-                        <li><a class="dropdown-item" href="#">Fabrica de Áudio e Vídeo</a></li>
+                        <li><a class="dropdown-item" href="#">Fabrica de Software 108</a></li>
+                        <li><a class="dropdown-item" href="#">Fabrica de Software 206</a></li>
+                        <li><a class="dropdown-item" href="#">Fabrica de Software 203</a></li>
+                        <li><a class="dropdown-item" href="#">Fabrica de Software 102</a></li>
                       </ul>
                     </div>
                   </div>
@@ -133,13 +133,13 @@ include '../../app/session/verificacao.php';
                 </div>
                 <div class="container-fabrica-nome-editarCarrossel">
                   <h3>Nome do projeto</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1">Hub Fábricas, vulgo, substituto do Senacoin</textarea>
+                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1">Hub Fábricas</textarea>
 
                 </div>
                 <div class="container-fabrica-nome-editarCarrossel">
                   <h3>Texto sobre a turma</h3>
                   <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="14">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam temporedebitis, delectus eos! In
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam temporedebitis, delectus eos! In
           </textarea>
                 </div>
                 <button class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
