@@ -103,8 +103,8 @@
               <div class="col-12 text-center title-addCarrossel">
                 <h1>Nova Fábrica</h1>
               </div>
-              <div class="row" >
-                <div class="col-md-6 col-12 text-center align-items-center justify-content-center foto-addCarrossel">
+              <div class="row p-5" >
+                <div class="col-md-6 col-12 text-center align-items-center justify-content-center">
                   <div class="container-dropdown mb-5">
                     <select class="form-select form-select-lg mb-3" id="selectadicioncarrossel" aria-label=".form-select-lg example">
                       <option selected>Fabrica de Software 108</option>
@@ -114,16 +114,23 @@
                     </select>
                   </div>
                   <div class="input-group justify-content-center d-block" id="campoDeTexto" >
-                    <h3>Foto da turma</h3>
-                    <!-- <label for="inputGroupFile04" id="imgAddCarrossel"> -->
-                    <!-- <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid"> -->
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <div class="turmimage pb-5">
+                      <h3>Foto da turma</h3>
+                      <!-- <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload"> -->
+                      <input type="file" name="fileToUpload" id="fileToUpload">
+
+                    </div>
+                    <div class="namefabrica pb-5">
+                      <h3>Nome da fábrica</h3>
+                      <input class="form-control" type="text">
+
+                      </div>
+                      <div class="nomeproject">
+                        <h3>Nome do projeto</h3>
+                        <input class="form-control" type="text">
+                    </div>
                     
-                    <h3>Nome da fábrica</h3>
-                    <textarea class="form-control" id="campoTextoNomeCarrossel" size="200" style="resize: none;" rows="1"></textarea>
                     
-                    <h3>Nome do projeto</h3>
-                    <textarea class="form-control" id="campoTextoNomeCarrossel" size="200" style="resize: none;" rows="1"></textarea>
                   </div>
                 </div>
                 <div class="col-md-6 col-12 text-center container-inputs-addCarrossel">

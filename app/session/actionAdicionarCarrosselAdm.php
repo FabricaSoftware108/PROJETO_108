@@ -22,9 +22,7 @@ echo "Falha na Conexão: (".$con->connect_errno.")".$con-> connect_error;
 echo $con->host_info . "\n";
 
 
-
-
-$target_dir = "./uploads/";
+$target_dir = "../../Imagens";
 //Array usa o basename somente para pegar a última parte do caminho
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
@@ -42,11 +40,11 @@ if(isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);}
     if($check !== false) {
     //verifica se o arquivo é mesmo válido como imagem
-      echo "File is an image - " . $check["mime"] . ".";
+      echo "Arquivo é uma imagem" . $check["mime"] . ".";
     //cria uma variável para utilizarmos no envio, validando que a imagem é real
       $uploadOk = 1;
     } else {
-      echo "File is not an image.";
+      echo "Arquivo não é uma imagem";
       $uploadOk = 0;
     }
 
@@ -54,7 +52,7 @@ if(isset($_POST["submit"])) {
 
 // Verifica se o arquivo já existe, consulta o caminho e o nome
 if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
+    echo "Desculpe, o arquivo não existe";
     $uploadOk = 0;
   }
 
@@ -69,7 +67,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 // Permitindo formatos específicos
 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 && $imageFileType != "gif" && $imageFileType != "pdf") {
-  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+  echo "Desculpe, apenas arquivos JPG, JPEG, PNG e GIF são permitidos.";
   $uploadOk = 0;
 }
 
