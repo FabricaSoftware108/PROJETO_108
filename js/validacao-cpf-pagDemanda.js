@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('cpf').addEventListener('blur', validarCPF);
 
-
-    
 });
 
 function validarCPF() {
@@ -10,7 +8,6 @@ function validarCPF() {
     if (!isCPFValid(cpf)) {
         alert("CPF inválido! Verifique e tente novamente.");
         document.getElementById('cpf').value = ''; // Limpa o campo de input, quando clicado no ok, do alert.
-      
     }
 }
 
@@ -41,6 +38,7 @@ function isCPFValid(strCpf) {
     for (var i = 1; i <= 10; i++) {
         soma += parseInt(strCpf.substring(i - 1, i)) * (12 - i);
     }
+
     resto = soma % 11;
 
     if (resto === 10 || resto === 11 || resto < 2) {

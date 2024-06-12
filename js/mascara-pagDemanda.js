@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    
+$(document).ready(function(){ 
     $('#cpf').on('input', function() {
         var cpf = $(this).val().replace(/\D/g, '');
         if (cpf.length > 0) {
@@ -9,5 +8,4 @@ $(document).ready(function(){
         }
         $(this).val(cpf);
     });
-
 });
