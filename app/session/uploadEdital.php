@@ -1,22 +1,13 @@
 <?php
 
-
-$host= "127.0.0.1:3310";
-$usuario = "root";
-$senha = "suporte";
-$bd = "files";
-
-
-$con = mysqli_connect($host, $usuario, $senha, $bd);
-if ($con -> connect_errno){
-echo "Falha na Conexão: (".$con->connect_errno.")".$con-> connect_error;
-}
-echo $con->host_info . "\n";
+$name = $_POST["editalName"];
+$editalCode = $_POST["editalCode"];
+$editalLimit = $_POST["editalLimit"];
+$editalInicialDate = $_POST["editalInicialDate"];
+$editalFinalDate = $_POST["editalFinalDate"];
 
 
-
-
-$target_dir = "./uploads/";
+$target_dir = "../../documents/edital";
 //Array usa o basename somente para pegar a última parte do caminho
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
@@ -60,9 +51,8 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 
 
 // Permitindo formatos específicos
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" && $imageFileType != "pdf") {
-  echo "Desculpe, são permitidos apenas arquivos JPG, JPEG, PNG & GIF.";
+if($imageFileType != "pdf") {
+  echo "Desculpe, são permitidos apenas arquivos PDF.";
   $uploadOk = 0;
 }
 
@@ -76,7 +66,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     //htmlspecialchars (preserva os caracteres não gerando conflito com o HTML)
       echo "O arquivo ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " foi enviado .";
-      $query_insert = "insert into path values ('./{$target_file}');";
+      $query_insert = "INSERT into editais() VALUES('$editalCode', '$name', '$editalInicialDate','$editalFinalDate', '$editalLimit', null, './{$target_file}');";
       $result_insert= mysqli_query($con, $query_insert); 
 
 
