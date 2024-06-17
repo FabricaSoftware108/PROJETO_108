@@ -95,7 +95,7 @@ include '../../app/session/verificacao.php';
   </header>
 
   <main class="main-addCarrossel ">
-    <form action="../../app/session/actionAdicionarCarrosselAdm.php" method="post">
+    <form action="../../app/session/actionAdicionarCarrosselAdm.php" method="POST">
       <div class="container-fluid ">
         <div class="row justify-content-center align-items-center " id="background-AddCarrossel">
           <div class="container-wrapper-carrossel">
@@ -106,28 +106,28 @@ include '../../app/session/verificacao.php';
               <div class="row p-5" >
                 <div class="col-md-6 col-12 text-center align-items-center justify-content-center">
                   <div class="container-dropdown mb-5">
-                    <select class="form-select form-select-lg mb-3" id="selectadicioncarrossel" aria-label=".form-select-lg example">
-                      <option selected>Fabrica de Software 108</option>
-                      <option value="1">Fabrica de Jogos 307</option>
-                      <option value="2">Fabrica de Audio Visual 106</option>
-                      <option value="3">Fabrica de Computação Grafica 204</option>
+                    <select class="form-select form-select-lg mb-3" id="selectadicioncarrossel" name="optionselect" aria-label=".form-select-lg example">
+                      <option value="v1">Fabrica de Software 108</option>
+                      <option value="v2">Fabrica de Jogos 307</option>
+                      <option value="v3">Fabrica de Audio Visual 106</option>
+                      <option value="v4">Fabrica de Computação Grafica 204</option>
                     </select>
                   </div>
                   <div class="input-group justify-content-center d-block" id="campoDeTexto" >
                     <div class="turmimage pb-5">
                       <h3>Foto da turma</h3>
                       <!-- <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload"> -->
-                      <input type="file" name="fileToUpload" id="fileToUpload">
+                      <input type="file" name="fileToUpload" id="fileToUpload" >
 
                     </div>
                     <div class="namefabrica pb-5">
                       <h3>Nome da fábrica</h3>
-                      <input class="form-control" type="text">
+                      <input class="form-control" type="text" name="nomedafabrica">
 
                       </div>
                       <div class="nomeproject">
                         <h3>Nome do projeto</h3>
-                        <input class="form-control" type="text">
+                        <input class="form-control" type="text" name="nomedoprojeto">
                     </div>
                     
                     
@@ -142,7 +142,7 @@ include '../../app/session/verificacao.php';
                   </div>
                   <div class="container-fabrica-nome-addCarrossel">
                     <h3>Texto sobre a turma</h3>
-                    <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="15" placeholder="Descrição da turma"></textarea>
+                    <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" name="textodaturma" style="resize: none;" rows="15" placeholder="Descrição da turma"></textarea>
                   </div>
                   <button class="btn btn-primary" id="btnInputCarrossel">Cadastrar</button>
                 </div>
