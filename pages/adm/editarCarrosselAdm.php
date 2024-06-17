@@ -1,19 +1,19 @@
 <?php
 include '../../app/session/verificacao.php';
+include '../../app/db/connection.php';
 
-$hostname = "localhost";
-$bancodedados =  "hubfrabricasdb";
-$usuario =  "root";
-$senha = "";
+$query = "SELECT * FROM carroselSoftware WHERE id =  ";
+
+$query = "SELECT titulo FROM carroselSoftware WHERE id = 1 ";
 
 
-$mysqli = new mysqli($hostname, $usuario,$senha, $bancodedados);
-if ($mysqli->connect_errno){
-  echo "Falha ao conectar: (".$mysqli->connect_errno .") " . $mysqli->connect_error;
-}
+$result = mysqli_query($connection, $query);
+
+$row = mysqli_fetch_array($result);
+
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -49,7 +49,7 @@ if ($mysqli->connect_errno){
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5><?php echo $_SESSION['nome'] ?>
             <div class="offcanvas-x-button">
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" id="button-close-x"></button>
-              </div>
+            </div>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-column pe-3">
@@ -117,23 +117,25 @@ if ($mysqli->connect_errno){
             <div class="row ">
               <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center foto-editarCarrossel">
                 <div class="input-group justify-content-center">
-                  <div class="container-dropdown">
-                    <div class="dropdown">
-                      <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Fabrica de Software 108
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Fabrica de Software 108</a></li>
-                        <li><a class="dropdown-item" href="#">Fabrica de Software 206</a></li>
-                        <li><a class="dropdown-item" href="#">Fabrica de Software 203</a></li>
-                        <li><a class="dropdown-item" href="#">Fabrica de Software 102</a></li>
-                      </ul>
-                    </div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <select class="btn btn-primary form-select mx-1" aria-label="Default select example">
+                      <option value="1" selected>Fábrica Software</option>
+                      <option value="2">Fábrica Jogos</option>
+                      <option value="3">Fábrica CGI</option>
+                      <option value="3">Fábrica Audio e Video</option>
+                    </select>
+                    <select class="btn btn-primary form-select mx-1 " aria-label="Default select example">
+                      <option selected>-- Turmas --</option>
+                      <option value="1"><?php echo $row['titulo'] ?></option>
+                      <option value="2"><?php echo $row['titulo'] ?></option>
+
+                    </select>
+
                   </div>
                   <div class="content-image-describe py-5">
                     <h2>Foto da turma</h2>
                     <label for="inputGroupFile04" id="imgEditarCarrossel">
-                      <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid">
+                      <img src="<?php echo $row['img'] ?>" style=" width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
                     </label>
                     <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
                   </div>
@@ -142,18 +144,17 @@ if ($mysqli->connect_errno){
               <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
                 <div class="container-fabrica-nome-editarCarrossel">
                   <h3>Nome da fábrica</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1">Fábrica de Software 108</textarea>
+                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1"><?php echo $row['titulo'] ?></textarea>
                 </div>
                 <div class="container-fabrica-nome-editarCarrossel">
                   <h3>Nome do projeto</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1">Hub Fábricas</textarea>
+                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1"><?php echo $row['projeto'] ?></textarea>
 
                 </div>
                 <div class="container-fabrica-nome-editarCarrossel">
                   <h3>Texto sobre a turma</h3>
                   <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="14">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam temporedebitis, delectus eos! In
-              </textarea>
+                  <?php echo $row['descricao'] ?></textarea>
                 </div>
                 <button class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
               </div>
