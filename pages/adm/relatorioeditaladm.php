@@ -199,18 +199,7 @@ include '../../app/db/connection.php';
                     </tbody>
                   </table>
                 </div>
-                <!-- <button class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button> -->
-                <script>
-                  function cont() {
-                    var conteudo = document.getElementById('print').innerHTML;
-                    tela_impressao = window.open('about:blank');
-                    tela_impressao.document.write(conteudo);
-                    tela_impressao.window.print();
-                    tela_impressao.window.close();
-                  }
-                </script>
-
-                <input type="button" onclick="cont();" value="Imprimir Div separadamente">
+                <button class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
               </div>
             </div>
           </div>

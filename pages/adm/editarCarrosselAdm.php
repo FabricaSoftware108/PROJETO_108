@@ -1,5 +1,16 @@
 <?php
 include '../../app/session/verificacao.php';
+
+$hostname = "localhost";
+$bancodedados =  "hubfrabricasdb";
+$usuario =  "root";
+$senha = "";
+
+
+$mysqli = new mysqli($hostname, $usuario,$senha, $bancodedados);
+if ($mysqli->connect_errno){
+  echo "Falha ao conectar: (".$mysqli->connect_errno .") " . $mysqli->connect_error;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -140,7 +151,7 @@ include '../../app/session/verificacao.php';
                   <h3>Texto sobre a turma</h3>
                   <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="14">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam tempore debitis, delectus eos! In! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores similique consectetur sunt dolore officia recusandae quis impedit magni accusamus. Rerum dolor nam perspiciatis, tempore pariatur ad iste. Totam, facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi itaque impedit similique iste laudantium animi mollitia facilis pariatur velit architecto voluptatem aliquid tenetur rem magnam temporedebitis, delectus eos! In
-          </textarea>
+              </textarea>
                 </div>
                 <button class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
               </div>
@@ -150,7 +161,7 @@ include '../../app/session/verificacao.php';
       </div>
     </div>
   </main>
- 
+
 </body>
 
 
