@@ -132,6 +132,12 @@ header.cabecalhoGeral {
     }
 }
 
+@media (min-width: 1025px){
+    .offcanvas-x-button{
+        display:none;
+    }
+}
+
 /*Fim do cabeçalho com bootstarp*/
 
 @media (max-width: 991px){
@@ -1307,89 +1313,23 @@ div.carousel-item img#carouselImg{
 
 /* PAGINA DEMANDA  */
 
-
-
-.pagDemanda-recaptcha{
-    
-    margin:auto;
-    max-width:305px;
-    margin-top:25px;
-}
-
-
-
-main.body-demanda {
+main.main-demanda{
     max-width: 1300px;
     margin: 20px auto;
     margin-top: 160px;
     text-align: center;
     font-family: var(--font-grad-title);
 }
+.main-demanda{
+  max-width: 1220px;
+  margin: 20px auto;
+  margin-top: 160px;
+  text-align: center;
+  font-family: var(--font-grad-title);
+}
 
-
-.body-demanda div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 1;
-}
-.edital div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 1;
-}
-.cadastro-de-vagas div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 1;
-}
-.body-aluno-psg div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 1;
-}
-.body-banco-talentos div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 1;
-}
-#titulo-subtitulo-demanda p {
+#tituloSubtituloDemanda p {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
-    max-width: 1400px;
     position: relative;
     top: 78px;
     text-align: justify;
@@ -1398,380 +1338,13 @@ main.body-demanda {
     top: 7px;
 
 }
-#titulo-subtitulo-demanda h1{
+
+#tituloSubtituloDemanda h1{
     font-weight: bold;
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
-    color: black
 }
 
-
-
-.body-demanda div.effects-2 {
-  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
-  left: 1860px;
-  height: 100px;
-  top:500px;
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  filter: blur(150px) contrast(150%);
-}
-
-.edital div.effects-2 {
-  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
-  left: 1860px;
-  height: 100px;
-  top:500px;
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  filter: blur(150px) contrast(150%);
-}
-.cadastro-de-vagas div.effects-2 {
-  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
-  left: 1860px;
-  height: 100px;
-  top:500px;
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  filter: blur(150px) contrast(150%);
-}
-.body-aluno-psg div.effects-2 {
-  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
-  left: 1860px;
-  height: 100px;
-  top:500px;
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  filter: blur(150px) contrast(150%);
-}
-.body-banco-talentos div.effects-2 {
-  box-shadow: 100px 4px 100px 100px rgba(45, 0, 148, 1);
-  left: 1780px;
-  height: 100px;
-  top:500px;
-  position: absolute;
-  z-index: -1;
-  border-radius: 10px;
-  filter: blur(150px) contrast(150%);
-}
-
-.body-demanda #button-submit-demanda {
-    width: 150px; 
-    height: 70px; 
-    font-size: 22px;
-}
-
-.body-demanda .wrapper-all-centainer-demanda {
-    width: 1468px; 
-    padding: 0; 
-    justify-content: center; 
-    align-items: center; 
-    display: flex; 
-}
-
-.body-demanda #container-cadastro-demanda, .body-bancoTalentos #container-bancoTalento { 
-    width: 100%; 
-    background-color: #281358;
-     border-radius: 15px; 
-    }
-
-.body-demanda #button-demanda button {
-    margin: 30px 0;
-}
-
-.body-demanda .subtitle-demanda h1{
-    font-size: 40px;
-    font-family: var(--font-destaque);
-    font-weight: 530;
-    padding: 30px 0;
-}
-
-
-@media (min-width: 1780px) { 
-    .body-demanda .container-inputs-demanda {
-        width: 500px;
-    }
-}
-
-@media (min-width: 854px) { 
-    .body-demanda .container-inputs-demanda {
-        width: 450px;
-    }
-}
-
-@media (max-width: 868px) {
-   .body-demanda .content-title-subtitle-demanda {
-       text-align: center;
-   }
-   .body-demanda .content-title-subtitle-demanda p {
-        margin: 0 30px;
-        text-align: center;
-        font-size: 18px !important; 
-
-   }
-   .body-demanda .content-title-subtitle-demanda h1{
-        font-size: 35px !important;
-   }
-}
-@media (max-width: 1200px) {
-    [class*="effects"],
-    .effects-2 {
-        display: none;
-    }
-}
-
-
-@media (max-width: 500px) {
- 
-    .body-bancoTalentos #title-bancoTalento p {
-        font-size: 13px !important;
-    }
-}
-
-@media (max-width: 468px) {
-    .body-demanda #container-campos-preenchimento-inputs-empresa-Demanda h1{
-        font-size: 20px;
-    }
- }
-
-.body-demanda .content-title-subtitle-demanda {
-    padding: 20px 0 0 0;
-    color: var(--font-color-pagdemanda-title-subtitle);
-    text-align: center;
-    z-index: -1;
-}
-
-
-
-.body-demanda .container-campo-dados-demanda {
-    background-color: var(--background-color-demanda-cadastro);
-    text-align: center;
-    width: auto;
-    border-radius: 20px;
-    height: auto;
-    z-index: -2;
-}
-
-.body-demanda .content-title-subtitle-demanda h1 {
-    font-size: var(--font-size-titulo);
-}
-
-.body-demanda .content-title-subtitle-demanda p {
-    font-size: var(--font-size-subTitulo);
-
-}
-
-.body-demanda .content-wrapper-all-demanda {
-    margin-top: 100px;
-
-
-}
-
-  
-.body-demanda .content-title-subtitle-demanda h1{
-    font-weight: bold;
-    font-size: 50px;
-    color:#000;
-  
-  }
-  
-.body-demanda .content-title-subtitle-demanda p {
-    font-size: 27px;
-    color:#000; 
-  
-  }
-  
-.body-demanda .content-wrapper-all-demanda {
-    margin-top: 100px; 
-
-    
-  }
-  
-.body-demanda .form-control {
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    justify-content: center;
-    height: 60px;
-    
-  }
-  
-.body-demanda .inputs-titular-Demanda {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 200px;
-    align-items: center;
-    z-index: 1;
-}
-
-.body-demanda .inputs-empresa-Demanda input {
-    margin: 10px;
-  }
-
-.container-inputs-demanda {
-    padding: 18px;
-    width: 430px;
-    height: 55px;
-    border-radius: 15px;
-    border: none;
-}
-
-.body-demanda .file-label {
-    display: inline-flex;
-    background-color: white;
-    color: grey;
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 12px;
-    height: 50px;
-    z-index: 1;
-}
-
-.body-demanda .inputs-empresa-Demanda input,
-.body-demanda .inputs-titular-Demanda input {
-    padding: 0 30px;
-    z-index: 1;
-}
-
-.body-demanda .inputs-titular-Demanda input {
-    margin: 10px;
-    border-radius: 15px;
-    width: 350px;
-    height: 50px;
-    z-index: 1;
-}
-
-.body-demanda .campo-dados-demanda h2 {
-    font-size: var(--font-size-subTitulo);
-    line-height: 40px;
-
-}
-
-.body-demanda #dados-empresa-demanda-h2 {
-    font-size: 25px;
-}
-
-.body-demanda #dados-empresa-demanda-h2:nth-child(1) {
-    padding-top: 20px;
-}
-
-.body-demanda .campo-dados-demanda {
-    margin-top: 90px;
-    align-items: center;
-    font-size: 14px;
-    z-index: 2;
-  }
-  
-.body-demanda .file-input { display: none; }
-
-.body-demanda .file-label p{ color: #04BA1A; padding-bottom: 15px; }
-
-
-.body-demanda .campo-dados-demanda h2{
-    font-size: var(--font-size-subTitulo);
-    line-height: 40px;
-    
-}
-
-.body-demanda #title-demanda-first {
-    font-family: var(--font-destaque);
-    font-size: var(--font-size-titulo);
-    font-weight: bold;
-    padding: 50px 0 10px 0;
-}
-
-.body-demanda #inputs-demanda-lists{
-    padding: 0;
-    border-radius: 15px;
-    height: 55px;
-    width: 450px;
-}
-
-
-.body-demanda .forms-demanda button {
-    margin: 60px 0 50px 0;
-    border-radius: 15px;
-    background-color: transparent;
-    border: 1px solid var(--button-color-demanda);
-    padding: 10px 60px;
-    color: var(--button-color-demanda);
-}
-
-.body-demanda #inputs-demanda-lists {
-    padding-bottom: 60px;
-}
-
-.body-demanda #inputs-demanda-lists label{
-    background-color: white;
-    color: black;
-    width: 100%;
-    border-radius: 15px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 0 10px;
-
-}
-
-
-
-.body-demanda .campo-dados-demanda {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-  }
-
-.body-demanda #dados-empresa-demanda-h2 {
-    font-size: 25px;
-  }
-  
-.body-demanda .dados-Empresa-demanda {
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.body-demanda .dados-Titular-demanda {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.body-demanda .sobre-Projeto-Demanda {
-    font-size: var(--font-size-subTitulo);
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -50px;
-}
-
-.body-demanda .sobre-Projeto-Demanda h2 {
-    margin: 18px;
-}
-
-.body-demanda .enviar-Demanda {
-    padding: 15px 40px;
-    border-radius: 12px;
-    background-color: transparent;
-    color: white;
-    border-color: #3B96EB;
-    margin: 20px;
-    z-index: 1;
-    cursor: pointer;
-
-}
-#quadradoRoxo-demanda {
+#quadradoRoxoDemanda{
 
     background-color: #281358;
     border-radius: 10px;
@@ -1779,56 +1352,181 @@ main.body-demanda {
 }
 
 
-
-.body-demanda .file-label {
-    display: inline-flex;
-    background-color: white;
-    color: grey;
-    padding: 10px 20px;
-    border-radius: 12px;
-    width: 715px;
-    height: 50px;
-    text-align: start;
+.titulo-sobre-projeto-demanda h1 {
+    font-size: 40px;
+    color: white;
+    left: 89px;
+    text-align: justify;
+    text-align: center;
     align-items: center;
-    font-size: 14px;
-    z-index: 2;
+    justify-content: center;
+    margin-top: 94px;
 }
 
-.body-demanda .file-input {
-    display: none;
+
+.subtitulo-sobre-projeto-demanda p {
+    font-size: 27px;
+    /* position: absolute; */
+    /* dixar comentado por enquanto.*/
+    color: white;
+    margin-left: 100px;
+    /*esquerda do texto*/
+    margin-right: 120px;
+    /* direita texto*/
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 5;
+}
+.subtitulo-sobre-projeto-demanda p{
+  font-size:27px ;
+  color: white;
+  margin-left: 100px;
+  margin-right: 120px;
+  text-align: justify;
+  align-items: center;
+  justify-content:center;
+  margin-top: 40px;
+  z-index: 5;
+}
+
+@media(max-width: 500px) {
+    .titulo-sobre-projeto-demanda h1 {
+        font-size: 27px;
+        color: white;
+        margin: 23px;
+
+    }
+}
+
+
+@media(max-width: 500px) {
+    .subtitulo-sobre-projeto-demanda p {
+        font-size: 18px;
+        color: white;
+        margin: 23px;
+
+    }
+}
+
+
+
+#campoCadastroDemanda{
+    color: white;
+    margin-top: 50px;
+}
+
+.text-area-demanda {
+    margin: 10px 80px;
 
 }
-.body-demanda .container-wrapper-file {
-    display: flex;
-    padding: 6px 0;
-    justify-content: start;
 
+.button-enviar-demanda button {
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    width: 344px;
+    height: 80px;
+    border-radius: 17px;
+    position: relative;
+    font-size: 27px;
+    max-width: 200px;
 }
 
-.body-demanda .file-label p {
-    color: #04BA1A;
-    margin-top: 2.5%;
-    margin-left: 10px;
+@media (max-width: 600px) {
+    .button {
+        width: 100%;
+    }
 }
 
-input.cadastrovagas {
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  margin-top: 7px;
-}
-.cadastrovagas{
+.cadastro-demanda {
+
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 30px;
     margin-top: 7px;
- }
-
-#campo-demanda {
-    color: white;
-    margin-top: 50px;
 }
-/*  FINAL PÁGINA CADASTRO DE VAGAS*/
+.demanda-recaptcha{
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
+}
+
+
+/* .campo-texto-descricao-demanda textarea {
+    position: relative;
+    margin-left: 78px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 19px;
+    font-size: 40px;
+
+} */
+
+/* .titulo-dados-demanda h1 {
+    font-size: 40px;
+    position: relative;
+    color: white;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 160px;
+    z-index: -1;
+} */
+
+/* .sombra-roxa-demanda {
+    box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
+    border-radius: 50%;
+    top: 300px;
+    position: absolute;
+    left: -52px;
+
+}
+
+.sombra-rosa-demanda {
+    box-shadow: -100px 4px 100px 100px #ab15c26b;
+    top: 200px;
+    border-radius: 90%;
+    position: absolute;
+    right: 0;
+    right: -200px;
+} */
+
+
+/* .titulo-demanda h1 {
+    font-size: 56px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 78px;
+    font-family: var(--font-destaque);
+    color: black;
+    
+
+}
+
+
+
+.titulo-demanda h1 {
+    font-size: 56px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 78px;
+    font-family: var(--font-destaque);
+    color: black;
+    
+
+} */
+ 
+
+/*  FINAL PÁGINA demanda*/
 
 /* PÁGINA BANCO DE TALENTOS */
 
@@ -2578,13 +2276,14 @@ main.cadastro-de-vagas {
     }
 }
 
-input.cadastrovagas {
+.cadastrovagas {
 
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 30px;
     margin-top: 7px;
 }
+
 .vagasEmprego-recaptcha{
     margin:auto;
     max-width:305px;
