@@ -203,14 +203,15 @@ include '../../app/db/connection.php';
                     </tbody>
                   </table>
                 </div>
-                <button class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
-              </div>
+                <button id="btnd" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <script src="../../js/imprimirRelatorioIndividual.js"></script>
 
 </body>
 
