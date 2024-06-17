@@ -56,13 +56,21 @@
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = "Nova Senha";
+            $mail->Subject = "Nova Senha para Acesso ao Hub Fábricas";
             $mail->Body    = "
             <h2>Hub fábricas</h2>
-            <p>Sua nova senha para assesar a area administrativa é:</p>
-            <p>$novaSenha</p>
-            ";
-            $mail->AltBody = "Hub fábricas, sua nova senha para assesar a area administrativa é: \n $novaSenha";
+            <p>Prezado Administrador {$row['nome']},</p>
+
+            <p>Estamos escrevendo para informar que redefinimos sua senha de acesso ao Hub Fábricas. Abaixo, encontram-se os novos dados para login:</p>
+
+            <p>Login: <b>{$row['email']}</b></p>
+
+            <p>Nova Senha: <b>$novaSenha</b></p>
+
+            <p>Pedimos que utilize esta nova senha na próxima vez que acessarem o site. Após o login, é recomendável que altere a senha para uma de sua preferência, garantindo que seja segura e única.</p>";
+
+            $mail->AltBody = "Hub fábricas, sua nova senha para assesar a area administrativa é: \n {$novaSenha}";
+            
 
             // echo("<script>window.location.href = '../../pages/adm/loginAdm.php'; exit();</script>");
             header("location: ../../pages/adm/loginAdm.php");
