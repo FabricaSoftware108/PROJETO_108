@@ -39,7 +39,7 @@ $row = mysqli_fetch_array($result);
             <span class="navbar-toggler-icon"></span>
           </button>
             </div>
-            <a class="navbar-brand me-auto fs-2 fw-bold" id="titulo-cabecalho-adm" href="#">Área de Administração Hub Fábricas</a>
+            <a class="navbar-brand me-auto fs-2 fw-bold" id="titulo-cabecalho-adm" href="./admHome.php">Área de Administração Hub Fábricas</a>
             <a class="navbar-brand md-auto fs-6" id="nome-cabecalho-adm" href="#"><?php echo $_SESSION['nome']?></a>
           <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header ">
@@ -144,17 +144,17 @@ $row = mysqli_fetch_array($result);
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2">Cidade:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cidadeEmpresa'] ?></p>
-                                                    </td>
                                                     <td colspan="2">Telefone:
                                                         <p class="info-relatorio-detalhado-bt"><?php echo $row['telefoneEmpresa'] ?></p>
+                                                    </td>
+                                                    <td colspan="2">Cidade:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cidadeEmpresa'] ?></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" colspan="4">Dados do Titular</th>
+                                                    <th scope="col" colspan="4">Dados do Titular da Empresa/Pessoa Física</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -177,7 +177,7 @@ $row = mysqli_fetch_array($result);
                                             </tbody>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" colspan="4">Proposta de Projeto</th>
+                                                    <th scope="col" colspan="4">Sobre seu Projeto</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
