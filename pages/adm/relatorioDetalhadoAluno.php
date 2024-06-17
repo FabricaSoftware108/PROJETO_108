@@ -179,8 +179,8 @@ $row = mysqli_fetch_array($result);
                                 </td>
                               </tr>
                             </tbody>
-                    </table>
-                    <button id="btnd" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
+                          </table>
+                          <button id="btnd" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
               </div>
             </div>
           </div>
