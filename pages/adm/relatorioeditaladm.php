@@ -206,7 +206,9 @@ include '../../app/db/connection.php';
                   </table>
                 </div>
                 <button id="btnd" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
+                <button onclick="printFrameContent('table_relatorio_edital_do_aluno')"> Teste de Impressão </button>
                 </div>
+                <iframe id="table_relatorio_edital_do_aluno" src=""></iframe>
             </div>
           </div>
         </div>
