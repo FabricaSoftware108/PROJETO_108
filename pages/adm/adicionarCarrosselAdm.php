@@ -95,7 +95,7 @@ include '../../app/session/verificacao.php';
   </header>
 
   <main class="main-addCarrossel ">
-    <form action="../../app/session/actionAdicionarCarrosselAdm.php" method="POST">
+    <form action="../../app/session/actionAdicionarCarrosselAdm.php" method="POST" enctype="multipart/form-data">
       <div class="container-fluid ">
         <div class="row justify-content-center align-items-center " id="background-AddCarrossel">
           <div class="container-wrapper-carrossel">

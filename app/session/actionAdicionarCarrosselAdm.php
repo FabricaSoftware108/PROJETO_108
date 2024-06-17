@@ -3,14 +3,14 @@
 include "../db/connection.php";
 
 $optionselect = $_POST['optionselect'];
-$imagem = $_POST['fileToUpload'];
 $nomefabrica = $_POST['nomedafabrica'];
 $nomeprojeto = $_POST['nomedoprojeto'];
 $texto = $_POST['textodaturma'];
 $target_dir = "../../Imagens/";
+$uploadOk = 1;
 
 
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$target_file = $target_dir.basename($_FILES["fileToUpload"]["name"]);
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $target_file =$target_dir.md5(uniqid()).".".$imageFileType;
 
@@ -39,22 +39,24 @@ if ($uploadOk == 0) {
   
   } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-      $imagemfinal = $target_file
-      echo $imagemfinal
-    //   if ($optionselect === 'v1') {
-    //       $query = "INSERT INTO carroselSoftware (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
-    //       $result = mysqli_query($connection, $query);
-    //   } else if ($optionselect === 'v2') {
-    //       $query = "INSERT INTO carroselJogos (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
-    //       $result = mysqli_query($connection, $query);
-    //   } else if ($optionselect === 'v3') {
-    //       $query = "INSERT INTO carroselAudioVideo (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
-    //       $result = mysqli_query($connection, $query);
-    //   } else if ($optionselect === 'v4') {
-    //       $query = "INSERT INTO carroselCgi (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
-    //       $result = mysqli_query($connection, $query);
-      
-    //   };
+       $imagemfinal = $target_file;
+      if ($optionselect === 'v1') {
+          $query = "INSERT INTO carroselSoftware (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
+          $result = mysqli_query($connection, $query);
+          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+      } else if ($optionselect === 'v2') {
+          $query = "INSERT INTO carroselJogos (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
+          $result = mysqli_query($connection, $query);
+          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+      } else if ($optionselect === 'v3') {
+          $query = "INSERT INTO carroselAudioVideo (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
+          $result = mysqli_query($connection, $query);
+          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+      } else if ($optionselect === 'v4') {
+          $query = "INSERT INTO carroselCgi (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
+          $result = mysqli_query($connection, $query);
+          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+      };
     } else {
       echo "Desculpe, ocorreu um erro ao submeter o arquivo.";
     }
