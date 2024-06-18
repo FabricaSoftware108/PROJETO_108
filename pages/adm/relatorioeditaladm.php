@@ -65,7 +65,7 @@ include '../../app/db/connection.php';
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
-                            <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
+                            <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Demanda</a></li>
                             <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
                             <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
                         </ul>
@@ -134,7 +134,7 @@ include '../../app/db/connection.php';
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
-                    <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Edital Empresa</a></li>
+                    <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Demanda</a></li>
                     <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
                     <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas</a></li>
 
