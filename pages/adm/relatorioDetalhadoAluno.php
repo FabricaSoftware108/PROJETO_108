@@ -2,28 +2,6 @@
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
-//carregar o composer
-require '../../app/session/vendor/autoload.php';
-
-//referenciar o namespace Dompdf
-use Dompdf\Dompdf;
-
-//instanciar a classe dompdf
-$dompdf = new Dompdf();
-
-//instanciar o metodo loadHtml e enviar o conteudo do PDF
-$dompdf->load_html('PEDRO PEDRO  PEDRO PEDRO');
-
-//formato paisagem
-$dompdf->setPaper('A4', 'landscape'); 
-
-// rendereizar html como pdf
-$dompdf->render();
-
-//gerar pdf
-$dompdf->stream();
-
-
 $query = "SELECT * FROM alunosPsg WHERE cpf = '{$_SESSION["alunoCode"]}'";
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
@@ -204,7 +182,7 @@ $row = mysqli_fetch_array($result);
                               </tr>
                             </tbody>
                           </table>
-                          <button id="btnd" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
+                          <a id="btnd" href="gerarPdf.php" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</a>
               </div>
             </div>
           </div>
@@ -213,7 +191,6 @@ $row = mysqli_fetch_array($result);
     </div>
   </main>
 
-  <script src="../../js/imprimirRelatorioIndividual.js"></script>
 </body>
 
 </html>
