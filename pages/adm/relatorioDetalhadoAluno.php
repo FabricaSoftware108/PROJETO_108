@@ -8,6 +8,22 @@ require '../../app/session/vendor/autoload.php';
 //referenciar o namespace Dompdf
 use Dompdf\Dompdf;
 
+//instanciar a classe dompdf
+$dompdf = new Dompdf();
+
+//instanciar o metodo loadHtml e enviar o conteudo do PDF
+$dompdf->load_html('PEDRO PEDRO  PEDRO PEDRO');
+
+//formato paisagem
+$dompdf->setPaper('A4', 'landscape'); 
+
+// rendereizar html como pdf
+$dompdf->render();
+
+//gerar pdf
+$dompdf->stream();
+
+
 $query = "SELECT * FROM alunosPsg WHERE cpf = '{$_SESSION["alunoCode"]}'";
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
