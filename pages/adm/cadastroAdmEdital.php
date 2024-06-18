@@ -111,16 +111,16 @@ include '../../app/db/connection.php'
                                     <form action="../../app/session/uploadEdital.php" method="post" enctype="multipart/form-data">
                                         <div class="cadastro-adm-edital-input-container ">
                                             <label for="cadastro-adm-edital-nome" class="cadastro-adm-edital-label">Nome do Edital</label>
-                                            <input type="text" name="editalName" size="60" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
+                                            <input type="text" name="editalName" size="60" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required>
                                         </div>
                                         <div class="cadastro-adm-edital-input-container">
                                             <label for="cadastro-adm-edital-email" class="cadastro-adm-edital-label">Código Do Edital</label>
-                                            <input type="email" name="editalCode" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
+                                            <input type="text" name="editalCode" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required>
                                         </div>
 
                                         <div class="cadastro-adm-edital-input-container">
                                             <label for="cadastro-adm-edital-limite-aluno" class="cadastro-adm-edital-label">Limite de Alunos</label>
-                                            <input type="number" name="editalLimit" size="10"  id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input">
+                                            <input type="number" name="editalLimit" size="10"  id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required>
                                         </div>
 
                                         <div class="container">
@@ -128,8 +128,9 @@ include '../../app/db/connection.php'
                                                 <div class="col-md-6">
 
                                                     <label for="cadastro-adm-edital-data" id="centerDateInicio" class="cadastro-adm-edital-label-data">Data Ínicial</label>
-                                                    <input type="date" class="form-control" id="cadastroAdmEditalDataInicial"
-                                                    max = "9999-12-31" name="editalInicialDate" required>
+                                                    
+                                                    <input value="<?php echo date('Y-m-d')  ?>" type="date" class="form-control" id="cadastroAdmEditalDataInicial"
+                                                    max = "9999-12-31" name="editalInicialDate" required >
                                                 </div>
                                                 <div class="col-md-6 mt-2 mt-md-0">
 
@@ -140,21 +141,20 @@ include '../../app/db/connection.php'
                                             </div>
                                         </div>
 
-                                        <div class="rowd-flex align-items-center justify-content-center ">
+                                        <div class="row d-flex align-items-center justify-content-center ">
                                             <div class="col-md-12 col-sm-12 text-center">
                                                 <label for="file-input" class="file-label" style="text-align: center;">
                                                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="16.000000pt"
-                                                        height="16.000000pt" viewBox="0 0 16.000000 16.000000"
-                                                        preserveAspectRatio="xMidYMid meet">
-                                                        <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
-                                                            fill="grey" stroke="none">
-                                                            <path
-                                                                d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z" />
-                                                        </g>
-                                                    </svg>
-                                                    
-                                                    <p style="padding-top: 15px;" class="ms-2">Arquivo pdf ou docx</p>
-                                                    <input type="file" name="editalPDF" id="file-input" class="file-input" title="Arquivo pdf ou docx">
+                                                    height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+                                                    preserveAspectRatio="xMidYMid meet">
+                                                    <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"    
+                                                    fill="grey" stroke="none">
+                                                    <path
+                                                    d="M41 105 c-51 -55 -53 -88 -6 -93 25 -2 39 6 79 47 49 50 55 74 20 88 -17 6 -104 -71 -104 -93 0 -27 21 -23 62 13 l43 37 -40 -42 c-41 -44 -71 -53 -82 -26 -4 10 9 31 38 60 23 24 40 46 37 49 -3 3 -24 -15 -47 -40z m104 4 c-3 -4 -11 -6 -18 -3 -7 2 -26 -9 -42 -26 -16 -16 -33 -30 -39 -30 -6 0 10 20 34 45 33 34 47 42 57 34 7 -6 10 -15 8 -20z" />
+                                                </g>
+                                            </svg>
+                                                    <p style="padding-top: 15px;" class="ms-2 ">Arquivo pdf ou docx</p>
+                                                    <input type="file" name="editalPDF" id="file-input" class="file-input" title="Arquivo pdf ou docx" required>
                                                     
                                                 </label>
                                             </div>
@@ -168,7 +168,7 @@ include '../../app/db/connection.php'
                             </div>
                                 <div class="col-6">
                                     <div class="imagem-cadastroEditalADM">
-                                        <img src="../../Imagens/img_cadastroEdital_adm.png"  width="150" height="400">
+                                        <img src="../../Imagens/img_cadastroEdital_adm.png" width="150" height="400">
                                     </div>
                                 </div>
                             
@@ -191,7 +191,7 @@ include '../../app/db/connection.php'
                                                 <h1>Editais</h1>
                                             </div>
                                             <div class="container mt-1">
-                                                <input type="text" size="34" maxlength="11" id="cadastroAdmEditalInputEdital" class="form-control cadastro-adm-edital-input mt-3" placeholder="Digite o nome do edital que procura.">
+                                                <input type="text" size="34" maxlength="11" id="cadastroAdmEditalInputEdital" class="form-control cadastro-adm-edital-input mt-3 shadow-none" placeholder="Digite o nome do edital que procura.">
                                             </div>
                                         </div>
                                         <div class="container overflow-x-auto">
