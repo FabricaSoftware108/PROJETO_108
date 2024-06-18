@@ -19,12 +19,14 @@ if(isset($_POST["submit"])) {
 }
 
 if (file_exists($target_file)) {
-    echo "Desculpe, arquivo já existente.";
+    echo "<script>alert('Desculpe, arquivo já existente.');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
     $uploadOk = 0;
 }
 
 if ($_FILES["fileToUpload"]["size"] > 500000) {
-    echo "Seu arquivo é muito grande.";
+    echo "<script>alert('Seu arquivo é muito grande!');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
     $uploadOk = 0;
 }
 
@@ -35,7 +37,8 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 }
 
 if ($uploadOk == 0) {
-    echo "Desculpe, seu arquivo não pode ser submetido.";
+    echo "<script>alert('Desculpe, seu arquivo não pode ser submetido.');</script>";
+    echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
   
   } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
@@ -43,21 +46,26 @@ if ($uploadOk == 0) {
       if ($optionselect === 'v1') {
           $query = "INSERT INTO carroselSoftware (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
           $result = mysqli_query($connection, $query);
-          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+          echo "<script>alert('Arquivo enviado com sucesso!');</script>";
+          echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
       } else if ($optionselect === 'v2') {
           $query = "INSERT INTO carroselJogos (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
           $result = mysqli_query($connection, $query);
-          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+          echo "<script>alert('Arquivo enviado com sucesso!');</script>";
+          echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
       } else if ($optionselect === 'v3') {
           $query = "INSERT INTO carroselAudioVideo (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
           $result = mysqli_query($connection, $query);
-          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+          echo "<script>alert('Arquivo enviado com sucesso!');</script>";
+          echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
       } else if ($optionselect === 'v4') {
           $query = "INSERT INTO carroselCgi (titulo, projeto, descricao, img) VALUES ('$nomefabrica','$nomeprojeto','$texto','$imagemfinal')";
           $result = mysqli_query($connection, $query);
-          header('location: ../../pages/adm/adicionarCarrosselAdm.php');
+          echo "<script>alert('Arquivo enviado com sucesso!');</script>";
+          echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
       };
     } else {
-      echo "Desculpe, ocorreu um erro ao submeter o arquivo.";
+      echo "<script>alert('Desculpe, ocorreu um erro ao submeter o arquivo.');</script>";
+      echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
     }
   }
