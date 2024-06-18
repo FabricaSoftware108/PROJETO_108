@@ -2083,10 +2083,6 @@ main.cadastro-de-vagas {
   font-family: var(--font-grad-title);
 }
 
-    
-    
-
-
 .titulo-vagas h1 {
     font-size: 56px;
     position: relative;
@@ -2097,12 +2093,8 @@ main.cadastro-de-vagas {
     margin: 78px;
     font-family: var(--font-destaque);
     color: black;
-    
-
 }
 
-
-
 .titulo-vagas h1 {
     font-size: 56px;
     position: relative;
@@ -2113,8 +2105,6 @@ main.cadastro-de-vagas {
     margin: 78px;
     font-family: var(--font-destaque);
     color: black;
-    
-
 }
 
 
@@ -2126,7 +2116,6 @@ main.cadastro-de-vagas {
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
-
 }
 
 #titulo-subtitulo-cadastroVagas h1{
@@ -2134,20 +2123,12 @@ main.cadastro-de-vagas {
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
 }
 
-
-
-
-
-
-
-
 .sombra-roxa-cadastro-vagas {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
     top: 300px;
     position: absolute;
     left: -52px;
-
 }
 
 .sombra-rosa-cadastro-vagas {
@@ -2159,11 +2140,16 @@ main.cadastro-de-vagas {
     right: -200px;
 }
 
-#quadradoRoxo-cadastro-vagas {
-
+#quadradoRoxo-cadastroaluno {
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
+}
+
+.pagDemanda-recaptcha{
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
 }
 
 .titulo-dados-empresa-vagas h1 {
