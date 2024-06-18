@@ -2,14 +2,11 @@
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
-$query = "SELECT * FROM carroselSoftware WHERE id =  ";
+if (!$fabricsDisabled) {
 
-$query = "SELECT titulo FROM carroselSoftware WHERE id = 1 ";
-
-
-$result = mysqli_query($connection, $query);
-
-$row = mysqli_fetch_array($result);
+  $name = $_POST["fabricName"];
+  $selectedFabric = $_POST["selectedFabric"];
+}
 
 ?>
 <!DOCTYPE html>
@@ -107,68 +104,94 @@ $row = mysqli_fetch_array($result);
     </nav>
   </header>
   <main class="main-editarCarrossel ">
-    <div class="container-fluid ">
-      <div class="row justify-content-center align-items-center " id="background-EditarCarrossel">
-        <div class="container-wrapper-carrossel">
-          <div class="col-md-12 wrapper-background-all-EditarCarrossel">
-            <div class="col-12 text-center title-editarCarrossel">
-              <h1>Editar Fábrica</h1>
-            </div>
-            <div class="row ">
-              <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center foto-editarCarrossel">
-                <div class="input-group justify-content-center">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <select class="btn btn-primary form-select mx-1" aria-label="Default select example">
-                      <option value="1" selected>Fábrica Software</option>
-                      <option value="2">Fábrica Jogos</option>
-                      <option value="3">Fábrica CGI</option>
-                      <option value="3">Fábrica Audio e Video</option>
-                    </select>
-                    <select class="btn btn-primary form-select mx-1 " aria-label="Default select example">
-                      <option selected>-- Turmas --</option>
-                      <option value="1"><?php echo $row['titulo'] ?></option>
-                      <option value="2"><?php echo $row['titulo'] ?></option>
+    <form action="" method="post">
 
-                    </select>
-
-                  </div>
-                  <div class="content-image-describe py-5">
-                    <h2>Foto da turma</h2>
-                    <label for="inputGroupFile04" id="imgEditarCarrossel">
-                      <img src="<?php echo $row['img'] ?>" style=" width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
-                    </label>
-                    <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
-                  </div>
-                </div>
+      <div class="container-fluid ">
+        <div class="row justify-content-center align-items-center " id="background-EditarCarrossel">
+          <div class="container-wrapper-carrossel">
+            <div class="col-md-12 wrapper-background-all-EditarCarrossel">
+              <div class="col-12 text-center title-editarCarrossel">
+                <h1>Editar Fábrica</h1>
               </div>
-              <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
-                <div class="container-fabrica-nome-editarCarrossel">
-                  <h3>Nome da fábrica</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1"><?php echo $row['titulo'] ?></textarea>
-                </div>
-                <div class="container-fabrica-nome-editarCarrossel">
-                  <h3>Nome do projeto</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1"><?php echo $row['projeto'] ?></textarea>
+              <div class="row ">
+                <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center foto-editarCarrossel">
+                  <div class="input-group justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <form action="./editarCarrosselAdm.php" method="post">
+                        <select class="btn btn-primary form-select mx-1" aria-label="Default select example" name="fabricName" onchange="submit()">
+                          <option selected>Fábricas</option>
+                          <option value="carroselSoftware">Fábrica Software</option>
+                          <option value="carroselJogos">Fábrica Jogos</option>
+                          <option value="carroselCgi">Fábrica CGI</option>
+                          <option value="carroselAudioVideo">Fábrica Audio e Video</option>
+                        </select>
+                      </form>
+                      <?php if ($name) {
+                        $fabricsDisabled = false;
+                      } else {
+                        $fabricsDisabled = true;
+                      } ?>
+                      <form action="./editarCarrosselAdm.php" method="post">
 
+                        <select class="btn btn-primary form-select mx-1 <?php if ($fabricsDisabled) {
+                                                                          echo 'disabled';
+                                                                        } ?>" aria-label="Default select example" name="selectedFabric" onchange="submit()">
+                          <option selected>-- Turmas --</option>
+                          <?php
+                          if (!$fabricsDisabled) {
+                            $queryFabrics = "SELECT * FROM $name";
+                            $resultFabrics = mysqli_query($connection, $queryFabrics);
+                            while ($row = mysqli_fetch_array($resultFabrics)) { ?>
+
+                              <option value="<?php echo $row['titulo'] ?>"><?php echo $row['titulo'] ?></option>
+
+                          <?php };
+                          }
+                          ?>
+                        </select>
+                      </form>
+
+                    </div>
+                    <div class="content-image-describe py-5">
+                      <h2>Foto da turma</h2>
+                      <label for="inputGroupFile04" id="imgEditarCarrossel">
+
+                        <img src="<?php echo $row['img'] ?>" style=" width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
+                      </label>
+                      <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
+                    </div>
+                  </div>
                 </div>
-                <div class="container-fabrica-nome-editarCarrossel">
-                  <h3>Texto sobre a turma</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="14">
-                  <?php echo $row['descricao'] ?></textarea>
+                <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
+                  <div class="container-fabrica-nome-editarCarrossel">
+                    <h3>Nome da fábrica</h3>
+                    <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1"><?php echo $row['titulo'] ?></textarea>
+                  </div>
+                  <div class="container-fabrica-nome-editarCarrossel">
+                    <h3>Nome do projeto</h3>
+                    <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="10" style="resize: none;" rows="1"><?php echo $row['projeto'] ?></textarea>
+
+                  </div>
+                  <div class="container-fabrica-nome-editarCarrossel">
+                    <h3>Texto sobre a turma</h3>
+                    <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="14">
+                    <?php echo $row['descricao'] ?></textarea>
+                  </div>
+                  <button class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
                 </div>
-                <button class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </main>
 
-</body>
-
-
-
+  <script>
+    function setFabrics(e) {
+      console.log(e.value)
+    }
+  </script>
 </body>
 
 </html>
