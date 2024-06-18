@@ -97,56 +97,63 @@ include '../../app/session/verificacao.php';
   </header>
 
   <main class="main-addCarrossel ">
-    <div class="container-fluid ">
-      <div class="row justify-content-center align-items-center " id="background-AddCarrossel">
-        <div class="container-wrapper-carrossel">
-          <div class="col-md-12 wrapper-background-all-AddCarrossel">
-            <div class="col-12 text-center title-addCarrossel">
-              <h1>Nova Fábrica</h1>
-            </div>
-            <div class="row ">
-              <div class="col-md-6 col-12 text-center align-items-center justify-content-center foto-addCarrossel">
-                <div class="container-dropdown mb-5">
-                  <div class="dropdown">
-                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Fabrica de Software 108
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Fabrica de Software 108</a></li>
-                      <li><a class="dropdown-item" href="#">Fabrica de Software 206</a></li>
-                      <li><a class="dropdown-item" href="#">Fabrica de Software 203</a></li>
-                      <li><a class="dropdown-item" href="#">Fabrica de Software 102</a></li>
-                    </ul>
+    <form action="../../app/session/actionAdicionarCarrosselAdm.php" method="POST" enctype="multipart/form-data">
+      <div class="container-fluid ">
+        <div class="row justify-content-center align-items-center " id="background-AddCarrossel">
+          <div class="container-wrapper-carrossel">
+            <div class="col-md-12 wrapper-background-all-AddCarrossel">
+              <div class="col-12 text-center title-addCarrossel">
+                <h1>Nova Fábrica</h1>
+              </div>
+              <div class="row p-5" >
+                <div class="col-md-6 col-12 text-center align-items-center justify-content-center">
+                  <div class="container-dropdown mb-5">
+                    <select class="form-select form-select-lg mb-3" id="selectadicioncarrossel" name="optionselect" aria-label=".form-select-lg example">
+                      <option value="v1">Fabrica de Software 108</option>
+                      <option value="v2">Fabrica de Jogos 307</option>
+                      <option value="v3">Fabrica de Audio Visual 106</option>
+                      <option value="v4">Fabrica de Computação Grafica 204</option>
+                    </select>
+                  </div>
+                  <div class="input-group justify-content-center d-block" id="campoDeTexto" >
+                    <div class="turmimage pb-5">
+                      <h3>Foto da turma</h3>
+                      <!-- <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload"> -->
+                      <input type="file" name="fileToUpload" id="fileToUpload" >
+
+                    </div>
+                    <div class="namefabrica pb-5">
+                      <h3>Nome da fábrica</h3>
+                      <input class="form-control" type="text" name="nomedafabrica">
+
+                      </div>
+                      <div class="nomeproject">
+                        <h3>Nome do projeto</h3>
+                        <input class="form-control" type="text" name="nomedoprojeto">
+                    </div>
+                    
+                    
                   </div>
                 </div>
-                <div class="input-group justify-content-center">
-                  <h2>Foto da turma</h2>
-                  <label for="inputGroupFile04" id="imgAddCarrossel">
-                  <img src="../../Imagens/icon_image_carrossel_adm.png" style=" width: 400px; height: 400px;" class="img-fluid">
-                  </label>
-                  <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <div class="col-md-6 col-12 text-center container-inputs-addCarrossel">
+                  <div class="container-fabrica-nome-addCarrossel">
+                    
+                  </div>
+                  <div class="container-fabrica-nome-addCarrossel">
+                    
+                  </div>
+                  <div class="container-fabrica-nome-addCarrossel">
+                    <h3>Texto sobre a turma</h3>
+                    <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" name="textodaturma" style="resize: none;" rows="15" placeholder="Descrição da turma"></textarea>
+                  </div>
+                  <button class="btn btn-primary" id="btnInputCarrossel">Cadastrar</button>
                 </div>
-              </div>
-              <div class="col-md-6 col-12 text-center container-inputs-addCarrossel">
-                <div class="container-fabrica-nome-addCarrossel">
-                  <h3>Nome da fábrica</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="1"></textarea>
-                </div>
-                <div class="container-fabrica-nome-addCarrossel">
-                  <h3>Nome do projeto</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="1"></textarea>
-                </div>
-                <div class="container-fabrica-nome-addCarrossel">
-                  <h3>Texto sobre a turma</h3>
-                  <textarea class="form-control" id="campoTextoDescricaoCarrossel" size="200" style="resize: none;" rows="15" placeholder="Descrição da turma"></textarea>
-                </div>
-                <button class="btn btn-primary" id="btnInputCarrossel">Cadastrar</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </main>
 
 </body>
