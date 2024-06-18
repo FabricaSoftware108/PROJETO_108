@@ -107,7 +107,7 @@ include '../../app/session/verificacaoPsg.php';
                     </p> -->
                 </div>
             </div>
-            <div class="row" id="quadradoRoxo-demanda">
+            <div class="row" id="quadradoRoxo-cadastroaluno">
                 <form class="col-12" id="camposPreenchimentoCadastroAlunoPsg" method="post" action="../../app/session/conexaoCadastroAlunoPsg.php" onsubmit="return validarPost()">
                     <h1>Informações Pessoais</h1><br>
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome" id="nome" size="27" maxlength="100" placeholder="Nome Completo">
