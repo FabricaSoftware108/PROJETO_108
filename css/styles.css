@@ -1349,6 +1349,7 @@ main.main-demanda{
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
+
 }
 
 
@@ -1541,8 +1542,6 @@ main.body-banco-talentos {
 }
 
 
-
-
 .body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; 
     padding: 0; 
     justify-content: center; 
@@ -1592,6 +1591,14 @@ main.body-banco-talentos {
     max-width:305px;
     margin-top:25px;
 }
+
+.align-items-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
 #titulo-subtitulo-bancotalentos p {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     max-width: 1400px;
@@ -1601,24 +1608,33 @@ main.body-banco-talentos {
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
-
+    
 }
 #titulo-subtitulo-bancotalentos h1{
     font-weight: bold;
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
     color: black
 }
+
 #quadradoRoxo-banco-talentos {
 
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
+    color: #FFFFFF;
+    padding-top: 35px;
 }
 
-
-    
-
-
+.titulo-sobre-projeto-talentos {
+    font-size: 40px;
+    color: white;
+    left: 89px;
+    text-align: justify;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 94px;
+}
 
 
 
@@ -5110,3 +5126,6 @@ body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-button{
 }
 
 /* Fim da estruturação do checkbox de consentimento de dados */
+
+
+
