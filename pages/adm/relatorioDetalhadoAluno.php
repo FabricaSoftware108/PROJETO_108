@@ -2,6 +2,12 @@
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
+//carregar o composer
+require '../../app/session/vendor/autoload.php';
+
+//referenciar o namespace Dompdf
+use Dompdf\Dompdf;
+
 $query = "SELECT * FROM alunosPsg WHERE cpf = '{$_SESSION["alunoCode"]}'";
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
