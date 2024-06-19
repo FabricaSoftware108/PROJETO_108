@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION['ForgotError'] = false;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -62,7 +66,7 @@
                 <br>
 
                 <div class="esqueceuSenha-login-ADM col-12">
-                    <a href="./esqueceuSenhaAdm.html">Esqueceu sua senha?</a>
+                    <a href="./esqueceuSenhaAdm.php">Esqueceu sua senha?</a>
                 </div>
 
                 <br>
