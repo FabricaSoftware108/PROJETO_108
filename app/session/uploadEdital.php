@@ -43,12 +43,14 @@ if ($_FILES["editalPDF"]["size"] > 500000) {
 
 // Permitindo formatos específicos
 if($imageFileType != "pdf") {
+  header('location: ../../pages/adm/cadastroAdmEdital.php');
   echo "Desculpe, são permitidos apenas arquivos PDF.";
   $uploadOk = 0;
 }
 
 // Salvando o arquivo
 if ($uploadOk == 0) {
+    header('location: ../../pages/adm/cadastroAdmEdital.php');
     echo "Desculpe, seu arquivo não pode ser submetido.";
   
   } else {
@@ -56,14 +58,14 @@ if ($uploadOk == 0) {
 
     if (move_uploaded_file($_FILES["editalPDF"]["tmp_name"], $target_file)) {
     //htmlspecialchars (preserva os caracteres não gerando conflito com o HTML)
+      header('location: ../../pages/adm/cadastroAdmEdital.php');
       echo "<script>alert('O arquivo ". htmlspecialchars( basename( $_FILES["editalPDF"]["name"])). " foi enviado .')</script>";
       $query_insert = "INSERT into editais() VALUES('$editalCode', '$name', '$editalInicialDate','$editalFinalDate', '$editalLimit', 0, './{$target_file}');";
       $result_insert= mysqli_query($connection, $query_insert); 
-      header('location: ../../pages/adm/cadastroAdmEdital.php');
 
 
     } else {
-      echo "<script>alert('Desculpe, ocorreu um erro ao submeter o arquivo.')<script>";
       header('location: ../../pages/adm/cadastroAdmEdital.php');
+      echo "<script>alert('Desculpe, ocorreu um erro ao submeter o arquivo.')<script>";
     }
   }

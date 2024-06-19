@@ -1,6 +1,6 @@
 <?php
 include '../../app/session/verificacao.php';
-include '../../app/db/connection.php'
+include '../../app/db/connection.php';
 ?>
 <!-- CABEÇALHO E MENU SANDUICHE DO ADM -->
 <!DOCTYPE html>
