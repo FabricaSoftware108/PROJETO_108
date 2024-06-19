@@ -1349,6 +1349,7 @@ main.main-demanda{
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
+
 }
 
 
@@ -1541,8 +1542,6 @@ main.body-banco-talentos {
 }
 
 
-
-
 .body-bancoTalentos main .wrapper-background-bancoTalento {width: 1468px; 
     padding: 0; 
     justify-content: center; 
@@ -1572,18 +1571,6 @@ main.body-banco-talentos {
     size: 27px;
 }
 
-.body-bancoTalentos div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 0;
-  }
 
   
 .bancoTalento-recaptcha{
@@ -1592,6 +1579,8 @@ main.body-banco-talentos {
     max-width:305px;
     margin-top:25px;
 }
+
+
 #titulo-subtitulo-bancotalentos p {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
     max-width: 1400px;
@@ -1601,25 +1590,52 @@ main.body-banco-talentos {
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
-
+    
 }
 #titulo-subtitulo-bancotalentos h1{
     font-weight: bold;
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
     color: black
 }
+
 #quadradoRoxo-banco-talentos {
 
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
+    color: #FFFFFF;
+    padding-top: 35px;
+}
+
+.titulo-sobre-projeto-talentos {
+    font-size: 40px;
+    color: white;
+    left: 89px;
+    text-align: justify;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 94px;
 }
 
 
+.talento-titulo h1 {
+    font-size: 40px;
+    color: white;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    z-index: -1;
     
+}
 
-
-
+.align-items-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 
 
 /*Cadastro  aluno psg*/
@@ -2226,6 +2242,8 @@ main.cadastro-de-vagas {
 
 
 #campo-cadastroVagas {
+    padding-top: 50px;
+    background-color: #281358;
     color: white;
     margin-top: 50px;
 }
@@ -5094,3 +5112,6 @@ body.body-relatorio-vagas-emprego  .relatorio-vagas_emprego-button{
 }
 
 /* Fim da estruturação do checkbox de consentimento de dados */
+
+
+
