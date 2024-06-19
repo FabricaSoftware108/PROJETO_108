@@ -1571,18 +1571,6 @@ main.body-banco-talentos {
     size: 27px;
 }
 
-.body-bancoTalentos div.effects {
-    position: absolute;
-    top: 35%;
-    left: 5%;
-    height: 150px;
-    width: 150px;
-    transform: translate(-50%, -50%);
-    filter: blur(135px);
-    background-color: #AA15C2;
-    opacity: 70%;
-    z-index: 0;
-  }
 
   
 .bancoTalento-recaptcha{
@@ -2254,6 +2242,8 @@ main.cadastro-de-vagas {
 
 
 #campo-cadastroVagas {
+    padding-top: 50px;
+    background-color: #281358;
     color: white;
     margin-top: 50px;
 }
