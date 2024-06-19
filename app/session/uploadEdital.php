@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../db/connection.php';
 
 $name = $_POST["editalName"];
@@ -29,43 +30,45 @@ if(isset($_POST["submit"])) {
 
 // Verifica se o arquivo já existe, consulta o caminho e o nome
 if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
+  $_SESSION['editalAlert'] = "Sorry, file already exists.";
+  $uploadOk = 0;
+  header('location: ../../pages/adm/cadastroAdmEdital.php');
   }
 
 
 // Verifica o tamanho do arquivo
 if ($_FILES["editalPDF"]["size"] > 500000) {
-    echo "Seu arquivo é muito grande.";
-    $uploadOk = 0;
+  $_SESSION['editalAlert'] = "Seu arquivo é muito grande.";
+  $uploadOk = 0;
+  header('location: ../../pages/adm/cadastroAdmEdital.php');
   }
 
 
 // Permitindo formatos específicos
 if($imageFileType != "pdf") {
-  header('location: ../../pages/adm/cadastroAdmEdital.php');
-  echo "Desculpe, são permitidos apenas arquivos PDF.";
+  $_SESSION['editalAlert'] = "Desculpe, são permitidos apenas arquivos PDF.";
   $uploadOk = 0;
+  header('location: ../../pages/adm/cadastroAdmEdital.php');
 }
 
 // Salvando o arquivo
 if ($uploadOk == 0) {
-    header('location: ../../pages/adm/cadastroAdmEdital.php');
-    echo "Desculpe, seu arquivo não pode ser submetido.";
+  $_SESSION['editalAlert'] = "Desculpe, seu arquivo não pode ser submetido.";
+  header('location: ../../pages/adm/cadastroAdmEdital.php');
   
   } else {
     //Move o arquivo, porém com o nome aterado 
 
     if (move_uploaded_file($_FILES["editalPDF"]["tmp_name"], $target_file)) {
     //htmlspecialchars (preserva os caracteres não gerando conflito com o HTML)
-      header('location: ../../pages/adm/cadastroAdmEdital.php');
-      echo "<script>alert('O arquivo ". htmlspecialchars( basename( $_FILES["editalPDF"]["name"])). " foi enviado .')</script>";
-      $query_insert = "INSERT into editais() VALUES('$editalCode', '$name', '$editalInicialDate','$editalFinalDate', '$editalLimit', 0, './{$target_file}');";
-      $result_insert= mysqli_query($connection, $query_insert); 
+    $_SESSION['editalAlert'] = "O arquivo ". htmlspecialchars( basename( $_FILES["editalPDF"]["name"])). " foi enviado .";
+    $query_insert = "INSERT into editais() VALUES('$editalCode', '$name', '$editalInicialDate','$editalFinalDate', '$editalLimit', 0, './{$target_file}');";
+    $result_insert= mysqli_query($connection, $query_insert); 
+    header('location: ../../pages/adm/cadastroAdmEdital.php');
 
 
     } else {
+      $_SESSION['editalAlert'] = "Desculpe, ocorreu um erro ao submeter o arquivo.";
       header('location: ../../pages/adm/cadastroAdmEdital.php');
-      echo "<script>alert('Desculpe, ocorreu um erro ao submeter o arquivo.')<script>";
     }
   }

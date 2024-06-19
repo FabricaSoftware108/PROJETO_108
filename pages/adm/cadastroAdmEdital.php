@@ -1,6 +1,10 @@
 <?php
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
+$_SESSION['editalAlert'] = null;
+
+echo("<script>alert('{$_SESSION['editalAlert']}</script>");
+
 ?>
 <!-- CABEÇALHO E MENU SANDUICHE DO ADM -->
 <!DOCTYPE html>
@@ -20,7 +24,7 @@ include '../../app/db/connection.php';
 <body class="body-cadastro-adm-edital">
 
     <!--Menu de Navegação-->
-    <header> 
+    <!-- <header> 
         <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -91,7 +95,7 @@ include '../../app/db/connection.php';
           </div>
         </div>
       </nav>        
-    </header>
+    </header> -->
 
     <div class="container">
         <div class="row">
