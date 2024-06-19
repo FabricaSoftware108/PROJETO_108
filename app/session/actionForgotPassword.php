@@ -67,9 +67,9 @@
 
             <p>Nova Senha: <b>$novaSenha</b></p>
 
-            <p>Pedimos que utilize esta nova senha na próxima vez que acessarem o site. Após o login, é recomendável que altere a senha para uma de sua preferência, garantindo que seja segura e única.</p>";
+            <p>Pedimos que utilize esta nova senha na próxima vez que acessar o site. Após o login, é recomendável que altere a senha para uma de sua preferência, garantindo que seja segura e única.</p>";
 
-            $mail->AltBody = "Hub fábricas, sua nova senha para assesar a area administrativa é: \n {$novaSenha}";
+            $mail->AltBody = "Hub fábricas, Prezado Administrador {$row['nome']}, Estamos escrevendo para informar que redefinimos sua senha de acesso ao Hub Fábricas. Abaixo, encontram-se os novos dados para login: <b>$novaSenha</b>";
             
 
             // echo("<script>window.location.href = '../../pages/adm/loginAdm.php'; exit();</script>");
