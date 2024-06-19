@@ -1592,12 +1592,6 @@ main.body-banco-talentos {
     margin-top:25px;
 }
 
-.align-items-center {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
 
 #titulo-subtitulo-bancotalentos p {
     font-size: clamp(1.125rem, 2.333vw, 1.688rem);
@@ -1636,6 +1630,24 @@ main.body-banco-talentos {
     margin-top: 94px;
 }
 
+
+.talento-titulo h1 {
+    font-size: 40px;
+    color: white;
+    top: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    z-index: -1;
+    
+}
+
+.align-items-center {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
 
 
 /*Cadastro  aluno psg*/
