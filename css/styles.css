@@ -132,6 +132,12 @@ header.cabecalhoGeral {
     }
 }
 
+@media (min-width: 1025px){
+    .offcanvas-x-button{
+        display:none;
+    }
+}
+
 /*Fim do cabeçalho com bootstarp*/
 
 @media (max-width: 991px){
@@ -2077,10 +2083,6 @@ main.cadastro-de-vagas {
   font-family: var(--font-grad-title);
 }
 
-    
-    
-
-
 .titulo-vagas h1 {
     font-size: 56px;
     position: relative;
@@ -2091,12 +2093,8 @@ main.cadastro-de-vagas {
     margin: 78px;
     font-family: var(--font-destaque);
     color: black;
-    
-
 }
 
-
-
 .titulo-vagas h1 {
     font-size: 56px;
     position: relative;
@@ -2107,8 +2105,6 @@ main.cadastro-de-vagas {
     margin: 78px;
     font-family: var(--font-destaque);
     color: black;
-    
-
 }
 
 
@@ -2120,7 +2116,6 @@ main.cadastro-de-vagas {
     font-family: var(--font-destaque);
     color: black;
     top: 7px;
-
 }
 
 #titulo-subtitulo-cadastroVagas h1{
@@ -2128,20 +2123,12 @@ main.cadastro-de-vagas {
     font-size: clamp(2.188rem, 3.333vw, 3.125rem);
 }
 
-
-
-
-
-
-
-
 .sombra-roxa-cadastro-vagas {
     box-shadow: -100px 4px 130px 100px rgba(45, 0, 148, 1);
     border-radius: 50%;
     top: 300px;
     position: absolute;
     left: -52px;
-
 }
 
 .sombra-rosa-cadastro-vagas {
@@ -2153,11 +2140,16 @@ main.cadastro-de-vagas {
     right: -200px;
 }
 
-#quadradoRoxo-cadastro-vagas {
-
+#quadradoRoxo-cadastroaluno {
     background-color: #281358;
     border-radius: 10px;
     text-align: center;
+}
+
+.pagDemanda-recaptcha{
+    margin:auto;
+    max-width:305px;
+    margin-top:25px;
 }
 
 .titulo-dados-empresa-vagas h1 {
@@ -2658,10 +2650,10 @@ overflow: hidden;
 
 
 .main-addCarrossel #background-AddCarrossel{
-    position: absolute;
-    top: 8%;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 
 }
 
@@ -2685,9 +2677,7 @@ overflow: hidden;
 .main-addCarrossel #imgAddCarrossel {
     box-shadow: none;
 }
-.main-addCarrossel .foto-addCarrossel {
-    margin-top: 150px;
-}
+
 .main-addCarrossel .wrapper-background-all-AddCarrossel {
     border: 1px solid rgba(0, 0, 0, 0.25);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -2697,7 +2687,7 @@ overflow: hidden;
     padding: 0 50px;
 }
 .main-addCarrossel .container-wrapper-carrossel {width: 1150px;}
-.main-addCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px;}
+.main-addCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px; }
 
 .main-addCarrossel .title-addCarrossel {
     width: 100%;
@@ -2707,7 +2697,8 @@ overflow: hidden;
     color: white;
     font-family: var(--font-destaque);
     font-size:56px;
-}   
+    }   
+
 .cadastro-carrossel-container1 {
     box-shadow: 0 10px 10px 0;
     background:url(../Imagens/icon_image_carrossel_adm.jpg); /*../Imagens/icon_image_carrossel_adm.jpg*/
@@ -4819,8 +4810,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 .main-editarCarrossel .container-inputs-editarCarrossel {
     padding: 0 50px;
 }
-.main-editarCarrossel .container-wrapper-carrossel {width: 1150px; margin-top: 40px}
-.main-editarCarrossel #campoTextoDescricaoCarrossel {background-color: #D9D9D9; margin-right: 5px;}
 
 .main-editarCarrossel .title-editarCarrossel {
     width: 100%;
@@ -4888,6 +4877,7 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
     overflow-x:hidden;
 }
 
+#selectadicioncarrossel { margin: 0 auto; width: 350px; }
 .body-CadastrarCarrossel .btn_cadastrar_carrossel-soft {
     width: 100%;
     height: 100%;
