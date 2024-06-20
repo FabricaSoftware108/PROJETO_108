@@ -2099,6 +2099,8 @@ main.cadastro-de-vagas {
   font-family: var(--font-grad-title);
 }
 
+    
+
 .titulo-vagas h1 {
     font-size: 56px;
     position: relative;
@@ -2243,9 +2245,8 @@ main.cadastro-de-vagas {
 
 #campo-cadastroVagas {
     padding-top: 50px;
-    background-color: #281358;
     color: white;
-    margin-top: 50px;
+    margin-top: 2px;
 }
 
 .text-area-vagas {
