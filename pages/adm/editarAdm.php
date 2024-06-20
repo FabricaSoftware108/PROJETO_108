@@ -114,11 +114,11 @@ $result = mysqli_query($connection, $query);
   <main class="wrapper-editar-adm editar-adm">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-md-6 col-11 justify-content-center align-items-center container-editar-adm">
+        <div class="col-md-6 col-12 justify-content-center container-editar-adm">
           <div class="col-12 editar-adm-container-title text-center">
             <h1>Administradores</h1>
-          </div>
-          <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
+            </div>
+            <div class="container-fluid" style="overflow-y: auto; max-height: 800px;">
             <form action="../../app/session/actionDesativarADM.php" method="post">
             <?php while ($row = mysqli_fetch_array($result)) {
               if($row["estado"]){
@@ -132,6 +132,7 @@ $result = mysqli_query($connection, $query);
             
               <div class="row p-0">
                 <div class="col-12 container-name-adm text-center" style="overflow-x: hidden;">
+
 
                   <div class="row">
                     <div class="col-md-12 col-12">
