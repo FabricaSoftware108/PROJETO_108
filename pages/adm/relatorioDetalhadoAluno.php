@@ -182,7 +182,7 @@ $row = mysqli_fetch_array($result);
                               </tr>
                             </tbody>
                           </table>
-                          <a id="btnd" href="gerarPdf.php" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</a>
+                          <a id="btnd" href="../../app/session/gerarPdf.php" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</a>
               </div>
             </div>
           </div>
