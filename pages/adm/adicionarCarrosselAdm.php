@@ -106,7 +106,7 @@ include '../../app/session/verificacao.php';
                 <h1>Nova Fábrica</h1>
               </div>
               <div class="row p-5" >
-                <div class="col-md-6 col-12 text-center align-items-center justify-content-center">
+                <div class="col-md-6 col-12 text-center justify-content-center">
                   <div class="container-dropdown mb-5">
                     <select class="form-select form-select-lg mb-3" id="selectadicioncarrossel" name="optionselect" aria-label=".form-select-lg example">
                       <option value="v1">Fabrica de Software 108</option>
@@ -118,9 +118,7 @@ include '../../app/session/verificacao.php';
                   <div class="input-group justify-content-center d-block" id="campoDeTexto" >
                     <div class="turmimage pb-5">
                       <h3>Foto da turma</h3>
-                      <!-- <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload"> -->
                       <input type="file" name="fileToUpload" id="fileToUpload" >
-
                     </div>
                     <div class="namefabrica pb-5">
                       <h3>Nome da fábrica</h3>
