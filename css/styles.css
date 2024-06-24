@@ -1640,6 +1640,12 @@ main.body-banco-talentos {
 
 /*Cadastro  aluno psg*/
 
+#quadradoRoxo-cadastroaluno {
+    background-color: #281358;
+    border-radius: 10px;
+    text-align: center;
+}
+
 main.body-aluno-psg {
     max-width: 1300px;
     margin: 20px auto;
@@ -3020,7 +3026,7 @@ overflow: hidden;
 
 .main-usuarioAdm #button-user {
     width: 100%;
-    padding: 15px 0;
+    padding: 15px 219px;
 
 }
 .main-usuarioAdm #button-editar_usuario{
