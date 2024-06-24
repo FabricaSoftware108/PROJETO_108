@@ -251,28 +251,29 @@ include '../../app/db/connection.php';
 
                       while ($row = mysqli_fetch_array($result)) { ?>
                         <form action="../../app/session/actionEditalDetalhado.php" method="post">
+                          <input type="hidden" name="index" value="<?php echo $row['id']; ?>">
                           <tr>
-                            <td><a name="alunoCode"><?php echo $row["nome"] ?></a< /td>
-                            <td><a name="alunoCode"><?php echo $row["cpf"] ?></a></td>
-                            <td><a name="alunoCode"><?php echo $row["cep"] ?></a></td>
-                            <td><a name="alunoCode"><?php echo $row["telefone"] ?></a></td>
-                            <td><a name="alunoCode"><?php echo $row["email"] ?></a></td>
-                            <td><button type="submit" class="btn btn-primary relatorio-edital_adm-button_irParaDetalhado" name="alunoCode" value="<?php echo $row["cpf"] ?>">
-                                <!--Seta dentro do botão-->
+                            <td><a><?php echo $row["nome"] ?></a></td>
+                            <td><a><?php echo $row["cpf"] ?></a></td>
+                            <td><a><?php echo $row["cep"] ?></a></td>
+                            <td><a><?php echo $row["telefone"] ?></a></td>
+                            <td><a><?php echo $row["email"] ?></a></td>
+                            <td>
+                              <button type="submit" class="btn btn-primary relatorio-edital_adm-button_irParaDetalhado" name="alunoCode" value="<?php echo $row["cpf"] ?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                 </svg>
-                                <!--Seta dentro do botão-->
                               </button>
+                            </td>
                           </tr>
-
                         </form>
                       <?php } ?>
+
                     </tbody>
                   </table>
                 </div>
                 <button id="btnd" class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
-                </div>
+              </div>
             </div>
           </div>
         </div>
