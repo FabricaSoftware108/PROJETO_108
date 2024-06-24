@@ -27,90 +27,135 @@ if ($result && mysqli_num_rows($result) > 0) {
 
     // Conteúdo HTML do PDF
     $html = "
-    <html>
-    <head>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-            .container { width: 100%; margin: 0 auto; padding: 20px; }
-            .header { text-align: center; margin-bottom: 20px; }
-            .header img { width: 100px; }
-            .header h1 { margin: 0; }
-            .header p { margin: 5px 0 0; font-size: 14px; color: #666; }
-            .content { margin-top: 20px; }
-            .details { width: 100%; display: table; border-collapse: collapse; }
-            .details-row { display: table-row; }
-            .details-cell { display: table-cell; border: 1px solid #ddd; padding: 10px; }
-            .details-label { background-color: #f2f2f2; font-weight: bold; }
-            .footer { text-align: center; margin-top: 20px; font-size: 12px; color: #777; }
-        </style>
-    </head>
-    <body>
-        <div class='container'>
-            <div class='header'>
-                <h1>Relatório de Informações do Aluno</h1>
-            </div>
-            <div class='content'>
-                <div class='details'>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>ID</div>
-                        <div class='details-cell'>{$row['id']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Nome</div>
-                        <div class='details-cell'>{$row['nome']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Telefone</div>
-                        <div class='details-cell'>{$row['telefone']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>CPF</div>
-                        <div class='details-cell'>{$row['cpf']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Email</div>
-                        <div class='details-cell'>{$row['email']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Data de Nascimento</div>
-                        <div class='details-cell'>{$row['dataNascimento']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Nome Pai</div>
-                        <div class='details-cell'>{$row['nomePai']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Nome Mãe</div>
-                        <div class='details-cell'>{$row['nomeMae']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Rua</div>
-                        <div class='details-cell'>{$row['rua']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Bairro</div>
-                        <div class='details-cell'>{$row['bairro']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Número</div>
-                        <div class='details-cell'>{$row['numero']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>Complemento</div>
-                        <div class='details-cell'>{$row['complemento']}</div>
-                    </div>
-                    <div class='details-row'>
-                        <div class='details-cell details-label'>CEP</div>
-                        <div class='details-cell'>{$row['cep']}</div>
-                    </div>
-                </div>
-            </div>
-            <div class='footer'>
-                <!-- Você pode adicionar informações adicionais no rodapé -->
-            </div>
-        </div>
-    </body>
-    </html>";
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .details {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .details-row {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .details-cell {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .details-label {
+            font-weight: bold;
+            background-color: #f2f2f2;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class='container'>
+    <div class='header'>
+        <h1>Relatório de Informações do Aluno</h1>
+        <p>Dados detalhados do aluno</p>
+    </div>
+    <div class='content'>
+        <table class='details'>
+            <tr class='details-row'>
+                <td class='details-label'>ID:</td>
+                <td class='details-cell'>{$row['id']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Nome:</td>
+                <td class='details-cell'>{$row['nome']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Telefone:</td>
+                <td class='details-cell'>{$row['telefone']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>CPF:</td>
+                <td class='details-cell'>{$row['cpf']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Email:</td>
+                <td class='details-cell'>{$row['email']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Data de Nascimento:</td>
+                <td class='details-cell'>{$row['dataNascimento']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Nome do Pai:</td>
+                <td class='details-cell'>{$row['nomePai']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Nome da Mãe:</td>
+                <td class='details-cell'>{$row['nomeMae']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Rua:</td>
+                <td class='details-cell'>{$row['rua']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Bairro:</td>
+                <td class='details-cell'>{$row['bairro']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Número:</td>
+                <td class='details-cell'>{$row['numero']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Complemento:</td>
+                <td class='details-cell'>{$row['complemento']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>CEP:</td>
+                <td class='details-cell'>{$row['cep']}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>";
 
     // Instanciar o método loadHtml e enviar o conteúdo do PDF
     $dompdf->loadHtml($html);
