@@ -38,7 +38,7 @@ include '../../app/session/verificacao.php';
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5><?php echo $_SESSION['nome'] ?>
             <div class="offcanvas-x-button">
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" id="button-close-x"></button>
-              </div>
+            </div>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-column pe-3">
@@ -105,40 +105,40 @@ include '../../app/session/verificacao.php';
               <div class="col-12 text-center title-addCarrossel">
                 <h1>Nova Fábrica</h1>
               </div>
-              <div class="row p-5" >
+              <div class="row p-5">
                 <div class="col-md-6 col-12 text-center justify-content-center">
                   <div class="container-dropdown mb-5">
                     <select class="form-select form-select-lg mb-3" id="selectadicioncarrossel" name="optionselect" aria-label=".form-select-lg example">
-                      <option value="v1">Fabrica de Software 108</option>
-                      <option value="v2">Fabrica de Jogos 307</option>
-                      <option value="v3">Fabrica de Audio Visual 106</option>
-                      <option value="v4">Fabrica de Computação Grafica 204</option>
+                      <option value="v1">Fabrica de Software </option>
+                      <option value="v2">Fabrica de Jogos</option>
+                      <option value="v3">Fabrica de Audio Visual</option>
+                      <option value="v4">Fabrica de Computação Grafica</option>
                     </select>
                   </div>
-                  <div class="input-group justify-content-center d-block" id="campoDeTexto" >
+                  <div class="input-group justify-content-center d-block" id="campoDeTexto">
                     <div class="turmimage pb-5">
                       <h3>Foto da turma</h3>
-                      <input type="file" name="fileToUpload" id="fileToUpload" >
+                      <input type="file" name="fileToUpload" id="fileToUpload">
                     </div>
                     <div class="namefabrica pb-5">
                       <h3>Nome da fábrica</h3>
                       <input class="form-control" type="text" name="nomedafabrica">
 
-                      </div>
-                      <div class="nomeproject">
-                        <h3>Nome do projeto</h3>
-                        <input class="form-control" type="text" name="nomedoprojeto">
                     </div>
-                    
-                    
+                    <div class="nomeproject">
+                      <h3>Nome do projeto</h3>
+                      <input class="form-control" type="text" name="nomedoprojeto">
+                    </div>
+
+
                   </div>
                 </div>
                 <div class="col-md-6 col-12 text-center container-inputs-addCarrossel">
                   <div class="container-fabrica-nome-addCarrossel">
-                    
+
                   </div>
                   <div class="container-fabrica-nome-addCarrossel">
-                    
+
                   </div>
                   <div class="container-fabrica-nome-addCarrossel">
                     <h3>Texto sobre a turma</h3>
