@@ -114,16 +114,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="main-editarCarrossel">
         <form action="" method="post">
             <div class="container-fluid">
-                <div class="row justify-content-center align-items-center d-flex" id="background-EditarCarrossel">
+                <div class="row justify-content-center align-items-center p-0" id="background-EditarCarrossel">
                     <div class="container-wrapper-carrossel justify-content-center align-items-center d-flex">
-                        <div class="col-md-8 wrapper-background-all-EditarCarrossel">
+                        <div class="col-md-12 wrapper-background-all-EditarCarrossel">
                             <div class="col-12 text-center title-editarCarrossel">
                                 <h1>Editar Fábrica</h1>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center foto-editarCarrossel">
-                                    <div class="input-group d-block justify-content-center">
-                                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="row mx-auto">
+                                <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center m-auto foto-editarCarrossel ">
+                                    <div class="input-group d-block justify-content-center p-6">
+                                        <div class="d-flex justify-content-center align-items-center pb-5">
                                             <select id="mySelect" name="mySelect" style="width: 50%;" onchange="updateFields()">
                                                 <option value="">Selecione a turma</option>
                                                 <?php foreach ($results as $row) { ?>
@@ -133,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                                             <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
                                         </div>
-                                        <div class="content-image-describe py-5">
+                                        <div class="content-image-describe pt-5">
                                             <h2>Foto da turma</h2>
                                             <label for="inputGroupFile04" id="imgEditarCarrossel">
                                                 <img id="carrosselImg" src="" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
@@ -143,50 +143,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
-                          <div class="container-fabrica-nome-editarCarrossel">
-                              <h3>Nome da fábrica</h3>
-                              <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="titulo" size="10" style="resize: none;" rows="1"><?php echo isset($row['titulo']) ? $row['titulo'] : ''; ?></textarea>
-                          </div>
-                          <div class="container-fabrica-nome-editarCarrossel">
-                              <h3>Nome do projeto</h3>
-                              <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php echo isset($row['projeto']) ? $row['projeto'] : ''; ?></textarea>
-                          </div>
-                          <div class="container-fabrica-nome-editarCarrossel">
-                              <h3>Texto sobre a turma</h3>
-                              <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php echo isset($row['descricao']) ? $row['descricao'] : ''; ?></textarea>
-                          </div>
-                          <button type="submit" class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
-                      </div>
+                                    <div class="container-fabrica-nome-editarCarrossel">
+                                        <h3>Nome da fábrica</h3>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="titulo" size="10" style="resize: none;" rows="1"><?php echo isset($row['titulo']) ? $row['titulo'] : ''; ?></textarea>
+                                    </div>
+                                    <div class="container-fabrica-nome-editarCarrossel">
+                                        <h3>Nome do projeto</h3>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php echo isset($row['projeto']) ? $row['projeto'] : ''; ?></textarea>
+                                    </div>
+                                    <div class="container-fabrica-nome-editarCarrossel">
+                                        <h3>Texto sobre a turma</h3>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php echo isset($row['descricao']) ? $row['descricao'] : ''; ?></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </form>
-          <script>
-              function updateFields() {
-                  var selectValue = document.getElementById('mySelect').value;
-                  var selectedOption = <?php echo json_encode($results); ?>.find(function(item) {
-                      return item.titulo === selectValue;
-                  });
+        </form>
+        <script>
+            function updateFields() {
+                var selectValue = document.getElementById('mySelect').value;
+                var selectedOption = <?php echo json_encode($results); ?>.find(function(item) {
+                    return item.titulo === selectValue;
+                });
 
-                  document.getElementById('carrosselImg').src = selectedOption.img;
+                document.getElementById('carrosselImg').src = selectedOption.img;
 
-                  document.getElementsByName('titulo')[0].value = selectedOption.titulo;
-                  document.getElementsByName('projeto')[0].value = selectedOption.projeto;
-                  document.getElementsByName('descricao')[0].value = selectedOption.descricao;
-              }
+                document.getElementsByName('titulo')[0].value = selectedOption.titulo;
+                document.getElementsByName('projeto')[0].value = selectedOption.projeto;
+                document.getElementsByName('descricao')[0].value = selectedOption.descricao;
+            }
 
-              $(document).ready(function() {
-                  $('#mySelect').select2({
-                      placeholder: 'Selecione a turma',
-                      allowClear: true
-                  });
+            $(document).ready(function() {
+                $('#mySelect').select2({
+                    placeholder: 'Selecione a turma',
+                    allowClear: true
+                });
 
-                  updateFields();
-              });
-          </script>
- </main>
+                updateFields();
+            });
+        </script>
+    </main>
 
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </body>
+
 </html>
