@@ -92,56 +92,36 @@ if ($result && mysqli_num_rows($result) > 0) {
     <div class='content'>
         <table class='details'>
             <tr class='details-row'>
-                <td class='details-label'>ID:</td>
-                <td class='details-cell'>{$row['id']}</td>
-            </tr>
-            <tr class='details-row'>
                 <td class='details-label'>Nome:</td>
                 <td class='details-cell'>{$row['nome']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>Telefone:</td>
-                <td class='details-cell'>{$row['telefone']}</td>
+                <td class='details-label'>E-mail:</td>
+                <td class='details-cell'>{$row['email']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>CPF:</td>
-                <td class='details-cell'>{$row['cpf']}</td>
+                <td class='details-label'>CPF/CNPJ:</td>
+                <td class='details-cell'>{$row['cpfcnpj']}</td>
             </tr>
             <tr class='details-row'>
                 <td class='details-label'>Email:</td>
                 <td class='details-cell'>{$row['email']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>Data de Nascimento:</td>
-                <td class='details-cell'>{$row['dataNascimento']}</td>
+                <td class='details-label'>UF:</td>
+                <td class='details-cell'>{$row['uf']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>Nome do Pai:</td>
-                <td class='details-cell'>{$row['nomePai']}</td>
+                <td class='details-label'>Telefone:</td>
+                <td class='details-cell'>{$row['telefone']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>Nome da Mãe:</td>
-                <td class='details-cell'>{$row['nomeMae']}</td>
+                <td class='details-label'>Cidade:</td>
+                <td class='details-cell'>{$row['cidade']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>Rua:</td>
-                <td class='details-cell'>{$row['rua']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>Bairro:</td>
-                <td class='details-cell'>{$row['bairro']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>Número:</td>
-                <td class='details-cell'>{$row['numero']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>Complemento:</td>
-                <td class='details-cell'>{$row['complemento']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>CEP:</td>
-                <td class='details-cell'>{$row['cep']}</td>
+                <td class='details-label'>Descrição:</td>
+                <td class='details-cell'>{$row['descricao']}</td>
             </tr>
         </table>
     </div>
@@ -163,4 +143,5 @@ if ($result && mysqli_num_rows($result) > 0) {
 } else {
     echo "Nenhum dado encontrado.";
 }
+
 ?>

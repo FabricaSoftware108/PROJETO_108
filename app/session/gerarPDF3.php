@@ -92,10 +92,6 @@ if ($result && mysqli_num_rows($result) > 0) {
     <div class='content'>
         <table class='details'>
             <tr class='details-row'>
-                <td class='details-label'>ID:</td>
-                <td class='details-cell'>{$row['id']}</td>
-            </tr>
-            <tr class='details-row'>
                 <td class='details-label'>Nome:</td>
                 <td class='details-cell'>{$row['nome']}</td>
             </tr>
