@@ -126,73 +126,46 @@ $row = mysqli_fetch_array($result);
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th scope="col" colspan="4">Dados da Empresa</th>
+                                                    <th scope="col" colspan="4">Dados Pessoias / Responsáveis</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td scope="col" colspan="2">Nome da Empresa:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['nomeEmpresa'] ?></p>
+                                                    <td scope="col" colspan="2">Nome Pessoal / Nome Responsável:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['nome'] ?></p>
                                                     </td>
-                                                    <td scope="col" colspan="2">Email:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['emailEmpresa'] ?></p>
+                                                    <td scope="col" colspan="2">Email Pessoal / Email Responsável:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['email'] ?></p>
                                                     </td>
                                                     
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2">CNPJ:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cnpj'] ?></p>
+                                                    <td colspan="2">CPF Pessoal / CPF Responsável:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cpfcnpj'] ?></p>
                                                     </td>
-                                                    <td colspan="2">Estado:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['estadoEmpresa'] ?></p>
+                                                    <td colspan="2">Estado Pessoal / Estado Responsável:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['uf'] ?></p>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2">Telefone:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['telefoneEmpresa'] ?></p>
+                                                    <td colspan="2">Telefone Pessoal / Telefone Responsável:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['telefone'] ?></p>
                                                     </td>
-                                                    <td colspan="2">Cidade:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cidadeEmpresa'] ?></p>
+                                                    <td colspan="2">Cidade Pessoal / Cidade Responsável:
+                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cidade'] ?></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col" colspan="4">Dados do Titular da Empresa/Pessoa Física</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td colspan="2">Nome:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['nomeTitular'] ?></p>
-                                                    </td>
-                                                    <td colspan="2">E-mail:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['emailTitular'] ?></p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">CPF:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['cpf'] ?></p>
-                                                    </td>
-                                                    <td colspan="2">Telefone:
-                                                        <p class="info-relatorio-detalhado-bt"><?php echo $row['telefoneTitular'] ?></p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
+                                        
                                             <thead>
                                                 <tr>
                                                     <th scope="col" colspan="4">Sobre seu Projeto</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!-- <tr class="d-flex justify-content-center align-items-center bg-primary w-100">
-                                                    <td colspan="4" class="td-proposta-projeto-relatorio-detalhado-bt ">
-                                                        
-                                                    </td>
-                                                </tr> -->
                                                 <tr>
                                                     <td colspan="4">
-                                                        <p><a href="../../documents/projetos/OfertaDemanda.pdf" class="ms-4 link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" Download>Download Projeto</a></p>
+                                                        <p><?php echo $row['descricao'] ?></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
