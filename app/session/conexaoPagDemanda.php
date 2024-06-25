@@ -3,31 +3,24 @@ include ('../../app/db/connection.php');
 // include ('verificacao.php');
 
 session_start();
-if (!empty($_POST["nome_empresa"]) && !empty($_POST["email_empresa"]) && !empty($_POST["cnpj"]) && !empty($_POST["estado"]) && !empty($_POST["telefone_empresa"]) 
-    && !empty($_POST["cidade"]) && !empty($_POST["nome_titular"]) && !empty($_POST["email_titular"]) && !empty($_POST["CPF"]) && !empty($_POST["telefone_titular"])
-    &&!empty($_POST["arquivo"])){
+if (!empty($_POST["nome"]) && !empty($_POST["email"]) && !empty($_POST["cpf"]) && !empty($_POST["estado"]) && !empty($_POST["telefone"]) 
+    && !empty($_POST["cidade"]) && !empty($_POST["descricao"])){
 
-    $nome_empresa= mysqli_real_escape_string($connection, $_POST["nome_empresa"]);
-    $email_empresa= mysqli_real_escape_string($connection, $_POST["email_empresa"]);
-    $cnpj= mysqli_real_escape_string($connection, $_POST["cnpj"]);
+    $nome= mysqli_real_escape_string($connection, $_POST["nome"]);
+    $email= mysqli_real_escape_string($connection, $_POST["email"]);
+    $cpf= mysqli_real_escape_string($connection, $_POST["cpf"]);
     $estado= mysqli_real_escape_string($connection, $_POST["estado"]);
-    $telefone_empresa= mysqli_real_escape_string($connection, $_POST["telefone_empresa"]);
+    $telefone= mysqli_real_escape_string($connection, $_POST["telefone"]);
     $cidade= mysqli_real_escape_string($connection, $_POST["cidade"]);
-
-    $nome_titular= mysqli_real_escape_string($connection, $_POST["nome_titular"]);
-    $email_titular= mysqli_real_escape_string($connection, $_POST["email_titular"]);
-    $cpf= mysqli_real_escape_string($connection, $_POST["CPF"]);
-    $telefone_titular= mysqli_real_escape_string($connection, $_POST["telefone_titular"]);
-    $arquivo= mysqli_real_escape_string($connection, $_POST["arquivo"]);
+    $descricao= mysqli_real_escape_string($connection, $_POST["descricao"]);
 
 
 
 
-    $query ="INSERT INTO demandas(cnpj, nomeEmpresa,emailEmpresa,estadoEmpresa,telefoneEmpresa,cidadeEmpresa,nomeTitular,emailTitular,cpf,telefoneTitular,arquivo) 
-    VALUES ('{$cnpj}', '{$nome_empresa}', '{$email_empresa}','{$estado}','{$telefone_empresa}',
-    '{$cidade}','{$nome_titular}','{$email_titular}','{$cpf}','{$telefone_titular}','{$arquivo}')";
-    echo $query;
 
+    $query ="INSERT INTO demandas() 
+    VALUES (null,'{$nome}', '{$email}','{$cpf}','{$telefone}',
+    '{$estado}','{$cidade}','{$descricao}')";
 
     $result= mysqli_query($connection,$query);
     
