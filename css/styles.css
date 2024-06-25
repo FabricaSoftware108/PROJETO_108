@@ -37,6 +37,7 @@ header.cabecalhoGeral {
     left: 0;
     right: 0;
     top: 0;
+
 }
 
 .cabecalhoGeral {
@@ -57,8 +58,11 @@ header.cabecalhoGeral {
     height: 50px;
 }
 
-.offcanvas-title{
-    margin-left:86%;
+.offcanvas-title {
+    text-align: left;     
+    margin-bottom: 0;   
+    font-size: 16px !important ; 
+    font-weight: normal !important;
 }
 
 .cabecalhoGeral .bg-dropDown-header {
