@@ -34,9 +34,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-
         .container {
             width: 100%;
             max-width: 800px;
@@ -45,7 +43,6 @@ if ($result && mysqli_num_rows($result) > 0) {
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
         .header {
             text-align: center;
             margin-bottom: 20px;
@@ -55,39 +52,34 @@ if ($result && mysqli_num_rows($result) > 0) {
             font-size: 24px;
             color: #333;
         }
-
         .header p {
             margin: 5px 0 0;
             font-size: 14px;
             color: #666;
         }
-
         .content {
             margin-top: 20px;
         }
-
         .details {
-            width: 100%;
+            width: 90%;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
-
         .details-row {
             border-bottom: 1px solid #ddd;
         }
-
         .details-cell {
             padding: 10px;
             font-size: 14px;
             color: #333;
         }
-
         .details-label {
             font-weight: bold;
             background-color: #f2f2f2;
             padding: 10px;
             font-size: 14px;
             color: #333;
+            width: 30%;
         }
     </style>
 </head>
