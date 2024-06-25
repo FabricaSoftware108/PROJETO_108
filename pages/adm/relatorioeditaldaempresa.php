@@ -113,7 +113,7 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                         <tr>
                           <th class="label-nome_edital_da_empresa">Nome</th>
                           <th class="label-representante_edital_da_empresa">Responsável</th>
-                          <th class="label-cnpj_edital_da_empresa">CPF</th>
+                          <th class="label-cnpj_edital_da_empresa">CPF/CNPJ</th>
                           <th class="label-telefone_edital_da_empresa">Telefone</th>
                           <th class="label-email_edital_da_empresa">E-mail</th>
                           <td class="label-email_edital_da_empresa">...</th>
@@ -128,7 +128,7 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                               <td class="h9"><a name="demandaCode"><?php echo $row["email"];?></a></td>
                               <td class="h9"><a name="demandaCode"><?php echo $row["cpfcnpj"];?></a></td>
                               <td class="h9"><a name="demandaCode"><?php echo $row["telefone"];?></a></td>
-                              <td class="h9"><a name="demandaCode"><?php echo $row["uf"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["email"];?></a></td>
                               
                               <td class="h9"><button type="submit" class="btn btn-primary relatorio-edital_da_empresa-button_irParaDetalhado" name="demandaCode"
                                 value="<?php echo $row["id"]?>">
