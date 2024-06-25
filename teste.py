@@ -103,6 +103,7 @@ def test_form():
         page.wait_for_timeout(3000)
         
         page.click('.btn.btn-primary')
+        page.wait_for_timeout(2000)
         
         
         
