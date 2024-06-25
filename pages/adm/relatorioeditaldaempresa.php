@@ -1,6 +1,10 @@
 <?php 
 include "../../app/session/verificacao.php";
-include "../../app/session/conexaoDemandaEmpresa.php"
+include "../../app/session/conexaoDemandaEmpresa.php";
+
+$query = "select * from demandas";
+$result = mysqli_query($connection, $query);
+
 ?>
 
 
@@ -121,14 +125,13 @@ include "../../app/session/conexaoDemandaEmpresa.php"
                       </thead>
                       <tbody>
                         <form action="../../app/session/actionDemanda.php" method="post">
-
                           <?php while ($row = mysqli_fetch_array($result)){?>
                             <tr>
-                              <td class="h9"><a name="demandaCode"><?php echo $row["nomeEmpresa"];?></a></td>
-                              <td class="h9"><a name="demandaCode"><?php echo $row["nomeTitular"];?></a></td>
-                              <td class="h9"><a name="demandaCode"><?php echo $row["cnpj"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["nome"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row[""];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["cpfcnpj"];?></a></td>
                               <td class="h9"><a name="demandaCode"><?php echo $row["telefoneTitular"];?></a></td>
-                              <td class="h9"><a name="demandaCode"><?php echo $row["emailTitular"];?></a></td>
+                              <td class="h9"><a name="demandaCode"><?php echo $row["email"];?></a></td>
                               <td class="h9"><button type="submit" class="btn btn-primary relatorio-edital_da_empresa-button_irParaDetalhado" name="demandaCode"
                                 value="<?php echo $row["id"]?>">
                                   <!--Seta dentro do botão-->
