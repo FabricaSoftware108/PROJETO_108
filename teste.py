@@ -108,6 +108,23 @@ def test_form():
         
         
         #PAG EMPRESAS
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/pagDemanda.html')
+        page.wait_for_timeout(5000)
+        
+        page.wait_for_selector('input[name="nome"]')
+        page.fill('input[name=nome]', ' Bianca')    
+        page.fill('input[name=email]', 'costhelaria@gmail.com')
+        page.fill('input[name=cpf]', '618.149.190-23')
+        page.fill('input[name=telefone]', '265656') 
+        page.fill('input[name=cidade]', 'Amambai')
+        page.select_option('select[name=estado]', value='MS')
+        page.fill('input[name=descricao]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
+        page.click('.check-consentimento-dados')
+        
+        page.wait_for_timeout(3000)
+        
+        page.click('.btn.btn-primary')
+        
         
         
         
