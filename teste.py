@@ -50,18 +50,15 @@ def test_form():
         page.select_option('select[name=escolaridade]', value='Superior')
         page.fill('input[name=telefone]', '6655454566') 
         page.fill('input[name=email]', 'adam@gmail.com')
-        page.fill("input[name=cep]","69914-460")
+        page.fill("input[name=cep]","79017253")
         page.fill('input[name=numero]', '543')
-        page.fill('input[name=rua]', 'Rua da Alegria')
-        page.fill('input[name=bairro]', ' bairros')
-        page.fill('input[name=cidade]', 'Campo Pequeno')
+        page.select_option('select[name=uf]', value='AL')
         
-        page.select_option('select[name=uf]', value='Minas Gerais')
-        page.fill('input[name=github]', 'mnjnjnn')
-        page.fill('input[name=linkedin]', 'Linikernjnjc')
+        page.wait_for_timeout(1000)
+       
+        page.fill('input[name=github]', 'lllll')
+        page.fill('input[name=linkedin]', 'mkjk')
         page.click('.check-consentimento-dados')
-        
-        # cep, uf, hit, linkedin
         
         
         page.wait_for_timeout(2000)
