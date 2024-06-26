@@ -2,6 +2,8 @@
 session_start();
 include '../db/connection.php';
 
+$oldCode = $_GET["oldCode"];
+
 $name = $_POST["editalName"];
 $editalCode = $_POST["editalCode"];
 $editalLimit = $_POST["editalLimit"];
@@ -65,7 +67,7 @@ if ($uploadOk == 0) {
       $result = mysqli_query($connection,"SELECT * FROM editais WHERE codigo = '$editalCode'");
       if(mysqli_fetch_row($result) == 0){
         $_SESSION['editalAlert'] = "O arquivo ". htmlspecialchars( basename( $_FILES["editalPDF"]["name"])). " foi enviado .";
-        $query_insert = "UPDATE editais SET codigo = '$editalCode', nome = '$name', dataInicio = '$editalInicialDate', dataFim = '$editalFinalDate', quantidadeAlunos = $editalLimit,arquivo =  './{$target_file}');";
+        $query_insert = "UPDATE editais SET codigo = '$editalCode', nome = '$name', dataInicio = '$editalInicialDate', dataFim = '$editalFinalDate', quantidadeAlunos = $editalLimit,arquivo =  './{$target_file}' WHERE codigo = $oldCode;";
         $result_insert= mysqli_query($connection, $query_insert); 
         header('location: ../../pages/adm/cadastroAdmEdital.php');
       }else{

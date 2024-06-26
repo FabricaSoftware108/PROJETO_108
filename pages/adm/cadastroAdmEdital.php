@@ -31,7 +31,7 @@ if($_SESSION['editalAlert']){
 <body class="body-cadastro-adm-edital">
 
     <!--Menu de Navegação-->
-    <!-- <header> 
+    <header> 
         <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -102,7 +102,7 @@ if($_SESSION['editalAlert']){
           </div>
         </div>
       </nav>        
-    </header> -->
+    </header>
 
     <div class="container">
         <div class="row">
@@ -119,7 +119,7 @@ if($_SESSION['editalAlert']){
                                 <div class="row">
                                     <div class="col-12" id="tituloCadastroEdital">
                                         
-                                    <form action="<?php if(isset($_SESSION['editEdital'])){echo '../../app/session/actionEditEdital.php';}else{echo '../../app/session/uploadEdital.php';}?>" method="post" enctype="multipart/form-data">
+                                    <form action="../../app/session/uploadEdital.php" method="post" enctype="multipart/form-data" id="saveEditalForm">
                                         <div class="cadastro-adm-edital-input-container ">
                                             <label for="cadastro-adm-edital-nome" class="cadastro-adm-edital-label">Nome do Edital</label>
                                             <input type="text" name="editalName" size="60" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['nome']);} ?>">
@@ -171,7 +171,7 @@ if($_SESSION['editalAlert']){
                                             </div>
                                         </div>
                                         <div class="button-cadastrar-edital-adm">
-                                            <button type="submit" class="btn btn-primary"><?php if(isset($_SESSION['editEdital'])){echo 'Salvar';}else{echo 'Cadastrar';}?></button>
+                                            <button type="submit" class="btn btn-primary" <?php if(isset($_SESSION['editEdital'])){echo 'onclick="actionToEdit()"';}?> ><?php if(isset($_SESSION['editEdital'])){echo 'Salvar';}else{echo 'Cadastrar';}?></button>
                                         </div>
                                         </form>
                                     </div>
@@ -268,6 +268,12 @@ if($_SESSION['editalAlert']){
     <script src="../../js/editalAdmFilter.js"></script>
     <script>
         var editalCode;
+
+        function actionToEdit(){
+            document.getElementById("saveEditalForm").action = "../../app/session/actionEditEdital.php";
+            document.getElementById("saveEditalForm").submit();
+        }
+
         function changeToDelete(){
             document.getElementById("editalForm").action = "../../app/session/deleteEdital.php?editalCode="+editalCode;
         }
