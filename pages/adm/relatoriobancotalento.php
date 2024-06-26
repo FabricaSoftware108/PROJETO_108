@@ -2,6 +2,7 @@
 // session_start();
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,6 +23,8 @@ include '../../app/db/connection.php';
       
       $query = "select * from bancosTalentos";
       $result = mysqli_query($connection, $query);
+      $row = mysqli_fetch_array($result);
+
 
     ?>
 
@@ -29,7 +32,7 @@ include '../../app/db/connection.php';
 
 <body class="body-relatorio-banco-talento">
   
- <!--Menu de Navegação-->
+ <!--Menu de Navegação--> 7
  <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
@@ -148,7 +151,7 @@ include '../../app/db/connection.php';
                     </tbody>
                   </table>
                 </div>
-                <button class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
+                <button id="btnd" class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
 
               </div>
             </div>
@@ -160,7 +163,22 @@ include '../../app/db/connection.php';
       </div>
     </div>
   </main>
-
+  <script>
+    document.getElementById("btnd").addEventListener("click", function() {
+      var printContents = document.getElementById("table_relatorio_banco_talentos").outerHTML;
+      var originalContents = document.body.innerHTML;
+      var printWindow = window.open('', '', 'height=800,width=800');
+      printWindow.document.write('<html><head><title>Relatório Edital do Aluno</title>');
+      printWindow.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">');
+      printWindow.document.write('</head><body>');
+      printWindow.document.write(printContents);
+      printWindow.document.write('</body></html>');
+      printWindow.document.close();
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    });
+  </script>
 </body>
 
 </html>
