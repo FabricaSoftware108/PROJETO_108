@@ -111,8 +111,7 @@ $row = mysqli_fetch_array($result);
                                     <div class="container" id="relatorio-detalhado-bt-label-azul">
                                         <div class="row justify-content-center">
                                             <div class="col-sm-12 col-lg-8">
-                                                <p class="relatorio-detalhado-bt-titulo">Relatório - Banco de
-                                                    Talentos
+                                                <p class="relatorio-detalhado-bt-titulo">Relatório - Talentos das Fábricas
                                                 </p>
                                             </div>
                                         </div>
