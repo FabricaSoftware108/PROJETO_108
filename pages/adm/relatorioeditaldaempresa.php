@@ -156,7 +156,22 @@ $result = mysqli_query($connection, $query);
       <!-- </form> -->
     </div>
   </main>
-  <script src="../../js/imprimirRelatorioIndividual.js"></script>
+  <script>
+    document.getElementById("btnd").addEventListener("click", function() {
+      var printContents = document.getElementById("table_relatorio_edital_da_empresa").outerHTML;
+      var originalContents = document.body.innerHTML;
+      var printWindow = window.open('', '', 'height=800,width=800');
+      printWindow.document.write('<html><head><title>Relatório Edital do Aluno</title>');
+      printWindow.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">');
+      printWindow.document.write('</head><body>');
+      printWindow.document.write(printContents);
+      printWindow.document.write('</body></html>');
+      printWindow.document.close();
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    });
+  </script>
 </body>
 </html>
     
