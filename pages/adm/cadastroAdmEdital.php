@@ -2,6 +2,11 @@
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
+if(isset($_SESSION['editEdital'])){
+    $query = "SELECT * FROM editais WHERE codigo = '".$_SESSION['editEdital']."'";
+    $result = mysqli_query($connection, $query);
+    $row = mysqli_fetch_array($result);
+}
 
 if($_SESSION['editalAlert']){
     echo("<script>alert('{$_SESSION['editalAlert']}')</script>");
@@ -26,7 +31,7 @@ if($_SESSION['editalAlert']){
 <body class="body-cadastro-adm-edital">
 
     <!--Menu de Navegação-->
-    <header> 
+    <!-- <header> 
         <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
             <div class="md-auto">
@@ -97,7 +102,7 @@ if($_SESSION['editalAlert']){
           </div>
         </div>
       </nav>        
-    </header>
+    </header> -->
 
     <div class="container">
         <div class="row">
@@ -107,26 +112,26 @@ if($_SESSION['editalAlert']){
                     <div class="cadastro-adm-edital-container">
                         <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                             <div class="cadastro-adm-edital-container-title">
-                                <h1>Cadastro de Edital</h1>
+                                <h1><?php if(isset($_SESSION['editEdital'])){echo 'Edição';}else{echo 'Cadastro';}?> de Edital</h1>
                             </div>
                             
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12" id="tituloCadastroEdital">
                                         
-                                    <form action="../../app/session/uploadEdital.php" method="post" enctype="multipart/form-data">
+                                    <form action="<?php if(isset($_SESSION['editEdital'])){echo '../../app/session/actionEditEdital.php';}else{echo '../../app/session/uploadEdital.php';}?>" method="post" enctype="multipart/form-data">
                                         <div class="cadastro-adm-edital-input-container ">
                                             <label for="cadastro-adm-edital-nome" class="cadastro-adm-edital-label">Nome do Edital</label>
-                                            <input type="text" name="editalName" size="60" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required>
+                                            <input type="text" name="editalName" size="60" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['nome']);} ?>">
                                         </div>
                                         <div class="cadastro-adm-edital-input-container">
                                             <label for="cadastro-adm-edital-email" class="cadastro-adm-edital-label">Código Do Edital</label>
-                                            <input type="text" name="editalCode" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required>
+                                            <input type="text" name="editalCode" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['codigo']);} ?>">
                                         </div>
 
                                         <div class="cadastro-adm-edital-input-container">
                                             <label for="cadastro-adm-edital-limite-aluno" class="cadastro-adm-edital-label">Limite de Alunos</label>
-                                            <input type="number" name="editalLimit" size="10"  id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required>
+                                            <input type="number" name="editalLimit" size="10"  id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['quantidadeAlunos']);} ?>">
                                         </div>
 
                                         <div class="container">
@@ -135,14 +140,14 @@ if($_SESSION['editalAlert']){
 
                                                     <label for="cadastro-adm-edital-data" id="centerDateInicio" class="cadastro-adm-edital-label-data">Data Ínicial</label>
                                                     
-                                                    <input value="<?php echo date('Y-m-d')  ?>" type="date" class="form-control" id="cadastroAdmEditalDataInicial"
+                                                    <input value="<?php if(isset($_SESSION['editEdital'])){echo ($row['dataInicio']);}else{ echo date('Y-m-d'); }  ?>" type="date" class="form-control" id="cadastroAdmEditalDataInicial"
                                                     max = "9999-12-31" name="editalInicialDate" required >
                                                 </div>
                                                 <div class="col-md-6 mt-2 mt-md-0">
 
                                                     <label for="cadastro-adm-edital-data"  id="centerDateFinal"class="cadastro-adm-edital-label-data">Data Final</label>
                                                     <input type="date" class="form-control" id="cadastroAdmEditalDataFinal"
-                                                    max = "9999-12-31" name="editalFinalDate" required>
+                                                    max = "9999-12-31" name="editalFinalDate" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['dataFim']);} ?>">
                                                 </div>
                                             </div>
                                         </div>
@@ -160,13 +165,13 @@ if($_SESSION['editalAlert']){
                                                 </g>
                                             </svg>
                                                     <p style="padding-top: 15px;" class="ms-2 ">Arquivo pdf ou docx</p>
-                                                    <input type="file" name="editalPDF" id="file-input" class="file-input" title="Arquivo pdf ou docx" required>
+                                                    <input type="file" name="editalPDF" id="file-input" class="file-input" title="Arquivo pdf ou docx" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['arquivo']);} ?>">
                                                     
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="button-cadastrar-edital-adm">
-                                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                            <button type="submit" class="btn btn-primary"><?php if(isset($_SESSION['editEdital'])){echo 'Salvar';}else{echo 'Cadastrar';}?></button>
                                         </div>
                                         </form>
                                     </div>
@@ -190,69 +195,70 @@ if($_SESSION['editalAlert']){
                     <div class="row">
                         <div class="col-md-auto col-12" style="padding: 0;">
                             <div class="cadastro-adm-editais" >
-                                <div class="cadastro-adm-edital-centered">
-                                    <div class="cadastro-adm-edital-container">
-                                        <div class="col-12" >
-                                            <div class="cadastro-adm-edital-container-title">
-                                                <h1>Editais</h1>
-                                            </div>
-                                            <div class="container mt-1">
-                                                <input type="text" size="34" maxlength="11" id="cadastroAdmEditalInputEdital" class="form-control cadastro-adm-edital-input mt-3 shadow-none" placeholder="Digite o nome do edital que procura.">
-                                            </div>
-                                        </div>
-                                        <div class="container overflow-x-auto">
-                                            <div class="row">
-                                                <div class="quadro-cinza-adm-edital">
-                                                    <div class="quadro-branco-adm-edital mt-3" >
-                                                    <?php
-                                                        $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
-                                                        $result = mysqli_query($connection, $query);
-
-                                                        while($row = mysqli_fetch_array($result)){
-                                                            $today = date("Y-m-d");
-                                                            if($today >= $row["dataFim"] || $row["quantidadeAlunos"] == $row["alunosCadastrados"]){
-                                                                $dateColor = "bg-danger";
-                                                            }
-                                                            else{
-                                                                $dateColor = "bg-success";
-                                                            }
-                                                            ?>
-                                                            <div class="mx-2 my-2">
-                                                                <button class="btn w-100 btn-light editalAdm" id=" <?php echo "{$row["codigo"]}"?> <?php echo $row["nome"] ?>" type="submit" name="editalCode" value="<?php echo $row["codigo"] ?>">
-                                                                <label class="d-flex align-items-center">
-                                                                    <div class="<?php echo $dateColor ?> me-4 rounded" style="width: 20px; height:20px;"></div>
-                                                                    Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?>
-                                                                </label>
-
-                                                                </button>
-                                                            </div>
-                                                    <?php } ?>
-                                                        
-            
-                                                            
-                                                    </div>
+                                <form action="" method="post" id="editalForm">
+                                    <div class="cadastro-adm-edital-centered">
+                                        <div class="cadastro-adm-edital-container">
+                                            <div class="col-12" >
+                                                <div class="cadastro-adm-edital-container-title">
+                                                    <h1>Editais</h1>
                                                 </div>
-                                                <div class="col-md-12 mt-3">
-                                                    <div class="container mb-3">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="button-apagar-edital">
-                                                                    <button type="button" class="btn btn-primary disabled">Apagar</button>
+                                                <div class="container mt-1">
+                                                    <input type="text" size="34" maxlength="11" id="cadastroAdmEditalInputEdital" class="form-control cadastro-adm-edital-input mt-3 shadow-none" placeholder="Digite o nome do edital que procura.">
+                                                </div>
+                                                
+                                                    <div class="col-md-12 mt-3">
+                                                        <div class="container mb-3">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="button-apagar-edital">
+                                                                        <button type="buttom" class="btn btn-danger disabled" id="deleteButtom" onclick="changeToDelete()">Apagar</button>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            
-                                                            <div class="col-md-6 mt-2 mt-md-0">
-                                                                <div class="button-editar-edital">
-                                                                    <button type="button" class="btn btn-primary disabled">Editar</button>
+                                                                    
+                                                                <div class="col-md-6 mt-2 mt-md-0">
+                                                                    <div class="button-editar-edital">
+                                                                        <button type="buttom" class="btn btn-primary disabled" id="editButtom" onclick="changeToEdit()">Editar</button>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </div> 
+                                                            </div> 
+                                                        </div>
                                                     </div>
+                                            </div>
+                                            <div class="container overflow-x-auto">
+                                                <div class="row">
+                                                    <div class="quadro-cinza-adm-edital">
+                                                        <div class="quadro-branco-adm-edital mt-3" >
+                                                        <?php
+                                                            $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
+                                                            $result = mysqli_query($connection, $query);
+
+                                                            while($row = mysqli_fetch_array($result)){
+                                                                $today = date("Y-m-d");
+                                                                if($today >= $row["dataFim"] || $row["quantidadeAlunos"] == $row["alunosCadastrados"]){
+                                                                    $dateColor = "bg-danger";
+                                                                }
+                                                                else{
+                                                                    $dateColor = "bg-success";
+                                                                }
+                                                                ?>
+                                                                <div class="mx-2 my-2 w-100">
+                                                                    <button class="btn w-100 btn-light editalAdm d-flex justify-content-between align-items-center" id=" <?php echo "{$row['codigo']}"?> <?php echo $row["nome"] ?>" type="button" name="editalCode" value="<?php echo $row["codigo"] ?>" onclick="anableToEdit(this)">
+                                                                        <div class="<?php echo $dateColor ?> me-4 rounded" style="width: 20px; height:20px;"></div>
+                                                                        <p class="w-100 text-start h-100 d-flex justify-content-start align-items-center">Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?></p>
+                                                                    </button>
+                                                                </div>
+                                                        <?php } ?>
+                                                            
+                
+                                                                
+                                                        </div>
+                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -260,7 +266,28 @@ if($_SESSION['editalAlert']){
             </div>
     </main>
     <script src="../../js/editalAdmFilter.js"></script>
+    <script>
+        var editalCode;
+        function changeToDelete(){
+            document.getElementById("editalForm").action = "../../app/session/deleteEdital.php?editalCode="+editalCode;
+        }
+        function changeToEdit(){
+            document.getElementById("editalForm").action = "../../app/session/editEdital.php?editalCode="+editalCode;
+        }
+        function anableToEdit(edital){
+            document.querySelector("#deleteButtom").classList.remove('disabled')
+            document.querySelector("#editButtom").classList.remove('disabled')
+            for(var i = 0; i < document.querySelectorAll(".editalAdm").length; i++){
+                document.querySelectorAll(".editalAdm")[i].classList.remove('bg-primary');
+                document.querySelectorAll(".editalAdm")[i].classList.remove('text-light');
+
+            }
+            edital.classList.add("bg-primary");
+            edital.classList.add("text-light");
+            editalCode = edital.value; 
+        }
+    </script>
                                                         
 </body>
 </html>
-<?php $_SESSION['editalAlert'] = null?>
+<?php $_SESSION['editalAlert'] = null; unset($_SESSION['editEdital']);?>
