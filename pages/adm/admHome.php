@@ -136,7 +136,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
         </div>
         <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100 shadow-lg" id="label-quadrados-3-adm-home">
           <p class="text-center">
-          <p class="numero-adm-home"><?php echo $retornoBT ?></p><br>Banco de Talentos</p>
+          <p class="numero-adm-home"><?php echo $retornoBT ?></p><br>Talentos das Fábricas</p>
         </div>
       </div>
     </div>

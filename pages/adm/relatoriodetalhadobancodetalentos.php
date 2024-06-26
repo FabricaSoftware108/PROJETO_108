@@ -12,7 +12,7 @@ $row = mysqli_fetch_array($result);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório Banco de Talentos</title>
+    <title>Relatório Talentos das Fábricas</title>
     <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +80,7 @@ $row = mysqli_fetch_array($result);
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
                                     <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Demanda</a></li>
-                                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Talentos das Fábricas</a></li>
                                     <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                                 </ul>
