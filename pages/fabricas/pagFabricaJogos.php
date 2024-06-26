@@ -149,13 +149,16 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
 
                 <div class="carousel-item <?php echo $state ?> my-5">
                   <div class="d-flex justify-content-center">
-                    <div class="text-light text-center" data-bs-toggle="modal" data-bs-target="<?php echo ("#$c") ?>" style="cursor: pointer;">
-                      <img src="<?php echo $retorno["img"]; ?>" class="d-block img-fluid" alt="..." id="carouselImg">
-                      <div class="carousel-text d-block position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg">
-                        <h5 class="text-center"><?php echo $retorno["titulo"]; ?></h5>
-                        <p class="text-center"><?php echo $retorno["projeto"]; ?></p>
-                      </div>
+                  <div class="text-light text-center" style="height: 450px; width: 600px; position: relative; cursor: pointer;" data-bs-toggle="modal"
+                    data-bs-target="#<?php echo $c; ?>">
+                    <img src="<?php echo $retorno["img"]; ?>" style="width: 100%; height: 100%; object-fit: cover;"
+                      class="d-block" alt="Imagem do Carousel">
+                    <div class="carousel-text position-absolute bottom-0 start-50 translate-middle-x py-2 px-5 shadow-lg"
+                      style="background-color: rgba(0, 0, 0, 0.5); width: 100%; text-align: center;">
+                      <h5 class="text-center"><?php echo $retorno["titulo"]; ?></h5>
+                      <p class="text-center"><?php echo $retorno["projeto"]; ?></p>
                     </div>
+                  </div>
                     <div class="modal fade" id="<?php echo ("$c") ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-xl">
                         <div class="modal-content">
