@@ -114,7 +114,7 @@ include '../../app/session/verificacao.php';
                 </div>
                 <div class="cadastro-adm-input-container">
                   <label for="cadastro-adm-telefone" class="cadastro-adm-label">Telefone</label>
-                  <input type="tel" id="cadastro-adm-telefone" name="telefone" class="form-control cadastro-adm-input">
+                  <input type="tel" id="cadastro-adm-telefone" name="telefone" maxlength="15" class="form-control cadastro-adm-input">
                 </div>
                 <div class="cadastro-adm-input-container">
                   <label for="cadastro-adm-senha" class="cadastro-adm-label">Senha Pré-Definida</label>
@@ -136,6 +136,7 @@ include '../../app/session/verificacao.php';
   
 
   <script src="../js/cadastro-adm.js"></script>
+  <script src="../../js/mascara-telefone-add-adm.js"></script>
 </body>
 
 </html>
