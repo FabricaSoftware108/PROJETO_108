@@ -48,7 +48,7 @@ def test_form():
         # page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
         # page.fill('input[name=dataNascimento]', '2020-02-02')
         page.select_option('select[name=escolaridade]', value='Superior')
-        page.fill('input[name=telefone]', '6656454566') 
+        page.fill('input[name=telefone]', '6655454566') 
         page.fill('input[name=email]', 'adam@gmail.com')
         page.fill("input[name=cep]","75087253")
         page.fill('input[name=numero]', '543')
