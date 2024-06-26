@@ -142,7 +142,6 @@ include '../../app/db/connection.php';
                                         <div class="<?php echo $dateColor ?> me-4 rounded" style="width: 20px; height:20px;"></div>
                                         Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?>
                                       </label>
-
                                     </button>
                                   </div>
                           <?php } ?>
