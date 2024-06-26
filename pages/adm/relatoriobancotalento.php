@@ -10,7 +10,7 @@ include '../../app/db/connection.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatorio Banco de Talentos</title>
+  <title>Relatorio Talentos das Fábricas</title>
   <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../../css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -86,7 +86,7 @@ include '../../app/db/connection.php';
                 <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
                     <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Demanda</a></li>
-                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                    <li><a class="dropdown-item" href="./relatoriobancotalento.php">Talentos das Fábricas</a></li>
                     <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                 </ul>
@@ -113,7 +113,7 @@ include '../../app/db/connection.php';
           <div class="relatorio-banco-talento-container">
             <div class="relatorio-banco-talento-background-container">
               <div class="relatorio-banco-talento-header">
-                <div class="relatorio-banco-talento-title">Banco de Talentos</div>
+                <div class="relatorio-banco-talento-title">Talentos das Fábricas</div>
               </div>
               <div class="relatorio-banco-talento-content">
                 <div class="relatorio-banco_talento-background">

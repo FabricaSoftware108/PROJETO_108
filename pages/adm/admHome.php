@@ -101,7 +101,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
                 <ul class="dropdown-menu dropdown-menu-dark">
                   <li><a class="dropdown-item" href="./relatorioAlunoADM.php">Edital Aluno</a></li>
                   <li><a class="dropdown-item" href="./relatorioeditaldaempresa.php">Demanda</a></li>
-                  <li><a class="dropdown-item" href="./relatoriobancotalento.php">Banco de Talentos</a></li>
+                  <li><a class="dropdown-item" href="./relatoriobancotalento.php">Talentos das Fábricas</a></li>
                   <li><a class="dropdown-item" href="./relatorioVagasEmprego.php">Vagas de Emprego</a></li>
 
                 </ul>
@@ -136,7 +136,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
         </div>
         <div class="col-sm-12 col-lg-3 offset-lg-1 w-sm-100 shadow-lg" id="label-quadrados-3-adm-home">
           <p class="text-center">
-          <p class="numero-adm-home"><?php echo $retornoBT ?></p><br>Banco de Talentos</p>
+          <p class="numero-adm-home"><?php echo $retornoBT ?></p><br>Talentos das Fábricas</p>
         </div>
       </div>
     </div>
