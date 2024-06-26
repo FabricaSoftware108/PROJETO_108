@@ -10,7 +10,7 @@ def test_form():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
         
-        page.goto('http://10.28.1.194/PROJETO_108-main/index.html') #('http://localhost/PROJETO_108/index.html')
+        page.goto('http://127.0.0.1:5502/index.html') #('http://localhost/PROJETO_108/index.html')
         
         page.wait_for_timeout(5000)
         
@@ -39,7 +39,7 @@ def test_form():
         
         
         #PAGINA BANCO DE TALENTOS, so falta arrumar o input date que não vaii nao esta funcionando  tudoo
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/pagBancoTalentos.html')
+        page.goto('http://127.0.0.1:5502/pages/editais/pagBancoTalentos.html')
         page.wait_for_timeout(5000)
         
         page.wait_for_selector('input[name="nome"]')
