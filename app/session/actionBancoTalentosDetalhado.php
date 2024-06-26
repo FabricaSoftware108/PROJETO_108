@@ -2,7 +2,7 @@
 session_start();
 if($_POST['bancoTalentosCodigo']){
     $_SESSION['bancoTalentosCodigo'] = $_POST['bancoTalentosCodigo'];
-    $index = $_GET['bancoTalentosCodigo'];
+    $index = $_POST['bancoTalentosCodigo'];
 
     header("location: ../../pages/adm/relatoriodetalhadobancodetalentos.php?index=$index");
     exit();

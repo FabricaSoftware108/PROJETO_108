@@ -2,6 +2,7 @@
 // session_start();
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -22,6 +23,8 @@ include '../../app/db/connection.php';
       
       $query = "select * from bancosTalentos";
       $result = mysqli_query($connection, $query);
+      $row = mysqli_fetch_array($result);
+
 
     ?>
 
@@ -29,7 +32,7 @@ include '../../app/db/connection.php';
 
 <body class="body-relatorio-banco-talento">
   
- <!--Menu de Navegação-->
+ <!--Menu de Navegação--> 7
  <header> 
     <nav class="navbar navbar-dark bg-primary fixed-top nav-adm">
         <div class="container-fluid">
@@ -148,7 +151,7 @@ include '../../app/db/connection.php';
                     </tbody>
                   </table>
                 </div>
-                <button class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
+                <button id="btnd" class="btn btn-primary relatorio-banco_talento-button">Imprimir</button>
 
               </div>
             </div>
@@ -160,6 +163,7 @@ include '../../app/db/connection.php';
       </div>
     </div>
   </main>
+  <script src="../../js/imprimirRelatorioIndividual.js"></script>
 
 </body>
 

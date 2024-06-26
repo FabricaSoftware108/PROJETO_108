@@ -2,6 +2,7 @@
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
+
 $query="SELECT * FROM vagasEmprego";
 $result=mysqli_query($connection,$query);
 
@@ -145,7 +146,7 @@ $result=mysqli_query($connection,$query);
                     </tbody>
                   </table>
                 </div>
-                <button class="btn btn-primary relatorio-vagas_emprego-button">Imprimir</button>
+                <button id="btnd" class="btn btn-primary relatorio-vagas_emprego-button">Imprimir</button>
               </div>
             </div>
           </div>
@@ -153,7 +154,7 @@ $result=mysqli_query($connection,$query);
       </div>
     </div>
   </main>
-
+  <script src="../../js/imprimirRelatorioIndividual.js"></script>
 </body>
 
 </html>

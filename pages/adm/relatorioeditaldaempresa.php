@@ -147,7 +147,7 @@ $result = mysqli_query($connection, $query);
                       </tbody>
                     </table>
                   </div>
-                  <button class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
+                  <button id="btnd" class="btn btn-primary relatorio_edital_da_empresa-button">Imprimir</button>
                 </div>
               </div>
             </div>
@@ -156,6 +156,7 @@ $result = mysqli_query($connection, $query);
       <!-- </form> -->
     </div>
   </main>
+  <script src="../../js/imprimirRelatorioIndividual.js"></script>
 </body>
 </html>
     

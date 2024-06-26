@@ -1,10 +1,13 @@
 <?php
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
+if (isset($_GET['index'])) {
+  $index = $_GET['index'];
 
 $query = "SELECT * FROM vagasEmprego WHERE id = '{$_SESSION["vagasEmpregoCodigo"]}'";
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -174,8 +177,8 @@ $row = mysqli_fetch_array($result);
 
                             <!--Botão de Imprimir-->
                             <div class="row justify-content-center">
-                                <button class="btn btn-primary relatorio-detalhado-ve-btn">Imprimir</button>
-                            </div>
+                                <a id="relatorio-vagasEmpregoDetalhado-bt-btn" href="../../app/session/gerarPDF4.php?index=<?php echo $index; ?>" class="btn btn-primary relatorio-detalhado-ve-btn">Imprimir</a>
+                              </div>
 
 
                         </div>

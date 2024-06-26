@@ -19,7 +19,7 @@ $dompdf = new Dompdf($options);
 $index = $_GET['index'];
 
 // Consulta ao banco de dados
-$query = "SELECT * FROM demandas WHERE id = $index";
+$query = "SELECT * FROM vagasEmprego WHERE id = $index";
 $result = mysqli_query($connection, $query);
 
 if ($result && mysqli_num_rows($result) > 0) {
@@ -86,34 +86,30 @@ if ($result && mysqli_num_rows($result) > 0) {
 <body>
 <div class='container'>
     <div class='header'>
-        <h1>Relatório de Informações de demanda</h1>
-        <p>Dados detalhados de demanda</p>
+        <h1>Relatório de Informações das vagas</h1>
+        <p>Dados detalhados das vagas</p>
     </div>
     <div class='content'>
         <table class='details'>
             <tr class='details-row'>
-                <td class='details-label'>Nome:</td>
-                <td class='details-cell'>{$row['nome']}</td>
+                <td class='details-label'>Nome da Empresa:</td>
+                <td class='details-cell'>{$row['nomeEmpresa']}</td>
             </tr>
             <tr class='details-row'>
-                <td class='details-label'>E-mail:</td>
-                <td class='details-cell'>{$row['email']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>CPF/CNPJ:</td>
-                <td class='details-cell'>{$row['cpfcnpj']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>Email:</td>
-                <td class='details-cell'>{$row['email']}</td>
-            </tr>
-            <tr class='details-row'>
-                <td class='details-label'>UF:</td>
-                <td class='details-cell'>{$row['uf']}</td>
+                <td class='details-label'>Email da Empresa:</td>
+                <td class='details-cell'>{$row['emailEmpresa']}</td>
             </tr>
             <tr class='details-row'>
                 <td class='details-label'>Telefone:</td>
                 <td class='details-cell'>{$row['telefone']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>CNPJ:</td>
+                <td class='details-cell'>{$row['cnpj']}</td>
+            </tr>
+            <tr class='details-row'>
+                <td class='details-label'>Estado:</td>
+                <td class='details-cell'>{$row['estado']}</td>
             </tr>
             <tr class='details-row'>
                 <td class='details-label'>Cidade:</td>
@@ -143,5 +139,4 @@ if ($result && mysqli_num_rows($result) > 0) {
 } else {
     echo "Nenhum dado encontrado.";
 }
-
 ?>
