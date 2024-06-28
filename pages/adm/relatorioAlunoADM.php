@@ -120,8 +120,8 @@ include '../../app/db/connection.php';
                 <!-- <div class="row"> -->
                 <!-- <div class="col-md-12"> -->
                 <div class="quadro-cinza-adm-relatorio">
-                  <div class="quadro-branco-adm-relatorio">
-                    <div class="relatorio-adm-borda-com-conteudo">
+                  <div class="quadro-branco-adm-relatorio mt-0 pt-0">
+                    <div class="relatorio-adm-borda-com-conteudo mt-0 pt-0" >
                       <form action="../../app/session/actionEdital.php" method="post">
                           <?php
                               $query = 'SELECT * FROM editais ORDER BY dataFim DESC';
@@ -136,13 +136,11 @@ include '../../app/db/connection.php';
                                       $dateColor = "bg-success";
                                   }
                                   ?>
-                                  <div class="mx-2 my-2">
-                                    <button class="btn w-100 btn-light editalRelat" id=" <?php echo "{$row["codigo"]}"?> <?php echo $row["nome"] ?>" type="submit" name="editalCode" value="<?php echo $row["codigo"] ?>">
-                                      <label class="d-flex align-items-center">
-                                        <div class="<?php echo $dateColor ?> me-4 rounded" style="width: 20px; height:20px;"></div>
-                                        Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?>
-                                      </label>
-                                    </button>
+                                  <div class="mx-2 my-2 w-100">
+                                      <button class="btn w-100 btn-light editalAdm d-flex justify-content-between align-items-center editalRelat" id=" <?php echo "{$row["codigo"]}"?> <?php echo $row["nome"] ?>" type="submit" name="editalCode" value="<?php echo $row["codigo"] ?>">
+                                          <div class="<?php echo $dateColor ?> me-4 rounded" style="width: 20px; height:20px;"></div>
+                                          <p class="w-100 text-start h-100 d-flex justify-content-start align-items-center">Processo Seletivo <?php echo $row["codigo"] ?> - <?php echo $row["nome"] ?></p>
+                                      </button>
                                   </div>
                           <?php } ?>
                         </form>
