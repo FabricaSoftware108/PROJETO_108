@@ -2,9 +2,15 @@
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
 
-$query = "SELECT * FROM alunosPsg WHERE cpf = '{$_SESSION["alunoCode"]}'";
+if (isset($_GET['index'])) {
+  $index = $_GET['index'];
+
+
+$query = "SELECT * FROM alunosPsg WHERE id = $index";
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
+}
+echo $index;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -117,7 +123,7 @@ $row = mysqli_fetch_array($result);
 
                             <tr >
                                 <td scope="col" colspan="4">Nome:
-                                    <p class="info-relatorio-detalhado-bt"><?php echo $row['nome'] ?></p>
+                                    <p class="info-relatorio-detalhado-bt"><?php echo $index ?></p>
                                 </td>
                             </tr>
                             <tr>
