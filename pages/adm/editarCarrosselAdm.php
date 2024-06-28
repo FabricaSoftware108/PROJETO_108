@@ -141,6 +141,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
                                         </div>
                                     </div>
+                                    
                                 </div>
                                 <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
                                     <div class="container-fabrica-nome-editarCarrossel">
@@ -155,7 +156,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         <h3>Texto sobre a turma</h3>
                                         <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php echo isset($row['descricao']) ? $row['descricao'] : ''; ?></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <button type="submit" class="btn btn-danger" id="btnInputCarrossel">Deletar</button>
+
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <button type="submit" class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
