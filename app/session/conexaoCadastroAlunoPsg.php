@@ -26,7 +26,7 @@ if(empty($nomeAluno) || empty($cpfAluno) || empty($dataNascimento) || empty($tel
 }
 
 
-$query = "INSERT INTO alunosPsg () VALUES (null,'$cpfAluno','$nomeAluno','$dataNascimento','$telefoneAluno','$emailAluno','$nomePai','$nomeMae','$ruaAluno','$bairroAluno','$numeroEnderecoAluno','$complementoAluno','$cepAluno','{$_SESSION["editalCode"]}');";
+$query = "INSERT INTO alunosPsg () VALUES (null,'$cpfAluno','$nomeAluno','$dataNascimento','$telefoneAluno','$emailAluno','$nomeMae','$nomePai','$ruaAluno','$bairroAluno','$numeroEnderecoAluno','$complementoAluno','$cepAluno','{$_SESSION["editalCode"]}');";
 
 $result = mysqli_query($connection, $query);
 
