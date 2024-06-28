@@ -1,11 +1,13 @@
 <?php
 include '../../app/session/verificacao.php';
 include '../../app/db/connection.php';
+if (isset($_GET['index'])) {
+    $index = $_GET['index'];
 
-$query = "SELECT * FROM demandas";
+$query = "SELECT * FROM demandas WHERE id = '$index'";
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
-
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -169,8 +171,8 @@ $row = mysqli_fetch_array($result);
                                             </tbody>
                                         </table>
                                         <div class="row justify-content-center">
-                                            <button class="btn btn-primary"
-                                                id="relatorio-detalhado-bt-btn">Imprimir</button>
+                                            <a id="btnd" href="../../app/session/gerarPDF2.php?index=<?php echo $index; ?>" class="btn btn-primary">Imprimir</a>
+                                         
                                         </div>
 
                                     </div>
@@ -181,7 +183,6 @@ $row = mysqli_fetch_array($result);
                 </div>
             </div>
         </div>
-
 
 
     </main>
