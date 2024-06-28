@@ -116,8 +116,8 @@ include '../../app/session/verificacaoPsg.php';
                         <input class="cadastro-aluno-psg col-md-5 col-10 col-sm-12" name="data_nascimento_psg" id="data_nascimento_psg" placeholder="Data de Nascimento" type='text' onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'" max="9999-12-31"><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone" size="27" maxlength="15" placeholder="Telefone">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email" size="27" maxlength="80" placeholder="E-mail"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomeMae" id="nomeMae" size="27" maxlength="80" placeholder="Nome da Mãe">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai" size="27" maxlength="80" placeholder="Nome do Pai"><br>
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai" size="27" maxlength="80" placeholder="Nome do Pai">
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomeMae" id="nomeMae" size="27" maxlength="80" placeholder="Nome da Mãe"><br>
                     </div>
                     <h1 id="camposPreenchimentoCadastroAlunoPsg">Endereço</h1><br>
                     <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27" maxlength="9" placeholder="CEP">
