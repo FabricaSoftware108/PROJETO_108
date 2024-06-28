@@ -126,7 +126,7 @@ if($_SESSION['editalAlert']){
                                         </div>
                                         <div class="cadastro-adm-edital-input-container">
                                             <label for="cadastro-adm-edital-email" class="cadastro-adm-edital-label">Código Do Edital</label>
-                                            <input type="text" name="editalCode" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['codigo']);} ?>">
+                                            <input type="text" name="editalCode" size="10" maxlength="11" id="cadastroAdmEditalInput" class="form-control cadastro-adm-edital-input" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['codigo']);} ?>" <?php if(isset($_SESSION['editEdital'])){echo 'disabled';}?> >
                                         </div>
 
                                         <div class="cadastro-adm-edital-input-container">
@@ -165,7 +165,7 @@ if($_SESSION['editalAlert']){
                                                 </g>
                                             </svg>
                                                     <p style="padding-top: 15px;" class="ms-2 ">Arquivo pdf ou docx</p>
-                                                    <input type="file" name="editalPDF" id="file-input" class="file-input" title="Arquivo pdf ou docx" required value="<?php if(isset($_SESSION['editEdital'])){echo ($row['arquivo']);} ?>">
+                                                    <input type="file" name="editalPDF" id="file-input" class="file-input" title="Arquivo pdf ou docx" value="<?php if(isset($_SESSION['editEdital'])){echo ($row['arquivo']);} ?>">
                                                     
                                                 </label>
                                             </div>
@@ -270,6 +270,7 @@ if($_SESSION['editalAlert']){
         var editalCode;
 
         function actionToEdit(){
+            
             document.getElementById("saveEditalForm").action = "../../app/session/actionEditEdital.php";
             document.getElementById("saveEditalForm").submit();
         }
@@ -296,4 +297,4 @@ if($_SESSION['editalAlert']){
                                                         
 </body>
 </html>
-<?php $_SESSION['editalAlert'] = null; unset($_SESSION['editEdital']);?>
+<?php $_SESSION['editalAlert'] = null; ?>
