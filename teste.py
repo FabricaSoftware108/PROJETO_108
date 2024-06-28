@@ -35,37 +35,37 @@ def test_form():
 
         
         
-        # #PAGINA BANCO DE TALENTOS, so falta arrumar o input date que não vaii nao esta funcionando  tudoo
-        # page.goto('http://127.0.0.1:5502/pages/editais/pagBancoTalentos.html')
-        # page.wait_for_timeout(5000)
+        #PAGINA BANCO DE TALENTOS, so falta arrumar o input date que não vaii nao esta funcionando  tudoo
+        page.goto('http://127.0.0.1:5502/pages/editais/pagBancoTalentos.html')
+        page.wait_for_timeout(5000)
         
-        # page.wait_for_selector('input[name="nome"]')
-        # page.fill('input[name=nome]', 'Adam Carsen')    
-        # page.fill('input[name=cpf]', '618.149.190-23')
-        # page.fill('input[name=dataNascimento]','8-56-2023')
-        # # page.wait_for_timeout(1000)
-        # # page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
-        # # page.wait_for_timeout(1000)
+        page.wait_for_selector('input[name="nome"]')
+        page.fill('input[name=nome]', 'Adam Carsen')    
+        page.fill('input[name=cpf]', '618.149.190-23')
+        page.fill('input[name=dataNascimento]','8-56-2023')
+        # page.wait_for_timeout(1000)
+        # page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
+        # page.wait_for_timeout(1000)
 
 
-        # # page.wait_for_timeout(3000)
+        # page.wait_for_timeout(3000)
       
-        # # page.wait_for_timeout(1000)
-        # page.select_option('select[name=escolaridade]', value='Superior')
-        # page.fill('input[name=telefone]', '6655454566') 
-        # page.fill('input[name=email]', 'adam@gmail.com')
-        # page.fill("input[name=cep]","79017253")
-        # page.fill('input[name=numero]', '543')
-        # page.select_option('select[name=uf]', value='AL')
+        # page.wait_for_timeout(1000)
+        page.select_option('select[name=escolaridade]', value='Superior')
+        page.fill('input[name=telefone]', '6655454566') 
+        page.fill('input[name=email]', 'adam@gmail.com')
+        page.fill("input[name=cep]","79017253")
+        page.fill('input[name=numero]', '543')
+        page.select_option('select[name=uf]', value='AL')
         
-        # page.fill('input[name=github]', '6655454566') 
-        # page.fill('input[name=linkedin]', 'adam@gmail.com')
+        page.fill('input[name=github]', '6655454566') 
+        page.fill('input[name=linkedin]', 'adam@gmail.com')
         
-        # page.click('.check-consentimento-dados')
+        page.click('.check-consentimento-dados')
         
-        # # page.wait_for_timeout(2000)
-        # page.click('.btn.btn-primary')
         # page.wait_for_timeout(2000)
+        page.click('.btn.btn-primary')
+        page.wait_for_timeout(2000)
         
        #PAG ALUNO PSG
        
@@ -102,8 +102,8 @@ def test_form():
         
         
         
-        #PAG EMPRESAS
-        page.goto('http://127.0.0.1:5502/PROJETO_108/pages/editais/pagDemanda.html')
+        #PAG EMPRESAS esta funcionando tudo
+        page.goto('http://127.0.0.1:5502/pages/editais/pagDemanda.html')
         page.wait_for_timeout(5000)
         
         page.wait_for_selector('input[name="nome"]')
@@ -113,7 +113,7 @@ def test_form():
         page.fill('input[name=telefone]', '265656') 
         page.fill('input[name=cidade]', 'Amambai')
         page.select_option('select[name=estado]', value='MT')
-        page.fill('input[name=descricao]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
+        page.fill('textarea[name=descricao]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
         page.click('.check-consentimento-dados')
         
         page.wait_for_timeout(3000)
