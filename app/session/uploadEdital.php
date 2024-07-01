@@ -12,7 +12,7 @@ $uploadOk = 1;
 
 
 
-$target_dir = "../../documents/edital";
+$target_dir = "../../documents/edital/";
 //Array usa o basename somente para pegar a última parte do caminho
 $target_file = $target_dir . basename($_FILES["editalPDF"]["name"]);
 
@@ -63,8 +63,8 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["editalPDF"]["tmp_name"], $target_file)) {
     //htmlspecialchars (preserva os caracteres não gerando conflito com o HTML)
       $result = mysqli_query($connection,"SELECT * FROM editais WHERE codigo = '$editalCode'");
-      if(mysqli_fetch_row($result) == 0){
-        $_SESSION['editalAlert'] = "O arquivo ". htmlspecialchars( basename( $_FILES["editalPDF"]["name"])). " foi enviado .";
+      if(mysqli_num_rows($result) == 0){
+        $_SESSION['editalAlert'] = "Edital $editalCode salvo com sucesso.";
         $query_insert = "INSERT INTO editais() VALUES('$editalCode', '$name', '$editalInicialDate','$editalFinalDate', $editalLimit, 0, './{$target_file}');";
         $result_insert= mysqli_query($connection, $query_insert); 
         header('location: ../../pages/adm/cadastroAdmEdital.php');

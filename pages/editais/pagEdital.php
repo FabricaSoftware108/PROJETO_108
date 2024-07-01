@@ -58,7 +58,7 @@ include '../../app/db/connection.php';
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagEdital.php">Vagas Gratuitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda de projeto</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda de Projeto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page" href="./cadastroVagasEmprego.html">Cadastro de Vagas</a>
