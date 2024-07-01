@@ -196,15 +196,44 @@ def test_form():
         #     page.wait_for_timeout(3000)
             
             
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        # page.wait_for_timeout(1000)
+        # #pag adicionar fabrica eel nao preenche os outros inputs não sei pqq
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/adicionarCarrosselAdm.php')  
+    
+        # page.fill('textarea[id="campoTextoDescricaoCarrossel"]','SenaCoin')
+        # page.fill('textarea[id="campoTextoDescricaoCarrossel"]',',mkmkmkm')
+        # page.click('.btn.btn-primary')
+        
+        # page.wait_for_timeout(1000)
+        
+        # #editar carrossel eel nao preenche os outros inputs não sei pqq
+        
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/editarCarrosselAdm.php')
+        # page.wait_for_timeout(1000)
+        
+        # page.fill('textarea[id="campoTextoDescricaoCarrossel"]','dmnsjdnsnfbhfb')
+        # page.click('.btn.btn-primary')
+        
+        
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/editarCarrosselAdm.php')
+        # page.wait_for_timeout(1000)
+        
+        # #relatorios edital aluno esta funcionadoo
+        
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioAlunoADM.php')
+        # page.wait_for_timeout(1000)
+        
+        # page.fill('input[type="text"]','45')
+        
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php')
         page.wait_for_timeout(1000)
-        # aqui ele entra no menubar do cabeçalho adm na página home
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/adicionarCarrosselAdm.php')  
-       
-
-        page.fill('input[name="nomedafabrica"]','Software')
-        page.fill('input[name="nomedoprojeto"]','SenaCoin')
-        page.fill('input[name="textodaturma"]','nnskjndwjdnwjdndjn')
+        
+        page.click('.btn.btn-primary.relatorio-edital_da_empresa-button_irParaDetalhado')
+        
+        
+        
+        
         
         
          
