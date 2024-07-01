@@ -23,6 +23,11 @@ $selectedTitle = '';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $selectedTitle = $_POST['mySelect'];
 }
+
+if(isset($_SESSION["alertCarrossel"])){
+    echo "<script>alert('".$_SESSION["alertCarrossel"]."')</script>";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -112,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </nav>
     </header>
     <main class="main-editarCarrossel">
-        <form action="" method="post">
+        <form action="" method="post" id="carrosselForm">
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center p-0" id="background-EditarCarrossel">
                     <div class="container-wrapper-carrossel justify-content-center align-items-center d-flex">
@@ -136,9 +141,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                         <div class="content-image-describe pt-5">
                                             <h2>Foto da turma</h2>
                                             <label for="inputGroupFile04" id="imgEditarCarrossel">
-                                                <img id="carrosselImg" src="" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
+                                                <img id="carrosselImg" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
                                             </label>
-                                            <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload">
+                                            <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload" >
                                         </div>
                                     </div>
                                     
@@ -146,23 +151,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Nome da fábrica</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="titulo" size="10" style="resize: none;" rows="1"><?php echo isset($row['titulo']) ? $row['titulo'] : ''; ?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="carrosselTitle" size="10" style="resize: none;" rows="1"><?php echo isset($row['titulo']) ? " ": $row['titulo'] ; ?></textarea>
                                     </div>
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Nome do projeto</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php echo isset($row['projeto']) ? $row['projeto'] : ''; ?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php echo isset($row['projeto']) ? " " : $row['projeto']; ?></textarea>
                                     </div>
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Texto sobre a turma</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php echo isset($row['descricao']) ? $row['descricao'] : ''; ?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php echo isset($row['descricao']) ? " " : $row['descricao']; ?></textarea>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
-                                            <button type="submit" class="btn btn-danger" id="btnInputCarrossel">Deletar</button>
+                                            <button type="submit" class="btn btn-danger" id="btnInputCarrossel" onclick="changeToDelete()">Deletar</button>
 
                                         </div>
                                         <div class="col-sm-12 col-md-6">
-                                            <button type="submit" class="btn btn-primary" id="btnInputCarrossel">Salvar</button>
+                                            <button type="submit" class="btn btn-primary" id="btnInputCarrossel" onclick="document.querySelector('#carrosselForm').action = '../../app/session/updateCarrossel.php'">Salvar</button>
 
                                         </div>
                                     </div>
@@ -173,6 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
         </form>
         <script>
+            var carroselTitle;
             function updateFields() {
                 var selectValue = document.getElementById('mySelect').value;
                 var selectedOption = <?php echo json_encode($results); ?>.find(function(item) {
@@ -180,10 +186,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 });
 
                 document.getElementById('carrosselImg').src = selectedOption.img;
-
-                document.getElementsByName('titulo')[0].value = selectedOption.titulo;
+                
+                document.getElementsByName('carrosselTitle')[0].value = selectedOption.titulo;
+                carroselTitle = selectedOption.titulo;
                 document.getElementsByName('projeto')[0].value = selectedOption.projeto;
                 document.getElementsByName('descricao')[0].value = selectedOption.descricao;
+
             }
 
             $(document).ready(function() {
@@ -194,6 +202,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 updateFields();
             });
+
+            function changeToDelete(){
+                
+                if(confirm("Deseja deletar "+carroselTitle)){
+
+                    document.querySelector('#carrosselForm').action = "../../app/session/deleteCarrossel.php?carrosselTitle="+carroselTitle;
+                }
+                    
+            }
+            function changeToUpdate(){
+                document.querySelector('#carrosselForm').action = "../../app/session/updateCarrossel.php?carrosselTitle="+carroselTitle;
+            }
         </script>
     </main>
 
@@ -201,3 +221,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
+
+<?php unset($_SESSION["alertCarrossel"]) ?>
