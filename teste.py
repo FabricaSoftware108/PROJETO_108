@@ -150,24 +150,60 @@ def test_form():
         page.fill('input[name="nome"]', 'Adam Carsel')
         page.fill('input[name="email"]', 'Adamcarsel@gamil.com')
         page.fill('input[name="telefone"]', '675454544')
-        
+        page.wait_for_timeout(1000)
         page.click('.btn.btn-primary.cadastro-adm-button')
         
+        
         page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        page.wait_for_timeout(1000)
         
         page.click('.navbar-toggler') #entra no menu bar adm
+        page.wait_for_timeout(1000)
         page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
-        page.click('.dropdown-item') #vai em editar adm
         
-        #pag editar adm
-        page.click('.bi.bi-toggle-on.text-success')
+        page.wait_for_timeout(2000)
+        page.click('.dropdown-menu.dropdown-menu-dark')#aqui ele entra no editar administradores.
+        
+        page.wait_for_timeout(2000)
+        
+        #EDITAR ADM MEXENDO NOS BOTOES DE ATIVAR E DESATIVAR ADM.
+        page.click('.cadastro-adm-knob')
+        page.wait_for_timeout(1000)
         # page.click('.cadastro-adm-knob')
-        #         page.wait_for_timeout(1000)
-            
-            
-        #     page.wait_for_timeout(2000)
         
-        page.click('')
+
+        # #TEMPO DE EXECUCAO DA PÁGINA.
+        # page.wait_for_timeout(2000)
+        
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        page.wait_for_timeout(1000)
+        # aqui ele entra no menubar do cabeçalho adm na página home
+        page.click('.navbar-toggler')
+        
+        page.wait_for_timeout(1000)
+        
+        # aqui ele entra no administradores do menubar.
+        page.click('.nav-item.dropdown-adm')
+        
+        #aqui ele entra no editar adm.
+        page.click('.dropdown-item')
+        
+        page.fill('input[name="nome"]','ana')
+        page.wait_for_timeout(1000)
+        
+        page.fill('input[name="email"]', 'jacksmith@gmail.com')
+        page.wait_for_timeout(1000)
+        
+        page.fill('input[name="telefone"]', '67-99865456982')
+        page.wait_for_timeout(1000)
+
+        
+        # aqui ele entra no menubar do cabeçalho adm na página home
+        page.click('.navbar-toggler')
+        
+        #aqui ele vai para editais ARRUMAR..
+        # page.click('a.nav-link fs-5')
+      
 
 
         # acao = ['.dropdown-item[href="./cadastroAdm.php"]',
