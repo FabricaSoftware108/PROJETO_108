@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 include '../db/connection.php';
 
@@ -8,9 +7,7 @@ if (empty($_POST["nome"]) && empty($_POST["cep"]) && empty($_POST["cpf"]) && emp
     empty($_POST["telefone"]) && empty($_POST["uf"]) && empty($_POST["rua"]) && empty($_POST["bairro"]) && empty($_POST["cidade"]) && empty($_POST["numero"]) && 
     empty($_POST["linkedin"])) {
 
-
     echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
-
 
 } else {
     
@@ -21,7 +18,7 @@ if (empty($_POST["nome"]) && empty($_POST["cep"]) && empty($_POST["cpf"]) && emp
     $dataNascimento = $_POST["dataNascimento"];
     $email = $_POST["email"];
     $telefone = $_POST["telefone"];
-    $estado = $_POST["uf"];
+    $estado = $_POST["estado"];
     $rua = $_POST["rua"];
     $bairro = $_POST["bairro"];
     $cidade = $_POST["cidade"];
@@ -29,13 +26,21 @@ if (empty($_POST["nome"]) && empty($_POST["cep"]) && empty($_POST["cpf"]) && emp
     $github = $_POST["github"];
     $linkedin = $_POST["linkedin"];
 
-    $query = "INSERT INTO bancosTalentos (cpf, nome, cep, escolaridade, dataNascimento, email, telefone, estado, cidade, bairro, rua, numero, github, linkedin) 
+    $checkQuery = "SELECT * FROM bancosTalentos WHERE cpf = '$cpf'";
+    $checkResult = mysqli_query($connection, $checkQuery);
+
+    if (mysqli_num_rows($checkResult) > 0) {
+        echo "<script>alert('Este CPF já está cadastrado.');</script>";
+        echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagBancoTalentos.html'; }, 1000);</script>";
+        exit();
+    
+    } else {
+        $query = "INSERT INTO bancosTalentos (cpf, nome, cep, escolaridade, dataNascimento, email, telefone, estado, cidade, bairro, rua, numero, github, linkedin) 
               VALUES ('$cpf', '$nome', '$cep', '$escolaridade', '$dataNascimento', '$email', '$telefone', '$estado', '$cidade', '$bairro', '$rua', '$numero', '$github', '$linkedin')";
 
-    $result = mysqli_query($connection, $query);
-    
-    echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
-} 
-// echo "<script language='javascript'>window.alert('Por favor, preencha todos os campos do formulário'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
+        $result = mysqli_query($connection, $query);
 
+        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
+    }
+} 
 exit();
