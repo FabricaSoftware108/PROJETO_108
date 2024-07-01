@@ -141,65 +141,89 @@ def test_form():
         page.wait_for_timeout(1000)
         
         
+        #aqui esta funcionando tudooo
+        # page.click('.navbar-toggler') #entra no menu bar adm
+        # page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
+        # page.click('.dropdown-item') #vai em pag adicionar administradores.
         
-        page.click('.navbar-toggler') #entra no menu bar adm
-        page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
-        page.click('.dropdown-item') #vai em pag adicionar administradores.
-        
-        #adicionar administradores
-        page.fill('input[name="nome"]', 'Adam Carsel')
-        page.fill('input[name="email"]', 'Adamcarsel@gamil.com')
-        page.fill('input[name="telefone"]', '675454544')
-        page.wait_for_timeout(1000)
-        page.click('.btn.btn-primary.cadastro-adm-button')
+        # #adicionar administradores
+        # page.fill('input[name="nome"]', 'Adam Carsel')
+        # page.fill('input[name="email"]', 'Adamcarsel@gamil.com')
+        # page.fill('input[name="telefone"]', '675454544')
+        # page.wait_for_timeout(1000)
+        # page.click('.btn.btn-primary.cadastro-adm-button')
         
         
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
-        page.wait_for_timeout(1000)
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        # page.wait_for_timeout(1000)
         
-        page.click('.navbar-toggler') #entra no menu bar adm
-        page.wait_for_timeout(1000)
-        page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
+        # page.click('.navbar-toggler') #entra no menu bar adm
+        # page.wait_for_timeout(1000)
+        # page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
         
-        page.wait_for_timeout(2000)
-        page.click('.dropdown-menu.dropdown-menu-dark')#aqui ele entra no editar administradores.
+        # page.wait_for_timeout(2000)
+        # page.click('.dropdown-menu.dropdown-menu-dark')#aqui ele entra no editar administradores.
         
-        page.wait_for_timeout(2000)
-        
-        #EDITAR ADM MEXENDO NOS BOTOES DE ATIVAR E DESATIVAR ADM.
-        page.click('.cadastro-adm-knob')
-        page.wait_for_timeout(1000)
-        # page.click('.cadastro-adm-knob')
-        
-
-        # #TEMPO DE EXECUCAO DA PÁGINA.
         # page.wait_for_timeout(2000)
         
+        # #EDITAR ADM MEXENDO NOS BOTOES DE ATIVAR E DESATIVAR ADM.
+        # page.click('.btn.d-flex.justify-content-center.align-items-center')
+        # page.wait_for_timeout(1000)
+        # # page.click('.cadastro-adm-knob')
+        
+
+        # # #TEMPO DE EXECUCAO DA PÁGINA.
+        # page.wait_for_timeout(2000)
+        
+        # pag editais ta funcionando
+        
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        # page.wait_for_timeout(1000)
+        # # aqui ele entra no menubar do cabeçalho adm na página home
+        # page.click('.navbar-toggler')
+        
+        
+        
+        
+        # page.click('a.nav-link.fs-5[href="./cadastroAdmEdital.php"]') # aqui ele vai em editais
+        # if str(page.title()) == 'Cadastro Editais ADM':
+        #     # elementos = page.query_selector_all('#cadastroAdmEditalInput')
+        #     page.fill(f'input[type="text"]','Edital 567')
+        #     page.fill(f'input[type="email"]','34521')
+        #     page.fill(f'input[type="number"]','13')
+        #     page.fill('input[id="cadastroAdmEditalInput"]','Processo Seletivo 12/2023 Fabrica de Software - Aluno')
+        #     page.click('.btn.btn-primary')
+        #     page.wait_for_timeout(3000)
+            
+            
         page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
         page.wait_for_timeout(1000)
         # aqui ele entra no menubar do cabeçalho adm na página home
-        page.click('.navbar-toggler')
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/adicionarCarrosselAdm.php')  
+       
+
+        page.fill('input[name="nomedafabrica"]','Software')
+        page.fill('input[name="nomedoprojeto"]','SenaCoin')
+        page.fill('input[name="textodaturma"]','nnskjndwjdnwjdndjn')
         
-        page.wait_for_timeout(1000)
         
-        # aqui ele entra no administradores do menubar.
-        page.click('.nav-item.dropdown-adm')
+         
+        # page.click('a.nav-link.fs-5[href="./adicionarCarrosselAdm.php"]') # aqui ele vai em adicionar nova fabrica
+        # if str(page.title()) == 'Adicionar Carrossel ADM':
+        #     # elementos = page.query_selector_all('#cadastroAdmEditalInput')
+        #     page.fill('.btn.btn-primary.dropdown-toggle')
+        #     page.fill('textarea[id=campoTextoDescricaoCarrossel]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
+        #     # page.fill(f'input[type="number"]','13')
+        #     # page.fill('input[id="cadastroAdmEditalInput"]','Processo Seletivo 12/2023 Fabrica de Software - Aluno')
+        #     page.click('.btn.btn-primary')
+        #     page.wait_for_timeout(3000)
+        # page.click('.nav-item.dropdown-adm') # fabricas
+        # page.click('.dropdown-item') # pag cadastrar carrossel 
         
-        #aqui ele entra no editar adm.
-        page.click('.dropdown-item')
-        
-        page.fill('input[name="nome"]','ana')
-        page.wait_for_timeout(1000)
-        
-        page.fill('input[name="email"]', 'jacksmith@gmail.com')
-        page.wait_for_timeout(1000)
-        
-        page.fill('input[name="telefone"]', '67-99865456982')
-        page.wait_for_timeout(1000)
 
         
-        # aqui ele entra no menubar do cabeçalho adm na página home
-        page.click('.navbar-toggler')
+        # # aqui ele entra no menubar do cabeçalho adm na página home
+        # page.click('.navbar-toggler')
         
         #aqui ele vai para editais ARRUMAR..
         # page.click('a.nav-link fs-5')
