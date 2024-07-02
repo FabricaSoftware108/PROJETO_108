@@ -60,7 +60,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active ms-2 me-2" aria-current="page" href="../editais/pagDemanda.html">Demanda de
-                projeto</a>
+                Projeto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active ms-2 me-2" aria-current="page"
