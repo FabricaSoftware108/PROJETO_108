@@ -125,10 +125,22 @@ def test_form():
         
         # PARTE ADM
         
+        # #ESQUECEU SENHA ADM esta funcionandooo
         
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/loginAdm.php')
+        # page.wait_for_timeout(1000)
+        
+        # page.click('.esqueceuSenha-login-ADM.col-12')
+        # page.click('.form-control.shadow-sm.p-3')
+        # page.fill('input[name="email"]','testeee@gmail.com')
+        # page.wait_for_timeout(1000)
+        # page.click('.btn.btn-primary.mt-3.mb-3.col-8.p-2.btn-login-ADM')
+        # page.wait_for_timeout(1000)
+        
+        # page.click('.bi.bi-arrow-left-circle-fill.mx-2.my-4')
               
         
-
+        #LOGIN ADM
 
         page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/loginAdm.php')
          # Realiza o login
@@ -141,171 +153,193 @@ def test_form():
         page.wait_for_timeout(1000)
         
         
-        # #aqui esta funcionando tudooo
-        # page.click('.navbar-toggler') #entra no menu bar adm
-        # page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
-        # page.click('.dropdown-item') #vai em pag adicionar administradores.
+        #aqui esta funcionando tudooo
+        page.click('.navbar-toggler') #entra no menu bar adm
+        page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
+        page.click('.dropdown-item') #vai em pag adicionar administradores.
         
-        # #adicionar administradores esta funcionando
-        # page.fill('input[name="nome"]', 'Adam Carsel')
-        # page.fill('input[name="email"]', 'Adamcarsel@gamil.com')
-        # page.fill('input[name="telefone"]', '675454544')
-        # page.wait_for_timeout(1000)
-        # page.click('.btn.btn-primary.cadastro-adm-button')
+        #adicionar administradores esta funcionando
+        page.fill('input[name="nome"]', 'Adam Carsel')
+        page.fill('input[name="email"]', 'Adamcarsel@gamil.com')
+        page.fill('input[name="telefone"]', '675454544')
+        page.wait_for_timeout(1000)
+        page.click('.btn.btn-primary.cadastro-adm-button')
         
         
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
-        # page.wait_for_timeout(1000)
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        page.wait_for_timeout(1000)
         
-        # page.click('.navbar-toggler') #entra no menu bar adm
-        # page.wait_for_timeout(1000)
-        # page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
+        page.click('.navbar-toggler') #entra no menu bar adm
+        page.wait_for_timeout(1000)
+        page.click('.nav-link.dropdown-toggle.fs-5') # vai em administradores
         
-        # page.wait_for_timeout(2000)
-        # page.click('.dropdown-menu.dropdown-menu-dark')#aqui ele entra no editar administradores.
+        page.wait_for_timeout(2000)
+        page.click('.dropdown-menu.dropdown-menu-dark')#aqui ele entra no editar administradores.
         
-        # page.wait_for_timeout(2000)
+        page.wait_for_timeout(2000)
         
-        # #EDITAR ADM MEXENDO NOS BOTOES DE ATIVAR E DESATIVAR ADM.
-        # page.click('.btn.d-flex.justify-content-center.align-items-center')
-        # page.wait_for_timeout(1000)
-        # # page.click('.cadastro-adm-knob')
+        #EDITAR ADM MEXENDO NOS BOTOES DE ATIVAR E DESATIVAR ADM.
+        page.click('.btn.d-flex.justify-content-center.align-items-center')
+        page.wait_for_timeout(1000)
+        # page.click('.cadastro-adm-knob')
         
 
-        # # #TEMPO DE EXECUCAO DA PÁGINA.
-        # page.wait_for_timeout(2000)
+        # #TEMPO DE EXECUCAO DA PÁGINA.
+        page.wait_for_timeout(2000)
         
         #pag editais ta funcionando
         
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
-        # page.wait_for_timeout(1000)
-        # # aqui ele entra no menubar do cabeçalho adm na página home
-        # page.click('.navbar-toggler')
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        page.wait_for_timeout(1000)
+        # aqui ele entra no menubar do cabeçalho adm na página home
+        page.click('.navbar-toggler')
         
         
         
-        # #pag EDITAIS esta funcionandoo
-        # page.click('a.nav-link.fs-5[href="./cadastroAdmEdital.php"]') # aqui ele vai em editais
-        # if str(page.title()) == 'Cadastro Editais ADM':
-        #     # elementos = page.query_selector_all('#cadastroAdmEditalInput')
-        #     page.fill(f'input[type="text"]','Edital 567')
-        #     page.fill(f'input[name="editalCode"]','34521')
-        #     page.fill(f'input[name="editalLimit"]','13')
-        #     # page.click('.form-control.cadastro-adm-edital-input.mt-3 shadow-none')
-        #     page.fill(f'input[name="cadastroAdmEditalInput"]','2035')
-        #     page.click('.btn.btn-primary')
-        #     page.wait_for_timeout(3000) 
+        #pag EDITAIS esta funcionandoo
+        page.click('a.nav-link.fs-5[href="./cadastroAdmEdital.php"]') # aqui ele vai em editais
+        if str(page.title()) == 'Cadastro Editais ADM':
+            # elementos = page.query_selector_all('#cadastroAdmEditalInput')
+            page.fill(f'input[type="text"]','Edital 567')
+            page.fill(f'input[name="editalCode"]','34521')
+            page.fill(f'input[name="editalLimit"]','13')
+            # page.click('.form-control.cadastro-adm-edital-input.mt-3 shadow-none')
+            page.fill(f'input[name="cadastroAdmEditalInput"]','2035')
+            page.click('.btn.btn-primary')
+            page.wait_for_timeout(3000) 
             
             
             
             
-        # #pag ADICIONAR CARROSSEL ESTA FUNCIONANDOOO   
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
-        # page.wait_for_timeout(1000)
-        # #pag adicionar fabrica eel nao preenche os outros inputs não sei pqq
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/adicionarCarrosselAdm.php')  
+        #pag ADICIONAR CARROSSEL ESTA FUNCIONANDOOO   
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        page.wait_for_timeout(1000)
+        #pag adicionar fabrica eel nao preenche os outros inputs não sei pqq
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/adicionarCarrosselAdm.php')  
         
-        # page.click('.form-select.form-select-lg.mb-3') #seleciona a fabrica no adicionar carrossel.
-        # page.wait_for_timeout(1000)
+        page.click('.form-select.form-select-lg.mb-3') #seleciona a fabrica no adicionar carrossel.
+        page.wait_for_timeout(1000)
         
-        # page.fill('input[name="nomedafabrica"]','Fabriciooo345')
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name="nomedoprojeto"]',',SenaCoin')
-        # page.wait_for_timeout(1000)
-        # page.fill('textarea[name="textodaturma"]','bhdbhdbhbdhdbhsdbvshjbhdbdhjbdshsbd')
-        # page.wait_for_timeout(1000)
+        page.fill('input[name="nomedafabrica"]','Fabriciooo345')
+        page.wait_for_timeout(1000)
+        page.fill('input[name="nomedoprojeto"]',',SenaCoin')
+        page.wait_for_timeout(1000)
+        page.fill('textarea[name="textodaturma"]','bhdbhdbhbdhdbhsdbvshjbhdbdhjbdshsbd')
+        page.wait_for_timeout(1000)
     
-        # page.click('.btn.btn-primary')
+        page.click('.btn.btn-primary')
         
-        # page.wait_for_timeout(1000)
+        page.wait_for_timeout(1000)
         
-        # #editar carrossel esta funcionandooo
+        #editar carrossel esta funcionandooo
         
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/editarCarrosselAdm.php')
-        # page.wait_for_timeout(1000)
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/editarCarrosselAdm.php')
+        page.wait_for_timeout(1000)
         
-        # page.click('.select2-selection__rendered')
-        # page.click('.select2-search__field')
-        # page.fill('input[type="search"]', '108')
-        # page.click('.select2-results__option.select2-results__option--selectable.select2-results__option--highlighted')
+        page.click('.select2-selection__rendered')
+        page.click('.select2-search__field')
+        page.fill('input[type="search"]', '108')
+        page.click('.select2-results__option.select2-results__option--selectable.select2-results__option--highlighted')
         
-        # page.click('.container-fabrica-nome-editarCarrossel')
-        # page.fill('textarea[name="titulo"]','aawaaaa')
+        page.click('.container-fabrica-nome-editarCarrossel')
+        page.fill('textarea[name="titulo"]','aawaaaa')
         
-        # page.click('.container-fabrica-nome-editarCarrossel')
-        # page.fill('textarea[name="projeto"]','projeto aaaa')
+        page.click('.container-fabrica-nome-editarCarrossel')
+        page.fill('textarea[name="projeto"]','projeto aaaa')
         
-        # page.click('.container-fabrica-nome-editarCarrossel')
-        # page.fill('textarea[name="descricao"]','pmjndjsndjdnjdnjndjndjsndjsdnsjdnsjdnsjdnsjdnsdj')
-        # page.click('.btn.btn-primary')
+        page.click('.container-fabrica-nome-editarCarrossel')
+        page.fill('textarea[name="descricao"]','pmjndjsndjdnjdnjndjndjsndjsdnsjdnsjdnsjdnsjdnsdj')
+        page.click('.btn.btn-primary')
         
 
   
-        # #relatorios edital aluno esta funcionadoo
+        #relatorios edital aluno esta funcionadoo
         
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioAlunoADM.php')
-        # page.wait_for_timeout(1000)
-        
-        
-        # page.click('.form-control.relatorio-aluno-adm-input')
-        
-        # page.fill('input[type="text"]','2036')
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioAlunoADM.php')
+        page.wait_for_timeout(1000)
         
         
+        page.click('.form-control.relatorio-aluno-adm-input')
         
-        # #relatorio DEMANDA esta funcionandoo
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
-        # page.wait_for_timeout(1000)
-        
-        # page.click('.btn.btn-primary.relatorio-edital_da_empresa-button_irParaDetalhado')
-        # page.wait_for_timeout(1000)
-        
-        # page.click('.btn.btn-primary')
-        # page.wait_for_timeout(1000)
-        
-        
-        # #relatorio TALENTOS DAS FABRICAS esta funcionandoo
-        
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatoriobancotalento.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
-        # page.wait_for_timeout(1000)
-        
-        # page.click('.btn.btn-primary.relatorio-banco_talento-button_irParaDetalhado')
-        # page.click('.btn.btn-primary')
+        page.fill('input[type="text"]','2036')
         
         
         
-    #    # relatorio VAGAS EMPREGO esta funcionandooo
+        #relatorio DEMANDA esta funcionandoo
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
+        page.wait_for_timeout(1000)
         
-    #     page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioVagasEmprego.php')
-    #     page.wait_for_timeout(1000)
+        page.click('.btn.btn-primary.relatorio-edital_da_empresa-button_irParaDetalhado')
+        page.wait_for_timeout(1000)
         
-    #     page.click('.btn.btn-primary.relatorio-vagas_emprego-button_irParaDetalhado')
-    #     page.wait_for_timeout(1000)
-    #     page.click('.btn.btn-primary.relatorio-detalhado-ve-btn')
+        page.click('.btn.btn-primary')
+        page.wait_for_timeout(1000)
+        
+        
+        #relatorio TALENTOS DAS FABRICAS esta funcionandoo
+        
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatoriobancotalento.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
+        page.wait_for_timeout(1000)
+        
+        page.click('.btn.btn-primary.relatorio-banco_talento-button_irParaDetalhado')
+        page.click('.btn.btn-primary')
+        
+        
+        
+       # relatorio VAGAS EMPREGO esta funcionandooo
+        
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioVagasEmprego.php')
+        page.wait_for_timeout(1000)
+        
+        page.click('.btn.btn-primary.relatorio-vagas_emprego-button_irParaDetalhado')
+        page.wait_for_timeout(1000)
+        page.click('.btn.btn-primary.relatorio-detalhado-ve-btn')
         
         
         #pag USUARIO
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/usuarioAdm.php')
-        # page.wait_for_timeout(1000)
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/usuarioAdm.php')
+        page.wait_for_timeout(1000)
         
-        # page.click('.btn.btn-primary')#editar usuario
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name="nomeantigo"]','Edward cullen')
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name="e-mailantigo"]','Edwardcullen@gmail.com')
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name="foneantigo"]','95625455')
-        # page.wait_for_timeout(1000)
-        # page.click('.btn.btn-secondary')
-        # page.wait_for_timeout(2000)
+        page.click('.btn.btn-primary')#editar usuario
+        page.wait_for_timeout(1000)
+        page.fill('input[name="nomeantigo"]','Edward cullen')
+        page.wait_for_timeout(1000)
+        page.fill('input[name="e-mailantigo"]','Edwardcullen@gmail.com')
+        page.wait_for_timeout(1000)
+        page.fill('input[name="foneantigo"]','95625455')
+        page.wait_for_timeout(1000)
+        page.click('.btn.btn-secondary')
+        page.wait_for_timeout(2000)
         
         
-        #Pag USUARIO BUTTON ALTERAR SENHA
+        #Pag USUARIO BUTTON ALTERAR SENHA esta funcionandoo
         page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/usuarioAdmRecuperar.php')
         page.wait_for_timeout(1000)
         
         page.click('.form-control')
-        page.fill('input[type="password"]', '')
+        page.fill('input[type="password"]', '2656565')
+        page.wait_for_timeout(1000)
+        
+        page.click('.form-control')
+        page.fill('input[name="newPassword"]', '656565')
+        page.wait_for_timeout(1000)
+        
+        page.click('.form-control')
+        page.fill('input[name="confirmNewPassword"]', '656565')
+        page.wait_for_timeout(1000)
+        
+        page.click('.btn.btn-primary')
+        page.wait_for_timeout(1000)
+        
+        
+         #entra no menu bar adm
+        page.click('.navbar-toggler')
+        page.wait_for_timeout(1000)
+        page.click('.nav-link.fs-5')
+        
+        
+        
+        
         
         
         
