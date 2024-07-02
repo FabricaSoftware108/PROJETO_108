@@ -80,8 +80,8 @@
                                 Gratuitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page"
-                                href="./pagDemanda.html">Demanda de Projeto</a>
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda de
+                                Projeto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page"
@@ -121,51 +121,57 @@
                     <h1>Dados Pessoais/Empresa</h1><br>
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="nome"
-                            id="nome_responsavel" size="27" maxlength="80" placeholder="Nome Pessoal / Nome Responsável" required>
+                            id="nome_responsavel" size="27" maxlength="80" placeholder="Nome Pessoal / Nome Responsável"
+                            required>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email" id="email_responsavel"
-                            size="27" placeholder="Email Pessoal / Email Responsável" required><br>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="email" name="email"
+                            id="email_responsavel" size="27" placeholder="Email Pessoal / Email Responsável"
+                            required><br>
 
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12 " type="text" name="cpf" id="cpf"
-                                size="27" maxlength="14" placeholder="CPF Pessoal / CPF Responsável" onblur='validarcpf()' required>
+                            size="27" maxlength="14" placeholder="CPF Pessoal / CPF Responsável" onblur='validarcpf()'
+                            required>
 
-                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone" id="telefone_responsavel"
-                            size="27" maxlength="15" placeholder="Telefone Pessoal / Telefone Responsável" required>
+                        <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="telefone"
+                            id="telefone_responsavel" size="27" maxlength="15"
+                            placeholder="Telefone Pessoal / Telefone Responsável" required>
 
                         <input class="cadastro-demanda col-md-5 col-10 col-sm-12" type="text" name="cidade" id="cidade"
                             size="27" maxlength="80" placeholder="Cidade" required>
-                        
 
-                            <select class="cadastro-demanda col-md-5 col-10 col-sm-12" style="background-color: white; padding: 17.6px 0px 18.6px;" name="estado" id="estado" required>
-                                <option value="uf">UF:</option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                         </select>
+
+                        <select class="cadastro-demanda col-md-5 col-10 col-sm-12"
+                            style="background-color: white; padding: 17.6px 0px 18.6px;" name="estado" id="estado"
+                            required>
+                            <option value="" disabled selected>UF:</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
                     </div>
 
                     <div class="col-12" id="subtituloDemanda">
@@ -177,13 +183,15 @@
                         </div>
 
                         <div class="text-area-demanda">
-                            <textarea class="form-control" id="campoTextoDescricaoVaga" style="resize: none;" rows="15" maxlength= "3000"
-                                name="descricao" placeholder="Descrição do projeto" required></textarea>
+                            <textarea class="form-control" id="campoTextoDescricaoVaga" style="resize: none;" rows="15"
+                                maxlength="3000" name="descricao" placeholder="Descrição do projeto"
+                                required></textarea>
                         </div><br>
 
                         <div class="check-consentimento-dados">
                             <input type="checkbox" id="horns" name="horns" required>
-                            <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</label>
+                            <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam
+                                processados em nossas plataformas educacionais.</label>
                         </div>
 
 
