@@ -20,20 +20,18 @@ $tables = array(
 
 
 $rowCheck = 0;
-$table;
 $count = 0;
-$rowCarrossel;
 
-while($rowCheck != 1){
+while($rowCheck < 1){
     $rowCheck = mysqli_num_rows(mysqli_query($connection, $querys[$count]));
-    if($rowCheck == 1){
+    if($rowCheck > 1){
         $table = $tables[$count];
         $rowCarrossel = mysqli_fetch_array(mysqli_query($connection, $querys[$count]));
+        $count = 0;
     }
     $count++;
 }
-
-$queryDeleteCarrossel = "DELETE FROM $table WHERE id = ".$rowCarrossel['id'];
+$queryDeleteCarrossel = "DELETE FROM $table WHERE titulo = '".$carrosselTitle."';";
 
 if(mysqli_query($connection, $queryDeleteCarrossel)){
     $_SESSION["alertCarrossel"] = $rowCarrossel['titulo']." foi excluido com sucesso.";

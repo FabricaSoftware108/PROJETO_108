@@ -35,9 +35,9 @@ while($rowCheck != 1){
 
 $queryDeleteCarrossel = "DELETE FROM $table WHERE id = ".$rowCarrossel['id'];
 
-if(mysqli_query($connection, $queryDeleteCarrossel)){
-    $_SESSION["alertCarrossel"] = $rowCarrossel['titulo']." foi excluido com sucesso.";
-}else{
-    $_SESSION["alertCarrossel"] = "Erro ao excluir o carrossel.";
-}
-header("location: ../../pages/adm/editarCarrosselAdm.php");
+// if(mysqli_query($connection, $queryDeleteCarrossel)){
+//     $_SESSION["alertCarrossel"] = $rowCarrossel['titulo']." foi excluido com sucesso.";
+// }else{
+//     $_SESSION["alertCarrossel"] = "Erro ao excluir o carrossel.";
+// }
+// header("location: ../../pages/adm/editarCarrosselAdm.php");

@@ -128,17 +128,42 @@ if(isset($_SESSION["alertCarrossel"])){
                             <div class="row mx-auto">
                                 <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center m-auto foto-editarCarrossel ">
                                     <div class="input-group d-block justify-content-center p-6">
-                                        <div class="d-flex justify-content-center align-items-center pb-5">
-                                            <select id="mySelect" name="mySelect" style="width: 50%;" onchange="updateFields()">
+                                        <div class="d-flex justify-content-center align-items-center pb-2">
+                                            <select class="form-select form-select-lg w-50" aria-label="Large select example">
+                                                
+                                                <option class="form-control" value="" selected disabled>Selecione a fábrica</option>
+                                                <option value="0">Fábrica de Software</option>
+                                                <option value="1">Fábrica de Jogos</option>
+                                                <option value="2">Fábrica de Cgi</option>
+                                                <option value="3">Fábrica de Audio e Video</option>                                                
+                                            </select>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center pb-2">
+                                            
+                                            <!-- <select class="form-select" id="mySelect" name="mySelect" style="width: 50%;" onchange="updateFields()"  aria-label="Large select example">
                                                 <option value="">Selecione a turma</option>
                                                 <?php foreach ($results as $row) { ?>
                                                     <option value="<?php echo $row['titulo']; ?>" <?php echo ($selectedTitle == $row['titulo']) ? 'selected' : ''; ?>><?php echo $row['titulo']; ?></option>
                                                 <?php } ?>
                                             </select>
                                             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+                                            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+                                            <div class="form-floating mb-3 w-100" >
+                                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                <label for="floatingInput">Digite a fábrica que procura</label>
+                                            </div>
+                                            
                                         </div>
-                                        <div class="content-image-describe pt-5">
+                                        <div class="d-flex justify-content-center align-items-center pb-2">
+                                            <select class="form-select form-select-md w-50" aria-label="Large select example">
+                                                <option value="0">Fábrica de Software</option>
+                                                <option value="1">Fábrica de Jogos</option>
+                                                <option value="2">Fábrica de Cgi</option>
+                                                <option value="3">Fábrica de Audio e Video</option>                                                
+                                            </select>
+                                            
+                                        </div>
+                                        <div class="content-image-describe pt-2">
                                             <h2>Foto da turma</h2>
                                             <label for="inputGroupFile04" id="imgEditarCarrossel">
                                                 <img id="carrosselImg" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
