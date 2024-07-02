@@ -79,8 +79,9 @@
                                 Gratuitas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active ms-2 me-2" aria-current="page"
-                                href="./pagDemanda.html">Demanda de Projeto</a>
+
+                            <a class="nav-link active ms-2 me-2" aria-current="page" href="./pagDemanda.html">Demanda de
+                                Projeto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active ms-2 me-2" aria-current="page"
@@ -108,7 +109,8 @@
             <div class="row">
                 <div class="col-12" id="titulo-subtitulo-bancotalentos">
                     <h1>Talentos das Fábricas</h1><br><br>
-                    <p>Caso você seja um aluno egresso das Fábricas do Senac / MS e esteja buscando uma oportunidade no mercado de trabalho, cadastre-se aqui.</p><br>
+                    <p>Caso você seja um aluno egresso das Fábricas do Senac / MS e esteja buscando uma oportunidade no
+                        mercado de trabalho, cadastre-se aqui.</p><br>
                 </div>
             </div>
 
@@ -118,7 +120,7 @@
                 <form action="../../app/session/conexaoBancodeTalentos.php" id="campo-demanda" method="POST"
                     onsubmit="return validarPost()">
                     <div class="talento-titulo">
-                        <h1>Dados Pessoais</h1> 
+                        <h1>Dados Pessoais</h1>
                     </div>
                     <div class="container-fluid-inputs">
                         <div class="row align-items-center justify-content-center mb-5"
@@ -147,7 +149,7 @@
                                     id="email" size="27" maxlength="80" placeholder="Email" required>
 
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cep" id="cep"
-                                    maxlength="9" placeholder="CEP" >
+                                    maxlength="9" placeholder="CEP" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="number" name="numero"
                                     id="numero" size="27" maxlength="50" placeholder="Número" required>
 
@@ -157,36 +159,38 @@
                                     id="bairro" size="27" maxlength="80" placeholder="Bairro" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="cidade"
                                     id="cidade" size="27" maxlength="80" placeholder="Cidade" required>
-                                    <select class="cadastrovagas col-md-5 col-10 col-sm-12" style="background-color: white; padding: 17.6px 0px 18.6px;" name="estado" id="estado" required>
-                                        <!-- <option value="uf">UF:</option> -->
-                                        <option value="AC">Acre</option>
-                                        <option value="AL">Alagoas</option>
-                                        <option value="AP">Amapá</option>
-                                        <option value="AM">Amazonas</option>
-                                        <option value="BA">Bahia</option>
-                                        <option value="CE">Ceará</option>
-                                        <option value="DF">Distrito Federal</option>
-                                        <option value="ES">Espírito Santo</option>
-                                        <option value="GO">Goiás</option>
-                                        <option value="MA">Maranhão</option>
-                                        <option value="MT">Mato Grosso</option>
-                                        <option value="MS">Mato Grosso do Sul</option>
-                                        <option value="MG">Minas Gerais</option>
-                                        <option value="PA">Pará</option>
-                                        <option value="PB">Paraíba</option>
-                                        <option value="PR">Paraná</option>
-                                        <option value="PE">Pernambuco</option>
-                                        <option value="PI">Piauí</option>
-                                        <option value="RJ">Rio de Janeiro</option>
-                                        <option value="RN">Rio Grande do Norte</option>
-                                        <option value="RS">Rio Grande do Sul</option>
-                                        <option value="RO">Rondônia</option>
-                                        <option value="RR">Roraima</option>
-                                        <option value="SC">Santa Catarina</option>
-                                        <option value="SP">São Paulo</option>
-                                        <option value="SE">Sergipe</option>
-                                        <option value="TO">Tocantins</option>
-                                 </select>
+                                <select class="cadastrovagas col-md-5 col-10 col-sm-12"
+                                    style="background-color: white; padding: 17.6px 0px 18.6px;" name="estado"
+                                    id="estado" required>
+                                    <option value="" disabled selected>UF:</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
 
                             </div>
                             <div class="row justify-content-center align-items-center">
@@ -207,7 +211,8 @@
 
                             <div class="check-consentimento-dados">
                                 <input type="checkbox" id="horns" name="horns" required>
-                                <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais sejam processados em nossas plataformas educacionais.</label>
+                                <label for="horns">Ao preencher este formulário, você permite que seus dados pessoais
+                                    sejam processados em nossas plataformas educacionais.</label>
                             </div>
 
                             <!--essa div é do RECAPTCHA, NÃO MUDAR OU MEXER NELA EM HIPÓTESE ALGUMA!.-->
@@ -273,7 +278,7 @@
                 $(this).val(cep);
             });
         });</script>
-        <script src="../../js/cep-pagbancoTalentos.js"></script>
+    <script src="../../js/cep-pagbancoTalentos.js"></script>
 </body>
 
 </html>
