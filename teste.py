@@ -177,67 +177,94 @@ def test_form():
         
         #pag editais ta funcionando
         
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
-        page.wait_for_timeout(1000)
-        # aqui ele entra no menubar do cabeçalho adm na página home
-        page.click('.navbar-toggler')
+        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
+        # page.wait_for_timeout(1000)
+        # # aqui ele entra no menubar do cabeçalho adm na página home
+        # page.click('.navbar-toggler')
         
         
         
-        
-        page.click('a.nav-link.fs-5[href="./cadastroAdmEdital.php"]') # aqui ele vai em editais
-        if str(page.title()) == 'Cadastro Editais ADM':
-            # elementos = page.query_selector_all('#cadastroAdmEditalInput')
-            page.fill(f'input[type="text"]','Edital 567')
-            page.fill(f'input[type="email"]','34521')
-            page.fill(f'input[type="number"]','13')
-            page.fill('input[id="cadastroAdmEditalInput"]','Processo Seletivo 12/2023 Fabrica de Software - Aluno')
-            page.click('.btn.btn-primary')
-            page.wait_for_timeout(3000)
+        # #pag EDITAIS esta funcionandoo
+        # page.click('a.nav-link.fs-5[href="./cadastroAdmEdital.php"]') # aqui ele vai em editais
+        # if str(page.title()) == 'Cadastro Editais ADM':
+        #     # elementos = page.query_selector_all('#cadastroAdmEditalInput')
+        #     page.fill(f'input[type="text"]','Edital 567')
+        #     page.fill(f'input[name="editalCode"]','34521')
+        #     page.fill(f'input[name="editalLimit"]','13')
+        #     # page.click('.form-control.cadastro-adm-edital-input.mt-3 shadow-none')
+        #     page.fill(f'input[name="cadastroAdmEditalInput"]','2035')
+        #     page.click('.btn.btn-primary')
+        #     page.wait_for_timeout(3000) 
             
             
+            
+            
+        # #pag ADICIONAR CARROSSEL ESTA FUNCIONANDOOO   
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/admHome.php')
         # page.wait_for_timeout(1000)
         # #pag adicionar fabrica eel nao preenche os outros inputs não sei pqq
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/adicionarCarrosselAdm.php')  
+        
+        # page.click('.form-select.form-select-lg.mb-3') #seleciona a fabrica no adicionar carrossel.
+        # page.wait_for_timeout(1000)
+        
+        # page.fill('input[name="nomedafabrica"]','Fabriciooo345')
+        # page.wait_for_timeout(1000)
+        # page.fill('input[name="nomedoprojeto"]',',SenaCoin')
+        # page.wait_for_timeout(1000)
+        # page.fill('textarea[name="textodaturma"]','bhdbhdbhbdhdbhsdbvshjbhdbdhjbdshsbd')
+        # page.wait_for_timeout(1000)
     
-        # page.fill('textarea[id="campoTextoDescricaoCarrossel"]','SenaCoin')
-        # page.fill('textarea[id="campoTextoDescricaoCarrossel"]',',mkmkmkm')
         # page.click('.btn.btn-primary')
         
         # page.wait_for_timeout(1000)
         
-        # #editar carrossel eel nao preenche os outros inputs não sei pqq
+        # #editar carrossel esta funcionandooo
         
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/editarCarrosselAdm.php')
         # page.wait_for_timeout(1000)
         
-        # page.fill('textarea[id="campoTextoDescricaoCarrossel"]','dmnsjdnsnfbhfb')
+        # page.click('.select2-selection__rendered')
+        # page.click('.select2-search__field')
+        # page.fill('input[type="search"]', '108')
+        # page.click('.select2-results__option.select2-results__option--selectable.select2-results__option--highlighted')
+        
+        # page.click('.container-fabrica-nome-editarCarrossel')
+        # page.fill('textarea[name="titulo"]','aawaaaa')
+        
+        # page.click('.container-fabrica-nome-editarCarrossel')
+        # page.fill('textarea[name="projeto"]','projeto aaaa')
+        
+        # page.click('.container-fabrica-nome-editarCarrossel')
+        # page.fill('textarea[name="descricao"]','pmjndjsndjdnjdnjndjndjsndjsdnsjdnsjdnsjdnsjdnsdj')
         # page.click('.btn.btn-primary')
         
-        
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/editarCarrosselAdm.php')
-        # page.wait_for_timeout(1000)
-        
+
+  
         # #relatorios edital aluno esta funcionadoo
         
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioAlunoADM.php')
         # page.wait_for_timeout(1000)
         
-        # page.fill('input[type="text"]','45')
+        
+        # page.click('.form-control.relatorio-aluno-adm-input')
+        
+        # page.fill('input[type="text"]','2036')
         
         
         
-        #relatorio DEMANDA
+        # #relatorio DEMANDA esta funcionandoo
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
         # page.wait_for_timeout(1000)
         
         # page.click('.btn.btn-primary.relatorio-edital_da_empresa-button_irParaDetalhado')
+        # page.wait_for_timeout(1000)
         
         # page.click('.btn.btn-primary')
+        # page.wait_for_timeout(1000)
         
         
-        # #relatorio TALENTOS DAS FABRICAS
+        # #relatorio TALENTOS DAS FABRICAS esta funcionandoo
         
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatoriobancotalento.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
         # page.wait_for_timeout(1000)
@@ -247,24 +274,41 @@ def test_form():
         
         
         
-        #relatorio VAGAS EMPREGO
+    #    # relatorio VAGAS EMPREGO esta funcionandooo
         
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioVagasEmprego.php')
-        # page.wait_for_timeout(1000)
+    #     page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioVagasEmprego.php')
+    #     page.wait_for_timeout(1000)
         
-        # page.click('.btn.btn-primary.relatorio-vagas_emprego-button_irParaDetalhado')
-        # page.wait_for_timeout(1000)
-        # page.click('.btn.btn-primary.relatorio-detalhado-ve-btn')
+    #     page.click('.btn.btn-primary.relatorio-vagas_emprego-button_irParaDetalhado')
+    #     page.wait_for_timeout(1000)
+    #     page.click('.btn.btn-primary.relatorio-detalhado-ve-btn')
         
         
-        # #pag USUARIO
+        #pag USUARIO
         # page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/usuarioAdm.php')
+        # page.wait_for_timeout(1000)
         
         # page.click('.btn.btn-primary')#editar usuario
+        # page.wait_for_timeout(1000)
         # page.fill('input[name="nomeantigo"]','Edward cullen')
+        # page.wait_for_timeout(1000)
         # page.fill('input[name="e-mailantigo"]','Edwardcullen@gmail.com')
+        # page.wait_for_timeout(1000)
         # page.fill('input[name="foneantigo"]','95625455')
+        # page.wait_for_timeout(1000)
         # page.click('.btn.btn-secondary')
+        # page.wait_for_timeout(2000)
+        
+        
+        #Pag USUARIO BUTTON ALTERAR SENHA
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/usuarioAdmRecuperar.php')
+        page.wait_for_timeout(1000)
+        
+        page.click('.form-control')
+        page.fill('input[type="password"]', '')
+        
+        
+        
         
         
         
