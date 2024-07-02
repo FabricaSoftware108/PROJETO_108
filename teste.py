@@ -7,9 +7,9 @@ def test_form():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
         
-        page.goto('http://10.28.1.194/PROJETO_108-main/index.html') #('http://127.0.0.1:5502/index.html')
+        # page.goto('http://127.0.0.1:5502/index.html') #('http://127.0.0.1:5502/index.html')
         
-        page.wait_for_timeout(5000)
+        # page.wait_for_timeout(5000)
         
       
     #     #PAGINA CADASTRO DE VAGAS esta funcionando tudooo
@@ -226,7 +226,7 @@ def test_form():
         
         # page.fill('input[type="text"]','45')
         
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php')
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php') #http://10.28.1.194/PROJETO_108-main/pages/adm/relatorioeditaldaempresa.php
         page.wait_for_timeout(1000)
         
         page.click('.btn.btn-primary.relatorio-edital_da_empresa-button_irParaDetalhado')
