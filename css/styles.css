@@ -991,7 +991,7 @@ div.carousel-item img#carouselImg{
     .roxo-introdu-software .btn {
         font-size: 11px;
         text-align: center;
-        width: 100%; /* Altera a largura para ocupar todo o espaço disponível */
+        width: 20px; /* Altera a largura para ocupar todo o espaço disponível */
     }
 }
 

@@ -105,8 +105,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                 promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
             </div>
             <div class="row d-lg-flex justify-content-center py-5">
-              <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais para
-                alunos</a>
+              <a class="btn text-light rounded-pill" type="button" href="../editais/pagEdital.php">Editais para alunos</a>
             </div>
           </div>
         </div>
