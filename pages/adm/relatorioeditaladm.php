@@ -277,7 +277,7 @@ include '../../app/db/connection.php';
                     </tbody>
                   </table>
                 </div>
-                <button class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
+                <button id="btnd"class="btn btn-primary relatorio_edital_aluno-button">Imprimir</button>
               </div>
             </div>
           </div>
@@ -285,6 +285,22 @@ include '../../app/db/connection.php';
       </div>
     </div>
   </main>
+  <script>
+    document.getElementById("btnd").addEventListener("click", function() {
+      var printContents = document.getElementById("table_relatorio_edital_do_aluno").outerHTML;
+      var originalContents = document.body.innerHTML;
+      var printWindow = window.open('', '', 'height=800,width=800');
+      printWindow.document.write('<html><head><title>Relatório Edital do Aluno</title>');
+      printWindow.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">');
+      printWindow.document.write('</head><body>');
+      printWindow.document.write(printContents);
+      printWindow.document.write('</body></html>');
+      printWindow.document.close();
+      printWindow.focus();
+      printWindow.print();
+      printWindow.close();
+    });
+  </script>
 
 </body>
 

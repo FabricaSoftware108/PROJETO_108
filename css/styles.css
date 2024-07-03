@@ -987,6 +987,14 @@ div.carousel-item img#carouselImg{
     background-color: #2B1463;
 }
 
+@media (max-width: 800px) {
+    .roxo-introdu-software .btn {
+        font-size: 11px;
+        text-align: center;
+        width: 100%; /* Altera a largura para ocupar todo o espaço disponível */
+    }
+}
+
 
 .code-background-software {
     position: absolute;
