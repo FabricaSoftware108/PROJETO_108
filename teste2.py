@@ -9,135 +9,178 @@ def test_form():
         page.goto('http://10.28.1.194/PROJETO_108-main/index.html') #('http://127.0.0.1:5502/index.html')
         
         page.wait_for_timeout(5000)
-#    #FABRICAS butons home
+
 #         #FABRICA SOFTWARE
         
-#         page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaSoftware.php')
-#         page.wait_for_timeout(2000)
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaSoftware.php')
+        page.wait_for_timeout(2000)
         
-#         page.click('.col-12.text-center.text-light.py-5')
-#         page.wait_for_timeout(2000)
+        page.click('.col-12.text-center.text-light.py-5')
+        page.wait_for_timeout(2000)
         
-#         #carrossel fabrica de software
-#         page.click('.carousel-control-prev-icon')
-#         page.wait_for_timeout(1000)
-#         page.click('.carousel-control-prev-icon')
-#         page.wait_for_timeout(1000)
-#         page.click('.carousel-control-prev-icon')
-#         page.wait_for_timeout(1000)
+        #carrossel fabrica de software
+        page.click('.carousel-control-prev-icon')
+        page.wait_for_timeout(1000)
+        page.click('.carousel-control-prev-icon')
+        page.wait_for_timeout(1000)
+        page.click('.carousel-control-prev-icon')
+        page.wait_for_timeout(1000)
         
-#         #grade curricular software
-#         page.click('.btn.btn-danger')
-#         page.wait_for_timeout(1000)
-#         page.click('.btn.btn-danger')
-#         page.wait_for_timeout(1000)
+        #grade curricular software
+        page.click('.btn.btn-danger')
+        page.wait_for_timeout(1000)
+        page.click('.btn.btn-danger')
+        page.wait_for_timeout(1000)
  
  
-#         page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaJogos.php')
-#         page.wait_for_timeout(1000)
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaJogos.php')
+        page.wait_for_timeout(1000)
         
-#         #carrossel fabrica de jogos
-#         page.click('.col-12')
-#         page.wait_for_timeout(1000)
+        #carrossel fabrica de jogos
+        page.click('.col-12')
+        page.wait_for_timeout(1000)
         
-#         page.click('.carousel-control-prev-icon')
-#         page.wait_for_timeout(1000)
+        page.click('.carousel-control-prev-icon')
+        page.wait_for_timeout(1000)
         
-#         #grade curricular jogos
-#         page.click('.btn.btn-danger')
-#         page.wait_for_timeout(1000)
-#         page.click('.btn.btn-danger')
-#         page.wait_for_timeout(1000)
+        #grade curricular jogos
+        page.click('.btn.btn-danger')
+        page.wait_for_timeout(1000)
+        page.click('.btn.btn-danger')
+        page.wait_for_timeout(1000)
         
      
         
-#         #fabrica de cgi
-#         page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaCgi.php')
-#         #fabrica cgi page
+        #fabrica de cgi
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaCgi.php')
+        #fabrica cgi page
 
-#         page.wait_for_timeout(1000)
+        page.wait_for_timeout(1000)
         
-#         #carrossel cgi
-#         page.click('.carousel-control-prev-icon')
-#         page.wait_for_timeout(2000)
+        #carrossel cgi
+        page.click('.carousel-control-prev-icon')
+        page.wait_for_timeout(2000)
         
-#         #grade curricular cgi
-#         page.click('.btn.btn-warning')
-#         page.wait_for_timeout(1000)
-#         page.click('.btn.btn-warning')
-#         page.wait_for_timeout(1000)
+        #grade curricular cgi
+        page.click('.btn.btn-warning')
+        page.wait_for_timeout(1000)
+        page.click('.btn.btn-warning')
+        page.wait_for_timeout(1000)
         
  
     
     
-#         #page audio e video
-#         page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaAudioVisual.php')
-#         page.wait_for_timeout(2000)
+        #page audio e video
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaAudioVisual.php')
+        page.wait_for_timeout(2000)
         
-#         #carrossel audio e video
-#         page.click('.carousel-control-next-icon')
-#         page.wait_for_timeout(2000)
+        #carrossel audio e video
+        page.click('.carousel-control-next-icon')
+        page.wait_for_timeout(2000)
         
-#         #grade curricular audio e video
-#         page.click('.btn.btn-success')
-#         page.wait_for_timeout(2000)
-#         page.click('.btn.btn-success')
-#         page.wait_for_timeout(2000)
-        
-        
-        # EDITAIS E CADASTROS PAGES
+        #grade curricular audio e video
+        page.click('.btn.btn-success')
+        page.wait_for_timeout(2000)
+        page.click('.btn.btn-success')
+        page.wait_for_timeout(2000)
         
         
-        #PAGINA CADASTRO DE VAGAS esta funcionando tudooo
-    #     page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/cadastroVagasEmprego.html') #('http://127.0.0.1:5502/pages/editais/cadastroVagasEmprego.html')
-    #     page.wait_for_timeout(5000)
+        #EDITAIS E CADASTROS PAGES
+        
+        
+       # PAGINA CADASTRO DE VAGAS esta funcionando tudooo
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/cadastroVagasEmprego.html') #('http://127.0.0.1:5502/pages/editais/cadastroVagasEmprego.html')
+        page.wait_for_timeout(5000)
 
-    #     page.wait_for_selector('input[name="nome_empresa"]')
-    #     page.fill('input[name="nome_empresa"]', 'novoo blau')
-    #     page.wait_for_timeout(1000)
-    #     page.fill('input[name="email"]', 'foiAmem@email.com')
-    #     page.fill('input[name="cnpj"]', '87.170.176/0001-70')
-    #     page.wait_for_timeout(1000)
-    #     page.fill('input[name="cidade"]', 'Campo gente')
-    #     page.fill('input[name="telefone"]', '67 0000-0000')
-    #     page.wait_for_timeout(1000)
-    #     page.select_option('select[name=estado]', value='MS')
-    #     # page.fill('input[name="estado"]', 'bla')
-    #     page.wait_for_timeout(1000)
-    #     page.fill('textarea[name="descricao_vaga"]', 'lorem snjnwjdnsjdsndjs nc dn nfdc fdncbdndbhdnbhjsdnjsdnsjjjjjjjj')
-    #     page.click('.check-consentimento-dados')
+        page.wait_for_selector('input[name="nome_empresa"]')
+        page.fill('input[name="nome_empresa"]', 'novoo blau')
+        page.wait_for_timeout(1000)
+        page.fill('input[name="email"]', 'foiAmem@email.com')
+        page.fill('input[name="cnpj"]', '87.170.176/0001-70')
+        page.wait_for_timeout(1000)
+        page.fill('input[name="cidade"]', 'Campo gente')
+        page.fill('input[name="telefone"]', '67 0000-0000')
+        page.wait_for_timeout(1000)
+        page.select_option('select[name=estado]', value='MS')
+        # page.fill('input[name="estado"]', 'bla')
+        page.wait_for_timeout(1000)
+        page.fill('textarea[name="descricao_vaga"]', 'lorem snjnwjdnsjdsndjs nc dn nfdc fdncbdndbhdnbhjsdnjsdnsjjjjjjjj')
+        page.click('.check-consentimento-dados')
         
        
         
-    #     page.wait_for_timeout(3000)
-    #     # page.click('.btn.btn-primary')
-    #     print("Clicou no botao de enviar")
-    #     page.wait_for_timeout(1000)
-
-
-    # #PAG EMPRESAS esta funcionando tudo
-    #     page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/pagDemanda.html') #('http://127.0.0.1:5502/pages/editais/pagDemanda.html')
-    #     page.wait_for_timeout(5000)
-        
-    #     page.wait_for_selector('input[name="nome"]')
-    #     page.fill('input[name=nome]', ' Bianca')    
-    #     page.wait_for_timeout(1000)
-    #     page.fill('input[name=email]', 'bianca@gmail.com')
-    #     page.fill('input[name=cpf]', '618.149.190-23')
-    #     page.wait_for_timeout(1000)
-    #     page.fill('input[name=telefone]', '265656') 
-    #     page.fill('input[name=cidade]', 'Amambai')
-    #     page.wait_for_timeout(1000)
-    #     page.select_option('select[name=estado]', value='MT')
-    #     page.fill('textarea[name=descricao]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
-    #     page.wait_for_timeout(1000)
-    #     page.click('.check-consentimento-dados')
-        
-    #     page.wait_for_timeout(3000)
-        
+        page.wait_for_timeout(3000)
         # page.click('.btn.btn-primary')
+        print("Clicou no botao de enviar")
+        page.wait_for_timeout(1000)
+
+
+    #PAG EMPRESAS esta funcionando tudo
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/pagDemanda.html') #('http://127.0.0.1:5502/pages/editais/pagDemanda.html')
+        page.wait_for_timeout(5000)
         
+        page.wait_for_selector('input[name="nome"]')
+        page.fill('input[name=nome]', ' Bianca')    
+        page.wait_for_timeout(1000)
+        page.fill('input[name=email]', 'bianca@gmail.com')
+        page.fill('input[name=cpf]', '618.149.190-23')
+        page.wait_for_timeout(1000)
+        page.fill('input[name=telefone]', '265656') 
+        page.fill('input[name=cidade]', 'Amambai')
+        page.wait_for_timeout(1000)
+        page.select_option('select[name=estado]', value='MT')
+        page.fill('textarea[name=descricao]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
+        page.wait_for_timeout(1000)
+        page.click('.check-consentimento-dados')
+        
+        page.wait_for_timeout(3000)
+        
+        page.click('.btn.btn-primary')
+        
+        page.wait_for_timeout(3000)
+        
+          #PAGINA BANCO DE TALENTOS, so falta arrumar o input date (ele funciona se mudar o date para text no input no HTML)
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/pagBancoTalentos.html') #('http://127.0.0.1:5502/pages/editais/pagBancoTalentos.html')
+        page.wait_for_timeout(5000)
+        
+        page.wait_for_selector('input[name="nome"]')
+        page.fill('input[name=nome]', 'Adam Carsen')    
+        page.wait_for_timeout(1000)
+        page.fill('input[name=cpf]', '618.149.190-23')
+        page.fill('input[name=dataNascimento]','8-6-2023')
+        page.wait_for_timeout(1000)
+        page.wait_for_timeout(1000)
+        page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
+        page.wait_for_timeout(1000)
+        page.fill('input[name=dataNascimento]', '2020-02-02')
+        page.wait_for_timeout(1000)
+
+
         # page.wait_for_timeout(3000)
+      
+        # page.wait_for_timeout(1000)
+        page.select_option('select[name=escolaridade]', value='medio')
+        page.fill('input[name=telefone]', '6655454566') 
+        page.wait_for_timeout(1000)
+        page.fill('input[name=email]', 'adam@gmail.com')
+        page.fill("input[name=cep]","79017253")
+        page.wait_for_timeout(1000)
+        page.fill('input[name=numero]', '543')
+        page.fill('input[name=rua]', 'aaa')
+        page.wait_for_timeout(1000)
+        page.fill('input[name=bairro]', 'aaaaa')
+        page.fill('input[name=cidade]', 'aaaaa')
+        page.wait_for_timeout(1000)
+        
+        page.fill('input[name=github]', 'deedeee') 
+        page.fill('input[name=linkedin]', 'adam@gmail.com')
+        page.wait_for_timeout(1000)
+        page.click('.check-consentimento-dados')
+        
+        # page.wait_for_timeout(2000)
+        # page.click('.btn.btn-primary')
+        # page.wait_for_timeout(1000)
+        page.wait_for_timeout(1000)
         
         
         
@@ -183,49 +226,7 @@ def test_form():
         # page.wait_for_timeout(2000)
         
         
-        # #PAGINA BANCO DE TALENTOS, so falta arrumar o input date (ele funciona se mudar o date para text no input no HTML)
-        # page.goto('http://10.28.1.194/PROJETO_108-main/pages/editais/pagBancoTalentos.html') #('http://127.0.0.1:5502/pages/editais/pagBancoTalentos.html')
-        # page.wait_for_timeout(5000)
-        
-        # page.wait_for_selector('input[name="nome"]')
-        # page.fill('input[name=nome]', 'Adam Carsen')    
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name=cpf]', '618.149.190-23')
-        # page.fill('input[name=dataNascimento]','8-6-2023')
-        # page.wait_for_timeout(1000)
-        # page.wait_for_timeout(1000)
-        # page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name=dataNascimento]', '2020-02-02')
-        # page.wait_for_timeout(1000)
-
-
-        # # page.wait_for_timeout(3000)
       
-        # # page.wait_for_timeout(1000)
-        # page.select_option('select[name=escolaridade]', value='medio')
-        # page.fill('input[name=telefone]', '6655454566') 
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name=email]', 'adam@gmail.com')
-        # page.fill("input[name=cep]","79017253")
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name=numero]', '543')
-        # page.fill('input[name=rua]', 'aaa')
-        # page.wait_for_timeout(1000)
-        # page.fill('input[name=bairro]', 'aaaaa')
-        # page.fill('input[name=cidade]', 'aaaaa')
-        # page.wait_for_timeout(1000)
-        
-        # page.fill('input[name=github]', 'deedeee') 
-        # page.fill('input[name=linkedin]', 'adam@gmail.com')
-        # page.wait_for_timeout(1000)
-        # page.click('.check-consentimento-dados')
-        
-        # # page.wait_for_timeout(2000)
-        # # page.click('.btn.btn-primary')
-        # # page.wait_for_timeout(1000)
-        # page.select_option('select[name=uf]', value='AL')
-        # page.wait_for_timeout(1000)
         
         
         
@@ -384,7 +385,7 @@ def test_form():
         
         page.click('.form-control.relatorio-aluno-adm-input')
         
-        page.fill('input[type="text"]','2036')
+        page.fill('input[type="text"]','2034')
         page.wait_for_timeout(1000)
         
         
@@ -419,6 +420,7 @@ def test_form():
         page.click('.btn.btn-primary.relatorio-vagas_emprego-button_irParaDetalhado')
         page.wait_for_timeout(1000)
         page.click('.btn.btn-primary.relatorio-detalhado-ve-btn')
+        page.wait_for_timeout(2000)
         
         
         #pag USUARIO
