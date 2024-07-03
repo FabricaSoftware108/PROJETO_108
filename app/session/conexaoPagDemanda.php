@@ -9,6 +9,7 @@ if (!empty($_POST["nome"]) && !empty($_POST["email"]) && !empty($_POST["cpf"]) &
     $nome= mysqli_real_escape_string($connection, $_POST["nome"]);
     $email= mysqli_real_escape_string($connection, $_POST["email"]);
     $cpf= mysqli_real_escape_string($connection, $_POST["cpf"]);
+    $cpf = str_replace(['.', '-'], '', $cpf);
     $estado= mysqli_real_escape_string($connection, $_POST["estado"]);
     $telefone= mysqli_real_escape_string($connection, $_POST["telefone"]);
     $cidade= mysqli_real_escape_string($connection, $_POST["cidade"]);
