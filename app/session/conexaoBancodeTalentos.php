@@ -15,6 +15,7 @@ if (
     $nome = $_POST["nome"];
     $cep = $_POST["cep"];
     $cpf = $_POST["cpf"];
+    $cpf = str_replace(['.', '-'], '', $cpf);
     $escolaridade = $_POST["escolaridade"];
     $dataNascimento = $_POST["dataNascimento"];
     $email = $_POST["email"];
