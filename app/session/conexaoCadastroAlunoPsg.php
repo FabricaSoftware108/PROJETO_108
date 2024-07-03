@@ -5,6 +5,7 @@ include '../db/connection.php';
 #Dados Pessoais
 $nomeAluno = ($_POST['nome']);
 $cpfAluno = ($_POST['cpf']);
+$cpfAluno = str_replace(['.', '-'], '', $cpfAluno);
 $dataNascimento = ($_POST['data_nascimento_psg']);
 $emailAluno = ($_POST['email']);
 $telefoneAluno = ($_POST['telefone']);
@@ -17,7 +18,7 @@ $bairroAluno = ($_POST['bairro']);
 $numeroEnderecoAluno = ($_POST['numero']);
 $cepAluno = ($_POST['cep']);
 $complementoAluno = ($_POST['complemento']);
-
+    
 // dar um window alert para orientar o aluno
 if(empty($nomeAluno) || empty($cpfAluno) || empty($dataNascimento) || empty($telefoneAluno) || empty($emailAluno) || empty($nomeMae) || empty($nomePai) || empty($ruaAluno) || empty($bairroAluno)|| empty($numeroEnderecoAluno) || empty($cepAluno)){
     echo "<script>alert('TODOS ESPAÇOS DEVEM ESTAR PREENCHIDOS');</script>";
