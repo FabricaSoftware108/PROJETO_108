@@ -10,7 +10,7 @@ def test_form():
         
         page.wait_for_timeout(5000)
 
-#         #FABRICA SOFTWARE
+# #         #FABRICA SOFTWARE
         
         page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaSoftware.php')
         page.wait_for_timeout(2000)
@@ -222,8 +222,8 @@ def test_form():
         
         page.wait_for_timeout(3000)
         
-        # page.click('.btn.btn-primary')
-        # page.wait_for_timeout(2000)
+        page.click('.btn.btn-primary')
+        page.wait_for_timeout(2000)
         
         
       
@@ -310,7 +310,7 @@ def test_form():
         page.wait_for_timeout(1000)
         
         
-        
+   
         #pag EDITAIS esta funcionandoo
         page.click('a.nav-link.fs-5[href="./cadastroAdmEdital.php"]') # aqui ele vai em editais
         if str(page.title()) == 'Cadastro Editais ADM':
@@ -322,7 +322,7 @@ def test_form():
             # page.click('.form-control.cadastro-adm-edital-input.mt-3 shadow-none')
             page.wait_for_timeout(1000)
             page.click('.form-control.cadastro-adm-edital-input.mt-3.shadow-none')
-            page.fill(f'input[type="text"]','2035')
+            page.fill(f'input[type="text"]','2033')
             page.click('.btn.btn-primary')
             page.wait_for_timeout(3000) 
             
@@ -407,6 +407,7 @@ def test_form():
         page.wait_for_timeout(1000)
         
         page.click('.btn.btn-primary.relatorio-banco_talento-button_irParaDetalhado')
+        page.wait_for_timeout(1000)
         page.click('.btn.btn-primary')
         page.wait_for_timeout(3000) 
         
