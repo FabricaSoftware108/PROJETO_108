@@ -6,13 +6,13 @@ def test_form():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()   
    
-        page.goto('http://10.28.1.194/PROJETO_108-main/index.html') #('http://127.0.0.1:5502/index.html')
+        page.goto('http://10.28.1.194/PROJETO_108-main/index.html') #('http://127.0.0.1:5502/index.html') ('http://10.28.1.194/PROJETO_108-main/index.html')
         
         page.wait_for_timeout(5000)
 
 # #         #FABRICA SOFTWARE
         
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaSoftware.php')
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaSoftware.php') #('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaSoftware.php')
         page.wait_for_timeout(2000)
         
         page.click('.col-12.text-center.text-light.py-5')
@@ -33,7 +33,7 @@ def test_form():
         page.wait_for_timeout(1000)
  
  
-        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaJogos.php')
+        page.goto('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaJogos.php') #('http://10.28.1.194/PROJETO_108-main/pages/fabricas/pagFabricaJogos.php')
         page.wait_for_timeout(1000)
         
         #carrossel fabrica de jogos
