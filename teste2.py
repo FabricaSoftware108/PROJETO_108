@@ -128,7 +128,7 @@ def test_form():
         page.fill('input[name=telefone]', '265656') 
         page.fill('input[name=cidade]', 'Amambai')
         page.wait_for_timeout(1000)
-        page.select_option('select[name=estado]', value='MT')
+        page.select_option('select[name=estado]', value='AP')
         page.fill('textarea[name=descricao]', 'mkfmfkmfksmkmfkmfkfnmdkfdknfkkmnd')
         page.wait_for_timeout(1000)
         page.click('.check-consentimento-dados')
