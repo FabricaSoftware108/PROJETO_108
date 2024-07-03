@@ -102,7 +102,6 @@ def test_form():
         page.fill('input[name="telefone"]', '67 0000-0000')
         page.wait_for_timeout(1000)
         page.select_option('select[name=estado]', value='MS')
-        # page.fill('input[name="estado"]', 'bla')
         page.wait_for_timeout(1000)
         page.fill('textarea[name="descricao_vaga"]', 'lorem snjnwjdnsjdsndjs nc dn nfdc fdncbdndbhdnbhjsdnjsdnsjjjjjjjj')
         page.click('.check-consentimento-dados')
