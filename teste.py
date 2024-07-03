@@ -112,11 +112,13 @@ def test_form():
         page.fill('input[name=nome]', 'Adam Carsen')    
         page.wait_for_timeout(1000)
         page.fill('input[name=cpf]', '618.149.190-23')
-        page.fill('input[name=dataNascimento]','8-56-2023')
+        page.fill('input[name=dataNascimento]','8-6-2023')
         page.wait_for_timeout(1000)
-        # page.wait_for_timeout(1000)
-        # page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
-        # page.wait_for_timeout(1000)
+        page.wait_for_timeout(1000)
+        page.click('.cadastrovagas.col-md-5.col-10.col-sm-12')
+        page.wait_for_timeout(1000)
+        page.fill('input[name=dataNascimento]', '2020-02-02')
+        page.wait_for_timeout(1000)
 
 
         # page.wait_for_timeout(3000)
