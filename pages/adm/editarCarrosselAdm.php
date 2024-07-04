@@ -2,26 +2,38 @@
 include '../../app/db/connection.php';
 include '../../app/session/verificacao.php';
 
-$queries = [
-    "SELECT * FROM carroselSoftware",
-    "SELECT * FROM carroselJogos",
-    "SELECT * FROM carroselAudioVideo",
-    "SELECT * FROM carroselCgi"
-];
+// $queries = [
+//     "SELECT * FROM carroselSoftware",
+//     "SELECT * FROM carroselJogos",
+//     "SELECT * FROM carroselAudioVideo",
+//     "SELECT * FROM carroselCgi"
+// ];
 
-$results = [];
-foreach ($queries as $query) {
-    $result = mysqli_query($connection, $query);
-    if ($result) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            $results[] = $row;
-        }
-    }
-}
+// $results = [];
+// foreach ($queries as $query) {
+//     $result = mysqli_query($connection, $query);
+//     if ($result) {
+//         while ($row = mysqli_fetch_assoc($result)) {
+//             $results[] = $row;
+//         }
+//     }
+// }
 
-$selectedTitle = '';
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $selectedTitle = $_POST['mySelect'];
+// $selectedTitle = '';
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     $selectedTitle = $_POST['mySelect'];
+// }
+
+if(isset($_GET["selectCarrossel"])){
+    $queries = array(
+        'SELECT * FROM carroselSoftware',
+        'SELECT * FROM carroselJogos',
+        'SELECT * FROM carroselCgi',
+        'SELECT * FROM carroselAudioVideo',
+    );
+
+    $result = mysqli_query($connection, $queries[(int)$_GET["selectCarrossel"]]);
+    
 }
 
 if(isset($_SESSION["alertCarrossel"])){
@@ -129,7 +141,7 @@ if(isset($_SESSION["alertCarrossel"])){
                                 <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center m-auto foto-editarCarrossel ">
                                     <div class="input-group d-block justify-content-center p-6">
                                         <div class="d-flex justify-content-center align-items-center pb-2">
-                                            <select class="form-select form-select-lg w-50" aria-label="Large select example">
+                                            <select class="form-select form-select-lg w-50" aria-label="Large select example" onchange="location.href = './editarCarrosselAdm.php?selectCarrossel='+this.value">
                                                 
                                                 <option class="form-control" value="" selected disabled>Selecione a fábrica</option>
                                                 <option value="0">Fábrica de Software</option>
@@ -140,27 +152,31 @@ if(isset($_SESSION["alertCarrossel"])){
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center pb-2">
                                             
-                                            <!-- <select class="form-select" id="mySelect" name="mySelect" style="width: 50%;" onchange="updateFields()"  aria-label="Large select example">
-                                                <option value="">Selecione a turma</option>
-                                                <?php foreach ($results as $row) { ?>
-                                                    <option value="<?php echo $row['titulo']; ?>" <?php echo ($selectedTitle == $row['titulo']) ? 'selected' : ''; ?>><?php echo $row['titulo']; ?></option>
-                                                <?php } ?>
-                                            </select>
-                                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                                            <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
-                                            <div class="form-floating mb-3 w-100" >
-                                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                                <label for="floatingInput">Digite a fábrica que procura</label>
+                                            <div class="form-floating mb-3 w-100 dropdown" >
+                                                <input type="text" class="form-control dropdown-toggle" id="floatingInput" placeholder="name@example.com" type="button" data-bs-toggle="dropdown" aria-expanded="false" <?php if(!isset($_GET["selectCarrossel"])){echo "disabled";} ?> >
+                                                <label for="floatingInput">Fábricas</label>
+                
+                                                    <ul class="dropdown-menu w-100">
+                                                        <?php if(!isset($_GET["selectCarrossel"])){
+                                                            while($row = mysqli_fetch_array($result)){
+                                                        ?>
+
+                                                            <li><a class="dropdown-item" href="#"><?php echo $row["titulo"]?></a></li>
+                                                        <?php } } ?>
+                                                        <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                                    </ul>
+                                             
                                             </div>
-                                            
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center pb-2">
-                                            <select class="form-select form-select-md w-50" aria-label="Large select example">
+                                            <!-- <select class="form-select form-select-md w-50" aria-label="Large select example">
                                                 <option value="0">Fábrica de Software</option>
                                                 <option value="1">Fábrica de Jogos</option>
                                                 <option value="2">Fábrica de Cgi</option>
                                                 <option value="3">Fábrica de Audio e Video</option>                                                
-                                            </select>
+                                            </select> -->
+                                            
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center pb-2">
                                             
                                         </div>
                                         <div class="content-image-describe pt-2">
@@ -238,6 +254,11 @@ if(isset($_SESSION["alertCarrossel"])){
             }
             function changeToUpdate(){
                 document.querySelector('#carrosselForm').action = "../../app/session/updateCarrossel.php?carrosselTitle="+carroselTitle;
+            }
+
+            function selectCarrossel(){
+                alert("efqerg");
+                // location.href = './editarCarrosselAdm.php?selectCarrossel='+select.value
             }
         </script>
     </main>
