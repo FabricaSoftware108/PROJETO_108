@@ -12,13 +12,10 @@ include '../../app/session/verificacaoPsg.php';
 
     <title>Cadastro Aluno PSG</title>
     <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
-
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <script src="../../js/validacao-cpf-pagCadastroAlunoPsg.js"></script>
-
     <script src="../../js/cep-pagAlunoPsg.js"></script>
-
+    <script src="../../js/mascaranomes.js"></script>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../../js/dropdownfabricas.js" defer></script>
@@ -33,12 +30,12 @@ include '../../app/session/verificacaoPsg.php';
 
     <script>
         function validarPost() {
-            //verifica se o recaptcha foi selecionado
             if (grecaptcha.getResponse() != '') return true;
             alert('Selecione o checkbox de não sou um robô!!')
             return false;
         }
     </script>
+    
 </head>
 
 <body>
