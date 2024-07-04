@@ -104,8 +104,12 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                 concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software,
                 promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
             </div>
-            <div class="row d-lg-flex justify-content-center py-5">
-              <a class="btn text-light rounded-pill" type="button" href="../editais/pagEdital.php">Editais para alunos</a>
+            <div class="container py-5">
+            <div class="row d-flex justify-content-center py-5">
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <a class="btn btn-fabrica-software text-light rounded-pill w-100" href="../editais/pagEdital.php">Editais para alunos</a>
+            </div>
+            </div>
             </div>
           </div>
         </div>
