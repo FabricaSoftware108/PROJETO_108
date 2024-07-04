@@ -12,13 +12,10 @@ include '../../app/session/verificacaoPsg.php';
 
     <title>Cadastro Aluno PSG</title>
     <link rel="icon" href="../../Imagens/favicon.png" type="image/x-icon">
-
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
     <script src="../../js/validacao-cpf-pagCadastroAlunoPsg.js"></script>
-
     <script src="../../js/cep-pagAlunoPsg.js"></script>
-
+    <script src="../../js/mascaranomes.js"></script>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="../../js/dropdownfabricas.js" defer></script>
@@ -31,14 +28,14 @@ include '../../app/session/verificacaoPsg.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 
-    <!-- <script>
-            function validarPost(){
-               //verifica se o recaptcha foi selecionado
-               if(grecaptcha.getResponse() !='') return true;
-               alert('Selecione o checkbox de não sou um robô!!')
-                return false;
-            }
-        </script> -->
+    <script>
+        function validarPost() {
+            if (grecaptcha.getResponse() != '') return true;
+            alert('Selecione o checkbox de não sou um robô!!')
+            return false;
+        }
+    </script>
+    
 </head>
 
 <body>
@@ -110,24 +107,24 @@ include '../../app/session/verificacaoPsg.php';
             <div class="row" id="quadradoRoxo-cadastroaluno">
                 <form class="col-12" id="camposPreenchimentoCadastroAlunoPsg" method="post" action="../../app/session/conexaoCadastroAlunoPsg.php" onsubmit="return validarPost()">
                     <h1>Informações Pessoais</h1><br>
-                    <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome" id="nome" size="27" maxlength="100" placeholder="Nome Completo">
+                    <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome" id="nome" size="27" maxlength="100" placeholder="Nome Completo" required>
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cpf" id="cpf" size="27" maxlength="14" placeholder="CPF" onblur='validarcpf()'>
-                        <input class="cadastro-aluno-psg col-md-5 col-10 col-sm-12" name="data_nascimento_psg" id="data_nascimento_psg" placeholder="Data de Nascimento" type='text' onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'" max="9999-12-31"><br>
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone" size="27" maxlength="15" placeholder="Telefone">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email" size="27" maxlength="80" placeholder="E-mail"><br>
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cpf" id="cpf" size="27" maxlength="14" placeholder="CPF" onblur='validarcpf()' required>
+                        <input class="cadastro-aluno-psg col-md-5 col-10 col-sm-12" name="data_nascimento_psg" id="data_nascimento_psg" placeholder="Data de Nascimento" type='text' onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'" max="9999-12-31" required><br>
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone" size="27" maxlength="15" placeholder="Telefone" required>
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email" size="27" maxlength="80" placeholder="E-mail" required><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai" size="27" maxlength="80" placeholder="Nome do Pai">
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomeMae" id="nomeMae" size="27" maxlength="80" placeholder="Nome da Mãe"><br>
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomeMae" id="nomeMae" size="27" maxlength="80" placeholder="Nome da Mãe" required><br>
                     </div>
                     <h1 id="camposPreenchimentoCadastroAlunoPsg">Endereço</h1><br>
-                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27" maxlength="9" placeholder="CEP">
-                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero" size="27" maxlength="4" placeholder="Número"><br>
+                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27" maxlength="9" placeholder="CEP" required>
+                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero" size="27" maxlength="4" placeholder="Número" required><br>
 
 
                     <div class="col-12">
-                        <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua" size="27" maxlength="100" placeholder="Rua">
+                        <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="rua" id="rua" size="27" maxlength="100" placeholder="Rua" required>
 
-                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro" size="27" maxlength="80" placeholder="Bairro">
+                        <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="bairro" id="bairro" size="27" maxlength="80" placeholder="Bairro" required>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="complemento" id="complemento" size="27" maxlength="100" placeholder="Complemento"><br>
                     </div>
 

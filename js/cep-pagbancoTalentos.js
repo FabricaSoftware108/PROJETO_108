@@ -25,9 +25,6 @@
                 document.querySelector('input[name=uf]').value = json.uf;
             }
         })
-        .catch(error => {
-            console.error('Erro ao buscar o CEP:', error);
-            alert('Ocorreu um erro ao buscar o CEP.');
-        });
+      
     });
 })();
