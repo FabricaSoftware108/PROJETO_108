@@ -171,10 +171,9 @@ $row = mysqli_fetch_array($result);
                                             </tbody>
                                         </table>
                                         <div class="row justify-content-center">
-                                            <a id="btnd" href="../../app/session/gerarPDF2.php?index=<?php echo $index; ?>" class="btn btn-primary">Imprimir</a>
+                                            <a id="relatorio-detalhado-bt-btn" href="../../app/session/gerarPDF2.php?index=<?php echo $index; ?>" class="btn btn-primary">Imprimir</a>
                                          
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
