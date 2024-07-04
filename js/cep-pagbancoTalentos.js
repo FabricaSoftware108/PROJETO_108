@@ -25,11 +25,6 @@
                 document.querySelector('input[name=uf]').value = json.uf;
             }
         })
-
-        // esse aqui estava dando erro no cep na pag banco de talentos apagar quando for dar PR amém.
-        // .catch(error => {
-        //     console.error('Erro ao buscar o CEP:', error);
-        //     alert('Ocorreu um erro ao buscar o CEP.');
-        // });
+      
     });
 })();
