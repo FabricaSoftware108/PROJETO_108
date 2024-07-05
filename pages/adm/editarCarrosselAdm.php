@@ -2,44 +2,29 @@
 include '../../app/db/connection.php';
 include '../../app/session/verificacao.php';
 
-// $queries = [
-//     "SELECT * FROM carroselSoftware",
-//     "SELECT * FROM carroselJogos",
-//     "SELECT * FROM carroselAudioVideo",
-//     "SELECT * FROM carroselCgi"
-// ];
+$queries = array(
+    'SELECT * FROM carroselSoftware',
+    'SELECT * FROM carroselJogos',
+    'SELECT * FROM carroselCgi',
+    'SELECT * FROM carroselAudioVideo',
+);
+$fabricas = array(
+    'Fábrica de Software',
+    'Fábrica de Jogos',
+    'Fábrica de Cgi',
+    'Fábrica de Audio e Video',
 
-// $results = [];
-// foreach ($queries as $query) {
-//     $result = mysqli_query($connection, $query);
-//     if ($result) {
-//         while ($row = mysqli_fetch_assoc($result)) {
-//             $results[] = $row;
-//         }
-//     }
-// }
-
-// $selectedTitle = '';
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $selectedTitle = $_POST['mySelect'];
-// }
+);
 
 if(isset($_GET["selectCarrossel"])){
-    $queries = array(
-        'SELECT * FROM carroselSoftware',
-        'SELECT * FROM carroselJogos',
-        'SELECT * FROM carroselCgi',
-        'SELECT * FROM carroselAudioVideo',
-    );
-
-    $result = mysqli_query($connection, $queries[(int)$_GET["selectCarrossel"]]);
-    // echo "<script>alert('".mysqli_fetch_array($result)['titulo']."')</script>";
-    
+    $_SESSION["selectCarrossel"] = $queries[(int)$_GET["selectCarrossel"]];
+    $result = mysqli_query($connection, $_SESSION["selectCarrossel"]);
+   
 }
 
 if(isset($_GET["carrosselID"])){
-    $result = mysqli_query($connection, "SELECT * FROM ".$queries[(int)$_GET["selectCarrossel"]]." WHERE id = ".$_GET['carrosselID']);
-    // echo "<script>alert('".mysqli_fetch_array($result)['titulo']."')</script>";
+    $resultCarrossel = mysqli_query($connection, $_SESSION["selectCarrossel"]." WHERE id = ".$_GET['carrosselID']);
+    $rowCarrossel = mysqli_fetch_array($resultCarrossel);
     
 }
 
@@ -148,39 +133,32 @@ if(isset($_SESSION["alertCarrossel"])){
                                 <div class="col-md-6 col-12 text-center align-items-md-center justify-content-center m-auto foto-editarCarrossel ">
                                     <div class="input-group d-block justify-content-center p-6">
                                         <div class="d-flex justify-content-center align-items-center pb-2">
-                                            <select class="form-select form-select-lg w-50" aria-label="Large select example" onchange="location.href = './editarCarrosselAdm.php?selectCarrossel='+this.value">
+                                            <select id="selectFabricas" class="form-select form-select-lg w-100" aria-label="Large select example" onchange="location.href = './editarCarrosselAdm.php?selectCarrossel='+this.value">
                                                 
                                                 <option class="form-control" value="" selected disabled>Selecione a fábrica</option>
-                                                <option value="0">Fábrica de Software</option>
-                                                <option value="1">Fábrica de Jogos</option>
-                                                <option value="2">Fábrica de Cgi</option>
-                                                <option value="3">Fábrica de Audio e Video</option>                                                
+                                                <option value="0" id="fabricaOption">Fábrica de Software</option>
+                                                <option value="1" id="fabricaOption">Fábrica de Jogos</option>
+                                                <option value="2" id="fabricaOption">Fábrica de Cgi</option>
+                                                <option value="3" id="fabricaOption">Fábrica de Audio e Video</option>                                                
                                             </select>
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center pb-2">
                                             
                                             <div class="form-floating mb-3 w-100 dropdown" >
-                                                <input type="text" class="form-control dropdown-toggle" placeholder="Fábricas" id="fabricasFilter" type="button" data-bs-toggle="dropdown" aria-expanded="false" <?php if(!isset($_GET["selectCarrossel"])){echo "disabled";} ?> oninput="alert()">
+                                                <input type="text" class="form-control dropdown-toggle" placeholder="Fábricas" id="fabricasFilter" type="button" data-bs-toggle="dropdown" aria-expanded="false" <?php if( !isset($_SESSION["selectCarrossel"]) ){echo "disabled";} ?> value="<?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?>">
                                                 <label for="floatingInput">Fábricas</label>
                 
-                                                    <ul class="dropdown-menu w-100">
+                                                    <ul class="dropdown-menu w-100 dropdownFabricas">
                                                         <?php 
                                                         if(isset($_GET["selectCarrossel"])){
 
                                                             while($row = mysqli_fetch_array($result)){?>
                             
-                                                            <li class="<?php echo strtolower($row["titulo"]) ?>"><a class="dropdown-item" href="#"><?php echo $row["titulo"]?></a></li>
+                                                            <li class="fabricaCarrossel" id="<?php echo strtolower($row["titulo"]) ?>"><a class="dropdown-item" href="./editarCarrosselAdm.php?selectCarrossel=<?php echo (int)$_GET["selectCarrossel"] ?>&carrosselID=<?php echo $row["id"] ?>"><?php echo $row["titulo"]?></a></li>
                                                         <?php } }?>
                                                     </ul>
                                              
-                                            </div>
-                                            <!-- <select class="form-select form-select-md w-50" aria-label="Large select example">
-                                                <option value="0">Fábrica de Software</option>
-                                                <option value="1">Fábrica de Jogos</option>
-                                                <option value="2">Fábrica de Cgi</option>
-                                                <option value="3">Fábrica de Audio e Video</option>                                                
-                                            </select> -->
-                                            
+                                            </div>                                            
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center pb-2">
                                             
@@ -188,7 +166,7 @@ if(isset($_SESSION["alertCarrossel"])){
                                         <div class="content-image-describe pt-2">
                                             <h2>Foto da turma</h2>
                                             <label for="inputGroupFile04" id="imgEditarCarrossel">
-                                                <img id="carrosselImg" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
+                                                <img src="<?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["img"]; }?>" id="carrosselImg" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
                                             </label>
                                             <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload" >
                                         </div>
@@ -202,15 +180,15 @@ if(isset($_SESSION["alertCarrossel"])){
                                     </div>
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Nome do projeto</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["projeto"]; }?></textarea>
                                     </div>
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Texto sobre a turma</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["descricao"]; }?></textarea>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
-                                            <button type="submit" class="btn btn-danger" id="btnInputCarrossel" onclick="changeToDelete()">Deletar</button>
+                                            <button type="submit" class="btn btn-danger deleteCarrossel" id="btnInputCarrossel">Deletar</button>
 
                                         </div>
                                         <div class="col-sm-12 col-md-6">
@@ -224,22 +202,24 @@ if(isset($_SESSION["alertCarrossel"])){
                     </div>
                 </div>
         </form>
+        <script src="../../js/carrosselFilter.js"></script>
         <script>
-
-            document.querySelector("#fabricasFilter").addEventListener("oninput", function (){
-                console.log(document.querySelector("#fabricasFilter").value);
-            })
+            document.getElementById("selectFabricas").value = "<?php echo (int)$_GET["selectCarrossel"]?>";
 
             var carroselTitle;
+            
+            document.querySelector(".deleteCarrossel").addEventListener("click", () => {
+                location.href = "../../app/session/deleteEdital?carrosselIndex=<?php echo (int)$_GET["selectCarrossel"] ?>&carrosselID=<?php echo $row["id"] ?>"
+            })
 
-            function changeToDelete(){
+            // function changeToDelete(){
                 
-                if(confirm("Deseja deletar "+carroselTitle)){
+            //     if(confirm("Deseja deletar "+carroselTitle)){
 
-                    document.querySelector('#carrosselForm').action = "../../app/session/deleteCarrossel.php?carrosselTitle="+carroselTitle;
-                }
+            //         document.querySelector('#carrosselForm').action = "../../app/session/deleteCarrossel.php?carrosselTitle="+carroselTitle;
+            //     }
                     
-            }
+            // }
             function changeToUpdate(){
                 document.querySelector('#carrosselForm').action = "../../app/session/updateCarrossel.php?carrosselTitle="+carroselTitle;
             }
@@ -256,4 +236,9 @@ if(isset($_SESSION["alertCarrossel"])){
 
 </html>
 
-<?php unset($_SESSION["alertCarrossel"]) ?>
+<?php 
+unset($_SESSION["alertCarrossel"]);
+unset($_SESSION["selectCarrossel"]);
+
+
+?>
