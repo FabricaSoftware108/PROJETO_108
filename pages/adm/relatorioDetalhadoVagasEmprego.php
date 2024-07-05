@@ -62,7 +62,7 @@ $row = mysqli_fetch_array($result);
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
-                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
+                    <li><a class="dropdown-item" href="./editarAdm.php">Lista de Administradores</a></li>
                  </ul>
                 </li>
                 <li class="nav-item">
@@ -75,7 +75,7 @@ $row = mysqli_fetch_array($result);
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="./adicionarCarrosselAdm.php">Cadastrar Carrossel</a></li>
-                    <li><a class="dropdown-item" href="./editarCarrosselAdm.php">Lista de Administradores</a></li>
+                    <li><a class="dropdown-item" href="./editarCarrosselAdm.php">Editar Carrossel </a></li>
                  </ul>
                 </li>
 
