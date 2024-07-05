@@ -33,6 +33,13 @@ if(isset($_GET["selectCarrossel"])){
     );
 
     $result = mysqli_query($connection, $queries[(int)$_GET["selectCarrossel"]]);
+    // echo "<script>alert('".mysqli_fetch_array($result)['titulo']."')</script>";
+    
+}
+
+if(isset($_GET["carrosselID"])){
+    $result = mysqli_query($connection, "SELECT * FROM ".$queries[(int)$_GET["selectCarrossel"]]." WHERE id = ".$_GET['carrosselID']);
+    // echo "<script>alert('".mysqli_fetch_array($result)['titulo']."')</script>";
     
 }
 
@@ -153,18 +160,17 @@ if(isset($_SESSION["alertCarrossel"])){
                                         <div class="d-flex justify-content-center align-items-center pb-2">
                                             
                                             <div class="form-floating mb-3 w-100 dropdown" >
-                                                <input type="text" class="form-control dropdown-toggle" id="floatingInput" placeholder="name@example.com" type="button" data-bs-toggle="dropdown" aria-expanded="false" <?php if(!isset($_GET["selectCarrossel"])){echo "disabled";} ?> >
+                                                <input type="text" class="form-control dropdown-toggle" placeholder="Fábricas" id="fabricasFilter" type="button" data-bs-toggle="dropdown" aria-expanded="false" <?php if(!isset($_GET["selectCarrossel"])){echo "disabled";} ?> oninput="alert()">
                                                 <label for="floatingInput">Fábricas</label>
                 
                                                     <ul class="dropdown-menu w-100">
-                                                        <?php if(!isset($_GET["selectCarrossel"])){
-                                                            while($row = mysqli_fetch_array($result)){
-                                                        ?>
+                                                        <?php 
+                                                        if(isset($_GET["selectCarrossel"])){
 
-                                                            <li><a class="dropdown-item" href="#"><?php echo $row["titulo"]?></a></li>
-                                                        <?php } } ?>
-                                                        <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                                            while($row = mysqli_fetch_array($result)){?>
+                            
+                                                            <li class="<?php echo strtolower($row["titulo"]) ?>"><a class="dropdown-item" href="#"><?php echo $row["titulo"]?></a></li>
+                                                        <?php } }?>
                                                     </ul>
                                              
                                             </div>
@@ -192,15 +198,15 @@ if(isset($_SESSION["alertCarrossel"])){
                                 <div class="col-md-6 col-12 text-center container-inputs-editarCarrossel">
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Nome da fábrica</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="carrosselTitle" size="10" style="resize: none;" rows="1"><?php echo isset($row['titulo']) ? " ": $row['titulo'] ; ?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="carrosselTitle" size="10" style="resize: none;" rows="1"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?></textarea>
                                     </div>
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Nome do projeto</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php echo isset($row['projeto']) ? " " : $row['projeto']; ?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="projeto" size="10" style="resize: none;" rows="1"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?></textarea>
                                     </div>
                                     <div class="container-fabrica-nome-editarCarrossel">
                                         <h3>Texto sobre a turma</h3>
-                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php echo isset($row['descricao']) ? " " : $row['descricao']; ?></textarea>
+                                        <textarea class="form-control" id="campoTextoDescricaoCarrossel" name="descricao" size="200" style="resize: none;" rows="14"><?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?></textarea>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
@@ -219,30 +225,12 @@ if(isset($_SESSION["alertCarrossel"])){
                 </div>
         </form>
         <script>
+
+            document.querySelector("#fabricasFilter").addEventListener("oninput", function (){
+                console.log(document.querySelector("#fabricasFilter").value);
+            })
+
             var carroselTitle;
-            function updateFields() {
-                var selectValue = document.getElementById('mySelect').value;
-                var selectedOption = <?php echo json_encode($results); ?>.find(function(item) {
-                    return item.titulo === selectValue;
-                });
-
-                document.getElementById('carrosselImg').src = selectedOption.img;
-                
-                document.getElementsByName('carrosselTitle')[0].value = selectedOption.titulo;
-                carroselTitle = selectedOption.titulo;
-                document.getElementsByName('projeto')[0].value = selectedOption.projeto;
-                document.getElementsByName('descricao')[0].value = selectedOption.descricao;
-
-            }
-
-            $(document).ready(function() {
-                $('#mySelect').select2({
-                    placeholder: 'Selecione a turma',
-                    allowClear: true
-                });
-
-                updateFields();
-            });
 
             function changeToDelete(){
                 
@@ -263,7 +251,7 @@ if(isset($_SESSION["alertCarrossel"])){
         </script>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
 </body>
 
 </html>
