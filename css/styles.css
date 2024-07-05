@@ -2087,6 +2087,17 @@ input.cadastro-aluno-psg {
     }
 }
 
+
+/*TESTE RODAPE BRANCO SOFTWARE*/
+
+@media (max-width: 689px) {
+    .container-fluid {
+
+        width: 890px!important;
+        height: 890px;
+    }
+}
+
 /*Fim do rodapé branco*/
 
 
