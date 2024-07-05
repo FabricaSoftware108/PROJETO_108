@@ -106,9 +106,12 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
                 criatividade e excelência, enquanto prepara uma nova geração de talentos para atender às demandas desse
                 segmento.</p>
             </div>
-            <div class="row d-lg-flex justify-content-center py-5">
-              <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais para
-                alunos</a>
+            <div class="container py-5">
+            <div class="row d-flex justify-content-center py-5">
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <a class="btn  text-light rounded-pill w-100" href="../editais/pagEdital.php">Editais para alunos</a>
+            </div>
+            </div>
             </div>
           </div>
         </div>

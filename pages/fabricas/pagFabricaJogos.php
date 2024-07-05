@@ -88,10 +88,13 @@ include "../../app/session/fabricas/conexaoCarrosselJogos.php"
             </div>
             <div class="row">
               <p class="col-12">A Fábrica de Jogos é um projeto inovador que simula uma empresa de desenvolvimento de jogos digitais, atendendo às demandas do mercado ou do Senac/MS. Seu propósito consiste em criar experiências interativas e envolventes, proporcionando aos alunos uma vivência completa no processo de concepção e entrega de jogos de alta qualidade para o cliente. Os alunos desse projeto são designados para compor equipes multidisciplinares, assumindo tarefas que abrangem desde a concepção da ideia, pesquisa e briefing até a entrega do jogo finalizado. Essa abordagem prática possibilita que os alunos experimentem todas as etapas do desenvolvimento de jogos, preparando-os amplamente para os desafios desse segmento no mercado de trabalho. Durante o desenvolvimento do projeto, os alunos têm a chance de explorar e aperfeiçoar diversas habilidades, como game design, programação, arte visual, efeitos sonoros, narrativa e gerenciamento de projetos. Eles têm acesso a tecnologias avançadas e ferramentas especializadas, além de receber orientação de profissionais experientes da indústria dos jogos.
-
-              <div class="row d-lg-flex justify-content-center py-5">
-                <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais para alunos</a>
-              </div>
+            <div class="container py-5">
+            <div class="row d-flex justify-content-center py-5">
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <a class="btn  text-light rounded-pill w-100" href="../editais/pagEdital.php">Editais para alunos</a>
+            </div>
+            </div>
+            </div>
             </div>
           </div>
 

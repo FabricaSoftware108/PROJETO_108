@@ -61,7 +61,7 @@ include '../../app/db/connection.php';
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="./cadastroAdm.php">Adicionar Administradores</a></li>
-                    <li><a class="dropdown-item" href="./editarAdm.php">Editar Administradores </a></li>
+                    <li><a class="dropdown-item" href="./editarAdm.php">Lista de Administradores</a></li>
                  </ul>
                 </li>
                 <li class="nav-item">
