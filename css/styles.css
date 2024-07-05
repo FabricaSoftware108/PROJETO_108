@@ -981,11 +981,33 @@ div.carousel-item img#carouselImg{
     text-align: justify;
 }
 
-.roxo-introdu-software .btn{
-    font-size: 27px;
+.btn-fabrica-software {
+    font-size: 18px;
     text-align: center;
-    background-color: #2B1463;
+    border-radius: 20px;
+    background-color: #43079C;
+    padding: 12px 24px;
+    display: inline-block; /* Garante que o botão seja exibido corretamente */
+    width: auto; /* Define a largura automática para ajustar ao conteúdo */
+    max-width: 100%; /* Define a largura máxima para evitar que o botão se estenda além do contêiner pai */
 }
+
+@media only screen and (max-width: 768px) {
+    .btn-fabrica-software {
+        font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 10px 20px; /* Ajusta o padding para telas menores */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .btn-fabrica-software {
+        font-size: 14px; /* Reduz ainda mais o tamanho da fonte para dispositivos com largura de 375px */
+        padding: 8px 16px; /* Ajusta o padding para dispositivos com largura de 375px */
+    }
+}
+
+
+
 
 
 .code-background-software {
@@ -2086,6 +2108,7 @@ input.cadastro-aluno-psg {
         font-size: 14px;
     }
 }
+
 
 /*Fim do rodapé branco*/
 
