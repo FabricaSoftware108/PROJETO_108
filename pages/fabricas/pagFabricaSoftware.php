@@ -104,9 +104,12 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
                 concepção até a entrega do produto final. A iniciativa contribui para o avanço da indústria de software,
                 promovendo inovação, criatividade e excelência na produção de entretenimento digital.</p>
             </div>
-            <div class="row d-lg-flex justify-content-center py-5">
-              <a class="btn text-light rounded-pill w-25 " type="button" href="../editais/pagEdital.php">Editais para
-                alunos</a>
+            <div class="container py-5">
+            <div class="row d-flex justify-content-center py-5">
+            <div class="col-12 col-md-6 col-lg-4 text-center">
+                <a class="btn btn-fabrica-software text-light rounded-pill w-100" href="../editais/pagEdital.php">Editais para alunos</a>
+            </div>
+            </div>
             </div>
           </div>
         </div>
@@ -392,7 +395,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
       <a href="../../index.html"
         class="col-md-4 d-flex order-lg-2 order-sm-1 align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
         <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png" alt=""
-          class="img-fluid">
+          class="img-rodape container-fluid">
       </a>
       <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de
         Software 108</p>
