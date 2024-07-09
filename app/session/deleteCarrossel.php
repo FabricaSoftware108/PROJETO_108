@@ -2,8 +2,8 @@
 session_start();
 include '../db/connection.php';
 
-$carrosselIndex = $_GET["carrosselTitle"];
-$carrosselId = $_GET["carrosselId"];
+$carrosselIndex = $_GET["carrosselIndex"];
+$carrosselId = $_GET["carrosselID"];
 
 $fabricas = array(
     "carroselSoftware",
@@ -12,12 +12,11 @@ $fabricas = array(
     "carroselAudioVideo",
 );
 
-echo $fabricas[$carrosselIndex]." ".$carrosselId;
-// $queryDeleteCarrossel = "DELETE FROM $table WHERE titulo = '".$carrosselTitle."';";
-
-// if(mysqli_query($connection, $queryDeleteCarrossel)){
-//     $_SESSION["alertCarrossel"] = $rowCarrossel['titulo']." foi excluido com sucesso.";
-// }else{
-//     $_SESSION["alertCarrossel"] = "Erro ao excluir o carrossel.";
-// }
-// header("location: ../../pages/adm/editarCarrosselAdm.php");
+$queryDeleteCarrossel = "DELETE FROM {$fabricas[$carrosselIndex]} WHERE id = $carrosselId";
+if(mysqli_query($connection, $queryDeleteCarrossel)){
+    $_SESSION["alertCarrossel"] = "Carrossel foi excluido com sucesso.";
+}
+else{
+    $_SESSION["alertCarrossel"] = "Erro ao excluir o carrossel.";
+}
+header("location: ../../pages/adm/editarCarrosselAdm.php");

@@ -121,7 +121,7 @@ if(isset($_SESSION["alertCarrossel"])){
         </nav>
     </header>
     <main class="main-editarCarrossel">
-        <form action="" method="post" id="carrosselForm">
+        <form action="../../app/session/updateCarrossel.php?carrosselIndex=<?php if(isset($_GET['selectCarrossel'])){echo (int)$_GET['selectCarrossel']; }?>&carrosselID=<?php if(isset($_GET['carrosselID'])){echo $rowCarrossel['id'];} ?>" method="post" id="carrosselForm" enctype="multipart/form-data">
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center p-0" id="background-EditarCarrossel">
                     <div class="container-wrapper-carrossel justify-content-center align-items-center d-flex">
@@ -145,7 +145,7 @@ if(isset($_SESSION["alertCarrossel"])){
                                         <div class="d-flex justify-content-center align-items-center pb-2">
                                             
                                             <div class="form-floating mb-3 w-100 dropdown" >
-                                                <input type="text" class="form-control dropdown-toggle" placeholder="Fábricas" id="fabricasFilter" type="button" data-bs-toggle="dropdown" aria-expanded="false" <?php if( !isset($_SESSION["selectCarrossel"]) ){echo "disabled";} ?> value="<?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?>">
+                                                <input type="text" class="form-control dropdown-toggle" placeholder="Fábricas" id="fabricasFilter" type="button" data-bs-toggle="dropdown" aria-expanded="false" autocomplete="FALSE" <?php if( !isset($_SESSION["selectCarrossel"]) ){echo "disabled";} ?> value="<?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["titulo"]; }?>">
                                                 <label for="floatingInput">Fábricas</label>
                 
                                                     <ul class="dropdown-menu w-100 dropdownFabricas">
@@ -166,9 +166,9 @@ if(isset($_SESSION["alertCarrossel"])){
                                         <div class="content-image-describe pt-2">
                                             <h2>Foto da turma</h2>
                                             <label for="inputGroupFile04" id="imgEditarCarrossel">
-                                                <img src="<?php if(isset($_GET['carrosselID'])){ echo $rowCarrossel["img"]; }?>" id="carrosselImg" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
+                                                <img <?php if(isset($_GET['carrosselID'])){ echo "src='".$rowCarrossel["img"]."'"; }?>  id="carrosselImg" style="width: 400px; height: 400px; object-fit: cover;" class="img-fluid">
                                             </label>
-                                            <input type="file" class="form-control" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload" >
+                                            <input type="file" class="form-control" name="uploadCarrosselImage" style="display: none;" id="inputGroupFile04" aria-describedby="inputGroupFileEditaron04" aria-label="Upload" autocomplete="FALSE" >
                                         </div>
                                     </div>
                                     
@@ -188,11 +188,11 @@ if(isset($_SESSION["alertCarrossel"])){
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12 col-md-6">
-                                            <button type="submit" class="btn btn-danger deleteCarrossel" id="btnInputCarrossel">Deletar</button>
+                                            <a type="button" class="btn btn-danger deleteCarrossel <?php if(!isset($_GET['selectCarrossel']) || !isset($_GET['carrosselID'])){ echo "disabled"; }?>" id="btnInputCarrossel" href="" onclick="deleteEditalConfirm()" >Deletar</a>
 
                                         </div>
                                         <div class="col-sm-12 col-md-6">
-                                            <button type="submit" class="btn btn-primary" id="btnInputCarrossel" onclick="document.querySelector('#carrosselForm').action = '../../app/session/updateCarrossel.php'">Salvar</button>
+                                            <button type="submit" class="btn btn-primary <?php if(!isset($_GET['selectCarrossel']) || !isset($_GET['carrosselID'])){ echo "disabled"; }?>" id="btnInputCarrossel" onclick="updateCarrossel()">Salvar</button>
 
                                         </div>
                                     </div>
@@ -204,28 +204,21 @@ if(isset($_SESSION["alertCarrossel"])){
         </form>
         <script src="../../js/carrosselFilter.js"></script>
         <script>
-            document.getElementById("selectFabricas").value = "<?php echo (int)$_GET["selectCarrossel"]?>";
 
-            var carroselTitle;
-            
-            document.querySelector(".deleteCarrossel").addEventListener("click", () => {
-                location.href = "../../app/session/deleteEdital?carrosselIndex=<?php echo (int)$_GET["selectCarrossel"] ?>&carrosselID=<?php echo $row["id"] ?>"
-            })
-
-            // function changeToDelete(){
-                
-            //     if(confirm("Deseja deletar "+carroselTitle)){
-
-            //         document.querySelector('#carrosselForm').action = "../../app/session/deleteCarrossel.php?carrosselTitle="+carroselTitle;
-            //     }
-                    
+            // function changeImg(img){
+            //     document.querySelector("#carrosselImg").src = img.value
             // }
-            function changeToUpdate(){
-                document.querySelector('#carrosselForm').action = "../../app/session/updateCarrossel.php?carrosselTitle="+carroselTitle;
-            }
+            document.getElementById("selectFabricas").value = "<?php echo (int)$_GET["selectCarrossel"]?>";
+        
+            // function updateCarrossel(){
+            //     document.querySelector('#carrosselForm').action = "../../app/session/updateCarrossel.php?carrosselIndex=<?php if(isset($_GET['carrosselID'])){echo (int)$_GET['selectCarrossel']; }?>&carrosselID=<?php if(isset($_GET['carrosselID'])){echo $rowCarrossel['id'];} ?>";
+            // }
 
-            function selectCarrossel(){
-                alert("efqerg");
+            function deleteEditalConfirm(){
+                if(confirm("Deseja deletetar esse edital?")){
+
+                    document.querySelector(".deleteCarrossel").href = '../../app/session/deleteCarrossel.php?carrosselIndex=<?php if(isset($_GET['carrosselID'])){echo (int)$_GET['selectCarrossel']; }?>&carrosselID=<?php if(isset($_GET['carrosselID'])){echo $rowCarrossel['id'];} ?>'
+                }
                 // location.href = './editarCarrosselAdm.php?selectCarrossel='+select.value
             }
         </script>
@@ -237,8 +230,6 @@ if(isset($_SESSION["alertCarrossel"])){
 </html>
 
 <?php 
-unset($_SESSION["alertCarrossel"]);
-unset($_SESSION["selectCarrossel"]);
-
-
+    unset($_SESSION["alertCarrossel"]);
+    unset($_SESSION["selectCarrossel"]);
 ?>
