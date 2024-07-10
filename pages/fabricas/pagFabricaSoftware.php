@@ -107,7 +107,7 @@ include "../../app/session/fabricas/conexaoCarrosselSoftware.php"
             <div class="container py-5">
             <div class="row d-flex justify-content-center py-5">
             <div class="col-12 col-md-6 col-lg-4 text-center">
-                <a class="btn btn-fabrica-software text-light rounded-pill w-100" href="../editais/pagEdital.php">Editais para alunos</a>
+                <a class="btn btn-fabrica-software text-light rounded-pill w-100" href="../editais/pagEdital.php" style="background-color: #43079C;">Editais para alunos</a>
             </div>
             </div>
             </div>
