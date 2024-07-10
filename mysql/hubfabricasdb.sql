@@ -20,20 +20,15 @@ create table if not exists editais(
     arquivo varchar(255) not null
 );
 
-
 create table if not exists demandas(
 	id int auto_increment not null primary key,
-	cnpj varchar(255) not null,
-    nomeEmpresa varchar(255) not null,
-    emailEmpresa varchar(255) not null,
-    estadoEmpresa varchar(255) not null,
-    telefoneEmpresa varchar(255) not null,
-    cidadeEmpresa varchar(255) not null,
-    nomeTitular varchar(255) not null,
-    emailTitular varchar(255) not null,
-    cpf varchar(255) not null,
-    telefoneTitular varchar(255) not null,
-    arquivo varchar(255) not null
+	nome varchar(255) not null,
+    email varchar(255) not null,
+	cpfcnpj varchar(255) not null,
+    telefone varchar(255) not null,
+    uf varchar(255) not null,
+    cidade varchar(255) not null,
+    descricao varchar(10000) not null
 );
 
 create table if not exists vagasEmprego(
@@ -50,7 +45,7 @@ create table if not exists vagasEmprego(
 create table if not exists bancosTalentos(
 	cpf varchar(255) not null primary key,
     nome varchar(255) not null,
-    sobrenome varchar(255) not null,
+    cep varchar(255) not null,
     escolaridade varchar(255) not null,
     dataNascimento date not null,
     email varchar(255) not null,
@@ -68,7 +63,7 @@ create table if not exists alunosPsg(
 	id int auto_increment not null primary key,
 	cpf varchar(255) not null,
     nome varchar(255) not null,
-    rg varchar(255) not null,
+    dataNascimento date not null,
     telefone varchar(255) not null,
     email varchar(255) not null,
     nomeMae varchar(255) not null,
@@ -86,7 +81,7 @@ create table if not exists carroselSoftware(
 	id int auto_increment not null primary key,
 	titulo varchar(255) not null,
     projeto varchar(255) not null,
-    descricao varchar(1400) not null,
+    descricao varchar(2000) not null,
     img varchar(255) not null
 );
 
