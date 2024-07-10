@@ -1,7 +1,11 @@
 <?php
 // session_start();
 include '../db/connection.php';
-include 'verificacao.php';
+include './verificacao.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
 $senha = $_POST['senha'];
 $nome = $_POST['nome'];
@@ -41,7 +45,7 @@ if ($result) {
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'gleisonmorais06@gmail.com';                //SMTP username
+        $mail->Username   = 'pedroca2787@gmail.com';                //SMTP username
         $mail->Password   = 'kuobddyjmvazoito';                     //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
@@ -49,7 +53,7 @@ if ($result) {
         $mail->CharSet = "utf-8";
 
         //Recipients
-        $mail->setFrom('gleisonmorais06@gmail.com', 'Senac Contato');
+        $mail->setFrom('pedroca2787@gmail.com', 'Senac Contato');
         $mail->addAddress($email, $nome);                           //Add a recipient
 
         //Content
