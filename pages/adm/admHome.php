@@ -5,7 +5,7 @@ include '../../app/db/connection.php';
 $queryVagas = "SELECT * FROM vagasEmprego;";
 $queryDemandas = "SELECT * FROM demandas;";
 $queryBT = "SELECT * FROM bancosTalentos;";
-$queryGraphic = "SELECT LEFT(dataFim, 4) AS lastNums, quantidadeAlunos FROM editais ORDER BY dataFim";
+$queryGraphic = "SELECT LEFT(dataFim, 4) AS lastNums, alunosCadastrados FROM editais ORDER BY dataFim";
 
 
 
@@ -167,10 +167,10 @@ $retornoBT = mysqli_num_rows($dadosBT);
     var dic = {}
     <?php while ($row = mysqli_fetch_array($graphicData)){ ?>
       if(!Object.keys(dic).includes("<?php echo $row["lastNums"] ?>")){
-        dic[<?php echo $row["lastNums"] ?>] = <?php echo $row["quantidadeAlunos"] ?>     
+        dic[<?php echo $row["lastNums"] ?>] = <?php echo $row["alunosCadastrados"] ?>     
       }
       else{
-        dic[<?php echo $row["lastNums"] ?>] = dic[<?php echo $row["lastNums"] ?>] + <?php echo $row["quantidadeAlunos"] ?>;
+        dic[<?php echo $row["lastNums"] ?>] = dic[<?php echo $row["lastNums"] ?>] + <?php echo $row["alunosCadastrados"] ?>;
       }
     <?php }?>
 
