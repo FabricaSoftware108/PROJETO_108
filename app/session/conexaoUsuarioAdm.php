@@ -12,7 +12,7 @@ $result = mysqli_query($connection, $query);
 
 
 if ($result){
-    echo "<script>alert('USUÁRIO EDITADO COM SUCESSO!');</script>";
+    echo "<script>alert('Usuário editado com sucesso!');</script>";
      echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdm.php'; }, 5);</script>";
      exit();
     }

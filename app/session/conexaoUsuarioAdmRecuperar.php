@@ -8,11 +8,11 @@ $confirmPassword = $_POST['confirmNewPassword'];
 
 if (!empty($senhaAntiga) and !empty($senhaNova) and !empty($confirmPassword)) {
     if ($senhaNova != $confirmPassword) {
-        echo "<script>alert('SENHAS NÃO SÃO IDÊNTICAS');</script>";
+        echo "<script>alert('Senhas não são idênticas');</script>";
         echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
         exit();
     } elseif ($senhaNova == $senhaAntiga) {
-        echo "<script>alert('SENHA NOVA DEVE SER DIFERENTE DA ANTIGA');</script>";
+        echo "<script>alert('Senha nova deve ser diferente da antiga');</script>";
         echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
         exit();
     }
@@ -27,21 +27,21 @@ if (!empty($senhaAntiga) and !empty($senhaNova) and !empty($confirmPassword)) {
         $result = mysqli_query($connection, $query);
         
         if ($result) {
-            echo "<script>alert('SENHA ALTERADA COM SUCESSO!');</script>";
+            echo "<script>alert('Senha alterada com sucesso!');</script>";
             echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/loginAdm.php'; }, 5);</script>";
             exit();
         } else {
-            echo "<script>alert('ERRO AO ALTERAR A SENHA!');</script>";
+            echo "<script>alert('Erro ao alterar a senha!');</script>";
             echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
             exit();
         }
     } else {
-        echo "<script>alert('SENHA ANTIGA INVÁLIDA!');</script>";
+        echo "<script>alert('Senha antiga inválida!');</script>";
         echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
         exit();
     }
 } else {
-    echo "<script>alert('PREENCHA TODOS OS CAMPOS!');</script>";
+    echo "<script>alert('Preencha todos os campos!');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/usuarioAdmRecuperar.php'; }, 5);</script>";
     exit();
 }

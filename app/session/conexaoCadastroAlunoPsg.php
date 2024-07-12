@@ -21,7 +21,7 @@ $complementoAluno = ($_POST['complemento']);
     
 // dar um window alert para orientar o aluno
 if (empty($nomeAluno) || empty($cpfAluno) || empty($dataNascimento) || empty($telefoneAluno) || empty($emailAluno) || empty($nomeMae) || empty($ruaAluno) || empty($bairroAluno) || empty($numeroEnderecoAluno) || empty($cepAluno)) {
-    echo "<script>alert('TODOS ESPAÇOS DEVEM ESTAR PREENCHIDOS');</script>";
+    echo "<script>alert('Todos espaços devem estar preenchidos!');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagEdital.php'; }, 5);</script>";
     exit();
 }
@@ -33,11 +33,11 @@ $result = mysqli_query($connection, $query);
 
 
 if ($result) {
-    echo "<script>alert('CADASTRO FEITO COM SUCESSO');</script>";
+    echo "<script>alert('Cadastro feito com sucesso!');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagEdital.php'; }, 5);</script>";
     exit();
 } else {
-    echo "<script>alert('ERRO AO CADASTRAR');</script>";
+    echo "<script>alert('Erro ao cadastrar!');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagEdital.php'; }, 5);</script>";
     exit();
 }
