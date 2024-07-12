@@ -19,7 +19,7 @@ if(isset($_POST["submit"])) {
 }
 
 if (file_exists($target_file)) {
-    echo "<script>alert('Desculpe, arquivo já existente.');</script>";
+    echo "<script>alert('Desculpe, arquivo já existente!');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
     $uploadOk = 0;
 }
@@ -37,7 +37,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 }
 
 if ($uploadOk == 0) {
-    echo "<script>alert('Desculpe, seu arquivo não pode ser submetido.');</script>";
+    echo "<script>alert('Desculpe, seu arquivo não pode ser submetido!');</script>";
     echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
   
   } else {
@@ -65,7 +65,7 @@ if ($uploadOk == 0) {
           echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
       };
     } else {
-      echo "<script>alert('Desculpe, ocorreu um erro ao submeter o arquivo.');</script>";
+      echo "<script>alert('Desculpe, ocorreu um erro ao submeter o arquivo!');</script>";
       echo "<script>setTimeout(function(){ window.location.href = '../../pages/adm/adicionarCarrosselAdm.php'; }, 5);</script>";
     }
   }

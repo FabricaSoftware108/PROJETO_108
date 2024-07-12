@@ -21,10 +21,10 @@ if(basename($_FILES["editalPDF"]["name"]) == null){
   $queryUpdate = "UPDATE editais SET nome = '$name', dataInicio = '$editalInicialDate' , dataFim='$editalFinalDate', quantidadeAlunos = '$editalLimit' WHERE codigo = '$oldCode'";
   $resultUpdate = mysqli_query($connection, $queryUpdate);
   if(mysqli_num_rows($result) > 0){
-    $_SESSION['editalAlert'] = "Edital $oldCode foi atualizado.";
+    $_SESSION['editalAlert'] = "Edital $oldCode foi atualizado!";
     header('location: ../../pages/adm/cadastroAdmEdital.php');
   }else{
-    $_SESSION['editalAlert'] = "Erro ao salvar as alterações.";
+    $_SESSION['editalAlert'] = "Erro ao salvar as alterações!";
     header('location: ../../pages/adm/cadastroAdmEdital.php');
   }
 }else{
@@ -47,7 +47,7 @@ if(basename($_FILES["editalPDF"]["name"]) == null){
 
   // Verifica se o arquivo já existe, consulta o caminho e o nome
   if (file_exists($target_file)) {
-    $_SESSION['editalAlert'] = "Sorry, file already exists.";
+    $_SESSION['editalAlert'] = "Desculpe, O arquivo já existe!";
     $uploadOk = 0;
     header('location: ../../pages/adm/cadastroAdmEdital.php');
     }
@@ -55,7 +55,7 @@ if(basename($_FILES["editalPDF"]["name"]) == null){
 
   // Verifica o tamanho do arquivo
   if ($_FILES["editalPDF"]["size"] > 1500000) {
-    $_SESSION['editalAlert'] = "Seu arquivo é muito grande.";
+    $_SESSION['editalAlert'] = "Seu arquivo é muito grande!";
     $uploadOk = 0;
     header('location: ../../pages/adm/cadastroAdmEdital.php');
     }
@@ -63,7 +63,7 @@ if(basename($_FILES["editalPDF"]["name"]) == null){
 
   // Permitindo formatos específicos
   if($imageFileType != "pdf") {
-    $_SESSION['editalAlert'] = "Desculpe, são permitidos apenas arquivos PDF.";
+    $_SESSION['editalAlert'] = "Desculpe, são permitidos apenas arquivos PDF!";
     $uploadOk = 0;
     header('location: ../../pages/adm/cadastroAdmEdital.php');
   }
@@ -81,14 +81,14 @@ if(basename($_FILES["editalPDF"]["name"]) == null){
         $queryUpdate = "UPDATE editais SET nome = '$name', dataInicio = '$editalInicialDate' , dataFim='$editalFinalDate', quantidadeAlunos = '$editalLimit', arquivo = '$target_file' WHERE codigo = '$oldCode'";
         $resultUpdate = mysqli_query($connection, $queryUpdate);
         if(mysqli_num_rows($result) > 0){
-          $_SESSION['editalAlert'] = "Edital $oldCode foi atualizado.";
+          $_SESSION['editalAlert'] = "Edital $oldCode foi atualizado!";
         }else{
-          $_SESSION['editalAlert'] = "Erro ao salvar as alterações.";
+          $_SESSION['editalAlert'] = "Erro ao salvar as alterações!";
         }
         header('location: ../../pages/adm/cadastroAdmEdital.php');
 
       } else {
-        $_SESSION['editalAlert'] = "Desculpe, ocorreu um erro ao submeter o arquivo.";
+        $_SESSION['editalAlert'] = "Desculpe, ocorreu um erro ao submeter o arquivo!";
         header('location: ../../pages/adm/cadastroAdmEdital.php');
       }
   }

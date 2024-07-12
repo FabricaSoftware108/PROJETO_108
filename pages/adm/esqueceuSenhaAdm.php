@@ -36,7 +36,7 @@ include "../../app/db/connection.php";
                         <?php
                             
                             if ($_SESSION['ForgotError']) {
-                                echo '<div class="alert alert-danger" role="alert">E-mail digitado errado ou não cadastrado</div>';
+                                echo '<div class="alert alert-danger" role="alert">E-mail digitado errado ou não cadastrado.</div>';
                             }
                             ?>
                         <div class="input-group mb-3 col-12">

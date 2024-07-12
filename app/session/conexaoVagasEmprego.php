@@ -25,10 +25,10 @@ if (
     $result = mysqli_query($connection, $query);
 
     if (!$result) {
-        echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro'); window.location.href='../../pages/editais/cadastroVagasEmprego.html    ';</script>";
+        echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro.'); window.location.href='../../pages/editais/cadastroVagasEmprego.html    ';</script>";
     } else {
-        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/cadastroVagasEmprego.html';</script>";
+        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso!'); window.location.href='../../pages/editais/cadastroVagasEmprego.html';</script>";
     }
 } else {
-    echo "<script language='javascript'>window.alert('Por favor, preencha todos os campos do formulário'); window.location.href='../../pages/editais/cadastroVagasEmprego.html';</script>";
+    echo "<script language='javascript'>window.alert('Por favor, preencha todos os campos do formulário.'); window.location.href='../../pages/editais/cadastroVagasEmprego.html';</script>";
 }
