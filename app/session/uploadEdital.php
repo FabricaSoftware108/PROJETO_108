@@ -31,7 +31,7 @@ if(isset($_POST["submit"])) {
 
 // Verifica se o arquivo já existe, consulta o caminho e o nome
 if (file_exists($target_file)) {
-  $_SESSION['editalAlert'] = "Sorry, file already exists.";
+  $_SESSION['editalAlert'] = "Desculpe, arquivo já existente.";
   $uploadOk = 0;
   header('location: ../../pages/adm/cadastroAdmEdital.php');
   }

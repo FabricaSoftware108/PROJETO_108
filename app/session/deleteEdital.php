@@ -11,5 +11,5 @@ if($_GET["editalCode"] != "undefined"){
 }
 else{
 
-    echo "<script>location.href = '../../pages/adm/cadastroAdmEdital.php'; alert('Edital não pode ser apagado')</script>";
+    echo "<script>location.href = '../../pages/adm/cadastroAdmEdital.php'; alert('Edital não pode ser apagado.')</script>";
 }
