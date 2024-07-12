@@ -29,7 +29,7 @@
         function validarPost() {
             if (grecaptcha.getResponse() != "") return true;
 
-            alert('Selecione a caixa de "Não sou um Robô"')
+            alert('Selecione a caixa de "Não sou um Robô"!')
 
             return false;
         }
@@ -132,15 +132,12 @@
                                     id="dataNascimento" placeholder="Data de Nascimento" type='text'
                                     onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'"
                                     max="9999-12-31" required>
-
-                                <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade"
-                                    id="escolaridade" required>
-                                    <option value="escolaridade">Escolaridade</option>
+                                <select class="cadastrovagas col-md-5 col-10 col-sm-12" name="escolaridade" id="escolaridade" required>
+                                    <option value="" disabled selected hidden>Escolaridade</option>
                                     <option value="medio">Ensino Médio</option>
-                                    <option value="superior">Superior</option>
-                                    <option value="graduacao">Graduação</option>
+                                    <option value="tecnico">Ensino Técnico</option>
+                                    <option value="graduacao">Ensino Superior</option>
                                 </select>
-
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="tel" name="telefone"
                                     id="telefone" size="27" maxlength="15" placeholder="Telefone" required>
                                 <input class="cadastrovagas col-md-5 col-10 col-sm-12" type="text" name="email"
