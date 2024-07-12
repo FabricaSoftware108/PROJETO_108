@@ -31,7 +31,7 @@ include '../../app/session/verificacaoPsg.php';
     <script>
         function validarPost() {
             if (grecaptcha.getResponse() != '') return true;
-            alert('Selecione o checkbox de não sou um robô!!')
+            alert('Selecione o checkbox de não sou um robô!')
             return false;
         }
     </script>

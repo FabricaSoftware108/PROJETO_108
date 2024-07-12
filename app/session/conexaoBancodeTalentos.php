@@ -9,7 +9,7 @@ if (
     empty($_POST["linkedin"])
 ) {
 
-    echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
+    echo "<script language='javascript'>window.alert('Não foi possível efetuar o cadastro!'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
 } else {
 
     $nome = $_POST["nome"];
@@ -32,7 +32,7 @@ if (
     $checkResult = mysqli_query($connection, $checkQuery);
 
     if (mysqli_num_rows($checkResult) > 0) {
-        echo "<script>alert('Este CPF já está cadastrado.');</script>";
+        echo "<script>alert('Este CPF já está cadastrado!');</script>";
         echo "<script>setTimeout(function(){ window.location.href = '../../pages/editais/pagBancoTalentos.html'; }, 1000);</script>";
         exit();
     } else {
@@ -41,7 +41,7 @@ if (
 
         $result = mysqli_query($connection, $query);
 
-        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
+        echo "<script language='javascript'>window.alert('Cadastro efetuado com sucesso!'); window.location.href='../../pages/editais/pagBancoTalentos.html';</script>";
     }
 }
 exit();
