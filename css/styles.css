@@ -4152,7 +4152,6 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
 
 
 
-
  .container-ajuda {
             display: flex;
             justify-content: flex-end;
@@ -4170,20 +4169,15 @@ body.body-relatorio-edital-do-aluno .relatorio_edital_aluno-button{
             font-size: 18px;
             text-align: center;
             color: white;
-            border-color: #000 ;
-        
+            border-radius: 45px;
+    
         }
-
-
         @media (max-width:638px) {
             .container-ajuda{
                 height: 17vh;
             }.btn-ajuda{
                 width: 90px;
-                height: 60px;
-            
-                
-
+                height: 60px;  
             }
             
         }
