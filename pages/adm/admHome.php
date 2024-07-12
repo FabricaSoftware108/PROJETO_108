@@ -140,6 +140,7 @@ $retornoBT = mysqli_num_rows($dadosBT);
         </div>
       </div>
     </div>
+   
 
     <!--Imagem dos gráficos-->
     <div class="container w-100" id="container2AdmHomeImagem">
@@ -151,8 +152,14 @@ $retornoBT = mysqli_num_rows($dadosBT);
         </div>
       </div>
     </div>
+    <div class="container-ajuda">
+      <div class="btn-ajuda">
+        <a href="https://docs.google.com/document/d/1x-JljLxBIw6CcVIUh1rnAsO8asYhIF-F/edit#heading=h.sg3ba1le8od2" target="_blank" class="btn btn-warning btn-ajuda" type="button" >Ajuda</a>
+      </div>
+    </div>
 
   </main>
+
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
