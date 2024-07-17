@@ -110,7 +110,7 @@ include '../../app/session/verificacaoPsg.php';
                     <input class="input-completo-cadastro-aluno-psg col-xs-6 col-lg-10" type="text" name="nome" id="nome" size="27" maxlength="100" placeholder="Nome Completo" required>
                     <div class="col-xs-12 col-sm-auto col-md-auto col-lg-12">
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cpf" id="cpf" size="27" maxlength="14" placeholder="CPF" onblur='validarcpf()' required>
-                        <input class="cadastro-aluno-psg col-md-5 col-10 col-sm-12" name="data_nascimento_psg" id="data_nascimento_psg" placeholder="Data de Nascimento" type='text' onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'" max="9999-12-31" required><br>
+                        <input class="cadastro-aluno-psg col-md-5 col-11 col-sm-12" name="data_nascimento_psg" id="data_nascimento_psg" placeholder="Data de Nascimento" type='text' onfocus="this.type = 'date'" onblur="if(!this.value) this.type='text'" max="9999-12-31" required><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="telefone" id="telefone" size="27" maxlength="15" placeholder="Telefone" required>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="email" name="email" id="email" size="27" maxlength="80" placeholder="E-mail" required><br>
                         <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="nomePai" id="nomePai" size="27" maxlength="80" placeholder="Nome do Pai">
@@ -118,7 +118,7 @@ include '../../app/session/verificacaoPsg.php';
                     </div>
                     <h1 id="camposPreenchimentoCadastroAlunoPsg">Endereço</h1><br>
                     <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="text" name="cep" id="cep" size="27" maxlength="9" placeholder="CEP" required>
-                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5" type="number" name="numero" id="numero" size="27" maxlength="4" placeholder="Número" required><br>
+                    <input class="cadastro-aluno-psg col-xs-6 col-lg-5 col-11" type="number" name="numero" id="numero" size="27" maxlength="4" placeholder="Número" required><br>
 
 
                     <div class="col-12">

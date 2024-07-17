@@ -1463,6 +1463,10 @@ main.main-demanda{
 }
 
 @media (max-width: 600px) {
+    .text-area-demanda {
+        margin: 10px 30px !important;
+    
+    }
     .button {
         width: 100%;
     }
@@ -2311,6 +2315,10 @@ main.cadastro-de-vagas {
 }
 
 @media (max-width: 600px) {
+    .text-area-vagas {
+        margin: 10px 30px !important;
+    
+    }
     .button {
         width: 100%;
     }
