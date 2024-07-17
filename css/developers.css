@@ -3,7 +3,8 @@
 }
 
 .bodyDevelopers {
-    background-color: #CFD8DC;
+    background-color: #e9f5fa;
+    background-color: #16172c;
     overflow-x: hidden;
 }
 
@@ -15,6 +16,7 @@
 .developersText h1{
     z-index: 999;
     font-size: 5vh;
+    color: #ffffff;
 }
 
 .backToHome {
@@ -24,11 +26,13 @@
     z-index: 999;
 }
 
+
+
 .backToHome a{
     text-decoration: none;
     color: #ffffff;
     font-size: 23px;
-    background-color: #344E44;
+    background-color: #069e6e;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +49,35 @@
     padding-left: 2.5vh;
     padding-right: 2.5vh;
 }
+
+.changeColor {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    z-index: 999;
+}
+
+.changeColor button{
+    color: #000000;
+    font-size: 23px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2vh; */
+    border-radius: 6vh;
+    transition: all 0.2s ease;
+    border: none;
+    width: 8vh;
+    height: 8vh;
+}
+
+.changeColor button:hover{
+    width: 10vh;
+    height: 10vh;
+}
+
+
 
 .mainDevelopers .container-fluid .row:nth-child(2) {
     height: 50vh;
@@ -103,7 +136,7 @@
     z-index: -1;
     width: 30vh;
     height: 30vh;
-    background-color: #344E44;
+    background-color: #069e6e;
     position: absolute;
     right: 15vh;
     bottom: 15vh;
@@ -116,6 +149,7 @@
     width: 28vh;
     height: 28vh;
     background-color: #CFD8DC;
+    background-color: #16172c;
     position: absolute;
     border-radius: 50%;
 }
@@ -123,7 +157,7 @@
     z-index: 0;
     width: 25vh;
     height: 25vh;
-    background-color: #CC3E52;
+    background-color: #00bab4;
     position: absolute;
     right: 8vh;
     bottom: 8vh;
@@ -137,10 +171,10 @@
     z-index: 0;
     width: 30vh;
     height: 30vh;
-    background-color: #344E44;
+    background-color: #069e6e;
     position: absolute;
     left: -5vh;
-    bottom: 6.5vh;
+    bottom: -10vh;
     transform: rotate(45deg);
     transition: all 0.5s ease;
 }
@@ -154,7 +188,7 @@
     position: absolute;
     width: 22vh; 
     height: 22vh; 
-    background-color: #CC3E52;
+    background-color: #00bab4;
     clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
     top: 3vh;
     left: 12vh;
@@ -172,7 +206,7 @@
     position: absolute;
     width: 25vh; 
     height: 25vh; 
-    background-color: #344E44;
+    background-color: #069e6e;
     clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
     top: 1vh;
     left: 10vh;
@@ -188,6 +222,7 @@
     width: 22.5vh; 
     height: 22.5vh; 
     background-color: #CFD8DC;
+    background-color: #16172c;
     clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
     top: 1.7vh;
     /*left: 11vh; */
@@ -200,7 +235,7 @@
     width: 65vh;
     height: 65vh;
     border-radius: 50%;
-    border: 0.7vh solid #344E44;
+    border: 0.7vh solid #069e6e;
     top: -24vh;
     right: -12vh;
     display: flex;
@@ -215,8 +250,8 @@
     width: 65vh;
     height: 65vh;
     border-radius: 50%;
-    /* background-color: #344E44; */
-    border: 0.7vh solid #344E44;
+    /* background-color: #069e6e; */
+    border: 0.7vh solid #069e6e;
     top: -22vh;
     right: -16vh;
     display: flex;
@@ -230,7 +265,7 @@
     width: 35vh;
     height: 35vh;
     border-radius: 50%;
-    background-color: #CC3E52;
+    background-color: #00bab4;
     top: -10vh;
     right: -10vh;
     display: flex;
