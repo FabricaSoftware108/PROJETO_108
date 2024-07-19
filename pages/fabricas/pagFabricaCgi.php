@@ -400,8 +400,8 @@ include "../../app/session/fabricas/conexaoCarrosselCGI.php"
         <img src="../../Imagens/logo_senac-hub_sistema-comercio_RGB_vertical_negativo-branco.png" alt=""
           class="img-rodape container-fluid">
       </a>
-      <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText">© 2024 Fábrica de
-        Software 108</p>
+      <p class="col-md-4 mb-0 text-light justify-content-center order-lg-1 order-sm-3 copText"  style="cursor: pointer;" onclick="location.href='../developers/developers.html'"><u>© 2024 Fábrica de
+        Software 108</u></p>
 
       <ul class="nav justify-content-center col col-md-4 order-sm-3 order-lg-3">
         <li class="nav-item"><a href="https://www.instagram.com/senachubacademy/" target="_blank"

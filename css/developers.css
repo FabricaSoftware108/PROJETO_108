@@ -1,0 +1,353 @@
+.devLink {
+    border-bottom: 0.2vh solid black;
+}
+
+.bodyDevelopers {
+    background-color: #e9f5fa;
+    background-color: #16172c;
+    overflow-x: hidden;
+}
+
+.mainDevelopers {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.developersText h1{
+    z-index: 999;
+    font-size: 5vh;
+    color: #ffffff;
+}
+
+.backToHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+
+.backToHome a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 23px;
+    background-color: #069e6e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vh;
+    margin: 1vh;
+    padding: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    border-radius: 6vh;
+    transition: all 0.2s ease;
+}
+
+.backToHome a:hover {
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.changeColor {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    z-index: 999;
+}
+
+.changeColor button{
+    color: #000000;
+    font-size: 23px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2vh; */
+    border-radius: 6vh;
+    transition: all 0.2s ease;
+    border: none;
+    width: 8vh;
+    height: 8vh;
+}
+
+.changeColor button:hover{
+    width: 10vh;
+    height: 10vh;
+}
+
+
+
+.mainDevelopers .container-fluid .row:nth-child(2) {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devCards {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.devCard {
+    z-index: 9999;
+    width: 40vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+ .devImg img{
+    width: 15vh;
+    height: 15vh;
+    object-fit: cover;
+    border-radius: 50vh;
+}
+
+.devInfos h5{
+    font-size: 3vh;
+}
+
+.devInfos p{
+    font-size: 2vh;
+}
+
+.devSocial a{
+    color: #000;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+.devSocialBg {
+    width: 30vh;
+    height: 6vh;
+    margin: none;
+}
+
+
+.circleOutline1 {
+    z-index: -1;
+    width: 30vh;
+    height: 30vh;
+    background-color: #069e6e;
+    position: absolute;
+    right: 15vh;
+    bottom: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.circleOutline1 .circle {
+    width: 28vh;
+    height: 28vh;
+    background-color: #CFD8DC;
+    background-color: #16172c;
+    position: absolute;
+    border-radius: 50%;
+}
+.square {
+    z-index: 0;
+    width: 25vh;
+    height: 25vh;
+    background-color: #00bab4;
+    position: absolute;
+    right: 8vh;
+    bottom: 8vh;
+    transform: rotate(80deg);
+    transition: all 0.7s ease;
+}
+.square:hover, .square:focus{
+    transform: rotate(90deg);
+}
+.squareLeft {
+    z-index: 0;
+    width: 30vh;
+    height: 30vh;
+    background-color: #069e6e;
+    position: absolute;
+    left: -5vh;
+    bottom: -10vh;
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+.squareLeft:hover, .square:focus {
+    left: -3vh;
+    bottom: 7vh;
+}
+
+.triangle1 {
+    z-index: 0;
+    position: absolute;
+    width: 22vh; 
+    height: 22vh; 
+    background-color: #00bab4;
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    top: 3vh;
+    left: 12vh;
+    transform: rotate(25deg);
+    transition: all 0.7s ease;
+}
+
+.triangle1:hover, .triangle1:focus {
+    transform: rotate(30deg);
+}
+
+
+.triangleOutline2 {
+    z-index: -2;
+    position: absolute;
+    width: 25vh; 
+    height: 25vh; 
+    background-color: #069e6e;
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    top: 1vh;
+    left: 10vh;
+    transform: rotate(15deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.triangle2 {
+    position: absolute;
+    width: 22.5vh; 
+    height: 22.5vh; 
+    background-color: #CFD8DC;
+    background-color: #16172c;
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    top: 1.7vh;
+    /*left: 11vh; */
+
+}
+
+.circleOutlineTop1 {
+    z-index: -2;
+    position: absolute;
+    width: 65vh;
+    height: 65vh;
+    border-radius: 50%;
+    border: 0.7vh solid #069e6e;
+    top: -24vh;
+    right: -12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circleOutlineTop2 {
+    z-index: -2;
+    position: absolute;
+    width: 65vh;
+    height: 65vh;
+    border-radius: 50%;
+    /* background-color: #069e6e; */
+    border: 0.7vh solid #069e6e;
+    top: -22vh;
+    right: -16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleTop {
+    z-index: 0;
+    position: absolute;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: #00bab4;
+    top: -10vh;
+    right: -10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+}
+
+.circleTop:hover, .circle:focus {
+    width: 38vh;
+    height: 38vh;
+}
+
+.circles {
+    position: absolute;
+    bottom: -100vh;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.circles .circle {
+    height: 4vh;
+    width: 4vh;
+    margin: 1vh;
+    background-color: #00bab4;
+    border-radius: 100vh;
+    
+}
+
+@media (max-width: 685px) {
+    .circles {
+        display: none;
+    }
+
+    .developersText {
+        padding-top: 4vh;
+    }
+
+    .circleOutlineTop1 {
+        display: none;
+    }
+    
+    
+    .circleOutlineTop2 {
+        display: none;
+    }
+    
+    .circleTop {
+        display: none;
+    }
+    
+    .squareLeft {
+        display: none;
+    }
+    
+    .triangle1 {
+        display: none;
+    }
+    
+    
+    
+    .triangleOutline2 {
+        display: none;
+    
+    }
+    
+    .triangle2 {
+       display: none;
+    
+    }
+    .circleOutline1 {
+        display: none;
+    }
+    .circleOutline1 .circle {
+        display: none;
+    }
+    .square {
+        display: none;
+    }
+}
